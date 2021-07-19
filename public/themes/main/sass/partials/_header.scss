@@ -1,0 +1,69 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 0 2px 2px #ccc;
+    .header-top {
+        position: relative;
+        background-color: $bg-gray;
+        height: 42px;
+        .boder-header {
+            border: 20px solid #fff;
+            bottom: 0;
+            position: absolute;
+            content: "";
+            border-top-width: 0;
+            border-left-width: 0;
+            width: 27%;
+            z-index: 1;
+            border-right-color: transparent;
+        }
+        .list-item-top {
+            display: flex;
+            justify-content: flex-end;
+            line-height: 42px;
+            .item-top {
+                margin-right: 70px;
+                &__link {
+                    color: $gray_text;
+                    text-decoration: none;
+                }
+            }
+            .item-top:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .navbar {
+        padding: unset;
+        .logo_link {
+            position: relative;
+            top: -10px;
+            padding: 16px 0;
+            margin: 0;
+        }
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            .nav-item {
+                padding: 19px 0;
+                a {
+                    color: $gray_text;
+                    font-family: $MyriadPro-Bold;
+                    text-decoration: none;
+                }
+            }
+            .nav-item:first-child {
+                margin-left: 11%;
+            }
+            .nav-item:last-child a {
+                color: $blue_button;
+                font-family: unset;
+            }
+        }
+    }
+}

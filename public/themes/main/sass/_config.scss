@@ -1,0 +1,58 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: $MyriadPro-Regular;
+    font-size: 16px;
+}
+
+.container-customize {
+    padding-left: 12%;
+    padding-right: 12%;
+    @media (max-width: 1680px) {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    @media (max-width: 992px) {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    @media (max-width: 768px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.img-mw-100 {
+    max-width: 100%;
+    width: 100%;
+}
+
+.font-myria-bold {
+    font-family: $MyriadPro-Bold;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.page-content {
+    padding-top: 104px;
+}
+
+.font40 {
+    font-size: 40px;
+}
+
+.font30 {
+    font-size: 30px;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font18 {
+    font-size: 18px;
+}
