@@ -67,3 +67,27 @@
         }
     }
 }
+
+@media screen and (max-width:1680px) {
+    .header {
+        .header-top {
+            height: 36px;
+            .list-item-top {
+                line-height: 36px;
+                .item-top {
+                    margin-right: 40px;
+                }
+            }
+        }
+        .navbar {
+            .logo_link {
+                padding: 10px 0;
+            }
+            .navbar-nav {
+                .nav-item {
+                    padding: 11px 0;
+                }
+            }
+        }
+    }
+}

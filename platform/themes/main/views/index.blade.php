@@ -1,62 +1,65 @@
-<div class="main-slider owl-carousel">
-     <div class="slider-item">
-         <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider">
-         <div class="fade"></div>
-         <div class="bg-post">
-            <div class="content">
-                <h2 class="font30 title-post">
-                   THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
-                </h2>
-                <div class="description">
-                   <p class=" font18">
-                       Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
-                    </p>
-                </div>
-                <a href="" class="read-more">Xem thêm</a>
-            </div>
-         </div>
-        
-     </div>
-     <div class="slider-item">
-        <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider">
-        <div class="fade"></div>
-        <div class="bg-post">
-           <div class="content">
-               <h2 class="font30 title-post">
-                  THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
-               </h2>
-               <div class="description">
-                  <p class=" font18">
-                      Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
-                   </p>
-               </div>
-               <a href="" class="font18">Xem thêm</a>
-           </div>
-        </div>
-       
-    </div>
-    <div class="slider-item">
-        <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider">
-        <div class="fade"></div>
-        <div class="bg-post">
-           <div class="content">
-               <h2 class="font30 title-post">
-                  THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
-               </h2>
-               <div class="description">
-                  <p class=" font18">
-                      Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
-                   </p>
-               </div>
-               <a href="" class="font18">Xem thêm</a>
-           </div>
-        </div>
-       
-    </div>
-     
- </div>
 
-<div class="field-activity-wrapper">
+ <div class="swiper-container main-slider" style="--swiper-navigation-color:#000; --swiper-pagination-color:#000;">
+    <div class="swiper-wrapper">   
+        <div class="swiper-slide" >
+            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider">
+            <div class="fade"></div>
+            <div class="bg-post">
+                <div class="content">
+                    <h2 class="font30 title-post">
+                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
+                    </h2>
+                    <div class="description">
+                    <p class=" font18">
+                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
+                        </p>
+                    </div>
+                    <a href="" class="read-more">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide" >
+            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider">
+            <div class="fade"></div>
+            <div class="bg-post">
+                <div class="content">
+                    <h2 class="font30 title-post">
+                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
+                    </h2>
+                    <div class="description">
+                    <p class=" font18">
+                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
+                        </p>
+                    </div>
+                    <a href="" class="read-more">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide" >
+            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider">
+            <div class="fade"></div>
+            <div class="bg-post">
+                <div class="content">
+                    <h2 class="font30 title-post">
+                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
+                    </h2>
+                    <div class="description">
+                    <p class=" font18">
+                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
+                        </p>
+                    </div>
+                    <a href="" class="read-more">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+    <div class="swiper-pagination"></div>
+    @includeIf("theme.main::views.sidebar")
+</div>
+
+<div class="field-activity-wrapper mt-80">
     <div class="container-customize ">
         <div class="field-activity">
             <div class="field-activity__content">
@@ -160,7 +163,7 @@
        
     </div>
 </div>
-<div class="partner-wrapper">
+<div class="partner-wrapper mt-80">
     <div class="partner-banner" style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url({{Theme::asset()->url('images/home/banner-partner.jpg') }})">
         <div class="container-customize logo-partner">
             
@@ -173,24 +176,30 @@
         </div>
     </div>
 </div>
-<div class="news-home-wrapper">
+<div class="news-home-wrapper mt-80">
     <div class="container-customize">
         <div class="news-home__content">
-            <div class="row">
-                <div class="col-md-8 pr-0">
-                    <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/new-home-top.jpg') }}" alt="">
-                   
-                </div>
-                <div class="col-md-4 pl-0">
-                    <div class="news-post">
-                        <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
-                        <h4 class="name fon20">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4>
-                        <span class="time">23/06/2021</span>
-                        <p class="description font18">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
-                        <a href="" class="read-more">Xem thêm</a>
+            <div class="news-home__top">
+                <div class="row">
+                    <div class="col-md-8 pr-0">
+                        <div class="img-post h-100">
+                            <img class="img-mw-100 h-100" src="{{ Theme::asset()->url('images/home/home-news-top.jpg') }}" alt="">
+                       
+                        </div>
+                       
+                    </div>
+                    <div class="col-md-4 pl-0">
+                        <div class="news-post h-100">
+                            <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
+                            <h4 class="name font20">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4>
+                            <span class="time">23/06/2021</span>
+                            <p class="description font18">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
+                            <a href="" class="read-more">Xem thêm</a>
+                        </div>
                     </div>
                 </div>
             </div>
+           
             <div class="post-slider">
                 <div class="swiper-container new-post-slide">
                     <div class="swiper-wrapper">
@@ -241,8 +250,8 @@
     </div>
    
 </div>
-<div class="transport-wrapper">
-    <div class="transport-banner" style="background-image:url({{Theme::asset()->url('images/home/banner-transport.jpg') }})">
+<div class="transport-wrapper mt-80">
+    <div class="transport-banner">
         {{-- <div class="list-transport">
             <a href="icon-field-activity">
                 <img src="{{Theme::asset()->url('images/home/1.png') }}" alt="">
@@ -266,37 +275,232 @@
         <div class="field-activity__tabs">
             <ul class=" nav nav-tabs mb-0" id="tab-field-activity" role="tablist">
                 <li class="__tabs__item " role="field-activity">
-                    <a class="__tabs__link nav-link" id="field-1-tab" data-toggle="tab" role="tab" aria-controls="all-project" aria-selected="true" href="#all-project" title="Tất Cả">
+                    <a class="__tabs__link nav-link active" id="field-1-tab" data-toggle="tab" role="tab" aria-controls="field-1" aria-selected="true" href="#field-1" title="Tất Cả">
                             <img src="{{Theme::asset()->url('images/home/1.png') }}" alt="">        
                     </a>
                 </li>
                 <li class="__tabs__item" role="field-activity">
-                    <a class="__tabs__link nav-link" id="field-2-tab" data-toggle="tab" role="tab" aria-controls="all-project" aria-selected="true" href="#all-project" title="Tất Cả">
+                    <a class="__tabs__link nav-link" id="field-2-tab" data-toggle="tab" role="tab" aria-controls="field-2" aria-selected="true" href="#field-2" title="Tất Cả">
                             <img src="{{Theme::asset()->url('images/home/2.png') }}" alt="">        
                     </a>
                 </li>
                 <li class="__tabs__item" role="field-activity">
-                    <a class="__tabs__link nav-link " id="field-3-tab" data-toggle="tab" role="tab" aria-controls="all-project" aria-selected="true" href="#all-project" title="Tất Cả">
+                    <a class="__tabs__link nav-link " id="field-3-tab" data-toggle="tab" role="tab" aria-controls="field-3" aria-selected="true" href="#field-3" title="Tất Cả">
                             <img src="{{Theme::asset()->url('images/home/3.png') }}" alt="">        
                     </a>
                 </li>
                 <li class="__tabs__item" role="field-activity">
-                    <a class="__tabs__link nav-link active" id="field-4-tab" data-toggle="tab" role="tab" aria-controls="all-project" aria-selected="true" href="#all-project" title="Tất Cả">
+                    <a class="__tabs__link nav-link" id="field-4-tab" data-toggle="tab" role="tab" aria-controls="field-4" aria-selected="true" href="#field-4" title="Tất Cả">
                             <img src="{{Theme::asset()->url('images/home/4.png') }}" alt="">        
                     </a>
                 </li>
                 <li class="__tabs__item" role="field-activity">
-                    <a class="__tabs__link nav-link" id="field-5-tab" data-toggle="tab" role="tab" aria-controls="all-project" aria-selected="true" href="#all-project" title="Tất Cả">
+                    <a class="__tabs__link nav-link" id="field-5-tab" data-toggle="tab" role="tab" aria-controls="field-5" aria-selected="true" href="#field-5" title="Tất Cả">
                             <img src="{{Theme::asset()->url('images/home/5.png') }}" alt="">        
                     </a>
                 </li>
                 <li class="__tabs__item" role="field-activity">
-                    <a class="__tabs__link nav-link" id="field-6-tab" data-toggle="tab" role="tab" aria-controls="all-project" aria-selected="true" href="#all-project" title="Tất Cả">
+                    <a class="__tabs__link nav-link" id="field-6-tab" data-toggle="tab" role="tab" aria-controls="field-6" aria-selected="true" href="#field-6" title="Tất Cả">
                             <img src="{{Theme::asset()->url('images/home/6.png') }}" alt="">        
                     </a>
                 </li>
             </ul>
+           
+        </div>
+        <a href="" class="read-more">Xem thêm</a>
+        <div class="tab-content" id="Tab-project">
+            <div class="tab-pane fade active show" id="field-1" role="tabpanel" aria-labelledby="field-1-tab">
+                <div class="swiper-container field-activity-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                      <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                    </div>
+                   
+        
+                </div>
+            </div>
+            <div class="tab-pane fade" id="field-2" role="tabpanel" aria-labelledby="field-2-tab">
+                <div class="swiper-container field-activity-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                      <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                    </div>
+                   
+        
+                </div>
+            </div>
+            <div class="tab-pane fade" id="field-3" role="tabpanel" aria-labelledby="field-3-tab">
+                <div class="swiper-container field-activity-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                      <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                    </div>
+                   
+        
+                </div>
+            </div>
+            <div class="tab-pane fade" id="field-4" role="tabpanel" aria-labelledby="field-4-tab">
+                <div class="swiper-container field-activity-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                      <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                    </div>
+                   
+        
+                </div>
+            </div>
+            <div class="tab-pane fade" id="field-5" role="tabpanel" aria-labelledby="field-5-tab">
+                <div class="swiper-container field-activity-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                      <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                    </div>
+                   
+        
+                </div>
+            </div>
+            <div class="tab-pane fade" id="field-6" role="tabpanel" aria-labelledby="field-6-tab">
+                <div class="swiper-container field-activity-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        </div>
+                        <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                      <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                      </div>
+                    </div>
+                   
+        
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<div class="recruitment-wrapper mt-80">
+    <div class="recruitment-banner">
+        <div class="swiper-container mySwiper-home" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
+            <div class="swiper-wrapper">   
+                <div class="swiper-slide" >
+                    <div class="bg-slider" style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})" >
+                        <div class="container-customize">
+                            <div class="swiper-content">
+                                <div class="swiper-content__desc">
+                                <h3 class="title font28">Tuyển dụng</h3>
+                                <p class="description font24">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel fac
+                                </p>
+                                <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
+                                </div>
+                            </div>
+                            <div class="swiper-content-bottom">
+                                <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" >
+                    <div class="bg-slider" style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})" >
+                        <div class="container-customize">
+                            <div class="swiper-content">
+                                <div class="swiper-content__desc">
+                                <h3 class="title font28">Tuyển dụng</h3>
+                                <p class="description font24">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel fac
+                                </p>
+                                <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
+                                </div>
+                            </div>
+                            <div class="swiper-content-bottom">
+                                <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" >
+                    <div class="bg-slider" style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})" >
+                        <div class="container-customize">
+                            <div class="swiper-content">
+                                <div class="swiper-content__desc">
+                                <h3 class="title font28">Tuyển dụng</h3>
+                                <p class="description font24">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel fac
+                                </p>
+                                <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
+                                </div>
+                            </div>
+                            <div class="swiper-content-bottom">
+                                <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+<a id="button-top" class="show-button-top"></a>
  

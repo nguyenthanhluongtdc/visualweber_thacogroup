@@ -29,6 +29,20 @@ body {
     width: 100%;
 }
 
+.mt-80 {
+    margin-top: 80px;
+    @media screen and (max-width: 1680px) {
+        margin-top: 60px;
+    }
+}
+
+.pt-80 {
+    padding-top: 80px;
+    @media screen and (max-width: 1680px) {
+        padding-top: 60px;
+    }
+}
+
 .font-myria-bold {
     font-family: $MyriadPro-Bold;
 }
@@ -39,20 +53,55 @@ body {
 
 .page-content {
     padding-top: 104px;
+    @media screen and (max-width: 1680px) {
+        padding-top: 86px;
+    }
 }
 
 .font40 {
     font-size: 40px;
+    @media screen and (max-width: 1680px) {
+        font-size: 32px;
+    }
 }
 
 .font30 {
     font-size: 30px;
+    @media screen and (max-width: 1680px) {
+        font-size: 25px;
+    }
+}
+
+.font28 {
+    font-size: 28px;
+    @media screen and (max-width: 1680px) {
+        font-size: 25px;
+    }
+    @media screen and (max-width: 1440px) {
+        font-size: 22px;
+    }
+}
+
+.font24 {
+    font-size: 24px;
+    @media screen and (max-width: 1680px) {
+        font-size: 21px;
+    }
+    @media screen and (max-width: 1440px) {
+        font-size: 18px;
+    }
 }
 
 .font20 {
     font-size: 20px;
+    @media screen and (max-width: 1680px) {
+        font-size: 18px;
+    }
 }
 
 .font18 {
     font-size: 18px;
+    @media screen and (max-width: 1680px) {
+        font-size: 16px;
+    }
 }

@@ -116,26 +116,26 @@
         </footer>
         {!! Theme::footer() !!}
         <script>
-            $('.main-slider').owlCarousel({
-            smartSpeed: 1000,
-            loop: false,
-            autoplay: false,
-            dots: true,
-            nav: true,
-            navText: ["<div class='nav-btn prev-slide'><i class='fas fa-long-arrow-alt-left'></i></div>", "<div class='nav-btn next-slide'><i class='fas fa-long-arrow-alt-right'></i></div>"],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        });
-                        let newPostSlide = new Swiper(".new-post-slide", {
+                                    //sroll top
+                        if($('#button-top').length>0){
+                            var btn = $('#button-top');
+                            $(window).scroll(function() {
+                            if ($(window).scrollTop() > 300) {
+                                btn.addClass('show-button-top');
+                            } else {
+                                btn.removeClass('show-button-top');
+                            }
+                            });
+                            btn.on('click', function(e) {
+                            e.preventDefault();
+                            $('html, body').animate({scrollTop:0}, '300');
+                            });
+                        }
+
+
+
+      
+                    let newPostSlide = new Swiper(".new-post-slide", {
                     slidesPerView: 3,
                     loop: true,
                     centeredSlides: true,
@@ -156,6 +156,51 @@
                         },
                     }
                 });
+                let fieldActivitySlide = new Swiper(".field-activity-slide", {
+                    speed: 800,
+                  
+                    // centeredSlides: true,
+                    // spaceBetween: 40,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    observer: true,
+                    observeParents: true,
+                    
+                });
+               
+                let main_slider = new Swiper(".main-slider", {
+                  
+                    speed: 800,
+                    // centeredSlides: true,
+                    // spaceBetween: 40,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    
+                });
+        var swiper = new Swiper(".mySwiper-home", {
+        speed: 800,
+        // parallax: true,
+       
+       
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+              
         </script>
         
     </body>
