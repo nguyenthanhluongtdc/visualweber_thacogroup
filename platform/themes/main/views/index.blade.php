@@ -2,7 +2,7 @@
  <div class="swiper-container main-slider" style="--swiper-navigation-color:#000; --swiper-pagination-color:#000;">
     <div class="swiper-wrapper">   
         <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider">
+            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  h-45vw w-100">
             <div class="fade"></div>
             <div class="bg-post">
                 <div class="content">
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider">
+            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  w-100  h-45vw ">
             <div class="fade"></div>
             <div class="bg-post">
                 <div class="content">
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider">
+            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  w-100 h-45vw ">
             <div class="fade"></div>
             <div class="bg-post">
                 <div class="content">
@@ -56,7 +56,7 @@
        
     </div>
     <div class="swiper-pagination"></div>
-    @includeIf("theme.main::views.sidebar")
+  
 </div>
 
 <div class="field-activity-wrapper mt-80">
@@ -64,7 +64,7 @@
         <div class="field-activity">
             <div class="field-activity__content">
                 <div class="field-activity__item">
-                    <img src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
+                    <img class="" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
                         <div class="content-none">
@@ -502,5 +502,5 @@
         </div>
     </div>
 </div>
-<a id="button-top" class="show-button-top"></a>
+
  

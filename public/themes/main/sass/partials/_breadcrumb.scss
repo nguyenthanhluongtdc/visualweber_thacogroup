@@ -1,0 +1,17 @@
+ol.breadcrumb {
+    font-size: 15px;
+    background-color: unset;
+    color: $gray_text;
+    padding: 25px 0;
+    .breadcrumb-item {
+        a {
+            color: $gray_text;
+            opacity: 70%;
+            font-family: $MyriadPro-Bold;
+        }
+    }
+    .breadcrumb-item.active {
+        color: $gray_text;
+        font-family: $MyriadPro-Bold;
+    }
+}

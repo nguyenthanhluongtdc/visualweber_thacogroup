@@ -51,7 +51,7 @@
             </div>
             <div class="container-customize ">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="logo_link" href="">
+                    <a class="logo_link" href="/">
                         <img src="{{Theme::asset()->url('images/home/logo.png')}}" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,3 +83,5 @@
             </div>
             
         </header>
+        @includeIf("theme.main::views.sidebar")
+        <a id="button-top" class="show-button-top"></a>

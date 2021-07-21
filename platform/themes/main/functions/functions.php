@@ -2,6 +2,7 @@
 
 register_page_template([
     'default' => 'Default',
+    'introduce' => 'Introduce',
 ]);
 
 register_sidebar([

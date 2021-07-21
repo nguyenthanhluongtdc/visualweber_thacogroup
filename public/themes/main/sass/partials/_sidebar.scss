@@ -1,18 +1,21 @@
 .drop-shadow {
-    -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .8));
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .8));
+    -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .5));
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .5));
 }
 
 .list-social-sidebar {
     height: 100%;
     position: absolute;
     right: 30px;
-    top: 0;
+    top: 104px;
     bottom: 0;
     z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1680px) {
+        top: 86px;
+    }
     .social-item {
         margin-bottom: 20px;
     }
