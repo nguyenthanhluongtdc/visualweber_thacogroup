@@ -32,6 +32,10 @@
         justify-content: space-between;
         text-align: center;
         .future-goal {
+            img {
+                height: 95px;
+                width: 95px;
+            }
             .title {
                 font-family: $MyriadPro-Bold;
                 margin-bottom: 40px;
@@ -480,12 +484,13 @@
 
 #info_admin_modal {
     .modal-dialog {
+        max-width: 900px;
         .modal-content {
             padding: 30px;
             .modal-body {
-                .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-                    background: white;
-                }
+                // .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+                //     background: white;
+                // }
                 .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
                     background: rgb(128, 128, 128);
                 }

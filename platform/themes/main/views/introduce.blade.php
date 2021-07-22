@@ -9,13 +9,13 @@
             <h1 class="font50 big-title">Về chúng tôi</h1>
         </div>
         <div class="about-us__content mt-40">
-            <p class="text-about-us font24">
+            <p class="text-about-us font24 text-justify">
                 Công ty ôtô Trường Hải (THACO) được thành lập vào ngày 29/04/1997. Người sáng lập là ông Trần Bá Dương, hiện là Chủ tịch Hội đồng Quản trị THACO. Văn phòng Tổng quản TP.HCM đặt tại Tòa nhà IIA, số 10 đường Mai Chí Thọ, phường Thủ Thiêm, Quận 2. Tổng số nhân sự hiện nay khoảng 20.000 người.
             </p>
-            <p class="text-about-us font24">
+            <p class="text-about-us font24 text-justify">
                 Sau 22 năm hình thành và phát triển, THACO đã trở thành Tập đoàn công nghiệp đa ngành, trong đó Cơ khí và Ô tô là chủ lực, đồng thời phát triển các lĩnh vực sản xuất kinh doanh bổ trợ cho nhau, tạo ra giá trị cộng hưởng và nâng cao năng lực cạnh tranh, bao gồm: Nông nghiệp; Đầu tư xây dựng; Logistics và Thương mại & Dịch vụ.
             </p>
-            <p class="text-about-us font24">
+            <p class="text-about-us font24 text-justify">
                 Bên cạnh hoạt động sản xuất kinh doanh, THACO còn xây dựng môi trường văn hóa doanh nghiệp lành mạnh, định hình được bản sắc văn hóa riêng của THACO dựa trên triết lý kinh doanh “Mang lại giá trị cho khách hàng, xã hội và có đóng góp thiết thực vào nền kinh tế đất nước” và nguyên tắc “8 chữ T: Tận tâm - Trung Thực - Trí Tuệ - Tự Tin - Tôn Trọng - Trung Tín - Tận Tình - Thuận Tiện”. Đây chính là giá trị cốt lõi của văn hóa THACO, là tài sản vô hình để tạo ra động lực thúc đẩy sự phát triển.
             </p>
         </div>
@@ -51,7 +51,7 @@
         </div>
         <div class="field-activity-intro-wrapper" style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url('{{ Theme::asset()->url('images/introduce/bg-field.jpg') }}')">
             <div class="desc-field pt-40">
-                <p class="desc-cotent font 18">
+                <p class="desc-cotent font 18 text-justify">
                  Sau 22 năm hình thành và phát triển, THACO đã trở thành Tập đoàn công nghiệp đa ngành, trong đó Cơ khí và Ô tô là chủ lực, đồng thời phát triển các lĩnh vực sản xuất kinh doanh bổ trợ cho nhau, tạo ra giá trị cộng hưởng và nâng cao năng lực cạnh tranh, bao gồm: Nông nghiệp; Đầu tư xây dựng; Logistics và Thương mại & Dịch vụ.
                 </p>
             </div>
@@ -271,7 +271,7 @@
             
             <div class="tab-pane fade active show" id="achievement-company" role="tabpanel" aria-labelledby="field-1-tab">
                     <div class="content-tab">
-                        <p class="content-title font18 mt-40">
+                        <p class="content-title font18 mt-40 text-justify">
                             Từ lúc thành lập tới nay, Thaco đã vinh dự nhận được nhiều bằng khen, giải thưởng các cấp vinh danh những đóng góp và thành tích của công ty trong hoạt động sản xuất kinh doanh, hoạt động cộng đồng xã hội và sự nghiệp xây dựng, bảo vệ Tổ quốc:
                         </p>
                         <div class="top">
@@ -280,14 +280,14 @@
                                     <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
                                     <p><span class="year font24">2002</span></p>
                                 </div>
-                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
+                               <p class="desc font18 text-justify">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
                             </div>
                             <div class="top-content">
                                 <div class="img-content">
                                 <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
                                 <p><span class="year font24">2012</span></p>
                                 </div>
-                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
+                               <p class="desc font18 text-justify">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
                             </div>
                             
                             <div class="top-content">
@@ -295,7 +295,7 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
                                <p><span class="year font24">2017</span></p>
                                 </div>
-                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
+                               <p class="desc font18 text-justify">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
                             </div>
                         </div>
                         <div class="bottom">
@@ -306,14 +306,14 @@
                                 </div>
                                
                                
-                               <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                               <p class="desc font18 text-justify">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
                             </div>
                             <div class="bottom-content">
                                 <div class="img-content">
                                 <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
                                 <p><span class="year font24">Từ 2012-2015</span></p>
                                 </div>
-                                <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                                <p class="desc font18 text-justify">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
                             </div>
                             <div class="bottom-content">
                                 <div class="img-content">
@@ -327,14 +327,14 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/th-qg.png') }}" alt="">
                                 <p><span class="year font24">Từ 2012 – 2020</span></p>
                                 </div>
-                               <p class="desc font18">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
+                               <p class="desc font18 text-justify">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
                             </div>
                             <div class="bottom-content">
                                 <div class="img-content">
                                 <img src="{{ Theme::asset()->url('images/introduce/dn-thue.png') }}" alt="">
                                <p><span class="year font24">2020</span></p>
                                 </div>
-                               <p class="desc font18">Được Tổng Cục Thuế Tuyên dương <strong class="font-myria-bold">Doanh nghiệp nộp thuế tiêu biểu</strong>.</p>
+                               <p class="desc font18 text-justify">Được Tổng Cục Thuế Tuyên dương <strong class="font-myria-bold">Doanh nghiệp nộp thuế tiêu biểu</strong>.</p>
                             </div>
                         </div>
                     </div>
@@ -471,7 +471,7 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
                                 <div class="content-slider">
                                     <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
                                         Khánh thành nhà máy Bus THACO.</p>
                                 </div>
                               </div>
@@ -479,7 +479,7 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
                                 <div class="content-slider">
                                     <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
                                         Khánh thành nhà máy Bus THACO.</p>
                                 </div>
                               </div>
@@ -487,7 +487,7 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
                                 <div class="content-slider">
                                     <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
                                         Khánh thành nhà máy Bus THACO.</p>
                                 </div>
                               </div>
@@ -495,7 +495,7 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
                                 <div class="content-slider">
                                     <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
                                         Khánh thành nhà máy Bus THACO.</p>
                                 </div>
                               </div>
@@ -503,7 +503,7 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
                                 <div class="content-slider">
                                     <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
                                         Khánh thành nhà máy Bus THACO.</p>
                                 </div>
                               </div>
@@ -511,7 +511,7 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
                                 <div class="content-slider">
                                     <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
                                         Khánh thành nhà máy Bus THACO.</p>
                                 </div>
                               </div>
