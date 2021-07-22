@@ -1,426 +1,525 @@
-    .about-us {
-        &__title {
-            display: flex;
-            align-items: center;
-            margin: 0;
-            line-height: 43px;
-            font-family: $MyriadPro-Bold;
-            text-transform: uppercase;
-            color: $big-title;
-            .big-title {
-                margin-bottom: 0;
-                margin-left: 10px;
-            }
+.about-us {
+    &__title {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        line-height: 43px;
+        font-family: $MyriadPro-Bold;
+        text-transform: uppercase;
+        color: $big-title;
+        .big-title {
+            margin-bottom: 0;
+            margin-left: 10px;
         }
     }
-    
-    .future-goal-banner {
-        position: relative;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 44.2%;
-        .future-goal-wrapper {
-            position: absolute;
-            color: $white;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            text-align: center;
-            .future-goal {
-                .title {
-                    font-family: $MyriadPro-Bold;
-                    margin-bottom: 40px;
-                    margin-top: 30px;
-                    text-transform: uppercase;
-                }
-                .desc {
-                    font-family: $MyriadPro-Bold;
-                }
-                border-right: 2px solid $white;
-                height: 100%;
+}
+
+.future-goal-banner {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 44.2%;
+    .future-goal-wrapper {
+        position: absolute;
+        color: $white;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        .future-goal {
+            .title {
+                font-family: $MyriadPro-Bold;
+                margin-bottom: 40px;
+                margin-top: 30px;
+                text-transform: uppercase;
             }
-            .future-goal.last {
-                border: unset;
-            }
-        }
-    }
-    
-    .field-activity-intro-wrapper {
-        .desc-field {
-            .desc-cotent {
-                text-align: center;
-                padding: 0 13%;
+            .desc {
                 font-family: $MyriadPro-Bold;
             }
+            border-right: 2px solid $white;
+            height: 100%;
+        }
+        .future-goal.last {
+            border: unset;
         }
     }
-    
-    .leader-of-us-wrapper {
-        .leader-of-us__title {
-            display: flex;
-            align-items: center;
-            margin: 0;
-            line-height: 43px;
+}
+
+.field-activity-intro-wrapper {
+    .desc-field {
+        .desc-cotent {
+            text-align: center;
+            padding: 0 13%;
+            font-family: $MyriadPro-Bold;
+        }
+    }
+}
+
+.leader-of-us-wrapper {
+    .leader-of-us__title {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        line-height: 43px;
+        font-family: $MyriadPro-Bold;
+        text-transform: uppercase;
+        color: $big-title;
+        .big-title {
+            margin-bottom: 0;
+            margin-left: 10px;
+        }
+    }
+    .title-admin-top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #ccc;
+        .title-admin {
+            margin-bottom: 0;
+            display: block;
+            padding: 10px 30px;
+            background-color: #212121;
             font-family: $MyriadPro-Bold;
             text-transform: uppercase;
-            color: $big-title;
-            .big-title {
-                margin-bottom: 0;
-                margin-left: 10px;
-            }
+            width: max-content;
+            text-align: center;
+            color: $white;
+            font-size: 23px;
         }
-        .title-admin-top {
-            width: 100%;
+    }
+    .admin-top-content {
+        .row-1 {
+            margin-top: 20px;
+            .admin-top-item {
+                max-width: 200px;
+                .name {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    line-height: 15px
+                }
+            }
             display: flex;
             align-items: center;
             justify-content: center;
-            border-bottom: 1px solid #ccc;
-            .title-admin {
-                margin-bottom: 0;
-                display: block;
-                padding: 10px 30px;
-                background-color: #212121;
-                font-family: $MyriadPro-Bold;
-                text-transform: uppercase;
-                width: max-content;
-                text-align: center;
-                color: $white;
-                font-size: 23px;
+            img {
+                width: 200px;
             }
         }
-        .admin-top-content {
-            .row-1 {
-                margin-top: 20px;
-                .admin-top-item {
-                    max-width: 200px;
-                    .name {
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        line-height: 15px
-                    }
+        .row-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .admin-top-item:nth-child(1) {
+                max-width: 200px;
+                .name {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    line-height: 15px
                 }
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                img {
+                    width: 200px;
+                }
+                margin-right: 10px;
+            }
+            .admin-top-item:nth-child(2) {
+                .name {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    line-height: 15px
+                }
+                max-width: 200px;
+                margin-left: 10px;
                 img {
                     width: 200px;
                 }
             }
-            .row-2 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .admin-top-item:nth-child(1) {
-                    max-width: 200px;
-                    .name {
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        line-height: 15px
-                    }
-                    img {
-                        width: 200px;
-                    }
-                    margin-right: 10px;
-                }
-                .admin-top-item:nth-child(2) {
-                    .name {
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        line-height: 15px
-                    }
-                    max-width: 200px;
-                    margin-left: 10px;
-                    img {
-                        width: 200px;
-                    }
-                }
-            }
-            .row-3 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .admin-top-item {
-                    .name {
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        line-height: 15px
-                    }
-                    max-width: 200px;
-                    margin-right: 20px;
-                    img {
-                        width: 200px;
-                    }
-                }
-            }
         }
-        .admin-bottom-content {
-            margin-top: 20px;
-            .bottom-content {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .admin-bottom-item {
-                    .name {
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        line-height: 15px
-                    }
-                    max-width: 200px;
-                    margin-right: 20px;
-                    img {
-                        width: 200px;
-                    }
-                }
-            }
-        }
-        // .admin-top-content {
-        //     margin-top: 20px;
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     .admin-top-item:nth-child(1) {
-        //         width: 100%;
-        //         text-align: center;
-        //     }
-        //     .admin-top-item:nth-child(2) {
-        //         width: 49%;
-        //         text-align: right;
-        //         margin-right: 10px;
-        //     }
-        //     .admin-top-item:nth-child(3) {
-        //         width: 49%;
-        //         margin-left: 10px;
-        //     }
-        //     .admin-top-item:nth-child(4) {
-        //         width: 19%;
-        //         margin-right: 17px;
-        //     }
-        //     .admin-top-item:nth-child(5) {
-        //         width: 19%;
-        //         margin-right: 17px;
-        //     }
-        //     .admin-top-item:nth-child(6) {
-        //         width: 19%;
-        //         margin-right: 17px;
-        //     }
-        //     .admin-top-item:nth-child(7) {
-        //         width: 19%;
-        //         margin-right: 17px;
-        //     }
-        //     .admin-top-item:nth-child(8) {
-        //         width: 19%;
-        //     }
-        // }
-        .title-admin-bottom {
-            width: 100%;
+        .row-3 {
             display: flex;
             align-items: center;
             justify-content: center;
-            border-bottom: 1px solid #ccc;
-            .title-admin {
-                margin-bottom: 0;
-                display: block;
-                padding: 10px 15px;
-                background-color: #212121;
-                font-family: $MyriadPro-Bold;
-                text-transform: uppercase;
-                width: max-content;
-                text-align: center;
-                color: $white;
-                font-size: 23px;
+            .admin-top-item {
+                .name {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    line-height: 15px
+                }
+                max-width: 200px;
+                margin-right: 20px;
+                img {
+                    width: 200px;
+                }
             }
         }
     }
-    
-    .achievement-wrapper {
-        .achievement-tab-title {
+    .admin-bottom-content {
+        margin-top: 20px;
+        .bottom-content {
             display: flex;
+            justify-content: center;
             align-items: center;
+            .admin-bottom-item {
+                .name {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    line-height: 15px
+                }
+                max-width: 200px;
+                margin-right: 20px;
+                img {
+                    width: 200px;
+                }
+            }
         }
-        .achievement__tabs {
-            margin-left: 20px;
-            .nav-tabs {
-                // border: unset;
-                .nav-link {
-                    padding: 0;
-                    margin: 0;
-                    border: unset;
-                    color: #BABABA;
-                    font-family: $MyriadPro-Bold;
-                    font-size: 20px;
-                    &:hover {
-                        border-color: unset;
-                    }
-                    &:focus {
-                        background-color: unset;
-                    }
+    }
+    // .admin-top-content {
+    //     margin-top: 20px;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     .admin-top-item:nth-child(1) {
+    //         width: 100%;
+    //         text-align: center;
+    //     }
+    //     .admin-top-item:nth-child(2) {
+    //         width: 49%;
+    //         text-align: right;
+    //         margin-right: 10px;
+    //     }
+    //     .admin-top-item:nth-child(3) {
+    //         width: 49%;
+    //         margin-left: 10px;
+    //     }
+    //     .admin-top-item:nth-child(4) {
+    //         width: 19%;
+    //         margin-right: 17px;
+    //     }
+    //     .admin-top-item:nth-child(5) {
+    //         width: 19%;
+    //         margin-right: 17px;
+    //     }
+    //     .admin-top-item:nth-child(6) {
+    //         width: 19%;
+    //         margin-right: 17px;
+    //     }
+    //     .admin-top-item:nth-child(7) {
+    //         width: 19%;
+    //         margin-right: 17px;
+    //     }
+    //     .admin-top-item:nth-child(8) {
+    //         width: 19%;
+    //     }
+    // }
+    .title-admin-bottom {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #ccc;
+        .title-admin {
+            margin-bottom: 0;
+            display: block;
+            padding: 10px 15px;
+            background-color: #212121;
+            font-family: $MyriadPro-Bold;
+            text-transform: uppercase;
+            width: max-content;
+            text-align: center;
+            color: $white;
+            font-size: 23px;
+        }
+    }
+}
+
+.achievement-wrapper {
+    .achievement-tab-title {
+        display: flex;
+        align-items: center;
+    }
+    .achievement__tabs {
+        margin-left: 20px;
+        .nav-tabs {
+            // border: unset;
+            .nav-link {
+                padding: 0;
+                margin: 0;
+                border: unset;
+                color: #BABABA;
+                font-family: $MyriadPro-Bold;
+                font-size: 20px;
+                &:hover {
+                    border-color: unset;
                 }
-                .__tabs__item {
-                    margin-right: 20px;
-                    overflow: hidden;
-                }
-                .nav-link.active {
-                    color: #00529E;
+                &:focus {
                     background-color: unset;
-                    border: unset;
-                    font-family: $MyriadPro-Bold;
+                }
+            }
+            .__tabs__item {
+                margin-right: 20px;
+                overflow: hidden;
+            }
+            .nav-link.active {
+                color: #00529E;
+                background-color: unset;
+                border: unset;
+                font-family: $MyriadPro-Bold;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 2px;
+                    background-color: #00529E;
+                }
+            }
+        }
+    }
+    .achievement__title {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        line-height: 43px;
+        font-family: $MyriadPro-Bold;
+        text-transform: uppercase;
+        color: $big-title;
+        .big-title {
+            margin-bottom: 0;
+            margin-left: 10px;
+        }
+    }
+    .content-tab {
+        .content-title {
+            max-width: 50%;
+            font-family: $MyriadPro-Bold;
+        }
+        .top {
+            display: flex;
+            padding: 5% 10%;
+            justify-content: space-between;
+            .top-content {
+                max-width: 232px;
+                .img-content {
+                    img {
+                        height: 120px;
+                    }
+                    text-align: center;
+                    .year {
+                        font-family: $MyriadPro-Bold;
+                        margin-top: 15px;
+                        display: block;
+                    }
+                }
+                .desc {
                     position: relative;
                     &::before {
                         position: absolute;
                         content: "";
                         left: 0;
                         right: 0;
-                        bottom: 0;
-                        height: 2px;
-                        background-color: #00529E;
+                        top: 0;
+                        height: 4px;
+                        background-color: #fff;
+                        width: 50%;
                     }
                 }
             }
         }
-        .achievement__title {
+        .bottom {
             display: flex;
-            align-items: center;
-            margin: 0;
-            line-height: 43px;
-            font-family: $MyriadPro-Bold;
-            text-transform: uppercase;
-            color: $big-title;
-            .big-title {
-                margin-bottom: 0;
-                margin-left: 10px;
-            }
-        }
-        .content-tab {
-            .content-title {
-                max-width: 50%;
-                font-family: $MyriadPro-Bold;
-            }
-            .top {
-                display: flex;
-                padding: 5% 10%;
-                justify-content: space-between;
-                .top-content {
-                    max-width: 232px;
-                    .img-content {
-                        text-align: center;
-                        .year {
-                            font-family: $MyriadPro-Bold;
-                            margin-top: 15px;
-                            display: block;
-                        }
+            padding: 5% 0;
+            justify-content: space-between;
+            .bottom-content {
+                max-width: 232px;
+                .img-content {
+                    img {
+                        max-height: 75px;
                     }
-                    .desc {
-                        position: relative;
-                        &::before {
-                            position: absolute;
-                            content: "";
-                            left: 0;
-                            right: 0;
-                            top: 0;
-                            height: 4px;
-                            background-color: #fff;
-                            width: 50%;
-                        }
+                    text-align: center;
+                    .year {
+                        font-family: $MyriadPro-Bold;
+                        margin-top: 15px;
+                        display: block;
                     }
                 }
-            }
-            .bottom {
-                display: flex;
-                padding: 5% 0;
-                justify-content: space-between;
-                .bottom-content {
-                    max-width: 232px;
-                    .img-content {
-                        img {
-                            max-height: 75px;
-                        }
-                        text-align: center;
-                        .year {
-                            font-family: $MyriadPro-Bold;
-                            margin-top: 15px;
-                            display: block;
-                        }
-                    }
-                    .desc {}
-                }
+                .desc {}
             }
         }
     }
-    
-    .develop-wrapper {
-        .develop__title {
-            display: flex;
-            align-items: center;
-            margin: 0;
-            line-height: 43px;
-            font-family: $MyriadPro-Bold;
-            text-transform: uppercase;
-            color: $big-title;
-            .big-title {
-                margin-bottom: 0;
-                margin-left: 10px;
-            }
-        }
-        .develop-banner {
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            padding-top: 58%;
+}
+
+.develop-wrapper {
+    .develop__title {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        line-height: 43px;
+        font-family: $MyriadPro-Bold;
+        text-transform: uppercase;
+        color: $big-title;
+        .big-title {
+            margin-bottom: 0;
+            margin-left: 10px;
         }
     }
-    
-    #info_admin_modal {
-        .modal-dialog {
-            .modal-content {
-                padding: 30px;
-                .modal-body {
-                    .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-                        background: white;
+    .develop-banner {
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding-top: 58%;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, .8);
+            z-index: 0;
+        }
+        .develop-content-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                .swiper-slide {
+                    img {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        margin: 0 auto;
+                        object-fit: cover;
+                        padding: 20% 15% 50% 15%;
                     }
-                    .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
-                        background: rgb(128, 128, 128);
+                }
+            }
+            .swiper-container.mySwiper {
+                .swiper-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+                .swiper-slide {
+                    height: 15px!important;
+                    p {
+                        cursor: pointer;
+                        margin: 0;
+                        text-align: center;
+                        font-family: $MyriadPro-Bold;
+                        color: $white;
                     }
-                    overflow-y: hidden;
-                    overflow-x: hidden;
-                    height: 500px;
-                    .info-admin {
-                        margin-left: 40px;
-                        margin-top: 40px;
-                        .name {
-                            color: $gray_text;
-                        }
-                        p {
-                            margin-bottom: 10px;
-                        }
-                    }
-                    .work-progress {
+                }
+                .swiper-slide:nth-child(1),
+                .swiper-slide:nth-child(7) {
+                    opacity: 10%;
+                }
+                .swiper-slide:nth-child(2),
+                .swiper-slide:nth-child(6) {
+                    opacity: 50%;
+                }
+                .swiper-slide:nth-child(4) {
+                    font-size: 40px;
+                }
+            }
+            .swiper-container.mySwiper2 {
+                .swiper-slide {
+                    .content-slider {
+                        position: absolute;
+                        bottom: 15%;
+                        z-index: 1;
+                        color: $white;
+                        padding: 0 15%;
                         .title {
                             font-family: $MyriadPro-Bold;
-                            color: #1F5595;
-                            padding: 5px 0;
-                            margin-bottom: 0;
-                            margin-right: 0;
-                            margin-left: 0;
-                            margin-top: 20px;
-                            border-top: 1px solid #ccc;
-                            border-bottom: 1px solid #ccc;
+                            margin-bottom: 20px;
                         }
-                        .work-progress-table {
-                            .table {
-                                td {
-                                    padding: 10px;
-                                    border: unset;
-                                }
-                                th {
-                                    padding: 10px;
-                                    border: unset;
-                                    color: $gray_text;
-                                    font-weight: bold;
-                                }
+                        .desc {
+                            font-family: $MyriadPro-Bold;
+                        }
+                    }
+                }
+            }
+            .mySwiper1 {
+                flex-basis: 100px;
+                .swiper-slide {
+                    opacity: 0.4;
+                    .swiper-slide-active {
+                        opacity: 1;
+                    }
+                }
+            }
+            // .mySwiper2 {
+            //     width: 100%;
+            // }
+            // .mySwiper {
+            //     box-sizing: border-box;
+            //     padding: 10px 0;
+            // }
+        }
+    }
+}
+
+#info_admin_modal {
+    .modal-dialog {
+        .modal-content {
+            padding: 30px;
+            .modal-body {
+                .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+                    background: white;
+                }
+                .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+                    background: rgb(128, 128, 128);
+                }
+                overflow-y: hidden;
+                overflow-x: hidden;
+                height: 500px;
+                .info-admin {
+                    margin-left: 40px;
+                    margin-top: 40px;
+                    .name {
+                        color: $gray_text;
+                    }
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+                .work-progress {
+                    .title {
+                        font-family: $MyriadPro-Bold;
+                        color: #1F5595;
+                        padding: 5px 0;
+                        margin-bottom: 0;
+                        margin-right: 0;
+                        margin-left: 0;
+                        margin-top: 20px;
+                        border-top: 1px solid #ccc;
+                        border-bottom: 1px solid #ccc;
+                    }
+                    .work-progress-table {
+                        .table {
+                            td {
+                                padding: 10px;
+                                border: unset;
+                            }
+                            th {
+                                padding: 10px;
+                                border: unset;
+                                color: $gray_text;
+                                font-weight: bold;
                             }
                         }
                     }
@@ -428,77 +527,78 @@
             }
         }
     }
-    
-    .modal-open .modal {
-        overflow-y: hidden;
-    }
-    
-    @media screen and (max-width:1680px) {
-        // .leader-of-us-wrapper {
-        //     .admin-top-content {
-        //         .admin-top-item:nth-child(1) {
-        //             img {
-        //                 width: 170px;
-        //                 height: 235px;
-        //             }
-        //         }
-        //         .admin-top-item:nth-child(2) {
-        //             img {
-        //                 width: 170px;
-        //                 height: 235px;
-        //             }
-        //         }
-        //         .admin-top-item:nth-child(3) {
-        //             img {
-        //                 width: 170px;
-        //                 height: 235px;
-        //             }
-        //         }
-        //         .admin-top-item:nth-child(4) {
-        //             width: 18%;
-        //             margin-right: 15px;
-        //             img {
-        //                 max-width: 100%;
-        //             }
-        //         }
-        //         .admin-top-item:nth-child(5) {
-        //             width: 18%;
-        //             margin-right: 15px;
-        //             img {
-        //                 max-width: 100%;
-        //             }
-        //         }
-        //         .admin-top-item:nth-child(6) {
-        //             width: 18%;
-        //             margin-right: 15px;
-        //             img {
-        //                 max-width: 100%;
-        //             }
-        //         }
-        //         .admin-top-item:nth-child(7) {
-        //             width: 18%;
-        //             margin-right: 15px;
-        //             img {
-        //                 max-width: 100%;
-        //             }
-        //         }
-        //         .admin-top-item:nth-child(8) {
-        //             width: 18%;
-        //             margin-right: 15px;
-        //             img {
-        //                 max-width: 100%;
-        //             }
-        //         }
-        //     }
-        // }
-        .achievement-wrapper {
-            .content-tab {
-                .bottom {
-                    padding: 2% 0;
-                    .bottom-content {
-                        max-width: 190px;
-                    }
+}
+
+.modal-open .modal {
+    overflow-y: hidden;
+}
+
+@media screen and (max-width:1680px) {
+    // .leader-of-us-wrapper {
+    //     .admin-top-content {
+    //         .admin-top-item:nth-child(1) {
+    //             img {
+    //                 width: 170px;
+    //                 height: 235px;
+    //             }
+    //         }
+    //         .admin-top-item:nth-child(2) {
+    //             img {
+    //                 width: 170px;
+    //                 height: 235px;
+    //             }
+    //         }
+    //         .admin-top-item:nth-child(3) {
+    //             img {
+    //                 width: 170px;
+    //                 height: 235px;
+    //             }
+    //         }
+    //         .admin-top-item:nth-child(4) {
+    //             width: 18%;
+    //             margin-right: 15px;
+    //             img {
+    //                 max-width: 100%;
+    //             }
+    //         }
+    //         .admin-top-item:nth-child(5) {
+    //             width: 18%;
+    //             margin-right: 15px;
+    //             img {
+    //                 max-width: 100%;
+    //             }
+    //         }
+    //         .admin-top-item:nth-child(6) {
+    //             width: 18%;
+    //             margin-right: 15px;
+    //             img {
+    //                 max-width: 100%;
+    //             }
+    //         }
+    //         .admin-top-item:nth-child(7) {
+    //             width: 18%;
+    //             margin-right: 15px;
+    //             img {
+    //                 max-width: 100%;
+    //             }
+    //         }
+    //         .admin-top-item:nth-child(8) {
+    //             width: 18%;
+    //             margin-right: 15px;
+    //             img {
+    //                 max-width: 100%;
+    //             }
+    //         }
+    //     }
+    // }
+    .achievement-wrapper {
+        .content-tab {
+            .bottom {
+                padding: 2% 0;
+                .bottom-content {
+                    max-width: 190px;
                 }
             }
         }
     }
+}

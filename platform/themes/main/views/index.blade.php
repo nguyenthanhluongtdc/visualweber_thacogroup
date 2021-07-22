@@ -433,10 +433,47 @@
     </div>
 </div>
 <div class="recruitment-wrapper mt-80">
-    <div class="recruitment-banner">
+    <div class="recruitment-banner " style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})">
+        <div class="swiper-content">
+            <div class="swiper-content__desc">
+            <h3 class="title font28">Tuyển dụng</h3>
+            <p class="description font24">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel fac
+            </p>
+            <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
+            </div>
+        </div>
         <div class="swiper-container mySwiper-home" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
             <div class="swiper-wrapper">   
                 <div class="swiper-slide" >
+                        <div class="container-customize">
+                            
+                            <div class="swiper-content-bottom">
+                                <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
+                                    <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                    </p>
+                                </a>
+                               
+                            </div>
+                            
+                        </div>
+                    
+                </div>
+                <div class="swiper-slide" >
+                    <div class="container-customize">
+                        
+                        <div class="swiper-content-bottom">
+                            <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
+                                <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                </p>
+                            </a>
+                           
+                        </div>
+                        
+                    </div>
+                
+            </div>
+                {{-- <div class="swiper-slide" >
                     <div class="bg-slider" style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})" >
                         <div class="container-customize">
                             <div class="swiper-content">
@@ -475,27 +512,7 @@
                             
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide" >
-                    <div class="bg-slider" style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})" >
-                        <div class="container-customize">
-                            <div class="swiper-content">
-                                <div class="swiper-content__desc">
-                                <h3 class="title font28">Tuyển dụng</h3>
-                                <p class="description font24">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel fac
-                                </p>
-                                <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
-                                </div>
-                            </div>
-                            <div class="swiper-content-bottom">
-                                <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
+                </div> --}}
                
             </div>
             <div class="swiper-pagination"></div>

@@ -345,7 +345,7 @@
         width: unset!important;
         left: unset!important;
     }
-    .bg-slider {
+    .recruitment-banner {
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 23.5%;
@@ -369,10 +369,10 @@
                 bottom: 0;
                 right: 0;
                 background: rgba(0, 0, 0, .5);
-                z-index: 1;
+                z-index: 0;
             }
             .swiper-content__desc {
-                z-index: 2;
+                z-index: 1;
                 height: 100%;
                 .title {
                     font-family: $MyriadPro-Bold;
@@ -398,10 +398,14 @@
         }
         .swiper-content-bottom {
             color: $white;
-            position: absolute;
+            position: relative;
             bottom: 0;
             z-index: 2;
-            left: 10%;
+            left: 0;
+            a {
+                color: $white;
+                text-decoration: none;
+            }
         }
     }
 }

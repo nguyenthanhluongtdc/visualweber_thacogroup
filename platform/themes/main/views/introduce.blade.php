@@ -280,8 +280,6 @@
                                     <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
                                     <p><span class="year font24">2002</span></p>
                                 </div>
-                                <hr class="dotted">
-                               
                                <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
                             </div>
                             <div class="top-content">
@@ -415,12 +413,116 @@
             </div> --}}
 
         </div>
-        <div class="develop-wrapper mt-40">
+        <div class="develop-wrapper mt-40 mb-40">
             <div class="develop__title mt-40">
                 <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                 <h2 class="font50 big-title">QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
             </div>
             <div class="develop-banner mt-40" style="background-image:url('{{ Theme::asset()->url('images/introduce/banner-develop.jpg')}}')">
+                <div class="develop-content-wrapper">
+                    <div class="swiper-container mySwiper" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
+                        <div class="swiper-wrapper">   
+                            <div class="swiper-slide">
+                                <p class=" font-40">2014</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class=" font-40">2015</p>
+                            </div>
+                            <div class="swiper-slide">
+                                 <p class=" font-40">2016</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="font-40">2017</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class=" font-40">2018</p>
+                            </div>
+                            <div class="swiper-slide">
+                                 <p class=" font-40">2019</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="font-40">2020</p>
+                           </div>
+                           
+                        </div>
+                                <div class="swiper-pagination"></div>
+                                {{-- <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div> --}}
+                    </div>
+                    <div class="swiper-container  mySwiper2" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
+                        <div class="swiper-wrapper">   
+                            <div class="swiper-slide">
+                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                <div class="content-slider">
+                                    <h3 class="title font30">Nhà máy THACO</h3>
+                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                        Khánh thành nhà máy Bus THACO.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                <div class="content-slider">
+                                    <h3 class="title font30">Nhà máy THACO</h3>
+                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                        Khánh thành nhà máy Bus THACO.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                <div class="content-slider">
+                                    <h3 class="title font30">Nhà máy THACO</h3>
+                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                        Khánh thành nhà máy Bus THACO.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                <div class="content-slider">
+                                    <h3 class="title font30">Nhà máy THACO</h3>
+                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                        Khánh thành nhà máy Bus THACO.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                <div class="content-slider">
+                                    <h3 class="title font30">Nhà máy THACO</h3>
+                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                        Khánh thành nhà máy Bus THACO.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                <div class="content-slider">
+                                    <h3 class="title font30">Nhà máy THACO</h3>
+                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                        Khánh thành nhà máy Bus THACO.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                <div class="content-slider">
+                                    <h3 class="title font30">Nhà máy THACO</h3>
+                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                        Khánh thành nhà máy Bus THACO.</p>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                <div class="content-slider">
+                                    <h3 class="title font30">Nhà máy THACO</h3>
+                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                        Khánh thành nhà máy Bus THACO.</p>
+                                </div>
+                              </div>
+                              
+                        
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        {{-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> --}}
+                    </div>
+                </div>
                 
             </div>
         </div>

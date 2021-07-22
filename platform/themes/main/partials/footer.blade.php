@@ -200,7 +200,48 @@
             prevEl: ".swiper-button-prev",
         },
     });
-              
+
+
+            //         var galleryTop = new Swiper('.swiper-year', {
+            //         direction: 'vertical',
+            //         spaceBetween: 10,
+            //     });
+            // var galleryThumbs = new Swiper('.swiper-content', {
+            //     direction: 'vertical',
+            //     spaceBetween: 10,
+            //     // loop: true, bug too
+            //     centeredSlides: true,
+            //     slidesPerView: 5,
+            //     touchRatio: 0.2,
+            //     slideToClickedSlide: true
+            // });
+            // galleryTop.params.control = galleryThumbs;
+            // galleryThumbs.params.control = galleryTop;
+          
+      var swiper = new Swiper(".mySwiper", {
+        direction: 'vertical',
+	
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        direction: 'vertical',
+        
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+        swiper.params.control =swiper2
+        swiper2.params.control = swiper
+    
         </script>
         
     </body>
