@@ -213,6 +213,18 @@
                         // padding-top: 20px;
                         margin-left: 0;
                         .post-wrapper {
+                            .post-thumbnail {
+                                width: 100%;
+                                height: auto;
+                                overflow: hidden;
+                                img {
+                                    width: 100%;
+                                    transition: transform .3s, visibility .3s ease-in;
+                                    &:hover {
+                                        transform: scale(1.5);
+                                    }
+                                }
+                            }
                             color: $gray_text;
                             text-decoration: none;
                             display: block;
@@ -282,7 +294,7 @@
             .nav-tabs {
                 border: unset;
                 .nav-link {
-                    padding: 0;
+                    padding: 8px;
                     margin: 0;
                     border: unset;
                     &:hover {
@@ -294,15 +306,15 @@
                 }
                 .__tabs__item {
                     margin-right: 20px;
-                    padding: 8px;
                     background-color: #ccc;
                     border-radius: 50%;
                     overflow: hidden;
                 }
                 .nav-link.active {
                     color: unset;
-                    background-color: unset;
+                    background-color: #015BAC;
                     border: unset;
+                    height: 100%;
                 }
                 .nav-link.active~.__tabs__item {
                     background-color: $main_color;
@@ -339,6 +351,8 @@
 }
 
 .recruitment-wrapper {
+    margin-top: 40px;
+    margin-bottom: -40px;
     .swiper-container-horizontal>.swiper-pagination-bullets {
         bottom: 10px;
         right: 40px;
@@ -386,6 +400,11 @@
                 }
             }
             .btn-apply {
+                &:hover {
+                    background-color: #015BAC;
+                    color: $white;
+                    transition: .3 ease-in-out;
+                }
                 padding: 20px 30px;
                 color: $white;
                 border: 1px solid $white;
