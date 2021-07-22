@@ -26,7 +26,7 @@
                 <div class="container-customize ">
                     <ul class="list-item-top">
                         <li class="item-top">
-                            <a href="" class="item-top__link">
+                            <a href="https://tuyendung.thaco.com.vn/tieng-viet" class="item-top__link" target="_self">
                                 Tuyển dụng
                             </a>
                         </li>
@@ -36,12 +36,33 @@
                             </a>
                         </li>
                         <li class="item-top ">
-                            <ul class="language_list">
+                            {{-- <ul class="language_list">
                                 <li class="language-item">
                                     <a href="" class="item-top__link">
                                         Tiếng Việt
                                     </a>
                                     <i class="fas fa-angle-down"></i>
+                                </li><li class="language-item">
+                                    <a href="" class="item-top__link">
+                                        English
+                                    </a>
+                                    <i class="fas fa-angle-down"></i>
+                                </li>
+                            </ul> --}}
+                            <ul class="nav navbar-nav lan-menu">
+                                <li class="dropdown">
+                                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                       
+                                        Tiếng việt  <i class="fas fa-angle-down"></i>
+                                           </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                              <a href="#">
+                                                   Tiếng anh
+                                            </a>
+                                                <!--<a href="https://lecvietnam.com/en/">En</a>-->
+                                            </li>
+                                        </ul>
                                 </li>
                             </ul>
                         </li>

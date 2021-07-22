@@ -33,6 +33,26 @@
             }
             .item-top:last-child {
                 margin-right: 0;
+                .navbar-nav {
+                    .dropdown {
+                        .dropdown-toggle::after {
+                            display: none;
+                        }
+                        a {
+                            color: $gray_text;
+                            text-decoration: none;
+                        }
+                        .dropdown-menu {
+                            // display: none;
+                            background-color: unset;
+                            border: unset;
+                            a {
+                                color: $gray_text;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

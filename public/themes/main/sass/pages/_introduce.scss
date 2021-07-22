@@ -375,13 +375,16 @@
     
     #info_admin_modal {
         .modal-dialog {
-            @media screen and (min-width: 991px) {
-                max-width: 900px;
-            }
             .modal-content {
                 padding: 30px;
                 .modal-body {
-                    overflow-y: scroll;
+                    .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+                        background: white;
+                    }
+                    .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+                        background: rgb(128, 128, 128);
+                    }
+                    overflow-y: hidden;
                     overflow-x: hidden;
                     height: 500px;
                     .info-admin {

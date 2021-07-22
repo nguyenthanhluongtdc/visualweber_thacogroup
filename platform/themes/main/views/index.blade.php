@@ -170,7 +170,7 @@
                 <img src="{{Theme::asset()->url('images/home/thilogi.png')}}" alt="">
                 <img src="{{Theme::asset()->url('images/home/thadico.png')}}" alt="">
                 <img src="{{Theme::asset()->url('images/home/thacoauto.png')}}" alt="">
-                <img src="{{Theme::asset()->url('images/home/thagrico.png')}}" alt="">
+                <img src="{{Theme::asset()->url('images/home/thagrico-1.png')}}" alt="">
                 <img src="{{Theme::asset()->url('images/home/thiso.png')}}" alt="">
             
         </div>

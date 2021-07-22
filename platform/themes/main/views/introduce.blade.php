@@ -432,7 +432,7 @@
 <div class="modal fade" id="info_admin_modal" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-body p-0">
+            <div class="modal-body mCustomScrollbar p-0" data-mcs-theme="dark">
                 
                 <div class="row mr-md-0">
                    

@@ -18,5 +18,9 @@
     }
     .social-item {
         margin-bottom: 20px;
+        &:hover a img {
+            -webkit-filter: none;
+            filter: none;
+        }
     }
 }
