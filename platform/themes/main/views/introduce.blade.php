@@ -280,14 +280,14 @@
                                     <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
                                     <p><span class="year font24">2002</span></p>
                                 </div>
-                               <p class="desc font18 text-justify">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
+                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
                             </div>
                             <div class="top-content">
                                 <div class="img-content">
                                 <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
                                 <p><span class="year font24">2012</span></p>
                                 </div>
-                               <p class="desc font18 text-justify">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
+                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
                             </div>
                             
                             <div class="top-content">
@@ -295,7 +295,7 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
                                <p><span class="year font24">2017</span></p>
                                 </div>
-                               <p class="desc font18 text-justify">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
+                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
                             </div>
                         </div>
                         <div class="bottom">
@@ -306,14 +306,14 @@
                                 </div>
                                
                                
-                               <p class="desc font18 text-justify">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                               <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
                             </div>
                             <div class="bottom-content">
                                 <div class="img-content">
                                 <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
                                 <p><span class="year font24">Từ 2012-2015</span></p>
                                 </div>
-                                <p class="desc font18 text-justify">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                                <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
                             </div>
                             <div class="bottom-content">
                                 <div class="img-content">
@@ -327,14 +327,14 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/th-qg.png') }}" alt="">
                                 <p><span class="year font24">Từ 2012 – 2020</span></p>
                                 </div>
-                               <p class="desc font18 text-justify">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
+                               <p class="desc font18">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
                             </div>
                             <div class="bottom-content">
                                 <div class="img-content">
                                 <img src="{{ Theme::asset()->url('images/introduce/dn-thue.png') }}" alt="">
                                <p><span class="year font24">2020</span></p>
                                 </div>
-                               <p class="desc font18 text-justify">Được Tổng Cục Thuế Tuyên dương <strong class="font-myria-bold">Doanh nghiệp nộp thuế tiêu biểu</strong>.</p>
+                               <p class="desc font18">Được Tổng Cục Thuế Tuyên dương <strong class="font-myria-bold">Doanh nghiệp nộp thuế tiêu biểu</strong>.</p>
                             </div>
                         </div>
                     </div>
@@ -455,7 +455,7 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
                                 <div class="content-slider">
                                     <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
                                         Khánh thành nhà máy Bus THACO.</p>
                                 </div>
                               </div>
@@ -463,7 +463,7 @@
                                 <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
                                 <div class="content-slider">
                                     <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
                                         Khánh thành nhà máy Bus THACO.</p>
                                 </div>
                               </div>

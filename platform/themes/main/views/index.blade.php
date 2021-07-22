@@ -9,7 +9,7 @@
                     <h2 class="font30 title-post">
                     THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
                     </h2>
-                    <div class="description">
+                    <div class="description text-justify">
                     <p class=" font18">
                         Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
                         </p>
