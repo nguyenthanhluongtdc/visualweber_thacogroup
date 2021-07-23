@@ -211,7 +211,7 @@
                     </div>
                     <div class="admin-top-item">
                         <img src="{{ Theme::asset()->url('images/introduce/lts.jpg') }}" alt="">
-                        <p class="name">Ông <strong>Trần Bá Dương</strong></p>
+                        <p class="name">Ông <strong>Lê Trọng Sánh</strong></p>
                         <p class="postion">Thành viên</p>
                     </div>
                 </div>
