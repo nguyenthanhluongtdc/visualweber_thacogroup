@@ -82,7 +82,7 @@
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item nav-link  dropdown dmenu">
                                 <a href="/gioi-thieu" data-toggle="dropdown">GIỚI THIỆU</a>
-                                <div class="dropdown-menu sm-menu" style="display:none">
+                                {{-- <div class="dropdown-menu sm-menu" style="display:none">
                                     <div class="cmenu">
                                         <a href="" class="dropdown-item">
                                             Về thaco
@@ -93,7 +93,7 @@
                                             Văn hóa Thaco
                                         </a>
                                     </div>
-                                </div>
+                                </div> --}}
                             </li>
                             <li class="nav-item nav-link ">
                                 <a href="/linh-vuc-hoat-dong">LĨNH VỰC HOẠT ĐỘNG</a>
