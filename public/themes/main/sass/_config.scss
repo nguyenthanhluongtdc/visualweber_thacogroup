@@ -70,13 +70,12 @@ body {
     color: #fff;
 }
 
-.page-content {
-    padding-top: 104px;
-    @media screen and (max-width: 1680px) {
-        padding-top: 86px;
-    }
-}
-
+// .page-content {
+//     padding-top: 104px;
+//     @media screen and (max-width: 1680px) {
+//         padding-top: 86px;
+//     }
+// }
 .h-45vw {
     height: 45vw !important;
     object-fit: cover !important;

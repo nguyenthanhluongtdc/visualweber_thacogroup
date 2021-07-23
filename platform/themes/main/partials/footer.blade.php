@@ -243,6 +243,28 @@
         swiper2.params.control = swiper
     
         </script>
+        <script>
+                 if($('#header').length>0){
+                            var btn = $('#header');
+                            var headerTop=$('#header-top');
+                            var boderTop=$('#boder-top');
+                            $(window).scroll(function() {
+                            if ($(window).scrollTop() > 10) {
+                                btn.addClass('add-bg-color');
+                                headerTop.addClass('add-bg-top');
+                                boderTop.addClass('add-color-boder');
+                            } else {
+                                btn.removeClass('add-bg-color');
+                                headerTop.removeClass('add-bg-top');
+                                boderTop.removeClass('add-color-boder');
+                            }
+                            });
+                            // btn.on('click', function(e) {
+                            // e.preventDefault();
+                            // $('html, body').animate({scrollTop:0}, '300');
+                            // });
+                        }
+        </script>
         
     </body>
 </html>

@@ -1,16 +1,35 @@
+.add-bg-color {
+    background-color: $white !important;
+    box-shadow: 0 0 2px 2px #ccc;
+    top: 0!important;
+    transition: all .5s ease;
+    animation: smoothScroll 1s forwards;
+}
+
+.add-bg-top {
+    background-color: #F6F6F7 !important;
+    transition: all .5s ease;
+}
+
+.add-color-boder {
+    opacity: 1!important;
+    visibility: visible!important;
+    transition: all .5s ease;
+}
+
 .header {
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 100;
-    background-color: #fff;
-    box-shadow: 0 0 2px 2px #ccc;
+    background: transparent;
+    // box-shadow: 0 0 2px 2px #ccc;
     .header-top {
         position: relative;
-        background-color: $bg-gray;
+        background-color: transparent;
         height: 42px;
         .boder-header {
-            border: 20px solid #fff;
+            border: 20px solid $white;
             bottom: 0;
             position: absolute;
             content: "";
@@ -19,6 +38,8 @@
             width: 27%;
             z-index: 1;
             border-right-color: transparent;
+            opacity: 0;
+            visibility: hidden;
         }
         .list-item-top {
             display: flex;
@@ -83,6 +104,30 @@
             .nav-item:last-child a {
                 color: $blue_button;
                 font-family: unset;
+            }
+            .dropdown {
+                &:hover .dropdown-menu {
+                    display: block!important;
+                }
+                &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: -10px;
+                    height: 10px;
+                    background: transparent;
+                    width: 100%;
+                    left: 0;
+                }
+                .dropdown-menu {
+                    left: -30px;
+                    .dropdown-item {
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        padding: 15px 30px;
+                        color: unset;
+                        font-family: unset;
+                    }
+                }
             }
         }
     }

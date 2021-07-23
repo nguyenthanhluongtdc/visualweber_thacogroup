@@ -20,9 +20,9 @@
     </head>
     <body @if (BaseHelper::siteLanguageDirection() == 'rtl') dir="rtl" @endif>
         {!! apply_filters(THEME_FRONT_BODY, null) !!}
-        <header class="header">
-            <div class="header-top">
-                <div class="boder-header"></div>
+        <header class="header" id="header">
+            <div class="header-top" id="header-top">
+                <div class="boder-header" id="boder-top"></div>
                 <div class="container-customize ">
                     <ul class="list-item-top">
                         <li class="item-top">
@@ -80,11 +80,23 @@
                     </button>
                     <div class="collapse navbar-collapse " id="navbarTogglerDemo">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item nav-link ">
-                                <a href="/gioi-thieu">GIỚI THIỆU</a>
+                            <li class="nav-item nav-link  dropdown dmenu">
+                                <a href="/gioi-thieu" data-toggle="dropdown">GIỚI THIỆU</a>
+                                <div class="dropdown-menu sm-menu" style="display:none">
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Về thaco
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Văn hóa Thaco
+                                        </a>
+                                    </div>
+                                </div>
                             </li>
                             <li class="nav-item nav-link ">
-                                <a href="/linh-vuc-hoat-dong">LĨNH VỰC HOẠT ĐỘNG    </a>
+                                <a href="/linh-vuc-hoat-dong">LĨNH VỰC HOẠT ĐỘNG</a>
                             </li>
                             <li class="nav-item nav-link ">
                                 <a href="/quan-he-co-dong">QUAN HỆ CỔ ĐÔNG</a>
