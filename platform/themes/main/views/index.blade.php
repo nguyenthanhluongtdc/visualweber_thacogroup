@@ -2,7 +2,7 @@
  <div class="swiper-container main-slider" style="--swiper-navigation-color:#000; --swiper-pagination-color:#000;">
     <div class="swiper-wrapper">   
         <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  h-45vw w-100">
+            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider h-100vh w-100">
             <div class="fade"></div>
             <div class="bg-post">
                 <div class="content">
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  w-100  h-45vw ">
+            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  w-100 h-100vh">
             <div class="fade"></div>
             <div class="bg-post">
                 <div class="content">
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  w-100 h-45vw ">
+            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  w-100 h-100vh ">
             <div class="fade"></div>
             <div class="bg-post">
                 <div class="content">
