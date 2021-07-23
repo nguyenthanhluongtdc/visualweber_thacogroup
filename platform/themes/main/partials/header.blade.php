@@ -81,7 +81,7 @@
                     <div class="collapse navbar-collapse " id="navbarTogglerDemo">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item nav-link  dropdown dmenu">
-                                <a href="/gioi-thieu" data-toggle="dropdown">GIỚI THIỆU</a>
+                                <a href="/gioi-thieu">GIỚI THIỆU</a> 
                                 {{-- <div class="dropdown-menu sm-menu" style="display:none">
                                     <div class="cmenu">
                                         <a href="" class="dropdown-item">
