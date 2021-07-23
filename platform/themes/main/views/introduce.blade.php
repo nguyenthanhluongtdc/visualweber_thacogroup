@@ -171,7 +171,7 @@
                     <div class="admin-top-item " data-target="#info_admin_modal" data-toggle="modal">
                         <img src="{{ Theme::asset()->url('images/introduce/tbd.jpg') }}" alt="">
                         <p class="name">Ông <strong>Trần Bá Dương</strong></p>  
-                        <p class="postion">Chủ tịch Hội Đồng Quản Trị</p>
+                        <p class="postion">Chủ tịch HĐQT</p>
                     </div>
                 </div>
                 
@@ -179,12 +179,12 @@
                     <div class="admin-top-item">
                         <img src="{{ Theme::asset()->url('images/introduce/nhm.jpg') }}" alt="">
                         <p class="name">Ông <strong> Nguyễn Hùng Minh</strong></p>
-                        <p class="postion">Phó Chủ tịch thường trực Hội Đồng Quản Trị</p>
+                        <p class="postion">Phó Chủ tịch TT HĐQT</p>
                     </div>
                     <div class="admin-top-item">
                         <img src="{{ Theme::asset()->url('images/introduce/kim-teck.jpg') }}" alt="">
                         <p class="name">Ông <strong>Cheah Kim Teck</strong></p>
-                        <p class="postion">Phó Chủ tịch Hội Đồng Quản Trị</p>
+                        <p class="postion">Phó Chủ tịch HĐQT</p>
                     </div>
                     
                 </div>
