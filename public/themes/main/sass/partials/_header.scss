@@ -48,7 +48,7 @@
             .item-top {
                 margin-right: 70px;
                 &__link {
-                    color: $gray_text;
+                    color: $white;
                     text-decoration: none;
                 }
             }
@@ -60,7 +60,7 @@
                             display: none;
                         }
                         a {
-                            color: $gray_text;
+                            color: $white;
                             text-decoration: none;
                         }
                         .dropdown-menu {
@@ -79,11 +79,18 @@
     }
     .navbar {
         padding: unset;
-        .logo_link {
+        .logo_link-white {
             position: relative;
             top: -10px;
             padding: 16px 0;
             margin: 0;
+        }
+        .logo_link-blue {
+            position: relative;
+            top: -10px;
+            padding: 16px 0;
+            margin: 0;
+            display: none;
         }
         .navbar-nav {
             display: flex;
@@ -93,7 +100,7 @@
             .nav-item {
                 padding: 19px 0;
                 a {
-                    color: $gray_text;
+                    color: $white;
                     font-family: $MyriadPro-Bold;
                     text-decoration: none;
                 }
@@ -102,7 +109,7 @@
                 margin-left: 11%;
             }
             .nav-item:last-child a {
-                color: $blue_button;
+                color: $blue_button!important;
                 font-family: unset;
             }
             .dropdown {

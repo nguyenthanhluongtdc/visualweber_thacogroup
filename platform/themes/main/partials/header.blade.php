@@ -36,22 +36,10 @@
                             </a>
                         </li>
                         <li class="item-top ">
-                            {{-- <ul class="language_list">
-                                <li class="language-item">
-                                    <a href="" class="item-top__link">
-                                        Tiếng Việt
-                                    </a>
-                                    <i class="fas fa-angle-down"></i>
-                                </li><li class="language-item">
-                                    <a href="" class="item-top__link">
-                                        English
-                                    </a>
-                                    <i class="fas fa-angle-down"></i>
-                                </li>
-                            </ul> --}}
+            
                             <ul class="nav navbar-nav lan-menu">
                                 <li class="dropdown">
-                                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                        <a href="javascript:;" class="dropdown-toggle item-top__link" data-toggle="dropdown" role="button">
                                        
                                         Tiếng việt  <i class="fas fa-angle-down"></i>
                                            </a>
@@ -72,9 +60,13 @@
             </div>
             <div class="container-customize ">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="logo_link" href="/">
+                    <a class="logo_link-white" href="/">
+                        <img src="{{Theme::asset()->url('images/home/logo-white.png')}}" alt="">
+                    </a>
+                    <a class="logo_link-blue" href="/" >
                         <img src="{{Theme::asset()->url('images/home/logo.png')}}" alt="">
                     </a>
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
                     </button>
@@ -117,4 +109,4 @@
             
         </header>
         @includeIf("theme.main::views.sidebar")
-        <a id="button-top" class="show-button-top"></a>
+        <a id="button-top" class=""></a>

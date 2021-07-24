@@ -276,26 +276,6 @@
 </div>
 <div class="transport-wrapper mt-80">
     <div class="transport-banner">
-        {{-- <div class="list-transport">
-            <a href="icon-field-activity">
-                <img src="{{Theme::asset()->url('images/home/1.png') }}" alt="">
-            </a>
-            <a href="icon-field-activity">
-                <img src="{{Theme::asset()->url('images/home/2.png') }}" alt="">
-            </a>
-            <a href="icon-field-activity">
-                <img src="{{Theme::asset()->url('images/home/3.png') }}" alt="">
-            </a>
-            <a href="icon-field-activity">
-                <img src="{{Theme::asset()->url('images/home/4.png') }}" alt="">
-            </a>
-            <a href="icon-field-activity">
-                <img src="{{Theme::asset()->url('images/home/5.png') }}" alt="">
-            </a>
-            <a href="icon-field-activity">
-                <img src="{{Theme::asset()->url('images/home/6.png') }}" alt="">
-            </a>    
-        </div> --}}
         <div class="field-activity__tabs">
             <ul class=" nav nav-tabs mb-0" id="tab-field-activity" role="tablist">
                 <li class="__tabs__item " role="field-activity">
@@ -449,8 +429,6 @@
                             <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
                       </div>
                     </div>
-                   
-        
                 </div>
             </div>
         </div>
@@ -467,7 +445,7 @@
             <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
             </div>
         </div>
-        <div class="swiper-container mySwiper-home" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
+        <div class="swiper-container recruitment-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
             <div class="swiper-wrapper">   
                 <div class="swiper-slide" >
                         <div class="container-customize">
@@ -497,46 +475,6 @@
                     </div>
                 
             </div>
-                {{-- <div class="swiper-slide" >
-                    <div class="bg-slider" style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})" >
-                        <div class="container-customize">
-                            <div class="swiper-content">
-                                <div class="swiper-content__desc">
-                                <h3 class="title font28">Tuyển dụng</h3>
-                                <p class="description font24">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel fac
-                                </p>
-                                <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
-                                </div>
-                            </div>
-                            <div class="swiper-content-bottom">
-                                <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide" >
-                    <div class="bg-slider" style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})" >
-                        <div class="container-customize">
-                            <div class="swiper-content">
-                                <div class="swiper-content__desc">
-                                <h3 class="title font28">Tuyển dụng</h3>
-                                <p class="description font24">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel fac
-                                </p>
-                                <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
-                                </div>
-                            </div>
-                            <div class="swiper-content-bottom">
-                                <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div> --}}
                
             </div>
             <div class="swiper-pagination"></div>

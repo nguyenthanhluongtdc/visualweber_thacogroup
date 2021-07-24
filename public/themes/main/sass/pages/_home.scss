@@ -43,7 +43,7 @@
                 margin-bottom: 40px;
             }
             a {
-                padding: 4px 14px;
+                padding: 7px 21px;
                 color: $white;
                 border: 1px solid #fff;
                 text-decoration: none;
@@ -141,7 +141,8 @@
         position: relative;
         .logo-partner {
             img {
-                height: 106px;
+                max-width: 100%;
+                object-fit: cover;
             }
             display: inline-flex;
             position: absolute;
@@ -436,7 +437,7 @@
     border-radius: 50%;
     border: 3px solid #fff;
     position: fixed;
-    bottom: 97px;
+    bottom: 50px;
     right: 33px;
     transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
