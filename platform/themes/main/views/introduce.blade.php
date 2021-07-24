@@ -411,125 +411,232 @@
                     </div>
                     
             </div> --}}
-
         </div>
+
         <div class="develop-wrapper mt-40 mb-40">
             <div class="develop__title mt-40">
                 <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                 <h2 class="font50 big-title">QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
             </div>
-            <div class="develop-banner mt-40" style="background-image:url('{{ Theme::asset()->url('images/introduce/banner-develop.jpg')}}')">
-                <div class="develop-content-wrapper">
-                    <div class="swiper-container mySwiper" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-                        <div class="swiper-wrapper">   
-                            <div class="swiper-slide">
-                                <p class=" font-40">2014</p>
+                <div class="develop-banner mt-40 lazyloaded " style="background-image:url('{{ Theme::asset()->url('images/introduce/banner-develop.jpg')}}')">
+                    <div class="develop-content-wrapper">
+                        <div class="develop-content__slider">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="cycle-list-wrap">
+                                        <ul class="slider slider-nav thumb-year">
+                                            <li class="font30 item-slider">
+                                                2014
+                                            </li>
+                                            <li class="font30 item-slider">
+                                                2015
+                                            </li>
+                                            <li class="font30 item-slider">
+                                               2016
+                                            </li>
+                                            <li class="font30 item-slider">
+                                                2017
+                                            </li>
+                                            <li class="font30 item-slider">
+                                                2018
+                                            </li>
+                                            <li class="font30 item-slider">
+                                                2019
+                                            </li>
+                                            <li class="font30 item-slider">
+                                                2020
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="thumb-wrapper">
+                                        <div class="slider slider-for">
+                                            <div class="thumbnail-image">
+                                                <div class="image-slider">
+                                                    
+                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                </div>
+                                                    <div class="content-slider">
+                                                        <h3 class="title font30">Nhà máy THACO</h3>
+                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO.</p>
+                                                    </div>
+                                            </div>
+                                            <div class="thumbnail-image">
+                                                <div class="image-slider">
+                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                   
+                                                </div>
+                                                    <div class="content-slider">
+                                                        <h3 class="title font30">Nhà máy THACO</h3>
+                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO.</p>
+                                                    </div>
+                                            </div>
+                                            <div class="thumbnail-image">
+                                                <div class="image-slider">
+                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                </div>
+                                                    <div class="content-slider">
+                                                        <h3 class="title font30">Nhà máy THACO</h3>
+                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO.</p>
+                                                    </div>
+                                            </div>
+                                            <div class="thumbnail-image">
+                                                <div class="image-slider">
+                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                   
+                                                </div>
+                                                    <div class="content-slider">
+                                                        <h3 class="title font30">Nhà máy THACO</h3>
+                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO.</p>
+                                                    </div>
+                                            </div>
+                                            <div class="thumbnail-image">
+                                                <div class="image-slider">
+                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                </div>
+                                                    <div class="content-slider">
+                                                        <h3 class="title font30">Nhà máy THACO</h3>
+                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO.</p>
+                                                    </div>
+                                            </div>
+                                            <div class="thumbnail-image">
+                                                <div class="image-slider">
+                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                    
+                                                </div>
+                                                    <div class="content-slider">
+                                                        <h3 class="title font30">Nhà máy THACO</h3>
+                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO.</p>
+                                                    </div>
+                                            </div>
+                                            <div class="thumbnail-image">
+                                                <div class="image-slider">
+                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                </div>
+                                                    <div class="content-slider">
+                                                        <h3 class="title font30">Nhà máy THACO</h3>
+                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO.</p>
+                                                    </div>
+                                            </div>
+                                            
+                                           
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <p class=" font-40">2015</p>
-                            </div>
-                            <div class="swiper-slide">
-                                 <p class=" font-40">2016</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p class="font-40">2017</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p class=" font-40">2018</p>
-                            </div>
-                            <div class="swiper-slide">
-                                 <p class=" font-40">2019</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <p class="font-40">2020</p>
-                           </div>
-                           
                         </div>
-                                <div class="swiper-pagination"></div>
-                                {{-- <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div> --}}
-                    </div>
-                    <div class="swiper-container  mySwiper2" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-                        <div class="swiper-wrapper">   
-                            <div class="swiper-slide">
-                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                <div class="content-slider">
-                                    <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                        Khánh thành nhà máy Bus THACO.</p>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                <div class="content-slider">
-                                    <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                        Khánh thành nhà máy Bus THACO.</p>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                <div class="content-slider">
-                                    <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                        Khánh thành nhà máy Bus THACO.</p>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                <div class="content-slider">
-                                    <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                        Khánh thành nhà máy Bus THACO.</p>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                <div class="content-slider">
-                                    <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                        Khánh thành nhà máy Bus THACO.</p>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                <div class="content-slider">
-                                    <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                        Khánh thành nhà máy Bus THACO.</p>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                <div class="content-slider">
-                                    <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                        Khánh thành nhà máy Bus THACO.</p>
-                                </div>
-                              </div>
-                              <div class="swiper-slide">
-                                <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                <div class="content-slider">
-                                    <h3 class="title font30">Nhà máy THACO</h3>
-                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                        Khánh thành nhà máy Bus THACO.</p>
-                                </div>
-                              </div>
-                              
-                        
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        {{-- <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div> --}}
                     </div>
                 </div>
-                
-            </div>
+
+
         </div>
+        
     </div>
     
     
 </section>
+{{-- <section class="banner-section">
+    <div class="container">
+        <div class="vehicle-detail-banner banner-content clearfix">
+            <div class="banner-slider">
+                <div class="slider slider-for">
+                    <div class="slider-banner-image">
+                        <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Car-Image">
+                    </div> 
+                    <div class="slider-banner-image">
+                        <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Car-Image">
+                    </div> 
+                    <div class="slider-banner-image">
+                        <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="Car-Image">
+                    </div> 
+                     <div class="slider-banner-image">
+                        <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Car-Image">
+                    </div> 
+                    <div class="slider-banner-image">
+                        <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Car-Image">
+                    </div> 
+                    <div class="slider-banner-image">
+                        <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="Car-Image">
+                    </div> 
+                     <div class="slider-banner-image">
+                        <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Car-Image">
+                    </div> 
+                    <div class="slider-banner-image">
+                        <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Car-Image">
+                    </div> 
+                    <div class="slider-banner-image">
+                        <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="Car-Image">
+                    </div> 
+                </div>
+                <div class="slider slider-nav thumb-image">
+                    <div class="thumbnail-image">
+                        <div class="thumbImg">
+                            <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="slider-img">
+                        </div>
+                        <span>White Pearl Crystal Shine1</span>
+                    </div>
+                    <div class="thumbnail-image">
+                        <div class="thumbImg">
+                            <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="slider-img">
+                        </div>
+                        <span>White Pearl Crystal Shine2</span>
+                    </div>
+                    <div class="thumbnail-image">
+                        <div class="thumbImg">
+                            <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="slider-img">
+                        </div>
+                        <span>White Pearl Crystal Shine3</span>
+                    </div>
+                      <div class="thumbnail-image">
+                        <div class="thumbImg">
+                            <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="slider-img">
+                        </div>
+                        <span>White Pearl Crystal Shine1</span>
+                    </div>
+                    <div class="thumbnail-image">
+                        <div class="thumbImg">
+                            <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="slider-img">
+                        </div>
+                        <span>White Pearl Crystal Shine2</span>
+                    </div>
+                    <div class="thumbnail-image">
+                        <div class="thumbImg">
+                            <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="slider-img">
+                        </div>
+                        <span>White Pearl Crystal Shine3</span>
+                    </div>
+                      <div class="thumbnail-image">
+                        <div class="thumbImg">
+                            <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="slider-img">
+                        </div>
+                        <span>White Pearl Crystal Shine1</span>
+                    </div>
+                    <div class="thumbnail-image">
+                        <div class="thumbImg">
+                            <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="slider-img">
+                        </div>
+                        <span>White Pearl Crystal Shine2</span>
+                    </div>
+                    <div class="thumbnail-image">
+                        <div class="thumbImg">
+                            <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="slider-img">
+                        </div>
+                        <span>White Pearl Crystal Shine3</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section> --}}
 
 <div class="modal fade" id="info_admin_modal" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

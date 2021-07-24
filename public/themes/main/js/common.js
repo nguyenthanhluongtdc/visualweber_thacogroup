@@ -2,25 +2,21 @@ $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    // autoplay: true,
     fade: true,
     asNavFor: '.slider-nav',
-
-    prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>',
-    nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>',
 });
 $('.slider-nav').slick({
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
+    arrows: false,
     vertical: true,
-    // autoplaySpeed: 3e3,
     autoplay: true,
     asNavFor: '.slider-for',
     dots: false,
     focusOnSelect: true,
     verticalSwiping: true,
-    infinite: true,
+
     responsive: [{
             breakpoint: 992,
             settings: {
