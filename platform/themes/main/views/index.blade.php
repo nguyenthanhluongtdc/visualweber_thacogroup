@@ -185,11 +185,11 @@
     <div class="partner-banner" style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url({{Theme::asset()->url('images/home/banner-partner.jpg') }})">
         <div class="container-customize logo-partner">
             
-                <img src="{{Theme::asset()->url('images/home/thilogi.png')}}" alt="">
-                <img src="{{Theme::asset()->url('images/home/thadico.png')}}" alt="">
-                <img src="{{Theme::asset()->url('images/home/thacoauto.png')}}" alt="">
-                <img src="{{Theme::asset()->url('images/home/thagrico-1.png')}}" alt="">
-                <img src="{{Theme::asset()->url('images/home/thiso.png')}}" alt="">
+                <img src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
+                <img src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
+                <img src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
+                <img src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
+                <img src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
             
         </div>
     </div>
