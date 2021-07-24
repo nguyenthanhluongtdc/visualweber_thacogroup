@@ -55,491 +55,508 @@
                  Sau 22 năm hình thành và phát triển, THACO đã trở thành Tập đoàn công nghiệp đa ngành, trong đó Cơ khí và Ô tô là chủ lực, đồng thời phát triển các lĩnh vực sản xuất kinh doanh bổ trợ cho nhau, tạo ra giá trị cộng hưởng và nâng cao năng lực cạnh tranh, bao gồm: Nông nghiệp; Đầu tư xây dựng; Logistics và Thương mại & Dịch vụ.
                 </p>
             </div>
-            <div class="field-activity-about-us mt-40">
-                <div class="field-activity">
-                    <div class="field-activity__content">
-                        <div class="field-activity__item">
-                            <img class="" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
-                            <div class="content-title">
-                                <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
-                                <div class="content-none">
-                                    <ul class="list-item">
-                                        <li class="item-activity font18">
-                                            Ô tô
-                                        </li>
-                                        <li class="item-activity font18">
-                                            Linh kiện phụ tùng
-                                        </li>
-                                        <li class="item-activity font18">Cơ khí</li>
-                                    </ul>
-                                    <a href="" class="font18">Xem thêm</a>
-                                </div>
-                            </div>
-            
-                        </div>
-                        <div class="field-activity__item">
-                            <img src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
-                            <div class="content-title">
-                                <h4 class="title font40">NÔNG NGHIỆP</h4>
-                                <div class="content-none">
-                                    <ul class="list-item">
-                                        <li class="item-activity font18">
-                                            Ô tô
-                                        </li>
-                                        <li class="item-activity font18">
-                                            Linh kiện phụ tùng
-                                        </li>
-                                        <li class="item-activity font18">Cơ khí</li>
-                                    </ul>
-                                    <a href="" class="font18">Xem thêm</a>
-                                </div>
-                            </div>
-            
-                        </div>
-                        <div class="field-activity__item">
-                            <img src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
-                            <div class="content-title">
-                                <h4 class="title font40">LOGICSTICS</h4>
-                                <div class="content-none">
-                                    <ul class="list-item">
-                                        <li class="item-activity font18">
-                                            Ô tô
-                                        </li>
-                                        <li class="item-activity font18">
-                                            Linh kiện phụ tùng
-                                        </li>
-                                        <li class="item-activity font18">Cơ khí</li>
-                                    </ul>
-                                    <a href="" class="font18">Xem thêm</a>
-                                </div>
-                            </div>
-            
-                        </div>
-                        <div class="field-activity__item">
-                            <img src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
-                            <div class="content-title">
-                                <h4 class="title font40">ĐẦU TƯ - XÂY DỰNG</h4>
-                                <div class="content-none">
-                                    <ul class="list-item">
-                                        <li class="item-activity font18">
-                                            Ô tô
-                                        </li>
-                                        <li class="item-activity font18">
-                                            Linh kiện phụ tùng
-                                        </li>
-                                        <li class="item-activity font18">Cơ khí</li>
-                                    </ul>
-                                    <a href="" class="font18">Xem thêm</a>
-                                </div>
-                            </div>
-            
-                        </div>
-                        <div class="field-activity__item">
-                            <img src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
-                            <div class="content-title">
-                                <h4 class="title font40">THƯƠNG MẠI - DỊCH VỤ</h4>
-                                <div class="content-none">
-                                    <ul class="list-item">
-                                        <li class="item-activity font18">
-                                            Ô tô
-                                        </li>
-                                        <li class="item-activity font18">
-                                            Linh kiện phụ tùng
-                                        </li>
-                                        <li class="item-activity font18">Cơ khí</li>
-                                    </ul>
-                                    <a href="" class="read-more">Xem thêm</a>
-                                </div>
-                            </div>
-            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      
-        <div class="leader-of-us-wrapper mt-40">
-            <div class="leader-of-us__title mt-40">
-                <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
-                <h2 class="font50 big-title">Ban lãnh đạo</h2>
-            </div>
-            <div class="title-admin-top">
-                <h3 class="title-admin">HỘI ĐỒNG QUẢN TRỊ THACO</h3>
-            </div>
-            <div class="admin-top-content">
-                <div class="row-1">
-                    <div class="admin-top-item " data-target="#info_admin_modal" data-toggle="modal">
-                        <img src="{{ Theme::asset()->url('images/introduce/tbd.jpg') }}" alt="">
-                        <p class="name">Ông <strong>Trần Bá Dương</strong></p>  
-                        <p class="postion">Chủ tịch HĐQT</p>
-                    </div>
-                </div>
-                
-                <div class="row-2">
-                    <div class="admin-top-item">
-                        <img src="{{ Theme::asset()->url('images/introduce/nhm.jpg') }}" alt="">
-                        <p class="name">Ông <strong> Nguyễn Hùng Minh</strong></p>
-                        <p class="postion">Phó Chủ tịch TT HĐQT</p>
-                    </div>
-                    <div class="admin-top-item">
-                        <img src="{{ Theme::asset()->url('images/introduce/kim-teck.jpg') }}" alt="">
-                        <p class="name">Ông <strong>Cheah Kim Teck</strong></p>
-                        <p class="postion">Phó Chủ tịch HĐQT</p>
-                    </div>
-                    
-                </div>
-                <div class="row-3">
-                    <div class="admin-top-item">
-                        <img src="{{ Theme::asset()->url('images/introduce/vdh.jpg') }}" alt="">
-                        <p class="name">Bà <strong> Viên Diệu Hoa</strong></p>
-                        <p class="postion">Thành viên</p>
-                    </div>
-                    <div class="admin-top-item">
-                        <img src="{{ Theme::asset()->url('images/introduce/pvt.jpg') }}" alt="">
-                        <p class="name">Ông <strong>Phạm Văn Tài</strong></p>
-                        <p class="postion">Thành viên</p>
-                    </div>
-                    <div class="admin-top-item">
-                        <img src="{{ Theme::asset()->url('images/introduce/setephen.jpg') }}" alt="">
-                        <p class="name">Ông <strong> Stephen Patrick Gore</strong></p>
-                        <p class="postion">Thành viên</p>
-                    </div>
-                    <div class="admin-top-item">
-                        <img src="{{ Theme::asset()->url('images/introduce/nqb.jpg') }}" alt="">
-                        <p class="name">Ông <strong>Nguyễn Quang Bảo</strong></p>
-                        <p class="postion">Thành viên</p>
-                    </div>
-                    <div class="admin-top-item">
-                        <img src="{{ Theme::asset()->url('images/introduce/lts.jpg') }}" alt="">
-                        <p class="name">Ông <strong>Lê Trọng Sánh</strong></p>
-                        <p class="postion">Thành viên</p>
-                    </div>
-                </div>
-               
-                
-            </div>
-            <div class="title-admin-bottom">
-                <h3 class="title-admin">Ban kiểm soát</h3>
-            </div>
-            <div class="admin-bottom-content">
-                <div class="bottom-content">
-                    <div class="admin-bottom-item">
-                        <img src="{{ Theme::asset()->url('images/introduce/npt.jpg') }}" alt="">
-                        <p class="name">Ông <strong>Nguyễn Phúc Thịnh</strong></p>  
-                        <p class="postion">Trưởng ban</p>
-                    </div>
-                    <div class="admin-bottom-item">
-                        <img src="{{ Theme::asset()->url('images/introduce/dct.jpg') }}" alt="">
-                        <p class="name">Ông <strong> Đặng Công Trực</strong></p>  
-                        <p class="postion">Thành viên</p>
-                    </div>
-                    <div class="admin-bottom-item">
-                        <img src="{{ Theme::asset()->url('images/introduce/bmk.jpg') }}" alt="">
-                        <p class="name">Ông <strong>Bùi Minh Khoa</strong></p>  
-                        <p class="postion">Thành viên</p>
-                    </div>
-                </div>
-                
-             
-                
-                
-            </div>
-        </div>
-        <div class="achievement-wrapper mt-40">
-            <div class="achievement-tab-title">
-                <div class="achievement__title mt-40">
-                    <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
-                    <h2 class="font50 big-title">Thành tựu</h2>
-                </div>
-                <div class="achievement__tabs">
-                    <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
-                        <li class="__tabs__item " role="achievement">
-                            <a class="__tabs__link nav-link active" id="achievement-company-tab" data-toggle="tab" role="tab" aria-controls="achievement-company" aria-selected="true" href="#achievement-company" title="Tất Cả">
-                                THÀNH TỰU CỦA CÔNG TY
-                            </a>
-                        </li>
-                        <li class="__tabs__item" role="achievement">
-                            <a class="__tabs__link nav-link" id="achievement-leader-tab" data-toggle="tab" role="tab" aria-controls="achievement-leader" aria-selected="true" href="#achievement-leader" title="Tất Cả">
-                                THÀNH TỰU CỦA CHỦ TỊCH         
-                            </a>
-                        </li>
-                        
-                    </ul>
-                   
-                </div>
-            </div>
-            
-            <div class="tab-pane fade active show" id="achievement-company" role="tabpanel" aria-labelledby="field-1-tab">
-                    <div class="content-tab">
-                        <p class="content-title font18 mt-40 text-justify">
-                            Từ lúc thành lập tới nay, Thaco đã vinh dự nhận được nhiều bằng khen, giải thưởng các cấp vinh danh những đóng góp và thành tích của công ty trong hoạt động sản xuất kinh doanh, hoạt động cộng đồng xã hội và sự nghiệp xây dựng, bảo vệ Tổ quốc:
-                        </p>
-                        <div class="top">
-                            <div class="top-content">
-                                <div class="img-content">
-                                    <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
-                                    <p><span class="year font24">2002</span></p>
-                                </div>
-                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
-                            </div>
-                            <div class="top-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
-                                <p><span class="year font24">2012</span></p>
-                                </div>
-                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
-                            </div>
-                            
-                            <div class="top-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
-                               <p><span class="year font24">2017</span></p>
-                                </div>
-                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <div class="bottom-content">
-                                <div class="img-content">
-                                    <img src="{{ Theme::asset()->url('images/introduce/thi-1.png') }}" alt="">
-                                    <p><span class="year font24">2012, 2013, 2014</span></p>
-                                </div>
-                               
-                               
-                               <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
-                                <p><span class="year font24">Từ 2012-2015</span></p>
-                                </div>
-                                <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/sao-vang.png') }}" alt="">
-                               <p><span class="year font24">Từ 2012 – 2016</span></p>
-                                </div>
-                               <p class="desc font18">5 lần đạt giải thưởng<strong class="font-myria-bold"> “ Sao vàng Đất Việt”.</strong>.</p>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/th-qg.png') }}" alt="">
-                                <p><span class="year font24">Từ 2012 – 2020</span></p>
-                                </div>
-                               <p class="desc font18">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/dn-thue.png') }}" alt="">
-                               <p><span class="year font24">2020</span></p>
-                                </div>
-                               <p class="desc font18">Được Tổng Cục Thuế Tuyên dương <strong class="font-myria-bold">Doanh nghiệp nộp thuế tiêu biểu</strong>.</p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            {{-- <div class="tab-pane fade" id="achievement-leader" role="tabpanel" aria-labelledby="achievement-leader-tab">
-                    <div class="content-tab">
-                        <p class="content-title font18 mt-40">
-                            Từ lúc thành lập tới nay, Thaco đã vinh dự nhận được nhiều bằng khen, giải thưởng các cấp vinh danh những đóng góp và thành tích của công ty trong hoạt động sản xuất kinh doanh, hoạt động cộng đồng xã hội và sự nghiệp xây dựng, bảo vệ Tổ quốc:
-                        </p>
-                        <div class="top">
-                            <div class="top-content">
-                                <div class="img-content">
-                                    <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
-                                    <p><span class="year font24">2002</span></p>
-                                </div>
-                               
-                               
-                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
-                            </div>
-                            <div class="top-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
-                                <p><span class="year font24">2012</span></p>
-                                </div>
-                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
-                            </div>
-                            <div class="top-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
-                               <p><span class="year font24">2017</span></p>
-                                </div>
-                               <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <div class="bottom-content">
-                                <div class="img-content">
-                                    <img src="{{ Theme::asset()->url('images/introduce/thi-1.png') }}" alt="">
-                                    <p><span class="year font24">2012, 2013, 2014</span></p>
-                                </div>
-                               
-                               
-                               <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
-                                <p><span class="year font24">Từ 2012-2015</span></p>
-                                </div>
-                                <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/sao-vang.png') }}" alt="">
-                               <p><span class="year font24">Từ 2012 – 2016</span></p>
-                                </div>
-                               <p class="desc font18">5 lần đạt giải thưởng<strong class="font-myria-bold"> “ Sao vàng Đất Việt”.</strong>.</p>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/th-qg.png') }}" alt="">
-                                <p><span class="year font24">Từ 2012 – 2020</span></p>
-                                </div>
-                               <p class="desc font18">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
-                            </div>
-                            <div class="bottom-content">
-                                <div class="img-content">
-                                <img src="{{ Theme::asset()->url('images/introduce/dn-thue.png') }}" alt="">
-                               <p><span class="year font24">2020</span></p>
-                                </div>
-                               <p class="desc font18">Được Tổng Cục Thuế Tuyên dương <strong class="font-myria-bold">Doanh nghiệp nộp thuế tiêu biểu</strong>.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-            </div> --}}
-        </div>
 
-        <div class="develop-wrapper mt-40 mb-40">
-            <div class="develop__title mt-40">
-                <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
-                <h2 class="font50 big-title">QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
-            </div>
-                <div class="develop-banner mt-40 lazyloaded " style="background-image:url('{{ Theme::asset()->url('images/introduce/banner-develop.jpg')}}')">
-                    <div class="develop-content-wrapper">
-                        <div class="develop-content__slider">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="cycle-list-wrap">
-                                        <ul class="slider slider-nav thumb-year">
-                                            <li class="font30 item-slider">
-                                                2014
-                                            </li>
-                                            <li class="font30 item-slider">
-                                                2015
-                                            </li>
-                                            <li class="font30 item-slider">
-                                               2016
-                                            </li>
-                                            <li class="font30 item-slider">
-                                                2017
-                                            </li>
-                                            <li class="font30 item-slider">
-                                                2018
-                                            </li>
-                                            <li class="font30 item-slider">
-                                                2019
-                                            </li>
-                                            <li class="font30 item-slider">
-                                                2020
-                                            </li>
-                                        </ul>
+            <div class="field-activity">
+                                <div class="field-activity__content">
+                                    <div class="field-activity__item">
+                                        <img class="mw-100" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
+                                        <div class="content-title">
+                                            <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
+                                            <div class="content-none">
+                                                <ul class="list-item">
+                                                    <li class="item-activity font18">
+                                                        Ô tô
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                        Linh kiện phụ tùng
+                                                    </li>
+                                                    <li class="item-activity font18">Cơ khí</li>
+                                                </ul>
+                                                <a href="" class="font18">Xem thêm</a>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                    <div class="field-activity__item">
+                                        <img class="mw-100" src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
+                                        <div class="content-title">
+                                            <h4 class="title font40">NÔNG NGHIỆP</h4>
+                                            <div class="content-none">
+                                                <ul class="list-item">
+                                                    <li class="item-activity font18">
+                                                    Trồng trọt và chế biến trái cây
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                    Chăn nuôi heo
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                        Chăn nuôi bò
+                                                    </li>
+                                                </ul>
+                                                <a href="" class="font18">Xem thêm</a>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                    <div class="field-activity__item">
+                                        <img class="mw-100" src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
+                                        <div class="content-title">
+                                            <h4 class="title font40">LOGICSTICS</h4>
+                                            <div class="content-none">
+                                                <ul class="list-item">
+                                                    <li class="item-activity font18">
+                                                    Cảng biển
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                    Vận tải biển
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                        Vận tải đường bộ
+                                                    </li>
+                                                </ul>
+                                                <a href="" class="font18">Xem thêm</a>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                    <div class="field-activity__item">
+                                        <img class="mw-100" src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
+                                        <div class="content-title">
+                                            <h4 class="title font40">ĐẦU TƯ - XÂY DỰNG</h4>
+                                            <div class="content-none">
+                                                <ul class="list-item">
+                                                    <li class="item-activity font18">
+                                                    Hạ tần giao thông
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                        Khu công nghiệp
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                        Khu đô thị
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                    Bất động sản
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                    Khu phức hợp
+                                                    </li>
+                                                    
+                                                </ul>
+                                                <a href="" class="font18">Xem thêm</a>
+                                            </div>
+                                        </div>
+                        
+                                    </div>
+                                    <div class="field-activity__item">
+                                        <img class="mw-100" src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
+                                        <div class="content-title">
+                                            <h4 class="title font40">THƯƠNG MẠI - DỊCH VỤ</h4>
+                                            <div class="content-none">
+                                                <ul class="list-item">
+                                                    <li class="item-activity font18">
+                                                    TT thương mại
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                    F&B
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                        Đại siêu thị
+                                                    </li>
+                                                    <li class="item-activity font18">
+                                                    TT hội nghị
+                                                    </li>
+                                                </ul>
+                                                <a href="" class="read-more">Xem thêm</a>
+                                            </div>
+                                        </div>
+                        
                                     </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="thumb-wrapper">
-                                        <div class="slider slider-for">
-                                            <div class="thumbnail-image">
-                                                <div class="image-slider">
+                            </div>
+                </div>
+            
+                <div class="leader-of-us-wrapper mt-40">
+                    <div class="leader-of-us__title mt-40">
+                        <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
+                        <h2 class="font50 big-title">Ban lãnh đạo</h2>
+                    </div>
+                    <div class="title-admin-top">
+                        <h3 class="title-admin">HỘI ĐỒNG QUẢN TRỊ THACO</h3>
+                    </div>
+                    <div class="admin-top-content">
+                        <div class="row-1">
+                            <div class="admin-top-item " data-target="#info_admin_modal" data-toggle="modal">
+                                <img src="{{ Theme::asset()->url('images/introduce/tbd.jpg') }}" alt="">
+                                <p class="name">Ông <strong>Trần Bá Dương</strong></p>  
+                                <p class="postion">Chủ tịch HĐQT</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row-2">
+                            <div class="admin-top-item">
+                                <img src="{{ Theme::asset()->url('images/introduce/nhm.jpg') }}" alt="">
+                                <p class="name">Ông <strong> Nguyễn Hùng Minh</strong></p>
+                                <p class="postion">Phó Chủ tịch TT HĐQT</p>
+                            </div>
+                            <div class="admin-top-item">
+                                <img src="{{ Theme::asset()->url('images/introduce/kim-teck.jpg') }}" alt="">
+                                <p class="name">Ông <strong>Cheah Kim Teck</strong></p>
+                                <p class="postion">Phó Chủ tịch HĐQT</p>
+                            </div>
+                            
+                        </div>
+                        <div class="row-3">
+                            <div class="admin-top-item">
+                                <img src="{{ Theme::asset()->url('images/introduce/vdh.jpg') }}" alt="">
+                                <p class="name">Bà <strong> Viên Diệu Hoa</strong></p>
+                                <p class="postion">Thành viên</p>
+                            </div>
+                            <div class="admin-top-item">
+                                <img src="{{ Theme::asset()->url('images/introduce/pvt.jpg') }}" alt="">
+                                <p class="name">Ông <strong>Phạm Văn Tài</strong></p>
+                                <p class="postion">Thành viên</p>
+                            </div>
+                            <div class="admin-top-item">
+                                <img src="{{ Theme::asset()->url('images/introduce/setephen.jpg') }}" alt="">
+                                <p class="name">Ông <strong> Stephen Patrick Gore</strong></p>
+                                <p class="postion">Thành viên</p>
+                            </div>
+                            <div class="admin-top-item">
+                                <img src="{{ Theme::asset()->url('images/introduce/nqb.jpg') }}" alt="">
+                                <p class="name">Ông <strong>Nguyễn Quang Bảo</strong></p>
+                                <p class="postion">Thành viên</p>
+                            </div>
+                            <div class="admin-top-item">
+                                <img src="{{ Theme::asset()->url('images/introduce/lts.jpg') }}" alt="">
+                                <p class="name">Ông <strong>Lê Trọng Sánh</strong></p>
+                                <p class="postion">Thành viên</p>
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                    <div class="title-admin-bottom">
+                        <h3 class="title-admin">Ban kiểm soát</h3>
+                    </div>
+                    <div class="admin-bottom-content">
+                        <div class="bottom-content">
+                            <div class="admin-bottom-item">
+                                <img src="{{ Theme::asset()->url('images/introduce/npt.jpg') }}" alt="">
+                                <p class="name">Ông <strong>Nguyễn Phúc Thịnh</strong></p>  
+                                <p class="postion">Trưởng ban</p>
+                            </div>
+                            <div class="admin-bottom-item">
+                                <img src="{{ Theme::asset()->url('images/introduce/dct.jpg') }}" alt="">
+                                <p class="name">Ông <strong> Đặng Công Trực</strong></p>  
+                                <p class="postion">Thành viên</p>
+                            </div>
+                            <div class="admin-bottom-item">
+                                <img src="{{ Theme::asset()->url('images/introduce/bmk.jpg') }}" alt="">
+                                <p class="name">Ông <strong>Bùi Minh Khoa</strong></p>  
+                                <p class="postion">Thành viên</p>
+                            </div>
+                        </div>
+                        
+                    
+                        
+                        
+                    </div>
+                </div>
+                <div class="achievement-wrapper mt-40">
+                    <div class="achievement-tab-title">
+                        <div class="achievement__title mt-40">
+                            <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
+                            <h2 class="font50 big-title">Thành tựu</h2>
+                        </div>
+                        <div class="achievement__tabs">
+                            <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
+                                <li class="__tabs__item " role="achievement">
+                                    <a class="__tabs__link nav-link active" id="achievement-company-tab" data-toggle="tab" role="tab" aria-controls="achievement-company" aria-selected="true" href="#achievement-company" title="Tất Cả">
+                                        THÀNH TỰU CỦA CÔNG TY
+                                    </a>
+                                </li>
+                                <li class="__tabs__item" role="achievement">
+                                    <a class="__tabs__link nav-link" id="achievement-leader-tab" data-toggle="tab" role="tab" aria-controls="achievement-leader" aria-selected="true" href="#achievement-leader" title="Tất Cả">
+                                        THÀNH TỰU CỦA CHỦ TỊCH         
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade active show" id="achievement-company" role="tabpanel" aria-labelledby="field-1-tab">
+                            <div class="content-tab">
+                                <p class="content-title font18 mt-40 text-justify">
+                                    Từ lúc thành lập tới nay, Thaco đã vinh dự nhận được nhiều bằng khen, giải thưởng các cấp vinh danh những đóng góp và thành tích của công ty trong hoạt động sản xuất kinh doanh, hoạt động cộng đồng xã hội và sự nghiệp xây dựng, bảo vệ Tổ quốc:
+                                </p>
+                                <div class="top">
+                                    <div class="top-content">
+                                        <div class="img-content">
+                                            <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
+                                            <p><span class="year font24">2002</span></p>
+                                        </div>
+                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
+                                    </div>
+                                    <div class="top-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
+                                        <p><span class="year font24">2012</span></p>
+                                        </div>
+                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
+                                    </div>
+                                    
+                                    <div class="top-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
+                                    <p><span class="year font24">2017</span></p>
+                                        </div>
+                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom-content">
+                                        <div class="img-content">
+                                            <img src="{{ Theme::asset()->url('images/introduce/thi-1.png') }}" alt="">
+                                            <p><span class="year font24">2012, 2013, 2014</span></p>
+                                        </div>
+                                    
+                                    
+                                    <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
+                                        <p><span class="year font24">Từ 2012-2015</span></p>
+                                        </div>
+                                        <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/sao-vang.png') }}" alt="">
+                                    <p><span class="year font24">Từ 2012 – 2016</span></p>
+                                        </div>
+                                    <p class="desc font18">5 lần đạt giải thưởng<strong class="font-myria-bold"> “ Sao vàng Đất Việt”.</strong>.</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/th-qg.png') }}" alt="">
+                                        <p><span class="year font24">Từ 2012 – 2020</span></p>
+                                        </div>
+                                    <p class="desc font18">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/dn-thue.png') }}" alt="">
+                                    <p><span class="year font24">2020</span></p>
+                                        </div>
+                                    <p class="desc font18">Được Tổng Cục Thuế Tuyên dương <strong class="font-myria-bold">Doanh nghiệp nộp thuế tiêu biểu</strong>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    {{-- <div class="tab-pane fade" id="achievement-leader" role="tabpanel" aria-labelledby="achievement-leader-tab">
+                            <div class="content-tab">
+                                <p class="content-title font18 mt-40">
+                                    Từ lúc thành lập tới nay, Thaco đã vinh dự nhận được nhiều bằng khen, giải thưởng các cấp vinh danh những đóng góp và thành tích của công ty trong hoạt động sản xuất kinh doanh, hoạt động cộng đồng xã hội và sự nghiệp xây dựng, bảo vệ Tổ quốc:
+                                </p>
+                                <div class="top">
+                                    <div class="top-content">
+                                        <div class="img-content">
+                                            <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
+                                            <p><span class="year font24">2002</span></p>
+                                        </div>
+                                    
+                                    
+                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
+                                    </div>
+                                    <div class="top-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
+                                        <p><span class="year font24">2012</span></p>
+                                        </div>
+                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
+                                    </div>
+                                    <div class="top-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
+                                    <p><span class="year font24">2017</span></p>
+                                        </div>
+                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom-content">
+                                        <div class="img-content">
+                                            <img src="{{ Theme::asset()->url('images/introduce/thi-1.png') }}" alt="">
+                                            <p><span class="year font24">2012, 2013, 2014</span></p>
+                                        </div>
+                                    
+                                    
+                                    <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
+                                        <p><span class="year font24">Từ 2012-2015</span></p>
+                                        </div>
+                                        <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/sao-vang.png') }}" alt="">
+                                    <p><span class="year font24">Từ 2012 – 2016</span></p>
+                                        </div>
+                                    <p class="desc font18">5 lần đạt giải thưởng<strong class="font-myria-bold"> “ Sao vàng Đất Việt”.</strong>.</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/th-qg.png') }}" alt="">
+                                        <p><span class="year font24">Từ 2012 – 2020</span></p>
+                                        </div>
+                                    <p class="desc font18">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
+                                    </div>
+                                    <div class="bottom-content">
+                                        <div class="img-content">
+                                        <img src="{{ Theme::asset()->url('images/introduce/dn-thue.png') }}" alt="">
+                                    <p><span class="year font24">2020</span></p>
+                                        </div>
+                                    <p class="desc font18">Được Tổng Cục Thuế Tuyên dương <strong class="font-myria-bold">Doanh nghiệp nộp thuế tiêu biểu</strong>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    </div> --}}
+                </div>
+
+                <div class="develop-wrapper mt-40 mb-40">
+                    <div class="develop__title mt-40">
+                        <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
+                        <h2 class="font50 big-title">QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
+                    </div>
+                        <div class="develop-banner mt-40 lazyloaded " style="background-image:url('{{ Theme::asset()->url('images/introduce/banner-develop.jpg')}}')">
+                            <div class="develop-content-wrapper">
+                                <div class="develop-content__slider">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="cycle-list-wrap">
+                                                <ul class="slider slider-nav thumb-year">
+                                                    <li class="font30 item-slider">
+                                                        2014
+                                                    </li>
+                                                    <li class="font30 item-slider">
+                                                        2015
+                                                    </li>
+                                                    <li class="font30 item-slider">
+                                                    2016
+                                                    </li>
+                                                    <li class="font30 item-slider">
+                                                        2017
+                                                    </li>
+                                                    <li class="font30 item-slider">
+                                                        2018
+                                                    </li>
+                                                    <li class="font30 item-slider">
+                                                        2019
+                                                    </li>
+                                                    <li class="font30 item-slider">
+                                                        2020
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="thumb-wrapper">
+                                                <div class="slider slider-for">
+                                                    <div class="thumbnail-image">
+                                                        <div class="image-slider">
+                                                            
+                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                        </div>
+                                                            <div class="content-slider">
+                                                                <h3 class="title font30">Nhà máy THACO</h3>
+                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                            </div>
+                                                    </div>
+                                                    <div class="thumbnail-image">
+                                                        <div class="image-slider">
+                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                        
+                                                        </div>
+                                                            <div class="content-slider">
+                                                                <h3 class="title font30">Nhà máy THACO</h3>
+                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                            </div>
+                                                    </div>
+                                                    <div class="thumbnail-image">
+                                                        <div class="image-slider">
+                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                        </div>
+                                                            <div class="content-slider">
+                                                                <h3 class="title font30">Nhà máy THACO</h3>
+                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                            </div>
+                                                    </div>
+                                                    <div class="thumbnail-image">
+                                                        <div class="image-slider">
+                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                        
+                                                        </div>
+                                                            <div class="content-slider">
+                                                                <h3 class="title font30">Nhà máy THACO</h3>
+                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                            </div>
+                                                    </div>
+                                                    <div class="thumbnail-image">
+                                                        <div class="image-slider">
+                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                        </div>
+                                                            <div class="content-slider">
+                                                                <h3 class="title font30">Nhà máy THACO</h3>
+                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                            </div>
+                                                    </div>
+                                                    <div class="thumbnail-image">
+                                                        <div class="image-slider">
+                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                            
+                                                        </div>
+                                                            <div class="content-slider">
+                                                                <h3 class="title font30">Nhà máy THACO</h3>
+                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                            </div>
+                                                    </div>
+                                                    <div class="thumbnail-image">
+                                                        <div class="image-slider">
+                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                        </div>
+                                                            <div class="content-slider">
+                                                                <h3 class="title font30">Nhà máy THACO</h3>
+                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                            </div>
+                                                    </div>
                                                     
-                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                
                                                 </div>
-                                                    <div class="content-slider">
-                                                        <h3 class="title font30">Nhà máy THACO</h3>
-                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                            Khánh thành nhà máy Bus THACO.</p>
-                                                    </div>
                                             </div>
-                                            <div class="thumbnail-image">
-                                                <div class="image-slider">
-                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                                   
-                                                </div>
-                                                    <div class="content-slider">
-                                                        <h3 class="title font30">Nhà máy THACO</h3>
-                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                            Khánh thành nhà máy Bus THACO.</p>
-                                                    </div>
-                                            </div>
-                                            <div class="thumbnail-image">
-                                                <div class="image-slider">
-                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                                </div>
-                                                    <div class="content-slider">
-                                                        <h3 class="title font30">Nhà máy THACO</h3>
-                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                            Khánh thành nhà máy Bus THACO.</p>
-                                                    </div>
-                                            </div>
-                                            <div class="thumbnail-image">
-                                                <div class="image-slider">
-                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                                   
-                                                </div>
-                                                    <div class="content-slider">
-                                                        <h3 class="title font30">Nhà máy THACO</h3>
-                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                            Khánh thành nhà máy Bus THACO.</p>
-                                                    </div>
-                                            </div>
-                                            <div class="thumbnail-image">
-                                                <div class="image-slider">
-                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                                </div>
-                                                    <div class="content-slider">
-                                                        <h3 class="title font30">Nhà máy THACO</h3>
-                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                            Khánh thành nhà máy Bus THACO.</p>
-                                                    </div>
-                                            </div>
-                                            <div class="thumbnail-image">
-                                                <div class="image-slider">
-                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                                    
-                                                </div>
-                                                    <div class="content-slider">
-                                                        <h3 class="title font30">Nhà máy THACO</h3>
-                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                            Khánh thành nhà máy Bus THACO.</p>
-                                                    </div>
-                                            </div>
-                                            <div class="thumbnail-image">
-                                                <div class="image-slider">
-                                                    <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
-                                                </div>
-                                                    <div class="content-slider">
-                                                        <h3 class="title font30">Nhà máy THACO</h3>
-                                                        <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                            Khánh thành nhà máy Bus THACO.</p>
-                                                    </div>
-                                            </div>
-                                            
-                                           
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+
+
                 </div>
-
-
-        </div>
-        
-    </div>
+                
+            </div>
     
     
 </section>
