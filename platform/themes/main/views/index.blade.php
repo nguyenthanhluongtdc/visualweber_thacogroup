@@ -64,7 +64,7 @@
         <div class="field-activity">
             <div class="field-activity__content">
                 <div class="field-activity__item">
-                    <img class="" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
+                    <img class="mw-100" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
                         <div class="content-none">
@@ -83,18 +83,20 @@
     
                 </div>
                 <div class="field-activity__item">
-                    <img src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
+                    <img class="mw-100" src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">NÔNG NGHIỆP</h4>
                         <div class="content-none">
                             <ul class="list-item">
                                 <li class="item-activity font18">
-                                    Ô tô
+                                   Trồng trọt và chế biến trái cây
                                 </li>
                                 <li class="item-activity font18">
-                                    Linh kiện phụ tùng
+                                   Chăn nuôi heo
                                 </li>
-                                <li class="item-activity font18">Cơ khí</li>
+                                <li class="item-activity font18">
+                                    Chăn nuôi bò
+                                </li>
                             </ul>
                             <a href="" class="font18">Xem thêm</a>
                         </div>
@@ -102,18 +104,20 @@
     
                 </div>
                 <div class="field-activity__item">
-                    <img src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
+                    <img class="mw-100" src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">LOGICSTICS</h4>
                         <div class="content-none">
                             <ul class="list-item">
                                 <li class="item-activity font18">
-                                    Ô tô
+                                Cảng biển
                                 </li>
                                 <li class="item-activity font18">
-                                    Linh kiện phụ tùng
+                                  Vận tải biển
                                 </li>
-                                <li class="item-activity font18">Cơ khí</li>
+                                <li class="item-activity font18">
+                                    Vận tải đường bộ
+                                </li>
                             </ul>
                             <a href="" class="font18">Xem thêm</a>
                         </div>
@@ -121,18 +125,27 @@
     
                 </div>
                 <div class="field-activity__item">
-                    <img src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
+                    <img class="mw-100" src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">ĐẦU TƯ - XÂY DỰNG</h4>
                         <div class="content-none">
                             <ul class="list-item">
                                 <li class="item-activity font18">
-                                    Ô tô
+                                  Hạ tần giao thông
                                 </li>
                                 <li class="item-activity font18">
-                                    Linh kiện phụ tùng
+                                    Khu công nghiệp
                                 </li>
-                                <li class="item-activity font18">Cơ khí</li>
+                                <li class="item-activity font18">
+                                    Khu đô thị
+                                </li>
+                                <li class="item-activity font18">
+                                   Bất động sản
+                                </li>
+                                <li class="item-activity font18">
+                                   Khu phức hợp
+                                 </li>
+                                
                             </ul>
                             <a href="" class="font18">Xem thêm</a>
                         </div>
@@ -140,18 +153,23 @@
     
                 </div>
                 <div class="field-activity__item">
-                    <img src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
+                    <img class="mw-100" src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">THƯƠNG MẠI - DỊCH VỤ</h4>
                         <div class="content-none">
                             <ul class="list-item">
                                 <li class="item-activity font18">
-                                    Ô tô
+                                   TT thương mại
                                 </li>
                                 <li class="item-activity font18">
-                                    Linh kiện phụ tùng
+                                   F&B
                                 </li>
-                                <li class="item-activity font18">Cơ khí</li>
+                                <li class="item-activity font18">
+                                    Đại siêu thị
+                                </li>
+                                <li class="item-activity font18">
+                                   TT hội nghị
+                                </li>
                             </ul>
                             <a href="" class="read-more">Xem thêm</a>
                         </div>
@@ -297,7 +315,7 @@
                 </li>
                 <li class="__tabs__item" role="field-activity">
                     <a class="__tabs__link nav-link" id="field-4-tab" data-toggle="tab" role="tab" aria-controls="field-4" aria-selected="true" href="#field-4" title="Tất Cả">
-                            <img src="{{Theme::asset()->url('images/home/4.png') }}" alt="">        
+                            <img src="{{Theme::asset()->url('images/home/icon-4.png') }}" alt="">        
                     </a>
                 </li>
                 <li class="__tabs__item" role="field-activity">
