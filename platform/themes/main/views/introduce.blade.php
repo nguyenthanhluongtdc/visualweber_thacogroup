@@ -468,7 +468,7 @@
                                                     {{-- <a class="pause"></i></a> --}}
                                                     
 
-                                                    <button class="play"><i class="fal fa-play-circle"></i></button>
+                                                    <button class="play active"><i class="fal fa-play-circle"></i></button>
                                                     <button class="pause"><i class="fal fa-pause-circle"></i></button>
      
                                                     

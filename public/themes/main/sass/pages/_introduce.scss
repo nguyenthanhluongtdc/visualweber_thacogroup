@@ -515,9 +515,16 @@
                             text-align: center;
                             margin: 0;
                             padding: 0;
+                            &:hover {
+                                background-color: $main_color;
+                            }
                             i {
                                 font-size: 25px;
                             }
+                        }
+                        .play.active,
+                        .pause.active {
+                            background-color: $main_color;
                         }
                         // button.next-slide {
                         //     height: 40px;
