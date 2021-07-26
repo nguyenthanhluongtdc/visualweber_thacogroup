@@ -126,13 +126,33 @@
                     left: 0;
                 }
                 .dropdown-menu {
+                    margin: 0;
+                    padding: 0;
                     left: -30px;
+                    .cmenu {
+                        position: relative;
+                        &:hover .dropdown-item::before {
+                            width: 100%;
+                        }
+                    }
                     .dropdown-item {
                         text-transform: uppercase;
                         font-size: 15px;
                         padding: 15px 30px;
                         color: unset;
                         font-family: unset;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0px;
+                            bottom: 0px;
+                            width: 0%;
+                            height: 1px;
+                            transition: all 0.35s ease-out;
+                            -webkit-transition: all 0.35s ease-out;
+                            background-color: $big-title;
+                            z-index: 1000;
+                        }
                     }
                 }
             }
@@ -159,7 +179,27 @@
                 .nav-item {
                     padding: 11px 0;
                 }
+                .dropdown {
+                    .dropdown-menu {
+                        top: 110%;
+                    }
+                }
             }
         }
+    }
+}
+
+//animation
+.fade-in {
+    animation: fadein .5s;
+    opacity: 1 !important;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

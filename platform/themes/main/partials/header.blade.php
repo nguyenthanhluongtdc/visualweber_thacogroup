@@ -73,8 +73,8 @@
                     <div class="collapse navbar-collapse " id="navbarTogglerDemo">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item nav-link  dropdown dmenu">
-                                <a href="/gioi-thieu">GIỚI THIỆU</a> 
-                                {{-- <div class="dropdown-menu sm-menu" style="display:none">
+                                <a class="item__link" href="/gioi-thieu">GIỚI THIỆU</a> 
+                                <div class="dropdown-menu sm-menu" style="display:none">
                                     <div class="cmenu">
                                         <a href="" class="dropdown-item">
                                             Về thaco
@@ -85,19 +85,100 @@
                                             Văn hóa Thaco
                                         </a>
                                     </div>
-                                </div> --}}
+                                </div>
+                            </li>
+                            <li class="nav-item nav-link  dropdown dmenu fade-in ">
+                                <a class="item__link" href="/linh-vuc-hoat-dong">LĨNH VỰC HOẠT ĐỘNG</a>
+                                <div class="dropdown-menu sm-menu" style="display:none">
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                           Ô tô&Cơkhí
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                          Nông nghiệp
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                         Logistics
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                        Đầu tư - Xây dựng
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                       Thương mại - Dịch vụ
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-link dropdown dmenu">
+                                <a class="item__link" href="/quan-he-co-dong">QUAN HỆ CỔ ĐÔNG</a>
+                                <div class="dropdown-menu sm-menu" style="display:none">
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Điều lệ & Quy chế
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Công bố thông tin
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Thông tin cổ đông
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Báo cáo thường niên
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Báo cáo tài chính
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-link dropdown dmenu">
+                                <a class="item__link" href="/truyen-thong">TRUYỀN THÔNG</a>
+                                <div class="dropdown-menu sm-menu" style="display:none">
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Thông cáo báo chí
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Con người
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Bản tin
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Sự kiện 
+                                        </a>
+                                    </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                            Thông điệp
+                                        </a>
+                                    </div>
+                                </div>
                             </li>
                             <li class="nav-item nav-link ">
-                                <a href="/linh-vuc-hoat-dong">LĨNH VỰC HOẠT ĐỘNG</a>
-                            </li>
-                            <li class="nav-item nav-link ">
-                                <a href="/quan-he-co-dong">QUAN HỆ CỔ ĐÔNG</a>
-                            </li>
-                            <li class="nav-item nav-link ">
-                                <a href="/truyen-thong">TRUYỀN THÔNG</a>
-                            </li>
-                            <li class="nav-item nav-link ">
-                                <a href="">
+                                <a class="item__link" href="">
                                     <i class="fas fa-search"></i>
                                 </a>
                             </li>

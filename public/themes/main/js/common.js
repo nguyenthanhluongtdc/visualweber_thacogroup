@@ -131,7 +131,7 @@ if ($('#header').length > 0) {
     var boderTop = $('#boder-top');
     var logoblue = $('.logo_link-blue');
     var logowhite = $('.logo_link-white');
-    var colorText = $('.nav-item a,.item-top__link');
+    var colorText = $('.nav-item .item__link,.item-top__link');
     $(window).scroll(function() {
         if ($(window).scrollTop() > 10) {
             btn.addClass('add-bg-color');
