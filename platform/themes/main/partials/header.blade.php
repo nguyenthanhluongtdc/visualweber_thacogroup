@@ -199,10 +199,31 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item nav-link ">
+                            {{-- <li class="nav-item nav-link ">
                                 <a class="item__link" href="">
                                     <i class="fas fa-search"></i>
                                 </a>
+                            </li> --}}
+                            <li class="nav-item nav-link dropdown dmenu">
+                                <a class="item__link" href="#" id="navbardrop" data-toggle="dropdown" >
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <div class="dropdown-menu sm-menu dropdown--search">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <form action="">
+                                                <div class="search-box input-group">
+                                                    <input type="text" name="query" value="" aria-label="Search" class="form-control" placeholder="Tìm kiếm... ">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-secondary" type="submit">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             
                         </ul>
