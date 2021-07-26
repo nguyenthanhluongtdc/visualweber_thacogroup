@@ -115,5 +115,10 @@
             </div>
         </footer>
         {!! Theme::footer() !!}
+        <script>
+            AOS.init({
+                easing: 'ease-in-out-sine'
+            });
+        </script>
     </body>
 </html>

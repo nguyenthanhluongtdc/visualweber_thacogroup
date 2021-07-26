@@ -4,11 +4,11 @@
 @includeIf("theme.main::views.breadcrumb")
 <section class="about-us mt-40">
     <div class="container-customize">
-        <div class="about-us__title">
+        <div class="about-us__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
-            <h1 class="font50 big-title">Về chúng tôi</h1>
+            <h1  class="font50 big-title">Về chúng tôi</h1>
         </div>
-        <div class="about-us__content mt-40">
+        <div class="about-us__content mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             <p class="text-about-us font24 text-justify">
                 Công ty ôtô Trường Hải (THACO) được thành lập vào ngày 29/04/1997. Người sáng lập là ông Trần Bá Dương, hiện là Chủ tịch Hội đồng Quản trị THACO. Văn phòng Tổng quản TP.HCM đặt tại Tòa nhà IIA, số 10 đường Mai Chí Thọ, phường Thủ Thiêm, Quận 2. Tổng số nhân sự hiện nay khoảng 20.000 người.
             </p>
@@ -23,14 +23,14 @@
             <div class="future-goal-wrapper">
                 <div class="row mr-0 ml-0">
                     <div class="col-md-4 pl-0 pr-0">
-                        <div class="future-goal p-lr-90">
+                        <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/tam-nhin.png') }}" alt="">
                             <h3 class="title font40">Tầm nhìn</h3>
                             <p class="desc font18">Tập đoàn công nghiệp đa ngành của Việt Nam phat triển bền vững trong bối cảnh hội nhập khu vực và thế giới.</p>
                         </div>
                     </div>
                     <div class="col-md-4 pl-0 pr-0">
-                        <div class="future-goal p-lr-90">
+                        <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/chien-luoc.png') }}" alt="">
                             <h3 class="title font40">Chiến lược</h3>
                             <p class="desc font18">THACO là tập đoàn công nghiệp đa ngành của Việt Nam.
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 pl-0 pr-0">
-                        <div class="future-goal last p-lr-90">
+                        <div class="future-goal last p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/su-menh.png') }}" alt="">
                             <h3 class="title font40">Sứ mệnh</h3>
                             <p class="desc font18">Mang lại giá trị cho khách hàng, xã hội.
@@ -50,7 +50,7 @@
           
         </div>
         <div class="field-activity-intro-wrapper" style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url('{{ Theme::asset()->url('images/introduce/bg-field.jpg') }}')">
-            <div class="desc-field pt-40">
+            <div class="desc-field pt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 <p class="desc-cotent font 18 text-justify">
                  Sau 22 năm hình thành và phát triển, THACO đã trở thành Tập đoàn công nghiệp đa ngành, trong đó Cơ khí và Ô tô là chủ lực, đồng thời phát triển các lĩnh vực sản xuất kinh doanh bổ trợ cho nhau, tạo ra giá trị cộng hưởng và nâng cao năng lực cạnh tranh, bao gồm: Nông nghiệp; Đầu tư xây dựng; Logistics và Thương mại & Dịch vụ.
                 </p>
@@ -176,14 +176,14 @@
                 </div>
             
                 <div class="leader-of-us-wrapper mt-40">
-                    <div class="leader-of-us__title mt-40">
+                    <div class="leader-of-us__title mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                         <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                         <h2 class="font50 big-title">Ban lãnh đạo</h2>
                     </div>
                     <div class="title-admin-top">
                         <h3 class="title-admin">HỘI ĐỒNG QUẢN TRỊ THACO</h3>
                     </div>
-                    <div class="admin-top-content">
+                    <div class="admin-top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                         <div class="row-1">
                             <div class="admin-top-item " data-target="#info_admin_modal" data-toggle="modal">
                                 <img src="{{ Theme::asset()->url('images/introduce/tbd.jpg') }}" alt="">
@@ -193,12 +193,12 @@
                         </div>
                         
                         <div class="row-2">
-                            <div class="admin-top-item">
+                            <div class="admin-top-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <img src="{{ Theme::asset()->url('images/introduce/nhm.jpg') }}" alt="">
                                 <p class="name">Ông <strong> Nguyễn Hùng Minh</strong></p>
                                 <p class="postion">Phó Chủ tịch TT HĐQT</p>
                             </div>
-                            <div class="admin-top-item">
+                            <div class="admin-top-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <img src="{{ Theme::asset()->url('images/introduce/kim-teck.jpg') }}" alt="">
                                 <p class="name">Ông <strong>Cheah Kim Teck</strong></p>
                                 <p class="postion">Phó Chủ tịch HĐQT</p>
@@ -206,27 +206,27 @@
                             
                         </div>
                         <div class="row-3">
-                            <div class="admin-top-item">
+                            <div class="admin-top-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <img src="{{ Theme::asset()->url('images/introduce/vdh.jpg') }}" alt="">
                                 <p class="name">Bà <strong> Viên Diệu Hoa</strong></p>
                                 <p class="postion">Thành viên</p>
                             </div>
-                            <div class="admin-top-item">
+                            <div class="admin-top-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <img src="{{ Theme::asset()->url('images/introduce/pvt.jpg') }}" alt="">
                                 <p class="name">Ông <strong>Phạm Văn Tài</strong></p>
                                 <p class="postion">Thành viên</p>
                             </div>
-                            <div class="admin-top-item">
+                            <div class="admin-top-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <img src="{{ Theme::asset()->url('images/introduce/setephen.jpg') }}" alt="">
                                 <p class="name">Ông <strong> Stephen Patrick Gore</strong></p>
                                 <p class="postion">Thành viên</p>
                             </div>
-                            <div class="admin-top-item">
+                            <div class="admin-top-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <img src="{{ Theme::asset()->url('images/introduce/nqb.jpg') }}" alt="">
                                 <p class="name">Ông <strong>Nguyễn Quang Bảo</strong></p>
                                 <p class="postion">Thành viên</p>
                             </div>
-                            <div class="admin-top-item">
+                            <div class="admin-top-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <img src="{{ Theme::asset()->url('images/introduce/lts.jpg') }}" alt="">
                                 <p class="name">Ông <strong>Lê Trọng Sánh</strong></p>
                                 <p class="postion">Thành viên</p>
@@ -235,22 +235,22 @@
                     
                         
                     </div>
-                    <div class="title-admin-bottom">
+                    <div class="title-admin-bottom" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                         <h3 class="title-admin">Ban kiểm soát</h3>
                     </div>
                     <div class="admin-bottom-content">
                         <div class="bottom-content">
-                            <div class="admin-bottom-item">
+                            <div class="admin-bottom-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <img src="{{ Theme::asset()->url('images/introduce/npt.jpg') }}" alt="">
                                 <p class="name">Ông <strong>Nguyễn Phúc Thịnh</strong></p>  
                                 <p class="postion">Trưởng ban</p>
                             </div>
-                            <div class="admin-bottom-item">
+                            <div class="admin-bottom-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <img src="{{ Theme::asset()->url('images/introduce/dct.jpg') }}" alt="">
                                 <p class="name">Ông <strong> Đặng Công Trực</strong></p>  
                                 <p class="postion">Thành viên</p>
                             </div>
-                            <div class="admin-bottom-item">
+                            <div class="admin-bottom-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <img src="{{ Theme::asset()->url('images/introduce/bmk.jpg') }}" alt="">
                                 <p class="name">Ông <strong>Bùi Minh Khoa</strong></p>  
                                 <p class="postion">Thành viên</p>
@@ -264,11 +264,11 @@
                 </div>
                 <div class="achievement-wrapper mt-40">
                     <div class="achievement-tab-title">
-                        <div class="achievement__title mt-40">
+                        <div class="achievement__title mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                             <h2 class="font50 big-title">Thành tựu</h2>
                         </div>
-                        <div class="achievement__tabs">
+                        <div class="achievement__tabs" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                             <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
                                 <li class="__tabs__item " role="achievement">
                                     <a class="__tabs__link nav-link active" id="achievement-company-tab" data-toggle="tab" role="tab" aria-controls="achievement-company" aria-selected="true" href="#achievement-company" title="Tất Cả">
@@ -287,19 +287,19 @@
                     </div>
                     
                     <div class="tab-pane fade active show" id="achievement-company" role="tabpanel" aria-labelledby="field-1-tab">
-                            <div class="content-tab">
+                            <div class="content-tab" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                 <p class="content-title font18 mt-40 text-justify">
                                     Từ lúc thành lập tới nay, Thaco đã vinh dự nhận được nhiều bằng khen, giải thưởng các cấp vinh danh những đóng góp và thành tích của công ty trong hoạt động sản xuất kinh doanh, hoạt động cộng đồng xã hội và sự nghiệp xây dựng, bảo vệ Tổ quốc:
                                 </p>
                                 <div class="top">
-                                    <div class="top-content">
+                                    <div class="top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">
                                             <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
                                             <p><span class="year font24">2002</span></p>
                                         </div>
                                     <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
                                     </div>
-                                    <div class="top-content">
+                                    <div class="top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">
                                         <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
                                         <p><span class="year font24">2012</span></p>
@@ -307,7 +307,7 @@
                                     <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
                                     </div>
                                     
-                                    <div class="top-content">
+                                    <div class="top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">
                                         <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
                                     <p><span class="year font24">2017</span></p>
@@ -316,7 +316,7 @@
                                     </div>
                                 </div>
                                 <div class="bottom">
-                                    <div class="bottom-content">
+                                    <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">
                                             <img src="{{ Theme::asset()->url('images/introduce/thi-1.png') }}" alt="">
                                             <p><span class="year font24">2012, 2013, 2014</span></p>
@@ -325,28 +325,28 @@
                                     
                                     <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
                                     </div>
-                                    <div class="bottom-content">
+                                    <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" >
                                         <div class="img-content">
                                         <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
                                         <p><span class="year font24">Từ 2012-2015</span></p>
                                         </div>
                                         <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
                                     </div>
-                                    <div class="bottom-content">
+                                    <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">
                                         <img src="{{ Theme::asset()->url('images/introduce/sao-vang.png') }}" alt="">
                                     <p><span class="year font24">Từ 2012 – 2016</span></p>
                                         </div>
                                     <p class="desc font18">5 lần đạt giải thưởng<strong class="font-myria-bold"> “ Sao vàng Đất Việt”.</strong>.</p>
                                     </div>
-                                    <div class="bottom-content">
+                                    <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">
                                         <img src="{{ Theme::asset()->url('images/introduce/th-qg.png') }}" alt="">
                                         <p><span class="year font24">Từ 2012 – 2020</span></p>
                                         </div>
                                     <p class="desc font18">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
                                     </div>
-                                    <div class="bottom-content">
+                                    <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">
                                         <img src="{{ Theme::asset()->url('images/introduce/dn-thue.png') }}" alt="">
                                     <p><span class="year font24">2020</span></p>
@@ -431,7 +431,7 @@
                 </div>
 
                 <div class="develop-wrapper mt-40 mb-40">
-                    <div class="develop__title mt-40">
+                    <div class="develop__title mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                         <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                         <h2 class="font50 big-title">QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
                     </div>

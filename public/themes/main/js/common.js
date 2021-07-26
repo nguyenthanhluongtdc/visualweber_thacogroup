@@ -12,6 +12,8 @@ $('.slider-nav').slick({
     arrows: false,
     vertical: true,
     autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true,
     asNavFor: '.slider-for',
     dots: false,
     focusOnSelect: true,
