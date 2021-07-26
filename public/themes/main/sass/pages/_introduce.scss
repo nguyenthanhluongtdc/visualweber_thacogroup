@@ -379,16 +379,16 @@
         background-size: cover;
         position: relative;
         padding-top: 58%;
-        &::before {
-            position: absolute;
-            content: "";
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background: rgba(0, 0, 0, .8);
-            z-index: 0;
-        }
+        // &::before {
+        //     position: absolute;
+        //     content: "";
+        //     top: 0;
+        //     left: 0;
+        //     bottom: 0;
+        //     right: 0;
+        //     background: rgba(0, 0, 0, .8);
+        //     z-index: 0;
+        // }
         .develop-content-wrapper {
             position: absolute;
             top: 0;
@@ -431,6 +431,22 @@
                 }
                 .cycle-list-wrap {
                     ul.slick-slider {
+                        button {
+                            height: 40px;
+                            width: 40px;
+                            line-height: 49px;
+                            background: transparent;
+                            border: unset;
+                            border-radius: 4px;
+                            text-align: center;
+                            margin: 0;
+                            padding: 0;
+                            color: transparent;
+                            &:focus {
+                                outline: none;
+                                border: none;
+                            }
+                        }
                         .slick-prev::after {
                             content: "";
                             font-family: "Font Awesome 5 Pro";
@@ -440,6 +456,21 @@
                             line-height: 74px;
                             color: #fff;
                             margin-left: -20px;
+                            position: absolute;
+                            top: 0;
+                            right: 50%;
+                        }
+                        .slick-next::after {
+                            content: "\f078";
+                            font-family: "Font Awesome 5 Pro";
+                            font-weight: normal;
+                            font-style: normal;
+                            font-size: 37px;
+                            line-height: 25px;
+                            color: #fff;
+                            margin-left: -20px;
+                            position: absolute;
+                            right: 50%;
                         }
                         width: 100%;
                         height: 100%;
@@ -465,6 +496,65 @@
                             text-shadow: 0 0 20px rgb(0 0 0 / 50%);
                             opacity: 1;
                         }
+                    }
+                    .carousel-controls {
+                        text-align: center;
+                        margin-right: 30px;
+                        button:focus {
+                            outline: none;
+                        }
+                        button,
+                        .play,
+                        .pause {
+                            height: 40px;
+                            width: 40px;
+                            line-height: 49px;
+                            background: #fff;
+                            border: 1px solid #fff;
+                            border-radius: 4px;
+                            text-align: center;
+                            margin: 0;
+                            padding: 0;
+                            i {
+                                font-size: 25px;
+                            }
+                        }
+                        // button.next-slide {
+                        //     height: 40px;
+                        //     width: 45px;
+                        //     margin-right: -1px;
+                        //     float: left;
+                        // }
+                        // button.pause {
+                        //     height: 40px;
+                        //     width: 45px;
+                        //     margin-right: -1px;
+                        // }
+                        // button.play {
+                        //     height: 40px;
+                        //     width: 45px;
+                        //     margin-right: -1px;
+                        // }
+                        // .pause {
+                        //     &::after {
+                        //         content: "| |";
+                        //         position: absolute;
+                        //         color: white;
+                        //         font-family: "Font Awesome 5 Pro";
+                        //         left: 0;
+                        //         right: 0;
+                        //     }
+                        // }
+                        // .pause.paused {
+                        //     &::after {
+                        //         height: 0;
+                        //         border-top: 7px solid transparent;
+                        //         border-bottom: 7px solid transparent;
+                        //         border-left: 9px solid #fff;
+                        //         border-right: none;
+                        //         margin-left: 4px;
+                        //     }
+                        // }
                     }
                 }
             }

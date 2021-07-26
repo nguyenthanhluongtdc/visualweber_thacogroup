@@ -435,7 +435,7 @@
                         <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                         <h2 class="font50 big-title">QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
                     </div>
-                        <div class="develop-banner mt-40 lazyloaded " style="background-image:url('{{ Theme::asset()->url('images/introduce/banner-develop.jpg')}}')">
+                        <div class="develop-banner mt-40 lazyloaded " style="background-image:url('{{ Theme::asset()->url('images/introduce/1.jpg')}}')">
                             <div class="develop-content-wrapper">
                                 <div class="develop-content__slider">
                                     <div class="row">
@@ -464,6 +464,16 @@
                                                         2020
                                                     </li>
                                                 </ul>
+                                                <div class="carousel-controls transparent-controls ">
+                                                    {{-- <a class="pause"></i></a> --}}
+                                                    
+
+                                                    <button class="play"><i class="fal fa-play-circle"></i></button>
+                                                    <button class="pause"><i class="fal fa-pause-circle"></i></button>
+     
+                                                    
+                                              
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-8">

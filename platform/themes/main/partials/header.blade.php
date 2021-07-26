@@ -37,7 +37,7 @@
                         </li>
                         <li class="item-top ">
             
-                            <ul class="nav navbar-nav lan-menu">
+                            {{-- <ul class="nav navbar-nav lan-menu">
                                 <li class="dropdown  dmenu">
                                         <a href="#" class="item-top__link" data-toggle="">
                                           EN <i class="fas fa-angle-down"></i>
@@ -50,15 +50,30 @@
                                                
                                             </li>
                                         </ul>
-                                        {{-- <div class="dropdown-menu sm-menu" style="display:none">
-                                            <div class="cmenu">
-                                                <a href="" class="dropdown-item">
-                                                   EN
-                                                </a>
-                                            </div>
-                                            
-                                        </div> --}}
+                                        
                                 </li>
+                            </ul> --}}
+                            <ul class="language">
+                                <li class="lang lang-vi font-helve-light font15">
+                                    <a rel="alternate" hreflang="vi" href="#">
+                
+                                        <span>VN</span>
+                                    </a>
+                                </li>
+                                <li class="lang lang-en ">
+                                    <a rel="alternate" hreflang="en" href="#">
+                
+                                        <span>EN</span>
+                                    </a>
+                                </li>
+                
+                                {{-- <li class="nav-item dropdown dmenu">
+                                    <div class="search-btn c-search-toggler open-search">
+                                        <i class="fa fa-search"></i>
+                
+                                    </div>
+                                </li> --}}
+                                
                             </ul>
                         </li>
                     </ul>
