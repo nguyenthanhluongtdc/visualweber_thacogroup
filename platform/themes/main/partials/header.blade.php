@@ -55,13 +55,13 @@
                             </ul> --}}
                             <ul class="language">
                                 <li class="lang lang-vi font-helve-light font15">
-                                    <a rel="alternate" hreflang="vi" href="#">
+                                    <a class="item-top__link" rel="alternate" hreflang="vi" href="#">
                 
                                         <span>VN</span>
                                     </a>
                                 </li>
                                 <li class="lang lang-en ">
-                                    <a rel="alternate" hreflang="en" href="#">
+                                    <a class="item-top__link" rel="alternate" hreflang="en" href="#">
                 
                                         <span>EN</span>
                                     </a>

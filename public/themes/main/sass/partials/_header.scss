@@ -57,11 +57,12 @@
                 .language {
                     display: flex;
                     align-items: center;
+                    padding: 0;
                     li:first-child {
                         margin-right: 20px;
                     }
                     li a {
-                        color: $gray_text;
+                        color: $white;
                     }
                 }
                 // .navbar-nav {
