@@ -38,19 +38,26 @@
                         <li class="item-top ">
             
                             <ul class="nav navbar-nav lan-menu">
-                                <li class="dropdown">
-                                        <a href="javascript:;" class="dropdown-toggle item-top__link" data-toggle="dropdown" role="button">
-                                       
-                                        Tiếng việt  <i class="fas fa-angle-down"></i>
-                                           </a>
+                                <li class="dropdown  dmenu">
+                                        <a href="#" class="item-top__link" data-toggle="">
+                                          EN <i class="fas fa-angle-down"></i>
+                                        </a>
                                         <ul class="dropdown-menu">
                                             <li>
                                               <a href="#">
-                                                   Tiếng anh
+                                               VN
                                             </a>
-                                                <!--<a href="https://lecvietnam.com/en/">En</a>-->
+                                               
                                             </li>
                                         </ul>
+                                        {{-- <div class="dropdown-menu sm-menu" style="display:none">
+                                            <div class="cmenu">
+                                                <a href="" class="dropdown-item">
+                                                   EN
+                                                </a>
+                                            </div>
+                                            
+                                        </div> --}}
                                 </li>
                             </ul>
                         </li>

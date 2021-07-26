@@ -6,7 +6,7 @@
             <div class="fade"></div>
             <div class="bg-post">
                 <div class="content">
-                    <h2 class="font30 title-post">
+                    <h2 class="font24 title-post">
                     THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
                     </h2>
                     <div class="description text-justify">
@@ -23,7 +23,7 @@
             <div class="fade"></div>
             <div class="bg-post">
                 <div class="content">
-                    <h2 class="font30 title-post">
+                    <h2 class="font24 title-post">
                     THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
                     </h2>
                     <div class="description">
@@ -40,7 +40,7 @@
             <div class="fade"></div>
             <div class="bg-post">
                 <div class="content">
-                    <h2 class="font30 title-post">
+                    <h2 class="font24 title-post">
                     THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
                     </h2>
                     <div class="description">
