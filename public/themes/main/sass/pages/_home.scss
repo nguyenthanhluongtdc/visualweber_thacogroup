@@ -371,9 +371,12 @@
     margin-top: 40px;
     margin-bottom: -40px;
     .swiper-container-horizontal>.swiper-pagination-bullets {
-        bottom: 10px;
-        left: 24%;
-        width: unset;
+        top: 1rem;
+        left: unset;
+        right: 40px;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
     }
     .recruitment-banner {
         background-size: cover;
@@ -401,6 +404,9 @@
                 right: 0;
                 background: rgba(0, 0, 0, .5);
                 z-index: 0;
+            }
+            .swiper-container {
+                width: 100%;
             }
             .swiper-content__desc {
                 z-index: 1;
