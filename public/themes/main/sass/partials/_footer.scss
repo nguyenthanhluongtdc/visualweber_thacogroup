@@ -72,6 +72,7 @@
         width: 100%;
         ul {
             margin-bottom: unset;
+            padding: 0;
             li {
                 display: inline-block;
                 margin-right: 30px;
@@ -82,9 +83,53 @@
         background-color: $blue;
         p,
         a {
-            line-height: 50px;
+            padding: 13px 0;
             margin-bottom: 0;
             text-decoration: none;
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .footer {
+        .office {
+            .title {
+                margin-top: 30px;
+            }
+        }
+        .company_name {
+            margin-bottom: 0;
+        }
+        .logo_footer {
+            padding-top: 30px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .footer {
+        .list-social {
+            margin: 15px 0;
+            ul {
+                li {
+                    margin-right: 20px;
+                }
+                li:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .footer-bottom {
+            p {
+                padding: 0;
+                margin: 10px 0;
+            }
+            a {
+                padding: 0;
+                margin-bottom: 10px;
+            }
         }
     }
 }

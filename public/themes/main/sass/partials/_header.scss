@@ -29,7 +29,7 @@
         background-color: transparent;
         height: 42px;
         .boder-header {
-            border: 20px solid $white;
+            border: 18px solid $white;
             bottom: 0;
             position: absolute;
             content: "";
@@ -70,18 +70,12 @@
     }
     .navbar {
         padding: unset;
-        .logo_link-white {
-            position: relative;
-            top: -10px;
-            padding: 16px 0;
-            margin: 0;
-        }
+        .logo_link-white,
         .logo_link-blue {
             position: relative;
-            top: -10px;
+            top: -8px;
             padding: 16px 0;
             margin: 0;
-            display: none;
         }
         .navbar-nav {
             display: flex;
@@ -209,6 +203,53 @@
                     .dropdown-menu {
                         top: 110%;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:991px) {
+    .header {
+        .navbar {
+            .logo_link-blue,
+            .logo_link-white {
+                top: unset;
+            }
+            .navbar-toggler {
+                color: $white;
+            }
+            .navbar-nav {
+                .nav-item:first-child {
+                    margin-left: unset;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .header {
+        .header-top {
+            .list-item-top {
+                .item-top {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .navbar {
+            .logo_link-blue,
+            .logo_link-white {
+                img {
+                    width: 80%;
+                }
+            }
+            .navbar-toggler {
+                font-size: 24px;
+                padding: 0;
+                &:focus {
+                    outline: none;
+                    border: none;
                 }
             }
         }

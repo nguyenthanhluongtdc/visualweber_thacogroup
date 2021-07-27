@@ -8,7 +8,7 @@
                         <h4 class="font30">CÔNG TY CỔ PHẦN TẬP ĐOÀN TRƯỜNG HẢI</h4>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-md-4 col-sm-6 col-12">
                             <div class="office">
                                 <h2 class="font18 text-white title">Văn Phòng TP. Hồ Chí Minh</h2>
                                 <div class="address">
@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-md-4 col-sm-6 col-12">
                             <div class="office">
                                 <h2 class="font18 text-white title">Văn Phòng Thaco Chu Lai</h2>
                                 <div class="address">
@@ -41,13 +41,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-md-4 col-sm-6 col-12">
                             <div class="office">
                                 <h2 class="font18 text-white title">Văn Phòng Hà Nội</h2>
                                 <div class="address">
                                    
                                         <p class="font18 text-white">Lô D6, KCN Hà Nội Đài Tư, 386
-                                            Nguyễn Văn Linh, Sài Đồng, Long Biên, Hà 
+                                            Nguyễn Văn Linh, Sài Đồng, Long Biên, Hà Nội
                                         </p>
                                     
                                 </div>
@@ -97,15 +97,15 @@
             <div class="footer-bottom">
                 <div class="container-customize ">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-7 col-sm-6">
                            <p class="text-white">Copyright © 2013 Công ty Cổ phần Ô tô Trường Hải.. All rights reserved.</p> 
     
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 col-sm-2">
                           <a class="text-white" href="">Terms of use
                         </a>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4">
                            <a href="" class="text-white">Terms and conditions
                         </a>
                         </div>

@@ -64,7 +64,7 @@
         <div class="field-activity">
             <div class="field-activity__content">
                 <div class="field-activity__item">
-                    <img class="mw-100" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
+                    <img class="w-100" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
                         <div class="content-none">
@@ -83,7 +83,7 @@
     
                 </div>
                 <div class="field-activity__item">
-                    <img class="mw-100" src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
+                    <img class="w-100" src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">NÔNG NGHIỆP</h4>
                         <div class="content-none">
@@ -104,7 +104,7 @@
     
                 </div>
                 <div class="field-activity__item">
-                    <img class="mw-100" src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
+                    <img class="w-100" src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">LOGICSTICS</h4>
                         <div class="content-none">
@@ -125,7 +125,7 @@
     
                 </div>
                 <div class="field-activity__item">
-                    <img class="mw-100" src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
+                    <img class="w-100" src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">ĐẦU TƯ - XÂY DỰNG</h4>
                         <div class="content-none">
@@ -153,7 +153,7 @@
     
                 </div>
                 <div class="field-activity__item">
-                    <img class="mw-100" src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
+                    <img class="w-100" src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">THƯƠNG MẠI - DỊCH VỤ</h4>
                         <div class="content-none">
@@ -183,13 +183,35 @@
 </div>
 <div class="partner-wrapper mt-80">
     <div class="partner-banner" style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url({{Theme::asset()->url('images/home/banner-partner.jpg') }})">
-        <div class="container-customize logo-partner">
-            
+        <div class="container-customize logo-partner"> 
+            <div class="swiper-container logo-company" style="display:none">
+                <div class="swiper-wrapper">   
+                    <div class="swiper-slide" >
+                        <img src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
+                    </div>
+                    <div class="swiper-slide" >
+                        <img src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"><img src="{{Theme::asset()->url("images/home/right-arrow.png")}}" alt="{{_('Next icon')}}"></div>
+                <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
+            </div>
+            <div class="logo-desktop">
                 <img src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
                 <img src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
                 <img src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
                 <img src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
                 <img src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+            </div>
             
         </div>
     </div>
@@ -199,13 +221,13 @@
         <div class="news-home__content">
             <div class="news-home__top">
                 <div class="row">
-                    <div class="col-md-8 pr-0">
+                    <div class="col-md-8 pr-md-0">
                         <div class="img-post h-100">
                             <img class="img-mw-100 h-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
                         </div>
                        
                     </div>
-                    <div class="col-md-4 pl-0">
+                    <div class="col-md-4 pl-md-0">
                         <div class="news-post h-100">
                             <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
                             <h4 class="name font20">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4>
@@ -438,47 +460,36 @@
     <div class="recruitment-banner " style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})">
         <div class="swiper-content">
             <div class="swiper-content__desc">
-            <h3 class="title font28">Tuyển dụng</h3>
-            <p class="description font24 text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel fac
-            </p>
-            <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
+                <h3 class="title font28">Tuyển dụng</h3>
+                <p class="description font24 text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel fac
+                </p>
+                <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
             </div>
-        </div>
-        <div class="swiper-container recruitment-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-            <div class="swiper-wrapper">   
-                <div class="swiper-slide" >
-                        <div class="container-customize">
-                            
+           
+            <div class="swiper-container recruitment-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
+                    <div class="swiper-wrapper">   
+                        <div class="swiper-slide" >
                             <div class="swiper-content-bottom">
                                 <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
                                     <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
                                     </p>
                                 </a>
-                               
                             </div>
-                            
                         </div>
-                    
-                </div>
-                <div class="swiper-slide" >
-                    <div class="container-customize">
-                        
-                        <div class="swiper-content-bottom">
-                            <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
-                                <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
-                                </p>
-                            </a>
-                           
+                        <div class="swiper-slide" >
+                            <div class="swiper-content-bottom">
+                                <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
+                                    <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                    </p>
+                                </a>
+                            </div>
                         </div>
-                        
+                       
                     </div>
-                
+                    <div class="swiper-pagination"></div>
             </div>
-               
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
+        </div> 
     </div>
 </div>
 

@@ -24,3 +24,12 @@
         }
     }
 }
+
+@media screen and (max-width: 991px) {
+    .list-social-sidebar {
+        right: 15px;
+        .social-item {
+            margin-bottom: 10px;
+        }
+    }
+}

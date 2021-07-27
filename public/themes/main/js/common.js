@@ -102,6 +102,44 @@ let main_slider = new Swiper(".main-slider", {
     },
 
 });
+let logo_company = new Swiper(".logo-company", {
+
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.logo-company .swiper-button-next',
+        prevEl: '.logo-company .swiper-button-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.logo-company .swiper-button-next',
+                prevEl: '.logo-company .swiper-button-prev',
+            },
+        },
+    }
+
+});
+
 // slider post home 
 
 let newPostSlide = new Swiper(".new-post-slide", {
@@ -123,13 +161,41 @@ let newPostSlide = new Swiper(".new-post-slide", {
                 prevEl: '.new-post-slide .swiper-button-prev',
             },
         },
+        480: {
+            slidesPerView: 2,
+            centeredSlides: false,
+            spaceBetween: 40,
+            navigation: {
+                nextEl: '.new-post-slide .swiper-button-next',
+                prevEl: '.new-post-slide .swiper-button-prev',
+            },
+        },
+        320: {
+            slidesPerView: 1,
+            centeredSlides: false,
+            spaceBetween: 40,
+            navigation: {
+                nextEl: '.new-post-slide .swiper-button-next',
+                prevEl: '.new-post-slide .swiper-button-prev',
+            },
+        },
     }
 });
 // tuyen dung slider
 var recruitment_slider = new Swiper(".recruitment-slider", {
+    slidesPerView: 1,
+    centeredSlides: false,
+    parallax: true,
+    // centeredSlides: true,
+    // loop: true,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
     speed: 800,
+
     pagination: {
-        el: ".swiper-pagination",
+        el: ".recruitment-slider .swiper-pagination",
         clickable: true,
     },
     navigation: {
@@ -159,6 +225,7 @@ if ($('#header').length > 0) {
     var logoblue = $('.logo_link-blue');
     var logowhite = $('.logo_link-white');
     var colorText = $('.nav-item .item__link,.item-top__link');
+    var icontongger = $('.navbar-toggler');
     $(window).scroll(function() {
         if ($(window).scrollTop() > 10) {
             btn.addClass('add-bg-color');
@@ -167,6 +234,7 @@ if ($('#header').length > 0) {
             logoblue.css('display', 'block');
             logowhite.css('display', 'none');
             colorText.css('color', '#262626');
+            icontongger.css('color', '#000')
 
         } else {
             btn.removeClass('add-bg-color');
@@ -175,6 +243,7 @@ if ($('#header').length > 0) {
             logoblue.css('display', 'none');
             logowhite.css('display', 'block')
             colorText.css('color', '#fff');
+            icontongger.css('color', '#fff')
         }
     });
 
