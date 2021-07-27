@@ -97,15 +97,15 @@
             <div class="footer-bottom">
                 <div class="container-customize ">
                     <div class="row">
-                        <div class="col-md-7 col-sm-6">
+                        <div class="col-md-7 col-sm-6 col-12">
                            <p class="text-white">Copyright © 2013 Công ty Cổ phần Ô tô Trường Hải.. All rights reserved.</p> 
     
                         </div>
-                        <div class="col-md-2 col-sm-2">
+                        <div class="col-md-2 col-sm-2 col-6">
                           <a class="text-white" href="">Terms of use
                         </a>
                         </div>
-                        <div class="col-md-3 col-sm-4">
+                        <div class="col-md-3 col-sm-4 col-6">
                            <a href="" class="text-white">Terms and conditions
                         </a>
                         </div>

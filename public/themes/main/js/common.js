@@ -183,16 +183,16 @@ let newPostSlide = new Swiper(".new-post-slide", {
 });
 // tuyen dung slider
 var recruitment_slider = new Swiper(".recruitment-slider", {
-    slidesPerView: 1,
-    centeredSlides: false,
-    parallax: true,
-    // centeredSlides: true,
-    // loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
-    speed: 800,
+    // slidesPerView: 1,
+
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    speed: 2000,
+
 
     pagination: {
         el: ".recruitment-slider .swiper-pagination",
