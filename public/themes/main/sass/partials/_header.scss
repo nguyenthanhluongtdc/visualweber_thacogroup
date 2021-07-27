@@ -70,12 +70,18 @@
     }
     .navbar {
         padding: unset;
-        .logo_link-white,
+        .logo_link-white {
+            position: relative;
+            top: -8px;
+            padding: 16px 0;
+            margin: 0;
+        }
         .logo_link-blue {
             position: relative;
             top: -8px;
             padding: 16px 0;
             margin: 0;
+            display: none;
         }
         .navbar-nav {
             display: flex;
