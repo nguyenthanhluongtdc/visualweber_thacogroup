@@ -297,14 +297,14 @@
                                             <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
                                             <p><span class="year font24">2002</span></p>
                                         </div>
-                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
+                                    <p class="desc font18">Được Chủ tịch Nước CHXHCN tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
                                     </div>
                                     <div class="top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">
                                         <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
                                         <p><span class="year font24">2012</span></p>
                                         </div>
-                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
+                                    <p class="desc font18">Được Chủ tịch Nước CHXHCN tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
                                     </div>
                                     
                                     <div class="top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
@@ -312,7 +312,7 @@
                                         <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
                                     <p><span class="year font24">2017</span></p>
                                         </div>
-                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
+                                    <p class="desc font18">Được Chủ tịch CHXHCN Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
                                     </div>
                                 </div>
                                 <div class="bottom">
@@ -323,14 +323,14 @@
                                         </div>
                                     
                                     
-                                    <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                                    <p class="desc font18">Được Chính phủ Nước CHXHCN tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
                                     </div>
                                     <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" >
                                         <div class="img-content">
                                         <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
                                         <p><span class="year font24">Từ 2012-2015</span></p>
                                         </div>
-                                        <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                                        <p class="desc font18">Được Chính phủ Nước CHXHCN tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
                                     </div>
                                     <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">

@@ -143,19 +143,19 @@ let logo_company = new Swiper(".logo-company", {
 // slider post home 
 
 let newPostSlide = new Swiper(".new-post-slide", {
-    slidesPerView: 3,
+    slidesPerView: 4,
     loop: true,
-    centeredSlides: true,
-    spaceBetween: 40,
+    centeredSlides: false,
+    spaceBetween: 30,
     navigation: {
         nextEl: '.new-post-slide .swiper-button-next',
         prevEl: '.new-post-slide .swiper-button-prev',
     },
     breakpoints: {
         1024: {
-            slidesPerView: 3,
-            centeredSlides: true,
-            spaceBetween: 40,
+            slidesPerView: 4,
+            // centeredSlides: true,
+            spaceBetween: 30,
             navigation: {
                 nextEl: '.new-post-slide .swiper-button-next',
                 prevEl: '.new-post-slide .swiper-button-prev',
@@ -189,6 +189,13 @@ var recruitment_slider = new Swiper(".recruitment-slider", {
         disableOnInteraction: false,
     },
     speed: 3000,
+    // direction: 'vertical',
+    // initialSlide: 1,
+    // autoplay: {
+    //     delay: 10000,
+    //     disableOnInteraction: false,
+    //     reverseDirection: true,
+    // },
 
 
     pagination: {
@@ -223,8 +230,9 @@ if ($('#header').length > 0) {
     var logowhite = $('.logo_link-white');
     var colorText = $('.nav-item .item__link,.item-top__link');
     var icontongger = $('.navbar-toggler');
+
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 10) {
+        if ($(window).scrollTop() > 100) {
             btn.addClass('add-bg-color');
             headerTop.addClass('add-bg-top');
             boderTop.addClass('add-color-boder');

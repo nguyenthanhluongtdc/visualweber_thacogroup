@@ -5,7 +5,7 @@
             <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider h-100vh w-100">
             <div class="fade"></div>
             <div class="bg-post">
-                <div class="content">
+                <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                     <h2 class="font24 title-post">
                     THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
                     </h2>
@@ -22,7 +22,7 @@
             <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  w-100 h-100vh">
             <div class="fade"></div>
             <div class="bg-post">
-                <div class="content">
+                <div class="content"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                     <h2 class="font24 title-post">
                     THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
                     </h2>
@@ -39,7 +39,7 @@
             <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  w-100 h-100vh ">
             <div class="fade"></div>
             <div class="bg-post">
-                <div class="content">
+                <div class="content"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                     <h2 class="font24 title-post">
                     THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
                     </h2>
@@ -63,7 +63,7 @@
     <div class="container-customize ">
         <div class="field-activity">
             <div class="field-activity__content">
-                <div class="field-activity__item">
+                <div class="field-activity__item"  data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                     <img class="w-100" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
@@ -82,7 +82,7 @@
                     </div>
     
                 </div>
-                <div class="field-activity__item">
+                <div class="field-activity__item"  data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                     <img class="w-100" src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">NÔNG NGHIỆP</h4>
@@ -103,7 +103,7 @@
                     </div>
     
                 </div>
-                <div class="field-activity__item">
+                <div class="field-activity__item"  data-aos="zoom-in-left" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                     <img class="w-100" src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">LOGICSTICS</h4>
@@ -124,14 +124,14 @@
                     </div>
     
                 </div>
-                <div class="field-activity__item">
+                <div class="field-activity__item"  data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                     <img class="w-100" src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">ĐẦU TƯ - XÂY DỰNG</h4>
                         <div class="content-none">
                             <ul class="list-item">
                                 <li class="item-activity font18">
-                                  Hạ tần giao thông
+                                  Hạ tầng giao thông
                                 </li>
                                 <li class="item-activity font18">
                                     Khu công nghiệp
@@ -152,14 +152,14 @@
                     </div>
     
                 </div>
-                <div class="field-activity__item">
+                <div class="field-activity__item"  data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                     <img class="w-100" src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">THƯƠNG MẠI - DỊCH VỤ</h4>
                         <div class="content-none">
                             <ul class="list-item">
                                 <li class="item-activity font18">
-                                   TT thương mại
+                                   Trung tâm thương mại
                                 </li>
                                 <li class="item-activity font18">
                                    F&B
@@ -168,7 +168,7 @@
                                     Đại siêu thị
                                 </li>
                                 <li class="item-activity font18">
-                                   TT hội nghị
+                                   Trung tâm hội nghị
                                 </li>
                             </ul>
                             <a href="" class="read-more">Xem thêm</a>
@@ -216,7 +216,7 @@
         </div>
     </div>
 </div>
-<div class="news-home-wrapper mt-80">
+<div class="news-home-wrapper pt-80">
     <div class="container-customize">
         <div class="news-home__content">
             <div class="news-home__top">
@@ -251,7 +251,8 @@
                                         </div>
                                        
                                         <h4 class="post_name font20">THILOGI THAY ĐỔI NHẬN DIỆN THƯƠNG HIỆU TRÊN CÁC PHƯƠNG TIỆN VẬN CHUYỂN</h4>
-                                        <p class="post_description font18">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p>
+                                        <p class="post_description font18">Là đơn vị cung ứng chuỗi dịch vụ logistics trọn gói hàng đầu miền Trung, công ty Giao nhận – Vận chuyển Quốc tế Trường Hải (THILOGI) đang đẩy mạnh phát triển dịch vụ logistics nông nghiệp, đặc biệt là vận chuyển nông sản xuất khẩu với các mặt hàng chủ lực gồm: xoài, chuối, thanh long…
+                                        </p>
                                         <span class="time">23/06/2021</span>
                                     </a>   
                                 </div>
@@ -265,7 +266,8 @@
                                             <img src="{{ Theme::asset()->url('images/home/post-2.jpg') }}" alt="">
                                         </div>
                                         <h4 class="post_name font20">ĐÀN BÒ TẠI TRANG TRẠI IA PUCH VÀ QUY TRÌNH CHĂM SÓC ĐẶC BIỆT</h4>
-                                        <p class="post_description font18">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p>
+                                        <p class="post_description font18">Trang trại bò Ia Puch có quy mô 1.907 ha thuộc xã Ia Puch, tỉnh Gia Lai. Với diện tích lớn và điều kiện tự nhiên thuận lợi, trang trại đã phát triển các hoạt động chăn nuôi bò với các phương pháp đặc biệt.
+                                        </p>
                                         <span class="time">23/06/2021</span>
                                     </a>   
                                 </div>
@@ -279,7 +281,57 @@
                                             <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
                                         </div>
                                         <h4 class="post_name font20">THILOGI HỖ TRỢ XUẤT KHẨU ỚT CHO NÔNG DÂN MIỀN TRUNG</h4>
-                                        <p class="post_description font18">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</p>
+                                        <p class="post_description font18">Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
+
+                                        </p>
+                                        <span class="time">23/06/2021</span>
+                                    </a>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">             
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <a class="post-wrapper" href="">
+                                        <div class="post-thumbnail">
+                                            <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
+                                        </div>
+                                        <h4 class="post_name font20">THILOGI HỖ TRỢ XUẤT KHẨU ỚT CHO NÔNG DÂN MIỀN TRUNG</h4>
+                                        <p class="post_description font18">Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
+
+                                        </p>
+                                        <span class="time">23/06/2021</span>
+                                    </a>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">             
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <a class="post-wrapper" href="">
+                                        <div class="post-thumbnail">
+                                            <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
+                                        </div>
+                                        <h4 class="post_name font20">THILOGI HỖ TRỢ XUẤT KHẨU ỚT CHO NÔNG DÂN MIỀN TRUNG</h4>
+                                        <p class="post_description font18">Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
+
+                                        </p>
+                                        <span class="time">23/06/2021</span>
+                                    </a>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">             
+                            <div class="row">
+                                <div class="col-12 p-0">
+                                    <a class="post-wrapper" href="">
+                                        <div class="post-thumbnail">
+                                            <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
+                                        </div>
+                                        <h4 class="post_name font20">THILOGI HỖ TRỢ XUẤT KHẨU ỚT CHO NÔNG DÂN MIỀN TRUNG</h4>
+                                        <p class="post_description font18">Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
+
+                                        </p>
                                         <span class="time">23/06/2021</span>
                                     </a>   
                                 </div>
@@ -296,7 +348,7 @@
     </div>
    
 </div>
-<div class="transport-wrapper mt-80">
+<div class="transport-wrapper pt-80">
     <div class="transport-banner">
         <div class="field-activity__tabs">
             <ul class=" nav nav-tabs mb-0" id="tab-field-activity" role="tablist">
@@ -462,9 +514,9 @@
             <div class="swiper-content__desc">
                 <h3 class="title font28">Tuyển dụng</h3>
                 <p class="description font24 text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel fac
+                    THACO mong muốn tạo nên môi trường làm việc kỷ luật, văn hóa, đề cao tính nhân văn.Tại đây mỗi nhân viên được quan tâm tạo điều kiện để rèn luyện, phát triển bản thân và thăng tiến trong sự nghiệp
                 </p>
-                <a href="" class="btn-apply font24">Ứng tuyển ngay</a>
+                <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" class="btn-apply font24">Ứng tuyển ngay</a>
             </div>
            
             <div class="swiper-container recruitment-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
