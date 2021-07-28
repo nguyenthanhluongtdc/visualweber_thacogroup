@@ -63,7 +63,7 @@
     <div class="container-customize ">
         <div class="field-activity">
             <div class="field-activity__content">
-                <div class="field-activity__item"  data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                <div class="field-activity__item"  >
                     <img class="w-100" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
@@ -82,7 +82,7 @@
                     </div>
     
                 </div>
-                <div class="field-activity__item"  data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                <div class="field-activity__item" >
                     <img class="w-100" src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">NÔNG NGHIỆP</h4>
@@ -103,7 +103,7 @@
                     </div>
     
                 </div>
-                <div class="field-activity__item"  data-aos="zoom-in-left" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                <div class="field-activity__item">
                     <img class="w-100" src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">LOGICSTICS</h4>
@@ -124,7 +124,7 @@
                     </div>
     
                 </div>
-                <div class="field-activity__item"  data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                <div class="field-activity__item">
                     <img class="w-100" src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">ĐẦU TƯ - XÂY DỰNG</h4>
@@ -152,7 +152,7 @@
                     </div>
     
                 </div>
-                <div class="field-activity__item"  data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                <div class="field-activity__item">
                     <img class="w-100" src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
                     <div class="content-title">
                         <h4 class="title font40">THƯƠNG MẠI - DỊCH VỤ</h4>
