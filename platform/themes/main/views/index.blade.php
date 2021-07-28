@@ -206,11 +206,11 @@
                 <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
             </div>
             <div class="logo-desktop">
-                <img src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
-                <img src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
-                <img src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
-                <img src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
-                <img src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+                <img class="fade-top" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
+                <img class="fade-top" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
+                <img class="fade-top" src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
+                <img class="fade-top" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
+                <img class="fade-top" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
             </div>
             
         </div>
@@ -219,27 +219,143 @@
 <div class="news-home-wrapper pt-80">
     <div class="container-customize">
         <div class="news-home__content">
-            <div class="news-home__top">
-                <div class="row">
-                    <div class="col-md-8 pr-md-0">
-                        <div class="img-post h-100">
-                            <img class="img-mw-100 h-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
+            <div class="swiper-container new-post-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="news-home__top">
+                            <div class="row">
+                                <div class="col-md-8 pr-md-0">
+                                    <div class="img-post h-100">
+                                        <img class="img-mw-100 h-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-md-4 pl-md-0">
+                                    <div class="news-post h-100">
+                                        <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
+                                        <h4 class="name font20">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4>
+                                        <span class="time">23/06/2021</span>
+                                        <p class="description font18 text-justify">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
+                                        <a href="" class="read-more">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                       
+                        <div class="news-home__bottom">
+                            <div class="post-slider">            
+                                <div class="row">
+                                    <div class="col-md-4">
+                                         <a class="post-wrapper" href="">
+                                            <div class="post-thumbnail">
+                                                <img src="{{ Theme::asset()->url('images/home/post-1.jpg') }}" alt="">
+                                            </div>
+                                                       
+                                            <h4 class="post_name font20">THILOGI THAY ĐỔI NHẬN DIỆN THƯƠNG HIỆU TRÊN CÁC PHƯƠNG TIỆN VẬN CHUYỂN</h4>
+                                            <p class="post_description font18">Là đơn vị cung ứng chuỗi dịch vụ logistics trọn gói hàng đầu miền Trung, công ty Giao nhận – Vận chuyển Quốc tế Trường Hải (THILOGI) đang đẩy mạnh phát triển dịch vụ logistics nông nghiệp, đặc biệt là vận chuyển nông sản xuất khẩu với các mặt hàng chủ lực gồm: xoài, chuối, thanh long…
+                                            </p>
+                                            <span class="time">23/06/2021</span>
+                                        </a>   
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="post-wrapper" href="">
+                                           <div class="post-thumbnail">
+                                               <img src="{{ Theme::asset()->url('images/home/post-2.jpg') }}" alt="">
+                                           </div>
+                                                      
+                                           <h4 class="post_name font20">THILOGI THAY ĐỔI NHẬN DIỆN THƯƠNG HIỆU TRÊN CÁC PHƯƠNG TIỆN VẬN CHUYỂN</h4>
+                                           <p class="post_description font18">Là đơn vị cung ứng chuỗi dịch vụ logistics trọn gói hàng đầu miền Trung, công ty Giao nhận – Vận chuyển Quốc tế Trường Hải (THILOGI) đang đẩy mạnh phát triển dịch vụ logistics nông nghiệp, đặc biệt là vận chuyển nông sản xuất khẩu với các mặt hàng chủ lực gồm: xoài, chuối, thanh long…
+                                           </p>
+                                           <span class="time">23/06/2021</span>
+                                       </a>   
+                                   </div>
+                                   <div class="col-md-4">
+                                        <a class="post-wrapper" href="">
+                                            <div class="post-thumbnail">
+                                                <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
+                                            </div>
+                                                        
+                                            <h4 class="post_name font20">THILOGI THAY ĐỔI NHẬN DIỆN THƯƠNG HIỆU TRÊN CÁC PHƯƠNG TIỆN VẬN CHUYỂN</h4>
+                                            <p class="post_description font18">Là đơn vị cung ứng chuỗi dịch vụ logistics trọn gói hàng đầu miền Trung, công ty Giao nhận – Vận chuyển Quốc tế Trường Hải (THILOGI) đang đẩy mạnh phát triển dịch vụ logistics nông nghiệp, đặc biệt là vận chuyển nông sản xuất khẩu với các mặt hàng chủ lực gồm: xoài, chuối, thanh long…
+                                            </p>
+                                            <span class="time">23/06/2021</span>
+                                        </a>   
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-md-4 pl-md-0">
-                        <div class="news-post h-100">
-                            <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
-                            <h4 class="name font20">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4>
-                            <span class="time">23/06/2021</span>
-                            <p class="description font18 text-justify">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
-                            <a href="" class="read-more">Xem thêm</a>
+                    <div class="swiper-slide">
+                        <div class="news-home__top">
+                            <div class="row">
+                                <div class="col-md-8 pr-md-0">
+                                    <div class="img-post h-100">
+                                        <img class="img-mw-100 h-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-md-4 pl-md-0">
+                                    <div class="news-post h-100">
+                                        <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
+                                        <h4 class="name font20">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4>
+                                        <span class="time">23/06/2021</span>
+                                        <p class="description font18 text-justify">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
+                                        <a href="" class="read-more">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="news-home__bottom">
+                            <div class="post-slider">            
+                                <div class="row">
+                                    <div class="col-md-4">
+                                         <a class="post-wrapper" href="">
+                                            <div class="post-thumbnail">
+                                                <img src="{{ Theme::asset()->url('images/home/post-1.jpg') }}" alt="">
+                                            </div>
+                                                       
+                                            <h4 class="post_name font20">THILOGI THAY ĐỔI NHẬN DIỆN THƯƠNG HIỆU TRÊN CÁC PHƯƠNG TIỆN VẬN CHUYỂN</h4>
+                                            <p class="post_description font18">Là đơn vị cung ứng chuỗi dịch vụ logistics trọn gói hàng đầu miền Trung, công ty Giao nhận – Vận chuyển Quốc tế Trường Hải (THILOGI) đang đẩy mạnh phát triển dịch vụ logistics nông nghiệp, đặc biệt là vận chuyển nông sản xuất khẩu với các mặt hàng chủ lực gồm: xoài, chuối, thanh long…
+                                            </p>
+                                            <span class="time">23/06/2021</span>
+                                        </a>   
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a class="post-wrapper" href="">
+                                           <div class="post-thumbnail">
+                                               <img src="{{ Theme::asset()->url('images/home/post-1.jpg') }}" alt="">
+                                           </div>
+                                                      
+                                           <h4 class="post_name font20">THILOGI THAY ĐỔI NHẬN DIỆN THƯƠNG HIỆU TRÊN CÁC PHƯƠNG TIỆN VẬN CHUYỂN</h4>
+                                           <p class="post_description font18">Là đơn vị cung ứng chuỗi dịch vụ logistics trọn gói hàng đầu miền Trung, công ty Giao nhận – Vận chuyển Quốc tế Trường Hải (THILOGI) đang đẩy mạnh phát triển dịch vụ logistics nông nghiệp, đặc biệt là vận chuyển nông sản xuất khẩu với các mặt hàng chủ lực gồm: xoài, chuối, thanh long…
+                                           </p>
+                                           <span class="time">23/06/2021</span>
+                                       </a>   
+                                   </div>
+                                   <div class="col-md-4">
+                                        <a class="post-wrapper" href="">
+                                            <div class="post-thumbnail">
+                                                <img src="{{ Theme::asset()->url('images/home/post-1.jpg') }}" alt="">
+                                            </div>
+                                                        
+                                            <h4 class="post_name font20">THILOGI THAY ĐỔI NHẬN DIỆN THƯƠNG HIỆU TRÊN CÁC PHƯƠNG TIỆN VẬN CHUYỂN</h4>
+                                            <p class="post_description font18">Là đơn vị cung ứng chuỗi dịch vụ logistics trọn gói hàng đầu miền Trung, công ty Giao nhận – Vận chuyển Quốc tế Trường Hải (THILOGI) đang đẩy mạnh phát triển dịch vụ logistics nông nghiệp, đặc biệt là vận chuyển nông sản xuất khẩu với các mặt hàng chủ lực gồm: xoài, chuối, thanh long…
+                                            </p>
+                                            <span class="time">23/06/2021</span>
+                                        </a>   
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
+            </div>    
            
-            <div class="post-slider">
+           
+            {{-- <div class="post-slider">
                 <div class="swiper-container new-post-slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide d-flex justify-content-center">             
@@ -343,7 +459,8 @@
         
                 </div>
                
-            </div>
+            </div> --}}
+            
         </div>
     </div>
    

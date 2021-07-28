@@ -143,17 +143,19 @@ let logo_company = new Swiper(".logo-company", {
 // slider post home 
 
 let newPostSlide = new Swiper(".new-post-slide", {
-    slidesPerView: 4,
-    loop: true,
-    centeredSlides: false,
-    spaceBetween: 30,
+    // slidesPerView: 1,
+    // loop: true,
+
+    // centeredSlides: false,
+    // spaceBetween: 30,
+    speed: 800,
     navigation: {
         nextEl: '.new-post-slide .swiper-button-next',
         prevEl: '.new-post-slide .swiper-button-prev',
     },
     breakpoints: {
         1024: {
-            slidesPerView: 4,
+            slidesPerView: 1,
             // centeredSlides: true,
             spaceBetween: 30,
             navigation: {
