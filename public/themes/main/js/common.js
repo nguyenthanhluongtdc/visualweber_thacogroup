@@ -12,9 +12,10 @@ $('.slider-nav').slick({
     arrows: true,
     vertical: true,
     autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 1000,
-    infinite: true,
+    autoplaySpeed: 5000,
+    // speed: 1000,
+    // infinite: true,
+    loop: true,
     asNavFor: '.slider-for',
     dots: false,
     focusOnSelect: true,
@@ -143,11 +144,6 @@ let logo_company = new Swiper(".logo-company", {
 // slider post home 
 
 let newPostSlide = new Swiper(".new-post-slide", {
-    // slidesPerView: 1,
-    // loop: true,
-
-    // centeredSlides: false,
-    // spaceBetween: 30,
     speed: 800,
     pagination: {
         el: ".new-post-slide .swiper-pagination",
@@ -189,19 +185,17 @@ let newPostSlide = new Swiper(".new-post-slide", {
 });
 // tuyen dung slider
 var recruitment_slider = new Swiper(".recruitment-slider", {
-    slidesPerView: 1,
+    direction: 'vertical',
+    initialSlide: 1,
+    slidesPerColumn: 1,
+    centeredSlides: true,
+    loop: true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
+
     },
     speed: 3000,
-    // direction: 'vertical',
-    // initialSlide: 1,
-    // autoplay: {
-    //     delay: 10000,
-    //     disableOnInteraction: false,
-    //     reverseDirection: true,
-    // },
 
 
     pagination: {

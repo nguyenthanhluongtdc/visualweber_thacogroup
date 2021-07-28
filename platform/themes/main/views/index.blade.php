@@ -657,6 +657,22 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="swiper-slide" >
+                            <div class="swiper-content-bottom">
+                                <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
+                                    <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" >
+                            <div class="swiper-content-bottom">
+                                <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
+                                    <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
                        
                     </div>
                     <div class="swiper-pagination"></div>
