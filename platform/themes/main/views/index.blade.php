@@ -352,8 +352,8 @@
 
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next drop-shadow-button"></div>
+                <div class="swiper-button-prev drop-shadow-button"></div>
                 <div class="swiper-pagination"></div>
             </div>    
            
