@@ -219,7 +219,7 @@
 <div class="news-home-wrapper pt-80">
     <div class="container-customize">
         <div class="news-home__content">
-            <div class="swiper-container new-post-slide" style="--swiper-navigation-color:#1E5695; --swiper-pagination-color:#000;">
+            <div class="swiper-container new-post-slide" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="news-home__top">
