@@ -2,7 +2,7 @@
     <img class=" h-45vw img-mw-100" src="{{ Theme::asset()->url('images/introduce/banner-introduce.jpg') }}" alt="">
 </section>
 @includeIf("theme.main::views.breadcrumb")
-<section class="about-us mt-40">
+<section class="about-us mt-15">
     <div class="container-customize">
         <div class="about-us__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
@@ -22,14 +22,14 @@
         <div class="future-goal-banner mt-40" style="background-image:url('{{ Theme::asset()->url('images/introduce/tam-nhin-chien-luoc.jpg') }}')">
             <div class="future-goal-wrapper">
                 <div class="row mr-0 ml-0">
-                    <div class="col-md-4 pl-0 pr-0">
+                    <div class="col-sm-4 pl-0 pr-0">
                         <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/tam-nhin.png') }}" alt="">
                             <h3 class="title font40">Tầm nhìn</h3>
                             <p class="desc font18">Tập đoàn công nghiệp đa ngành của Việt Nam phat triển bền vững trong bối cảnh hội nhập khu vực và thế giới.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 pl-0 pr-0">
+                    <div class="col-sm-4 pl-0 pr-0">
                         <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/chien-luoc.png') }}" alt="">
                             <h3 class="title font40">Chiến lược</h3>
@@ -37,7 +37,7 @@
                                 Trong đó các ngành bổ trợ cho nhau và có tính tích hợp cao, phát triển bền vững theo xu thế số hoá và bối cảnh hội nhập khu vực và thế giới.</p>
                         </div>
                     </div>
-                    <div class="col-md-4 pl-0 pr-0">
+                    <div class="col-sm-4 pl-0 pr-0">
                         <div class="future-goal last p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/su-menh.png') }}" alt="">
                             <h3 class="title font40">Sứ mệnh</h3>

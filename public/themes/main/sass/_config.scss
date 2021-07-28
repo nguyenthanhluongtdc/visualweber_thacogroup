@@ -34,12 +34,6 @@ body {
 
 .mt-80 {
     margin-top: 80px;
-    @media screen and (max-width: 1680px) {
-        margin-top: 60px;
-    }
-    @media screen and (max-width: 991px) {
-        margin-top: 50px;
-    }
 }
 
 .mt-40 {
@@ -54,21 +48,16 @@ body {
     margin-top: 25px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
 .pt-80 {
     padding-top: 80px;
-    @media screen and (max-width: 1680px) {
-        padding-top: 60px;
-    }
-    @media screen and (max-width: 991px) {
-        padding-top: 50px;
-    }
 }
 
 .p-lr-90 {
     padding: 0 90px;
-    @media screen and (max-width: 1680px) {
-        padding: 0 90px;
-    }
 }
 
 .font-myria-bold {
@@ -93,77 +82,127 @@ body {
 
 .h-100vh {
     height: 100vh!important;
-    ;
     object-fit: cover!important;
-    ;
 }
 
 .font40 {
     font-size: 40px;
-    @media screen and (max-width: 1680px) {
-        font-size: 32px;
-    }
-    @media screen and (max-width: 991px) {
-        font-size: 24px;
-    }
 }
 
 .font50 {
     font-size: 50px;
-    @media screen and (max-width: 1680px) {
-        font-size: 40px;
-    }
 }
 
 .font30 {
     font-size: 30px;
-    @media screen and (max-width: 1680px) {
-        font-size: 25px;
-    }
-    @media screen and (max-width: 991px) {
-        font-size: 20px;
-    }
 }
 
 .font28 {
     font-size: 28px;
-    @media screen and (max-width: 1680px) {
-        font-size: 25px;
-    }
-    @media screen and (max-width: 1440px) {
-        font-size: 22px;
-    }
-    @media screen and (max-width: 768px) {
-        font-size: 19px;
-    }
 }
 
 .font24 {
     font-size: 24px;
-    @media screen and (max-width: 1680px) {
-        font-size: 21px;
-    }
-    @media screen and (max-width: 1440px) {
-        font-size: 18px;
-    }
 }
 
 .font20 {
     font-size: 20px;
-    @media screen and (max-width: 1680px) {
-        font-size: 18px;
-    }
-    @media screen and (max-width: 991px) {
-        font-size: 16px;
-    }
 }
 
 .font18 {
     font-size: 18px;
-    @media screen and (max-width: 1680px) {
+}
+
+//responsive
+@media screen and (max-width: 1680px) {
+    .p-lr-90 {
+        padding: 0 40px;
+    }
+    .mt-80 {
+        margin-top: 60px;
+    }
+    .pt-80 {
+        padding-top: 60px;
+    }
+    .font50 {
+        font-size: 40px;
+    }
+    .font40 {
+        font-size: 32px;
+    }
+    .font30 {
+        font-size: 25px;
+    }
+    .font28 {
+        font-size: 25px;
+    }
+    .font24 {
+        font-size: 21px;
+    }
+    .font20 {
+        font-size: 18px;
+    }
+    .font18 {
         font-size: 16px;
     }
-    @media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 1440px) {
+    .font28 {
+        font-size: 22px;
+    }
+    .font24 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .p-lr-90 {
+        padding: 0 20px;
+    }
+    .mt-80 {
+        margin-top: 50px;
+    }
+    .pt-80 {
+        padding-top: 50px;
+    }
+    .mt-40 {
+        margin-top: 30px;
+    }
+    .font50 {
+        font-size: 30px;
+    }
+    .font40 {
+        font-size: 24px;
+    }
+    .font30 {
+        font-size: 20px;
+    }
+    .font24 {
+        font-size: 17px;
+    }
+    .font20 {
+        font-size: 16px;
+    }
+    .font18 {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:767px) {
+    .p-lr-90 {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .font28 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .p-lr-90 {
+        padding: 0 10%;
     }
 }
