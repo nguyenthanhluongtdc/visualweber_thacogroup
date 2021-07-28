@@ -93,7 +93,7 @@ let main_slider = new Swiper(".main-slider", {
 
     speed: 800,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".main-slider .swiper-pagination",
         clickable: true,
     },
     navigation: {
@@ -149,6 +149,10 @@ let newPostSlide = new Swiper(".new-post-slide", {
     // centeredSlides: false,
     // spaceBetween: 30,
     speed: 800,
+    pagination: {
+        el: ".new-post-slide .swiper-pagination",
+        clickable: true,
+    },
     navigation: {
         nextEl: '.new-post-slide .swiper-button-next',
         prevEl: '.new-post-slide .swiper-button-prev',

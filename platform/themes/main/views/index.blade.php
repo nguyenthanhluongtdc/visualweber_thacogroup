@@ -206,11 +206,11 @@
                 <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
             </div>
             <div class="logo-desktop">
-                <img class="fade-top" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
-                <img class="fade-top" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
-                <img class="fade-top" src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
-                <img class="fade-top" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
-                <img class="fade-top" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
+                <img class="fade-top"data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
             </div>
             
         </div>
@@ -219,7 +219,7 @@
 <div class="news-home-wrapper pt-80">
     <div class="container-customize">
         <div class="news-home__content">
-            <div class="swiper-container new-post-slide">
+            <div class="swiper-container new-post-slide" style="--swiper-navigation-color:#1E5695; --swiper-pagination-color:#000;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="news-home__top">
@@ -352,6 +352,9 @@
 
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>    
            
            
