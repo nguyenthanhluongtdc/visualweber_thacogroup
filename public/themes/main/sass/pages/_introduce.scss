@@ -440,6 +440,11 @@
                         transition: all 0.5s ease;
                     }
                     ul.slick-slider {
+                        .slick-list {
+                            -ms-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(.1, rgba(0, 0, 0, .75)), color-stop(.75, #000), color-stop(1, rgba(0, 0, 0, 0)));
+                            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(.1, rgba(0, 0, 0, .75)), color-stop(.75, #000), color-stop(1, rgba(0, 0, 0, 0)));
+                            mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(.1, #000), color-stop(.75, #000), color-stop(1, rgba(0, 0, 0, 0)));
+                        }
                         button {
                             height: 40px;
                             width: 40px;

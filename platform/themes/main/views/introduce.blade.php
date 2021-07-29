@@ -55,125 +55,124 @@
                  Sau 22 năm hình thành và phát triển, THACO đã trở thành Tập đoàn công nghiệp đa ngành, trong đó Cơ khí và Ô tô là chủ lực, đồng thời phát triển các lĩnh vực sản xuất kinh doanh bổ trợ cho nhau, tạo ra giá trị cộng hưởng và nâng cao năng lực cạnh tranh, bao gồm: Nông nghiệp; Đầu tư xây dựng; Logistics và Thương mại & Dịch vụ.
                 </p>
             </div>
-
-            <div class="field-activity">
-                                <div class="field-activity__content">
-                                    <div class="field-activity__item">
-                                        <img class="mw-100" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
-                                        <div class="content-title">
-                                            <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
-                                            <div class="content-none">
-                                                <ul class="list-item">
-                                                    <li class="item-activity font18">
-                                                        Ô tô
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                        Linh kiện phụ tùng
-                                                    </li>
-                                                    <li class="item-activity font18">Cơ khí</li>
-                                                </ul>
-                                                <a href="" class="font18">Xem thêm</a>
-                                            </div>
-                                        </div>
-                        
-                                    </div>
-                                    <div class="field-activity__item">
-                                        <img class="mw-100" src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
-                                        <div class="content-title">
-                                            <h4 class="title font40">NÔNG NGHIỆP</h4>
-                                            <div class="content-none">
-                                                <ul class="list-item">
-                                                    <li class="item-activity font18">
-                                                    Trồng trọt và chế biến trái cây
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                    Chăn nuôi heo
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                        Chăn nuôi bò
-                                                    </li>
-                                                </ul>
-                                                <a href="" class="font18">Xem thêm</a>
-                                            </div>
-                                        </div>
-                        
-                                    </div>
-                                    <div class="field-activity__item">
-                                        <img class="mw-100" src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
-                                        <div class="content-title">
-                                            <h4 class="title font40">LOGICSTICS</h4>
-                                            <div class="content-none">
-                                                <ul class="list-item">
-                                                    <li class="item-activity font18">
-                                                    Cảng biển
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                    Vận tải biển
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                        Vận tải đường bộ
-                                                    </li>
-                                                </ul>
-                                                <a href="" class="font18">Xem thêm</a>
-                                            </div>
-                                        </div>
-                        
-                                    </div>
-                                    <div class="field-activity__item">
-                                        <img class="mw-100" src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
-                                        <div class="content-title">
-                                            <h4 class="title font40">ĐẦU TƯ - XÂY DỰNG</h4>
-                                            <div class="content-none">
-                                                <ul class="list-item">
-                                                    <li class="item-activity font18">
-                                                    Hạ tần giao thông
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                        Khu công nghiệp
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                        Khu đô thị
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                    Bất động sản
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                    Khu phức hợp
-                                                    </li>
-                                                    
-                                                </ul>
-                                                <a href="" class="font18">Xem thêm</a>
-                                            </div>
-                                        </div>
-                        
-                                    </div>
-                                    <div class="field-activity__item">
-                                        <img class="mw-100" src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
-                                        <div class="content-title">
-                                            <h4 class="title font40">THƯƠNG MẠI - DỊCH VỤ</h4>
-                                            <div class="content-none">
-                                                <ul class="list-item">
-                                                    <li class="item-activity font18">
-                                                    TT thương mại
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                    F&B
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                        Đại siêu thị
-                                                    </li>
-                                                    <li class="item-activity font18">
-                                                    TT hội nghị
-                                                    </li>
-                                                </ul>
-                                                <a href="" class="read-more">Xem thêm</a>
-                                            </div>
-                                        </div>
-                        
+                    <div class="field-activity">
+                        <div class="field-activity__content">
+                            <div class="field-activity__item"  >
+                                <img class="w-100" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
+                                <div class="content-title">
+                                    <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
+                                    <div class="content-none">
+                                        <ul class="list-item">
+                                            <li class="item-activity font18">
+                                                Ô tô
+                                            </li>
+                                            <li class="item-activity font18">
+                                                Linh kiện phụ tùng
+                                            </li>
+                                            <li class="item-activity font18">Cơ khí</li>
+                                        </ul>
+                                        <a href="" class="font18">Xem thêm</a>
                                     </div>
                                 </div>
+                
                             </div>
-                </div>
+                            <div class="field-activity__item" >
+                                <img class="w-100" src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
+                                <div class="content-title">
+                                    <h4 class="title font40">NÔNG NGHIỆP</h4>
+                                    <div class="content-none">
+                                        <ul class="list-item">
+                                            <li class="item-activity font18">
+                                               Trồng trọt và chế biến trái cây
+                                            </li>
+                                            <li class="item-activity font18">
+                                               Chăn nuôi heo
+                                            </li>
+                                            <li class="item-activity font18">
+                                                Chăn nuôi bò
+                                            </li>
+                                        </ul>
+                                        <a href="" class="font18">Xem thêm</a>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <div class="field-activity__item">
+                                <img class="w-100" src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
+                                <div class="content-title">
+                                    <h4 class="title font40">LOGICSTICS</h4>
+                                    <div class="content-none">
+                                        <ul class="list-item">
+                                            <li class="item-activity font18">
+                                            Cảng biển
+                                            </li>
+                                            <li class="item-activity font18">
+                                              Vận tải biển
+                                            </li>
+                                            <li class="item-activity font18">
+                                                Vận tải đường bộ
+                                            </li>
+                                        </ul>
+                                        <a href="" class="font18">Xem thêm</a>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <div class="field-activity__item">
+                                <img class="w-100" src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
+                                <div class="content-title">
+                                    <h4 class="title font40">ĐẦU TƯ - XÂY DỰNG</h4>
+                                    <div class="content-none">
+                                        <ul class="list-item">
+                                            <li class="item-activity font18">
+                                              Hạ tầng giao thông
+                                            </li>
+                                            <li class="item-activity font18">
+                                                Khu công nghiệp
+                                            </li>
+                                            <li class="item-activity font18">
+                                                Khu đô thị
+                                            </li>
+                                            <li class="item-activity font18">
+                                               Bất động sản
+                                            </li>
+                                            <li class="item-activity font18">
+                                               Khu phức hợp
+                                             </li>
+                                            
+                                        </ul>
+                                        <a href="" class="font18">Xem thêm</a>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <div class="field-activity__item">
+                                <img class="w-100" src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
+                                <div class="content-title">
+                                    <h4 class="title font40">THƯƠNG MẠI - DỊCH VỤ</h4>
+                                    <div class="content-none">
+                                        <ul class="list-item">
+                                            <li class="item-activity font18">
+                                               Trung tâm thương mại
+                                            </li>
+                                            <li class="item-activity font18">
+                                               F&B
+                                            </li>
+                                            <li class="item-activity font18">
+                                                Đại siêu thị
+                                            </li>
+                                            <li class="item-activity font18">
+                                               Trung tâm hội nghị
+                                            </li>
+                                        </ul>
+                                        <a href="" class="read-more">Xem thêm</a>
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+        </div>
             
                 <div class="leader-of-us-wrapper mt-40">
                     <div class="leader-of-us__title mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
@@ -297,14 +296,14 @@
                                             <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
                                             <p><span class="year font24">2002</span></p>
                                         </div>
-                                    <p class="desc font18">Được Chủ tịch Nước CHXHCN tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
+                                    <p class="desc font18">Được Chủ tịch Nước CHXHCN Việt Nam  tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
                                     </div>
                                     <div class="top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">
                                         <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
                                         <p><span class="year font24">2012</span></p>
                                         </div>
-                                    <p class="desc font18">Được Chủ tịch Nước CHXHCN tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
+                                    <p class="desc font18">Được Chủ tịch Nước CHXHCN Việt Nam  tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>.</p>
                                     </div>
                                     
                                     <div class="top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
@@ -312,7 +311,7 @@
                                         <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
                                     <p><span class="year font24">2017</span></p>
                                         </div>
-                                    <p class="desc font18">Được Chủ tịch CHXHCN Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
+                                    <p class="desc font18">Được Chủ tịch Nước CHXHCN Việt Nam  tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
                                     </div>
                                 </div>
                                 <div class="bottom">
@@ -323,14 +322,14 @@
                                         </div>
                                     
                                     
-                                    <p class="desc font18">Được Chính phủ Nước CHXHCN tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                                    <p class="desc font18">Được Chính phủ Nước CHXHCN Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
                                     </div>
                                     <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" >
                                         <div class="img-content">
                                         <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
                                         <p><span class="year font24">Từ 2012-2015</span></p>
                                         </div>
-                                        <p class="desc font18">Được Chính phủ Nước CHXHCN tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
+                                        <p class="desc font18">Được Chính phủ Nước CHXHCN Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
                                     </div>
                                     <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="img-content">
@@ -566,7 +565,7 @@
 
                 </div>
                 
-            </div>
+    </div>
     
     
 </section>

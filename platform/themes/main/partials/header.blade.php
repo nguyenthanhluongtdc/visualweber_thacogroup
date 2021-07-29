@@ -54,7 +54,7 @@
                                 </li>
                             </ul> --}}
                             <ul class="language">
-                                <li class="lang lang-vi font-helve-light font15">
+                                <li class="lang lang-vi">
                                     <a class="item-top__link" rel="alternate" hreflang="vi" href="#">
                 
                                         <span>VN</span>
