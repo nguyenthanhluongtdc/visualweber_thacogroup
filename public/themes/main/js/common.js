@@ -91,8 +91,14 @@ if ($('#button-top').length > 0) {
 }
 // main slider 
 let main_slider = new Swiper(".main-slider", {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
 
-    speed: 800,
+    },
+    effect: "fade",
+    loop: true,
+    speed: 2000,
     pagination: {
         el: ".main-slider .swiper-pagination",
         clickable: true,
