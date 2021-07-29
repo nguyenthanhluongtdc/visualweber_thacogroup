@@ -14,14 +14,13 @@ $('.slider-nav').slick({
     autoplay: true,
     autoplaySpeed: 5000,
     // speed: 1000,
-    // infinite: true,
+    infinite: true,
     loop: true,
     asNavFor: '.slider-for',
     dots: false,
     focusOnSelect: true,
     verticalSwiping: true,
-
-
+    pauseOnHover: false,
     responsive: [{
             breakpoint: 992,
             settings: {

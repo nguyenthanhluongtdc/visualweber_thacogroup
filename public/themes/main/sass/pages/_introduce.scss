@@ -435,6 +435,9 @@
                     }
                 }
                 .cycle-list-wrap {
+                    &:hover .carousel-controls {
+                        display: block!important;
+                    }
                     ul.slick-slider {
                         button {
                             height: 40px;
@@ -484,6 +487,7 @@
                         li {
                             font-size: 2rem;
                             line-height: 2rem;
+                            cursor: pointer;
                             text-align: center;
                             float: none;
                             width: 100%!important;
@@ -643,4 +647,8 @@
             }
         }
     }
+}
+
+.cycle-list-wrap:hover~.carousel-controls {
+    display: block!important;
 }
