@@ -243,8 +243,8 @@
                         <div class="news-home__top">
                             <div class="row">
                                 <div class="col-md-8 pr-md-0">
-                                    <div class="img-post h-100">
-                                        <img class="img-mw-100 h-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
+                                    <div class="img-post">
+                                        <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
                                     </div>
                                    
                                 </div>
@@ -311,8 +311,8 @@
                         <div class="news-home__top">
                             <div class="row">
                                 <div class="col-md-8 pr-md-0">
-                                    <div class="img-post h-100">
-                                        <img class="img-mw-100 h-100" src="{{ Theme::asset()->url('images/home/1-post.jpg') }}" alt="">
+                                    <div class="img-post">
+                                        <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/1-post.jpg') }}" alt="">
                                     </div>
                                    
                                 </div>
@@ -380,8 +380,8 @@
                         <div class="news-home__top">
                             <div class="row">
                                 <div class="col-md-8 pr-md-0">
-                                    <div class="img-post h-100">
-                                        <img class="img-mw-100 h-100" src="{{ Theme::asset()->url('images/home/5-post.jpg') }}" alt="">
+                                    <div class="img-post">
+                                        <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/5-post.jpg') }}" alt="">
                                     </div>
                                    
                                 </div>
@@ -717,14 +717,14 @@
                               <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                            <img src="{{Theme::asset()->url('images/home/icon5-img3.jpg') }}" alt="">
                         </div>
-                        <div class="swiper-slide">                  
+                        {{-- <div class="swiper-slide">                  
                             <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div>
-                      <div class="swiper-slide">                  
+                      </div> --}}
+                      {{-- <div class="swiper-slide">                  
                             <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div>
+                      </div> --}}
                     </div>
                 </div>
             </div>

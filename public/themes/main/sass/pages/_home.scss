@@ -183,6 +183,9 @@
         padding-bottom: 30px;
         .img-post {
             height: 600px;
+            img {
+                height: 600px;
+            }
         }
         .news-post {
             height: 600px;
@@ -201,7 +204,7 @@
                 text-transform: uppercase;
             }
             .time {
-                margin-bottom: 40px;
+                margin-bottom: 25px;
                 display: block;
             }
             .description {
@@ -404,7 +407,7 @@
             img {
                 width: 100%;
                 object-fit: cover;
-                height: 53vw;
+                height: 40vw;
             }
         }
     }
