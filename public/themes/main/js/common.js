@@ -216,7 +216,13 @@ var recruitment_slider = new Swiper(".recruitment-slider", {
 
 // linh vuc hoat dong slider
 let fieldActivitySlide = new Swiper(".field-activity-slide", {
-    speed: 800,
+    effect: "fade",
+    loop: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+
+    },
     navigation: {
         nextEl: '.field-activity-slide .swiper-button-next',
         prevEl: '.field-activity-slide .swiper-button-prev',
