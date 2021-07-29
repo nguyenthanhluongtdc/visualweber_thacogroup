@@ -181,7 +181,11 @@
     background-color: $bg-post;
     .news-home__top {
         padding-bottom: 30px;
+        .img-post {
+            height: 600px;
+        }
         .news-post {
+            height: 600px;
             background-color: $white;
             padding: 60px 30px;
             .title {
@@ -399,6 +403,8 @@
         .swiper-slide {
             img {
                 width: 100%;
+                object-fit: cover;
+                max-height: 450px;
             }
         }
     }

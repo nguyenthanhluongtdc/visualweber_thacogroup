@@ -464,7 +464,7 @@
                                                         2020
                                                     </li>
                                                 </ul>
-                                                <div class="carousel-controls transparent-controls ">
+                                                <div class="carousel-controls transparent-controls " style="display: none">
                                                     {{-- <a class="pause"></i></a> --}}
                                                     
 

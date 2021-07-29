@@ -608,17 +608,17 @@
                 <div class="swiper-container field-activity-slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/7-oto.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/9-oto.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                            <img src="{{Theme::asset()->url('images/home/10-oto.jpg') }}" alt="">
                       </div>
-                      <div class="swiper-slide">                  
+                      {{-- <div class="swiper-slide">                  
                             <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div>
+                      </div> --}}
                     </div>
                    
         
@@ -628,17 +628,17 @@
                 <div class="swiper-container field-activity-slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/icon2-img1.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/icon2-img2.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                            <img src="{{Theme::asset()->url('images/home/icon2-img3.jpg') }}" alt="">
                       </div>
-                      <div class="swiper-slide">                  
+                      {{-- <div class="swiper-slide">                  
                             <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div>
+                      </div> --}}
                     </div>
                    
         
@@ -648,17 +648,17 @@
                 <div class="swiper-container field-activity-slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/icon3-img1.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/icon3-img2.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                            <img src="{{Theme::asset()->url('images/home/icon3-img3.jpg') }}" alt="">
                       </div>
-                      <div class="swiper-slide">                  
+                      {{-- <div class="swiper-slide">                  
                             <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div>
+                      </div> --}}
                     </div>
                    
         
@@ -668,17 +668,17 @@
                 <div class="swiper-container field-activity-slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/icon4-img1.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/icon4-img2.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                            <img src="{{Theme::asset()->url('images/home/icon4-img3.jpg') }}" alt="">
                       </div>
-                      <div class="swiper-slide">                  
+                      {{-- <div class="swiper-slide">                  
                             <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div>
+                      </div> --}}
                     </div>
                    
         
@@ -687,18 +687,19 @@
             <div class="tab-pane fade" id="field-5" role="tabpanel" aria-labelledby="field-5-tab">
                 <div class="swiper-container field-activity-slide">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                        <div class="swiper-slide">
+                                             
+                              <img src="{{Theme::asset()->url('images/home/icon5-img1.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/icon5-img2.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                            <img src="{{Theme::asset()->url('images/home/icon5-img3.jpg') }}" alt="">
                       </div>
-                      <div class="swiper-slide">                  
+                      {{-- <div class="swiper-slide">                  
                             <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div>
+                      </div> --}}
                     </div>
                    
         
