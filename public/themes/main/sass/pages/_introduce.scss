@@ -437,6 +437,7 @@
                 .cycle-list-wrap {
                     &:hover .carousel-controls {
                         display: block!important;
+                        transition: all 0.5s ease;
                     }
                     ul.slick-slider {
                         button {
