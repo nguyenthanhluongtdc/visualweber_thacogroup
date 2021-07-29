@@ -667,7 +667,9 @@
             <div class="tab-pane fade" id="field-4" role="tabpanel" aria-labelledby="field-4-tab">
                 <div class="swiper-container field-activity-slide">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">                  
+                        <div class="swiper-slide">
+                            {{-- <div class="bg-slider" style="background-image: url('{{Theme::asset()->url('images/home/icon4-img1.jpg') }}')">
+                            </div>                     --}}
                               <img src="{{Theme::asset()->url('images/home/icon4-img1.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
@@ -688,10 +690,13 @@
                 <div class="swiper-container field-activity-slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                                             
+                                {{-- <div class="bg-slider" style="background-image: url('{{Theme::asset()->url('images/home/icon5-img1.jpg') }}')">
+                                    </div>                   --}}
                               <img src="{{Theme::asset()->url('images/home/icon5-img1.jpg') }}" alt="">
                         </div>
-                        <div class="swiper-slide">                  
+                        <div class="swiper-slide"> 
+                            {{-- <div class="bg-slider" style="background-image: url('{{Theme::asset()->url('images/home/icon5-img2.jpg') }}')">
+                            </div>                    --}}
                               <img src="{{Theme::asset()->url('images/home/icon5-img2.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
