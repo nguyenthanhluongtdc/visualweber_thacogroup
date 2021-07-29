@@ -1,12 +1,9 @@
 .add-bg-top {
     background-color: #F6F6F7 !important;
-    transition: all .5s ease;
-}
-
-.add-color-boder {
-    opacity: 1!important;
-    visibility: visible!important;
-    transition: all .5s ease;
+    &::after {
+        opacity: 1!important;
+        visibility: visible!important;
+    }
 }
 
 .add-bg-color {
@@ -26,7 +23,9 @@
         position: relative;
         background-color: transparent;
         height: 42px;
-        .boder-header {
+        &::after {
+            content: "";
+            position: absolute;
             border: 18px solid $white;
             bottom: 0;
             position: absolute;

@@ -231,31 +231,30 @@ let fieldActivitySlide = new Swiper(".field-activity-slide", {
 
 });
 
-
 // change color header 
 if ($('#header').length > 0) {
-    var btn = $('#header');
+    var header = $('#header');
     var headerTop = $('#header-top');
-    var boderTop = $('#boder-top');
     var logoblue = $('.logo_link-blue');
     var logowhite = $('.logo_link-white');
     var colorText = $('.nav-item .item__link,.item-top__link');
     var icontongger = $('.navbar-toggler');
 
+
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 100) {
-            btn.addClass('add-bg-color');
+        if (window.scrollY > 0) {
+            header.addClass('add-bg-color');
             headerTop.addClass('add-bg-top');
-            boderTop.addClass('add-color-boder');
+
             logoblue.css('display', 'block');
             logowhite.css('display', 'none');
             colorText.css('color', '#262626');
             icontongger.css('color', '#000')
 
         } else {
-            btn.removeClass('add-bg-color');
+            header.removeClass('add-bg-color');
             headerTop.removeClass('add-bg-top');
-            boderTop.removeClass('add-color-boder');
+
             logoblue.css('display', 'none');
             logowhite.css('display', 'block')
             colorText.css('color', '#fff');

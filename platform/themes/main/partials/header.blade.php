@@ -22,7 +22,7 @@
         {!! apply_filters(THEME_FRONT_BODY, null) !!}
         <header class="header" id="header">
             <div class="header-top" id="header-top">
-                <div class="boder-header" id="boder-top"></div>
+                {{-- <div class="boder-header" id="boder-top"></div> --}}
                 <div class="container-customize ">
                     <ul class="list-item-top">
                         <li class="item-top">
