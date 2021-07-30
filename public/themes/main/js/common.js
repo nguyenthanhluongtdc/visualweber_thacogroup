@@ -150,6 +150,12 @@ let logo_company = new Swiper(".logo-company", {
 
 let newPostSlide = new Swiper(".new-post-slide", {
     speed: 800,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+
+    },
     pagination: {
         el: ".new-post-slide .swiper-pagination",
         clickable: true,
@@ -244,6 +250,7 @@ if ($('#header').length > 0) {
     $(window).scroll(function() {
         if (window.scrollY > 0) {
             header.addClass('add-bg-color');
+
             headerTop.addClass('add-bg-top');
 
             logoblue.css('display', 'block');
