@@ -99,7 +99,7 @@
                     <div class="row">
                         <div class="col-md-7 col-sm-6 col-12">
                            <p class="text-white">
-                            Bản quyền thuộc về Công ty Cổ Phần Ô tô Trường Hải  © 2013</p> 
+                            Bản quyền thuộc về Công ty Cổ Phần Ô tô Trường Hải  © 2021</p> 
     
                         </div>
                         <div class="col-md-2 col-sm-2 col-6">

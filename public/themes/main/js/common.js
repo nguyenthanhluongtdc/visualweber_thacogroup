@@ -3,6 +3,7 @@ $('.slider-for').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
+    speed: 3000,
     asNavFor: '.slider-nav',
 });
 $('.slider-nav').slick({
