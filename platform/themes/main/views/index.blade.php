@@ -200,7 +200,7 @@
     </div>
 </div>
 <div class="partner-wrapper mt-80">
-    <div class="partner-banner" style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url({{Theme::asset()->url('images/home/banner-partner.jpg') }})">
+    <div class="partner-banner"  style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url('{{Theme::asset()->url('images/home/banner-partner.jpg') }}')">
         <div class="container-customize logo-partner"> 
             <div class="swiper-container logo-company" style="display:none">
                 <div class="swiper-wrapper">   

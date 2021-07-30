@@ -157,6 +157,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
+        background-attachment: fixed;
         .logo-partner {
             img {
                 max-width: 100%;
@@ -631,6 +632,11 @@
 [data-anima] {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
+}
+
+.parallax-window {
+    min-height: 450px;
+    background: transparent;
 }
 
 .drop-shadow-button {

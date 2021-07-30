@@ -263,3 +263,7 @@ if ($('#header').length > 0) {
     });
 
 }
+$('[data-parallax="scroll"]').each(function() {
+    var $this = $(this);
+    $this.parallax({ imageSrc: $this.data('image-src') });
+});

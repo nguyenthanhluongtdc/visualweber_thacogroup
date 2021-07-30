@@ -18,6 +18,12 @@
     }
     .social-item {
         margin-bottom: 20px;
+        width: 45px;
+        height: 45px;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
         &:hover a img {
             -webkit-filter: none;
             filter: none;
