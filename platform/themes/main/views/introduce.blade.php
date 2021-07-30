@@ -491,65 +491,64 @@
                                                     </div>
                                                     <div class="thumbnail-image">
                                                         <div class="image-slider">
-                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                            <img src="{{ Theme::asset()->url('images/home/8-post.jpg')}}" />
                                                         
                                                         </div>
                                                             <div class="content-slider">
-                                                                <h3 class="title font30">Nhà máy THACO</h3>
-                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                                <h3 class="title font30"> TRUONG HAI STAR3 </h3>
+                                                                <p class="desc font18 text-justify">Ngày 06/6/2014 Công ty tổ chức đưa vào khai thác tàu TRUONG HAI STAR3 và Giới thiệu dịch vụ Logistic  trọn gói tại Cảng Chu Lai – Trường Hải.
+                                                                </p>
                                                             </div>
                                                     </div>
                                                     <div class="thumbnail-image">
                                                         <div class="image-slider">
-                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                            <img src="{{ Theme::asset()->url('images/home/7-post.jpg')}}" />
                                                         </div>
                                                             <div class="content-slider">
-                                                                <h3 class="title font30">Nhà máy THACO</h3>
-                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                                <h3 class="title font30">Khu phức hợp Chu Lai –Trường Hải</h3>
+                                                                <p class="desc font18 text-justify">Khu phức hợp Chu Lai –Trường Hải tiếp tục được đầu tư nâng cao năng lực sản xuất – lắp ráp ô tô và phát triển công nghiệp hỗ trợ</p>
                                                             </div>
                                                     </div>
                                                     <div class="thumbnail-image">
                                                         <div class="image-slider">
-                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                            <img src="{{ Theme::asset()->url('images/home/6-post.jpg')}}" />
                                                         
                                                         </div>
                                                             <div class="content-slider">
-                                                                <h3 class="title font30">Nhà máy THACO</h3>
-                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                                <h3 class="title font30">Nhà máy Linh kiện Composite</h3>
+                                                                <p class="desc font18 text-justify">Đưa vào hoạt động Nhà máy Linh kiện Composite; Nhà máy Khuôn; Nhà máy Máy lạnh xe du lịch.
+                                                                    Xây dựng Nhà máy Bus mới và nâng cấp các Nhà máy công nghiệp hỗ trợ.
+                                                                    </p>
                                                             </div>
                                                     </div>
                                                     <div class="thumbnail-image">
                                                         <div class="image-slider">
-                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                            <img src="{{ Theme::asset()->url('images/home/2-post.jpg')}}" />
                                                         </div>
                                                             <div class="content-slider">
-                                                                <h3 class="title font30">Nhà máy THACO</h3>
-                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                                <h3 class="title font30">THACO Mazda</h3>
+                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á..</p>
                                                             </div>
                                                     </div>
                                                     <div class="thumbnail-image">
                                                         <div class="image-slider">
-                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                            <img src="{{ Theme::asset()->url('images/home/3-post.jpg')}}" />
                                                             
                                                         </div>
                                                             <div class="content-slider">
-                                                                <h3 class="title font30">Nhà máy THACO</h3>
-                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                                <h3 class="title font30">THACO Kia</h3>
+                                                                <p class="desc font18 text-justify">
+                                                                    Đầu tư và đưa vào hoạt động nhà máy sản xuất lắp ráp xe 7 chỗ, Mini Bus VIP, cao cấp và chuyên dụng.
+                                                                    Khánh thành nhà máy sản xuất máy nông nghiệp.</p>
                                                             </div>
                                                     </div>
                                                     <div class="thumbnail-image">
                                                         <div class="image-slider">
-                                                            <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
+                                                            <img src="{{ Theme::asset()->url('images/home/4-post.jpg')}}" />
                                                         </div>
                                                             <div class="content-slider">
-                                                                <h3 class="title font30">Nhà máy THACO</h3>
-                                                                <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                                    Khánh thành nhà máy Bus THACO.</p>
+                                                                <h3 class="title font30">Chuyển đổi thành Thaco Group</h3>
+                                                                <p class="desc font18 text-justify">Thaco sẽ được chuyển đổi thành Thaco Group với vai trò holdings của 5 Tổng công ty thành viên bao gồm: 01 trong lĩnh vực sản xuất kinh doanh chủ lực là Cơ khí và Ô tô; 02 trong lĩnh vực sản xuất kinh doanh chính là Nông lâm nghiệp và Đầu tư hạ tầng giao thông, Khu công nghiệp và đô thị; 02 trong lĩnh vực kinh doanh hỗ trợ cho các lĩnh vực kinh doanh chính là Thương mại và Giao nhận vận chuyển </p>
                                                             </div>
                                                     </div>
                                                     

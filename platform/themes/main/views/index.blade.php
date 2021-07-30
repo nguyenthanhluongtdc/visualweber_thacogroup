@@ -605,23 +605,14 @@
         <a href="" class="read-more">Xem thêm</a>
         <div class="tab-content" id="Tab-project">
             <div class="tab-pane fade active show" id="field-1" role="tabpanel" aria-labelledby="field-1-tab">
-                <div class="swiper-container field-activity-slide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/7-oto.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/9-oto.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/10-oto.jpg') }}" alt="">
-                      </div>
-                      {{-- <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div> --}}
+                
+                <div class="video-wrapper">
+                    <div class="video">
+                        <video controls autoplay muted>
+                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                        </video> 
                     </div>
-                   
-        
+                    
                 </div>
             </div>
             <div class="tab-pane fade" id="field-2" role="tabpanel" aria-labelledby="field-2-tab">
@@ -714,23 +705,27 @@
                 <div class="swiper-container field-activity-slide">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/7-oto.jpg') }}" alt="">
                         </div>
                         <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/icon5-img3.jpg') }}" alt="">
+                              <img src="{{Theme::asset()->url('images/home/9-oto.jpg') }}" alt="">
                         </div>
-                        {{-- <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div> --}}
+                        <div class="swiper-slide">                  
+                            <img src="{{Theme::asset()->url('images/home/10-oto.jpg') }}" alt="">
+                      </div>
                       {{-- <div class="swiper-slide">                  
                             <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
                       </div> --}}
                     </div>
+                   
+        
                 </div>
+                
             </div>
         </div>
     </div>
 </div>
+
 <div class="recruitment-wrapper mt-80">
     <div class="recruitment-banner " style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})">
         <div class="swiper-content">
