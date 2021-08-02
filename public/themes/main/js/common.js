@@ -150,10 +150,10 @@ let logo_company = new Swiper(".logo-company", {
 // slider post home 
 
 let newPostSlide = new Swiper(".new-post-slide", {
-    speed: 800,
+    speed: 1500,
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 6000,
         disableOnInteraction: false,
 
     },
