@@ -26,14 +26,14 @@
                         <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/tam-nhin.png') }}" alt="">
                             <h3 class="title font40">Tầm nhìn</h3>
-                            <p class="desc font18">Tập đoàn công nghiệp đa ngành của Việt Nam phat triển bền vững trong bối cảnh hội nhập khu vực và thế giới.</p>
+                            <p class="desc font18">Tập đoàn công nghiệp đa ngành <br> của Việt Nam phát triển bền vững trong bối cảnh hội nhập khu vực và thế giới.</p>
                         </div>
                     </div>
                     <div class="col-sm-4 pl-0 pr-0">
                         <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/chien-luoc.png') }}" alt="">
                             <h3 class="title font40">Chiến lược</h3>
-                            <p class="desc font18">THACO là tập đoàn công nghiệp đa ngành của Việt Nam.
+                            <p class="desc font18">THACO là tập đoàn công nghiệp đa ngành của Việt Nam.<br>
                                 Trong đó các ngành bổ trợ cho nhau và có tính tích hợp cao, phát triển bền vững theo xu thế số hoá và bối cảnh hội nhập khu vực và thế giới.</p>
                         </div>
                     </div>

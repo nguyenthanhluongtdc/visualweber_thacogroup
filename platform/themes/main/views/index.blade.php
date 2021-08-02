@@ -580,7 +580,7 @@
 </div>
 
 <div class="recruitment-wrapper mt-80">
-    <div class="recruitment-banner " style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung.jpg') }})">
+    <div class="recruitment-banner " style="background-image:url({{Theme::asset()->url('images/home/tuyendung.jpg') }})">
         <div class="swiper-content">
             <div class="swiper-content__desc">
                 <h3 class="title font28">Tuyển dụng</h3>

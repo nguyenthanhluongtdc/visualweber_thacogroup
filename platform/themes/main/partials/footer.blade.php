@@ -12,7 +12,7 @@
                             <div class="office">
                                 <h2 class="font18 text-white title">Văn Phòng TP. Hồ Chí Minh</h2>
                                 <div class="address">
-                                        <p class="font18 text-white">Số 10 Mai Chí Thọ, P. Thủ Thiêm, <br>TP. Thủ Đức, TP.HCM.    
+                                        <p class="font18 text-white">Số 10 Mai Chí Thọ, P. Thủ Thiêm,<br>TP. Thủ Đức, TP.HCM.    
                                 </div>
                                 <div class="phone">
                                     <a class="text-white" href="tel:+84-(0)8-39977.824">+84-(0)8-39977.824</a>
@@ -28,7 +28,7 @@
                                 <div class="address">
                                    
   
-                                        <p class="font18 text-white">Thôn 4, Xã Tam Hiệp, Huyện
+                                        <p class="font18 text-white">Thôn 4, Xã Tam Hiệp, Huyện<br>
                                             Núi thành, Tỉnh Quảng Nam                                            
                                         </p>
                                     
@@ -46,7 +46,7 @@
                                 <h2 class="font18 text-white title">Văn Phòng Hà Nội</h2>
                                 <div class="address">
                                    
-                                        <p class="font18 text-white">Lô D6, KCN Hà Nội Đài Tư, 386
+                                        <p class="font18 text-white">Lô D6, KCN Hà Nội Đài Tư, 386<br>
                                             Nguyễn Văn Linh, Sài Đồng, Long Biên, Hà Nội
                                         </p>
                                     

@@ -434,8 +434,7 @@
                                         margin: 20px 0;
                                     }
                                     .desc {
-                                        max-width: 686px;
-                                        font-family: $MyriadPro-Bold;
+                                        max-width: 100%;
                                         text-align: justify;
                                         @include split_str(3);
                                     }
@@ -519,7 +518,8 @@
                         }
                         li.slick-center {
                             font-size: 4rem;
-                            text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+                            font-family: $MyriadPro-Bold;
+                            // text-shadow: 0 0 20px rgb(0 0 0 / 50%);
                             opacity: 1;
                         }
                     }
@@ -544,8 +544,9 @@
                         text-align: center;
                         margin: 0;
                         padding: 0;
+                        opacity: .7;
                         &:hover {
-                            background-color: $main_color;
+                            opacity: 1;
                         }
                         i {
                             font-size: 25px;
@@ -553,7 +554,7 @@
                     }
                     .play.active,
                     .pause.active {
-                        background-color: $main_color;
+                        opacity: 1;
                     }
                 }
             }
