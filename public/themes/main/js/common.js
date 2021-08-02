@@ -195,6 +195,53 @@ let newPostSlide = new Swiper(".new-post-slide", {
         },
     }
 });
+let newPostSlide_bottom = new Swiper(".post-slide-bottom", {
+    speed: 800,
+    loop: true,
+    slidesPerView: 3,
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+
+    // },
+    pagination: {
+        el: ".post-slide-bottom .swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.post-slide-bottom .swiper-button-next',
+        prevEl: '.post-slide-bottom .swiper-button-prev',
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 3,
+            // centeredSlides: true,
+            spaceBetween: 25,
+            navigation: {
+                nextEl: '.post-slide-bottom .swiper-button-next',
+                prevEl: '.post-slide-bottom .swiper-button-prev',
+            },
+        },
+        480: {
+            slidesPerView: 2,
+            centeredSlides: false,
+            spaceBetween: 40,
+            navigation: {
+                nextEl: '.post-slide-bottom .swiper-button-next',
+                prevEl: '.post-slide-bottom .swiper-button-prev',
+            },
+        },
+        320: {
+            slidesPerView: 1,
+            centeredSlides: false,
+            spaceBetween: 40,
+            navigation: {
+                nextEl: '.post-slide-bottom .swiper-button-next',
+                prevEl: '.post-slide-bottom .swiper-button-prev',
+            },
+        },
+    }
+});
 // tuyen dung slider
 var recruitment_slider = new Swiper(".recruitment-slider", {
     direction: 'vertical',

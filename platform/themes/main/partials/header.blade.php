@@ -98,7 +98,7 @@
                                 <a class="item__link" href="/gioi-thieu">GIỚI THIỆU</a> 
                                 <div class="dropdown-menu sm-menu" style="display:none">
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/gioi-thieu" class="dropdown-item">
                                             Về thaco
                                         </a>
                                     </div>

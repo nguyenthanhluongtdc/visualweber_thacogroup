@@ -103,10 +103,6 @@
                     display: block!important;
                 }
             }
-            .nav-item:last-child a {
-                color: $blue_button!important;
-                font-family: unset;
-            }
             .dropdown {
                 &:hover .dropdown-menu {
                     display: block!important;

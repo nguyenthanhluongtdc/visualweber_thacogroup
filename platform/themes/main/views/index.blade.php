@@ -259,52 +259,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="news-home__bottom">
-                            <div class="post-slider">            
-                                <div class="row">
-                                    <div class="col-md-4">
-                                         <a class="post-wrapper" href="">
-                                            <div class="post-thumbnail">
-                                                <img src="{{ Theme::asset()->url('images/home/post-1.jpg') }}" alt="">
-                                            </div>
-                                                       
-                                            <h4 class="post_name font20">THILOGI THAY ĐỔI NHẬN DIỆN THƯƠNG HIỆU TRÊN CÁC PHƯƠNG TIỆN VẬN CHUYỂN</h4>
-                                            <p class="post_description font18">Là đơn vị cung ứng chuỗi dịch vụ logistics trọn gói hàng đầu miền Trung, công ty Giao nhận – Vận chuyển Quốc tế Trường Hải (THILOGI) đang đẩy mạnh phát triển dịch vụ logistics nông nghiệp, đặc biệt là vận chuyển nông sản xuất khẩu với các mặt hàng chủ lực gồm: xoài, chuối, thanh long…
-                                            </p>
-                                            <span class="time">23/06/2021</span>
-                                        </a>   
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a class="post-wrapper" href="">
-                                           <div class="post-thumbnail">
-                                               <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
-                                           </div>
-                                                      
-                                           <h4 class="post_name font20">THILOGI HỖ TRỢ XUẤT KHẨU ỚT CHO NÔNG DÂN MIỀN TRUNG
-                                        </h4>
-                                           <p class="post_description font18">Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
-
-                                           </p>
-                                           <span class="time">23/06/2021</span>
-                                       </a>   
-                                   </div>
-                                   <div class="col-md-4">
-                                        <a class="post-wrapper" href="">
-                                            <div class="post-thumbnail">
-                                                <img src="{{ Theme::asset()->url('images/home/post-2.jpg') }}" alt="">
-                                            </div>
-                                                        
-                                            <h4 class="post_name font20">ĐÀN BÒ TẠI TRANG TRẠI IA PUCH VÀ QUY TRÌNH CHĂM SÓC ĐẶC BIỆT</h4>
-                                            <p class="post_description font18">Trang trại bò Ia Puch có quy mô 1.907 ha thuộc xã Ia Puch, tỉnh Gia Lai. Với diện tích lớn và điều kiện tự nhiên thuận lợi, trang trại đã phát triển các hoạt động chăn nuôi bò với các phương pháp đặc biệt.
-
-                                            </p>
-                                            <span class="time">23/06/2021</span>
-                                        </a>   
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </div>
+                       
 
                     </div>
                     <div class="swiper-slide">
@@ -328,52 +283,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="news-home__bottom">
-                            <div class="post-slider">            
-                                <div class="row">
-                                    <div class="col-md-4">
-                                         <a class="post-wrapper" href="">
-                                            <div class="post-thumbnail">
-                                                <img src="{{ Theme::asset()->url('images/home/2-post.jpg') }}" alt="">
-                                            </div>
-                                                       
-                                            <h4 class="post_name font20">THACO bàn giao xe vận chuyển vaccine phục vụ chiến dịch tiêm chủng quốc gia phòng Covid-19</h4>
-                                            <p class="post_description font18">Tại lễ phát động triển khai chiến dịch tiêm chủng vaccine phòng Covid-19 toàn quốc, THACO đã trao tặng 126 xe tiêm chủng gồm 63 xe tải chuyên dụng vận chuyển vaccine và 63 xe chuyên dụng phục vụ tiêm chủng lưu động cho Bộ Y tế. Ngày 14/7, Bộ Y tế đã ban hành Quyết định phân bổ tạm thời 63 xe chuyên dụng vận chuyển vaccine cho 7 Quân khu của Bộ Quốc phòng để sử dụng cho chiến dịch tiêm chủng kéo dài từ 07/2021 – 04/2022. 
-
-                                            </p>
-                                            <span class="time">23/06/2021</span>
-                                        </a>   
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a class="post-wrapper" href="">
-                                           <div class="post-thumbnail">
-                                               <img src="{{ Theme::asset()->url('images/home/3-post.jpg') }}" alt="">
-                                           </div>
-                                                      
-                                           <h4 class="post_name font20">Phó Chủ tịch TP.HCM thăm dự án Cầu Thủ Thiêm 2 thi công mùa dịch</h4>
-                                           <p class="post_description font18">Sáng ngày 14/7/2021, ông Lê Hòa Bình - Phó chủ tịch UBND TP. HCM đã cùng Lãnh đạo Sở GTVT TP. HCM đến thăm và làm việc tại công trường dự án cầu Thủ Thiêm 2.
-
-                                           </p>
-                                           <span class="time">23/06/2021</span>
-                                       </a>   
-                                   </div>
-                                   <div class="col-md-4">
-                                        <a class="post-wrapper" href="">
-                                            <div class="post-thumbnail">
-                                                <img src="{{ Theme::asset()->url('images/home/4-post.jpg') }}" alt="">
-                                            </div>
-                                                        
-                                            <h4 class="post_name font20">Nhà máy THACO tải - “nỗ lực nhiều ngày đêm hoàn thành dự án để giúp ích cho cộng đồng”</h4>
-                                            <p class="post_description font18">Vừa qua, 126 xe chuyên dụng bao gồm 63 xe chuyên dụng vận chuyển vaccine và 63 xe tiêm chủng lưu động đã được THACO trao tặng cho Bộ Y tế. Việc sản xuất và bàn giao 2 lô xe này đã đáp ứng kịp thời nhu cầu cấp thiết về tiêm chủng vaccine trong tình hình dịch bệnh hết sức phức tạp hiện nay, nhất là tại TP. Hồ Chí Minh. Trong cơn bão đại dịch, dự án đã lan tỏa những hiệu ứng tích cực, có ý nghĩa nhân văn đến với cộng đồng.
-
-                                            </p>
-                                            <span class="time">23/06/2021</span>
-                                        </a>   
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </div>
+                       
 
                     </div>
                     <div class="swiper-slide">
@@ -398,54 +308,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="news-home__bottom">
-                            <div class="post-slider">            
-                                <div class="row">
-                                    <div class="col-md-4">
-                                         <a class="post-wrapper" href="">
-                                            <div class="post-thumbnail">
-                                                <img src="{{ Theme::asset()->url('images/home/6-post.jpg') }}" alt="">
-                                            </div>
-                                                       
-                                            <h4 class="post_name font20">THACO - Nhà tuyển dụng được yêu thích nhất 2020</h4>
-                                            <p class="post_description font18">Theo kết quả khảo sát của Careerbuilder tại Việt Nam, THACO trở thành nhà tuyển dụng được yêu thích nhất năm 2020 trong ngành sản xuất.
-                                            </p>
-                                            <span class="time">23/06/2021</span>
-                                        </a>   
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a class="post-wrapper" href="">
-                                           <div class="post-thumbnail">
-                                               <img src="{{ Theme::asset()->url('images/home/7-post.jpg') }}" alt="">
-                                           </div>
-                                                      
-                                           <h4 class="post_name font20">"Ngày cuối tuần xanh" và "Ngày Thứ Bảy" gọn gàng tại KCN THACO CHU LAI</h4>
-                                           <p class="post_description font18">Theo kết quả khảo sát của Careerbuilder tại Việt Nam, THACO trở thành nhà tuyển dụng được yêu thích nhất năm 2020 trong ngành sản xuất.
-
-
-                                           </p>
-                                           <span class="time">23/06/2021</span>
-                                       </a>   
-                                   </div>
-                                   <div class="col-md-4">
-                                        <a class="post-wrapper" href="">
-                                            <div class="post-thumbnail">
-                                                <img src="{{ Theme::asset()->url('images/home/8-post.jpg') }}" alt="">
-                                            </div>
-                                                        
-                                            <h4 class="post_name font20">THILOGI vận chuyển bò nhập khẩu cho Vinamilk</h4>
-                                            <p class="post_description font18">Ngày 21/3/2021, công ty tiếp nhận và vận chuyển hơn 800 con bò nhập khẩu của Công ty Cổ phần Sữa Việt Nam (Vinamilk) từ cảng PTSC Dung Quất đến nông trại tại Mộ Đức - Quảng Ngãi một cách an toàn, nhanh chóng chỉ trong vòng 14 giờ đồng hồ kể từ khi cập cảng.
-
-
-
-                                            </p>
-                                            <span class="time">23/06/2021</span>
-                                        </a>   
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>
@@ -455,12 +317,12 @@
             </div>    
            
            
-            {{-- <div class="post-slider">
-                <div class="swiper-container new-post-slide">
+            <div class="post-slider">
+                <div class="swiper-container post-slide-bottom">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide d-flex justify-content-center">             
-                            <div class="row">
-                                <div class="col-12 p-0">
+                            
+                                <div class="post_content_bottom h-100">
                                     <a class="post-wrapper" href="">
                                         <div class="post-thumbnail">
                                             <img src="{{ Theme::asset()->url('images/home/post-1.jpg') }}" alt="">
@@ -472,11 +334,11 @@
                                         <span class="time">23/06/2021</span>
                                     </a>   
                                 </div>
-                            </div>
+                            
                         </div>
                         <div class="swiper-slide d-flex justify-content-center">             
-                            <div class="row">
-                                <div class="col-12 p-0">
+                            <div class="post_content_bottom h-100">
+                               
                                     <a class="post-wrapper" href="">
                                         <div class="post-thumbnail">
                                             <img src="{{ Theme::asset()->url('images/home/post-2.jpg') }}" alt="">
@@ -486,12 +348,11 @@
                                         </p>
                                         <span class="time">23/06/2021</span>
                                     </a>   
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="swiper-slide d-flex justify-content-center">             
-                            <div class="row">
-                                <div class="col-12 p-0">
+                                <div class="post_content_bottom h-100">
                                     <a class="post-wrapper" href="">
                                         <div class="post-thumbnail">
                                             <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
@@ -503,63 +364,55 @@
                                         <span class="time">23/06/2021</span>
                                     </a>   
                                 </div>
-                            </div>
                         </div>
                         <div class="swiper-slide d-flex justify-content-center">             
-                            <div class="row">
-                                <div class="col-12 p-0">
+                                <div class="post_content_bottom h-100">
                                     <a class="post-wrapper" href="">
                                         <div class="post-thumbnail">
-                                            <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
+                                            <img src="{{ Theme::asset()->url('images/home/3-post.jpg') }}" alt="">
                                         </div>
-                                        <h4 class="post_name font20">THILOGI HỖ TRỢ XUẤT KHẨU ỚT CHO NÔNG DÂN MIỀN TRUNG</h4>
-                                        <p class="post_description font18">Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
+                                        <h4 class="post_name font20">Phó Chủ tịch TP.HCM thăm dự án Cầu Thủ Thiêm 2 thi công mùa dịch</h4>
+                                        <p class="post_description font18">Sáng ngày 14/7/2021, ông Lê Hòa Bình - Phó chủ tịch UBND TP. HCM đã cùng Lãnh đạo Sở GTVT TP. HCM đến thăm và làm việc tại công trường dự án cầu Thủ Thiêm 2.
+
 
                                         </p>
                                         <span class="time">23/06/2021</span>
                                     </a>   
                                 </div>
-                            </div>
                         </div>
                         <div class="swiper-slide d-flex justify-content-center">             
-                            <div class="row">
-                                <div class="col-12 p-0">
+                                <div class="post_content_bottom h-100">
                                     <a class="post-wrapper" href="">
                                         <div class="post-thumbnail">
-                                            <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
+                                            <img src="{{ Theme::asset()->url('images/home/2-post.jpg') }}" alt="">
                                         </div>
-                                        <h4 class="post_name font20">THILOGI HỖ TRỢ XUẤT KHẨU ỚT CHO NÔNG DÂN MIỀN TRUNG</h4>
-                                        <p class="post_description font18">Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
-
+                                        <h4 class="post_name font20">THACO bàn giao xe vận chuyển vaccine phục vụ chiến dịch tiêm chủng quốc gia phòng Covid-19</h4>
+                                        <p class="post_description font18">Tại lễ phát động triển khai chiến dịch tiêm chủng vaccine phòng Covid-19 toàn quốc, THACO đã trao tặng 126 xe tiêm chủng gồm 63 xe tải chuyên dụng vận chuyển vaccine và 63 xe chuyên dụng phục vụ tiêm chủng lưu động cho Bộ Y tế. Ngày 14/7, Bộ Y tế đã ban hành Quyết định phân bổ tạm thời 63 xe chuyên dụng vận chuyển vaccine cho 7 Quân khu của Bộ Quốc phòng để sử dụng cho chiến dịch tiêm chủng kéo dài từ 07/2021 – 04/2022. 
                                         </p>
                                         <span class="time">23/06/2021</span>
                                     </a>   
                                 </div>
-                            </div>
                         </div>
                         <div class="swiper-slide d-flex justify-content-center">             
-                            <div class="row">
-                                <div class="col-12 p-0">
+                                <div class="post_content_bottom h-100">
                                     <a class="post-wrapper" href="">
                                         <div class="post-thumbnail">
-                                            <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
+                                            <img src="{{ Theme::asset()->url('images/home/4-post.jpg') }}" alt="">
                                         </div>
-                                        <h4 class="post_name font20">THILOGI HỖ TRỢ XUẤT KHẨU ỚT CHO NÔNG DÂN MIỀN TRUNG</h4>
-                                        <p class="post_description font18">Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
-
+                                        <h4 class="post_name font20">Nhà máy THACO tải - “nỗ lực nhiều ngày đêm hoàn thành dự án để giúp ích cho cộng đồng”</h4>
+                                        <p class="post_description font18">Vừa qua, 126 xe chuyên dụng bao gồm 63 xe chuyên dụng vận chuyển vaccine và 63 xe tiêm chủng lưu động đã được THACO trao tặng cho Bộ Y tế. Việc sản xuất và bàn giao 2 lô xe này đã đáp ứng kịp thời nhu cầu cấp thiết về tiêm chủng vaccine trong tình hình dịch bệnh hết sức phức tạp hiện nay, nhất là tại TP. Hồ Chí Minh. Trong cơn bão đại dịch, dự án đã lan tỏa những hiệu ứng tích cực, có ý nghĩa nhân văn đến với cộng đồng.
                                         </p>
                                         <span class="time">23/06/2021</span>
                                     </a>   
                                 </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"><img src="{{Theme::asset()->url("images/home/right-arrow.png")}}" alt="{{_('Next icon')}}"></div>
-                    <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
         
                 </div>
                
-            </div> --}}
+            </div>
             
         </div>
     </div>
@@ -608,7 +461,7 @@
                 
                 <div class="video-wrapper">
                     <div class="video">
-                        <video controls muted>
+                        <video muted>
                             <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
                         </video> 
                     </div>
@@ -736,45 +589,51 @@
                 </p>
                 <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" class="btn-apply font24">Ứng tuyển ngay</a>
             </div>
-           
-            <div class="swiper-container recruitment-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-                    <div class="swiper-wrapper">   
-                        <div class="swiper-slide" >
-                            <div class="swiper-content-bottom">
-                                <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
-                                    <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
-                                    </p>
-                                </a>
+            <div class="bottom_slider_wrapper">
+                <div class="title_label">
+                    <h3 class="title font28">Tuyển dụng</h3>
+                </div>
+               
+                <div class="swiper-container recruitment-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
+                        <div class="swiper-wrapper">   
+                            <div class="swiper-slide" >
+                                <div class="swiper-content-bottom">
+                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
+                                        <p class="postion-apply font28"> Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide" >
-                            <div class="swiper-content-bottom">
-                                <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
-                                    <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
-                                    </p>
-                                </a>
+                            <div class="swiper-slide" >
+                                <div class="swiper-content-bottom">
+                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
+                                        <p class="postion-apply font28"> Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide" >
-                            <div class="swiper-content-bottom">
-                                <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
-                                    <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
-                                    </p>
-                                </a>
+                            <div class="swiper-slide" >
+                                <div class="swiper-content-bottom">
+                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
+                                        <p class="postion-apply font28">Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide" >
-                            <div class="swiper-content-bottom">
-                                <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
-                                    <p class="postion-apply font28">Tuyển dụng Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
-                                    </p>
-                                </a>
+                            <div class="swiper-slide" >
+                                <div class="swiper-content-bottom">
+                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
+                                        <p class="postion-apply font28"> Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
+                           
                         </div>
-                       
-                    </div>
-                    <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination"></div>
+                </div>
             </div>
+           
         </div> 
     </div>
 </div>

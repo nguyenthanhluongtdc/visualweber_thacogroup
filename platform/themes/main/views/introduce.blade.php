@@ -49,7 +49,7 @@
             </div>
           
         </div>
-        <div class="field-activity-intro-wrapper" style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url('{{ Theme::asset()->url('images/introduce/bg-field.jpg') }}')">
+        <div class="field-activity-intro-wrapper">
             <div class="desc-field pt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 <p class="desc-cotent font 18 text-justify">
                  Sau 22 năm hình thành và phát triển, THACO đã trở thành Tập đoàn công nghiệp đa ngành, trong đó Cơ khí và Ô tô là chủ lực, đồng thời phát triển các lĩnh vực sản xuất kinh doanh bổ trợ cho nhau, tạo ra giá trị cộng hưởng và nâng cao năng lực cạnh tranh, bao gồm: Nông nghiệp; Đầu tư xây dựng; Logistics và Thương mại & Dịch vụ.
