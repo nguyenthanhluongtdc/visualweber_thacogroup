@@ -608,7 +608,7 @@
                 
                 <div class="video-wrapper">
                     <div class="video">
-                        <video controls autoplay muted>
+                        <video controls muted>
                             <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
                         </video> 
                     </div>
