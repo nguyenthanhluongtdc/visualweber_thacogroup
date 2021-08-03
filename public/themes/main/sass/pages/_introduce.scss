@@ -501,18 +501,14 @@
                         height: 40px;
                         width: 40px;
                         line-height: 49px;
-                        background: #fff;
-                        border: 1px solid #fff;
-                        border-radius: 4px;
+                        background: unset;
+                        border: unset;
                         text-align: center;
                         margin: 0;
                         padding: 0;
-                        opacity: .7;
+                        opacity: .6;
                         &:hover {
                             opacity: 1;
-                        }
-                        i {
-                            font-size: 25px;
                         }
                     }
                     .play.active,

@@ -551,8 +551,8 @@
                             
                         </div>
                         <div class="carousel-controls transparent-controls">
-                            <button class="play active"><i class="fal fa-play-circle"></i></button>
-                            <button class="pause"><i class="fal fa-pause-circle"></i></button>
+                            <button class="play active"><img src="{{ Theme::asset()->url('images/introduce/play-button-1.png')}}" alt=""></button>
+                            <button class="pause"><img src="{{ Theme::asset()->url('images/introduce/pause-1.png')}}" alt=""></button>
                         </div>
                     </div>
                 </div>
