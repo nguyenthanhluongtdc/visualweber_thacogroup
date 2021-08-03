@@ -51,7 +51,7 @@
         </div>
         <div class="field-activity-intro-wrapper">
             <div class="desc-field pt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                <p class="desc-cotent font 18 text-justify">
+                <p class="desc-cotent font24 text-justify">
                     Tổng tập đoàn THACO là một tập đoàn đa ngành với 2 ngành nghề chủ lực đó là Ô tô – Cơ khí và Nông nghiệp. Đồng thời các lĩnh vực khác vẫn được THACO đầu tư phát triển để có thể, tạo ra giá trị cộng hưởng và nâng cao năng lực THACO bao gồm: Đầu tư xây dựng, Logistics, Thương mại – Dịch vụ.
                 </p>
             </div>
