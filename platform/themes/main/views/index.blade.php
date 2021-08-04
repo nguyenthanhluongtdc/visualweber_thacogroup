@@ -183,7 +183,8 @@
     </div>
 </div>
 <div class="partner-wrapper mt-80">
-    <div class="partner-banner"  style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url('{{Theme::asset()->url('images/home/banner-partner-2.jpg') }}')">
+    <h3 class="title__company font40  mt-40 " data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">“TẬP ĐOÀN VÀ TỔNG CÔNG TY”</h3>
+    <div class="partner-banner"  style="background-image:url('{{Theme::asset()->url('images/home/banner-partner-2.jpg') }}')">
         <div class="container-customize logo-partner"> 
             <div class="swiper-container logo-company" style="display:none">
                 <div class="swiper-wrapper">   
@@ -207,11 +208,11 @@
                 <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
             </div>
             <div class="logo-desktop">
-                <img class="fade-top" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate"  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
-                <img class="fade-top"data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate"  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
+                <img class="fade-top"data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
             </div>
             
         </div>
@@ -224,14 +225,14 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="news-home__top">
-                            <div class="row">
-                                <div class="col-md-8 pr-md-0">
+                          
+                                
                                     <div class="img-post">
                                         <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
                                     </div>
                                    
-                                </div>
-                                <div class="col-md-4 pl-md-0">
+                                
+                               
                                     <div class="news-post h-100">
                                         <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
                                         <h4 class="name font20">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4>
@@ -239,22 +240,17 @@
                                         <p class="description font18 text-justify">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
                                         <a href="" class="read-more">Xem thêm</a>
                                     </div>
-                                </div>
-                            </div>
+                                
+                           
                         </div>
                        
 
                     </div>
                     <div class="swiper-slide">
                         <div class="news-home__top">
-                            <div class="row">
-                                <div class="col-md-8 pr-md-0">
                                     <div class="img-post">
                                         <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/1-post.jpg') }}" alt="">
                                     </div>
-                                   
-                                </div>
-                                <div class="col-md-4 pl-md-0">
                                     <div class="news-post h-100">
                                         <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
                                         <h4 class="name font20">HÀNH TRÌNH KẾT NỐI YÊU THƯƠNG</h4>
@@ -263,22 +259,13 @@
                                         </p>
                                         <a href="" class="read-more">Xem thêm</a>
                                     </div>
-                                </div>
-                            </div>
                         </div>
-                       
-
                     </div>
                     <div class="swiper-slide">
                         <div class="news-home__top">
-                            <div class="row">
-                                <div class="col-md-8 pr-md-0">
                                     <div class="img-post">
                                         <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/5-post.jpg') }}" alt="">
                                     </div>
-                                   
-                                </div>
-                                <div class="col-md-4 pl-md-0">
                                     <div class="news-post h-100">
                                         <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
                                         <h4 class="name font20">Tổ hợp cơ khí THACO Chu Lai phát triển chế tạo khuôn mẫu</h4>
@@ -288,8 +275,6 @@
                                         </p>
                                         <a href="" class="read-more">Xem thêm</a>
                                     </div>
-                                </div>
-                            </div>
                         </div>
 
                     </div>

@@ -142,10 +142,10 @@ let logo_company = new Swiper('.logo-company', {
 let newPostSlide = new Swiper('.new-post-slide', {
     speed: 1500,
     loop: true,
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 6000,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: '.new-post-slide .swiper-pagination',
         clickable: true,
@@ -188,11 +188,7 @@ let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
         speed: 800,
         loop: true,
         slidesPerView: 3,
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-
-        // },
+        spaceBetween: 25,
         pagination: {
             el: '.post-slide-bottom .swiper-pagination',
             clickable: true,
@@ -201,35 +197,35 @@ let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
             nextEl: '.post-slide-bottom .swiper-button-next',
             prevEl: '.post-slide-bottom .swiper-button-prev',
         },
-        breakpoints: {
-            1024: {
-                slidesPerView: 3,
-                // centeredSlides: true,
-                spaceBetween: 25,
-                navigation: {
-                    nextEl: '.post-slide-bottom .swiper-button-next',
-                    prevEl: '.post-slide-bottom .swiper-button-prev',
-                },
-            },
-            480: {
-                slidesPerView: 2,
-                centeredSlides: false,
-                spaceBetween: 40,
-                navigation: {
-                    nextEl: '.post-slide-bottom .swiper-button-next',
-                    prevEl: '.post-slide-bottom .swiper-button-prev',
-                },
-            },
-            320: {
-                slidesPerView: 1,
-                centeredSlides: false,
-                spaceBetween: 40,
-                navigation: {
-                    nextEl: '.post-slide-bottom .swiper-button-next',
-                    prevEl: '.post-slide-bottom .swiper-button-prev',
-                },
-            },
-        },
+        // breakpoints: {
+        //     1024: {
+        //         slidesPerView: 3,
+        //         // centeredSlides: true,
+        //         spaceBetween: 25,
+        //         navigation: {
+        //             nextEl: '.swiper-button-next',
+        //             prevEl: '.swiper-button-prev',
+        //         },
+        //     },
+        //     480: {
+        //         slidesPerView: 2,
+        //         centeredSlides: false,
+        //         spaceBetween: 40,
+        //         navigation: {
+        //             nextEl: '.swiper-button-next',
+        //             prevEl: '.swiper-button-prev',
+        //         },
+        //     },
+        //     320: {
+        //         slidesPerView: 1,
+        //         centeredSlides: false,
+        //         spaceBetween: 40,
+        //         navigation: {
+        //             nextEl: '.swiper-button-next',
+        //             prevEl: '.swiper-button-prev',
+        //         },
+        //     },
+        // },
     })
     // tuyen dung slider
 var recruitment_slider = new Swiper('.recruitment-slider', {
@@ -249,8 +245,8 @@ var recruitment_slider = new Swiper('.recruitment-slider', {
         clickable: true,
     },
     navigation: {
-        nextEl: 'swiper-button-next',
-        prevEl: 'swiper-button-prev',
+        nextEl: '.recruitment-slider .swiper-button-next',
+        prevEl: '.recruitment-slider .swiper-button-prev',
     },
 })
 
@@ -266,8 +262,8 @@ var galleryThumbs = new Swiper('.field-activity-slide-bottom', {
     slideToClickedSlide: true,
 
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.field-activity-slide-bottom .swiper-button-next',
+        prevEl: '.field-activity-slide-bottom .swiper-button-prev',
     },
 })
 

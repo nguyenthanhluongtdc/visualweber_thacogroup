@@ -329,6 +329,7 @@
 }
 
 .develop-wrapper {
+    margin-bottom: -40px;
     .develop__title {
         display: flex;
         align-items: center;
@@ -347,16 +348,6 @@
         background-size: cover;
         position: relative;
         padding-top: 700px;
-        // &::before {
-        //     position: absolute;
-        //     content: "";
-        //     top: 0;
-        //     left: 0;
-        //     bottom: 0;
-        //     right: 0;
-        //     background: rgba(0, 0, 0, .8);
-        //     z-index: 0;
-        // }
         .develop-content-wrapper {
             position: absolute;
             top: 0;
@@ -365,7 +356,6 @@
             bottom: 0;
             z-index: 1;
             color: $white;
-            // padding: 10%;
             height: 100%;
             .develop-content__slider {
                 height: 100%;
@@ -396,11 +386,22 @@
                                         font-family: $MyriadPro-Bold;
                                         margin: 20px 0;
                                     }
-                                    .desc {
-                                        max-width: 100%;
-                                        text-align: justify;
-                                        @include split_str(3);
+                                    .desc__wrapper {
+                                        .desc {
+                                            max-width: 100%;
+                                            text-align: justify;
+                                            max-height: 100px;
+                                            .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+                                                background: gray;
+                                            }
+                                            .mCS-dark.mCSB_scrollTools .mCSB_dragger_bar {
+                                                background: #fff;
+                                            }
+                                        }
                                     }
+                                    overflow-y: hidden;
+                                    overflow-x: hidden;
+                                    height: 500px;
                                 }
                             }
                         }
@@ -482,7 +483,6 @@
                         li.slick-center {
                             font-size: 4rem;
                             font-family: $MyriadPro-Bold;
-                            // text-shadow: 0 0 20px rgb(0 0 0 / 50%);
                             opacity: 1;
                         }
                     }

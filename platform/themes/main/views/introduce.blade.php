@@ -477,8 +477,17 @@
                                             </div>
                                                 <div class="content-slider">
                                                     <h3 class="title font30">Nhà máy THACO</h3>
-                                                    <p class="desc font18 text-justify">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
-                                                        Khánh thành nhà máy Bus THACO.</p>
+                                                    <div class="desc__wrapper">
+                                                        <div class="desc font18 text-justify  mCustomScrollbar"data-mcs-theme="dark" >Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO
+                                                            Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO
+                                                            Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO
+                                                            Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                            Khánh thành nhà máy Bus THACO.</div>
+                                                    </div>
+                                                    
                                                 </div>
                                         </div>
                                         <div class="thumbnail-image">
@@ -562,100 +571,6 @@
     </div>
     
 </section>
-{{-- <section class="banner-section">
-    <div class="container">
-        <div class="vehicle-detail-banner banner-content clearfix">
-            <div class="banner-slider">
-                <div class="slider slider-for">
-                    <div class="slider-banner-image">
-                        <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Car-Image">
-                    </div> 
-                    <div class="slider-banner-image">
-                        <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Car-Image">
-                    </div> 
-                    <div class="slider-banner-image">
-                        <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="Car-Image">
-                    </div> 
-                     <div class="slider-banner-image">
-                        <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Car-Image">
-                    </div> 
-                    <div class="slider-banner-image">
-                        <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Car-Image">
-                    </div> 
-                    <div class="slider-banner-image">
-                        <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="Car-Image">
-                    </div> 
-                     <div class="slider-banner-image">
-                        <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Car-Image">
-                    </div> 
-                    <div class="slider-banner-image">
-                        <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Car-Image">
-                    </div> 
-                    <div class="slider-banner-image">
-                        <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="Car-Image">
-                    </div> 
-                </div>
-                <div class="slider slider-nav thumb-image">
-                    <div class="thumbnail-image">
-                        <div class="thumbImg">
-                            <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="slider-img">
-                        </div>
-                        <span>White Pearl Crystal Shine1</span>
-                    </div>
-                    <div class="thumbnail-image">
-                        <div class="thumbImg">
-                            <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="slider-img">
-                        </div>
-                        <span>White Pearl Crystal Shine2</span>
-                    </div>
-                    <div class="thumbnail-image">
-                        <div class="thumbImg">
-                            <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="slider-img">
-                        </div>
-                        <span>White Pearl Crystal Shine3</span>
-                    </div>
-                      <div class="thumbnail-image">
-                        <div class="thumbImg">
-                            <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="slider-img">
-                        </div>
-                        <span>White Pearl Crystal Shine1</span>
-                    </div>
-                    <div class="thumbnail-image">
-                        <div class="thumbImg">
-                            <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="slider-img">
-                        </div>
-                        <span>White Pearl Crystal Shine2</span>
-                    </div>
-                    <div class="thumbnail-image">
-                        <div class="thumbImg">
-                            <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="slider-img">
-                        </div>
-                        <span>White Pearl Crystal Shine3</span>
-                    </div>
-                      <div class="thumbnail-image">
-                        <div class="thumbImg">
-                            <img src="https://images.unsplash.com/photo-1570942872213-1242607a35eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="slider-img">
-                        </div>
-                        <span>White Pearl Crystal Shine1</span>
-                    </div>
-                    <div class="thumbnail-image">
-                        <div class="thumbImg">
-                            <img src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="slider-img">
-                        </div>
-                        <span>White Pearl Crystal Shine2</span>
-                    </div>
-                    <div class="thumbnail-image">
-                        <div class="thumbImg">
-                            <img src="https://images.unsplash.com/photo-1564376130023-5360fbb7c91b?ixlib=rb-1.2.1&auto=format&fit=crop&w=724&q=80" alt="slider-img">
-                        </div>
-                        <span>White Pearl Crystal Shine3</span>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
 
 <div class="modal fade" id="info_admin_modal" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
