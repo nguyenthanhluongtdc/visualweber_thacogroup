@@ -293,17 +293,32 @@ if ($('.field-activity-slide-top').length > 0) {
   function myHandler(e) {
     Homebanner.slideNext()
   }
-  $('.field-activity-slide-top .swiper-slide-active .__video')[0].play()
-  $('.field-activity-slide-top .swiper-slide-active .__video')[0].addEventListener('ended', myHandler, false)
+  const autoplay = 500
+  if ($('.field-activity-slide-top .swiper-slide-active .__video').length) {
+    $('.field-activity-slide-top .swiper-slide-active .__video')[0].play()
+    $('.field-activity-slide-top .swiper-slide-active .__video')[0].addEventListener('ended', myHandler, false)
+  } else {
+    setTimeout(() => {
+      myHandler()
+    }, autoplay)
+  }
   /**
    * https://stackoverflow.com/questions/2741493/detect-when-an-html5-video-finishes
    */
   Homebanner.on('slideChange', function () {
-    $('.field-activity-slide-top .swiper-slide-active .__video')[0].paused
+    if ($('.field-activity-slide-top .swiper-slide-active .__video').length) {
+      $('.field-activity-slide-top .swiper-slide-active .__video')[0].paused
+    }
   })
   Homebanner.on('slideChangeTransitionEnd', function () {
-    $('.field-activity-slide-top .swiper-slide-active .__video')[0].play()
-    $('.field-activity-slide-top .swiper-slide-active .__video')[0].addEventListener('ended', myHandler, false)
+    if ($('.field-activity-slide-top .swiper-slide-active .__video').length) {
+      $('.field-activity-slide-top .swiper-slide-active .__video')[0].play()
+      $('.field-activity-slide-top .swiper-slide-active .__video')[0].addEventListener('ended', myHandler, false)
+    } else {
+      setTimeout(() => {
+        myHandler()
+      }, autoplay)
+    }
   })
 
   // var videolist = $(".swiper-slide").find("video"); //video object array

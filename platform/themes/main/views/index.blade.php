@@ -445,7 +445,7 @@
                     </div>    --}}
                     <div class="video-wrapper">
                         <video muted   controls  preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                            <source src="{{ Theme::asset()->url('images/video/Video 10s.mp4') }}" type="video/mp4">
                         </video> 
                     </div>
                     
@@ -465,18 +465,13 @@
                         </div>
                         </div>
                     </div>    --}}
-                    <div class="video-wrapper">
-                        <video muted controls  preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
-                        </video> 
-                    </div>
-                    
+                    <img src="{{Theme::asset()->url('images/home/1.png') }}" alt="">   
                 </div>
                 <div class="swiper-slide">                  
                    
                     <div class="video-wrapper">
                         <video muted  controls preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                            <source src="{{ Theme::asset()->url('images/video/Video 10s.mp4') }}" type="video/mp4">
                         </video> 
                     </div>
                     
@@ -485,7 +480,7 @@
                    
                     <div class="video-wrapper">
                         <video muted   controls preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                            <source src="{{ Theme::asset()->url('images/video/Video 10s.mp4') }}" type="video/mp4">
                         </video> 
                     </div>
                     
@@ -494,7 +489,7 @@
                     
                     <div class="video-wrapper">
                         <video muted controls preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                            <source src="{{ Theme::asset()->url('images/video/Video 10s.mp4') }}" type="video/mp4">
                         </video> 
                     </div>
                     
@@ -503,7 +498,7 @@
                    
                     <div class="video-wrapper">
                         <video muted  controls preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                            <source src="{{ Theme::asset()->url('images/video/Video 10s.mp4') }}" type="video/mp4">
                         </video> 
                     </div>
                     
