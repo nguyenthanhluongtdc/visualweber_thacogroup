@@ -35,23 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/banner-2.jpg') }}" alt="" class="img-slider  w-100 h-100vh ">
-            <div class="fade"></div>
-            <div class="bg-post">
-                <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
-                    <h2 class="font24 title-post">
-                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
-                    </h2>
-                    <div class="description text-justify">
-                    <p class=" font18">
-                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
-                        </p>
-                    </div>
-                    <a href="" class="read-more">Xem thêm</a>
-                </div>
-            </div>
-        </div>
+        
         <div class="swiper-slide" >
             <img src="{{ Theme::asset()->url('images/home/banner-3.jpg') }}" alt="" class="img-slider  w-100 h-100vh ">
             <div class="fade"></div>
@@ -199,7 +183,7 @@
     </div>
 </div>
 <div class="partner-wrapper mt-80">
-    <div class="partner-banner"  style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url('{{Theme::asset()->url('images/home/banner-partner-1.jpg') }}')">
+    <div class="partner-banner"  style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url('{{Theme::asset()->url('images/home/banner-partner-2.jpg') }}')">
         <div class="container-customize logo-partner"> 
             <div class="swiper-container logo-company" style="display:none">
                 <div class="swiper-wrapper">   
@@ -423,84 +407,37 @@
         <div class="swiper-container field-activity-slide-top">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">                  
-                    {{-- <img src="{{Theme::asset()->url('images/home/icon3-img1.jpg') }}" alt=""> --}}
-                    {{-- <div class="swiper-container field-activity-slide-top-small">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="{{Theme::asset()->url('images/home/icon2-img2.jpg') }}" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="{{Theme::asset()->url('images/home/icon2-img2.jpg') }}" alt="">
-                            </div>
-                            <div class="swiper-slide">                  
-                                <img src="{{Theme::asset()->url('images/home/icon2-img1.jpg') }}" alt="">
-                          </div>
-                          <div class="swiper-slide">                  
-                                <img src="{{Theme::asset()->url('images/home/icon2-img2.jpg') }}" alt="">
-                          </div>
-                          <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/icon2-img3.jpg') }}" alt="">
-                        </div>
-                        </div>
-                    </div>    --}}
+                    
                     <div class="video-wrapper">
-                        <video muted   controls  preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Video 10s.mp4') }}" type="video/mp4">
+                        <video muted   autoplay class="__video w-100">
+                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
                         </video> 
                     </div>
                     
                 </div>
-                <div class="swiper-slide">                  
-                    {{-- <img src="{{Theme::asset()->url('images/home/icon3-img1.jpg') }}" alt=""> --}}
-                    {{-- <div class="swiper-container field-activity-slide-top-small">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">                  
-                                <img src="{{Theme::asset()->url('images/home/icon3-img1.jpg') }}" alt="">
-                          </div>
-                          <div class="swiper-slide">                  
-                                <img src="{{Theme::asset()->url('images/home/icon3-img2.jpg') }}" alt="">
-                          </div>
-                          <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/icon3-img3.jpg') }}" alt="">
-                        </div>
-                        </div>
-                    </div>    --}}
-                    <img src="{{Theme::asset()->url('images/home/1.png') }}" alt="">   
-                </div>
-                <div class="swiper-slide">                  
-                   
-                    <div class="video-wrapper">
-                        <video muted  controls preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Video 10s.mp4') }}" type="video/mp4">
-                        </video> 
-                    </div>
+                <div class="swiper-slide">
+                                      
+                    <img src="{{Theme::asset()->url('images/home/transport/icon2-img1.jpg') }}" alt="">
                     
                 </div>
                 <div class="swiper-slide">                  
                    
-                    <div class="video-wrapper">
-                        <video muted   controls preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Video 10s.mp4') }}" type="video/mp4">
-                        </video> 
-                    </div>
-                    
-                </div>
-                <div class="swiper-slide">                  
-                    
-                    <div class="video-wrapper">
-                        <video muted controls preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Video 10s.mp4') }}" type="video/mp4">
-                        </video> 
-                    </div>
+                    <img src="{{Theme::asset()->url('images/home/transport/icon2-img2.jpg') }}" alt="">
                     
                 </div>
                 <div class="swiper-slide">                  
                    
-                    <div class="video-wrapper">
-                        <video muted  controls preload="auto" class="__video w-100">
-                            <source src="{{ Theme::asset()->url('images/video/Video 10s.mp4') }}" type="video/mp4">
-                        </video> 
-                    </div>
+                    <img src="{{Theme::asset()->url('images/home/transport/icon3-img1.jpg') }}" alt="">
+                    
+                </div>
+                <div class="swiper-slide">                  
+                    
+                    <img src="{{Theme::asset()->url('images/home/transport/icon4-img1.jpg') }}" alt="">
+                    
+                </div>
+                <div class="swiper-slide">                  
+                   
+                    <img src="{{Theme::asset()->url('images/home/transport/icon5-img1.jpg') }}" alt="">
                     
                 </div>
                
@@ -508,23 +445,36 @@
         </div>
         <div class="swiper-container field-activity-slide-bottom">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">                  
-                    <img src="{{Theme::asset()->url('images/home/1.png') }}" alt="">   
+                <div class="swiper-slide">
+                    <div class="img-icon">
+                        <img src="{{Theme::asset()->url('images/home/1.png') }}" alt="">   
+                    </div>                  
+                   
                 </div>
                 <div class="swiper-slide">                     
-                    <img src="{{Theme::asset()->url('images/home/2.png') }}" alt="">        
+                    <div class="img-icon">
+                        <img src="{{Theme::asset()->url('images/home/2.png') }}" alt="">   
+                    </div>          
                 </div>
                 <div class="swiper-slide">                  
-                    <img src="{{Theme::asset()->url('images/home/3.png') }}" alt="">        
+                    <div class="img-icon">
+                        <img src="{{Theme::asset()->url('images/home/3.png') }}" alt="">   
+                    </div>        
                  </div>
                 <div class="swiper-slide">                  
-                    <img src="{{Theme::asset()->url('images/home/icon-4.png') }}" alt="">        
+                    <div class="img-icon">
+                        <img src="{{Theme::asset()->url('images/home/icon-4.png') }}" alt="">   
+                    </div>          
                 </div>
                 <div class="swiper-slide">                  
-                    <img src="{{Theme::asset()->url('images/home/5.png') }}" alt="">        
+                    <div class="img-icon">
+                        <img src="{{Theme::asset()->url('images/home/5.png') }}" alt="">   
+                    </div>   
                 </div>
                 <div class="swiper-slide">                  
-                    <img src="{{Theme::asset()->url('images/home/6.png') }}" alt="">        
+                    <div class="img-icon">
+                        <img src="{{Theme::asset()->url('images/home/6.png') }}" alt="">   
+                    </div>      
                 </div>
              
             </div>
