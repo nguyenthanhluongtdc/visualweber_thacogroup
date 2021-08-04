@@ -267,23 +267,92 @@ var recruitment_slider = new Swiper(".recruitment-slider", {
     },
 });
 
-// linh vuc hoat dong slider
-let fieldActivitySlide = new Swiper(".field-activity-slide", {
-    effect: "fade",
-    loop: true,
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
+var galleryThumbs = new Swiper('.field-activity-slide-bottom', {
 
-    },
+    spaceBetween: 15,
+
+    // freeMode: true,
+    // watchSlidesVisibility: true,
+    // watchSlidesProgress: true,
+    // centeredSlides: true,
+
+    slidesPerView: 6,
+    slideToClickedSlide: true,
+
     navigation: {
-        nextEl: '.field-activity-slide .swiper-button-next',
-        prevEl: '.field-activity-slide .swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-    observer: true,
-    observeParents: true,
-
 });
+
+if ($(".field-activity-slide-top").length > 0) {
+    var Homebanner = new Swiper(".field-activity-slide-top", {
+        slidesPerView: 1,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+
+        slideToClickedSlide: true,
+        spaceBetween: 0,
+        speed: 1000,
+        loop: true,
+        // loopedSlides: 6,
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+    });
+    // var videolist = $(".swiper-slide").find("video"); //video object array
+
+    if ($(".swiper-slide .__video")[0]) {
+
+        var Is_video = $(".swiper-slide .__video")[0]
+
+        if (Is_video) {
+
+            var time_duration = setInterval(function() {
+                var currentTime = parseInt(Is_video.currentTime);
+                var duration = parseInt(Is_video.duration)
+                if (currentTime >= duration) {
+                    Homebanner.slideNext();
+
+                }
+
+            }, 1000);
+        }
+
+    }
+    Homebanner.on("slideChange", function() {
+
+        $(document).ready(function() {
+            for (var i = 0; i < 999; i++) {
+                window.clearInterval(i);
+            }
+
+            if ($(".swiper-slide.swiper-slide-active .__video")[0]) {
+
+                var loadingvideo4 = $(".swiper-slide.swiper-slide-active .__video")[0];
+                if (loadingvideo4.paused) {
+                    loadingvideo4.play();
+                }
+                if (loadingvideo4) {
+                    var loadingvideoLast = setInterval(function() {
+                        parseInt(loadingvideo4.currentTime);
+                        if (parseInt(loadingvideo4.currentTime) >= parseInt(loadingvideo4.duration)) {
+                            Homebanner.slideNext();
+
+                        }
+                    }, 1000);
+                }
+            }
+
+        });
+    });
+}
+
+
+
+
 
 // change color header 
 if ($('#header').length > 0) {

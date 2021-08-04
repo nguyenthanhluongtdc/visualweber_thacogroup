@@ -22,13 +22,13 @@
             <img src="{{ Theme::asset()->url('images/home/banner-1.jpg') }}" alt="" class="img-slider  w-100 h-100vh">
             <div class="fade"></div>
             <div class="bg-post">
-                <div class="content"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
+                <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                     <h2 class="font24 title-post">
-                        ĐÀN BÒ TẠI TRANG TRẠI IA PUCH VÀ QUY TRÌNH CHĂM SÓC ĐẶC BIỆT
+                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
                     </h2>
-                    <div class="description">
+                    <div class="description text-justify">
                     <p class=" font18">
-                        Trang trại bò Ia Puch có quy mô 1.907 ha thuộc xã Ia Puch, tỉnh Gia Lai. Với diện tích lớn và điều kiện tự nhiên thuận lợi, trang trại đã phát triển các hoạt động chăn nuôi bò với các phương pháp đặc biệt.
+                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
                         </p>
                     </div>
                     <a href="" class="read-more">Xem thêm</a>
@@ -39,14 +39,13 @@
             <img src="{{ Theme::asset()->url('images/home/banner-2.jpg') }}" alt="" class="img-slider  w-100 h-100vh ">
             <div class="fade"></div>
             <div class="bg-post">
-                <div class="content"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
+                <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                     <h2 class="font24 title-post">
-                        Tổ hợp cơ khí THACO Chu Lai phát triển chế tạo khuôn mẫu
+                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
                     </h2>
-                    <div class="description">
+                    <div class="description text-justify">
                     <p class=" font18">
-                        Khuôn mẫu được xem là “nền tảng của nền công nghiệp”, được sử dụng trong rất nhiều ngành sản xuất. Nhằm phát triển công nghiệp chế tạo khuôn mẫu phục vụ sản xuất ô tô và các ngành công nghiệp khác, Tổ hợp Cơ khí THACO Chu Lai đã đầu tư sản xuất khuôn mẫu theo hướng tạo ra sản phẩm số lượng lớn, thời gian sản xuất ngắn, chất lượng cao, đáp ứng yêu cầu ngày càng tăng của thị trường.
-
+                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
                         </p>
                     </div>
                     <a href="" class="read-more">Xem thêm</a>
@@ -57,13 +56,13 @@
             <img src="{{ Theme::asset()->url('images/home/banner-3.jpg') }}" alt="" class="img-slider  w-100 h-100vh ">
             <div class="fade"></div>
             <div class="bg-post">
-                <div class="content"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
+                <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                     <h2 class="font24 title-post">
-                        "Ngày cuối tuần xanh" và "Ngày Thứ Bảy" gọn gàng tại KCN THACO CHU LAI
+                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
                     </h2>
-                    <div class="description">
+                    <div class="description text-justify">
                     <p class=" font18">
-                        Theo kết quả khảo sát của Careerbuilder tại Việt Nam, THACO trở thành nhà tuyển dụng được yêu thích nhất năm 2020 trong ngành sản xuất.
+                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
                         </p>
                     </div>
                     <a href="" class="read-more">Xem thêm</a>
@@ -200,7 +199,7 @@
     </div>
 </div>
 <div class="partner-wrapper mt-80">
-    <div class="partner-banner"  style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url('{{Theme::asset()->url('images/home/banner-partner.jpg') }}')">
+    <div class="partner-banner"  style="background-image:linear-gradient(180deg, rgb(255 255 255 / 71%) 0%, rgb(255 255 255 / 70%) 70%),url('{{Theme::asset()->url('images/home/banner-partner-1.jpg') }}')">
         <div class="container-customize logo-partner"> 
             <div class="swiper-container logo-company" style="display:none">
                 <div class="swiper-wrapper">   
@@ -224,11 +223,11 @@
                 <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
             </div>
             <div class="logo-desktop">
-                <img class="fade-top" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
-                <img class="fade-top"data-aos="zoom-in-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate"  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
+                <img class="fade-top"data-aos="zoom-in-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
             </div>
             
         </div>
@@ -311,8 +310,7 @@
 
                     </div>
                 </div>
-                <div class="swiper-button-next drop-shadow-button"></div>
-                <div class="swiper-button-prev drop-shadow-button"></div>
+                
                 <div class="swiper-pagination"></div>
             </div>    
            
@@ -407,8 +405,9 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/Icon-right.png') }}" alt="">  </div>
+                    <div class="swiper-button-prev drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/icon-left.png') }}" alt=""> </div>
+                    
         
                 </div>
                
@@ -420,167 +419,128 @@
 </div>
 <div class="transport-wrapper pt-80">
     <div class="transport-banner">
-        <div class="field-activity__tabs">
-            <ul class=" nav nav-tabs mb-0" id="tab-field-activity" role="tablist">
-                <li class="__tabs__item " role="field-activity">
-                    <a class="__tabs__link nav-link active" id="field-1-tab" data-toggle="tab" role="tab" aria-controls="field-1" aria-selected="true" href="#field-1" title="Tất Cả">
-                            <img src="{{Theme::asset()->url('images/home/1.png') }}" alt="">        
-                    </a>
-                </li>
-                <li class="__tabs__item" role="field-activity">
-                    <a class="__tabs__link nav-link" id="field-2-tab" data-toggle="tab" role="tab" aria-controls="field-2" aria-selected="true" href="#field-2" title="Tất Cả">
-                            <img src="{{Theme::asset()->url('images/home/2.png') }}" alt="">        
-                    </a>
-                </li>
-                <li class="__tabs__item" role="field-activity">
-                    <a class="__tabs__link nav-link " id="field-3-tab" data-toggle="tab" role="tab" aria-controls="field-3" aria-selected="true" href="#field-3" title="Tất Cả">
-                            <img src="{{Theme::asset()->url('images/home/3.png') }}" alt="">        
-                    </a>
-                </li>
-                <li class="__tabs__item" role="field-activity">
-                    <a class="__tabs__link nav-link" id="field-4-tab" data-toggle="tab" role="tab" aria-controls="field-4" aria-selected="true" href="#field-4" title="Tất Cả">
-                            <img src="{{Theme::asset()->url('images/home/icon-4.png') }}" alt="">        
-                    </a>
-                </li>
-                <li class="__tabs__item" role="field-activity">
-                    <a class="__tabs__link nav-link" id="field-5-tab" data-toggle="tab" role="tab" aria-controls="field-5" aria-selected="true" href="#field-5" title="Tất Cả">
-                            <img src="{{Theme::asset()->url('images/home/5.png') }}" alt="">        
-                    </a>
-                </li>
-                <li class="__tabs__item" role="field-activity">
-                    <a class="__tabs__link nav-link" id="field-6-tab" data-toggle="tab" role="tab" aria-controls="field-6" aria-selected="true" href="#field-6" title="Tất Cả">
-                            <img src="{{Theme::asset()->url('images/home/6.png') }}" alt="">        
-                    </a>
-                </li>
-            </ul>
-           
-        </div>
-        <a href="" class="read-more">Xem thêm</a>
-        <div class="tab-content" id="Tab-project">
-            <div class="tab-pane fade active show" id="field-1" role="tabpanel" aria-labelledby="field-1-tab">
-                
-                <div class="video-wrapper">
-                    <div class="video">
-                        <video muted>
+      
+        <div class="swiper-container field-activity-slide-top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">                  
+                    {{-- <img src="{{Theme::asset()->url('images/home/icon3-img1.jpg') }}" alt=""> --}}
+                    {{-- <div class="swiper-container field-activity-slide-top-small">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{{Theme::asset()->url('images/home/icon2-img2.jpg') }}" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{Theme::asset()->url('images/home/icon2-img2.jpg') }}" alt="">
+                            </div>
+                            <div class="swiper-slide">                  
+                                <img src="{{Theme::asset()->url('images/home/icon2-img1.jpg') }}" alt="">
+                          </div>
+                          <div class="swiper-slide">                  
+                                <img src="{{Theme::asset()->url('images/home/icon2-img2.jpg') }}" alt="">
+                          </div>
+                          <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/icon2-img3.jpg') }}" alt="">
+                        </div>
+                        </div>
+                    </div>    --}}
+                    <div class="video-wrapper">
+                        <video muted   controls  preload="auto" class="__video w-100">
                             <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
                         </video> 
                     </div>
                     
                 </div>
-            </div>
-            <div class="tab-pane fade" id="field-2" role="tabpanel" aria-labelledby="field-2-tab">
-                <div class="swiper-container field-activity-slide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/icon2-img1.jpg') }}" alt="">
+                <div class="swiper-slide">                  
+                    {{-- <img src="{{Theme::asset()->url('images/home/icon3-img1.jpg') }}" alt=""> --}}
+                    {{-- <div class="swiper-container field-activity-slide-top-small">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">                  
+                                <img src="{{Theme::asset()->url('images/home/icon3-img1.jpg') }}" alt="">
+                          </div>
+                          <div class="swiper-slide">                  
+                                <img src="{{Theme::asset()->url('images/home/icon3-img2.jpg') }}" alt="">
+                          </div>
+                          <div class="swiper-slide">                  
+                              <img src="{{Theme::asset()->url('images/home/icon3-img3.jpg') }}" alt="">
                         </div>
-                        <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/icon2-img2.jpg') }}" alt="">
                         </div>
-                        <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/icon2-img3.jpg') }}" alt="">
-                      </div>
-                      {{-- <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div> --}}
+                    </div>    --}}
+                    <div class="video-wrapper">
+                        <video muted controls  preload="auto" class="__video w-100">
+                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                        </video> 
                     </div>
-                   
-        
+                    
                 </div>
-            </div>
-            <div class="tab-pane fade" id="field-3" role="tabpanel" aria-labelledby="field-3-tab">
-                <div class="swiper-container field-activity-slide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/icon3-img1.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/icon3-img2.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/icon3-img3.jpg') }}" alt="">
-                      </div>
-                      {{-- <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div> --}}
+                <div class="swiper-slide">                  
+                   
+                    <div class="video-wrapper">
+                        <video muted  controls preload="auto" class="__video w-100">
+                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                        </video> 
                     </div>
-                   
-        
+                    
                 </div>
-            </div>
-            <div class="tab-pane fade" id="field-4" role="tabpanel" aria-labelledby="field-4-tab">
-                <div class="swiper-container field-activity-slide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            {{-- <div class="bg-slider" style="background-image: url('{{Theme::asset()->url('images/home/icon4-img1.jpg') }}')">
-                            </div>                     --}}
-                              <img src="{{Theme::asset()->url('images/home/icon4-img1.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/icon4-img2.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/icon4-img3.jpg') }}" alt="">
-                      </div>
-                      {{-- <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div> --}}
+                <div class="swiper-slide">                  
+                   
+                    <div class="video-wrapper">
+                        <video muted   controls preload="auto" class="__video w-100">
+                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                        </video> 
                     </div>
-                   
-        
+                    
                 </div>
-            </div>
-            <div class="tab-pane fade" id="field-5" role="tabpanel" aria-labelledby="field-5-tab">
-                <div class="swiper-container field-activity-slide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                                {{-- <div class="bg-slider" style="background-image: url('{{Theme::asset()->url('images/home/icon5-img1.jpg') }}')">
-                                    </div>                   --}}
-                              <img src="{{Theme::asset()->url('images/home/icon5-img1.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide"> 
-                            {{-- <div class="bg-slider" style="background-image: url('{{Theme::asset()->url('images/home/icon5-img2.jpg') }}')">
-                            </div>                    --}}
-                              <img src="{{Theme::asset()->url('images/home/icon5-img2.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/icon5-img3.jpg') }}" alt="">
-                      </div>
-                      {{-- <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div> --}}
+                <div class="swiper-slide">                  
+                    
+                    <div class="video-wrapper">
+                        <video muted controls preload="auto" class="__video w-100">
+                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                        </video> 
                     </div>
-                   
-        
+                    
                 </div>
-            </div>
-            <div class="tab-pane fade" id="field-6" role="tabpanel" aria-labelledby="field-6-tab">
-                <div class="swiper-container field-activity-slide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/7-oto.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide">                  
-                              <img src="{{Theme::asset()->url('images/home/9-oto.jpg') }}" alt="">
-                        </div>
-                        <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/10-oto.jpg') }}" alt="">
-                      </div>
-                      {{-- <div class="swiper-slide">                  
-                            <img src="{{Theme::asset()->url('images/home/banner-transport.jpg') }}" alt="">
-                      </div> --}}
+                <div class="swiper-slide">                  
+                   
+                    <div class="video-wrapper">
+                        <video muted  controls preload="auto" class="__video w-100">
+                            <source src="{{ Theme::asset()->url('images/video/Xe-tiem-vacxin-luu-dong1.mp4') }}" type="video/mp4">
+                        </video> 
                     </div>
-                   
-        
+                    
                 </div>
-                
+               
             </div>
         </div>
+        <div class="swiper-container field-activity-slide-bottom">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">                  
+                    <img src="{{Theme::asset()->url('images/home/1.png') }}" alt="">   
+                </div>
+                <div class="swiper-slide">                     
+                    <img src="{{Theme::asset()->url('images/home/2.png') }}" alt="">        
+                </div>
+                <div class="swiper-slide">                  
+                    <img src="{{Theme::asset()->url('images/home/3.png') }}" alt="">        
+                 </div>
+                <div class="swiper-slide">                  
+                    <img src="{{Theme::asset()->url('images/home/icon-4.png') }}" alt="">        
+                </div>
+                <div class="swiper-slide">                  
+                    <img src="{{Theme::asset()->url('images/home/5.png') }}" alt="">        
+                </div>
+                <div class="swiper-slide">                  
+                    <img src="{{Theme::asset()->url('images/home/6.png') }}" alt="">        
+                </div>
+             
+            </div>
+        </div>
+        <a href="" class="read-more">Xem thêm</a>
+       
     </div>
 </div>
 
 <div class="recruitment-wrapper mt-80">
-    <div class="recruitment-banner " style="background-image:url({{Theme::asset()->url('images/home/tuyendung.jpg') }})">
+    <div class="recruitment-banner " style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung-1.jpg') }})">
         <div class="swiper-content">
             <div class="swiper-content__desc">
                 <h3 class="title font28">Tuyển dụng</h3>
@@ -591,7 +551,7 @@
             </div>
             <div class="bottom_slider_wrapper">
                 <div class="title_label">
-                    <h3 class="title font28">Tuyển dụng</h3>
+                    <h3 class="title font28 font-myria-bold">Tuyển dụng</h3>
                 </div>
                
                 <div class="swiper-container recruitment-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
