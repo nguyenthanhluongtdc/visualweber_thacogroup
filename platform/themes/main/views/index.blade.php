@@ -184,7 +184,7 @@
 </div>
 <div class="partner-wrapper mt-80">
     <h3 class="title__company font40  mt-40 " data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">“TẬP ĐOÀN VÀ TỔNG CÔNG TY”</h3>
-    <div class="partner-banner"  style="background-image:url('{{Theme::asset()->url('images/home/banner-partner-2.jpg') }}')">
+    <div class="partner-banner parallax-window" data-parallax="scroll" style="background-image: url('{{Theme::asset()->url('images/home/banner-partner-2.jpg') }}')">
         <div class="container-customize logo-partner"> 
             <div class="swiper-container logo-company" style="display:none">
                 <div class="swiper-wrapper">   
@@ -208,11 +208,11 @@
                 <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
             </div>
             <div class="logo-desktop">
-                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate"  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
-                <img class="fade-top"data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate"  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
+                <img class="fade-top"data-aos="fade-right" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
             </div>
             
         </div>
@@ -496,16 +496,16 @@
                             </div>
                             <div class="swiper-slide" >
                                 <div class="swiper-content-bottom">
-                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
-                                        <p class="postion-apply font28"> Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/588?code=" target="_self">
+                                        <p class="postion-apply font28"> Trưởng phòng quản trị hành chính
                                         </p>
                                     </a>
                                 </div>
                             </div>
                             <div class="swiper-slide" >
                                 <div class="swiper-content-bottom">
-                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
-                                        <p class="postion-apply font28">Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
+                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/583?code=" target="_self">
+                                        <p class="postion-apply font28">Chuyên viên pháp lý tố tụng
                                         </p>
                                     </a>
                                 </div>

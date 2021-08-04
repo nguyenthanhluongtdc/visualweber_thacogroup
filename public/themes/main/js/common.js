@@ -142,10 +142,10 @@ let logo_company = new Swiper('.logo-company', {
 let newPostSlide = new Swiper('.new-post-slide', {
     speed: 1500,
     loop: true,
-    // autoplay: {
-    //     delay: 6000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: '.new-post-slide .swiper-pagination',
         clickable: true,
@@ -230,15 +230,17 @@ let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
     // tuyen dung slider
 var recruitment_slider = new Swiper('.recruitment-slider', {
     direction: 'vertical',
-    initialSlide: 1,
-    slidesPerColumn: 1,
-    centeredSlides: true,
+    effect: "flip",
+
+    flipEffect: {
+        slideShadows: false,
+    },
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
     },
-    speed: 3000,
+    speed: 2000,
 
     pagination: {
         el: '.recruitment-slider .swiper-pagination',

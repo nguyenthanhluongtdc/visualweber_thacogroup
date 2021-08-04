@@ -57,13 +57,13 @@ return [
             // $theme->asset()->add('bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css');
             $theme->asset()->add('fancybox', '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');
             $theme->asset()->add('aos_style', '//unpkg.com/aos@2.3.1/dist/aos.css');
-            $theme->asset()->add('font-awesome-pro', 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+            $theme->asset()->add('font-awesome-pro', '//pro.fontawesome.com/releases/v5.10.0/css/all.css');
             $theme->asset()->add('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
             
             $theme->asset()->add('carousel', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
-            $theme->asset()->add('Scroll_Custom', ' //cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css');
            
-            $theme->asset()->add('swiper', 'https://unpkg.com/swiper/swiper-bundle.min.css');
+           
+            $theme->asset()->add('swiper', '//unpkg.com/swiper/swiper-bundle.min.css');
             $theme->asset()->add('slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
             $theme->asset()->add('Scroll_custom', '//cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css');
             $theme->asset()->add('carousel_thumb', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css');
