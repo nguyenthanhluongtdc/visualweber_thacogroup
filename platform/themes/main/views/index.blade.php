@@ -183,8 +183,8 @@
     </div>
 </div>
 <div class="partner-wrapper mt-80">
-    <h3 class="title__company font40  mt-40 " data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">“TẬP ĐOÀN VÀ TỔNG CÔNG TY”</h3>
-    <div class="partner-banner parallax-window" data-parallax="scroll" style="background-image: url('{{Theme::asset()->url('images/home/banner-partner-2.jpg') }}')">
+    <h3 class="title__company font40  mt-40 " data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">TẬP ĐOÀN VÀ TỔNG CÔNG TY</h3>
+    <div class="partner-banner parallax-window" data-parallax="scroll" style="background-image: url('{{Theme::asset()->url('images/home/bg-partner.jpg') }}')">
         <div class="container-customize logo-partner"> 
             <div class="swiper-container logo-company" style="display:none">
                 <div class="swiper-wrapper">   
@@ -208,11 +208,11 @@
                 <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
             </div>
             <div class="logo-desktop">
-                <img class="fade-top" data-aos="fade-right" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="fade-right" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="fade-right" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate"  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
-                <img class="fade-top" data-aos="fade-right" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
-                <img class="fade-top"data-aos="fade-right" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate"  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
+                <img class="fade-top" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
+                <img class="fade-top"data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
             </div>
             
         </div>
