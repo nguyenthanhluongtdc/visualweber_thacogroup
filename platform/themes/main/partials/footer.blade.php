@@ -15,7 +15,7 @@
                                         <p class="font18 text-white">Số 10 Mai Chí Thọ, P. Thủ Thiêm,<br>TP. Thủ Đức, TP.HCM.    
                                 </div>
                                 <div class="phone">
-                                    <a class="text-white" href="tel:+84-(0)8-39977.824">+84-(0)8-39977.824</a>
+                                    <a class="text-white" href="tel:+84-(0)8.39977.161">+84-(0)8.39977.161</a>
                                 </div>
                                 <div class="global">
                                     <a class="text-white" href="">www.truonghaiauto.com.vn</a>
@@ -34,7 +34,7 @@
                                     
                                 </div>
                                 <div class="phone ">
-                                    <a class="text-white" href="tel:84-0510.3567.161">84-0510.3567.161</a>
+                                    <a class="text-white" href="tel:+84-(0)510.3567.161">+84-(0)510.3567.161</a>
                                 </div>
                                 <div class="global ">
                                     <a class="text-white" href="">www.thacochulai.vn</a>
@@ -52,7 +52,7 @@
                                     
                                 </div>
                                 <div class="phone">
-                                    <a class="text-white" href="+84-(0)43.8758914">+84-(0)43.8758914</a>
+                                    <a class="text-white" href="tel:+84-(0)43.3567.161">+84-(0)43.3567.161</a>
                                 </div>
                                 <div  class="global">
                                     <a class="text-white" href="">www.truonghaiauto.com.vn</a>
