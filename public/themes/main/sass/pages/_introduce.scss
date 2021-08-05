@@ -347,7 +347,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        padding-top: 700px;
+        padding-top: 37vw;
         .develop-content-wrapper {
             position: absolute;
             top: 0;
@@ -365,7 +365,7 @@
                     margin-left: -60px;
                 }
                 .slider.slider-for {
-                    padding-top: 10%;
+                    padding-top: 50px;
                     // padding-left: 7%;
                     width: 100%;
                     height: 100%;
@@ -374,10 +374,30 @@
                     .slick-list {
                         .slick-track {
                             .thumbnail-image {
+                                max-height: calc(37vw - 100px);
+                                cursor: pointer;
+                                .mCSB_scrollTools .mCSB_draggerContainer {
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    width: 4px;
+                                }
+                                &:hover .mCSB_scrollTools .mCSB_draggerContainer {
+                                    transition: height 10s;
+                                    opacity: 1;
+                                    visibility: visible;
+                                    background: gray;
+                                }
+                                .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
+                                    background: #fff;
+                                }
+                                .mCS-dark.mCSB_scrollTools .mCSB_dragger_bar {
+                                    background: #fff;
+                                    display: none
+                                }
                                 .image-slider img {
                                     // max-width: 70%;
                                     object-fit: cover;
-                                    height: 400px;
+                                    height: 20vw;
                                     width: 100%;
                                     // width: 700px;
                                 }
@@ -390,14 +410,7 @@
                                         .desc {
                                             max-width: 100%;
                                             text-align: justify;
-                                            max-height: 100px;
                                             cursor: pointer;
-                                            .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
-                                                background: gray;
-                                            }
-                                            .mCS-dark.mCSB_scrollTools .mCSB_dragger_bar {
-                                                background: #fff;
-                                            }
                                         }
                                     }
                                 }

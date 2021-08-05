@@ -470,7 +470,7 @@
                             <div class="col-md-9">
                                 <div class="thumb-wrapper">
                                     <div class="slider slider-for">
-                                        <div class="thumbnail-image">
+                                        <div class="thumbnail-image mCustomScrollbar" data-mcs-theme="dark" >
                                             <div class="image-slider">
                                                 
                                                 <img src="{{ Theme::asset()->url('images/introduce/develop.jpg')}}" />
@@ -478,14 +478,15 @@
                                                 <div class="content-slider">
                                                     <h3 class="title font30">Nhà máy THACO</h3>
                                                     <div class="desc__wrapper">
-                                                        <div class="desc font18 text-justify  mCustomScrollbar"data-mcs-theme="dark" >Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
+                                                        <div class="desc font18 text-justify  ">Khởi công xây dựng nhà máy sản xuất, lắp ráp xe du lịch Mazda có tên THACO Mazda, là nhà máy Mazda có quy mô lớn nhất Đông Nam Á.
                                                             Khánh thành nhà máy Bus THACO
+                                                            
                                                            </div>
                                                     </div>
                                                     
                                                 </div>
                                         </div>
-                                        <div class="thumbnail-image">
+                                        <div class="thumbnail-image mCustomScrollbar" data-mcs-theme="dark">
                                             <div class="image-slider">
                                                 <img src="{{ Theme::asset()->url('images/home/8-post.jpg')}}" />
                                             
@@ -505,7 +506,7 @@
                                                    
                                                 </div>
                                         </div>
-                                        <div class="thumbnail-image">
+                                        <div class="thumbnail-image mCustomScrollbar" data-mcs-theme="dark">
                                             <div class="image-slider">
                                                 <img src="{{ Theme::asset()->url('images/home/7-post.jpg')}}" />
                                             </div>
@@ -521,7 +522,7 @@
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="thumbnail-image">
+                                        <div class="thumbnail-image mCustomScrollbar" data-mcs-theme="dark">
                                             <div class="image-slider">
                                                 <img src="{{ Theme::asset()->url('images/home/6-post.jpg')}}" />
                                             
@@ -536,7 +537,7 @@
                                                     
                                                 </div>
                                         </div>
-                                        <div class="thumbnail-image">
+                                        <div class="thumbnail-image mCustomScrollbar" data-mcs-theme="dark">
                                             <div class="image-slider">
                                                 <img src="{{ Theme::asset()->url('images/home/2-post.jpg')}}" />
                                             </div>
@@ -550,7 +551,7 @@
                                                     
                                                 </div>
                                         </div>
-                                        <div class="thumbnail-image">
+                                        <div class="thumbnail-image mCustomScrollbar" data-mcs-theme="dark">
                                             <div class="image-slider">
                                                 <img src="{{ Theme::asset()->url('images/home/3-post.jpg')}}" />
                                                 
@@ -565,7 +566,7 @@
                                                     
                                                 </div>
                                         </div>
-                                        <div class="thumbnail-image">
+                                        <div class="thumbnail-image mCustomScrollbar" data-mcs-theme="dark">
                                             <div class="image-slider">
                                                 <img src="{{ Theme::asset()->url('images/home/4-post.jpg')}}" />
                                             </div>
