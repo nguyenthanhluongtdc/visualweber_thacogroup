@@ -1,5 +1,5 @@
 
- <div class="swiper-container main-slider" style="--swiper-navigation-color:#000; --swiper-pagination-color:#000;">
+ <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
     <div class="swiper-wrapper">   
         <div class="swiper-slide" >
             <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider h-100vh w-100">
@@ -182,9 +182,9 @@
        
     </div>
 </div>
-<div class="partner-wrapper mt-80">
-    <h3 class="title__company font40  mt-40 " data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">TẬP ĐOÀN VÀ TỔNG CÔNG TY</h3>
-    <div class="partner-banner parallax-window" data-parallax="scroll" style="background-image: url('{{Theme::asset()->url('images/home/bg-partner.jpg') }}')">
+<div class="partner-wrapper">
+    <h3 class="title__company font40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">TẬP ĐOÀN VÀ TỔNG CÔNG TY</h3>
+    <div class="partner-banner parallax-window" data-parallax="scroll">
         <div class="container-customize logo-partner"> 
             <div class="swiper-container logo-company" style="display:none">
                 <div class="swiper-wrapper">   
@@ -218,7 +218,7 @@
         </div>
     </div>
 </div>
-<div class="news-home-wrapper pt-80">
+<div class="news-home-wrapper">
     <div class="container-customize">
         <div class="news-home__content">
             <div class="swiper-container new-post-slide" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
@@ -386,10 +386,10 @@
     </div>
    
 </div>
-<div class="transport-wrapper pt-80">
+<div class="transport-wrapper" >
     <div class="transport-banner">
       
-        <div class="swiper-container field-activity-slide-top">
+        <div class="swiper-container field-activity-slide-top" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">                  
                     
@@ -427,8 +427,9 @@
                 </div>
                
             </div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-container field-activity-slide-bottom">
+        {{-- <div class="swiper-container field-activity-slide-bottom">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="img-icon">
@@ -463,13 +464,13 @@
                 </div>
              
             </div>
-        </div>
+        </div> --}}
         <a href="" class="read-more">Xem thêm</a>
        
     </div>
 </div>
 
-<div class="recruitment-wrapper mt-80">
+<div class="recruitment-wrapper">
     <div class="recruitment-banner " style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung-1.jpg') }})">
         <div class="swiper-content">
             <div class="swiper-content__desc">
@@ -481,7 +482,7 @@
             </div>
             <div class="bottom_slider_wrapper">
                 <div class="title_label">
-                    <h3 class="title font28 font-myria-bold">Tuyển dụng</h3>
+                    <h3 class="title font28 font-myria-bold">Vị trí</h3>
                 </div>
                
                 <div class="swiper-container recruitment-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">

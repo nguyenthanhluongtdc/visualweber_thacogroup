@@ -3,7 +3,7 @@
                     transform: scale(1, 1);
                 }
                 50% {
-                    transform: scale(1.3, 1.3);
+                    transform: scale(1.15, 1.15);
                 }
                 100% {
                     transform: scale(1, 1);
@@ -11,9 +11,6 @@
             }
             
             .main-slider {
-                .owl-nav {
-                    display: none;
-                }
                 .swiper-slide {
                     .img-slider {
                         animation: 40s ease 0s normal none infinite running zoomEffect;
@@ -80,8 +77,17 @@
             }
             
             .main-slider.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-                width: 15px;
-                height: 15px;
+                display: inline-block;
+                margin: 0 6px;
+                border: 1px solid #ddd;
+                opacity: 1;
+                background: unset;
+                width: 11px;
+                height: 11px;
+            }
+            
+            .main-slider.swiper-container-horizontal .swiper-pagination-bullet-active {
+                background: #fff!important;
             }
             
             //common
@@ -94,7 +100,7 @@
                         overflow: hidden;
                         position: relative;
                         &:nth-child(1) {
-                            box-shadow: 0 5px 15px -5px #555;
+                            box-shadow: 0 5px 8px -5px #555;
                             width: 49%;
                             height: calc((100vh - 98px - 3vw)/2);
                             margin-right: 2%;
@@ -106,7 +112,7 @@
                             }
                         }
                         &:nth-child(2) {
-                            box-shadow: 0 5px 15px -5px #555;
+                            box-shadow: 0 5px 8px -5px #555;
                             width: 49%;
                             height: calc((100vh - 98px - 3vw)/2);
                             margin-bottom: 2%;
@@ -117,7 +123,7 @@
                             }
                         }
                         &:nth-child(3) {
-                            box-shadow: 0 5px 15px -5px #555;
+                            box-shadow: 0 5px 8px -5px #555;
                             width: 32%;
                             height: calc((100vh - 98px - 2vw)/2);
                             margin-right: 2%;
@@ -128,7 +134,7 @@
                             }
                         }
                         &:nth-child(4) {
-                            box-shadow: 0 5px 15px -5px #555;
+                            box-shadow: 0 5px 8px -5px #555;
                             width: 32%;
                             height: calc((100vh - 98px - 2vw)/2);
                             margin-right: 2%;
@@ -140,7 +146,7 @@
                         }
                         &:nth-child(5) {
                             height: calc((100vh - 98px - 2vw)/2);
-                            box-shadow: 0 5px 15px -5px #555;
+                            box-shadow: 0 5px 8px -5px #555;
                             width: 32%;
                             img {
                                 height: 100%;
@@ -202,7 +208,7 @@
             
             .partner-wrapper {
                 .title__company {
-                    margin-bottom: 40px;
+                    margin: 10px 0;
                     font-family: $MyriadPro-Bold;
                     text-align: center;
                 }
@@ -213,8 +219,11 @@
                     background-size: cover;
                     background-repeat: no-repeat;
                     position: relative;
-                    background-attachment: fixed;
+                    // background-attachment: fixed;
                     background-position: center center;
+                    .title__company {
+                        margin: 10px 0;
+                    }
                     .logo-partner {
                         img {
                             max-width: 100%;
@@ -239,23 +248,24 @@
             
             // news post
             .news-home-wrapper {
+                padding-top: 20px;
                 background-color: $bg-post;
                 .news-home__content {
                     .new-post-slide {
-                        padding-left: 15px;
-                        padding-right: 15px;
-                        margin-left: -15px;
-                        margin-right: -15px;
+                        padding-left: 8px;
+                        padding-right: 8px;
+                        margin-left: -8px;
+                        margin-right: -8px;
                     }
                     .swiper-container-horizontal>.swiper-pagination-bullets {
                         display: none;
                     }
                     // background-color: $bg-post;
                     .news-home__top {
-                        margin-top: 15px;
-                        margin-bottom: 15px;
-                        box-shadow: 0 5px 15px -5px #555;
-                        margin-bottom: 30px;
+                        margin-top: 8px;
+                        margin-bottom: 20px;
+                        box-shadow: 0 5px 8px -5px #555;
+                        // margin-bottom: 30px;
                         height: 28vw;
                         min-height: 470px;
                         display: flex;
@@ -304,15 +314,15 @@
                     }
                     .post-slider {
                         .post-slide-bottom {
-                            padding-left: 15px;
-                            padding-right: 15px;
+                            padding-left: 8px;
+                            padding-right: 8px;
                         }
-                        margin-left: -15px;
-                        margin-right: -15px;
+                        margin-left: -8px;
+                        margin-right: -8px;
                         .post_content_bottom {
-                            box-shadow: 0 5px 15px -5px #555;
-                            margin-top: 15px;
-                            margin-bottom: 15px;
+                            box-shadow: 0 5px 8px -5px #555;
+                            margin-top: 8px;
+                            margin-bottom: 8px;
                             overflow: hidden;
                             .post-wrapper {
                                 &:hover {
@@ -370,6 +380,7 @@
             }
             
             .transport-wrapper {
+                padding-top: 20px;
                 background-color: $bg-post;
                 .transport-banner {
                     position: relative;
@@ -385,6 +396,18 @@
                                 height: 37vw;
                             }
                         }
+                    }
+                    .field-activity-slide-top.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+                        display: inline-block;
+                        margin: 0 6px;
+                        border: 1px solid #ddd;
+                        opacity: 1;
+                        background: unset;
+                        width: 11px;
+                        height: 11px;
+                    }
+                    .field-activity-slide-top.swiper-container-horizontal .swiper-pagination-bullet-active {
+                        background: #fff!important;
                     }
                     .field-activity-slide-bottom {
                         position: absolute;
@@ -442,7 +465,7 @@
             }
             
             .recruitment-wrapper {
-                margin-top: 40px;
+                // margin-top: 40px;
                 margin-bottom: -40px;
                 .swiper-container-horizontal>.swiper-pagination-bullets {
                     top: 1rem;
@@ -483,7 +506,7 @@
                         }
                         .swiper-container {
                             width: 100%;
-                            height: 80px;
+                            height: 28px;
                         }
                         .recruitment-slider.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
                             display: inline-block;
@@ -536,7 +559,7 @@
                         .title_label {
                             margin-left: 5%;
                             z-index: 1;
-                            margin-right: 3px;
+                            margin-right: 5px;
                             h3 {
                                 width: max-content;
                             }
@@ -548,7 +571,7 @@
                                 text-align: left;
                                 .postion-apply {
                                     @include split_str(1);
-                                    line-height: 80px;
+                                    line-height: 28px;
                                     width: 100%!important;
                                     display: inline-block;
                                 }

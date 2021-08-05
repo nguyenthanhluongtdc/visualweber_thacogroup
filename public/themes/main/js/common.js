@@ -230,14 +230,14 @@ let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
     // tuyen dung slider
 var recruitment_slider = new Swiper('.recruitment-slider', {
     direction: 'vertical',
-    effect: "flip",
+    // effect: "flip",
 
-    flipEffect: {
-        slideShadows: false,
-    },
+    // flipEffect: {
+    //     slideShadows: false,
+    // },
     loop: true,
     autoplay: {
-        delay: 3000,
+        delay: 4000,
         disableOnInteraction: false,
     },
     speed: 2000,
@@ -252,22 +252,22 @@ var recruitment_slider = new Swiper('.recruitment-slider', {
     },
 })
 
-var galleryThumbs = new Swiper('.field-activity-slide-bottom', {
-    spaceBetween: 15,
+// var galleryThumbs = new Swiper('.field-activity-slide-bottom', {
+//     spaceBetween: 15,
 
-    // freeMode: true,
-    // watchSlidesVisibility: true,
-    // watchSlidesProgress: true,
-    // centeredSlides: true,
+//     // freeMode: true,
+//     // watchSlidesVisibility: true,
+//     // watchSlidesProgress: true,
+//     // centeredSlides: true,
 
-    slidesPerView: 6,
-    slideToClickedSlide: true,
+//     slidesPerView: 6,
+//     slideToClickedSlide: true,
 
-    navigation: {
-        nextEl: '.field-activity-slide-bottom .swiper-button-next',
-        prevEl: '.field-activity-slide-bottom .swiper-button-prev',
-    },
-})
+//     navigation: {
+//         nextEl: '.field-activity-slide-bottom .swiper-button-next',
+//         prevEl: '.field-activity-slide-bottom .swiper-button-prev',
+//     },
+// })
 
 if ($('.field-activity-slide-top').length > 0) {
     var Homebanner = new Swiper('.field-activity-slide-top', {
@@ -282,9 +282,9 @@ if ($('.field-activity-slide-top').length > 0) {
         speed: 1000,
         loop: true,
         // loopedSlides: 6,
-        thumbs: {
-            swiper: galleryThumbs,
-        },
+        // thumbs: {
+        //     swiper: galleryThumbs,
+        // },
     })
 
     function myHandler(e) {
