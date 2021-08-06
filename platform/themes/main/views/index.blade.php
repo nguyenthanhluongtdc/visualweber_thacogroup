@@ -207,7 +207,7 @@
                 <div class="swiper-button-next"><img src="{{Theme::asset()->url("images/home/right-arrow.png")}}" alt="{{_('Next icon')}}"></div>
                 <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
             </div>
-            <div class="logo-desktop" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100" class="aos-init aos-animate" >
+            <div class="logo-desktop"   >
                 <img class="fade-top"  src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
                 <img class="fade-top"  src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
                 <img class="fade-top"  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">

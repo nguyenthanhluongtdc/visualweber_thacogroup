@@ -318,7 +318,22 @@ if ($('.field-activity-slide-top').length > 0) {
         }
     })
 }
+window.addEventListener('scroll', animationScroll);
 
+function animationScroll() {
+    if (document.querySelectorAll('.logo-desktop').length > 0) {
+        var windowHeight = window.innerHeight,
+            animate = document.querySelectorAll('.logo-desktop')[0];
+        animate1 = $('.logo-desktop')
+        AnimationHeight = animate.clientHeight,
+            AnimationClientRect = animate.getBoundingClientRect().top;
+        if (AnimationClientRect <= ((windowHeight) - (AnimationHeight * .5)) && AnimationClientRect >= (0 - (AnimationHeight * .5))) {
+            animate1.addClass('zoom-up')
+        } else {
+            animate1.removeClass('zoom-up')
+        }
+    }
+}
 //scroll play video
 window.addEventListener('load', videoScroll);
 window.addEventListener('scroll', videoScroll);
@@ -376,7 +391,3 @@ if ($('#header').length > 0) {
         }
     })
 }
-$('[data-parallax="scroll"]').each(function() {
-    var $this = $(this)
-    $this.parallax({ imageSrc: $this.data('image-src') })
-})
