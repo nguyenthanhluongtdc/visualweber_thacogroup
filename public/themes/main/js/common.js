@@ -251,6 +251,25 @@ var recruitment_slider = new Swiper('.recruitment-slider', {
         prevEl: '.recruitment-slider .swiper-button-prev',
     },
 })
+var media_sider = new Swiper('.media-slider', {
+
+
+    // loop: true,
+    // autoplay: {
+    //     delay: 4000,
+    //     disableOnInteraction: false,
+    // },
+    speed: 2000,
+
+    pagination: {
+        el: '.media-slider .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.media-slider .swiper-button-next',
+        prevEl: '.media-slider .swiper-button-prev',
+    },
+})
 
 // var galleryThumbs = new Swiper('.field-activity-slide-bottom', {
 //     spaceBetween: 15,

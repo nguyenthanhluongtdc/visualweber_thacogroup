@@ -3,6 +3,7 @@
 register_page_template([
     'default' => 'Default',
     'introduce' => 'Introduce',
+    'posts' =>'Posts',
 ]);
 
 register_sidebar([

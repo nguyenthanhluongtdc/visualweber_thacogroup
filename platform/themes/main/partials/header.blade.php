@@ -197,6 +197,11 @@
                                             Thông điệp
                                         </a>
                                     </div>
+                                    <div class="cmenu">
+                                        <a href="" class="dropdown-item">
+                                         Media
+                                        </a>
+                                    </div>
                                 </div>
                             </li>
                             {{-- <li class="nav-item nav-link ">
