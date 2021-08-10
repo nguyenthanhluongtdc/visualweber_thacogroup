@@ -1,187 +1,216 @@
 .media_content-wrapper {
     padding-top: 20px;
-    .media__content_left {
-        .news__content {
-            .new-post-slide {
-                padding-left: 8px;
-                padding-right: 8px;
-                margin-left: -8px;
-                margin-right: -8px;
-            }
-            .swiper-container-horizontal>.swiper-pagination-bullets {
-                display: none;
-            }
-            // background-color: $bg-post;
-            .news__top {
-                margin-top: 8px;
-                margin-bottom: 20px;
-                box-shadow: 0 5px 8px -5px #555;
-                // margin-bottom: 30px;
-                height: 24vw;
-                min-height: 350px;
-                display: flex;
-                .img-post {
-                    flex: 0 0 65%;
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        object-position: bottom;
+    .media-content {
+        display: flex;
+        .content-left {
+            max-width: 69%;
+            margin-right: 2.5%;
+            .media__content_left {
+                .news__content {
+                    .new-post-slide {
+                        padding-left: 8px;
+                        padding-right: 8px;
+                        margin-left: -8px;
+                        margin-right: -8px;
                     }
-                }
-                .news-post {
-                    flex: 0 0 35%;
-                    background-color: $bg-post;
-                    padding: 45px 30px;
-                    .title {
-                        font-family: $MyriadPro-Bold;
-                        padding: 5px;
-                        border: 1px solid $gray_text;
-                        width: max-content;
-                        opacity: 0.7;
-                        font-size: 13px;
+                    .swiper-container-horizontal>.swiper-pagination-bullets {
+                        display: none;
                     }
-                    .name {
-                        margin: 15px 0;
-                        font-family: $MyriadPro-Bold;
-                        text-transform: uppercase;
-                        font-size: 14px;
-                    }
-                    .time {
-                        margin-bottom: 15px;
-                        display: block;
-                        font-size: 11px;
-                    }
-                    .description {
+                    // background-color: $bg-post;
+                    .news__top {
+                        margin-top: 8px;
                         margin-bottom: 20px;
-                        @include split_str(10);
-                        font-size: 12px;
-                        @media screen and(max-width: 1680px) {
-                            @include split_str(6);
-                        }
-                    }
-                    .read-more {
-                        padding: 7px 22px;
-                        color: $white;
-                        border: 1px solid #fff;
-                        text-decoration: none;
-                        font-size: 15px;
-                        background-color: #015BAC;
-                    }
-                }
-            }
-            .post-slider {
-                .post-slide-bottom {
-                    padding-left: 8px;
-                    padding-right: 8px;
-                }
-                margin-left: -8px;
-                margin-right: -8px;
-                .post_content_bottom {
-                    box-shadow: 0 5px 8px -5px #555;
-                    margin-top: 8px;
-                    margin-bottom: 8px;
-                    overflow: hidden;
-                    .post-wrapper {
-                        &:hover {
-                            transition: transform .2s, visibility .2s ease-in;
-                            transform: scale(1.08);
-                            // box-shadow: 0 0 18px rgb(0 0 0 / 20%);
-                        }
-                        // margin-right: 20px;
-                        .post-thumbnail {
-                            width: 100%;
-                            height: auto;
-                            overflow: hidden;
+                        box-shadow: 0 5px 8px -5px #555;
+                        // margin-bottom: 30px;
+                        height: 24vw;
+                        min-height: 350px;
+                        display: flex;
+                        .img-post {
+                            flex: 0 0 65%;
                             img {
                                 width: 100%;
-                                height: 175px;
-                                transition: transform .3s, visibility .3s ease-in;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: bottom;
                             }
                         }
-                        color: $gray_text;
-                        text-decoration: none;
-                        display: block;
-                        background-color: $bg-post;
-                        .post_name {
-                            margin-top: 15px;
-                            font-family: $MyriadPro-Bold;
-                            margin-left: 20px;
-                            margin-right: 20px;
-                            @include split_str(2);
-                            text-transform: uppercase;
-                            font-size: 14px;
+                        .news-post {
+                            flex: 0 0 35%;
+                            background-color: $bg-post;
+                            padding: 45px 30px;
+                            .title {
+                                font-family: $MyriadPro-Bold;
+                                padding: 5px;
+                                border: 1px solid $gray_text;
+                                width: max-content;
+                                opacity: 0.7;
+                                font-size: 13px;
+                            }
+                            .name {
+                                margin: 15px 0;
+                                font-family: $MyriadPro-Bold;
+                                text-transform: uppercase;
+                                font-size: 14px;
+                            }
+                            .time {
+                                margin-bottom: 15px;
+                                display: block;
+                                font-size: 11px;
+                            }
+                            .description {
+                                margin-bottom: 20px;
+                                @include split_str(10);
+                                font-size: 12px;
+                                @media screen and(max-width: 1680px) {
+                                    @include split_str(6);
+                                }
+                            }
+                            .read-more {
+                                padding: 7px 22px;
+                                color: $white;
+                                border: 1px solid #fff;
+                                text-decoration: none;
+                                font-size: 15px;
+                                background-color: #015BAC;
+                            }
                         }
-                        .post_description {
-                            margin: 10px 15px;
-                            @include split_str(2);
-                            font-size: 12px;
+                    }
+                    .post-slider {
+                        .post-slide-bottom {
+                            padding-left: 8px;
+                            padding-right: 8px;
                         }
-                        .time {
-                            font-size: 12px;
-                            padding-bottom: 10px;
-                            margin-left: 20px;
-                            display: block;
+                        margin-left: -8px;
+                        margin-right: -8px;
+                        .post_content_bottom {
+                            box-shadow: 0 5px 8px -5px #555;
+                            margin-top: 8px;
+                            margin-bottom: 8px;
+                            overflow: hidden;
+                            .post-wrapper {
+                                &:hover {
+                                    transition: transform .2s, visibility .2s ease-in;
+                                    transform: scale(1.08);
+                                    // box-shadow: 0 0 18px rgb(0 0 0 / 20%);
+                                }
+                                // margin-right: 20px;
+                                .post-thumbnail {
+                                    width: 100%;
+                                    height: auto;
+                                    overflow: hidden;
+                                    img {
+                                        width: 100%;
+                                        height: 175px;
+                                        transition: transform .3s, visibility .3s ease-in;
+                                    }
+                                }
+                                color: $gray_text;
+                                text-decoration: none;
+                                display: block;
+                                background-color: $bg-post;
+                                .post_name {
+                                    margin-top: 15px;
+                                    font-family: $MyriadPro-Bold;
+                                    margin-left: 20px;
+                                    margin-right: 20px;
+                                    @include split_str(2);
+                                    text-transform: uppercase;
+                                    font-size: 14px;
+                                }
+                                .post_description {
+                                    margin: 10px 15px;
+                                    @include split_str(2);
+                                    font-size: 12px;
+                                }
+                                .time {
+                                    font-size: 12px;
+                                    padding-bottom: 10px;
+                                    margin-left: 20px;
+                                    display: block;
+                                }
+                            }
+                        }
+                        .swiper-button-next {
+                            right: 32px;
+                        }
+                        .swiper-button-prev {
+                            left: 20px;
+                        }
+                        .swiper-button-prev:after,
+                        .swiper-button-next:after {
+                            display: none;
                         }
                     }
                 }
-                .swiper-button-next {
-                    right: 32px;
-                }
-                .swiper-button-prev {
-                    left: 20px;
-                }
-                .swiper-button-prev:after,
-                .swiper-button-next:after {
-                    display: none;
+            }
+            .filter-search-media {
+                .form-search {
+                    display: flex;
+                    .search {
+                        width: 370px;
+                        height: 40px;
+                        display: flex;
+                        align-items: baseline;
+                        background-color: #f1f1f1;
+                        input {
+                            border: none;
+                            outline: none;
+                            width: 100%;
+                            height: 100%;
+                            background-color: transparent;
+                            padding-left: 20px;
+                            &:focus {
+                                border: none;
+                                outline: none;
+                                box-shadow: unset;
+                            }
+                        }
+                        button {
+                            background-color: unset;
+                            color: #707070;
+                            border: none;
+                            outline: none;
+                            &:focus {
+                                border: none;
+                                outline: none;
+                                box-shadow: unset;
+                            }
+                        }
+                    }
+                    .select-year {
+                        outline: 0;
+                        box-shadow: none;
+                        padding: 3px 8px;
+                        margin: 0 10px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        background-color: #f1f1f1;
+                        border: unset;
+                        color: #2E2E2E;
+                    }
+                    .select-by-field {
+                        outline: 0;
+                        border: unset;
+                        box-shadow: none;
+                        padding: 3px 8px;
+                        margin: 0 10px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        background-color: #f1f1f1;
+                        color: #2E2E2E;
+                    }
                 }
             }
-        }
-    }
-    .post-sidebar-content {
-        height: 500px;
-        .media__content_right {
-            box-shadow: 0 7px 10px 1px #3333;
-            position: sticky;
-            .list-media-menu {
-                padding: 20px 20px 0 20px;
-                background: #fff;
-                border-radius: 2px;
-                .list-group-item {
+            .list-media {
+                border-top: 1px solid #707070;
+                .media-item {
+                    padding: 30px 0;
                     border-bottom: 1px solid #707070;
-                    border-top: unset;
-                    border-left: unset;
-                    border-right: unset;
-                    color: #000;
-                    padding: 5px 0;
-                }
-                .list-group-item:last-child {
-                    border: none;
-                }
-            }
-            .list-post-new {
-                // width: 33%;
-                .wrap {
-                    ul {
-                        padding: 0;
-                    }
-                    padding: 0 20px;
-                    background: #fff;
-                    width: 100%;
-                    h2 {
-                        padding: 20px 0 10px 0;
-                        text-transform: uppercase;
-                        font-family: $MyriadPro-Bold;
-                        border-bottom: 1px solid #707070;
-                    }
-                    .post-new-item {
+                    .img-content {
                         display: flex;
                         justify-content: space-between;
-                        padding-top: 15px;
-                        border-bottom: 1px solid #707070;
-                        .post-thumbnail-wrap {
-                            margin-right: 5px;
-                            width: 30%;
+                        .image {
+                            width: 37%;
                             .post-thumbnail {
                                 width: 100%;
                                 height: 100%;
@@ -195,152 +224,133 @@
                                 }
                             }
                         }
-                        .title {
-                            width: 68%;
-                            a {
-                                @include split_str(2);
-                                color: #000;
+                        .content {
+                            margin-left: 7%;
+                            width: 56%;
+                            .name {
                                 font-family: $MyriadPro-Bold;
+                                @media screen and (max-width: 1680px) {
+                                    @include split_str(2);
+                                }
+                            }
+                            .time {
+                                margin: 10px 0;
+                            }
+                            .desc {
+                                margin-bottom: 0;
+                                text-align: justify;
+                                @include split_str(3);
                             }
                         }
-                        .time {
-                            font-size: 15px;
-                        }
-                    }
-                    .post-new-item:last-child {
-                        border: none;
                     }
                 }
             }
-        }
-    }
-    .filter-search-media {
-        .form-search {
-            display: flex;
-            .search {
-                width: 370px;
-                height: 40px;
-                display: flex;
-                align-items: baseline;
-                background-color: #f1f1f1;
-                input {
-                    border: none;
-                    outline: none;
-                    width: 100%;
-                    height: 100%;
-                    background-color: transparent;
-                    padding-left: 20px;
-                    &:focus {
-                        border: none;
-                        outline: none;
-                        box-shadow: unset;
-                    }
-                }
-                button {
-                    background-color: unset;
-                    color: #707070;
-                    border: none;
-                    outline: none;
-                    &:focus {
-                        border: none;
-                        outline: none;
-                        box-shadow: unset;
-                    }
-                }
-            }
-            .select-year {
-                outline: 0;
-                box-shadow: none;
-                padding: 3px 8px;
-                margin: 0 10px;
-                font-weight: bold;
-                cursor: pointer;
-                background-color: #f1f1f1;
-                border: unset;
-                color: #2E2E2E;
-            }
-            .select-by-field {
-                outline: 0;
-                border: unset;
-                box-shadow: none;
-                padding: 3px 8px;
-                margin: 0 10px;
-                font-weight: bold;
-                cursor: pointer;
-                background-color: #f1f1f1;
-                color: #2E2E2E;
-            }
-        }
-    }
-    .list-media {
-        border-top: 1px solid #707070;
-        .media-item {
-            padding: 30px 0;
-            border-bottom: 1px solid #707070;
-            .img-content {
-                display: flex;
-                justify-content: space-between;
-                .image {
-                    width: 37%;
-                    .post-thumbnail {
-                        width: 100%;
-                        height: 100%;
-                        overflow: hidden;
-                        img {
-                            max-width: 100%;
-                            transition: transform .3s, visibility .3s ease-in;
+            .page-pagination {
+                .pagination {
+                    .page-item {
+                        margin-right: 5px;
+                        .page-link {
+                            color: #343434;
                             &:hover {
-                                transform: scale(1.1);
+                                background: #0B5CA8;
+                                color: $white;
                             }
                         }
                     }
-                }
-                .content {
-                    margin-left: 7%;
-                    width: 56%;
-                    .name {
-                        font-family: $MyriadPro-Bold;
-                        @media screen and (max-width: 1680px) {
-                            @include split_str(2);
-                        }
-                    }
-                    .time {
-                        margin: 10px 0;
-                    }
-                    .desc {
-                        margin-bottom: 0;
-                        text-align: justify;
-                        @include split_str(3);
-                    }
-                }
-            }
-        }
-    }
-    .page-pagination {
-        .pagination {
-            .page-item {
-                margin-right: 5px;
-                .page-link {
-                    color: #343434;
-                    &:hover {
+                    .page-item.active .page-link {
                         background: #0B5CA8;
                         color: $white;
                     }
+                    .page-item:first-child .page-link {
+                        margin-left: unset;
+                        border-top-left-radius: unset;
+                        border-bottom-left-radius: unset;
+                    }
+                    .page-item:last-child .page-link {
+                        margin-left: unset;
+                        border-top-right-radius: unset;
+                        border-bottom-right-radius: unset;
+                    }
                 }
             }
-            .page-item.active .page-link {
-                background: #0B5CA8;
-                color: $white;
-            }
-            .page-item:first-child .page-link {
-                margin-left: unset;
-                border-top-left-radius: unset;
-                border-bottom-left-radius: unset;
-            }
-            .page-item:last-child .page-link {
-                margin-left: unset;
-                border-top-right-radius: unset;
-                border-bottom-right-radius: unset;
+        }
+        .post-sidebar-content {
+            height: max-content;
+            max-width: 28.5%;
+            position: sticky;
+            top: 100px;
+            .media__content_right {
+                box-shadow: 0 7px 10px 1px #3333;
+                position: sticky;
+                .list-media-menu {
+                    padding: 20px 20px 0 20px;
+                    background: #fff;
+                    border-radius: 2px;
+                    .list-group-item {
+                        border-bottom: 1px solid #707070;
+                        border-top: unset;
+                        border-left: unset;
+                        border-right: unset;
+                        color: #000;
+                        padding: 5px 0;
+                    }
+                    .list-group-item:last-child {
+                        border: none;
+                    }
+                }
+                .list-post-new {
+                    // width: 33%;
+                    .wrap {
+                        ul {
+                            padding: 0;
+                        }
+                        padding: 0 20px;
+                        background: #fff;
+                        width: 100%;
+                        h2 {
+                            padding: 20px 0 10px 0;
+                            text-transform: uppercase;
+                            font-family: $MyriadPro-Bold;
+                            border-bottom: 1px solid #707070;
+                        }
+                        .post-new-item {
+                            display: flex;
+                            justify-content: space-between;
+                            padding-top: 15px;
+                            border-bottom: 1px solid #707070;
+                            .post-thumbnail-wrap {
+                                margin-right: 5px;
+                                width: 30%;
+                                .post-thumbnail {
+                                    width: 100%;
+                                    height: 100%;
+                                    overflow: hidden;
+                                    img {
+                                        max-width: 100%;
+                                        transition: transform .3s, visibility .3s ease-in;
+                                        &:hover {
+                                            transform: scale(1.1);
+                                        }
+                                    }
+                                }
+                            }
+                            .title {
+                                width: 68%;
+                                a {
+                                    @include split_str(2);
+                                    color: #000;
+                                    font-family: $MyriadPro-Bold;
+                                }
+                            }
+                            .time {
+                                font-size: 15px;
+                            }
+                        }
+                        .post-new-item:last-child {
+                            border: none;
+                        }
+                    }
+                }
             }
         }
     }
