@@ -429,42 +429,6 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        {{-- <div class="swiper-container field-activity-slide-bottom">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="img-icon">
-                        <img src="{{Theme::asset()->url('images/home/1.png') }}" alt="">   
-                    </div>                  
-                   
-                </div>
-                <div class="swiper-slide">                     
-                    <div class="img-icon">
-                        <img src="{{Theme::asset()->url('images/home/2.png') }}" alt="">   
-                    </div>          
-                </div>
-                <div class="swiper-slide">                  
-                    <div class="img-icon">
-                        <img src="{{Theme::asset()->url('images/home/3.png') }}" alt="">   
-                    </div>        
-                 </div>
-                <div class="swiper-slide">                  
-                    <div class="img-icon">
-                        <img src="{{Theme::asset()->url('images/home/icon-4.png') }}" alt="">   
-                    </div>          
-                </div>
-                <div class="swiper-slide">                  
-                    <div class="img-icon">
-                        <img src="{{Theme::asset()->url('images/home/5.png') }}" alt="">   
-                    </div>   
-                </div>
-                <div class="swiper-slide">                  
-                    <div class="img-icon">
-                        <img src="{{Theme::asset()->url('images/home/6.png') }}" alt="">   
-                    </div>      
-                </div>
-             
-            </div>
-        </div> --}}
         <a href="" class="read-more">Xem thêm</a>
        
     </div>

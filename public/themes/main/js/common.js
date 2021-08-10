@@ -410,3 +410,15 @@ if ($('#header').length > 0) {
         }
     })
 }
+//scroll 
+
+jQuery(document).ready(function() {
+
+    jQuery('.media_content-wrapper .sidebar-right').theiaStickySidebar({
+        containerSelector: '.media_content-wrapper',
+        additionalMarginTop: 98,
+        // additionalMarginBottom: 30,
+        // minWidth: 993,
+        updateSidebarHeight: false
+    });
+});

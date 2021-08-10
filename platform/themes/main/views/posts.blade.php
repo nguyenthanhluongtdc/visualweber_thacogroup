@@ -182,82 +182,85 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="media__content_right">
-                            <div class="list-media-menu">
-                                <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
-                                <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold">Thông cáo báo chí</a>
-                                <a href="/con-nguoi" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
-                                <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
-                                <a href="/su-kien" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
-                                <a href="/thong-diep" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
-                            </div>
-                            <div class="list-post-new">
-                                <div class="wrap">
-                                    <h2 class="font-mi-bold font30">tin tức mới</h2>
-                                    <ul class="">
-                                        <div class="post-new-item">
-                                            <div class="post-thumbnail-wrap">
-                                                <div class="post-thumbnail">
-                                                    <a href=""><img src="{{ Theme::asset()->url('images/media/post-5.jpg') }}" alt=""></a>
+                        <div class="post-sidebar-content">
+                            <div class="media__content_right">
+                                <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                    <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
+                                    <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold">Thông cáo báo chí</a>
+                                    <a href="/con-nguoi" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
+                                    <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
+                                    <a href="/su-kien" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
+                                    <a href="/thong-diep" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
+                                </div>
+                                <div class="list-post-new">
+                                    <div class="wrap">
+                                        <h2 class="font-mi-bold font30" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">tin tức mới</h2>
+                                        <ul class="" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-new-item">
+                                                <div class="post-thumbnail-wrap">
+                                                    <div class="post-thumbnail">
+                                                        <a href=""><img src="{{ Theme::asset()->url('images/media/post-5.jpg') }}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="title">
+                                                    <a href="">THACO tài trợ trang thiết bị, vật tư y tế phòng chống dịch cho... Công an TP.HCM</a>
+                                                    <p class="time">23/06/2021</p>
                                                 </div>
                                             </div>
-                                            <div class="title">
-                                                <a href="">THACO tài trợ trang thiết bị, vật tư y tế phòng chống dịch cho... Công an TP.HCM</a>
-                                                <p class="time">23/06/2021</p>
-                                            </div>
-                                        </div>
-                                        <div class="post-new-item">
-                                            <div class="post-thumbnail-wrap">
-                                                <div class="post-thumbnail">
-                                                    <a href=""><img src="{{ Theme::asset()->url('images/media/post-4.jpg') }}" alt=""></a>
+                                            <div class="post-new-item">
+                                                <div class="post-thumbnail-wrap">
+                                                    <div class="post-thumbnail">
+                                                        <a href=""><img src="{{ Theme::asset()->url('images/media/post-4.jpg') }}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="title">
+                                                    <a href="">THACO AUTO ủng hộ 1,5 tỷ đồng cho 3 địa phương chống dịch...</a>
+                                                    <p class="time">23/06/2021</p>
                                                 </div>
                                             </div>
-                                            <div class="title">
-                                                <a href="">THACO AUTO ủng hộ 1,5 tỷ đồng cho 3 địa phương chống dịch...</a>
-                                                <p class="time">23/06/2021</p>
-                                            </div>
-                                        </div>
-                                        <div class="post-new-item">
-                                            <div class="post-thumbnail-wrap">
-                                                <div class="post-thumbnail">
-                                                    <a href=""><img src="{{ Theme::asset()->url('images/media/post-3.jpg') }}" alt=""></a>
+                                            <div class="post-new-item">
+                                                <div class="post-thumbnail-wrap">
+                                                    <div class="post-thumbnail">
+                                                        <a href=""><img src="{{ Theme::asset()->url('images/media/post-3.jpg') }}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="title">
+                                                    <a href="">Chú bảo vệ đi làm 120km mỗi ngày...</a>
+                                                    <p class="time">23/06/2021</p>
                                                 </div>
                                             </div>
-                                            <div class="title">
-                                                <a href="">Chú bảo vệ đi làm 120km mỗi ngày...</a>
-                                                <p class="time">23/06/2021</p>
-                                            </div>
-                                        </div>
-                                        <div class="post-new-item">
-                                            <div class="post-thumbnail-wrap">
-                                                <div class="post-thumbnail">
-                                                    <a href=""><img src="{{ Theme::asset()->url('images/media/post-2.jpg') }}" alt=""></a>
+                                            <div class="post-new-item">
+                                                <div class="post-thumbnail-wrap">
+                                                    <div class="post-thumbnail">
+                                                        <a href=""><img src="{{ Theme::asset()->url('images/media/post-2.jpg') }}" alt=""></a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="title">
-                                                <a href="">THACO tổ chức Đại hội Cổ đông thường niên 2021</a>
-                                                <p class="time">23/06/2021</p>
-                                            </div>
-                                           
-                                        </div>
-                                        <div class="post-new-item">
-                                            <div class="post-thumbnail-wrap">
-                                                <div class="post-thumbnail">
-                                                    <a href=""><img src="{{ Theme::asset()->url('images/media/post-1.jpg') }}" alt=""></a>
+                                                <div class="title">
+                                                    <a href="">THACO tổ chức Đại hội Cổ đông thường niên 2021</a>
+                                                    <p class="time">23/06/2021</p>
                                                 </div>
+                                               
                                             </div>
-                                            <div class="title font18">
-                                                <a href="">THACO AUTO ủng hộ 10 tỷ đồng mua vaccine phòng </a>
-                                                <p class="time">23/06/2021</p>
+                                            <div class="post-new-item">
+                                                <div class="post-thumbnail-wrap">
+                                                    <div class="post-thumbnail">
+                                                        <a href=""><img src="{{ Theme::asset()->url('images/media/post-1.jpg') }}" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="title font18">
+                                                    <a href="">THACO AUTO ủng hộ 10 tỷ đồng mua vaccine phòng </a>
+                                                    <p class="time">23/06/2021</p>
+                                                </div>
+                                               
                                             </div>
-                                           
-                                        </div>
+                                            
+                                        </ul>
                                         
-                                    </ul>
-                                    
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                       
                     </div>
                 </div>
                 <div class="filter-search-media">
@@ -289,12 +292,12 @@
                         <div class="list-media mt-60">
                             <div class="media-item ">
                                 <div class="img-content">
-                                    <div class="image">
+                                    <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="post-thumbnail">
                                             <a href=""><img src="{{ Theme::asset()->url('images/media/media-1.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
-                                    <div class="content">
+                                    <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                         <h3 class="name font18">NHỮNG BÔNG HỒNG THÉP</h3>
                                         <p class="time">23/06/2021</p>
                                         <p class="desc font18">Tại KCN THACO Chu Lai, có những công việc tưởng chừng chỉ dành cho nam giới song lại có sự góp mặt của nhiều nhân sự nữ, đó là bảo vệ. Đây được xem là công việc trái nghề đối với “phái yếu” nhưng bằng sự đam mê, yêu nghề, ham học hỏi, các chị đã nỗ lực vượt khó, hoàn thành tốt nhiệm vụ. </p>
@@ -303,12 +306,12 @@
                             </div>
                             <div class="media-item ">
                                 <div class="img-content">
-                                    <div class="image">
+                                    <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="post-thumbnail">
                                             <a href=""><img src="{{ Theme::asset()->url('images/media/media-2.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
-                                    <div class="content">
+                                    <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                         <h3 class="name font18">THACO TẶNG THIẾT BỊ XÉT NGHIỆM COVID-19 CHO TRUNG TÂM KIỂM SOÁT BỆNH TẬT QUẢNG NAM</h3>
                                         <p class="time">23/06/2021</p>
                                         <p class="desc font18">Ngày 28/05/2021, Tập đoàn THACO đã tài trợ máy tách chiết tự động xét nghiệm Covid-19 với trị giá gần 2 tỷ đồng cho Trung tâm kiểm soát bệnh tật (CDC) Quảng Nam. </p>
@@ -317,12 +320,12 @@
                             </div>
                             <div class="media-item ">
                                 <div class="img-content">
-                                    <div class="image">
+                                    <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="post-thumbnail">
                                             <a href=""><img src="{{ Theme::asset()->url('images/media/media-3.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
-                                    <div class="content">
+                                    <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                         <h3 class="name font18">THACO - GIA ĐÌNH THỨ HAI CỦA CHÚNG TÔI</h3>
                                         <p class="time">23/06/2021</p>
                                         <p class="desc font18">Sáng sớm, hình ảnh từng đoàn xe đưa rước CBNV THACO từ các ngả đường đổ về KCN THACO Chu Lai như một dấu hiệu bắt đầu ngày mới đầy sức sống. Có lẽ, gần 20 năm về trước, chẳng ai tại vùng đất Núi Thành, Quảng Nam có thể tưởng tượng được có một ngày vùng cát ...</p>
@@ -331,12 +334,12 @@
                             </div>
                             <div class="media-item ">
                                 <div class="img-content">
-                                    <div class="image">
+                                    <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                         <div class="post-thumbnail">
                                             <a href=""><img src="{{ Theme::asset()->url('images/media/media-4.jpg') }}" alt=""></a>
                                         </div>
                                     </div>
-                                    <div class="content">
+                                    <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                         <h3 class="name font18">TỔ HÀN MẢNG SÀN NHÀ MÁY THACO KIA: NỖ LỰC NÂNG CAO HIỆU QUẢ SẢN XUẤT & CHẤT LƯỢNG SẢN PHẨM</h3>
                                         <p class="time">23/06/2021</p>
                                         <p class="desc font18">Sáng tạo là một phẩm chất cần thiết của người lao động, nhất là trong thời đại công nghiệp 4.0. Sự sáng tạo, không ngừng tìm tòi các giải pháp, sáng kiến cải tiến giúp nâng cao năng suất, hiệu quả công việc, góp phần tích cực vào sự phát triển của công ty ...</p>
@@ -443,45 +446,68 @@
         
     </div>
     <div class="media-wrapper mt-40" >
-        <div class="tab-pane fade active show" id="media-image" role="tabpanel" aria-labelledby="field-1-tab">
-            <div class="media-banner">
-                
-                    <div class="swiper-container media-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-                        <div class="swiper-wrapper">
-
-                            <div class="swiper-slide">
-                                                
-                                <img src="{{Theme::asset()->url('images/home/transport/icon2-img1.jpg') }}" alt="">
-                                
-                            </div>
-                            <div class="swiper-slide">                  
-                            
-                                <img src="{{Theme::asset()->url('images/home/transport/icon2-img2.jpg') }}" alt="">
-                                
-                            </div>
-                            <div class="swiper-slide">                  
-                            
-                                <img src="{{Theme::asset()->url('images/home/transport/icon3-img1.jpg') }}" alt="">
-                                
-                            </div>
-                            <div class="swiper-slide">                  
-                                
-                                <img src="{{Theme::asset()->url('images/home/transport/icon4-img1.jpg') }}" alt="">
-                                
-                            </div>
-                            <div class="swiper-slide">                  
-                            
-                                <img src="{{Theme::asset()->url('images/home/transport/icon5-img1.jpg') }}" alt="">
-                                
-                            </div>
-                        
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
+        <div class="tab-content" id="nav-tabContent tab-content2">
+            <div class="tab-pane fade active show" id="media-image" role="tabpanel" aria-labelledby="field-1-tab">
+                <div class="media-banner">
                     
-                    <a href="" class="read-more">Xem thêm</a>
-                
+                        <div class="swiper-container media-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                                    
+                                    <img src="{{Theme::asset()->url('images/home/transport/icon2-img1.jpg') }}" alt="">
+                                    
+                                </div>
+                                <div class="swiper-slide">                  
+                                
+                                    <img src="{{Theme::asset()->url('images/home/transport/icon2-img2.jpg') }}" alt="">
+                                    
+                                </div>
+                                <div class="swiper-slide">                  
+                                
+                                    <img src="{{Theme::asset()->url('images/home/transport/icon3-img1.jpg') }}" alt="">
+                                    
+                                </div>
+                                <div class="swiper-slide">                  
+                                    
+                                    <img src="{{Theme::asset()->url('images/home/transport/icon4-img1.jpg') }}" alt="">
+                                    
+                                </div>
+                                <div class="swiper-slide">                  
+                                
+                                    <img src="{{Theme::asset()->url('images/home/transport/icon5-img1.jpg') }}" alt="">
+                                    
+                                </div>
+                            
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        
+                        <a href="" class="read-more">Xem thêm</a>
+                    
+                </div>
             </div>
+            <div class="tab-pane fade" id="media-video" role="tabpanel" aria-labelledby="field-1-tab">
+                <div class="media-banner">
+                        <div class="swiper-container media-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">             
+                                    <div class="video-wrapper">
+                                        <video muted   autoplay class="__video w-100">
+                                            <source src="{{ Theme::asset()->url('images/video/chuc-mung-nam-moi.mp4') }}" type="video/mp4">
+                                        </video> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        
+                        <a href="" class="read-more">Xem thêm</a>
+                    
+                </div>
+            </div>
+            
         </div>
+      
     </div>
 </section>
