@@ -173,32 +173,32 @@
                                 <a class="item__link" href="/truyen-thong">TRUYỀN THÔNG</a>
                                 <div class="dropdown-menu sm-menu" style="display:none">
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/thong-cao-bao-chi" class="dropdown-item">
                                             Thông cáo báo chí
                                         </a>
                                     </div>
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/con-nguoi" class="dropdown-item">
                                             Con người
                                         </a>
                                     </div>
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/ban-tin" class="dropdown-item">
                                             Bản tin
                                         </a>
                                     </div>
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/su-kien" class="dropdown-item">
                                             Sự kiện 
                                         </a>
                                     </div>
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/thong-diep" class="dropdown-item">
                                             Thông điệp
                                         </a>
                                     </div>
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/media" class="dropdown-item">
                                          Media
                                         </a>
                                     </div>

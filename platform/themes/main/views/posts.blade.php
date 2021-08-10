@@ -28,8 +28,8 @@
                 <div class="row">
                     <div class="col-md-9">
                         <div class="media__content_left">
-                            <div class="news__content">
-                                <div class="swiper-container new-post-slide" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
+                            <div class="news__content" data-aos="zoom-in-up" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate">
+                                <div class="swiper-container new-post-slide " style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <div class="news__top">

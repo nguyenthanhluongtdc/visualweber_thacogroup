@@ -4,6 +4,7 @@ register_page_template([
     'default' => 'Default',
     'introduce' => 'Introduce',
     'posts' =>'Posts',
+    'media-newspapers' =>'Media Newspapers',
 ]);
 
 register_sidebar([

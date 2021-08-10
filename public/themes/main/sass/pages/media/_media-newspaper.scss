@@ -1,0 +1,247 @@
+.meidia-newspapers-wrapper {
+    .filter-search-media {
+        .form-search {
+            display: flex;
+            .search {
+                width: 370px;
+                height: 40px;
+                display: flex;
+                align-items: baseline;
+                background-color: #f1f1f1;
+                input {
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                    padding-left: 20px;
+                    &:focus {
+                        border: none;
+                        outline: none;
+                        box-shadow: unset;
+                    }
+                }
+                button {
+                    background-color: unset;
+                    color: #707070;
+                    border: none;
+                    outline: none;
+                    &:focus {
+                        border: none;
+                        outline: none;
+                        box-shadow: unset;
+                    }
+                }
+            }
+            .select-year {
+                outline: 0;
+                box-shadow: none;
+                padding: 3px 8px;
+                margin: 0 10px;
+                font-weight: bold;
+                cursor: pointer;
+                background-color: #f1f1f1;
+                border: unset;
+                color: #2E2E2E;
+            }
+            .select-by-field {
+                outline: 0;
+                border: unset;
+                box-shadow: none;
+                padding: 3px 8px;
+                margin: 0 10px;
+                font-weight: bold;
+                cursor: pointer;
+                background-color: #f1f1f1;
+                color: #2E2E2E;
+            }
+        }
+    }
+    .meidia-newspapers-content {
+        .media__content_left {
+            .list-newspapers {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .item-newspaper {
+                    background: #f4f4f4;
+                    padding: 20px;
+                    width: 31%;
+                    margin-bottom: 3%;
+                    .title {
+                        font-size: 18px;
+                        @media screen and (max-width: 1440px) {
+                            font-size: 16px;
+                        }
+                        a {
+                            color: #171717;
+                            font-family: $MyriadPro-Bold;
+                            &:hover {
+                                color: unset;
+                            }
+                        }
+                    }
+                    .desc {
+                        font-size: 16px;
+                        @include split_str(6);
+                        @media screen and (max-width: 1440px) {
+                            font-size: 14px;
+                        }
+                    }
+                    .title-docx {
+                        font-size: 16px;
+                        font-family: $MyriadPro-Bold;
+                        border-top: .5px solid #707070;
+                        padding-top: 10px;
+                        @media screen and (max-width: 1440px) {
+                            font-size: 14px;
+                        }
+                    }
+                    .size-dowload {
+                        span.left {
+                            margin-right: 20px;
+                            font-size: 14px;
+                        }
+                        span a {
+                            background: #01498b;
+                            color: #fff;
+                            padding: 5px 10px 5px;
+                            font-size: 13px;
+                            border-radius: 3px;
+                            font-family: $MyriadPro-Bold;
+                        }
+                    }
+                    .tags {
+                        display: flex;
+                        p.name-tag {
+                            margin-right: 10px;
+                            font-size: 14px;
+                            font-family: $MyriadPro-Bold;
+                        }
+                        .tag-list {
+                            display: flex;
+                            flex-wrap: wrap;
+                            flex: 1;
+                            p {
+                                width: fit-content;
+                                background: #e2e2e2;
+                                text-align: center;
+                                margin-right: 3%;
+                                margin-bottom: 3%;
+                                font-size: 10px;
+                                width: 30%;
+                                font-family: $MyriadPro-Bold;
+                                a {
+                                    color: #3F3F3F;
+                                    &:hover {
+                                        color: unset;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .page-pagination {
+                .pagination {
+                    .page-item {
+                        margin-right: 5px;
+                        .page-link {
+                            color: #343434;
+                            &:hover {
+                                background: #0B5CA8;
+                                color: $white;
+                            }
+                        }
+                    }
+                    .page-item.active .page-link {
+                        background: #0B5CA8;
+                        color: $white;
+                    }
+                    .page-item:first-child .page-link {
+                        margin-left: unset;
+                        border-top-left-radius: unset;
+                        border-bottom-left-radius: unset;
+                    }
+                    .page-item:last-child .page-link {
+                        margin-left: unset;
+                        border-top-right-radius: unset;
+                        border-bottom-right-radius: unset;
+                    }
+                }
+            }
+        }
+        .media__content_right {
+            box-shadow: 0 7px 10px 1px #3333;
+            .list-media-menu {
+                padding: 20px 20px 0 20px;
+                background: #fff;
+                border-radius: 2px;
+                .list-group-item {
+                    border-bottom: 1px solid #707070;
+                    border-top: unset;
+                    border-left: unset;
+                    border-right: unset;
+                    color: #000;
+                    padding: 5px 0;
+                }
+                .list-group-item:last-child {
+                    border: none;
+                }
+            }
+            .list-post-new {
+                // width: 33%;
+                .wrap {
+                    ul {
+                        padding: 0;
+                    }
+                    padding: 0 20px;
+                    background: #fff;
+                    width: 100%;
+                    h2 {
+                        padding: 20px 0 10px 0;
+                        text-transform: uppercase;
+                        font-family: $MyriadPro-Bold;
+                        border-bottom: 1px solid #707070;
+                    }
+                    .post-new-item {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 15px;
+                        border-bottom: 1px solid #707070;
+                        .post-thumbnail-wrap {
+                            margin-right: 5px;
+                            width: 30%;
+                            .post-thumbnail {
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
+                                img {
+                                    max-width: 100%;
+                                    transition: transform .3s, visibility .3s ease-in;
+                                    &:hover {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
+                        }
+                        .title {
+                            width: 68%;
+                            a {
+                                @include split_str(2);
+                                color: #000;
+                                font-family: $MyriadPro-Bold;
+                            }
+                        }
+                        .time {
+                            font-size: 15px;
+                        }
+                    }
+                    .post-new-item:last-child {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
