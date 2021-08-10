@@ -179,7 +179,7 @@
                                     </div>
                                  </div>
                             </div>
-                    <div class="filter-search-media">
+                    <div class="filter-search-media mt-40">
                                 <form action="" class="form-search">
                                     <div class="search">
                                         <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
