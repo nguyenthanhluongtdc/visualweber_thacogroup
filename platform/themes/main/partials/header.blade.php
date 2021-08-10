@@ -20,7 +20,7 @@
     </head>
     <body @if (BaseHelper::siteLanguageDirection() == 'rtl') dir="rtl" @endif>
         {!! apply_filters(THEME_FRONT_BODY, null) !!}
-        <header class="header" id="header">
+        <header class="header nav-down" id="header">
             <div class="header-top" id="header-top">
                 {{-- <div class="boder-header" id="boder-top"></div> --}}
                 <div class="container-customize ">

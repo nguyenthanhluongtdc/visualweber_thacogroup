@@ -19,6 +19,7 @@
     top: 0;
     z-index: 100;
     background: transparent;
+    transition: top .6s ease-out;
     .header-top {
         position: relative;
         background-color: transparent;
@@ -269,4 +270,8 @@
     100% {
         opacity: 1;
     }
+}
+
+.nav-up {
+    top: -98px;
 }
