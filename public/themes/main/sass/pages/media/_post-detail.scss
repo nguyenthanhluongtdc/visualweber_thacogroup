@@ -6,8 +6,8 @@
     background: #f1f1f1;
     .post-detail-content {
         display: flex;
-        max-width: calc(100vw - 200px);
-        margin: 0 100px;
+        max-width: 95.2%;
+        margin: 0 2.4%;
         .poster-left {
             flex: 0 0 15.3%;
             max-width: 15.3%;
@@ -16,7 +16,7 @@
             height: max-content;
             margin-top: 60px;
             img {
-                max-width: 100%;
+                width: 100%;
             }
         }
         .poster-right {
@@ -32,7 +32,7 @@
         }
         .content-middle {
             flex: 0 0 65%;
-            margin: 0 2.4%;
+            margin: 0 2.5%;
             max-width: 65%;
             .content-main {
                 padding: 3% 5%;
@@ -78,13 +78,15 @@
                     }
                 }
                 .post-content {
-                    .text-post {
-                        font-weight: bold;
-                    }
+                    margin-top: 10px;
                     p {
                         margin-top: 40px;
+                        margin-bottom: 40px;
                     }
-                    margin-top: 50px;
+                    .text-post {
+                        font-weight: bold;
+                        margin-top: 0;
+                    }
                     img {
                         object-fit: cover;
                         max-width: 100%;

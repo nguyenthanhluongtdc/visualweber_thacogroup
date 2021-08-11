@@ -28,7 +28,7 @@
         <div class="content-middle order-2 " data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             <div class="content-main">
                 <div class="post-name">
-                    <h1 class=" name font-myria-bold">Nâng cao năng suất làm việc với 5S,<br>
+                    <h1 class=" name font-myria-bold">Nâng cao năng suất làm việc với 5S,
                         Kaizen và quản trị tinh gọn
                     </h1>
                     

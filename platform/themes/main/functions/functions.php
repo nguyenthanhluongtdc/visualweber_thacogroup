@@ -6,6 +6,7 @@ register_page_template([
     'posts' =>'Posts',
     'media-newspapers' =>'Media Newspapers',
     'media-detail' => 'Media Detail',
+    'media' => 'Media',
 ]);
 
 register_sidebar([
