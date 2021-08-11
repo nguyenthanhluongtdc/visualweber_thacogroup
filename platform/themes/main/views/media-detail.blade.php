@@ -39,8 +39,10 @@
                     </div>
                    <div class="right">
                     <p class="share">Chia sẻ</p>
+                    <img src="{{ Theme::asset()->url('images/media/fb.png') }}" alt="">
+                    <img src="{{ Theme::asset()->url('images/media/linkin.png') }}" alt="">
                     <button class="print-button">
-                        <i class="fas fa-print"></i>
+                        <img src="{{ Theme::asset()->url('images/media/printing.png') }}" alt="">
                    </button>
                    </div>
                     

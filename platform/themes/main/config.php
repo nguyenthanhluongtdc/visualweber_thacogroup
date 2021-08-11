@@ -84,8 +84,6 @@ return [
             $theme->asset()->container('footer')->add('scroll_custom2', '//cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js');
             $theme->asset()->container('footer')->add('slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js');
             $theme->asset()->container('footer')->add('parallax', '//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax-min.js');
-            
-            $theme->asset()->container('footer')->usePath()->add('theia-sticky-sidebar', 'js/theia-sticky-sidebar.js', [], [], time());
             $theme->asset()->container('footer')->usePath()->add('script', 'js/common.js', [], [], time());
           
 
