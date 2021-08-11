@@ -65,11 +65,15 @@
                         align-items: center;
                         .share {
                             margin-bottom: 0;
+                            font-weight: bold;
                         }
                         button {
                             background: unset;
                             border: unset;
                             outline: unset;
+                            img {
+                                margin-bottom: 4px;
+                            }
                         }
                     }
                 }
