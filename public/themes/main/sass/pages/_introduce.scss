@@ -358,6 +358,9 @@
             color: $white;
             height: 100%;
             .develop-content__slider {
+                >.row {
+                    margin: 0;
+                }
                 height: 100%;
                 width: 100%;
                 .thumb-wrapper {

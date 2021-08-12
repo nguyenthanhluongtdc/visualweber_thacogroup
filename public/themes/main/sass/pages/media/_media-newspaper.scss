@@ -87,8 +87,9 @@
                         }
                     }
                     .desc {
-                        @include split_str(6);
+                        @include split_str(4);
                         text-align: justify;
+                        line-height: 1.3;
                     }
                     .title-docx {
                         font-size: 16px;
