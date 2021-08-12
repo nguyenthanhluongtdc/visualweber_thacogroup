@@ -296,12 +296,15 @@
                     padding: 20px 20px 0 20px;
                     background: #fff;
                     border-radius: 2px;
+                    h3 {
+                        color: #000;
+                    }
                     .list-group-item {
                         border-bottom: 1px solid #707070;
                         border-top: unset;
                         border-left: unset;
                         border-right: unset;
-                        color: #000;
+                        color: #1D1D1D;
                         padding: 5px 0;
                     }
                     .list-group-item:last-child {
@@ -314,6 +317,9 @@
                 .list-post-new {
                     // width: 33%;
                     .wrap {
+                        h2 {
+                            color: #000;
+                        }
                         ul {
                             padding: 0;
                         }
@@ -354,6 +360,7 @@
                                     color: #000;
                                     font-family: $MyriadPro-Bold;
                                     line-height: 1.3;
+                                    color: #1D1D1D;
                                 }
                             }
                             .time {

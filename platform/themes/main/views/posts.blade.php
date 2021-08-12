@@ -339,7 +339,7 @@
                                                     <a href=""><img src="{{ Theme::asset()->url('images/media/post-5.jpg') }}" alt=""></a>
                                                 </div>
                                             </div>
-                                            <div class="title">
+                                            <div class="title font18">
                                                 <a href="">THACO tài trợ trang thiết bị, vật tư y tế phòng chống dịch cho... Công an TP.HCM</a>
                                                 <p class="time">23/06/2021</p>
                                             </div>
@@ -350,7 +350,7 @@
                                                     <a href=""><img src="{{ Theme::asset()->url('images/media/post-4.jpg') }}" alt=""></a>
                                                 </div>
                                             </div>
-                                            <div class="title">
+                                            <div class="title font18">
                                                 <a href="">THACO AUTO ủng hộ 1,5 tỷ đồng cho 3 địa phương chống dịch...</a>
                                                 <p class="time">23/06/2021</p>
                                             </div>
@@ -361,7 +361,7 @@
                                                     <a href=""><img src="{{ Theme::asset()->url('images/media/post-3.jpg') }}" alt=""></a>
                                                 </div>
                                             </div>
-                                            <div class="title">
+                                            <div class="title font18">
                                                 <a href="">Chú bảo vệ đi làm 120km mỗi ngày...</a>
                                                 <p class="time">23/06/2021</p>
                                             </div>
