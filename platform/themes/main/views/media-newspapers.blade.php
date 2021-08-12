@@ -121,7 +121,7 @@
                                     <h5 class="title font18">
                                         <a href="">THACO ra mắt xe MINI Countryman hoàn toàn mới</a>
                                     </h5>
-                                    <p class="desc">
+                                    <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
