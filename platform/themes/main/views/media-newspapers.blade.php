@@ -20,7 +20,7 @@
    </div>
    </section>
    @includeIf("theme.main::views.breadcrumb")
-<section class="meidia-newspapers">
+<section class="meidia-newspapers mb-60">
     <div class="meidia-newspapers-wrapper">
         <div class="container-customize">
             <div class="filter-search-media">
@@ -47,15 +47,13 @@
                 </form>
              </div>
              <div class="meidia-newspapers-content mt-40">
-                <div class="row">
-                    <div class="col-md-9">
                         <div class="media__content_left">
                             <div class="list-newspapers">
                                 <div class="item-newspaper " data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title">
+                                    <h5 class="title font18">
                                         <a href="">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
                                     </h5>
-                                    <p class="desc">
+                                    <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
@@ -68,28 +66,28 @@
                                         <p class="name-tag">Tags: 
                                         </p><div class="tag-list">
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title">
+                                    <h5 class="title font18">
                                         <a href="">THACO khai trương tổ hợp showroom 3 thương hiệu </a>
                                     </h5>
-                                    <p class="desc">
+                                    <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
@@ -102,25 +100,25 @@
                                         <p class="name-tag">Tags: 
                                         </p><div class="tag-list">
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title">
+                                    <h5 class="title font18">
                                         <a href="">THACO ra mắt xe MINI Countryman hoàn toàn mới</a>
                                     </h5>
                                     <p class="desc">
@@ -136,28 +134,28 @@
                                         <p class="name-tag">Tags: 
                                         </p><div class="tag-list">
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title">
+                                    <h5 class="title font18">
                                         <a href="">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
                                     </h5>
-                                    <p class="desc">
+                                    <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
@@ -170,28 +168,28 @@
                                         <p class="name-tag">Tags: 
                                         </p><div class="tag-list">
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum </a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title">
+                                    <h5 class="title font18">
                                         <a href="">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
                                     </h5>
-                                    <p class="desc">
+                                    <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
@@ -204,28 +202,28 @@
                                         <p class="name-tag">Tags: 
                                         </p><div class="tag-list">
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title">
+                                    <h5 class="title font18">
                                         <a href="">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
                                     </h5>
-                                    <p class="desc">
+                                    <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
@@ -238,19 +236,19 @@
                                         <p class="name-tag">Tags: 
                                         </p><div class="tag-list">
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum dolor sit amet</a>
+                                                    <a href="">Lorem ipsum</a>
                                                 </p>
                                         </div>
                                     </div>
@@ -307,94 +305,67 @@
                                 </ul>
                              </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="post-sidebar-content">
-                            <div class="media__content_right">
-                                <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
-                                    <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold">Thông cáo báo chí</a>
-                                    <a href="/con-nguoi" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
-                                    <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
-                                    <a href="/su-kien" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
-                                    <a href="/thong-diep" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
-                                </div>
-                                <div class="list-post-new">
-                                    <div class="wrap">
-                                        <h2 class="font-mi-bold font30" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">tin tức mới</h2>
-                                        <ul class="" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href=""><img src="{{ Theme::asset()->url('images/media/post-5.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title">
-                                                    <a href="">THACO tài trợ trang thiết bị, vật tư y tế phòng chống dịch cho... Công an TP.HCM</a>
-                                                    <p class="time">23/06/2021</p>
+                    
+                    <div class="post-sidebar-content">
+                        <div class="media__content_right">
+                            <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
+                                <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold active">Thông cáo báo chí</a>
+                                <a href="/con-nguoi" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
+                                <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
+                                <a href="/su-kien" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
+                                <a href="/thong-diep" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
+                                <a href="/media" class="item_link list-group-item  font18 font-myria-bold">Media</a>
+                            </div>
+                            <div class="list-post-new">
+                                <div class="wrap">
+                                    <h2 class="font-mi-bold font30" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">tin tức mới</h2>
+                                    <ul class="" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                        <div class="post-new-item">
+                                            <div class="post-thumbnail-wrap">
+                                                <div class="post-thumbnail">
+                                                    <a href=""><img src="{{ Theme::asset()->url('images/media/post-5.jpg') }}" alt=""></a>
                                                 </div>
                                             </div>
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href=""><img src="{{ Theme::asset()->url('images/media/post-4.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title">
-                                                    <a href="">THACO AUTO ủng hộ 1,5 tỷ đồng cho 3 địa phương chống dịch...</a>
-                                                    <p class="time">23/06/2021</p>
+                                            <div class="title">
+                                                <a href="">THACO tài trợ trang thiết bị, vật tư y tế phòng chống dịch cho... Công an TP.HCM</a>
+                                                <p class="time">23/06/2021</p>
+                                            </div>
+                                        </div>
+                                        <div class="post-new-item">
+                                            <div class="post-thumbnail-wrap">
+                                                <div class="post-thumbnail">
+                                                    <a href=""><img src="{{ Theme::asset()->url('images/media/post-4.jpg') }}" alt=""></a>
                                                 </div>
                                             </div>
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href=""><img src="{{ Theme::asset()->url('images/media/post-3.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title">
-                                                    <a href="">Chú bảo vệ đi làm 120km mỗi ngày...</a>
-                                                    <p class="time">23/06/2021</p>
+                                            <div class="title">
+                                                <a href="">THACO AUTO ủng hộ 1,5 tỷ đồng cho 3 địa phương chống dịch...</a>
+                                                <p class="time">23/06/2021</p>
+                                            </div>
+                                        </div>
+                                        <div class="post-new-item">
+                                            <div class="post-thumbnail-wrap">
+                                                <div class="post-thumbnail">
+                                                    <a href=""><img src="{{ Theme::asset()->url('images/media/post-3.jpg') }}" alt=""></a>
                                                 </div>
                                             </div>
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href=""><img src="{{ Theme::asset()->url('images/media/post-2.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title">
-                                                    <a href="">THACO tổ chức Đại hội Cổ đông thường niên 2021</a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                               
+                                            <div class="title">
+                                                <a href="">Chú bảo vệ đi làm 120km mỗi ngày...</a>
+                                                <p class="time">23/06/2021</p>
                                             </div>
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href=""><img src="{{ Theme::asset()->url('images/media/post-1.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title font18">
-                                                    <a href="">THACO AUTO ủng hộ 10 tỷ đồng mua vaccine phòng </a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                               
-                                            </div>
-                                            
-                                        </ul>
-                                        
-                                    </div>
+                                        </div>
+                                    </ul>
+                                    
                                 </div>
                             </div>
                         </div>
-                       
                     </div>
-                </div>
+               
              </div>
         </div>
     </div>
 </section>
-<section class="media-tab mt-40">
+{{-- <section class="media-tab mt-40">
     <div class="container-customize">
         <div class="row">
             <div class="col-md-9">
@@ -497,4 +468,4 @@
         </div>
       
     </div>
-</section>
+</section> --}}

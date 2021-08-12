@@ -36,10 +36,10 @@
                                                                 <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
                                                             </div>
                                                             <div class="news-post h-100">
-                                                                <h3 class=" title">BẢN TIN NỘI BỘ</h3>
-                                                                <h4 class="name ">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4>
+                                                                <h3 class=" title font18">BẢN TIN NỘI BỘ</h3>
+                                                                <h4 class="name font18 ">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4>
                                                                 <span class="time">23/06/2021</span>
-                                                                <p class="description  text-justify">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
+                                                                <p class="description font18  text-justify">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
                                                                 <a href="" class="read-more">Xem thêm</a>
                                                             </div>
                                                 </div>
@@ -50,10 +50,10 @@
                                                                 <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/1-post.jpg') }}" alt="">
                                                             </div>
                                                             <div class="news-post h-100">
-                                                                <h3 class="title">BẢN TIN NỘI BỘ</h3>
-                                                                <h4 class="name">HÀNH TRÌNH KẾT NỐI YÊU THƯƠNG</h4>
+                                                                <h3 class="title font18">BẢN TIN NỘI BỘ</h3>
+                                                                <h4 class="name font18">HÀNH TRÌNH KẾT NỐI YÊU THƯƠNG</h4>
                                                                 <span class="time">23/06/2021</span>
-                                                                <p class="description text-justify">Vượt quãng đường hàng ngàn cây số, những ngày qua, hàng chục chuyến xe nghĩa tình do Tập đoàn THACO hỗ trợ đã đón hàng trăm người Quảng xa xứ mưu sinh tại TP. HCM về quê. Giữa cơn lao đao vì dịch bệnh hoành hành, sự hỗ trợ kịp thời ấy đã góp phần cùng tỉnh Quảng Nam chăm lo cho những bà con lao động nghèo, đồng thời san sẻ gánh nặng với TP. HCM đang oằn mình trong tâm dịch.
+                                                                <p class="description font18 text-justify">Vượt quãng đường hàng ngàn cây số, những ngày qua, hàng chục chuyến xe nghĩa tình do Tập đoàn THACO hỗ trợ đã đón hàng trăm người Quảng xa xứ mưu sinh tại TP. HCM về quê. Giữa cơn lao đao vì dịch bệnh hoành hành, sự hỗ trợ kịp thời ấy đã góp phần cùng tỉnh Quảng Nam chăm lo cho những bà con lao động nghèo, đồng thời san sẻ gánh nặng với TP. HCM đang oằn mình trong tâm dịch.
                                                                 </p>
                                                                 <a href="" class="read-more">Xem thêm</a>
                                                             </div>
@@ -65,10 +65,10 @@
                                                                 <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/5-post.jpg') }}" alt="">
                                                             </div>
                                                             <div class="news-post h-100">
-                                                                <h3 class=" title">BẢN TIN NỘI BỘ</h3>
-                                                                <h4 class="name ">Tổ hợp cơ khí THACO Chu Lai phát triển chế tạo khuôn mẫu</h4>
+                                                                <h3 class=" title font18">BẢN TIN NỘI BỘ</h3>
+                                                                <h4 class="name font18 ">Tổ hợp cơ khí THACO Chu Lai phát triển chế tạo khuôn mẫu</h4>
                                                                 <span class="time">23/06/2021</span>
-                                                                <p class="description text-justify">Khuôn mẫu được xem là “nền tảng của nền công nghiệp”, được sử dụng trong rất nhiều ngành sản xuất. Nhằm phát triển công nghiệp chế tạo khuôn mẫu phục vụ sản xuất ô tô và các ngành công nghiệp khác, Tổ hợp Cơ khí THACO Chu Lai đã đầu tư sản xuất khuôn mẫu theo hướng tạo ra sản phẩm số lượng lớn, thời gian sản xuất ngắn, chất lượng cao, đáp ứng yêu cầu ngày càng tăng của thị trường.
+                                                                <p class="description font18 text-justify">Khuôn mẫu được xem là “nền tảng của nền công nghiệp”, được sử dụng trong rất nhiều ngành sản xuất. Nhằm phát triển công nghiệp chế tạo khuôn mẫu phục vụ sản xuất ô tô và các ngành công nghiệp khác, Tổ hợp Cơ khí THACO Chu Lai đã đầu tư sản xuất khuôn mẫu theo hướng tạo ra sản phẩm số lượng lớn, thời gian sản xuất ngắn, chất lượng cao, đáp ứng yêu cầu ngày càng tăng của thị trường.
                         
                                                                 </p>
                                                                 <a href="" class="read-more">Xem thêm</a>
@@ -91,8 +91,8 @@
                                                                     <img src="{{ Theme::asset()->url('images/home/post-1.jpg') }}" alt="">
                                                                 </div>
                                                                
-                                                                <h4 class="post_name">THILOGI THAY ĐỔI NHẬN DIỆN THƯƠNG HIỆU TRÊN CÁC PHƯƠNG TIỆN VẬN CHUYỂN</h4>
-                                                                <p class="post_description">Là đơn vị cung ứng chuỗi dịch vụ logistics trọn gói hàng đầu miền Trung, công ty Giao nhận – Vận chuyển Quốc tế Trường Hải (THILOGI) đang đẩy mạnh phát triển dịch vụ logistics nông nghiệp, đặc biệt là vận chuyển nông sản xuất khẩu với các mặt hàng chủ lực gồm: xoài, chuối, thanh long…
+                                                                <h4 class="post_name font18">THILOGI THAY ĐỔI NHẬN DIỆN THƯƠNG HIỆU TRÊN CÁC PHƯƠNG TIỆN VẬN CHUYỂN</h4>
+                                                                <p class="post_description font18">Là đơn vị cung ứng chuỗi dịch vụ logistics trọn gói hàng đầu miền Trung, công ty Giao nhận – Vận chuyển Quốc tế Trường Hải (THILOGI) đang đẩy mạnh phát triển dịch vụ logistics nông nghiệp, đặc biệt là vận chuyển nông sản xuất khẩu với các mặt hàng chủ lực gồm: xoài, chuối, thanh long…
                                                                 </p>
                                                                 <span class="time">23/06/2021</span>
                                                             </a>   
@@ -106,8 +106,8 @@
                                                                 <div class="post-thumbnail">
                                                                     <img src="{{ Theme::asset()->url('images/home/post-2.jpg') }}" alt="">
                                                                 </div>
-                                                                <h4 class="post_name">ĐÀN BÒ TẠI TRANG TRẠI IA PUCH VÀ QUY TRÌNH CHĂM SÓC ĐẶC BIỆT</h4>
-                                                                <p class="post_description ">Trang trại bò Ia Puch có quy mô 1.907 ha thuộc xã Ia Puch, tỉnh Gia Lai. Với diện tích lớn và điều kiện tự nhiên thuận lợi, trang trại đã phát triển các hoạt động chăn nuôi bò với các phương pháp đặc biệt.
+                                                                <h4 class="post_name font18">ĐÀN BÒ TẠI TRANG TRẠI IA PUCH VÀ QUY TRÌNH CHĂM SÓC ĐẶC BIỆT</h4>
+                                                                <p class="post_description font18 ">Trang trại bò Ia Puch có quy mô 1.907 ha thuộc xã Ia Puch, tỉnh Gia Lai. Với diện tích lớn và điều kiện tự nhiên thuận lợi, trang trại đã phát triển các hoạt động chăn nuôi bò với các phương pháp đặc biệt.
                                                                 </p>
                                                                 <span class="time">23/06/2021</span>
                                                             </a>   
@@ -120,7 +120,7 @@
                                                                 <div class="post-thumbnail">
                                                                     <img src="{{ Theme::asset()->url('images/home/post-3.jpg') }}" alt="">
                                                                 </div>
-                                                                <h4 class="post_name font20">THILOGI HỖ TRỢ XUẤT KHẨU ỚT CHO NÔNG DÂN MIỀN TRUNG</h4>
+                                                                <h4 class="post_name font18">THILOGI HỖ TRỢ XUẤT KHẨU ỚT CHO NÔNG DÂN MIỀN TRUNG</h4>
                                                                 <p class="post_description font18">Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
                         
                                                                 </p>
@@ -134,8 +134,8 @@
                                                                 <div class="post-thumbnail">
                                                                     <img src="{{ Theme::asset()->url('images/home/3-post.jpg') }}" alt="">
                                                                 </div>
-                                                                <h4 class="post_name ">Phó Chủ tịch TP.HCM thăm dự án Cầu Thủ Thiêm 2 thi công mùa dịch</h4>
-                                                                <p class="post_description">Sáng ngày 14/7/2021, ông Lê Hòa Bình - Phó chủ tịch UBND TP. HCM đã cùng Lãnh đạo Sở GTVT TP. HCM đến thăm và làm việc tại công trường dự án cầu Thủ Thiêm 2.
+                                                                <h4 class="post_name font18">Phó Chủ tịch TP.HCM thăm dự án Cầu Thủ Thiêm 2 thi công mùa dịch</h4>
+                                                                <p class="post_description font18">Sáng ngày 14/7/2021, ông Lê Hòa Bình - Phó chủ tịch UBND TP. HCM đã cùng Lãnh đạo Sở GTVT TP. HCM đến thăm và làm việc tại công trường dự án cầu Thủ Thiêm 2.
                         
                         
                                                                 </p>
@@ -149,8 +149,8 @@
                                                                 <div class="post-thumbnail">
                                                                     <img src="{{ Theme::asset()->url('images/home/2-post.jpg') }}" alt="">
                                                                 </div>
-                                                                <h4 class="post_name ">THACO bàn giao xe vận chuyển vaccine phục vụ chiến dịch tiêm chủng quốc gia phòng Covid-19</h4>
-                                                                <p class="post_description ">Tại lễ phát động triển khai chiến dịch tiêm chủng vaccine phòng Covid-19 toàn quốc, THACO đã trao tặng 126 xe tiêm chủng gồm 63 xe tải chuyên dụng vận chuyển vaccine và 63 xe chuyên dụng phục vụ tiêm chủng lưu động cho Bộ Y tế. Ngày 14/7, Bộ Y tế đã ban hành Quyết định phân bổ tạm thời 63 xe chuyên dụng vận chuyển vaccine cho 7 Quân khu của Bộ Quốc phòng để sử dụng cho chiến dịch tiêm chủng kéo dài từ 07/2021 – 04/2022. 
+                                                                <h4 class="post_name font18">THACO bàn giao xe vận chuyển vaccine phục vụ chiến dịch tiêm chủng quốc gia phòng Covid-19</h4>
+                                                                <p class="post_description font18">Tại lễ phát động triển khai chiến dịch tiêm chủng vaccine phòng Covid-19 toàn quốc, THACO đã trao tặng 126 xe tiêm chủng gồm 63 xe tải chuyên dụng vận chuyển vaccine và 63 xe chuyên dụng phục vụ tiêm chủng lưu động cho Bộ Y tế. Ngày 14/7, Bộ Y tế đã ban hành Quyết định phân bổ tạm thời 63 xe chuyên dụng vận chuyển vaccine cho 7 Quân khu của Bộ Quốc phòng để sử dụng cho chiến dịch tiêm chủng kéo dài từ 07/2021 – 04/2022. 
                                                                 </p>
                                                                 <span class="time">23/06/2021</span>
                                                             </a>   
@@ -162,8 +162,8 @@
                                                                 <div class="post-thumbnail">
                                                                     <img src="{{ Theme::asset()->url('images/home/4-post.jpg') }}" alt="">
                                                                 </div>
-                                                                <h4 class="post_name ">Nhà máy THACO tải - “nỗ lực nhiều ngày đêm hoàn thành dự án để giúp ích cho cộng đồng”</h4>
-                                                                <p class="post_description ">Vừa qua, 126 xe chuyên dụng bao gồm 63 xe chuyên dụng vận chuyển vaccine và 63 xe tiêm chủng lưu động đã được THACO trao tặng cho Bộ Y tế. Việc sản xuất và bàn giao 2 lô xe này đã đáp ứng kịp thời nhu cầu cấp thiết về tiêm chủng vaccine trong tình hình dịch bệnh hết sức phức tạp hiện nay, nhất là tại TP. Hồ Chí Minh. Trong cơn bão đại dịch, dự án đã lan tỏa những hiệu ứng tích cực, có ý nghĩa nhân văn đến với cộng đồng.
+                                                                <h4 class="post_name font18 ">Nhà máy THACO tải - “nỗ lực nhiều ngày đêm hoàn thành dự án để giúp ích cho cộng đồng”</h4>
+                                                                <p class="post_description font18 ">Vừa qua, 126 xe chuyên dụng bao gồm 63 xe chuyên dụng vận chuyển vaccine và 63 xe tiêm chủng lưu động đã được THACO trao tặng cho Bộ Y tế. Việc sản xuất và bàn giao 2 lô xe này đã đáp ứng kịp thời nhu cầu cấp thiết về tiêm chủng vaccine trong tình hình dịch bệnh hết sức phức tạp hiện nay, nhất là tại TP. Hồ Chí Minh. Trong cơn bão đại dịch, dự án đã lan tỏa những hiệu ứng tích cực, có ý nghĩa nhân văn đến với cộng đồng.
                                                                 </p>
                                                                 <span class="time">23/06/2021</span>
                                                             </a>   
@@ -327,6 +327,7 @@
                                 <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
                                 <a href="/su-kien" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
                                 <a href="/thong-diep" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
+                                <a href="/media" class="item_link list-group-item  font18 font-myria-bold">Media</a>
                             </div>
                             <div class="list-post-new">
                                 <div class="wrap">
@@ -365,7 +366,7 @@
                                                 <p class="time">23/06/2021</p>
                                             </div>
                                         </div>
-                                        <div class="post-new-item">
+                                        {{-- <div class="post-new-item">
                                             <div class="post-thumbnail-wrap">
                                                 <div class="post-thumbnail">
                                                     <a href=""><img src="{{ Theme::asset()->url('images/media/post-2.jpg') }}" alt=""></a>
@@ -388,7 +389,7 @@
                                                 <p class="time">23/06/2021</p>
                                             </div>
                                            
-                                        </div>
+                                        </div> --}}
                                         
                                     </ul>
                                     
@@ -404,7 +405,7 @@
 <section class="media-tab mt-40">
     <div class="container-customize">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="media-tab-wrapper">
                     <div class="media__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                         <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
