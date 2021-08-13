@@ -51,7 +51,7 @@
                             <div class="list-newspapers">
                                 <div class="item-newspaper " data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a href="">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -85,7 +85,7 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a href="">THACO khai trương tổ hợp showroom 3 thương hiệu </a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">THACO khai trương tổ hợp showroom 3 thương hiệu </a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a href="">THACO ra mắt xe MINI Countryman hoàn toàn mới</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">THACO ra mắt xe MINI Countryman hoàn toàn mới</a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -153,7 +153,7 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a href="">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -187,7 +187,7 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a href="">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -221,7 +221,7 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a href="">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
