@@ -48,18 +48,18 @@
                 <div class="right font20">
                     <div class="office-address">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p class="address"> Address: Lorem ipsum dolor sit amet, consectetur  adipisicing elit</p>
+                        <p class="address"> Địa chỉ : Số 10 Mai Chí Thọ, P. Thủ Thiêm, TP. Thủ Đức, TP.HCM.</p>
                        
                     </div>
                     <div class="office-hotline">
                         <i class="fas fa-phone-alt"></i>
-                        <p class="phone">Hotline: 
-                            <a href=""> 090 9999 999</a></p>
+                        <p class="phone">SĐT: 
+                            <a href="">+84-(0)8-39977.824</a></p>
                     </div>
                     <div class="office-email">
                         <i class="fas fa-envelope"></i>
                         <p class="email"> Email: 
-                            <a href=""> Loreissum@gmail.com</a></p>
+                            <a href="">rep-office@thaco.com.vn</a></p>
                     </div>
                     <div class="desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
@@ -78,13 +78,14 @@
                 <div class="right font20">
                     <div class="office-address">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p class="address"> Address: Lorem ipsum dolor sit amet, consectetur  adipisicing elit</p>
+                        <p class="address"> Địa chỉ : Lô D6, KCN Hà Nội Đài Tư, 386 Nguyễn Văn Linh, Sài Đồng, Long Biên, Hà Nội</p>
                        
                     </div>
                     <div class="office-hotline">
                         <i class="fas fa-phone-alt"></i>
-                        <p class="phone">Hotline: 
-                            <a href=""> 090 9999 999</a></p>
+                        <p class="phone">SDT: 
+                            
+                            <a href="">+84-(0)43.8758914</a></p>
                     </div>
                     <div class="office-email">
                         <i class="fas fa-envelope"></i>
@@ -108,18 +109,18 @@
                 <div class="right font20">
                     <div class="office-address">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p class="address"> Address: Lorem ipsum dolor sit amet, consectetur  adipisicing elit</p>
+                        <p class="address"> Địa chỉ : Thôn 4, Xã Tam Hiệp, Huyện Núi thành, Tỉnh Quảng Nam</p>
                        
                     </div>
                     <div class="office-hotline">
                         <i class="fas fa-phone-alt"></i>
-                        <p class="phone">Hotline: 
-                            <a href=""> 090 9999 999</a></p>
+                        <p class="phone">SĐT: 
+                            <a href="">+84-02353.567.160 - 02353.567.161</a></p>
                     </div>
                     <div class="office-email">
                         <i class="fas fa-envelope"></i>
                         <p class="email"> Email: 
-                            <a href=""> Loreissum@gmail.com</a></p>
+                            <a href="">chulai-truonghai@dng.vnn.vn</a></p>
                     </div>
                     <div class="desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
