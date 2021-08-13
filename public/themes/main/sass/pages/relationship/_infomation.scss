@@ -1,0 +1,129 @@
+.infomation-wrapper {
+    max-width: 68.4375%;
+    margin: 0 auto;
+    .infomation-title {
+        color: $main_color;
+        border-bottom: 1px solid #707070;
+        text-transform: uppercase;
+        font-family: $MyriadPro-Bold;
+        .title {
+            margin: 0;
+            position: relative;
+            padding-bottom: 30px;
+            width: max-content;
+            &::before {
+                content: "";
+                height: 2px;
+                background-color: $main_color;
+                position: absolute;
+                bottom: 0;
+                transition: all 0.4s linear;
+                width: 100%;
+            }
+        }
+    }
+    .list-infomation {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item-infomation {
+            background: #f4f4f4;
+            padding: 25px;
+            width: 32%;
+            margin-bottom: 2%;
+            &:hover {
+                // filter: drop-shadow(2px 3px 4px #ccc);
+                box-shadow: 0 7px 10px 1px #3333;
+                transition: box-shadow .5s;
+                cursor: pointer;
+            }
+            .title {
+                a {
+                    color: #171717;
+                    font-family: $MyriadPro-Bold;
+                    &:hover {
+                        color: unset;
+                    }
+                }
+            }
+            .desc {
+                @include split_str(9);
+                text-align: justify;
+                line-height: 1.3;
+            }
+            .title-docx {
+                font-family: $MyriadPro-Bold;
+                border-top: .5px solid #707070;
+                padding-top: 10px;
+            }
+            .size-dowload {
+                span.left {
+                    margin-right: 20px;
+                }
+                span a {
+                    background: #01498b;
+                    color: #fff;
+                    padding: 5px 10px 5px;
+                    font-size: 15px;
+                    border-radius: 3px;
+                    font-family: $MyriadPro-Bold;
+                }
+            }
+            .tags {
+                display: flex;
+                p.name-tag {
+                    margin-right: 10px;
+                }
+                .tag-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex: 1;
+                    p {
+                        width: fit-content;
+                        background: $white;
+                        text-align: center;
+                        margin-right: 5%;
+                        margin-bottom: 4%;
+                        font-size: 15px;
+                        padding: 1% 5%;
+                        // width: 30%;
+                        a {
+                            color: #3F3F3F;
+                            &:hover {
+                                color: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .page-pagination {
+        display: flex;
+        justify-content: center;
+        .pagination {
+            .page-item {
+                margin-right: 5px;
+                .page-link {
+                    color: #343434;
+                    border-radius: 5px;
+                    &:hover {
+                        background: #0B5CA8;
+                        color: $white;
+                    }
+                }
+            }
+            .page-item.active .page-link {
+                background: #0B5CA8;
+                color: $white;
+            }
+            .page-item:first-child .page-link {
+                margin-left: unset;
+            }
+            .page-item:last-child .page-link {
+                margin-left: unset;
+            }
+        }
+    }
+}

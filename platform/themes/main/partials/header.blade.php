@@ -148,7 +148,7 @@
                                         </a>
                                     </div>
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/cong-bo-thong-tin" class="dropdown-item">
                                             Công bố thông tin
                                         </a>
                                     </div>
