@@ -31,7 +31,7 @@
                             </a>
                         </li>
                         <li class="item-top">
-                            <a href="" class="item-top__link">
+                            <a href="/lien-he" class="item-top__link">
                                Liên hệ
                             </a>
                         </li>

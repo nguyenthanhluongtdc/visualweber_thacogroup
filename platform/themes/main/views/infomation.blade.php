@@ -21,7 +21,7 @@
 <section class="infomation-content"> 
     <div class="infomation-wrapper">
             <div class="infomation-title mt-80">
-                <h1 class="font40 title ">Công bố thông tin</h1>
+                <h1 class="font40 title " data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">Công bố thông tin</h1>
             </div>
             <div class="list-infomation">
                 <div class="item-infomation" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">

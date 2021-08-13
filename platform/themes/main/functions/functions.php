@@ -8,6 +8,7 @@ register_page_template([
     'media-detail' => 'Media Detail',
     'media' => 'Media',
     'infomation' => 'Infomation',
+    'contact' => 'Contact',
 ]);
 
 register_sidebar([

@@ -1,0 +1,98 @@
+.contact-wrapper {
+    max-width: 1016px;
+    margin: 0 auto;
+    @media screen and (max-width: 1440px) {
+        max-width: 900px;
+    }
+    @media screen and (max-width: 1100px) {
+        max-width: 800px;
+    }
+    .contact-title {
+        text-align: center;
+        font-family: $MyriadPro-Bold;
+    }
+    .contact-box {
+        display: flex;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 32%;
+            margin-right: 2%;
+            padding: 3%;
+            text-align: center;
+            background-color: $main_color;
+            color: $white;
+            border-radius: 5px;
+            @media screen and (max-width: 1440px) {
+                padding: 2%;
+            }
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+                transition: all .5s;
+            }
+            .image {
+                margin: 30px;
+                img {
+                    @media screen and (max-width: 1440px) {
+                        transform: scale(.7);
+                    }
+                }
+            }
+            .title {}
+            .content {
+                padding-bottom: 20px;
+            }
+        }
+        &__item:last-child {
+            margin-right: 0;
+        }
+    }
+    .office-wrapper {
+        .office-item {
+            display: flex;
+            box-shadow: rgb(0 0 0 / 20%) 0px 5px 15px;
+            transition: all 0.5s;
+            .left {
+                flex: 0 0 32.2%;
+                .name {
+                    text-align: center;
+                    background-color: $main_color;
+                    padding: 8.5% 0;
+                    margin-bottom: 0;
+                    color: $white;
+                }
+                .office-image img {
+                    max-width: 100%;
+                }
+            }
+            .right {
+                flex: 0 0 67.8%;
+                padding: 2% 4%;
+                color: #303030;
+                .office-address,
+                .office-hotline,
+                .office-email {
+                    padding-bottom: 3.4%;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        margin-bottom: 0;
+                        margin-left: 10px;
+                    }
+                    a {
+                        color: #303030;
+                    }
+                }
+                .office-email {
+                    border-bottom: 1px solid #303030;
+                }
+                .desc {
+                    padding-top: 3.4%;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
