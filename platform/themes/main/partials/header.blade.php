@@ -198,7 +198,7 @@
                                         </a>
                                     </div>
                                     <div class="cmenu">
-                                        <a href="/media" class="dropdown-item">
+                                        <a href="/thu-vien-anh-va-video" class="dropdown-item">
                                          Media
                                         </a>
                                     </div>
