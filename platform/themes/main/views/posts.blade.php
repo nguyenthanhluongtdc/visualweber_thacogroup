@@ -210,11 +210,12 @@
                                     <div class="img-content">
                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                             <div class="post-thumbnail">
-                                                <a href=""><img src="{{ Theme::asset()->url('images/media/media-1.jpg') }}" alt=""></a>
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-1.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <h3 class="name font18">NHỮNG BÔNG HỒNG THÉP</h3>
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">NHỮNG BÔNG HỒNG THÉP</h3></a>
+                                          
                                             <p class="time">23/06/2021</p>
                                             <p class="desc font18">Tại KCN THACO Chu Lai, có những công việc tưởng chừng chỉ dành cho nam giới song lại có sự góp mặt của nhiều nhân sự nữ, đó là bảo vệ. Đây được xem là công việc trái nghề đối với “phái yếu” nhưng bằng sự đam mê, yêu nghề, ham học hỏi, các chị đã nỗ lực vượt khó, hoàn thành tốt nhiệm vụ. </p>
                                         </div>
@@ -224,11 +225,12 @@
                                     <div class="img-content">
                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                             <div class="post-thumbnail">
-                                                <a href=""><img src="{{ Theme::asset()->url('images/media/media-2.jpg') }}" alt=""></a>
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-2.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <h3 class="name font18">THACO TẶNG THIẾT BỊ XÉT NGHIỆM COVID-19 CHO TRUNG TÂM KIỂM SOÁT BỆNH TẬT QUẢNG NAM</h3>
+                                            <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">THACO TẶNG THIẾT BỊ XÉT NGHIỆM COVID-19 CHO TRUNG TÂM KIỂM SOÁT BỆNH TẬT QUẢNG NAM</h3></a>
+                                         
                                             <p class="time">23/06/2021</p>
                                             <p class="desc font18">Ngày 28/05/2021, Tập đoàn THACO đã tài trợ máy tách chiết tự động xét nghiệm Covid-19 với trị giá gần 2 tỷ đồng cho Trung tâm kiểm soát bệnh tật (CDC) Quảng Nam. </p>
                                         </div>
@@ -238,11 +240,12 @@
                                     <div class="img-content">
                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                             <div class="post-thumbnail">
-                                                <a href=""><img src="{{ Theme::asset()->url('images/media/media-3.jpg') }}" alt=""></a>
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-3.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <h3 class="name font18">THACO - GIA ĐÌNH THỨ HAI CỦA CHÚNG TÔI</h3>
+                                            
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO - GIA ĐÌNH THỨ HAI CỦA CHÚNG TÔI</h3></a>
                                             <p class="time">23/06/2021</p>
                                             <p class="desc font18">Sáng sớm, hình ảnh từng đoàn xe đưa rước CBNV THACO từ các ngả đường đổ về KCN THACO Chu Lai như một dấu hiệu bắt đầu ngày mới đầy sức sống. Có lẽ, gần 20 năm về trước, chẳng ai tại vùng đất Núi Thành, Quảng Nam có thể tưởng tượng được có một ngày vùng cát ...</p>
                                         </div>
@@ -252,11 +255,12 @@
                                     <div class="img-content">
                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                             <div class="post-thumbnail">
-                                                <a href=""><img src="{{ Theme::asset()->url('images/media/media-4.jpg') }}" alt=""></a>
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-4.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <h3 class="name font18">TỔ HÀN MẢNG SÀN NHÀ MÁY THACO KIA: NỖ LỰC NÂNG CAO HIỆU QUẢ SẢN XUẤT & CHẤT LƯỢNG SẢN PHẨM</h3>
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">TỔ HÀN MẢNG SÀN NHÀ MÁY THACO KIA: NỖ LỰC NÂNG CAO HIỆU QUẢ SẢN XUẤT & CHẤT LƯỢNG SẢN PHẨM</h3></a>
+                                            
                                             <p class="time">23/06/2021</p>
                                             <p class="desc font18">Sáng tạo là một phẩm chất cần thiết của người lao động, nhất là trong thời đại công nghiệp 4.0. Sự sáng tạo, không ngừng tìm tòi các giải pháp, sáng kiến cải tiến giúp nâng cao năng suất, hiệu quả công việc, góp phần tích cực vào sự phát triển của công ty ...</p>
                                         </div>

@@ -237,6 +237,12 @@
                         .content {
                             margin-left: 7%;
                             width: 56%;
+                            a {
+                                color: unset;
+                                &:hover {
+                                    color: unset;
+                                }
+                            }
                             .name {
                                 font-family: $MyriadPro-Bold;
                                 @media screen and (max-width: 1680px) {
