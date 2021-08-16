@@ -13,5 +13,136 @@
                 margin-left: 10px;
             }
         }
+        .tab-image {
+            .tab-content {
+                .list-album {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .album-item {
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            z-index: 0;
+                            top: 58%;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            background: rgba(0, 0, 0, .6);
+                        }
+                        width: 32.3333%;
+                        margin-right: 1.5%;
+                        margin-bottom: 1.5%;
+                        position: relative;
+                        &__name {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            color: #fff;
+                            margin: 20px;
+                            font-family: $MyriadPro-Bold;
+                            z-index: 1;
+                            @include split_str(2);
+                            .name {
+                                margin-bottom: 0;
+                            }
+                        }
+                        &__count {
+                            position: absolute;
+                            padding: 5px;
+                            color: #fff;
+                            background: rgba(0, 0, 0, .3);
+                            top: 20px;
+                            z-index: 2;
+                            display: flex;
+                            left: 20px;
+                            align-items: center;
+                            .quantity {
+                                margin-bottom: -5px;
+                                margin-left: 10px;
+                            }
+                            i {
+                                width: 18px;
+                                height: 18px;
+                                font-size: 18px;
+                            }
+                        }
+                        &__download {
+                            position: absolute;
+                            padding: 5px;
+                            color: #fff;
+                            background: rgba(0, 0, 0, .3);
+                            top: 20px;
+                            z-index: 2;
+                            right: 20px;
+                        }
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    .album-item:last-child,
+                    .album-item:nth-child(3) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#album_modal .modal-dialog {
+    max-width: 1376px;
+    width: 80vw;
+    .modal-content {
+        padding: 3% 4.5% 3% 7%;
+        .modal-header {
+            padding: 0;
+            margin: 0;
+            border: unset;
+            button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 5px 5px 0 5px;
+                margin: 0;
+                background: #f1f1f1;
+                i {
+                    color: #000;
+                    font-size: 20px;
+                }
+            }
+        }
+        .title_modal {
+            margin-bottom: 3%;
+            font-family: $MyriadPro-Bold;
+            .name {
+                margin-bottom: 0;
+            }
+        }
+        .modal-body {
+            overflow-y: hidden;
+            overflow-x: hidden;
+            max-height: 30vw;
+        }
+    }
+    .list-album {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2%;
+        .album-item {
+            position: relative;
+            &__download {
+                position: absolute;
+                padding: 5px;
+                color: #fff;
+                background: rgba(0, 0, 0, .3);
+                top: 20px;
+                z-index: 2;
+                right: 20px;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
     }
 }
