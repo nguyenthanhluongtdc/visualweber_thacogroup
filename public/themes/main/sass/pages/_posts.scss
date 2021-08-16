@@ -462,6 +462,9 @@
             .media-slider {
                 height: 37vw;
                 .swiper-slide {
+                    .video-wrapper {
+                        margin-bottom: -10px;
+                    }
                     .__video {
                         height: 37vw;
                         object-fit: cover;
