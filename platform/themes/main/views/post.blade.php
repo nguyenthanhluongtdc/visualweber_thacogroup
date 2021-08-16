@@ -59,7 +59,7 @@
                     
                 </div>
                 <div class="post-tag">
-                    <img class="" src="{{ Theme::asset()->url('images/media/tag-icon.png') }}" alt="">
+                    <h4 class="title">Từ khóa :</h4>
                    
                     <div class="tag-item active">
                         <a href="">Thaco</a>

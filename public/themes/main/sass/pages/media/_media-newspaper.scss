@@ -2,8 +2,10 @@
     .filter-search-media {
         .form-search {
             display: flex;
+            max-width: 68.2%;
+            margin-right: 2.7%;
             .search {
-                width: 370px;
+                width: 66%;
                 height: 40px;
                 display: flex;
                 align-items: baseline;
@@ -34,10 +36,11 @@
                 }
             }
             .select-year {
+                width: 12%;
                 outline: 0;
                 box-shadow: none;
                 padding: 3px 8px;
-                margin: 0 10px;
+                margin: 0 2%;
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #f1f1f1;
@@ -45,11 +48,11 @@
                 color: #2E2E2E;
             }
             .select-by-field {
+                width: 18%;
                 outline: 0;
                 border: unset;
                 box-shadow: none;
                 padding: 3px 8px;
-                margin: 0 10px;
                 font-weight: bold;
                 cursor: pointer;
                 background-color: #f1f1f1;
@@ -114,12 +117,43 @@
                             font-family: $MyriadPro-Bold;
                         }
                     }
+                    // .tags {
+                    //     display: flex;
+                    //     p.name-tag {
+                    //         margin-right: 10px;
+                    //         font-size: 14px;
+                    //         font-family: $MyriadPro-Bold;
+                    //     }
+                    //     .tag-list {
+                    //         display: flex;
+                    //         flex-wrap: wrap;
+                    //         flex: 1;
+                    //         p {
+                    //             width: fit-content;
+                    //             background: #e2e2e2;
+                    //             text-align: center;
+                    //             margin-right: 3%;
+                    //             margin-bottom: 3%;
+                    //             font-size: 13px;
+                    //             @media screen and (max-width: 1366px) {
+                    //                 font-size: 11px;
+                    //             }
+                    //             padding: 2%;
+                    //             // width: 30%;
+                    //             font-family: $MyriadPro-Bold;
+                    //             a {
+                    //                 color: #3F3F3F;
+                    //                 &:hover {
+                    //                     color: unset;
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }
                     .tags {
                         display: flex;
                         p.name-tag {
                             margin-right: 10px;
-                            font-size: 14px;
-                            font-family: $MyriadPro-Bold;
                         }
                         .tag-list {
                             display: flex;
@@ -127,17 +161,13 @@
                             flex: 1;
                             p {
                                 width: fit-content;
-                                background: #e2e2e2;
+                                background: $white;
                                 text-align: center;
-                                margin-right: 3%;
-                                margin-bottom: 3%;
-                                font-size: 13px;
-                                @media screen and (max-width: 1366px) {
-                                    font-size: 11px;
-                                }
-                                padding: 2%;
+                                margin-right: 5%;
+                                margin-bottom: 4%;
+                                font-size: 15px;
+                                padding: 1% 5%;
                                 // width: 30%;
-                                font-family: $MyriadPro-Bold;
                                 a {
                                     color: #3F3F3F;
                                     &:hover {

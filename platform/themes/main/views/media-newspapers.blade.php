@@ -63,22 +63,22 @@
                                         <span class=""><a href="">DOWNLOAD</a></span>
                                     </p>
                                     <div class="tags">
-                                        <p class="name-tag">Tags: 
-                                        </p><div class="tag-list">
+                                        <p class="name-tag">Tags: </p>
+                                        <div class="tag-list">
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                         </div>
                                     </div>
@@ -98,23 +98,24 @@
                                     </p>
                                     <div class="tags">
                                         <p class="name-tag">Tags: 
-                                        </p><div class="tag-list">
-                                                <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                        </div>
+                                        </p>
+                                        <div class="tag-list">
+                                            <p class="tag-title">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
@@ -132,21 +133,91 @@
                                     </p>
                                     <div class="tags">
                                         <p class="name-tag">Tags: 
+                                        </p>
+                                        <div class="tag-list">
+                                            <p class="tag-title">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                                    <h5 class="title font18">
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                    </h5>
+                                    <p class="desc font18">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    </p>
+                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
+                                        dai chung..docx</p>
+                                    <p class="size-dowload">
+                                        <span class="left">804,24KB</span>
+                                        <span class=""><a href="">DOWNLOAD</a></span>
+                                    </p>
+                                    <div class="tags">
+                                        <p class="name-tag">Tags: 
+                                        </p>
+                                        <div class="tag-list">
+                                            <p class="tag-title">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                                    <h5 class="title font18">
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                    </h5>
+                                    <p class="desc font18">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    </p>
+                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
+                                        dai chung..docx</p>
+                                    <p class="size-dowload">
+                                        <span class="left">804,24KB</span>
+                                        <span class=""><a href="">DOWNLOAD</a></span>
+                                    </p>
+                                    <div class="tags">
+                                        <p class="name-tag">Tags: 
                                         </p><div class="tag-list">
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                         </div>
                                     </div>
@@ -168,87 +239,19 @@
                                         <p class="name-tag">Tags: 
                                         </p><div class="tag-list">
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem </a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum </a>
+                                                    <a href="">Lorem </a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                                 <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                                 <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
-                                    </h5>
-                                    <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx</p>
-                                    <p class="size-dowload">
-                                        <span class="left">804,24KB</span>
-                                        <span class=""><a href="">DOWNLOAD</a></span>
-                                    </p>
-                                    <div class="tags">
-                                        <p class="name-tag">Tags: 
-                                        </p><div class="tag-list">
-                                                <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
-                                    </h5>
-                                    <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx</p>
-                                    <p class="size-dowload">
-                                        <span class="left">804,24KB</span>
-                                        <span class=""><a href="">DOWNLOAD</a></span>
-                                    </p>
-                                    <div class="tags">
-                                        <p class="name-tag">Tags: 
-                                        </p><div class="tag-list">
-                                                <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title">
-                                                    <a href="">Lorem ipsum</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem ipsum</a>
+                                                    <a href="">Lorem</a>
                                                 </p>
                                         </div>
                                     </div>

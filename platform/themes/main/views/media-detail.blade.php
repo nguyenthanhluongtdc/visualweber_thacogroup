@@ -60,9 +60,9 @@
                     <p class="">Tại THACO Chu Lai, phương pháp 5S, triết lý Kaizen và quản trị tinh gọn đã được triển khai áp dụng suốt nhiều năm qua và được duy trì, cải tiến liên tục ngày một hiệu quả. Bên cạnh củng cố kiến thức, khóa đào tạo còn nhằm nâng cao tính tự giác, ý thức trách nhiệm của mỗi CBNV trong việc áp dụng các phương pháp trên vào công việc một cách khoa học, hiệu quả, tạo môi trường làm việc an toàn, thuận tiện, nêu cao tinh thần cải tiến, sáng tạo, góp phần nâng cao chất lượng, hiệu suất lao động.</p>
                 </div>
                 <div class="post-tag">
-                    <img class="" src="{{ Theme::asset()->url('images/media/tag-icon.png') }}" alt="">
+                    <h4 class="title font28">Từ khóa :</h4>
                    
-                    <div class="tag-item active">
+                    <div class="tag-item">
                         <a href="">Thaco</a>
                     </div>
                     <div class="tag-item">
