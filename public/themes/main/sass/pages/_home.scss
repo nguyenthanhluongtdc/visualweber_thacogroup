@@ -372,7 +372,9 @@
                                 &:hover {
                                     transition: transform .2s, visibility .2s ease-in;
                                     transform: scale(1.08);
-                                    // box-shadow: 0 0 18px rgb(0 0 0 / 20%);
+                                    .post_name {
+                                        color: $main_color;
+                                    }
                                 }
                                 // margin-right: 20px;
                                 .post-thumbnail {
