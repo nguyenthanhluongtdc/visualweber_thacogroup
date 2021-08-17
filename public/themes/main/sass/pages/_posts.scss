@@ -266,12 +266,14 @@
                 }
             }
             .page-pagination {
+                display: flex;
+                justify-content: center;
                 .pagination {
-                    margin-bottom: 0;
                     .page-item {
                         margin-right: 5px;
                         .page-link {
                             color: #343434;
+                            border-radius: 5px;
                             &:hover {
                                 background: #0B5CA8;
                                 color: $white;
@@ -284,13 +286,9 @@
                     }
                     .page-item:first-child .page-link {
                         margin-left: unset;
-                        border-top-left-radius: unset;
-                        border-bottom-left-radius: unset;
                     }
                     .page-item:last-child .page-link {
                         margin-left: unset;
-                        border-top-right-radius: unset;
-                        border-bottom-right-radius: unset;
                     }
                 }
             }
@@ -299,7 +297,7 @@
             height: max-content;
             max-width: 29.1%;
             position: sticky;
-            top: 100px;
+            top: 5px;
             .media__content_right {
                 box-shadow: 0 7px 10px 1px #3333;
                 .list-media-menu {
