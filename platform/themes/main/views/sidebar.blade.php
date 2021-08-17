@@ -22,7 +22,7 @@
         </li>
         <li class="social-item">
             <a href="">
-                <img class="drop-shadow" src="{{Theme::asset()->url('images/home/mail.png')}}" alt="">
+                <img class="drop-shadow" src="{{Theme::asset()->url('images/home/email.png')}}" alt="">
             </a>
         </li >
       

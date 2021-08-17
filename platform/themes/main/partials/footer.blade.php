@@ -79,7 +79,7 @@
                             </li>
                             <li>
                                 <a href="">
-                                    <img src="{{Theme::asset()->url('images/home/mail.png')}}" alt="">
+                                    <img src="{{Theme::asset()->url('images/home/email.png')}}" alt="">
                                 </a>
                             </li>
                           
