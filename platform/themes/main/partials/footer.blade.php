@@ -7,8 +7,8 @@
                     <div class="company_name">
                         <h4 class="font30">CÔNG TY CỔ PHẦN TẬP ĐOÀN TRƯỜNG HẢI</h4>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 col-12">
+                    <div class="office-wrapper">
+                   
                             <div class="office">
                                 <h2 class="font18 text-white title">Văn Phòng TP. Hồ Chí Minh</h2>
                                 <div class="address">
@@ -21,8 +21,6 @@
                                     <a class="text-white" href="">www.truonghaiauto.com.vn</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-12">
                             <div class="office">
                                 <h2 class="font18 text-white title">Văn Phòng Thaco Chu Lai</h2>
                                 <div class="address">
@@ -40,8 +38,6 @@
                                     <a class="text-white" href="">www.thacochulai.vn</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-12">
                             <div class="office">
                                 <h2 class="font18 text-white title">Văn Phòng Hà Nội</h2>
                                 <div class="address">
@@ -58,38 +54,37 @@
                                     <a class="text-white" href="">www.truonghaiauto.com.vn</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="list-social">
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <img src="{{Theme::asset()->url('images/home/facebook.png')}}" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="{{Theme::asset()->url('images/home/youtube.png')}}" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="{{Theme::asset()->url('images/home/phone.png')}}" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="{{Theme::asset()->url('images/home/linkedin.png')}}" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <img src="{{Theme::asset()->url('images/home/mail.png')}}" alt="">
-                                    </a>
-                                </li>
-                              
+                    </div>
+                    <div class="list-social">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="{{Theme::asset()->url('images/home/fb.png')}}" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="{{Theme::asset()->url('images/home/youtube.png')}}" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="{{Theme::asset()->url('images/home/call.png')}}" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="{{Theme::asset()->url('images/home/in.png')}}" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="{{Theme::asset()->url('images/home/mail.png')}}" alt="">
+                                </a>
+                            </li>
+                          
 
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
                    
                 </div>

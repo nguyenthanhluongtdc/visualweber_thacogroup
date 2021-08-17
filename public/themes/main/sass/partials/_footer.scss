@@ -12,60 +12,64 @@
         color: #fff;
         font-family: $MyriadPro-Bold;
     }
-    .office {
-        .title {
-            margin-bottom: 20px;
-            font-family: $MyriadPro-Bold;
-        }
-    }
-    .address {
-        p {
-            margin-bottom: 10px;
-        }
-        position: relative;
-        padding-left: 20px;
-        &::before {
-            position: absolute;
-            content: "\f3c5";
-            color: $white;
-            font-family: "Font Awesome 5 Pro";
-            left: 0;
-            right: 0;
-            font-weight: bold;
-        }
-    }
-    .phone {
-        margin-bottom: 10px;
-        position: relative;
-        padding-left: 20px;
-        &::before {
-            position: absolute;
-            content: "\f879";
-            color: $white;
-            font-family: "Font Awesome 5 Pro";
-            left: 0;
-            right: 0;
-            font-weight: bold;
-        }
-        a {
-            position: relative;
-            z-index: 2;
-        }
-    }
-    .global {
-        position: relative;
-        padding-left: 20px;
-        &::before {
-            position: absolute;
-            content: "\f0ac";
-            color: $white;
-            font-family: "Font Awesome 5 Pro";
-            left: 0;
-            right: 0;
-        }
-        a {
-            position: relative;
-            z-index: 2;
+    .office-wrapper {
+        display: flex;
+        justify-content: space-between;
+        .office {
+            .title {
+                margin-bottom: 20px;
+                font-family: $MyriadPro-Bold;
+            }
+            .address {
+                p {
+                    margin-bottom: 10px;
+                }
+                position: relative;
+                padding-left: 20px;
+                &::before {
+                    position: absolute;
+                    content: "\f3c5";
+                    color: $white;
+                    font-family: "Font Awesome 5 Pro";
+                    left: 0;
+                    right: 0;
+                    font-weight: bold;
+                }
+            }
+            .phone {
+                margin-bottom: 10px;
+                position: relative;
+                padding-left: 20px;
+                &::before {
+                    position: absolute;
+                    content: "\f879";
+                    color: $white;
+                    font-family: "Font Awesome 5 Pro";
+                    left: 0;
+                    right: 0;
+                    font-weight: bold;
+                }
+                a {
+                    position: relative;
+                    z-index: 2;
+                }
+            }
+            .global {
+                position: relative;
+                padding-left: 20px;
+                &::before {
+                    position: absolute;
+                    content: "\f0ac";
+                    color: $white;
+                    font-family: "Font Awesome 5 Pro";
+                    left: 0;
+                    right: 0;
+                }
+                a {
+                    position: relative;
+                    z-index: 2;
+                }
+            }
         }
     }
     .list-social {

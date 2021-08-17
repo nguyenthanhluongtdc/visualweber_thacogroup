@@ -163,6 +163,12 @@
                             background-color: $main_color;
                             border: none;
                         }
+                        input:focus {
+                            box-shadow: unset;
+                            outline: none;
+                            border: 1px solid #ced4da;
+                            ;
+                        }
                     }
                 }
             }
