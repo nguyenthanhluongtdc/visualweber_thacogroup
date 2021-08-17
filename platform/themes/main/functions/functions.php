@@ -9,6 +9,8 @@ register_page_template([
     'media' => 'Media',
     'infomation' => 'Infomation',
     'contact' => 'Contact',
+    'media-event' => 'Media Event',
+
 ]);
 
 register_sidebar([
