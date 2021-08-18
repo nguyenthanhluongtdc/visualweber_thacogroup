@@ -7,7 +7,7 @@
         </li>
         <li class="social-item">
             <a href="">
-                <img  class="drop-shadow" src="{{Theme::asset()->url('images/home/youtube.png')}}" alt="">
+                <img  class="drop-shadow" src="{{Theme::asset()->url('images/home/ytb.png')}}" alt="">
             </a>
         </li>
         <li class="social-item">

@@ -64,7 +64,7 @@
                             </li>
                             <li>
                                 <a href="">
-                                    <img src="{{Theme::asset()->url('images/home/youtube.png')}}" alt="">
+                                    <img src="{{Theme::asset()->url('images/home/ytb.png')}}" alt="">
                                 </a>
                             </li>
                             <li>
