@@ -42,8 +42,8 @@
                                 <h2 class="font18 text-white title">Văn Phòng Hà Nội</h2>
                                 <div class="address">
                                    
-                                        <p class="font18 text-white">Lô D6, KCN Hà Nội Đài Tư, 386<br>
-                                            Nguyễn Văn Linh, Sài Đồng, Long Biên, Hà Nội
+                                        <p class="font18 text-white">Lô D6, KCN Hà Nội Đài Tư,<br>
+                                            Sài Đồng, Long Biên, Hà Nội
                                         </p>
                                     
                                 </div>
