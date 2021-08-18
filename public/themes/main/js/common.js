@@ -251,6 +251,7 @@ var recruitment_slider = new Swiper('.recruitment-slider', {
         prevEl: '.recruitment-slider .swiper-button-prev',
     },
 })
+
 var media_sider = new Swiper('.media-slider', {
 
 
@@ -470,3 +471,16 @@ function hasScrolled() {
     }
 
 }
+var gallery_top = new Swiper(".gallery-top", {
+    slidesPerView: 1,
+    speed: 400,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+
+    },
+    navigation: {
+        nextEl: '.gallery-top .swiper-button-next',
+        prevEl: '.gallery-top .swiper-button-prev',
+    },
+
+});

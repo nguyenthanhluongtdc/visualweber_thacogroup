@@ -117,6 +117,8 @@
             AOS.init({
                 easing: 'ease-in-out-sine'
             });
+            // $('.datepicker').datepicker();
+    
         </script>
     </body>
 </html>

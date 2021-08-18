@@ -21,21 +21,53 @@
                 <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                 <h1  class="font50 big-title">Hình ảnh</h1>
             </div>
-            <div class="tab-image">
-                <div class="media__tabs" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <ul class=" nav nav-tabs mb-0" id="tab-media" role="tablist">
+            <div class="tab-image mb-100">
+                <div class="media__tabs">
+                    <ul class=" nav nav-tabs" id="tab-media" role="tablist">
                         <li class="__tabs__item " role="media">
                             <a class="__tabs__link nav-link active" id="media-image-tab" data-toggle="tab" role="tab" aria-controls="media-image" aria-selected="true" href="#media-image" title="Tất Cả">
+                                <i class="far fa-images"></i>
                              Albums
+                            
                             </a>
+                          
                         </li>
                         <li class="__tabs__item" role="media">
+                          
                             <a class="__tabs__link nav-link" id="media-video-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-video" title="Tất Cả">
+                                <i class="fas fa-image"></i>
                             Hình ảnh
+                          
                             </a>
+                           
                         </li>
                         
                     </ul>
+                    <div class="list-tool">
+                        <div class="search">
+                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
+                            <button class="btn btn-secondary" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="calender">
+                            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
+                                       <input type="date" id="datepicker" name="calendars" autocomplete="off" class="font15">
+                              </div>
+                            
+                            
+                        </div>
+                        <div class="filter">
+                            <label for="">Filter</label>    
+                            <select class="filler">
+                               
+                                {{-- <option value="1"></option> --}}
+                            </select>
+                        </div>
+                        <div class="arrange">
+                            <img src="{{ Theme::asset()->url('images/media/Sort.png') }}" alt="">
+                        </div>
+                    </div>
                 
                 </div>
                 <div class="tab-content" id="nav-tabContent tab-content2">
@@ -140,6 +172,56 @@
                                 </div>
                               
                             </div>
+                            <div class="page-pagination mt-40 mb-40">
+                                <ul class="pagination font18">
+                                    <li class="page-item active">
+                                        <a href="" class="page-link">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link">
+                                            3
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link">
+                                            4
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link">
+                                            5
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link">
+                                            6
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link">
+                                            7
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link">
+                                            >
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a href="" class="page-link">
+                                            >>
+                                        </a>
+                                    </li>
+                                   
+                                </ul>
+                             </div>
                         </div>
                     </div>
                     {{-- <div class="tab-pane fade" id="media-video" role="tabpanel" aria-labelledby="field-1-tab">
@@ -164,6 +246,148 @@
                     
                 </div>
             </div>
+
+            <div class="video__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
+                <h2  class="font50 big-title">Video</h2> 
+            </div>
+            <div class="tab-video mb-100">
+                <div class="media__tabs">
+                    <ul class=" nav nav-tabs" id="tab-media" role="tablist">
+                        <li class="__tabs__item " role="media">
+                            <a class="__tabs__link nav-link active" id="media-image-tab" data-toggle="tab" role="tab" aria-controls="media-image" aria-selected="true" href="#media-image" title="Tất Cả">
+                                <i class="far fa-images"></i>
+                             Albums
+                            
+                            </a>
+                          
+                        </li>
+                        <li class="__tabs__item" role="media">
+                          
+                            <a class="__tabs__link nav-link" id="media-video-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-video" title="Tất Cả">
+                                <i class="fas fa-image"></i>
+                           Video
+                          
+                            </a>
+                           
+                        </li>
+                        
+                    </ul>
+                    <div class="list-tool">
+                        <div class="search">
+                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
+                            <button class="btn btn-secondary" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="calender">
+                            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
+                                <input type="date" id="datepicker" name="calendars" autocomplete="off" class="font15">
+                            </div>
+
+                        </div>
+                        <div class="filter">
+                            <label for="">Filter</label>    
+                            <select class="filler">
+                            </select>
+                        </div>
+                        <div class="arrange">
+                            <img src="{{ Theme::asset()->url('images/media/Sort.png') }}" alt="">
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="col-md-12 col-12 search-cate">
+                    
+                    <div class="box">
+                        <input id="one" type="checkbox">
+                        <span class="check"></span>
+                        <label for="one" class="font-pri font15">THACO</label>
+                    </div>
+                    <div class="box">
+                        <input id="two" type="checkbox">
+                        <span class="check"></span> 
+                        <label for="two" class="">Ô tô & Cơ khí</label>
+                    </div>
+                    <div class="box">
+                        <input id="three" type="checkbox">
+                        <span class="check"></span>
+                        <label for="three" class="font-pri font15">Nông Lâm Nghiệp</label>
+                    </div>
+                    <div class="box">
+                        <input id="four" type="checkbox">
+                        <span class="check"></span>
+                        <label for="four" class="font-pri font15">Đầu Tư - Xây Dựng</label>
+                    </div>
+                    <div class="box">
+                        <input id="five" type="checkbox">
+                        <span class="check"></span>
+                        <label for="five" class="font-pri font15">Thương Mại - Dịch Vụ</label>
+                    </div>
+                    <div class="box">
+                        <input id="six" type="checkbox">
+                        <span class="check"></span>
+                        <label for="six" class="font-pri font15">Logistics</label>
+                    </div>
+                    
+                </div>
+                <div class="tab-content" id="nav-tabContent tab-content2">
+                    <div class="tab-pane fade active show" id="media-image" role="tabpanel" aria-labelledby="field-1-tab">
+                        <div class="media-video mCustomScrollbar" data-mcs-theme="dark">
+                            <div class="list-video" >
+                                <div class="left">
+                                    <div class="video-main">
+                                        <img src="{{ Theme::asset()->url('images/media/video-main.jpg') }}" alt="">
+                                        <p class="name font30">
+                                            THACO CHÚC MỪNG NĂM MỚI – XUÂN TÂN SỬU 2021
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="list-video-left">
+                                        <div class="video-item">
+                                            <a href="" class="img-button">
+                                                <img src="{{ Theme::asset()->url('images/media/video-1.jpg') }}" alt="">
+                                                <i class="far fa-play-circle button-video"></i>
+
+                                            </a>
+                                           <p class="name font20">
+                                            MAZDA CX-30: TÂN BINH PHÂN KHÚC SUV ĐÔ THỊ CÓ GÌ HẤP DẪN KHÁCH HÀNG?
+                                           </p>                         
+                                        </div>
+                                        <div class="video-item ">
+                                            <a href="" class="img-button">
+                                                <img src="{{ Theme::asset()->url('images/media/video-2.jpg') }}" alt="">
+                                                <i class="far fa-play-circle button-video"></i>
+                                            </a>
+                                            
+                                          <p class="name  font20">
+                                            10 ĐIỂM GIÚP MAZDA6 MỚI THUYẾT PHỤC KHÁCH HÀNG VIỆT NAM
+                                          </p>
+                                        </div>
+                                        <div class="video-item ">
+                                            <a href="" class="img-button">
+                                                <img src="{{ Theme::asset()->url('images/media/video-2.jpg') }}" alt="">
+                                                <i class="far fa-play-circle button-video"></i>
+                                            </a>
+                                          
+                                          <p class="name  font20">
+                                            10 ĐIỂM GIÚP MAZDA6 MỚI THUYẾT PHỤC KHÁCH HÀNG VIỆT NAM
+                                          </p>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                         
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -186,7 +410,7 @@
             <div class="modal-body mCustomScrollbar p-0" data-mcs-theme="dark">
                     
                     <div class="list-album">
-                        <div class="album-item "data-target="#album_modal" data-toggle="modal">
+                        <div class="album-item "data-target="#album_modal-detail" data-toggle="modal">
                             <img src="{{ Theme::asset()->url('images/media/1-detail.jpg') }}" alt="">
                             
                             <div class="album-item__download">
@@ -254,7 +478,70 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="album_modal-detail" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        
+        <div class="modal-content">
+            <div class="modal-header">     
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fal fa-times"></i>
+                </button>
+               
+              </div>
+              <div class="slide-content">
+                <div class="swiper-container gallery-top">
+                    <div class="title_modal">
+                        <h3 class="name font30">THACO trao tặng 126 xe chuyên dụng vận chuyển vắc xin và phục vụ tiêm chủng lưu động
+                        </h3>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                            <p class="">THACO trao tặng 126 xe trong đó bao gồm 63 xe chuyên dụng vận chuyển vắcxin</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                            <p class="">THACO trao tặng 126 xe trong đó bao gồm 63 xe chuyên dụng vận chuyển vắcxin</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                            <p class="">THACO trao tặng 126 xe trong đó bao gồm 63 xe chuyên dụng vận chuyển vắcxin</p>
+                        </div>
+                         <div class="swiper-slide">
+                            <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                            <p class="">THACO trao tặng 126 xe trong đó bao gồm 63 xe chuyên dụng vận chuyển vắcxin</p>
+                        </div>
+                        
+                    </div>
+                   
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-button-next">  </div>
+                    <div class="swiper-button-prev"> </div>
+                </div>
+              </div>
+             
+            
+        </div>
+        
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.34/swiper-bundle.min.js"></script>
+<script>
+            var gallery_top = new Swiper(".gallery-top", {
+    slidesPerView: 1,
+    speed: 400,
+    scrollbar: {
+        el: ".swiper-scrollbar",
 
+    },
+    navigation: {
+        nextEl: '.gallery-top .swiper-button-next',
+        prevEl: '.gallery-top .swiper-button-prev',
+    },
+
+});
+</script>
 <style>
     .list-social-sidebar {
     display: none;
@@ -293,3 +580,5 @@
         }
 
 </style>
+
+
