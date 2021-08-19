@@ -471,6 +471,22 @@ function hasScrolled() {
     }
 
 }
+// change bg introduce page
+$(window).on("scroll touchmove", function() {
+    if ($(document).scrollTop() >= $(".develop-wrapper").position().top) {
+        $('.develop__title').addClass('active');
+        $('.img-white').addClass('d-block');
+        $('.img-blue').addClass('d-none');
+        $('.big-title').addClass('text-white');
+
+    } else {
+        $('.develop__title').removeClass('active');
+        $('.img-white').removeClass('d-block');
+        $('.img-blue').removeClass('d-none');
+        $('.big-title').removeClass('text-white');
+
+    };
+});
 var gallery_top = new Swiper(".gallery-top", {
     slidesPerView: 1,
     speed: 400,

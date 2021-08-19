@@ -343,6 +343,12 @@
             margin-left: 10px;
         }
     }
+    .develop__title.active {
+        background-color: #121212;
+        -webkit-transition: background-color .7s;
+        -o-transition: background-color .7s;
+        transition: background-color .7s;
+    }
     .develop-banner {
         background-repeat: no-repeat;
         background-size: cover;

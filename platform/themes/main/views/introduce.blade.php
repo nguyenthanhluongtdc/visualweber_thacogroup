@@ -437,12 +437,13 @@
                 </div>    
     </div>
     
-    <div class="develop-wrapper mt-40 mb-40">
-        <div class="develop__title mt-40 container-customize" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-            <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
+    <div class="develop-wrapper">
+        <div class="develop__title  pt-40 pb-40 container-customize" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+            <img class="img-blue" src="{{ Theme::asset()->url('images/introduce/arrow.png') }}"  alt="">
+            <img class="img-white" src="{{ Theme::asset()->url('images/introduce/icon-arrow-white.png') }}"  alt="" style="display:none">
             <h2 class="font50 big-title">QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
         </div>
-            <div class="develop-banner mt-40 lazyloaded " style="background-image:url('{{ Theme::asset()->url('images/introduce/1.jpg')}}')">
+            <div class="develop-banner lazyloaded " style="background-image:url('{{ Theme::asset()->url('images/introduce/1.jpg')}}')">
                 <div class="develop-content-wrapper">
                     <div class="develop-content__slider">
                         <div class="row">
