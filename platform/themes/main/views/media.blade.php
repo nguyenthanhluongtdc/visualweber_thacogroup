@@ -337,7 +337,13 @@
                             <div class="list-video" >
                                 <div class="left">
                                     <div class="video-main">
-                                        <img src="{{ Theme::asset()->url('images/media/video-main.jpg') }}" alt="">
+                                        {{-- <img src="{{ Theme::asset()->url('images/media/video-main.jpg') }}" alt="">
+                                         --}}
+                                         <div class="video-wrapper">
+                                            <video muted   autoplay class="__video w-100">
+                                                <source src="{{ Theme::asset()->url('images/video/chuc-mung-nam-moi.mp4') }}" type="video/mp4">
+                                            </video> 
+                                        </div>
                                         <p class="name font30">
                                             THACO CHÚC MỪNG NĂM MỚI – XUÂN TÂN SỬU 2021
                                         </p>
@@ -479,7 +485,7 @@
     </div>
 </div>
 <div class="modal fade" id="album_modal-detail" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         
         <div class="modal-content">
             <div class="modal-header">     
