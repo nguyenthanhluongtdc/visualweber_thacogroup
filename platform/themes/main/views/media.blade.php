@@ -340,7 +340,7 @@
                                         {{-- <img src="{{ Theme::asset()->url('images/media/video-main.jpg') }}" alt="">
                                          --}}
                                          <div class="video-wrapper">
-                                            <video muted   autoplay class="__video w-100">
+                                            <video muted loop  autoplay class="__video w-100">
                                                 <source src="{{ Theme::asset()->url('images/video/chuc-mung-nam-moi.mp4') }}" type="video/mp4">
                                             </video> 
                                         </div>
