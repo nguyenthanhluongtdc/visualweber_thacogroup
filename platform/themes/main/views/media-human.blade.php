@@ -19,22 +19,22 @@
        <div class="swiper-pagination"></div>
      
    </div>
-</section>
+   </section>
    <div class="container-customize">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="/">Trang chủ</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="/">Truyền thông</a>
-                        </li>
-                
-                        <li class="breadcrumb-item active">Sự kiện</li>
-            </ol>
-        </nav>
-    </div>
-<section>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="/">Trang chủ</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="/">Truyền thông</a>
+                    </li>
+            
+                    <li class="breadcrumb-item active">Con người</li>
+        </ol>
+    </nav>
+</div>
+   <section>
        <div class="media_content-wrapper mb-100">
            <div class="container-customize">
                <div class="media-content">
@@ -339,9 +339,9 @@
                                <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                    <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
                                    <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold">Thông cáo báo chí</a>
-                                   <a href="/con-nguoi" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
+                                   <a href="/con-nguoi" class="item_link list-group-item  font18 font-myria-bold active">Con người</a>
                                    <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
-                                   <a href="/su-kien" class="item_link list-group-item  font18 font-myria-bold active">Sự kiện</a>
+                                   <a href="/su-kien" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
                                    <a href="/thong-diep" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
                                    <a href="/thu-vien-anh-va-video" class="item_link list-group-item  font18 font-myria-bold">Media</a>
                                </div>

@@ -19,7 +19,7 @@
      
    </div>
    </section>
-   <section>
+ <section>
     <div class="container-customize">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -30,11 +30,11 @@
                             <a href="/">Truyền thông</a>
                         </li>
                 
-                        <li class="breadcrumb-item active">Thông cáo báo chí</li>
+                        <li class="breadcrumb-item active">Thông điệp</li>
             </ol>
         </nav>
     </div>
-   </section>
+ </section>
 <section class="meidia-newspapers mb-60">
     <div class="meidia-newspapers-wrapper">
         <div class="container-customize">
@@ -327,11 +327,11 @@
                             <div class="media__content_right">
                                 <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                     <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
-                                    <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold active">Thông cáo báo chí</a>
+                                    <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold">Thông cáo báo chí</a>
                                     <a href="/con-nguoi" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
                                     <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
                                     <a href="/su-kien" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
-                                    <a href="/thong-diep" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
+                                    <a href="/thong-diep" class="item_link list-group-item  font18 font-myria-bold active">Thông điệp</a>
                                     <a href="/thu-vien-anh-va-video" class="item_link list-group-item  font18 font-myria-bold">Media</a>
                                 </div>
                                 <div class="list-post-new">

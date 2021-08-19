@@ -10,7 +10,10 @@ register_page_template([
     'infomation' => 'Infomation',
     'contact' => 'Contact',
     'media-event' => 'Media Event',
-
+    'media-human' => 'Human',
+    'media-message' => 'Message',
+    'media-news' => 'News',
+ 
 ]);
 
 register_sidebar([
