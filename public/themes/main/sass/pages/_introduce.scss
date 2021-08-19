@@ -307,7 +307,7 @@
         }
         .bottom {
             display: flex;
-            padding: 5% 0;
+            margin: 5% 0 -100px 0;
             justify-content: space-between;
             .bottom-content {
                 max-width: 232px;
@@ -338,6 +338,7 @@
         font-family: $MyriadPro-Bold;
         text-transform: uppercase;
         color: $big-title;
+        padding-top: 140px;
         .big-title {
             margin-bottom: 0;
             margin-left: 10px;

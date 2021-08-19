@@ -438,7 +438,7 @@
     </div>
     
     <div class="develop-wrapper">
-        <div class="develop__title  pt-40 pb-40 container-customize" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+        <div class="develop__title pb-40 container-customize" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             <img class="img-blue" src="{{ Theme::asset()->url('images/introduce/arrow.png') }}"  alt="">
             <img class="img-white" src="{{ Theme::asset()->url('images/introduce/icon-arrow-white.png') }}"  alt="" style="display:none">
             <h2 class="font50 big-title">QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
