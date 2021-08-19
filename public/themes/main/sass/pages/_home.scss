@@ -433,9 +433,32 @@
                     .field-activity-slide-top {
                         height: 37vw;
                         .swiper-slide {
-                            .__video {
-                                height: 37vw;
-                                object-fit: cover;
+                            .read-more {
+                                padding: 4px 14px;
+                                color: white;
+                                border: 1px solid #fff;
+                                text-decoration: none;
+                                position: absolute;
+                                right: 5%;
+                                bottom: 30px;
+                                z-index: 2;
+                            }
+                            .video-wrapper {
+                                position: relative;
+                                .__video {
+                                    height: 37vw;
+                                    object-fit: contain;
+                                }
+                                .read-more {
+                                    padding: 4px 14px;
+                                    color: white;
+                                    border: 1px solid #fff;
+                                    text-decoration: none;
+                                    position: absolute;
+                                    right: 20%;
+                                    bottom: 30px;
+                                    z-index: 2;
+                                }
                             }
                             img {
                                 width: 100%;

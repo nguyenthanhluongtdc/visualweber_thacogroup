@@ -403,39 +403,41 @@
                         <video muted   autoplay class="__video w-100">
                             <source src="{{ Theme::asset()->url('images/video/chuc-mung-nam-moi.mp4') }}" type="video/mp4">
                         </video> 
+                        <a href="" class="read-more">Xem thêm</a>
                     </div>
                     
                 </div>
                 <div class="swiper-slide">
                                       
                     <img src="{{Theme::asset()->url('images/home/transport/icon2-img1.jpg') }}" alt="">
-                    
+                    <a href="" class="read-more">Xem thêm</a>
                 </div>
                 <div class="swiper-slide">                  
                    
                     <img src="{{Theme::asset()->url('images/home/transport/icon2-img2.jpg') }}" alt="">
-                    
+                    <a href="" class="read-more">Xem thêm</a>
                 </div>
                 <div class="swiper-slide">                  
                    
                     <img src="{{Theme::asset()->url('images/home/transport/icon3-img1.jpg') }}" alt="">
-                    
+                    <a href="" class="read-more">Xem thêm</a>
                 </div>
                 <div class="swiper-slide">                  
                     
                     <img src="{{Theme::asset()->url('images/home/transport/icon4-img1.jpg') }}" alt="">
-                    
+                    <a href="" class="read-more">Xem thêm</a>
                 </div>
                 <div class="swiper-slide">                  
                    
                     <img src="{{Theme::asset()->url('images/home/transport/icon5-img1.jpg') }}" alt="">
-                    
+                    <a href="" class="read-more">Xem thêm</a>
                 </div>
                
             </div>
             <div class="swiper-pagination"></div>
+            
         </div>
-        <a href="" class="read-more">Xem thêm</a>
+       
        
     </div>
 </div>

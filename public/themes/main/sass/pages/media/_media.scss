@@ -390,11 +390,8 @@
                 margin-top: 20px;
                 .media-video {
                     max-height: 32vw;
-                    .mCSB_scrollTools {
-                        width: 6px;
-                    }
                     .mCSB_scrollTools .mCSB_draggerContainer {
-                        // width: 4px;
+                        width: 4px;
                         background: gray;
                         right: 0;
                         margin-right: 0;
@@ -455,15 +452,23 @@
 }
 
 #album_modal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 92%;
-    max-width: 1376px;
-    width: 80vw;
     .modal-content {
         padding: 3% 4.5% 3% 7%;
         background: #f1f1f1;
+        width: 80%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        max-height: 100%;
+        border-radius: 0;
+        margin: auto;
         .mCSB_scrollTools {
             width: 6px;
         }
@@ -507,7 +512,7 @@
         .modal-body {
             overflow-y: hidden;
             overflow-x: hidden;
-            max-height: 30vw;
+            // max-height: 30vw;
         }
     }
     .list-album {
@@ -533,18 +538,23 @@
 }
 
 #album_modal-detail .modal-dialog {
-    max-width: 1376px;
-    // width: 80vw;
-    width: 80vw;
-    margin: auto;
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 92%;
     .modal-content {
         margin-left: -17px;
         padding: 3% 6% 3% 6%;
-        width: 100%;
+        width: 80%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        max-height: 100%;
+        border-radius: 0;
+        margin: auto;
         background: #f1f1f1;
         .modal-header {
             padding: 0;
@@ -576,10 +586,9 @@
                 text-align: center;
                 img {
                     width: 100%;
-                    height: 30vw;
-                    //    width: 30vw; 
-                    // height: 50vh;
-                    object-fit: cover;
+                    height: auto;
+                    object-fit: contain;
+                    object-position: center;
                 }
                 p {
                     padding: 10px 0;

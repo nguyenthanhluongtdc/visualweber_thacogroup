@@ -113,12 +113,16 @@ body {
     object-fit: cover!important;
 }
 
-.font40 {
-    font-size: 40px;
+.font60 {
+    font-size: 60px;
 }
 
 .font50 {
     font-size: 50px;
+}
+
+.font40 {
+    font-size: 40px;
 }
 
 .font30 {
@@ -174,6 +178,9 @@ body {
     }
     .mb-60 {
         margin-bottom: 40px;
+    }
+    .font60 {
+        font-size: 50px;
     }
     .font50 {
         font-size: 40px;
