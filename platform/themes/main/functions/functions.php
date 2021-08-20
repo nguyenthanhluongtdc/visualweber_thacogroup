@@ -13,6 +13,7 @@ register_page_template([
     'media-human' => 'Human',
     'media-message' => 'Message',
     'media-news' => 'News',
+    'security-term' => 'Security Term',
  
 ]);
 

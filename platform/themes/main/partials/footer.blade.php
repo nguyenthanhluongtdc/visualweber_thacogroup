@@ -98,12 +98,12 @@
     
                         </div>
                         <div class="col-md-2 col-sm-2 col-6">
-                          <a class="text-white" href="">Điều khoản sử dụng
+                          <a class="text-white" href="/dieu-khoan-su-dung">Điều khoản sử dụng
 
                         </a>
                         </div>
                         <div class="col-md-3 col-sm-4 col-6">
-                           <a href="" class="text-white">Chính sách bảo mật
+                           <a href="/chinh-sach-bao-mat" class="text-white">Chính sách bảo mật
 
                         </a>
                         </div>
