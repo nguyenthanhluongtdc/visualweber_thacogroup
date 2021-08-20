@@ -505,3 +505,9 @@ var gallery_top = new Swiper(".gallery-top", {
     },
 
 });
+// if ($('.filter').length > 0) {
+//     $('.filler').hover(function() {
+//         $('.filler-list').addClass('d-block');
+//     });
+
+// }
