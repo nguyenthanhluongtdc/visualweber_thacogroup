@@ -72,7 +72,7 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx</p>
+                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -106,7 +106,7 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx</p>
+                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -141,7 +141,7 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx</p>
+                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -176,7 +176,7 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx</p>
+                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -211,7 +211,7 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx</p>
+                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -245,7 +245,7 @@
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx</p>
+                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>

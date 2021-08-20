@@ -44,7 +44,7 @@
                     color: #171717;
                     font-family: $MyriadPro-Bold;
                     &:hover {
-                        color: unset;
+                        color: $main_color;
                     }
                 }
             }
@@ -60,6 +60,10 @@
                 font-family: $MyriadPro-Bold;
                 border-top: .5px solid #707070;
                 padding-top: 10px;
+                .time {
+                    color: #bcbcbc;
+                    font-family: $MyriadPro-Regular;
+                }
             }
             .size-dowload {
                 span.left {

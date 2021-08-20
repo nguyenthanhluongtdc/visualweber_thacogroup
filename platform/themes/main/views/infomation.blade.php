@@ -18,6 +18,19 @@
       
     </div>
 </section>
+<div class="container-customize">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="/">Trang chủ</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="/truyenthong">Quan hệ cổ đông</a>
+                    </li>
+                    <li class="breadcrumb-item active">Công bố thông tin</li>
+        </ol>
+    </nav>
+</div>
 <section class="infomation-content"> 
     <div class="infomation-wrapper">
             <div class="infomation-title mt-80">
@@ -32,7 +45,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum 
                     </p>
                     <p class="title-docx font20 ">
-                        CBTT phat hanh co phieu tang von co phan.pdf</p>
+                        CBTT phat hanh co phieu tang von co phan.pdf <span class="time">(20/08/2021)</span></p>
                     <p class="size-dowload">
                         <span class="left font20">804,24KB</span>
                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -67,7 +80,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum 
                     </p>
                     <p class="title-docx font20 ">
-                        CBTT phat hanh co phieu tang von co phan.pdf</p>
+                        CBTT phat hanh co phieu tang von co phan.pdf  <span class="time">(20/08/2021)</span></p>
                     <p class="size-dowload">
                         <span class="left font20">804,24KB</span>
                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -102,7 +115,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum 
                     </p>
                     <p class="title-docx font20 ">
-                        CBTT phat hanh co phieu tang von co phan.pdf</p>
+                        CBTT phat hanh co phieu tang von co phan.pdf  <span class="time">(20/08/2021)</span></p>
                     <p class="size-dowload">
                         <span class="left font20">804,24KB</span>
                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -137,7 +150,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum 
                     </p>
                     <p class="title-docx font20 ">
-                        CBTT phat hanh co phieu tang von co phan.pdf</p>
+                        CBTT phat hanh co phieu tang von co phan.pdf  <span class="time">(20/08/2021)</span></p>
                     <p class="size-dowload">
                         <span class="left font20">804,24KB</span>
                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -172,7 +185,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum 
                     </p>
                     <p class="title-docx font20 ">
-                        CBTT phat hanh co phieu tang von co phan.pdf</p>
+                        CBTT phat hanh co phieu tang von co phan.pdf  <span class="time">(20/08/2021)</span></p>
                     <p class="size-dowload">
                         <span class="left font20">804,24KB</span>
                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -207,7 +220,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum 
                     </p>
                     <p class="title-docx font20 ">
-                        CBTT phat hanh co phieu tang von co phan.pdf</p>
+                        CBTT phat hanh co phieu tang von co phan.pdf  <span class="time">(20/08/2021)</span></p>
                     <p class="size-dowload">
                         <span class="left font20">804,24KB</span>
                         <span class=""><a href="">DOWNLOAD</a></span>

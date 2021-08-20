@@ -74,19 +74,19 @@
                     padding: 20px;
                     width: 32%;
                     margin-bottom: 3%;
+                    .title {
+                        a {
+                            color: #171717;
+                            font-family: $MyriadPro-Bold;
+                        }
+                    }
                     &:hover {
                         // filter: drop-shadow(2px 3px 4px #ccc);
                         box-shadow: 0 7px 10px 1px #3333;
                         transition: box-shadow .5s;
                         cursor: pointer;
-                    }
-                    .title {
                         a {
-                            color: #171717;
-                            font-family: $MyriadPro-Bold;
-                            &:hover {
-                                color: unset;
-                            }
+                            color: $main_color;
                         }
                     }
                     .desc {
@@ -101,6 +101,10 @@
                         padding-top: 10px;
                         @media screen and (max-width: 1440px) {
                             font-size: 14px;
+                        }
+                        .time {
+                            color: #bcbcbc;
+                            font-family: "MyriadPro-Regular";
                         }
                     }
                     .size-dowload {

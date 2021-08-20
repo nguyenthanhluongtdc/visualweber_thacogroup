@@ -3,15 +3,13 @@
     <div class="container-customize">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                @foreach (Theme::breadcrumb()->getCrumbs() as $i => $crumb)
-                    @if ($i != (count(Theme::breadcrumb()->getCrumbs()) - 1))
                         <li class="breadcrumb-item">
-                            <a href="{{ $crumb['url'] }}">Trang chủ</a>
+                            <a href="/">Trang chủ</a>
                         </li>
-                    @else
+                        <li class="breadcrumb-item">
+                            <a href="/truyenthong">Truyền thông</a>
+                        </li>
                         <li class="breadcrumb-item active">Media</li>
-                    @endif
-                @endforeach
             </ol>
         </nav>
     </div>
@@ -52,10 +50,8 @@
                         </div>
                         <div class="calender">
                             <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
-                                       <input type="date" id="datepicker" name="calendars" autocomplete="off" class="font15">
-                              </div>
-                            
-                            
+                                 <input type="date" id="datepicker" name="calendars" autocomplete="off" class="font15">
+                            </div>
                         </div>
                         <div class="filter">
                             <label for="">Filter</label>    
@@ -274,63 +270,71 @@
                         
                     </ul>
                     <div class="list-tool">
-                        <div class="search">
-                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
-                            <button class="btn btn-secondary" type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                        <div class="calender">
-                            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
-                                <input type="date" id="datepicker" name="calendars" autocomplete="off" class="font15">
+                        <form action="" class="form-action">
+                            <div class="search">
+                                <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
+                                <button class="btn btn-secondary" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
                             </div>
-
-                        </div>
-                        <div class="filter">
-                            <label for="">Filter</label>    
-                            <select class="filler">
-                            </select>
-                        </div>
-                        <div class="arrange">
-                            <img src="{{ Theme::asset()->url('images/media/Sort.png') }}" alt="">
-                        </div>
+                            <div class="calender">
+                                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
+                                    <input type="date" id="datepicker" name="calendars" autocomplete="off" class="font15">
+                                </div>
+    
+                            </div>
+                            <div class="filter" id="#filter">
+                                <div class="filter__title">
+                                    <label for="">Filter</label> 
+                                    <i class="fas fa-chevron-down"></i>   
+                                </div>
+                               
+                                <div class="filler-list">
+                                    <div class="col-md-12 col-12 search-cate">
+                                        <div class="box">
+                                            <input id="one" type="checkbox">
+                                            <span class="check"></span>
+                                            <label for="one" class="font-pri font15">THACO</label>
+                                        </div>
+                                        <div class="box">
+                                            <input id="two" type="checkbox">
+                                            <span class="check"></span> 
+                                            <label for="two" class="">Ô tô & Cơ khí</label>
+                                        </div>
+                                        <div class="box">
+                                            <input id="three" type="checkbox">
+                                            <span class="check"></span>
+                                            <label for="three" class="font-pri font15">Nông Lâm Nghiệp</label>
+                                        </div>
+                                        <div class="box">
+                                            <input id="four" type="checkbox">
+                                            <span class="check"></span>
+                                            <label for="four" class="font-pri font15">Đầu Tư - Xây Dựng</label>
+                                        </div>
+                                        <div class="box">
+                                            <input id="five" type="checkbox">
+                                            <span class="check"></span>
+                                            <label for="five" class="font-pri font15">Thương Mại - Dịch Vụ</label>
+                                        </div>
+                                        <div class="box">
+                                            <input id="six" type="checkbox">
+                                            <span class="check"></span>
+                                            <label for="six" class="font-pri font15">Logistics</label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrange">
+                                <img src="{{ Theme::asset()->url('images/media/Sort.png') }}" alt="">
+                            </div>
+                        </form>
+                       
                     </div>
                 
                 </div>
-                <div class="col-md-12 col-12 search-cate">
-                    
-                    <div class="box">
-                        <input id="one" type="checkbox">
-                        <span class="check"></span>
-                        <label for="one" class="font-pri font15">THACO</label>
-                    </div>
-                    <div class="box">
-                        <input id="two" type="checkbox">
-                        <span class="check"></span> 
-                        <label for="two" class="">Ô tô & Cơ khí</label>
-                    </div>
-                    <div class="box">
-                        <input id="three" type="checkbox">
-                        <span class="check"></span>
-                        <label for="three" class="font-pri font15">Nông Lâm Nghiệp</label>
-                    </div>
-                    <div class="box">
-                        <input id="four" type="checkbox">
-                        <span class="check"></span>
-                        <label for="four" class="font-pri font15">Đầu Tư - Xây Dựng</label>
-                    </div>
-                    <div class="box">
-                        <input id="five" type="checkbox">
-                        <span class="check"></span>
-                        <label for="five" class="font-pri font15">Thương Mại - Dịch Vụ</label>
-                    </div>
-                    <div class="box">
-                        <input id="six" type="checkbox">
-                        <span class="check"></span>
-                        <label for="six" class="font-pri font15">Logistics</label>
-                    </div>
-                    
-                </div>
+                
+               
                 <div class="tab-content" id="nav-tabContent tab-content2">
                     <div class="tab-pane fade active show" id="media-image" role="tabpanel" aria-labelledby="field-1-tab">
                         <div class="media-video mCustomScrollbar" data-mcs-theme="dark">
