@@ -505,9 +505,25 @@ var gallery_top = new Swiper(".gallery-top", {
     },
 
 });
-// if ($('.filter').length > 0) {
-//     $('.filler').hover(function() {
-//         $('.filler-list').addClass('d-block');
-//     });
+if ($('.album-item.image').length > 0) {
+    $('.album-item.image').click(function() {
 
-// }
+        $('#album_modal-detail').modal('show');
+    });
+
+}
+if ($('.album-item__count.album').length > 0) {
+    $('.album-item__count.album').click(function() {
+        $('#album_modal-detail').modal('hide');
+        // $('#album_modal').modal('show');
+
+    });
+
+}
+if ($('.icon-sort').length > 0) {
+    $('.icon-sort').click(function() {
+
+        $('.sort-time').css('display', 'block');
+    });
+
+}

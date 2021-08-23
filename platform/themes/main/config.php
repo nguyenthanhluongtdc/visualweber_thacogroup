@@ -60,8 +60,9 @@ return [
             $theme->asset()->add('aos_style', '//unpkg.com/aos@2.3.1/dist/aos.css');
             $theme->asset()->add('font-awesome-pro', '//pro.fontawesome.com/releases/v5.10.0/css/all.css');
             $theme->asset()->add('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
-            
+            $theme->asset()->add('checkbox-custom', '//cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css');
             $theme->asset()->add('carousel', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
+           
            
            
             $theme->asset()->add('swiper', '//unpkg.com/swiper/swiper-bundle.min.css');
