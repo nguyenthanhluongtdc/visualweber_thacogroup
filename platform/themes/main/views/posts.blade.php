@@ -210,14 +210,14 @@
                                     <div class="img-content">
                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                             <div class="post-thumbnail">
-                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-1.jpg') }}" alt=""></a>
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/truyenthong/1.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">NHỮNG BÔNG HỒNG THÉP</h3></a>
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THILOGI đẩy mạnh dịch vụ vận chuyển gia súc</h3></a>
                                           
                                             <p class="time">23/06/2021</p>
-                                            <p class="desc font18">Tại KCN THACO Chu Lai, có những công việc tưởng chừng chỉ dành cho nam giới song lại có sự góp mặt của nhiều nhân sự nữ, đó là bảo vệ. Đây được xem là công việc trái nghề đối với “phái yếu” nhưng bằng sự đam mê, yêu nghề, ham học hỏi, các chị đã nỗ lực vượt khó, hoàn thành tốt nhiệm vụ. </p>
+                                            <p class="desc font18">Ngày 27/7, THILOGI vận chuyển gần 2.000 con heo gồm 1.200 heo con từ tỉnh Bình Định và gần 800 heo thịt từ tỉnh An Giang đến huyện Vĩnh Cửu, tỉnh Đồng Nai cho Công ty TNHH sản xuất heo giống và thức ăn chăn nuôi Việt Đan.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -225,14 +225,14 @@
                                     <div class="img-content">
                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                             <div class="post-thumbnail">
-                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-2.jpg') }}" alt=""></a>
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/truyenthong/2.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">THACO TẶNG THIẾT BỊ XÉT NGHIỆM COVID-19 CHO TRUNG TÂM KIỂM SOÁT BỆNH TẬT QUẢNG NAM</h3></a>
+                                            <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">Xe tiêm chủng lưu động lên đường về các địa phương</h3></a>
                                          
                                             <p class="time">23/06/2021</p>
-                                            <p class="desc font18">Ngày 28/05/2021, Tập đoàn THACO đã tài trợ máy tách chiết tự động xét nghiệm Covid-19 với trị giá gần 2 tỷ đồng cho Trung tâm kiểm soát bệnh tật (CDC) Quảng Nam. </p>
+                                            <p class="desc font18">Tại Lễ phát động triển khai chiến dịch tiêm chủng vắc xin phòng Covid-19 toàn quốc, THACO đã trao tặng 126 xe chuyên dụng gồm 63 xe chuyên dụng vận chuyển vắc xin và 63 xe chuyên dụng phục vụ tiêm chủng lưu động. Từ ngày 21-23/07/2021, THACO đã tiến hành bàn giao 63 xe vận chuyển vắc xin cho các Quân khu theo phân bổ của Bộ Y tế để sử dụng vận chuyển vắc xin đến các địa phương nhằm nhanh chóng, kịp thời triển khai chiến dịch tiêm chủng.  </p>
                                         </div>
                                     </div>
                                 </div>
@@ -240,14 +240,14 @@
                                     <div class="img-content">
                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                             <div class="post-thumbnail">
-                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-3.jpg') }}" alt=""></a>
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/truyenthong/3.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                             
-                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO - GIA ĐÌNH THỨ HAI CỦA CHÚNG TÔI</h3></a>
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Phó Chủ tịch TP.HCM thăm dự án Cầu Thủ Thiêm 2 thi công mùa dịch</h3></a>
                                             <p class="time">23/06/2021</p>
-                                            <p class="desc font18">Sáng sớm, hình ảnh từng đoàn xe đưa rước CBNV THACO từ các ngả đường đổ về KCN THACO Chu Lai như một dấu hiệu bắt đầu ngày mới đầy sức sống. Có lẽ, gần 20 năm về trước, chẳng ai tại vùng đất Núi Thành, Quảng Nam có thể tưởng tượng được có một ngày vùng cát ...</p>
+                                            <p class="desc font18">Sáng ngày 14/7/2021, ông Lê Hòa Bình - Phó chủ tịch UBND TP. HCM đã cùng Lãnh đạo Sở GTVT TP. HCM đến thăm và làm việc tại công trường dự án cầu Thủ Thiêm 2.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -255,14 +255,74 @@
                                     <div class="img-content">
                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                             <div class="post-thumbnail">
-                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-4.jpg') }}" alt=""></a>
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/truyenthong/4.jpg') }}" alt=""></a>
                                             </div>
                                         </div>
                                         <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">TỔ HÀN MẢNG SÀN NHÀ MÁY THACO KIA: NỖ LỰC NÂNG CAO HIỆU QUẢ SẢN XUẤT & CHẤT LƯỢNG SẢN PHẨM</h3></a>
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Nhà máy THACO tải - “nỗ lực nhiều ngày đêm hoàn thành dự án để giúp ích cho cộng đồng”</h3></a>
                                             
                                             <p class="time">23/06/2021</p>
-                                            <p class="desc font18">Sáng tạo là một phẩm chất cần thiết của người lao động, nhất là trong thời đại công nghiệp 4.0. Sự sáng tạo, không ngừng tìm tòi các giải pháp, sáng kiến cải tiến giúp nâng cao năng suất, hiệu quả công việc, góp phần tích cực vào sự phát triển của công ty ...</p>
+                                            <p class="desc font18">Vừa qua, 126 xe chuyên dụng bao gồm 63 xe chuyên dụng vận chuyển vaccine và 63 xe tiêm chủng lưu động đã được THACO trao tặng cho Bộ Y tế. Việc sản xuất và bàn giao 2 lô xe này đã đáp ứng kịp thời nhu cầu cấp thiết về tiêm chủng vaccine trong tình hình dịch bệnh hết sức phức tạp hiện nay, nhất là tại TP. Hồ Chí Minh. Trong cơn bão đại dịch, dự án đã lan tỏa những hiệu ứng tích cực, có ý nghĩa nhân văn đến với cộng đồng.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/truyenthong/5.jpg') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO ủng hộ 100.000 bộ kit test nhanh Covid-19 cho tỉnh Quảng Nam & hỗ trợ phương tiện đưa người dân Quảng Nam từ TP.HCM về quê</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">Trước diễn biến hết sức phức tạp của dịch Covid-19 trong cả nước, việc khoanh vùng, truy vết, lấy mẫu xét nghiệm là nhiệm vụ cấp bách trong công tác phòng chống dịch hiện nay. Để giám sát dịch tễ nhanh chóng, góp phần hỗ trợ tích cực cho việc xét nghiệm nhằm kiểm soát kịp thời dịch bệnh trong cộng đồng, THACO đã tài trợ cho tỉnh Quảng Nam 100.000 bộ kit test nhanh kháng nguyên SARS-CoV-2 với trị giá 17 tỷ đồng. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/truyenthong/6.jpg') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Dây chuyền sản xuất xe vận chuyển vắc xin tài trợ cho Bộ Y Tế</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">Với việc tài trợ 126 xe chuyên dụng vận chuyển vắc xin và phục vụ tiêm chủng lưu động, THACO đã tích cực chung tay, góp sức hỗ trợ Bộ Y Tế triển khai chiến dịch tiêm chủng vắc xin phòng Covid-19 toàn quốc một cách thuận lợi hơn. Số xe này được sản xuất tại nhà máy Tải Thaco. Để có được sản phẩm kịp phục vụ chiến dịch, lực lượng kỹ sư, kỹ thuật viên, CBNV nhà máy đã phải nỗ lực hết mình để đáp ứng tiến độ bàn giao.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/truyenthong/7.jpg') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">50 tấn tinh bột sắn của Doanh nghiệp Việt Nam vừa được xuất khẩu qua Cảng Chu Lai</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">Cuối tháng 6/2021, THILOGI đã vận chuyển gần 50 tấn tinh bột sắn từ Nhà máy sản xuất tinh bột sắn Gia Lai (thuộc Công ty Nông sản thực phẩm Quảng Ngãi - APFCO) về cảng Chu Lai để xuất khẩu sang Trung Quốc bằng tàu biển. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/truyenthong/8.jpg') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Tiêm vaccine Covid-19 cho người lao động tại KCN THACO Chu Lai</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">Thực hiện chỉ đạo của Chính phủ về việc ưu tiên tiêm vaccine cho công nhân tại các KCN, doanh nghiệp lớn nhằm bảo vệ sức khỏe người lao động, đảm bảo duy trì sản xuất kinh doanh trước diễn biến phức tạp của dịch Covid-19, trong 3 ngày từ 24/6 đến 26/6/2021, KCN THACO Chu Lai phối hợp với Sở Y tế Quảng Nam tổ chức tiêm vaccine phòng Covid-19 đợt 1 cho 3.000 CBNV. </p>
                                         </div>
                                     </div>
                                 </div>

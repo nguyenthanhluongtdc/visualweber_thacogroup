@@ -230,7 +230,10 @@
                                 height: 100%;
                                 overflow: hidden;
                                 img {
-                                    max-width: 100%;
+                                    width: 100%;
+                                    max-height: 181px;
+                                    object-fit: cover;
+                                    object-position: center;
                                     transition: transform .3s, visibility .3s ease-in;
                                     &:hover {
                                         transform: scale(1.1);
@@ -249,6 +252,7 @@
                             }
                             .name {
                                 font-family: $MyriadPro-Bold;
+                                text-transform: uppercase;
                                 @media screen and (max-width: 1680px) {
                                     @include split_str(2);
                                 }

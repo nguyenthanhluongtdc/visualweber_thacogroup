@@ -174,103 +174,67 @@
                     <div class="tab-pane fade" id="media-single-image" role="tabpanel" aria-labelledby="field-2-tab">
                         <div class="media-banner">
                           
-                            <div class="list-album">
-                                <div class="album-item image">
+                            <div class="list-image">
+                                <div class="image-item">
                                     <img src="{{ Theme::asset()->url('images/media/1.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">THACO trao tặng 126 xe chuyên dụng vận
-                                            chuyển vắc xin và phục vụ tiêm chủng lưu động
-                                            </p>
-                                    </div>
-                                    <div class="album-item__count album">
-                                       
+                                    <div class="image-item__back">
                                         <i class="far fa-image"></i>
-                                        <p  class="quantity font18">Album</p>
+                                        <p  class="text font18">Album</p>
                                     </div>
-                                    <div class="album-item__download">
+                                    <div class="image-item__download">
                                         <i class="fas fa-download"></i>
                                     </div>
                                 </div>
-                                {{-- <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
+                                <div class="image-item">
                                     <img src="{{ Theme::asset()->url('images/media/2.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">50 tấn tinh bột sắn của Doanh nghiệp Việt Nam
-                                            vừa được xuất khẩu qua Cảng Chu Lai                                            
-                                            </p>
-                                    </div>
-                                    <div class="album-item__count">
-                                       
+                                    <div class="image-item__back">
                                         <i class="far fa-image"></i>
-                                        <p class="quantity font18">Album</p>
+                                        <p  class="text font18">Album</p>
                                     </div>
-                                    <div class="album-item__download">
+                                    <div class="image-item__download">
                                         <i class="fas fa-download"></i>
                                     </div>
                                 </div>
-                                <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
+                                <div class="image-item">
                                     <img src="{{ Theme::asset()->url('images/media/3.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">THACO tài trợ trang thiết bị, vật tư y tế phòng
-                                            chống dịch cho Công an TP.HCM                                            
-                                            </p>
-                                    </div>
-                                    <div class="album-item__count">
-                                       
+                                    <div class="image-item__back">
                                         <i class="far fa-image"></i>
-                                        <p class="quantity font18">Album</p>
+                                        <p  class="text font18">Album</p>
                                     </div>
-                                    <div class="album-item__download">
+                                    <div class="image-item__download">
                                         <i class="fas fa-download"></i>
                                     </div>
                                 </div>
-                                <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
+                                <div class="image-item">
                                     <img src="{{ Theme::asset()->url('images/media/4.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">Những trái tim nhiệt huyết
-                                            </p>
-                                    </div>
-                                    <div class="album-item__count">
-                                       
+                                    <div class="image-item__back">
                                         <i class="far fa-image"></i>
-                                        <p class="quantity font18">Album</p>
+                                        <p  class="text font18">Album</p>
                                     </div>
-                                    <div class="album-item__download">
+                                    <div class="image-item__download">
                                         <i class="fas fa-download"></i>
                                     </div>
                                 </div>
-                                <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
+                                <div class="image-item">
                                     <img src="{{ Theme::asset()->url('images/media/5.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">Tiêm vaccine Covid-19 cho người lao động
-                                            tại KCN THACO Chu Lai
-                                            
-                                            </p>
-                                    </div>
-                                    <div class="album-item__count">
-                                       
+                                    <div class="image-item__back">
                                         <i class="far fa-image"></i>
-                                        <p class="quantity font18">Album</p>
+                                        <p  class="text font18">Album</p>
                                     </div>
-                                    <div class="album-item__download">
+                                    <div class="image-item__download">
                                         <i class="fas fa-download"></i>
                                     </div>
                                 </div>
-                                <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
+                                <div class="image-item">
                                     <img src="{{ Theme::asset()->url('images/media/6.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">Mazda “trình làng” loạt xe mới tại VMS 2016
-                                            </p>
-                                    </div>
-                                    <div class="album-item__count">
-                                       
+                                    <div class="image-item__back">
                                         <i class="far fa-image"></i>
-                                        <p class="quantity font18">Album</p>
+                                        <p  class="text font18">Album</p>
                                     </div>
-                                    <div class="album-item__download">
+                                    <div class="image-item__download">
                                         <i class="fas fa-download"></i>
                                     </div>
-                                </div> --}}
-                              
+                                </div>
                             </div>
                             
                         </div>
