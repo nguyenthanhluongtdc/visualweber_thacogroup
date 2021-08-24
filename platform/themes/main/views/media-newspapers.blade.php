@@ -69,7 +69,7 @@
                                         <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
                                     </h5>
                                     <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        Ngày 14/05/2021, UBCKNN thông báo hủy tư cách công ty đại chúng đối với Công ty Cổ phần Ô tô Trường Hải (THACO) do từ ngày 01/01/2021, Luật Chứng khoán 2019 và các văn bản hướng dẫn đã có hiệu lực thi hành: Công ty cổ phần có vốn điều lệ đã góp từ 30 tỷ đồng trở lên và có tối thiểu là 10% số cổ phiếu có quyền biểu quyết do ít nhất 100 nhà đầu tư không phải là cổ đông lớn nắm giữ với cơ cấu cổ đông.
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
                                         dai chung..docx  <span class="time">(20/08/2021)</span></p>
@@ -103,10 +103,44 @@
                                         <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">THACO khai trương tổ hợp showroom 3 thương hiệu </a>
                                     </h5>
                                     <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        THACO khai trương tổ hợp showroom 3 thương hiệu BMW-MINI-BMW MOTORRAD tại TP.HCM.
+                                        BMW X7 thế hệ I và BMW X5 hoàn toàn mới đã có mặt ở Việt Nam.
                                     </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
+                                    <p class="title-docx ">TCBC_Khai truong to hop SR BMW Sala.docx <span class="time">(20/08/2021)</span></p>
+                                    <p class="size-dowload">
+                                        <span class="left">804,24KB</span>
+                                        <span class=""><a href="">DOWNLOAD</a></span>
+                                    </p>
+                                    <div class="tags">
+                                        <p class="name-tag">Tags: 
+                                        </p>
+                                        <div class="tag-list">
+                                            <p class="tag-title">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                            <p class="tag-title ">
+                                                <a href="">Lorem</a>
+                                            </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                                    <h5 class="title font18">
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">THACO khánh thành Nhà máy sản xuất Máy nông nghiệp</a>
+                                    </h5>
+                                    <p class="desc font18">
+                                        Ngày 21/2/2018, tại Khu phức hợp cơ khí ô tô Chu Lai - Trường Hải thuộc Khu KTM Chu Lai, tỉnh Quảng Nam, Công ty Cổ phần Ô tô Trường Hải (THACO) đã tổ chức lễ khánh thành Nhà máy sản xuất Máy nông nghiệp Thac
+                                    </p>
+                                    <p class="title-docx ">TCBC khanh thanh nha may san xuat may nong nghiep.doc <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -138,10 +172,9 @@
                                         <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">THACO ra mắt xe MINI Countryman hoàn toàn mới</a>
                                     </h5>
                                     <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        Ngày 30/1/2018, tại Thành phố Hồ Chí Minh, MINI châu Á và THACO đồng tổ chức lễ ra mắt dòng xe MINI Countryman mới, đây là mẫu xe lớn nhất và linh hoạt nhất trong lịch sử 58 năm của thương hiệu MINI.
                                     </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
+                                    <p class="title-docx ">TCBC MINI Countryman.docx <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -170,48 +203,13 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Tập đoàn BMW châu Á và THACO giới thiệu thương hiệu BMW và MINI tại Việt Nam</a>
                                     </h5>
                                     <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        Tập đoàn BMW châu Á và THACO giới thiệu thương hiệu BMW và MINI tại Việt Nam.
+                                        BMW Motorrad và THACO giới thiệu mô tô BMW tại Việt Nam.
                                     </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
-                                    <p class="size-dowload">
-                                        <span class="left">804,24KB</span>
-                                        <span class=""><a href="">DOWNLOAD</a></span>
-                                    </p>
-                                    <div class="tags">
-                                        <p class="name-tag">Tags: 
-                                        </p>
-                                        <div class="tag-list">
-                                            <p class="tag-title">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
-                                    </h5>
-                                    <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
+                                    <p class="title-docx ">Thong Cao Bao Chi BMW THACO.docx <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -239,10 +237,10 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">THACO bàn giao xe bus ngắm cảnh 2 tầng cho Tập đoàn Empire</a>
                                     </h5>
                                     <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        Ngày 11/07/2017, THACO đã chính thức bàn giao 12 xe bus hai tầng mui trần Coco City Tour cho tập đoàn Empire. Đây là loại xe bus chuyên dụng phục vụ cho du lịch, phương tiện này khá phổ biển và quen thuộc với du khách khi đến London, Berlin, Barcelona hay Hồng Kông, Thượng Hải, Singapore…
                                     </p>
                                     <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
                                         dai chung..docx  <span class="time">(20/08/2021)</span></p>
@@ -382,107 +380,3 @@
         </div>
     </div>
 </section>
-{{-- <section class="media-tab mt-40">
-    <div class="container-customize">
-        <div class="row">
-            <div class="col-md-9">
-                <div class="media-tab-wrapper">
-                    <div class="media__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                        <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
-                        <h1  class="font50 big-title">Media</h1>
-                    </div>
-                    <div class="media-tab__title">
-                        <div class="media__tabs" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                            <ul class=" nav nav-tabs mb-0" id="tab-media" role="tablist">
-                                <li class="__tabs__item " role="media">
-                                    <a class="__tabs__link nav-link active" id="media-image-tab" data-toggle="tab" role="tab" aria-controls="media-image" aria-selected="true" href="#media-image" title="Tất Cả">
-                                       HÌNH ẢNH 
-                                    </a>
-                                </li>
-                                <li class="__tabs__item" role="media">
-                                    <a class="__tabs__link nav-link" id="media-video-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-video" title="Tất Cả">
-                                      VIDEO  
-                                    </a>
-                                </li>
-                                
-                            </ul>
-                        
-                        </div>
-                        <div class="view-all">
-                            <a href="">Xem tất cả</a>
-                        </div>
-                    </div>
-                    
-                </div>
-               
-            </div>
-        </div>
-       
-        
-    </div>
-    <div class="media-wrapper mt-40" >
-        <div class="tab-content" id="nav-tabContent tab-content2">
-            <div class="tab-pane fade active show" id="media-image" role="tabpanel" aria-labelledby="field-1-tab">
-                <div class="media-banner">
-                    
-                        <div class="swiper-container media-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide">
-                                                    
-                                    <img src="{{Theme::asset()->url('images/home/transport/icon2-img1.jpg') }}" alt="">
-                                    
-                                </div>
-                                <div class="swiper-slide">                  
-                                
-                                    <img src="{{Theme::asset()->url('images/home/transport/icon2-img2.jpg') }}" alt="">
-                                    
-                                </div>
-                                <div class="swiper-slide">                  
-                                
-                                    <img src="{{Theme::asset()->url('images/home/transport/icon3-img1.jpg') }}" alt="">
-                                    
-                                </div>
-                                <div class="swiper-slide">                  
-                                    
-                                    <img src="{{Theme::asset()->url('images/home/transport/icon4-img1.jpg') }}" alt="">
-                                    
-                                </div>
-                                <div class="swiper-slide">                  
-                                
-                                    <img src="{{Theme::asset()->url('images/home/transport/icon5-img1.jpg') }}" alt="">
-                                    
-                                </div>
-                            
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                        
-                        <a href="" class="read-more">Xem thêm</a>
-                    
-                </div>
-            </div>
-            <div class="tab-pane fade" id="media-video" role="tabpanel" aria-labelledby="field-1-tab">
-                <div class="media-banner">
-                        <div class="swiper-container media-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">             
-                                    <div class="video-wrapper">
-                                        <video muted   autoplay class="__video w-100">
-                                            <source src="{{ Theme::asset()->url('images/video/chuc-mung-nam-moi.mp4') }}" type="video/mp4">
-                                        </video> 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                        
-                        <a href="" class="read-more">Xem thêm</a>
-                    
-                </div>
-            </div>
-            
-        </div>
-      
-    </div>
-</section> --}}

@@ -78,6 +78,7 @@
                         a {
                             color: #171717;
                             font-family: $MyriadPro-Bold;
+                            @include split_str(2);
                         }
                     }
                     &:hover {
