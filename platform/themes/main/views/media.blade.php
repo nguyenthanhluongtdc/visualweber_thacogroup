@@ -176,7 +176,10 @@
                           
                             <div class="list-image">
                                 <div class="image-item">
-                                    <img src="{{ Theme::asset()->url('images/media/1.jpg') }}" alt="">
+                                    <div class="img-click">
+                                        <img class="" src="{{ Theme::asset()->url('images/media/1.jpg') }}" alt="">
+                                    </div>
+                                  
                                     <div class="image-item__back">
                                         <i class="far fa-image"></i>
                                         <p  class="text font18">Album</p>
@@ -186,7 +189,9 @@
                                     </div>
                                 </div>
                                 <div class="image-item">
-                                    <img src="{{ Theme::asset()->url('images/media/2.jpg') }}" alt="">
+                                    <div class="img-click">
+                                        <img class="" src="{{ Theme::asset()->url('images/media/2.jpg') }}" alt="">
+                                    </div>
                                     <div class="image-item__back">
                                         <i class="far fa-image"></i>
                                         <p  class="text font18">Album</p>
@@ -196,7 +201,9 @@
                                     </div>
                                 </div>
                                 <div class="image-item">
-                                    <img src="{{ Theme::asset()->url('images/media/3.jpg') }}" alt="">
+                                    <div class="img-click">
+                                        <img class="" src="{{ Theme::asset()->url('images/media/3.jpg') }}" alt="">
+                                    </div>
                                     <div class="image-item__back">
                                         <i class="far fa-image"></i>
                                         <p  class="text font18">Album</p>
@@ -206,7 +213,9 @@
                                     </div>
                                 </div>
                                 <div class="image-item">
-                                    <img src="{{ Theme::asset()->url('images/media/4.jpg') }}" alt="">
+                                    <div class="img-click">
+                                        <img class="" src="{{ Theme::asset()->url('images/media/4.jpg') }}" alt="">
+                                    </div>
                                     <div class="image-item__back">
                                         <i class="far fa-image"></i>
                                         <p  class="text font18">Album</p>
@@ -216,7 +225,9 @@
                                     </div>
                                 </div>
                                 <div class="image-item">
-                                    <img src="{{ Theme::asset()->url('images/media/5.jpg') }}" alt="">
+                                    <div class="img-click">
+                                        <img class="" src="{{ Theme::asset()->url('images/media/5.jpg') }}" alt="">
+                                    </div>
                                     <div class="image-item__back">
                                         <i class="far fa-image"></i>
                                         <p  class="text font18">Album</p>
@@ -226,7 +237,9 @@
                                     </div>
                                 </div>
                                 <div class="image-item">
-                                    <img src="{{ Theme::asset()->url('images/media/6.jpg') }}" alt="">
+                                    <div class="img-click">
+                                        <img class="" src="{{ Theme::asset()->url('images/media/6.jpg') }}" alt="">
+                                    </div>
                                     <div class="image-item__back">
                                         <i class="far fa-image"></i>
                                         <p  class="text font18">Album</p>

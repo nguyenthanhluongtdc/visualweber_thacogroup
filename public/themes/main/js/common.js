@@ -521,9 +521,9 @@ if ($('.image-item__back').length > 0) {
     });
 
 }
-if ($('.image-item').length > 0) {
-    $('.image-item').click(function() {
-        $('#album_modal').modal('hide');
+if ($('.img-click').length > 0) {
+    $('.img-click').click(function() {
+
         $('#album_modal-detail').modal('show');
     });
 
