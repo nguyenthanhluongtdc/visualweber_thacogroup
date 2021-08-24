@@ -536,3 +536,11 @@ if ($('.icon-sort').length > 0) {
     });
 
 }
+// filter click
+if ($('.icon-sort').length > 0) {
+    $('.icon-sort').click(function() {
+
+        $('.sort-time').css('display', 'block');
+    });
+
+}

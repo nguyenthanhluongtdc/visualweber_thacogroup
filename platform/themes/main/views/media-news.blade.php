@@ -66,13 +66,12 @@
                             <div class="list-newspapers">
                                 <div class="item-newspaper " data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Tạp chí THACO số 53</a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
+                                    <p class="title-docx ">Tap chi THACO so 53.pdf<span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -100,13 +99,12 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">THACO khai trương tổ hợp showroom 3 thương hiệu </a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Tạp chí THACO số 54 </a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
+                                    <p class="title-docx ">Tap chi THACO so 54.pdf  <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -135,13 +133,12 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">THACO ra mắt xe MINI Countryman hoàn toàn mới</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Tạp chí THACO số 55 </a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
+                                    <p class="title-docx ">Tap chi THACO so 55.pdf <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -170,13 +167,12 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Tạp chí THACO số 56</a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
+                                    <p class="title-docx ">Tap chi THACO so 56.pdf <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -205,13 +201,12 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Tạp chí THACO số 57 </a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
+                                    <p class="title-docx ">Tap chi THACO so 57.pdf  <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
@@ -239,13 +234,12 @@
                                 </div>
                                 <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                                     <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông tin v/v THACO hủy đăng ký công ty đại chúng</a>
+                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Tạp chí THACO số 58</a>
                                     </h5>
                                     <p class="desc font18">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     </p>
-                                    <p class="title-docx ">TCBC_Thong tin ve viec THACO huy dang ky cong ty
-                                        dai chung..docx  <span class="time">(20/08/2021)</span></p>
+                                    <p class="title-docx ">Tap chi THACO so 58.pdf <span class="time">(20/08/2021)</span></p>
                                     <p class="size-dowload">
                                         <span class="left">804,24KB</span>
                                         <span class=""><a href="">DOWNLOAD</a></span>
