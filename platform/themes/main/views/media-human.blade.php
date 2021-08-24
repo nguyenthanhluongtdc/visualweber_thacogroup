@@ -222,14 +222,14 @@
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-1.jpg') }}" alt=""></a>
+                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/1.jpg') }}" alt=""></a>
                                                </div>
                                            </div>
                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">NHỮNG BÔNG HỒNG THÉP</h3></a>
+                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO tài trợ học bổng “Nâng bước Thủ khoa”</h3></a>
                                              
                                                <p class="time">23/06/2021</p>
-                                               <p class="desc font18">Tại KCN THACO Chu Lai, có những công việc tưởng chừng chỉ dành cho nam giới song lại có sự góp mặt của nhiều nhân sự nữ, đó là bảo vệ. Đây được xem là công việc trái nghề đối với “phái yếu” nhưng bằng sự đam mê, yêu nghề, ham học hỏi, các chị đã nỗ lực vượt khó, hoàn thành tốt nhiệm vụ. </p>
+                                               <p class="desc font18">Ngày 29/11 vừa qua, THACO đã tài trợ 100 triệu đồng trong Chương trình vinh danh và trao học bổng “Nâng bước thủ khoa 2020”. Đây là chương trình do Quỹ Hỗ trợ Tài năng trẻ Việt Nam và báo Tiền Phong phối hợp tổ chức. </p>
                                            </div>
                                        </div>
                                    </div>
@@ -237,14 +237,14 @@
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-2.jpg') }}" alt=""></a>
+                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/2.jpg') }}" alt=""></a>
                                                </div>
                                            </div>
                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                               <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">THACO TẶNG THIẾT BỊ XÉT NGHIỆM COVID-19 CHO TRUNG TÂM KIỂM SOÁT BỆNH TẬT QUẢNG NAM</h3></a>
+                                               <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">THACO nhận bằng khen trong phong trào “Quảng Nam chung tay vì người nghèo” 2016 – 2020</h3></a>
                                             
                                                <p class="time">23/06/2021</p>
-                                               <p class="desc font18">Ngày 28/05/2021, Tập đoàn THACO đã tài trợ máy tách chiết tự động xét nghiệm Covid-19 với trị giá gần 2 tỷ đồng cho Trung tâm kiểm soát bệnh tật (CDC) Quảng Nam. </p>
+                                               <p class="desc font18">Sáng ngày 19/11, UBND tỉnh Quảng Nam đã tổ chức Hội nghị tổng kết Chương trình mục tiêu quốc gia Giảm nghèo bền vững và Phong trào thi đua “Quảng Nam chung tay vì người nghèo” giai đoạn 2016 - 2020. Tại Hội nghị, THACO được UBND tỉnh trao tặng Bằng khen vì đã có những đóng góp thiết thực trong việc thực hiện các hoạt động vì cộng đồng và hỗ trợ người nghèo. </p>
                                            </div>
                                        </div>
                                    </div>
@@ -252,14 +252,14 @@
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-3.jpg') }}" alt=""></a>
+                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/3.jpg') }}" alt=""></a>
                                                </div>
                                            </div>
                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                
-                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO - GIA ĐÌNH THỨ HAI CỦA CHÚNG TÔI</h3></a>
+                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Chủ tịch THACO chúc mừng Ngày Nhà giáo Việt Nam</h3></a>
                                                <p class="time">23/06/2021</p>
-                                               <p class="desc font18">Sáng sớm, hình ảnh từng đoàn xe đưa rước CBNV THACO từ các ngả đường đổ về KCN THACO Chu Lai như một dấu hiệu bắt đầu ngày mới đầy sức sống. Có lẽ, gần 20 năm về trước, chẳng ai tại vùng đất Núi Thành, Quảng Nam có thể tưởng tượng được có một ngày vùng cát ...</p>
+                                               <p class="desc font18">Nhân Ngày Nhà giáo Việt Nam 20/11/2020, THACO đã có nhiều hoạt động thể hiện tấm lòng tri ân đến các thầy cô giáo, những người đã cống hiến cho sự nghiệp giáo dục.</p>
                                            </div>
                                        </div>
                                    </div>
@@ -267,17 +267,77 @@
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-4.jpg') }}" alt=""></a>
+                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/4.jpg') }}" alt=""></a>
                                                </div>
                                            </div>
                                            <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">TỔ HÀN MẢNG SÀN NHÀ MÁY THACO KIA: NỖ LỰC NÂNG CAO HIỆU QUẢ SẢN XUẤT & CHẤT LƯỢNG SẢN PHẨM</h3></a>
+                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO 5 năm đồng hành cùng chương trình “Học trò xứ Quảng”</h3></a>
                                                
                                                <p class="time">23/06/2021</p>
-                                               <p class="desc font18">Sáng tạo là một phẩm chất cần thiết của người lao động, nhất là trong thời đại công nghiệp 4.0. Sự sáng tạo, không ngừng tìm tòi các giải pháp, sáng kiến cải tiến giúp nâng cao năng suất, hiệu quả công việc, góp phần tích cực vào sự phát triển của công ty ...</p>
+                                               <p class="desc font18">Sáng ngày 08/11 tại trường THPT chuyên Nguyễn Bỉnh Khiêm (thành phố Tam Kỳ, tỉnh Quảng Nam) đã diễn ra chương trình chung kết gameshow “Học trò xứ Quảng” năm 2020 do Đài Phát thanh - Truyền hình phối hợp với Sở Giáo dục và Đào tạo Quảng Nam tổ chức. </p>
                                            </div>
                                        </div>
                                    </div>
+                                   <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/5.jpg') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO ủng hộ đồng bào bị lũ lụt 3 tỷ đồng</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">Ngày 16/10/2020, Công ty CP Ô tô Trường Hải (THACO) đã ủng hộ 3 tỷ đồng cho đồng bào miền Trung đang bị thiệt hại nặng nề do mưa lũ thông qua Ban cứu trợ - Ủy Ban mặt trận tổ quốc Việt Nam các tỉnh Quảng Nam, Thừa Thiên Huế, Quảng Trị, Quảng Bình.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/6.png') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO ủng hộ chương trình “Tiếp sức đến trường” tỉnh Thái Bình</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">Ngày 04/09/2020, Đài Phát thanh & Truyền hình Thái Bình phối hợp với Sở Lao động – Thương binh và Xã hội, Sở Giáo dục và Đào tạo, Hội Chữ thập đỏ tỉnh tổ chức đêm Gala “Tiếp sức đến trường”. THACO là nhà tài trợ đồng hành cùng chương trình.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/7.jpg') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Chi nhánh xe Tải & Bus Cần Thơ - 8 năm liên tục đồng hành cùng chương trình hiến máu tình nguyện</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">“Cảm giác rất thoải mái và chỉ nghĩ đơn giản là mình góp một phần nhỏ công sức để hỗ trợ cộng đồng và những người cần thiết” – đó là lời chia sẻ của anh Nguyễn Hoàng Bửu - bộ phận Kế hoạch – Marketing, Chi nhánh xe Tải & Bus Cần Thơ khi được hỏi về cảm xúc lần hiến máu đầu tiên vào năm 2009..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/8.jpg') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Công đoàn THACO hỗ trợ Đoàn viên có hoàn cảnh khó khăn</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">Với mục tiêu quan tâm, chăm lo đời sống CBNV và đoàn viên công đoàn, Ban Lãnh đạo và Công đoàn cơ sở THACO đã luôn cập nhật và theo sát hoàn cảnh của CBNV tại đơn vị nhằm động viên và hỗ trợ kịp thời.</p>
+                                        </div>
+                                    </div>
+                                </div>
                                    
                
                                </div>

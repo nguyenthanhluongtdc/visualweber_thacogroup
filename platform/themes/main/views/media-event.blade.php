@@ -222,14 +222,14 @@
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-1.jpg') }}" alt=""></a>
+                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/sukien/1.jpg') }}" alt=""></a>
                                                </div>
                                            </div>
                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">NHỮNG BÔNG HỒNG THÉP</h3></a>
+                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA</h3></a>
                                              
                                                <p class="time">23/06/2021</p>
-                                               <p class="desc font18">Tại KCN THACO Chu Lai, có những công việc tưởng chừng chỉ dành cho nam giới song lại có sự góp mặt của nhiều nhân sự nữ, đó là bảo vệ. Đây được xem là công việc trái nghề đối với “phái yếu” nhưng bằng sự đam mê, yêu nghề, ham học hỏi, các chị đã nỗ lực vượt khó, hoàn thành tốt nhiệm vụ. </p>
+                                               <p class="desc font18">Ngày 26/03/2017, tại Khu KTM Chu Lai, Công ty Cổ phần Ô tô Trường Hải (THACO) đã tổ chức Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA. Tham dự lễ có đồng chí Nguyễn Xuân Phúc - UV Bộ Chính trị, Thủ tướng Chính phủ cùng các đồng chí lãnh đạo Đảng, Nhà nước và các bộ, ban, ngành Trung ương, lãnh đạo tỉnh Quảng Nam. Về phía THACO có ông Trần Bá Dương – Chủ tịch HĐQT, về phía Mazda có ông Inoue (I nu ê) – Phó Tổng giám đốc tập đoàn Mazda Nhật Bản.</p>
                                            </div>
                                        </div>
                                    </div>
@@ -237,14 +237,14 @@
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-2.jpg') }}" alt=""></a>
+                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/sukien/2.jpg') }}" alt=""></a>
                                                </div>
                                            </div>
                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                               <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">THACO TẶNG THIẾT BỊ XÉT NGHIỆM COVID-19 CHO TRUNG TÂM KIỂM SOÁT BỆNH TẬT QUẢNG NAM</h3></a>
+                                               <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">Lễ ký kết Biên bản ghi nhớ chuyển giao công nghệ sản xuất lắp ráp các sản phẩm Peugeot mới</h3></a>
                                             
                                                <p class="time">23/06/2021</p>
-                                               <p class="desc font18">Ngày 28/05/2021, Tập đoàn THACO đã tài trợ máy tách chiết tự động xét nghiệm Covid-19 với trị giá gần 2 tỷ đồng cho Trung tâm kiểm soát bệnh tật (CDC) Quảng Nam. </p>
+                                               <p class="desc font18">Ngày 22/2/2017, tại TP.HCM, “Lễ ký kết Biên bản ghi nhớ chuyển giao công nghệ sản xuất lắp ráp các sản phẩm Peugeot mới” đã diễn ra giữa THACO và tập đoàn PSA với sự có mặt của ông Trần Bá Dương, Chủ tịch Hội đồng Quản trị THACO và ông Denis Martin, Giám đốc Điều hành tại khu vực Trung Quốc - ASEAN thuộc tập đoàn PSA.</p>
                                            </div>
                                        </div>
                                    </div>
@@ -252,14 +252,14 @@
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-3.jpg') }}" alt=""></a>
+                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/sukien/3.jpg') }}" alt=""></a>
                                                </div>
                                            </div>
                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                
-                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO - GIA ĐÌNH THỨ HAI CỦA CHÚNG TÔI</h3></a>
+                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO giới thiệu Mazda6 mới</h3></a>
                                                <p class="time">23/06/2021</p>
-                                               <p class="desc font18">Sáng sớm, hình ảnh từng đoàn xe đưa rước CBNV THACO từ các ngả đường đổ về KCN THACO Chu Lai như một dấu hiệu bắt đầu ngày mới đầy sức sống. Có lẽ, gần 20 năm về trước, chẳng ai tại vùng đất Núi Thành, Quảng Nam có thể tưởng tượng được có một ngày vùng cát ...</p>
+                                               <p class="desc font18">Ngày 11/01/2017, tại Hà Nội, Công ty CP Ô tô Trường Hải (THACO) chính thức “Giới thiệu Mazda6 mới” nâng cấp thêm nhiều công nghệ và có mức giá hợp lý nhờ lắp ráp trong nước</p>
                                            </div>
                                        </div>
                                    </div>
@@ -267,17 +267,63 @@
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/media-4.jpg') }}" alt=""></a>
+                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/sukien/4.jpg') }}" alt=""></a>
                                                </div>
                                            </div>
                                            <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">TỔ HÀN MẢNG SÀN NHÀ MÁY THACO KIA: NỖ LỰC NÂNG CAO HIỆU QUẢ SẢN XUẤT & CHẤT LƯỢNG SẢN PHẨM</h3></a>
+                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO tham dự Khai mạc Triển lãm ô tô Việt Nam 2016</h3></a>
                                                
                                                <p class="time">23/06/2021</p>
-                                               <p class="desc font18">Sáng tạo là một phẩm chất cần thiết của người lao động, nhất là trong thời đại công nghiệp 4.0. Sự sáng tạo, không ngừng tìm tòi các giải pháp, sáng kiến cải tiến giúp nâng cao năng suất, hiệu quả công việc, góp phần tích cực vào sự phát triển của công ty ...</p>
+                                               <p class="desc font18">Ngày 5/10/2016, tại Trung tâm triển lãm quốc tế (ICE) số 91 Trần Hưng Đạo, Q. Hoàn Kiếm, Hà Nội, Triển lãm ô tô Việt Nam 2016 lần thứ 12 do Hiệp hội các nhà sản xuất ô tô Việt Nam (VAMA) chính thức khai mạc với sự tham dự của 12 thành viên VAMA và các doanh nghiệp công nghiệp phụ trợ. Năm nay, THACO mang đến triển lãm các mẫu xe nổi bật của hai thương hiệu Mazda và Kia.</p>
                                            </div>
                                        </div>
                                    </div>
+                                   <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/sukien/5.jpg') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">KHAI TRƯƠNG TUYẾN HÀNG HẢI (CONTAINER) HÀN QUỐC – CHU LAI & KHỞI CÔNG MỞ RỘNG CẢNG CHU LAI – TRƯỜNG HẢI (BẾN SỐ 1, TAM HIỆP – KỲ HÀ)</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">Ngày 05/8/2016, tại KCN Cảng - Hậu cần cảng Chu Lai - Trường Hải (Quảng Nam), Công ty Cổ phần Ô tô Trường Hải (THACO) đã tổ chức Lễ khai trương tuyến hàng hải (container) Hàn Quốc - Chu Lai & Khởi công mở rộng Cảng Chu Lai - Trường Hải (Bến số 1, Tam Hiệp - Kỳ Hà).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/sukien/6.jpg') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Lễ khởi công Khu công nghiệp cơ khí ô tô Chu Lai - Trường Hải mở rộng 210 ha và 2 tuyến đường nối từ cảng Tam Hiệp đến đường cao tốc Đà Nẵng Quảng Ngãi và Khu công nghiệp</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">Ngày 24/4/2016, tại Khu kinh tế mở Chu Lai, UBND tỉnh Quảng Nam và Công ty Cổ phần Ô tô Trường Hải (THACO) đã tổ chức Lễ khởi công KCN cơ khí ô tô Chu Lai – Trường Hải mở rộng 210 ha và 2 tuyến đường nối từ Cảng Tam Hiệp đến đường cao tốc Đà Nẵng –  Quảng Ngãi và KCN. Tham dự lễ có Thủ tướng Chính phủ Nguyễn Xuân Phúc cùng các đồng chí lãnh đạo Đảng, Nhà nước và các bộ, ban, ngành Trung ương; lãnh đạo tỉnh Quảng Nam. Về phía THACO có sự hiện diện của Chủ tịch HĐQT Trần Bá Dương cùng ban lãnh đạo Công ty.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-item ">
+                                    <div class="img-content">
+                                        <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <div class="post-thumbnail">
+                                                <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/sukien/7.jpg') }}" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                            <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO giới thiệu Kia Optima 2016</h3></a>
+                                            
+                                            <p class="time">23/06/2021</p>
+                                            <p class="desc font18">Ngày 03/10/2016, tại Khách sạn Melia - số 44, Lý Thường Kiệt, Hà Nội, THACO đã tổ chức “Lễ giới thiệu Kia Optima 2016”. Buổi lễ có sự hiện diện của ông Lee Soo Young - Tổng giám đốc Kia Khu vực Châu Á; ông Trần Bá Dương – Chủ tịch Hội đồng quản trị THACO; ông Bùi Kim Kha – Phó TGĐ THACO – Tổng GĐ Công ty PC cùng hơn 150 khách hàng và 100 phóng viên báo chí truyền hình.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                                    
                
                                </div>
@@ -382,31 +428,6 @@
                                                    <p class="time">23/06/2021</p>
                                                </div>
                                            </div>
-                                           {{-- <div class="post-new-item">
-                                               <div class="post-thumbnail-wrap">
-                                                   <div class="post-thumbnail">
-                                                       <a href=""><img src="{{ Theme::asset()->url('images/media/post-2.jpg') }}" alt=""></a>
-                                                   </div>
-                                               </div>
-                                               <div class="title">
-                                                   <a href="">THACO tổ chức Đại hội Cổ đông thường niên 2021</a>
-                                                   <p class="time">23/06/2021</p>
-                                               </div>
-                                              
-                                           </div>
-                                           <div class="post-new-item">
-                                               <div class="post-thumbnail-wrap">
-                                                   <div class="post-thumbnail">
-                                                       <a href=""><img src="{{ Theme::asset()->url('images/media/post-1.jpg') }}" alt=""></a>
-                                                   </div>
-                                               </div>
-                                               <div class="title font18">
-                                                   <a href="">THACO AUTO ủng hộ 10 tỷ đồng mua vaccine phòng </a>
-                                                   <p class="time">23/06/2021</p>
-                                               </div>
-                                              
-                                           </div> --}}
-                                           
                                        </ul>
                                        
                                    </div>
