@@ -114,7 +114,7 @@
                             font-size: 14px;
                         }
                         span a {
-                            background: #01498b;
+                            background: $main_color;
                             color: #fff;
                             padding: 5px 10px 5px;
                             font-size: 13px;
@@ -194,13 +194,13 @@
                             color: #343434;
                             border-radius: 5px;
                             &:hover {
-                                background: #0B5CA8;
+                                background: $main_color;
                                 color: $white;
                             }
                         }
                     }
                     .page-item.active .page-link {
-                        background: #0B5CA8;
+                        background: $main_color;
                         color: $white;
                     }
                     .page-item:first-child .page-link {
@@ -238,7 +238,8 @@
                         border: none;
                     }
                     .list-group-item.active {
-                        background-color: #f1f1f1;
+                        color: $main_color;
+                        background: none;
                     }
                 }
                 .list-post-new {

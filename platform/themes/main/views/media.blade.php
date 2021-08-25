@@ -346,7 +346,7 @@
                                 </div>
     
                             </div>
-                            <div class="filter" id="#filter">
+                            <div class="filter" id="filter">
                                 <div class="filter__title">
                                     <label for="">Filter</label> 
                                     <i class="fas fa-chevron-down"></i>   
@@ -428,15 +428,21 @@
                                 <div class="sort-time-wrapper">
                                     <img class="icon-sort" src="{{ Theme::asset()->url('images/media/Sort.png') }}" alt="">
                                     {{-- <i class="fas fa-sort"></i> --}}
-                                    <select name="" id=""  class="sort-time font18 js-example-disabled-results">
-                                        <option value="" selected disabled>
-                                            Sắp xếp
-                                        </option>
-                                        <option value="">Thời gian mới nhất</option>
-                                        <option value="">Thời gian cũ nhất</option>
-                                        <option value="">Từ A-Z</option>
-                                        <option value="">Từ Z-A</option>
-                                    </select>
+                                    <div class="sort-list-wrapper">
+                                        <div class="sort-list">
+                                            <select name="" id=""  class="sort-time font18 js-example-basic-single">
+                                                <option value="" selected disabled>
+                                                    Sắp xếp
+                                                </option>
+                                                <option value="">Thời gian mới nhất</option>
+                                                <option value="">Thời gian cũ nhất</option>
+                                                <option value="">Từ A-Z</option>
+                                                <option value="">Từ Z-A</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
                                 </div>
                             </div>
                         </form>

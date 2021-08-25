@@ -10,49 +10,48 @@
                 }
             }
             
-            @keyframes stretch {
-                0% {
-                    transform: scale(.1);
-                    transition: all .1s ease-out;
-                }
-                20% {
-                    transform: scale(.2);
-                    transition: all .1s ease-out;
-                }
-                30% {
-                    transform: scale(.2);
-                    transition: all .1s ease-out;
-                }
-                40% {
-                    transform: scale(.3);
-                    transition: all .1s ease-out;
-                }
-                50% {
-                    transform: scale(.4);
-                    transition: all .1s ease-out;
-                }
-                60% {
-                    transform: scale(.5);
-                    transition: all .1s ease-out;
-                }
-                70% {
-                    transform: scale(.6);
-                    transition: all .1s ease-out;
-                }
-                80% {
-                    transform: scale(.7);
-                    transition: all .1s ease-out;
-                }
-                90% {
-                    transform: scale(.8);
-                    transition: all .1s ease-out;
-                }
-                100% {
-                    transform: scale(1);
-                    transition: all .1s ease-out;
-                }
-            }
-            
+            // @keyframes stretch {
+            //     0% {
+            //         transform: scale(.1);
+            //         transition: all .1s ease-out;
+            //     }
+            //     20% {
+            //         transform: scale(.2);
+            //         transition: all .1s ease-out;
+            //     }
+            //     30% {
+            //         transform: scale(.2);
+            //         transition: all .1s ease-out;
+            //     }
+            //     40% {
+            //         transform: scale(.3);
+            //         transition: all .1s ease-out;
+            //     }
+            //     50% {
+            //         transform: scale(.4);
+            //         transition: all .1s ease-out;
+            //     }
+            //     60% {
+            //         transform: scale(.5);
+            //         transition: all .1s ease-out;
+            //     }
+            //     70% {
+            //         transform: scale(.6);
+            //         transition: all .1s ease-out;
+            //     }
+            //     80% {
+            //         transform: scale(.7);
+            //         transition: all .1s ease-out;
+            //     }
+            //     90% {
+            //         transform: scale(.8);
+            //         transition: all .1s ease-out;
+            //     }
+            //     100% {
+            //         transform: scale(1);
+            //         transition: all .1s ease-out;
+            //     }
+            // }
             .main-slider {
                 .swiper-slide {
                     .img-slider {
@@ -313,6 +312,9 @@
                         height: 28vw;
                         min-height: 470px;
                         display: flex;
+                        &:hover .name {
+                            color: $main_color;
+                        }
                         .img-post {
                             flex: 0 0 65%;
                             img {
@@ -333,10 +335,13 @@
                                 width: max-content;
                                 opacity: 0.7;
                             }
-                            .name {
-                                margin: 15px 0;
-                                font-family: $MyriadPro-Bold;
-                                text-transform: uppercase;
+                            a {
+                                color: unset;
+                                .name {
+                                    margin: 15px 0;
+                                    font-family: $MyriadPro-Bold;
+                                    text-transform: uppercase;
+                                }
                             }
                             .time {
                                 margin-bottom: 15px;
@@ -352,7 +357,7 @@
                                 border: 1px solid #fff;
                                 text-decoration: none;
                                 font-size: 15px;
-                                background-color: #015BAC;
+                                background-color: $main_color;
                             }
                         }
                     }
