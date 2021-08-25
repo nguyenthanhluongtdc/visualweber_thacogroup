@@ -214,11 +214,21 @@
                 <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
             </div>
             <div class="logo-desktop"   >
-                <img class=""  src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
-                <img class=""  src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
-                <img class=""  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
-                <img class="" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
-                <img class="" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+                <div class="logo-item"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                    <img class=""  src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
+                </div>
+                <div class="logo-item"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                    <img class=""  src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
+                </div>
+                <div class="logo-item"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                    <img class=""  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
+                </div>
+                <div class="logo-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                    <img class="" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
+                </div>
+                <div class="logo-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                    <img class="" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+                </div>
             </div>
             
         </div>
