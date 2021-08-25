@@ -117,13 +117,13 @@
                     color: #343434;
                     border-radius: 5px;
                     &:hover {
-                        background: #0B5CA8;
+                        background: $main_color;
                         color: $white;
                     }
                 }
             }
             .page-item.active .page-link {
-                background: #0B5CA8;
+                background: $main_color;
                 color: $white;
             }
             .page-item:first-child .page-link {

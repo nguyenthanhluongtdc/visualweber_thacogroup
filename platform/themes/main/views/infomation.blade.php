@@ -51,7 +51,7 @@
                         <span class=""><a href="">DOWNLOAD</a></span>
                     </p>
                     <div class="tags">
-                        <p class="name-tag font20">Tags: 
+                        <p class="name-tag font20">Từ khóa: 
                         </p>
                         <div class="tag-list">
                                 <p class="tag-title">
@@ -86,7 +86,7 @@
                         <span class=""><a href="">DOWNLOAD</a></span>
                     </p>
                     <div class="tags">
-                        <p class="name-tag font20">Tags: 
+                        <p class="name-tag font20">Từ khóa: 
                         </p>
                         <div class="tag-list">
                                 <p class="tag-title">
@@ -121,7 +121,7 @@
                         <span class=""><a href="">DOWNLOAD</a></span>
                     </p>
                     <div class="tags">
-                        <p class="name-tag font20">Tags: 
+                        <p class="name-tag font20">Từ khóa: 
                         </p>
                         <div class="tag-list">
                                 <p class="tag-title">
@@ -156,7 +156,7 @@
                         <span class=""><a href="">DOWNLOAD</a></span>
                     </p>
                     <div class="tags">
-                        <p class="name-tag font20">Tags: 
+                        <p class="name-tag font20">Từ khóa: 
                         </p>
                         <div class="tag-list">
                                 <p class="tag-title">
@@ -191,7 +191,7 @@
                         <span class=""><a href="">DOWNLOAD</a></span>
                     </p>
                     <div class="tags">
-                        <p class="name-tag font20">Tags: 
+                        <p class="name-tag font20">Từ khóa: 
                         </p>
                         <div class="tag-list">
                                 <p class="tag-title">
@@ -226,7 +226,7 @@
                         <span class=""><a href="">DOWNLOAD</a></span>
                     </p>
                     <div class="tags">
-                        <p class="name-tag font20">Tags: 
+                        <p class="name-tag font20">Từ khóa: 
                         </p>
                         <div class="tag-list">
                                 <p class="tag-title">

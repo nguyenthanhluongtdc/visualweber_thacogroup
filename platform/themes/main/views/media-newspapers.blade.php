@@ -78,7 +78,7 @@
                                         <span class=""><a href="">DOWNLOAD</a></span>
                                     </p>
                                     <div class="tags">
-                                        <p class="name-tag">Tags: </p>
+                                        <p class="name-tag">Từ khóa: </p>
                                         <div class="tag-list">
                                                 <p class="tag-title">
                                                     <a href="">Lorem</a>
@@ -112,7 +112,7 @@
                                         <span class=""><a href="">DOWNLOAD</a></span>
                                     </p>
                                     <div class="tags">
-                                        <p class="name-tag">Tags: 
+                                        <p class="name-tag">Từ khóa: 
                                         </p>
                                         <div class="tag-list">
                                             <p class="tag-title">
@@ -146,7 +146,7 @@
                                         <span class=""><a href="">DOWNLOAD</a></span>
                                     </p>
                                     <div class="tags">
-                                        <p class="name-tag">Tags: 
+                                        <p class="name-tag">Từ khóa: 
                                         </p>
                                         <div class="tag-list">
                                             <p class="tag-title">
@@ -180,7 +180,7 @@
                                         <span class=""><a href="">DOWNLOAD</a></span>
                                     </p>
                                     <div class="tags">
-                                        <p class="name-tag">Tags: 
+                                        <p class="name-tag">Từ khóa: 
                                         </p>
                                         <div class="tag-list">
                                             <p class="tag-title">
@@ -215,7 +215,7 @@
                                         <span class=""><a href="">DOWNLOAD</a></span>
                                     </p>
                                     <div class="tags">
-                                        <p class="name-tag">Tags: 
+                                        <p class="name-tag">Từ khóa: 
                                         </p><div class="tag-list">
                                                 <p class="tag-title">
                                                     <a href="">Lorem</a>
@@ -249,7 +249,7 @@
                                         <span class=""><a href="">DOWNLOAD</a></span>
                                     </p>
                                     <div class="tags">
-                                        <p class="name-tag">Tags: 
+                                        <p class="name-tag">Từ khóa: 
                                         </p><div class="tag-list">
                                                 <p class="tag-title">
                                                     <a href="">Lorem </a>

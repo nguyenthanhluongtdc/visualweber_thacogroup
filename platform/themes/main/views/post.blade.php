@@ -11,7 +11,7 @@
                         <li class="breadcrumb-item">
                             <a href="/truyen-thong">Truyền thông</a>
                         </li>
-                        <li class="breadcrumb-item active">Bản tin</li>
+                        <li class="breadcrumb-item active">Tin tức</li>
             </ol>
         </nav>
     </div>

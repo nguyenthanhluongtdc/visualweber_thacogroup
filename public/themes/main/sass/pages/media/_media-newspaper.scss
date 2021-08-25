@@ -233,6 +233,9 @@
                         border-right: unset;
                         color: #1D1D1D;
                         padding: 5px 0;
+                        &:hover {
+                            color: $main_color;
+                        }
                     }
                     .list-group-item:last-child {
                         border: none;
