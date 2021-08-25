@@ -448,22 +448,35 @@
                                 .__video {
                                     height: 37vw;
                                     object-fit: contain;
-                                }
-                                .read-more {
-                                    padding: 4px 14px;
-                                    color: white;
-                                    border: 1px solid #fff;
-                                    text-decoration: none;
                                     position: absolute;
-                                    right: 20%;
-                                    bottom: 30px;
                                     z-index: 2;
+                                }
+                                .__video.video-full {
+                                    height: 37vw;
+                                    object-fit: cover;
+                                    position: absolute;
+                                    z-index: 1;
+                                }
+                                .bg-gray {
+                                    // background-color: #ccc;
+                                    opacity: 0.5;
+                                    position: absolute;
                                 }
                             }
                             img {
                                 width: 100%;
                                 height: 37vw;
                             }
+                        }
+                        .read-more {
+                            padding: 4px 14px;
+                            color: white;
+                            border: 1px solid #fff;
+                            text-decoration: none;
+                            position: absolute;
+                            right: 20px;
+                            bottom: 30px;
+                            z-index: 2;
                         }
                     }
                     .field-activity-slide-top.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
