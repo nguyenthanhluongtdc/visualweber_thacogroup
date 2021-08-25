@@ -49,11 +49,12 @@
                                                                    <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
                                                                </div>
                                                                <div class="news-post h-100">
+                                                                 
                                                                    <h3 class=" title font18">BẢN TIN NỘI BỘ</h3>
-                                                                   <h4 class="name font18 ">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4>
+                                                                   <a href="/chi-tiet-truyen-thong">  <h4 class="name font18 ">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4></a>
                                                                    <span class="time">23/06/2021</span>
                                                                    <p class="description font18  text-justify">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
-                                                                   <a href="" class="read-more">Xem thêm</a>
+                                                                   <a href="/chi-tiet-truyen-thong" class="read-more">Xem thêm</a>
                                                                </div>
                                                    </div>
                                                </div>
@@ -64,11 +65,11 @@
                                                                </div>
                                                                <div class="news-post h-100">
                                                                    <h3 class="title font18">BẢN TIN NỘI BỘ</h3>
-                                                                   <h4 class="name font18">HÀNH TRÌNH KẾT NỐI YÊU THƯƠNG</h4>
+                                                                   <a href="/chi-tiet-truyen-thong"> <h4 class="name font18">HÀNH TRÌNH KẾT NỐI YÊU THƯƠNG</h4></a>
                                                                    <span class="time">23/06/2021</span>
                                                                    <p class="description font18 text-justify">Vượt quãng đường hàng ngàn cây số, những ngày qua, hàng chục chuyến xe nghĩa tình do Tập đoàn THACO hỗ trợ đã đón hàng trăm người Quảng xa xứ mưu sinh tại TP. HCM về quê. Giữa cơn lao đao vì dịch bệnh hoành hành, sự hỗ trợ kịp thời ấy đã góp phần cùng tỉnh Quảng Nam chăm lo cho những bà con lao động nghèo, đồng thời san sẻ gánh nặng với TP. HCM đang oằn mình trong tâm dịch.
                                                                    </p>
-                                                                   <a href="" class="read-more">Xem thêm</a>
+                                                                   <a href="/chi-tiet-truyen-thong" class="read-more">Xem thêm</a>
                                                                </div>
                                                    </div>
                                                </div>
@@ -79,12 +80,14 @@
                                                                </div>
                                                                <div class="news-post h-100">
                                                                    <h3 class=" title font18">BẢN TIN NỘI BỘ</h3>
-                                                                   <h4 class="name font18 ">Tổ hợp cơ khí THACO Chu Lai phát triển chế tạo khuôn mẫu</h4>
+                                                                  <a href="/chi-tiet-truyen-thong">
+                                                                    <h4 class="name font18 ">Tổ hợp cơ khí THACO Chu Lai phát triển chế tạo khuôn mẫu</h4>
+                                                                </a>
                                                                    <span class="time">23/06/2021</span>
                                                                    <p class="description font18 text-justify">Khuôn mẫu được xem là “nền tảng của nền công nghiệp”, được sử dụng trong rất nhiều ngành sản xuất. Nhằm phát triển công nghiệp chế tạo khuôn mẫu phục vụ sản xuất ô tô và các ngành công nghiệp khác, Tổ hợp Cơ khí THACO Chu Lai đã đầu tư sản xuất khuôn mẫu theo hướng tạo ra sản phẩm số lượng lớn, thời gian sản xuất ngắn, chất lượng cao, đáp ứng yêu cầu ngày càng tăng của thị trường.
                            
                                                                    </p>
-                                                                   <a href="" class="read-more">Xem thêm</a>
+                                                                   <a href="/chi-tiet-truyen-thong" class="read-more">Xem thêm</a>
                                                                </div>
                                                    </div>
                            
