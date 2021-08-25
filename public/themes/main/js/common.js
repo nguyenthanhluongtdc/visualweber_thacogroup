@@ -553,3 +553,10 @@ if ($('.filter__title').length > 0) {
 $(document).ready(function() {
     $('.js-example-basic-single').select2();
 });
+
+if ($('.itemdown-show').length > 0) {
+    $('.itemdown-show').click(function() {
+        $(this).parents('.info-right').find('.downcontent').slideToggle();
+        return false;
+    });
+}

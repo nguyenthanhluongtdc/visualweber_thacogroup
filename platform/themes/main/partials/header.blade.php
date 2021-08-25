@@ -153,7 +153,7 @@
                                         </a>
                                     </div>
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/thong-tin-co-dong" class="dropdown-item">
                                             Thông tin cổ đông
                                         </a>
                                     </div>

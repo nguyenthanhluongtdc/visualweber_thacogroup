@@ -1,0 +1,146 @@
+.shareholder-infomation {
+    display: flex;
+    &_left {
+        max-width: 68.2%;
+        margin-right: 2.7%;
+        flex: 1;
+        .list-info {
+            .info-item {
+                display: flex;
+                padding: 15px 0;
+                border-bottom: 1px solid #d7d7d7;
+                &:hover .itemdown-show {
+                    color: $main_color;
+                }
+                .info-left {
+                    margin-right: 20px;
+                    .date {
+                        width: 76px;
+                        height: 76px;
+                        padding: 11px 9px;
+                        font-size: 20px;
+                        margin-top: 0;
+                        color: #fff;
+                        background: $main_color;
+                        p {
+                            margin: 0;
+                            .date-day {
+                                font-weight: 600;
+                                line-height: 100%;
+                                font-size: 25px;
+                            }
+                            sup {
+                                font-size: 20px;
+                                vertical-align: -10px;
+                            }
+                        }
+                        .date-year {
+                            font-size: 20px;
+                            border-top: 1px solid rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                }
+                .info-right {
+                    flex: 1;
+                    position: relative;
+                    h3 {
+                        margin: 0;
+                        padding-right: 65px;
+                        line-height: 1.5;
+                        a {
+                            color: unset;
+                            display: inline-block;
+                            line-height: 1.5;
+                        }
+                    }
+                    .count {
+                        color: #707070;
+                    }
+                    .download {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                    }
+                    .downcontent {
+                        .list-file {
+                            padding: 0;
+                            li {
+                                a {
+                                    text-decoration: underline;
+                                    &:hover {
+                                        color: $main_color;
+                                    }
+                                }
+                            }
+                        }
+                        padding: 20px 0 0;
+                        display: none;
+                    }
+                }
+            }
+        }
+        .page-pagination {
+            display: flex;
+            justify-content: center;
+            .pagination {
+                .page-item {
+                    margin-right: 5px;
+                    .page-link {
+                        color: #343434;
+                        border-radius: 5px;
+                        &:hover {
+                            background: $main_color;
+                            color: $white;
+                        }
+                    }
+                }
+                .page-item.active .page-link {
+                    background: $main_color;
+                    color: $white;
+                }
+                .page-item:first-child .page-link {
+                    margin-left: unset;
+                }
+                .page-item:last-child .page-link {
+                    margin-left: unset;
+                }
+            }
+        }
+    }
+    &_right {
+        height: max-content;
+        max-width: 29.1%;
+        position: sticky;
+        flex: 1;
+        top: 100;
+        .relationship__content {
+            box-shadow: 0 7px 10px 1px #3333;
+            .list-relationship-menu {
+                padding: 20px 20px 0 20px;
+                background: #fff;
+                border-radius: 2px;
+                h3 {
+                    color: #000;
+                }
+                .list-group-item {
+                    border-bottom: 1px solid #707070;
+                    border-top: unset;
+                    border-left: unset;
+                    border-right: unset;
+                    color: #1D1D1D;
+                    padding: 5px 0;
+                    &:hover {
+                        color: $main_color;
+                    }
+                }
+                .list-group-item:last-child {
+                    border: none;
+                }
+                .list-group-item.active {
+                    color: $main_color;
+                    background: none;
+                }
+            }
+        }
+    }
+}

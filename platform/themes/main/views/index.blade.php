@@ -262,8 +262,6 @@
                                 
                            
                         </div>
-                       
-
                     </div>
                     <div class="swiper-slide">
                         <div class="news-home__top">
