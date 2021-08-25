@@ -420,9 +420,9 @@
                             <div class="relationship__content">
                                 <div class="list-relationship-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                     <h3 class="font28 font-myria-bold">QUAN HỆ CỔ ĐÔNG</h3>
-                                    <a href="/dieu-le-quy-che" class="item_link list-group-item font18 font-myria-bold active">Điều lệ quy chế</a>
+                                    <a href="/dieu-le-quy-che" class="item_link list-group-item font18 font-myria-bold">Điều lệ quy chế</a>
                                     <a href="/cong-bo-thong-tin" class="item_link list-group-item  font18 font-myria-bold">Công bố thông tin</a>
-                                    <a href="/thong-tin-co-dong" class="item_link list-group-item  font18 font-myria-bold">Thông tin cổ đông</a>
+                                    <a href="/thong-tin-co-dong" class="item_link list-group-item  font18 font-myria-bold active">Thông tin cổ đông</a>
                                     <a href="/bao-cao-thuong-nien" class="item_link list-group-item  font18 font-myria-bold">Báo cáo thường niên</a>
                                     <a href="/bao-cao-tai-chinh" class="item_link list-group-item  font18 font-myria-bold">Báo cáo tài chính</a>
                                    
