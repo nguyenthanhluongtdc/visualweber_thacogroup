@@ -404,14 +404,13 @@ setInterval(function() {
         hasScrolled();
         didScroll = false;
     }
-}, 200);
+}, 150);
 
 
 
 function hasScrolled() {
-    if (window.scrollY > 150) {
+    if (window.scrollY >= 150) {
         var st = $(this).scrollTop();
-
 
         // Make sure they scroll more than delta
         if (Math.abs(lastScrollTop - st) <= delta)
@@ -421,11 +420,13 @@ function hasScrolled() {
         // This is necessary so you never see what is "behind" the navbar.
         if (st > lastScrollTop && st > navbarHeight) {
             // Scroll Down
+
             $('header').removeClass('nav-down').addClass('nav-up');
             $('.post-sidebar-content').css('top', 5);
             $('.shareholder-infomation_right').css('top', 5);
         } else {
             // Scroll Up
+
             if (st + $(window).height() < $(document).height()) {
                 $('header').removeClass('nav-up').addClass('nav-down');
                 $('.post-sidebar-content').css('top', 100);
@@ -435,6 +436,8 @@ function hasScrolled() {
         }
 
         lastScrollTop = st;
+    } else {
+        $('header').removeClass('nav-up');
     }
 
 }
