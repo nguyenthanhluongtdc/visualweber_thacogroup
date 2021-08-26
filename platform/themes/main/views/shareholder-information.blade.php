@@ -60,7 +60,7 @@
              <div class="shareholder-infomation mt-40 mb-100">
                         <div class="shareholder-infomation_left">
                             <div class="list-info">
-                                <div class="info-item">
+                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                     <div class="info-left">
                                         <div class="date">
                                             <p>
@@ -98,7 +98,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="info-item">
+                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" class="aos-init aos-animate">
                                     <div class="info-left">
                                         <div class="date">
                                             <p>
@@ -136,7 +136,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="info-item">
+                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" class="aos-init aos-animate">
                                     <div class="info-left">
                                         <div class="date">
                                             <p>
@@ -174,7 +174,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="info-item">
+                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" class="aos-init aos-animate">
                                     <div class="info-left">
                                         <div class="date">
                                             <p>
@@ -212,7 +212,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="info-item">
+                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250" class="aos-init aos-animate">
                                     <div class="info-left">
                                         <div class="date">
                                             <p>
@@ -250,7 +250,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="info-item">
+                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" class="aos-init aos-animate">
                                     <div class="info-left">
                                         <div class="date">
                                             <p>
@@ -288,7 +288,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="info-item">
+                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="350" class="aos-init aos-animate">
                                     <div class="info-left">
                                         <div class="date">
                                             <p>
@@ -326,7 +326,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="info-item">
+                                <div class="info-item"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" class="aos-init aos-animate">
                                     <div class="info-left">
                                         <div class="date">
                                             <p>
@@ -418,7 +418,7 @@
                         </div>
                         <div class="shareholder-infomation_right">
                             <div class="relationship__content">
-                                <div class="list-relationship-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                <div class="list-relationship-menu" data-aos="flip-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                     <h3 class="font28 font-myria-bold">QUAN HỆ CỔ ĐÔNG</h3>
                                     <a href="/dieu-le-quy-che" class="item_link list-group-item font18 font-myria-bold">Điều lệ quy chế</a>
                                     <a href="/cong-bo-thong-tin" class="item_link list-group-item  font18 font-myria-bold">Công bố thông tin</a>
