@@ -11,7 +11,7 @@
                         <li class="breadcrumb-item">
                             <a href="/truyen-thong">Truyền thông</a>
                         </li>
-                        <li class="breadcrumb-item active">Bản tin</li>
+                        <li class="breadcrumb-item active">Tin tức</li>
             </ol>
         </nav>
     </div>
@@ -38,9 +38,12 @@
                         <span class="">23/06/2021 </span>
                     </div>
                    <div class="right">
-                    <p class="share">Chia sẻ</p>
-                    <img src="{{ Theme::asset()->url('images/media/fb.png') }}" alt="">
-                    <img src="{{ Theme::asset()->url('images/media/linkin.png') }}" alt="">
+                    <a href="" class="share-fb">
+                        <img src="{{ Theme::asset()->url('images/media/face.png') }}" alt="">
+                    </a>
+                   <a href="" class="share-linkedin">
+                        <img src="{{ Theme::asset()->url('images/media/linkedin.png') }}" alt="">
+                   </a>
                     <button class="print-button">
                         <img src="{{ Theme::asset()->url('images/media/printing.png') }}" alt="">
                    </button>

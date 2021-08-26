@@ -63,259 +63,215 @@
              </div>
              <div class="meidia-newspapers-content mt-40 mb-100">
                         <div class="media__content_left">
-                            <div class="list-newspapers">
-                                <div class="item-newspaper " data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông điệp số 1 của Chủ tịch HĐQT - Tổng giám đốc Trần Bá Dương</a>
-                                    </h5>
-                                    <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    </p>
-                                    <p class="title-docx ">thong diep so 1.pdf <span class="time">(20/08/2021)</span></p>
-                                    <p class="size-dowload">
-                                        <span class="left">804,24KB</span>
-                                        <span class=""><a href="">DOWNLOAD</a></span>
-                                    </p>
-                                    <div class="tags">
-                                        <p class="name-tag">Từ khóa: </p>
-                                        <div class="tag-list">
-                                                <p class="tag-title">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                                <p class="tag-title">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                        </div>
-                                    </div>
+                            <div class="news__top">
+                                <div class="img-post">
+                                    <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
                                 </div>
-                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông điệp số 2 của Chủ tịch HĐQT - Tổng giám đốc Trần Bá Dương </a>
-                                    </h5>
-                                    <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    </p>
-                                    <p class="title-docx ">thong diep so2.pdf  <span class="time">(20/08/2021)</span></p>
-                                    <p class="size-dowload">
-                                        <span class="left">804,24KB</span>
-                                        <span class=""><a href="">DOWNLOAD</a></span>
-                                    </p>
-                                    <div class="tags">
-                                        <p class="name-tag">Từ khóa: 
-                                        </p>
-                                        <div class="tag-list">
-                                            <p class="tag-title">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông điệp số 3 của Chủ tịch HĐQT - Tổng giám đốc Trần Bá Dương</a>
-                                    </h5>
-                                    <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    </p>
-                                    <p class="title-docx ">thong diep so3.pdf <span class="time">(20/08/2021)</span></p>
-                                    <p class="size-dowload">
-                                        <span class="left">804,24KB</span>
-                                        <span class=""><a href="">DOWNLOAD</a></span>
-                                    </p>
-                                    <div class="tags">
-                                        <p class="name-tag">Từ khóa: 
-                                        </p>
-                                        <div class="tag-list">
-                                            <p class="tag-title">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông điệp số 4 của Chủ tịch HĐQT - Tổng giám đốc Trần Bá Dương</a>
-                                    </h5>
-                                    <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    </p>
-                                    <p class="title-docx ">thong diep so 4.pdf <span class="time">(20/08/2021)</span></p>
-                                    <p class="size-dowload">
-                                        <span class="left">804,24KB</span>
-                                        <span class=""><a href="">DOWNLOAD</a></span>
-                                    </p>
-                                    <div class="tags">
-                                        <p class="name-tag">Từ khóa: 
-                                        </p>
-                                        <div class="tag-list">
-                                            <p class="tag-title">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                            <p class="tag-title ">
-                                                <a href="">Lorem</a>
-                                            </p>
-                                    </div>
-                                    </div>
-                                </div>
-                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông điệp số 5 của Chủ tịch HĐQT - Tổng giám đốc Trần Bá Dương</a>
-                                    </h5>
-                                    <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    </p>
-                                    <p class="title-docx ">thong diep so5.pdf <span class="time">(20/08/2021)</span></p>
-                                    <p class="size-dowload">
-                                        <span class="left">804,24KB</span>
-                                        <span class=""><a href="">DOWNLOAD</a></span>
-                                    </p>
-                                    <div class="tags">
-                                        <p class="name-tag">Từ khóa: 
-                                        </p><div class="tag-list">
-                                                <p class="tag-title">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                                <p class="tag-title">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item-newspaper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h5 class="title font18">
-                                        <a target="_blank" href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">Thông điệp số 6 của Chủ tịch HĐQT - Tổng giám đốc Trần Bá Dương</a>
-                                    </h5>
-                                    <p class="desc font18">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    </p>
-                                    <p class="title-docx ">thong diep so 6.pdf <span class="time">(20/08/2021)</span></p>
-                                    <p class="size-dowload">
-                                        <span class="left">804,24KB</span>
-                                        <span class=""><a href="">DOWNLOAD</a></span>
-                                    </p>
-                                    <div class="tags">
-                                        <p class="name-tag">Từ khóa: 
-                                        </p><div class="tag-list">
-                                                <p class="tag-title">
-                                                    <a href="">Lorem </a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem </a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                                <p class="tag-title">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                                <p class="tag-title ">
-                                                    <a href="">Lorem</a>
-                                                </p>
-                                        </div>
-                                    </div>
+                                <div class="news-post h-100">
+                                    <h3 class=" title font18">BẢN TIN NỘI BỘ</h3>
+                                    <a href="/chi-tiet-truyen-thong">  <h4 class="name font18 ">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4></a>
+                                    <span class="time">23/06/2021</span>
+                                    <p class="description font18  text-justify">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
+                                    <a href="/chi-tiet-truyen-thong" class="read-more">Xem thêm</a>
                                 </div>
                             </div>
-                            <div class="page-pagination mt-40 mb-40">
-                                <ul class="pagination font18">
-                                    <li class="page-item active">
-                                        <a href="" class="page-link">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            2
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            3
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            4
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            5
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            6
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            7
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            >
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            >>
-                                        </a>
-                                    </li>
-                                   
-                                </ul>
+                            <div class="filter-search-media mt-40">
+                                <form action="" class="form-search">
+                                    <div class="search">
+                                        <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
+                                        <button class="btn btn-secondary" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                    <select class="select-year font18" id="">
+                                        <option value="">2019</option>
+                                        <option value="">2018</option>
+                                        <option value="">2017</option>
+                                        <option value="">2016</option>
+                                    </select>
+                                    <select class="select-by-field font18" id="">
+                                        <option value="">Ô tô - Cơ Khí</option>
+                                        <option value="">Nông nghiệp</option>
+                                        <option value="">Thương mại - dịch vụ</option>
+                                        <option value="">Đầu tư xây dựng</option>
+                                        <option value="">Logistics</option>
+                                    </select>
+                                </form>
                              </div>
+                             <div class="list-media_wrapper">
+                                <div class="list-media mt-60">
+                                    <div class="media-item ">
+                                        <div class="img-content">
+                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                                <div class="post-thumbnail">
+                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/1.jpg') }}" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO tài trợ học bổng “Nâng bước Thủ khoa”</h3></a>
+                                              
+                                                <p class="time">23/06/2021</p>
+                                                <p class="desc font18">Ngày 29/11 vừa qua, THACO đã tài trợ 100 triệu đồng trong Chương trình vinh danh và trao học bổng “Nâng bước thủ khoa 2020”. Đây là chương trình do Quỹ Hỗ trợ Tài năng trẻ Việt Nam và báo Tiền Phong phối hợp tổ chức. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item ">
+                                        <div class="img-content">
+                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                                <div class="post-thumbnail">
+                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/2.jpg') }}" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                                <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">THACO nhận bằng khen trong phong trào “Quảng Nam chung tay vì người nghèo” 2016 – 2020</h3></a>
+                                             
+                                                <p class="time">23/06/2021</p>
+                                                <p class="desc font18">Sáng ngày 19/11, UBND tỉnh Quảng Nam đã tổ chức Hội nghị tổng kết Chương trình mục tiêu quốc gia Giảm nghèo bền vững và Phong trào thi đua “Quảng Nam chung tay vì người nghèo” giai đoạn 2016 - 2020. Tại Hội nghị, THACO được UBND tỉnh trao tặng Bằng khen vì đã có những đóng góp thiết thực trong việc thực hiện các hoạt động vì cộng đồng và hỗ trợ người nghèo. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item ">
+                                        <div class="img-content">
+                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                                <div class="post-thumbnail">
+                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/3.jpg') }}" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                                
+                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Chủ tịch THACO chúc mừng Ngày Nhà giáo Việt Nam</h3></a>
+                                                <p class="time">23/06/2021</p>
+                                                <p class="desc font18">Nhân Ngày Nhà giáo Việt Nam 20/11/2020, THACO đã có nhiều hoạt động thể hiện tấm lòng tri ân đến các thầy cô giáo, những người đã cống hiến cho sự nghiệp giáo dục.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item ">
+                                        <div class="img-content">
+                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                                <div class="post-thumbnail">
+                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/4.jpg') }}" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO 5 năm đồng hành cùng chương trình “Học trò xứ Quảng”</h3></a>
+                                                
+                                                <p class="time">23/06/2021</p>
+                                                <p class="desc font18">Sáng ngày 08/11 tại trường THPT chuyên Nguyễn Bỉnh Khiêm (thành phố Tam Kỳ, tỉnh Quảng Nam) đã diễn ra chương trình chung kết gameshow “Học trò xứ Quảng” năm 2020 do Đài Phát thanh - Truyền hình phối hợp với Sở Giáo dục và Đào tạo Quảng Nam tổ chức. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-item ">
+                                     <div class="img-content">
+                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                             <div class="post-thumbnail">
+                                                 <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/5.jpg') }}" alt=""></a>
+                                             </div>
+                                         </div>
+                                         <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                             <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO ủng hộ đồng bào bị lũ lụt 3 tỷ đồng</h3></a>
+                                             
+                                             <p class="time">23/06/2021</p>
+                                             <p class="desc font18">Ngày 16/10/2020, Công ty CP Ô tô Trường Hải (THACO) đã ủng hộ 3 tỷ đồng cho đồng bào miền Trung đang bị thiệt hại nặng nề do mưa lũ thông qua Ban cứu trợ - Ủy Ban mặt trận tổ quốc Việt Nam các tỉnh Quảng Nam, Thừa Thiên Huế, Quảng Trị, Quảng Bình.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="media-item ">
+                                     <div class="img-content">
+                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                             <div class="post-thumbnail">
+                                                 <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/6.png') }}" alt=""></a>
+                                             </div>
+                                         </div>
+                                         <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                             <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO ủng hộ chương trình “Tiếp sức đến trường” tỉnh Thái Bình</h3></a>
+                                             
+                                             <p class="time">23/06/2021</p>
+                                             <p class="desc font18">Ngày 04/09/2020, Đài Phát thanh & Truyền hình Thái Bình phối hợp với Sở Lao động – Thương binh và Xã hội, Sở Giáo dục và Đào tạo, Hội Chữ thập đỏ tỉnh tổ chức đêm Gala “Tiếp sức đến trường”. THACO là nhà tài trợ đồng hành cùng chương trình.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="media-item ">
+                                     <div class="img-content">
+                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                             <div class="post-thumbnail">
+                                                 <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/7.jpg') }}" alt=""></a>
+                                             </div>
+                                         </div>
+                                         <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                             <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Chi nhánh xe Tải & Bus Cần Thơ - 8 năm liên tục đồng hành cùng chương trình hiến máu tình nguyện</h3></a>
+                                             
+                                             <p class="time">23/06/2021</p>
+                                             <p class="desc font18">“Cảm giác rất thoải mái và chỉ nghĩ đơn giản là mình góp một phần nhỏ công sức để hỗ trợ cộng đồng và những người cần thiết” – đó là lời chia sẻ của anh Nguyễn Hoàng Bửu - bộ phận Kế hoạch – Marketing, Chi nhánh xe Tải & Bus Cần Thơ khi được hỏi về cảm xúc lần hiến máu đầu tiên vào năm 2009..</p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="media-item ">
+                                     <div class="img-content">
+                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                             <div class="post-thumbnail">
+                                                 <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/8.jpg') }}" alt=""></a>
+                                             </div>
+                                         </div>
+                                         <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                             <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Công đoàn THACO hỗ trợ Đoàn viên có hoàn cảnh khó khăn</h3></a>
+                                             
+                                             <p class="time">23/06/2021</p>
+                                             <p class="desc font18">Với mục tiêu quan tâm, chăm lo đời sống CBNV và đoàn viên công đoàn, Ban Lãnh đạo và Công đoàn cơ sở THACO đã luôn cập nhật và theo sát hoàn cảnh của CBNV tại đơn vị nhằm động viên và hỗ trợ kịp thời.</p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                </div>
+                                    <div class="page-pagination mt-40 mb-40">
+                                        <ul class="pagination font18">
+                                            <li class="page-item active">
+                                                <a href="" class="page-link">
+                                                    1
+                                                </a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="" class="page-link">
+                                                    2
+                                                </a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="" class="page-link">
+                                                    3
+                                                </a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="" class="page-link">
+                                                    4
+                                                </a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="" class="page-link">
+                                                    5
+                                                </a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="" class="page-link">
+                                                    6
+                                                </a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="" class="page-link">
+                                                    7
+                                                </a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="" class="page-link">
+                                                    >
+                                                </a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="" class="page-link">
+                                                    >>
+                                                </a>
+                                            </li>
+                                        
+                                        </ul>
+                                    </div>
+                            </div>
                         </div>
                         <div class="post-sidebar-content">
                             <div class="media__content_right">

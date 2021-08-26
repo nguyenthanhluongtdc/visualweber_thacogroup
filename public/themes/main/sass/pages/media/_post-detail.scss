@@ -61,7 +61,7 @@
                     .right {
                         display: flex;
                         justify-content: space-between;
-                        min-width: 150px;
+                        min-width: 100px;
                         align-items: center;
                         .share {
                             margin-bottom: 0;
@@ -71,9 +71,7 @@
                             background: unset;
                             border: unset;
                             outline: unset;
-                            img {
-                                margin-bottom: 4px;
-                            }
+                            padding: 0;
                         }
                     }
                 }

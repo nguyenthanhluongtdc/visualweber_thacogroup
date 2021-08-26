@@ -416,7 +416,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="shareholder-infomation_right">
+                        <div class="relationship-sibar">
                             <div class="relationship__content">
                                 <div class="list-relationship-menu" data-aos="flip-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                     <h3 class="font28 font-myria-bold">QUAN HỆ CỔ ĐÔNG</h3>

@@ -9,14 +9,12 @@ register_page_template([
     'media' => 'Media',
     'information-disclosure' => 'Information Disclosure',
     'shareholder-information' => 'Shareholder Information',
-    'contact' => 'Contact',
+    'financial-report' => 'Financial Report',
     'media-event' => 'Media Event',
     'media-human' => 'Human',
     'media-message' => 'Message',
     'media-news' => 'News',
     'security-term' => 'Security Term',
-    ''
- 
 ]);
 
 register_sidebar([

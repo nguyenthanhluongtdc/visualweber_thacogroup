@@ -158,12 +158,12 @@
                                         </a>
                                     </div>
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/bao-cao-thuong-nien" class="dropdown-item">
                                             Báo cáo thường niên
                                         </a>
                                     </div>
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="/bao-cao-tai-chinh" class="dropdown-item">
                                             Báo cáo tài chính
                                         </a>
                                     </div>

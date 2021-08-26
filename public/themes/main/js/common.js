@@ -423,14 +423,14 @@ function hasScrolled() {
 
             $('header').removeClass('nav-down').addClass('nav-up');
             $('.post-sidebar-content').css('top', 5);
-            $('.shareholder-infomation_right').css('top', 5);
+            $('.relationship-sibar').css('top', 5);
         } else {
             // Scroll Up
 
             if (st + $(window).height() < $(document).height()) {
                 $('header').removeClass('nav-up').addClass('nav-down');
                 $('.post-sidebar-content').css('top', 100);
-                $('.shareholder-infomation_right').css('top', 100);
+                $('.relationship-sibar').css('top', 100);
 
             }
         }
