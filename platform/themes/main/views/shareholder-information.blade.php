@@ -187,7 +187,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                THONG BAO NGAY CHOT DANH SACH THAM DU DHCD 2020.pdf
+                                                Thông báo ngày chốt danh sách tham dự ĐHCĐ 2020
                                             </a>
                                         </h3>
                                         <p class="count">
