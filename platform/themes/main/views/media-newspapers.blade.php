@@ -35,8 +35,8 @@
         </nav>
     </div>
    </section>
-<section class="meidia-newspapers mb-60">
-    <div class="meidia-newspapers-wrapper">
+<section class="media-newspapers mb-60">
+    <div class="media-newspapers-wrapper">
         <div class="container-customize">
             <div class="filter-search-media">
                 <form action="" class="form-search ">
@@ -61,7 +61,7 @@
                     </select>
                 </form>
              </div>
-             <div class="meidia-newspapers-content mt-40 mb-100">
+             <div class="media-newspapers-content mt-40 mb-100">
                         <div class="media__content_left">
                             <div class="list-newspapers">
                                 <div class="item-newspaper " data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">

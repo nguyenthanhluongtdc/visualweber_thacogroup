@@ -31,8 +31,8 @@
         </ol>
     </nav>
 </div>
-<section class="meidia-newspapers mb-60">
-    <div class="meidia-newspapers-wrapper">
+<section class="media-newspapers mb-60">
+    <div class="media-newspapers-wrapper">
         <div class="container-customize">
             <div class="filter-search-media">
                 <form action="" class="form-search ">

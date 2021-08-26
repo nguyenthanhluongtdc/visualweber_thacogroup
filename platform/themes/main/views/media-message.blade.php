@@ -35,33 +35,10 @@
         </nav>
     </div>
  </section>
-<section class="meidia-newspapers mb-60">
-    <div class="meidia-newspapers-wrapper">
+<section class="media-message mb-60">
+    <div class="media-message-wrapper">
         <div class="container-customize">
-            <div class="filter-search-media">
-                <form action="" class="form-search ">
-                    <div class="search">
-                        <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
-                        <button class="btn btn-secondary" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                    <select class="select-year font18" id="">
-                        <option value="">2019</option>
-                        <option value="">2018</option>
-                        <option value="">2017</option>
-                        <option value="">2016</option>
-                    </select>
-                    <select class="select-by-field font18" id="">
-                        <option value="">Ô tô - Cơ Khí</option>
-                        <option value="">Nông nghiệp</option>
-                        <option value="">Thương mại - dịch vụ</option>
-                        <option value="">Đầu tư xây dựng</option>
-                        <option value="">Logistics</option>
-                    </select>
-                </form>
-             </div>
-             <div class="meidia-newspapers-content mt-40 mb-100">
+             <div class="media-message-content mt-40 mb-100">
                         <div class="media__content_left">
                             <div class="news__top">
                                 <div class="img-post">
@@ -327,7 +304,6 @@
                                 </div>
                             </div>
                         </div>
-               
              </div>
         </div>
     </div>
