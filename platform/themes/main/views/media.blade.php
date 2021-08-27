@@ -78,6 +78,7 @@
                                             chuyển vắc xin và phục vụ tiêm chủng lưu động
                                             </p>
                                     </div>
+                                    <span class="album-item__date">(25/08/2021)</span>
                                     <div class="album-item__count">
                                        
                                         <i class="far fa-image"></i>
@@ -94,6 +95,7 @@
                                             vừa được xuất khẩu qua Cảng Chu Lai                                            
                                             </p>
                                     </div>
+                                    <span class="album-item__date">(25/08/2021)</span>
                                     <div class="album-item__count">
                                        
                                         <i class="far fa-image"></i>
@@ -110,6 +112,7 @@
                                             chống dịch cho Công an TP.HCM                                            
                                             </p>
                                     </div>
+                                    <span class="album-item__date">(25/08/2021)</span>
                                     <div class="album-item__count">
                                        
                                         <i class="far fa-image"></i>
@@ -125,6 +128,7 @@
                                         <p class="name font20">Những trái tim nhiệt huyết
                                             </p>
                                     </div>
+                                    <span class="album-item__date">(25/08/2021)</span>
                                     <div class="album-item__count">
                                        
                                         <i class="far fa-image"></i>
@@ -142,6 +146,7 @@
                                             
                                             </p>
                                     </div>
+                                    <span class="album-item__date">(25/08/2021)</span>
                                     <div class="album-item__count">
                                        
                                         <i class="far fa-image"></i>
@@ -157,6 +162,7 @@
                                         <p class="name font20">Mazda “trình làng” loạt xe mới tại VMS 2016
                                             </p>
                                     </div>
+                                    <span class="album-item__date">(25/08/2021)</span>
                                     <div class="album-item__count">
                                        
                                         <i class="far fa-image"></i>
@@ -464,10 +470,11 @@
                                         
                                      </div>
                                 </div> 
-                                <div class="video-item__name font25 ">
+                                <div class="video-item__name font20 ">
                                     <p class="name">Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA
                                     </p>
                                 </div>
+                                <span class="video-item__date">(25/08/2021)</span>
                             </div>
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
@@ -477,10 +484,11 @@
                                         <img src="{{ Theme::asset()->url('images/media/icon-list-video.png') }}" alt="">
                                      </div>
                                 </div> 
-                                <div class="video-item__name font25 ">
+                                <div class="video-item__name font20 ">
                                     <p class="name">THACO tham dự Khai mạc Triển lãm ô tô Việt Nam 2016
                                     </p>
                                 </div>
+                                <span class="video-item__date">(25/08/2021)</span>
                             </div>
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
@@ -491,10 +499,11 @@
                                         
                                      </div>
                                 </div> 
-                                <div class="video-item__name font25 ">
+                                <div class="video-item__name font20 ">
                                     <p class="name">Triển lãm ô tô Việt Nam 2015: Thaco mang đến nhiều sự lựa chọn cho khách hàng
                                     </p>
                                 </div>
+                                <span class="video-item__date">(25/08/2021)</span>
                             </div>
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
@@ -505,10 +514,11 @@
                                         
                                      </div>
                                 </div> 
-                                <div class="video-item__name font25 ">
+                                <div class="video-item__name font20 ">
                                     <p class="name">Lễ kỷ niệm 3 năm hợp tác chiến lược Thaco - Mazda
                                     </p>
                                 </div>
+                                <span class="video-item__date">(25/08/2021)</span>
                             </div>
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
@@ -519,10 +529,11 @@
                                         
                                      </div>
                                 </div> 
-                                <div class="video-item__name font25 ">
+                                <div class="video-item__name font20 ">
                                     <p class="name">THACO giới thiệu thương hiệu PEUGEOT & xe PEUGEOT 408 tại Việt...
                                     </p>
                                 </div>
+                                <span class="video-item__date">(25/08/2021)</span>
                             </div>
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
@@ -533,10 +544,11 @@
                                         
                                      </div>
                                 </div> 
-                                <div class="video-item__name font25 ">
+                                <div class="video-item__name font20 ">
                                     <p class="name">Năm 2013 Công ty CP Ô tô Trường Hải phấn đấu bán 29.200 xe
                                     </p>
                                 </div>
+                                <span class="video-item__date">(25/08/2021)</span>
                             </div>
                         </div>
                       </div>
