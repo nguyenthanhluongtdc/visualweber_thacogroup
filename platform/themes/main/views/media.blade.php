@@ -41,29 +41,7 @@
                         </li>
                         
                     </ul>
-                    <div class="list-tool">
-                        <div class="search">
-                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
-                            <button class="btn btn-secondary" type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                        <div class="calender">
-                            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
-                                 <input type="date" id="datepicker" name="calendars" autocomplete="off" class="font15">
-                            </div>
-                        </div>
-                        <div class="filter">
-                            <label for="">Filter</label>    
-                            <select class="filler">
-                               
-                                {{-- <option value="1"></option> --}}
-                            </select>
-                        </div>
-                        <div class="arrange">
-                            <img src="{{ Theme::asset()->url('images/media/Sort.png') }}" alt="">
-                        </div>
-                    </div>
+                    {!! do_shortcode('[filter-media][/filter-media]') !!}
                 
                 </div>
                 <div class="tab-content" id="nav-tabContent3 tab-content2">
@@ -338,122 +316,7 @@
                         </li>
                         
                     </ul>
-                    <div class="list-tool">
-                        <form action="" class="form-action">
-                            <div class="search">
-                                <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
-                                <button class="btn btn-secondary" type="submit">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                            <div class="calender">
-                                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
-                                    <input type="date" id="datepicker" name="calendars" autocomplete="off" class="font15">
-                                </div>
-    
-                            </div>
-                            <div class="filter" id="filter">
-                                <div class="filter__title">
-                                    <label for="">Filter</label> 
-                                    <i class="fas fa-chevron-down"></i>   
-                                </div>
-                               
-                                <div class="filler-list">
-                                    <div class="col-md-12 col-12 search-cate">
-                                        {{-- <div class="box">
-                                            <input id="one" type="checkbox">
-                                            <span class="check"></span>
-                                            <label for="one" class="font-pri font15">THACO</label>
-                                        </div>
-                                        <div class="box">
-                                            <input id="two" type="checkbox">
-                                            <span class="check"></span> 
-                                            <label for="two" class="">Ô tô & Cơ khí</label>
-                                        </div>
-                                        <div class="box">
-                                            <input id="three" type="checkbox">
-                                            <span class="check"></span>
-                                            <label for="three" class="font-pri font15">Nông Lâm Nghiệp</label>
-                                        </div>
-                                        <div class="box">
-                                            <input id="four" type="checkbox">
-                                            <span class="check"></span>
-                                            <label for="four" class="font-pri font15">Đầu Tư - Xây Dựng</label>
-                                        </div>
-                                        <div class="box">
-                                            <input id="five" type="checkbox">
-                                            <span class="check"></span>
-                                            <label for="five" class="font-pri font15">Thương Mại - Dịch Vụ</label>
-                                        </div>
-                                        <div class="box">
-                                            <input id="six" type="checkbox">
-                                            <span class="check"></span>
-                                            <label for="six" class="font-pri font15">Logistics</label>
-                                        </div> --}}
-                                        <div class="pretty p-default p-smooth">
-                                            <input type="checkbox" />
-                                            <div class="state p-primary">
-                                                <label>THACO</label>
-                                            </div>
-                                        </div>
-                                        <div class="pretty p-default p-smooth">
-                                            <input type="checkbox" />
-                                            <div class="state p-primary">
-                                                <label>Ô tô & Cơ khí</label>
-                                            </div>
-                                        </div>  
-                                        <div class="pretty p-default p-smooth">
-                                            <input type="checkbox" />
-                                            <div class="state p-primary">
-                                                <label>Nông Lâm Nghiệp</label>
-                                            </div>
-                                        </div> 
-                                        <div class="pretty p-default p-smooth">
-                                            <input type="checkbox" />
-                                            <div class="state p-primary">
-                                                <label>Đầu tư - Xây Dựng</label>
-                                            </div>
-                                        </div> 
-                                        <div class="pretty p-default p-smooth">
-                                            <input type="checkbox" />
-                                            <div class="state p-primary">
-                                                <label>Thương mại - Dịch vụ</label>
-                                            </div>
-                                        </div> 
-                                        <div class="pretty p-default p-smooth">
-                                            <input type="checkbox" />
-                                            <div class="state p-primary">
-                                                <label>Logistics</label>
-                                            </div>
-                                        </div>     
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="arrange">
-                               
-                                <div class="sort-time-wrapper">
-                                    <img class="icon-sort" src="{{ Theme::asset()->url('images/media/Sort.png') }}" alt="">
-                                    {{-- <i class="fas fa-sort"></i> --}}
-                                    <div class="sort-list-wrapper">
-                                        <div class="sort-list">
-                                            <select name="" id=""  class="sort-time font18 js-example-basic-single">
-                                                <option value="" selected disabled>
-                                                    Sắp xếp
-                                                </option>
-                                                <option value="">Thời gian mới nhất</option>
-                                                <option value="">Thời gian cũ nhất</option>
-                                                <option value="">Từ A-Z</option>
-                                                <option value="">Từ Z-A</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                </div>
-                            </div>
-                        </form>
-                       
-                    </div>
+                    {!! do_shortcode('[filter-media][/filter-media]') !!}
                 
                 </div>
 
@@ -608,8 +471,6 @@
                             <div class="list-video" >
                                 <div class="left">
                                     <div class="video-main">
-                                        {{-- <img src="{{ Theme::asset()->url('images/media/video-main.jpg') }}" alt="">
-                                         --}}
                                          <div class="video-wrapper">
                                             <video muted loop  autoplay class="__video w-100">
                                                 <source src="{{ Theme::asset()->url('images/video/chuc-mung-nam-moi.mp4') }}" type="video/mp4">

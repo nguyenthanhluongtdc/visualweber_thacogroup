@@ -23,4 +23,8 @@ app()->booted(function () {
     });
 
     shortcode()->setAdminConfig('youtube', Theme::partial('shortcodes.youtube-admin-config'));
+    add_shortcode('filter-media', __('Filter Media'), __('Filter Media'), function ($shortCode) {
+        return Theme::partial('shortcodes.filter-media');
+    });
+
 });

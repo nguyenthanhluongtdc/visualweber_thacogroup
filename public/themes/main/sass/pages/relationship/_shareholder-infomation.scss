@@ -80,33 +80,6 @@
                 }
             }
         }
-        .page-pagination {
-            display: flex;
-            justify-content: center;
-            .pagination {
-                .page-item {
-                    margin-right: 5px;
-                    .page-link {
-                        color: #343434;
-                        border-radius: 5px;
-                        &:hover {
-                            background: $main_color;
-                            color: $white;
-                        }
-                    }
-                }
-                .page-item.active .page-link {
-                    background: $main_color;
-                    color: $white;
-                }
-                .page-item:first-child .page-link {
-                    margin-left: unset;
-                }
-                .page-item:last-child .page-link {
-                    margin-left: unset;
-                }
-            }
-        }
     }
     .relationship-sibar {
         height: max-content;

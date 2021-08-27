@@ -511,7 +511,8 @@ if ($('.filter__title').length > 0) {
     $('.filter__title').click(function() {
 
         $('.filler-list').toggleClass('d-block');
-        $('.filler-list').css('transition', 'top .5s')
+        $('.filler-list').css('transition', 'top .5s');
+        $('.filter__title').toggleClass('changed');
     });
 
 }
@@ -525,3 +526,25 @@ if ($('.itemdown-show').length > 0) {
         return false;
     });
 }
+// scroll when change page
+$(document).ready(function() {
+    if ($('.list-group-item').length > 0) {
+        $('.list-group-item').click(function() {
+
+
+        }, function() {
+            $(window).on("load", function() {
+                var target = $('.list-media_wrapper');
+                $('html,body').stop().animate({
+                    scrollTop: $(target).offset().top
+                }, 200);
+            });
+        });
+    }
+
+});
+
+
+
+
+//end scroll when change page
