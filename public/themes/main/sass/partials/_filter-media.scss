@@ -52,6 +52,7 @@
         .filter {
             margin-right: 1%;
             width: 12%;
+            cursor: pointer;
             &__title {
                 background: #f1f1f1;
                 display: flex;
@@ -61,6 +62,7 @@
                 cursor: pointer;
                 label {
                     margin: 0;
+                    cursor: pointer;
                 }
             }
             .filler-list {

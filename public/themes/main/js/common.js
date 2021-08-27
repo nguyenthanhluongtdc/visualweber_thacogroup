@@ -507,12 +507,11 @@ if ($('.icon-sort').length > 0) {
 
 }
 // filter click
-if ($('.filter__title').length > 0) {
-    $('.filter__title').click(function() {
+if ($('#filter').length > 0) {
+    $('#filter').click(function() {
 
         $('.filler-list').toggleClass('d-block');
         $('.filler-list').css('transition', 'top .5s');
-        $('.filter__title').toggleClass('changed');
     });
 
 }
