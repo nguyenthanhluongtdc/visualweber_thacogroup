@@ -675,7 +675,7 @@
             <div class="modal-header">
                 
                 <div class="title_modal">
-                    <h3 class="name font30">THACO trao tặng 126 xe chuyên dụng vận chuyển vắc xin và phục vụ tiêm chủng lưu động
+                    <h3 class="name font28">THACO trao tặng 126 xe chuyên dụng vận chuyển vắc xin và phục vụ tiêm chủng lưu động
                     </h3>
                     
                 </div>
@@ -769,7 +769,7 @@
               <div class="slide-content">
                 <div class="swiper-container gallery-top">
                     <div class="title_modal">
-                        <h3 class="name font30">THACO trao tặng 126 xe chuyên dụng vận chuyển vắc xin và phục vụ tiêm chủng lưu động
+                        <h3 class="name font28">THACO trao tặng 126 xe chuyên dụng vận chuyển vắc xin và phục vụ tiêm chủng lưu động
                         </h3>
                     </div>
                     <div class="swiper-wrapper">
@@ -810,7 +810,7 @@
             <div class="modal-header">
                 
                 <div class="title_modal">
-                    <h3 class="name font30">Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA
+                    <h3 class="name font28">Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA
                     </h3>
                     
                 </div>
@@ -904,7 +904,7 @@
               </div>
               <div class="slide-content">
                 <div class="title_modal">
-                    <h3 class="name font30">Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA
+                    <h3 class="name font28">Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA
                     </h3>
                 </div>
                 <div class="video-wrapper">
