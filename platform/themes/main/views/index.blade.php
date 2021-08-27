@@ -215,19 +215,19 @@
             </div>
             <div class="logo-desktop"   >
                 <div class="logo-item"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <img class=""  src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
+                    <img class=""  src="{{Theme::asset()->url('images/home/logo/logo-1.png')}}" alt="">
                 </div>
                 <div class="logo-item"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <img class=""  src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
+                    <img class=""  src="{{Theme::asset()->url('images/home/logo/logo-2.png')}}" alt="">
                 </div>
                 <div class="logo-item"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <img class=""  src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
+                    <img class=""  src="{{Theme::asset()->url('images/home/logo/logo-3.png')}}" alt="">
                 </div>
                 <div class="logo-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <img class="" src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
+                    <img class="" src="{{Theme::asset()->url('images/home/logo/logo-4.png')}}" alt="">
                 </div>
                 <div class="logo-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <img class="" src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
+                    <img class="" src="{{Theme::asset()->url('images/home/logo/logo-5.png')}}" alt="">
                 </div>
             </div>
             
