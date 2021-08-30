@@ -1,6 +1,6 @@
-<section id="contact-fo" class="contact-fo mb-100 data-filter-02" >
-    <div class="contact-fo-container">
-        <h2 data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">Gửi email cho chúng tôi</h2>
+<section id="contact-fo" class="contact-fo data-filter-02" >
+    <div class="contact-fo-container  mb-60">
+        <h2>Gửi email cho chúng tôi</h2>
         {!! Form::open(['route' => 'public.send.contact', 'method' => 'POST']) !!}
         @if(session()->has('success_msg') || session()->has('error_msg') || isset($errors))
             @if (session()->has('success_msg'))

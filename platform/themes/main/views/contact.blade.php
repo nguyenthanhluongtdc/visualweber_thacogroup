@@ -6,7 +6,7 @@
         <div class="contact-title  mt-60 mb-60" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             <h1 class="font40 title">HỖ TRỢ TỪ CHÚNG TÔI</h1> 
         </div>
-        <div class="contact-box" id="support-tab">
+        <div class="contact-box  mt-60 mb-60" id="support-tab">
             <div class="contact-box__item info" data-filter=".data-filter-01" data-aos="flip-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 <div class="image">
                     <img src="{{ Theme::asset()->url('images/contact/homepage.png') }}" alt="">
@@ -35,7 +35,7 @@
              
             </div>
         </div>
-        <div class="office-wrapper mt-100 data-filter-01">
+        <div class="office-contact-wrapper mt-100 data-filter-01">
             <div class="office-item mb-100" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
                 <div class="left">
                     <div class="office-name">
@@ -130,6 +130,9 @@
 
         </div>
         {!! do_shortcode('[contact-form][/contact-form]') !!}
+        <div class="chat-online mb-60">
+            <h2>Hỗ trợ trực tuyến</h2>
+        </div>
     </div>
   
 </section>

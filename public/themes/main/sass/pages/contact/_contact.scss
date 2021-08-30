@@ -20,6 +20,7 @@
             background-color: $main_color;
             color: $white;
             border-radius: 5px;
+            cursor: pointer;
             @media screen and (max-width: 1440px) {
                 padding: 2%;
             }
@@ -44,7 +45,7 @@
             margin-right: 0;
         }
     }
-    .office-wrapper {
+    .office-contact-wrapper {
         .office-item {
             display: flex;
             box-shadow: rgb(0 0 0 / 20%) 0px 5px 15px;
@@ -116,6 +117,7 @@
                 font-size: 30px;
                 margin-bottom: 30px;
                 text-align: center;
+                text-transform: uppercase;
             }
             input,
             textarea,
@@ -167,6 +169,15 @@
                 /* Microsoft Edge */
                 color: $main-color;
             }
+        }
+    }
+    .chat-online {
+        h2 {
+            color: $main-color;
+            font-family: $MyriadPro-Bold;
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
         }
     }
 }

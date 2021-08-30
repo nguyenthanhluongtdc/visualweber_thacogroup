@@ -554,19 +554,36 @@ $('#support-tab>div').click(function(event) {
 
 });
 $(document).ready(function() {
-    // $('#support-tab').find('.col-sm-4').removeClass("mixitup-control-active");
-    $('.contact-fo-container').css('display', 'none');
-    $('.office-wrapper').css('display', 'none');
-    // $('.email-us').parent().css('display', 'none');
-    $('#support-tab').find('.contact-box__item:nth-child(2)').click(function() {
-        $('.contact-fo-container').css('display', 'block');
-        $('.office-wrapper').css('display', 'none');
-    });
-    $('#support-tab').find('.contact-box__item:nth-child(1)').click(function() {
-        $('.contact-fo-container').css('display', 'none');
-        $('.office-wrapper').css('display', 'block');
-    });
+    const info_contact = $('.office-contact-wrapper');
+    const email_us = $('.contact-fo-container');
+    const chat_online = $('.chat-online');
+    info_contact.css('display', 'none');
+    email_us.css('display', 'none');
+    chat_online.css('display', 'none');
+
+
+    if (info_contact && email_us && chat_online) {
+        $('#support-tab').find('.contact-box__item:nth-child(1)').click(function() {
+            info_contact.css('display', 'block');
+            email_us.css('display', 'none');
+            chat_online.css('display', 'none');
+
+        });
+        $('#support-tab').find('.contact-box__item:nth-child(2)').click(function() {
+            info_contact.css('display', 'none');
+            email_us.css('display', 'block');
+            chat_online.css('display', 'none');
+
+        });
+        $('#support-tab').find('.contact-box__item:nth-child(3)').click(function() {
+            info_contact.css('display', 'none');
+            email_us.css('display', 'none');
+            chat_online.css('display', 'block');
+
+        });
+    } else return;
 });
+
 
 
 //end scroll when change page
