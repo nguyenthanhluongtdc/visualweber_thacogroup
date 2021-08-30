@@ -143,7 +143,7 @@
                                 <a class="item__link" href="/quan-he-co-dong">QUAN HỆ CỔ ĐÔNG</a>
                                 <div class="dropdown-menu sm-menu" style="display:none">
                                     <div class="cmenu">
-                                        <a href="" class="dropdown-item">
+                                        <a href="dieu-le-quy-che" class="dropdown-item">
                                             Điều lệ & Quy chế
                                         </a>
                                     </div>
