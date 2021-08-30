@@ -26,5 +26,8 @@ app()->booted(function () {
     add_shortcode('filter-media', __('Filter Media'), __('Filter Media'), function ($shortCode) {
         return Theme::partial('shortcodes.filter-media');
     });
+    add_shortcode('contact-form', __('Contact Form'), __('Contact Form'), function ($shortCode) {
+        return Theme::partial('shortcodes.contact-form');
+    });
 
 });

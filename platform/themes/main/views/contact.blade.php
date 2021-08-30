@@ -6,8 +6,8 @@
         <div class="contact-title  mt-60 mb-60" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             <h1 class="font40 title">HỖ TRỢ TỪ CHÚNG TÔI</h1> 
         </div>
-        <div class="contact-box">
-            <div class="contact-box__item" data-aos="flip-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+        <div class="contact-box" id="support-tab">
+            <div class="contact-box__item info" data-filter=".data-filter-01" data-aos="flip-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 <div class="image">
                     <img src="{{ Theme::asset()->url('images/contact/homepage.png') }}" alt="">
                 </div>
@@ -16,7 +16,7 @@
                 <div class="content font20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>
                 <i class="fas fa-angle-down"></i>
             </div>
-            <div class="contact-box__item" data-aos="flip-up" data-aos-duration="700" data-aos-delay="200" class="aos-init aos-animate">
+            <div class="contact-box__item email" data-aos="flip-up" data-filter=".data-filter-02" data-aos-duration="700" data-aos-delay="200" class="aos-init aos-animate">
                 <div class="image">
                     <img src="{{ Theme::asset()->url('images/contact/mail.png') }}" alt="">
                 </div>
@@ -35,7 +35,7 @@
              
             </div>
         </div>
-        <div class="office-wrapper mt-100">
+        <div class="office-wrapper mt-100 data-filter-01">
             <div class="office-item mb-100" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
                 <div class="left">
                     <div class="office-name">
@@ -129,5 +129,7 @@
             </div>
 
         </div>
+        {!! do_shortcode('[contact-form][/contact-form]') !!}
     </div>
+  
 </section>

@@ -542,7 +542,31 @@ $(document).ready(function() {
 
 });
 
+$('#support-tab>div').click(function(event) {
+    $('.contact-fo').parent().css('display', '');
+    var posTop = $('#support-tab').offset().top + $('#support-tab').outerHeight();
+    if ($('.anchor-link').length) {
+        $('html, body').animate({ scrollTop: posTop - 70 }, 500);
+    } else {
+        $('html, body').animate({ scrollTop: posTop - 20 }, 500);
+    }
 
+
+});
+$(document).ready(function() {
+    // $('#support-tab').find('.col-sm-4').removeClass("mixitup-control-active");
+    $('.contact-fo-container').css('display', 'none');
+    $('.office-wrapper').css('display', 'none');
+    // $('.email-us').parent().css('display', 'none');
+    $('#support-tab').find('.contact-box__item:nth-child(2)').click(function() {
+        $('.contact-fo-container').css('display', 'block');
+        $('.office-wrapper').css('display', 'none');
+    });
+    $('#support-tab').find('.contact-box__item:nth-child(1)').click(function() {
+        $('.contact-fo-container').css('display', 'none');
+        $('.office-wrapper').css('display', 'block');
+    });
+});
 
 
 //end scroll when change page

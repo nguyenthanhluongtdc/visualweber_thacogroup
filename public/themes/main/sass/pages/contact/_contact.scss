@@ -101,8 +101,72 @@
                 }
             }
         }
-        .office-item:last-child {
-            margin-bottom: 150px;
+        // .office-item:last-child {
+        //     margin-bottom: 150px;
+        // }
+    }
+    .contact-fo {
+        display: flex;
+        justify-content: center;
+        .contact-fo-container {
+            max-width: 70%;
+            h2 {
+                color: $main-color;
+                font-family: $MyriadPro-Bold;
+                font-size: 30px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            input,
+            textarea,
+            select {
+                border-color: $main-color !important;
+                outline: none;
+                color: $main-color;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+            input {
+                height: 40px;
+                margin-bottom: 15px;
+                outline: none!important;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            select.form-control:not([size]):not([multiple]) {
+                height: 40px;
+                margin-bottom: 15px;
+                padding: 6px 7px;
+                outline: none!important;
+            }
+            // input:focus{
+            //     outline-color: $main-color;
+            //     outline-style: solid;
+            // }
+            button {
+                background-color: $main_color;
+                border: none;
+                padding: 10px 40px;
+                outline: none;
+                font-size: 15px;
+                color: #fff;
+            }
+             ::placeholder {
+                color: $main-color;
+                opacity: 1;
+                /* Firefox */
+            }
+             :-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: $main-color;
+            }
+             ::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: $main-color;
+            }
         }
     }
 }
