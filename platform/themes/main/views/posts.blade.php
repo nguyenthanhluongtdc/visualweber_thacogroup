@@ -400,7 +400,7 @@
                                 <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
                                 <a href="/su-kien" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
                                 <a href="/thong-diep" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
-                                <a href="/media" class="item_link list-group-item  font18 font-myria-bold">Media</a>
+                                <a href="/thu-vien-anh-va-video" class="item_link list-group-item  font18 font-myria-bold">Media</a>
                             </div>
                             <div class="list-post-new">
                                 <div class="wrap">
@@ -413,7 +413,7 @@
                                                 </div>
                                             </div>
                                             <div class="title font18">
-                                                <a href="/chi-tiet-truyen-thong">THACO tài trợ trang thiết bị, vật tư y tế phòng chống dịch cho... Công an TP.HCM</a>
+                                                <a href="/chi-tiet-truyen-thong">THACO tài trợ trang thiết bị, vật tư y tế phòng dịch...</a>
                                                 <p class="time">23/06/2021</p>
                                             </div>
                                         </div>

@@ -343,7 +343,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="title font18">
-                                                    <a href="/chi-tiet-truyen-thong">THACO tài trợ trang thiết bị, vật tư y tế phòng chống dịch cho... Công an TP.HCM</a>
+                                                    <a href="/chi-tiet-truyen-thong">THACO tài trợ trang thiết bị, vật tư y tế phòng dịch</a>
                                                     <p class="time">23/06/2021</p>
                                                 </div>
                                             </div>
