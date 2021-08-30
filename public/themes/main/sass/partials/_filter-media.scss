@@ -75,6 +75,7 @@
                 will-change: opacity, transform;
                 animation: Growth ease-in 0.5s;
                 width: 100%;
+                transition: top .5s;
                 &::before {
                     content: "";
                     border-width: 20px 27px;
