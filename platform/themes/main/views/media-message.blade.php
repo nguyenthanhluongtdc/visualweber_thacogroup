@@ -52,7 +52,7 @@
                                     <a href="/chi-tiet-truyen-thong" class="read-more">Xem thêm</a>
                                 </div>
                             </div>
-                            <div class="filter-search-media mt-40">
+                            {{-- <div class="filter-search-media mt-40">
                                 <form action="" class="form-search">
                                     <div class="search">
                                         <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
@@ -74,7 +74,7 @@
                                         <option value="">Logistics</option>
                                     </select>
                                 </form>
-                             </div>
+                             </div> --}}
                              <div class="list-media_wrapper">
                                 <div class="list-media mt-60">
                                     <div class="media-item ">

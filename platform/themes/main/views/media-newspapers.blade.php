@@ -409,14 +409,14 @@
                     <li class="breadcrumb-item">
                         <a href="/truyenthong">Quan hệ cổ đông</a>
                     </li>
-                    <li class="breadcrumb-item active">Công bố thông tin</li>
+                    <li class="breadcrumb-item active">Thông cáo báo chí</li>
         </ol>
     </nav>
 </div>
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
         <div class="container-customize">
-            <div class="filter-search-media">
+            <div class="filter-search-media field">
                 <form action="" class="form-search ">
                     <div class="search">
                         <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
