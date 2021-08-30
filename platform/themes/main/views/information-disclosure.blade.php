@@ -331,31 +331,31 @@
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
         <div class="container-customize">
-            <div class="filter-search-media non-field">
-                <form action="" class="form-search ">
-                    <div class="search">
-                        <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
-                        <button class="btn btn-secondary" type="submit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                    <select class="select-year font18" id="">
-                        <option value="">2019</option>
-                        <option value="">2018</option>
-                        <option value="">2017</option>
-                        <option value="">2016</option>
-                    </select>
-                    {{-- <select class="select-by-field font18" id="">
-                        <option value="">Ô tô - Cơ Khí</option>
-                        <option value="">Nông nghiệp</option>
-                        <option value="">Thương mại - dịch vụ</option>
-                        <option value="">Đầu tư xây dựng</option>
-                        <option value="">Logistics</option>
-                    </select> --}}
-                </form>
-             </div>
-             <div class="shareholder-infomation mt-40 mb-100">
+             <div class="shareholder-infomation mb-100">
                         <div class="shareholder-infomation_left">
+                            <div class="filter-search-media mb-40 non-field">
+                                <form action="" class="form-search ">
+                                    <div class="search">
+                                        <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
+                                        <button class="btn btn-secondary" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                    <select class="select-year font18" id="">
+                                        <option value="">2019</option>
+                                        <option value="">2018</option>
+                                        <option value="">2017</option>
+                                        <option value="">2016</option>
+                                    </select>
+                                    {{-- <select class="select-by-field font18" id="">
+                                        <option value="">Ô tô - Cơ Khí</option>
+                                        <option value="">Nông nghiệp</option>
+                                        <option value="">Thương mại - dịch vụ</option>
+                                        <option value="">Đầu tư xây dựng</option>
+                                        <option value="">Logistics</option>
+                                    </select> --}}
+                                </form>
+                             </div>
                             <div class="list-info">
                                 <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                     <div class="info-left">

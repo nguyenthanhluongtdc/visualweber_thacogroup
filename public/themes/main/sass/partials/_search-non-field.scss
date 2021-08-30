@@ -1,8 +1,6 @@
 .filter-search-media.non-field {
     .form-search {
         display: flex;
-        max-width: 68.2%;
-        margin-right: 2.7%;
         .search {
             width: 100%;
             height: 40px;
@@ -36,6 +34,57 @@
         }
         .select-year {
             width: 12%;
+            outline: 0;
+            box-shadow: none;
+            padding: 3px 8px;
+            margin-left: 2%;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            border: unset;
+            color: #2E2E2E;
+        }
+    }
+}
+
+.filter-search-media.non-field-w66 {
+    .form-search {
+        display: flex;
+        max-width: 68%;
+        margin-right: 2.7%;
+        .search {
+            width: 81%;
+            height: 40px;
+            display: flex;
+            align-items: baseline;
+            background-color: #f1f1f1;
+            input {
+                border: none;
+                outline: none;
+                width: 100%;
+                height: 100%;
+                background-color: transparent;
+                padding-left: 20px;
+                &:focus {
+                    border: none;
+                    outline: none;
+                    box-shadow: unset;
+                }
+            }
+            button {
+                background-color: unset;
+                color: #707070;
+                border: none;
+                outline: none;
+                &:focus {
+                    border: none;
+                    outline: none;
+                    box-shadow: unset;
+                }
+            }
+        }
+        .select-year {
+            width: 14%;
             outline: 0;
             box-shadow: none;
             padding: 3px 8px;
