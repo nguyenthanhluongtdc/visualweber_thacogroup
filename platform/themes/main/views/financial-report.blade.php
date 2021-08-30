@@ -65,7 +65,7 @@
                                         <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">BCTC KIEM TOAN HOP NHAT 2019.PDF</p>
+                                    <p class="name-file font18">BCTC KIEM TOAN HOP NHAT 2019 .PDF</p>
                                     <div class="download">
                                         <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
                                     </div>                                   
