@@ -23,7 +23,7 @@
            
                 <h3 class="title font28">Email cho chúng tôi</h3>
                 <div class="content font20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>
-               
+                <i class="fas fa-angle-down"></i>
             </div>
             <div class="contact-box__item" data-aos="flip-up" data-aos-duration="700" data-aos-delay="500" class="aos-init aos-animate">
                 <div class="image">
@@ -32,7 +32,7 @@
            
                 <h3 class="title font28">Hỗ trợ trực tuyến</h3>
                 <div class="content font20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>
-             
+                <i class="fas fa-angle-down"></i>
             </div>
         </div>
         <div class="office-contact-wrapper mt-100 data-filter-01">

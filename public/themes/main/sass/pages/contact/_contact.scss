@@ -27,6 +27,12 @@
             &:hover {
                 box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
                 transition: all .5s;
+                i {
+                    opacity: 1;
+                    visibility: visible;
+                    transition: 0.3s all;
+                    -webkit-transition: 0.3s all;
+                }
             }
             .image {
                 margin: 30px;
@@ -36,9 +42,16 @@
                     }
                 }
             }
-            .title {}
             .content {
                 padding-bottom: 20px;
+                position: relative;
+            }
+            i {
+                position: absolute;
+                opacity: 0;
+                visibility: hidden;
+                bottom: 20px;
+                font-size: 22px;
             }
         }
         &__item:last-child {
