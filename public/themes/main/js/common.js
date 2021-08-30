@@ -587,3 +587,9 @@ $(document).ready(function() {
 
 
 //end scroll when change page
+// $(document).ready(function() {
+//     var target = $('.list-media_wrapper');
+//     $('html, body').stop().animate({
+//         scrollTop: $(target).offset().top
+//     }, 200);
+// });

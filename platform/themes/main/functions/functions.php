@@ -10,6 +10,8 @@ register_page_template([
     'information-disclosure' => 'Information Disclosure',
     'shareholder-information' => 'Shareholder Information',
     'financial-report' => 'Financial Report',
+    'rules-regulation' => 'Rules Regulation',
+    'annual-report' => 'Annual Report',
     'media-event' => 'Media Event',
     'media-human' => 'Human',
     'media-message' => 'Message',
