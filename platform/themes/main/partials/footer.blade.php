@@ -18,7 +18,7 @@
                                     <a class="text-white" href="tel: {!! theme_option('office-phone') !!} "> {!! theme_option('office-phone') !!} </a>
                                 </div>
                                 <div class="global">
-                                    <a class="text-white" href=""> {!! theme_option('office-global') !!} </a>
+                                    <a class="text-white" href="{!! theme_option('office-global') !!}"> {!! theme_option('office-global') !!} </a>
                                 </div>
                             </div>
                             <div class="office">
@@ -32,7 +32,7 @@
                                     <a class="text-white" href="tel:{!! theme_option('office-phone-two') !!}">{!! theme_option('office-phone-two') !!}</a>
                                 </div>
                                 <div class="global ">
-                                    <a class="text-white" href="">{!! theme_option('office-global-two') !!}</a>
+                                    <a class="text-white" href="{!! theme_option('office-global-two') !!}">{!! theme_option('office-global-two') !!}</a>
                                 </div>
                             </div>
                             <div class="office">
@@ -48,7 +48,7 @@
                                     <a class="text-white" href="tel: {!! theme_option('office-phone-three') !!}">{!! theme_option('office-phone-three') !!}</a>
                                 </div>
                                 <div  class="global">
-                                    <a class="text-white" href="">{!! theme_option('office-global-three') !!}</a>
+                                    <a class="text-white" href="{!! theme_option('office-global-three') !!}">{!! theme_option('office-global-three') !!}</a>
                                 </div>
                             </div>
                     </div>

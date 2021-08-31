@@ -81,14 +81,14 @@
                                         <div class="img-content">
                                             <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                 <div class="post-thumbnail">
-                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/1.jpg') }}" alt=""></a>
+                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/thongdiep/thong-diep-1.jpg') }}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO tài trợ học bổng “Nâng bước Thủ khoa”</h3></a>
+                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Thông điệp năm 2020 của Chủ tịch HĐQT Trần Bá Dương</h3></a>
                                               
                                                 <p class="time">23/06/2021</p>
-                                                <p class="desc font18">Ngày 29/11 vừa qua, THACO đã tài trợ 100 triệu đồng trong Chương trình vinh danh và trao học bổng “Nâng bước thủ khoa 2020”. Đây là chương trình do Quỹ Hỗ trợ Tài năng trẻ Việt Nam và báo Tiền Phong phối hợp tổ chức. </p>
+                                                <p class="desc font18">Thông điệp từ Chủ tịch Hội đồng quản trị Trần Bá Dương gửi đến cho toàn thể cán bộ và nhân viên THACO vào năm 2020 </p>
                                             </div>
                                         </div>
                                     </div>
@@ -96,14 +96,14 @@
                                         <div class="img-content">
                                             <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                 <div class="post-thumbnail">
-                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/2.jpg') }}" alt=""></a>
+                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/thongdiep/thong-diep-2.jpg') }}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                                <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">THACO nhận bằng khen trong phong trào “Quảng Nam chung tay vì người nghèo” 2016 – 2020</h3></a>
+                                                <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">Thông điệp năm 2019 của Chủ tịch HĐQT Trần Bá Dương</h3></a>
                                              
                                                 <p class="time">23/06/2021</p>
-                                                <p class="desc font18">Sáng ngày 19/11, UBND tỉnh Quảng Nam đã tổ chức Hội nghị tổng kết Chương trình mục tiêu quốc gia Giảm nghèo bền vững và Phong trào thi đua “Quảng Nam chung tay vì người nghèo” giai đoạn 2016 - 2020. Tại Hội nghị, THACO được UBND tỉnh trao tặng Bằng khen vì đã có những đóng góp thiết thực trong việc thực hiện các hoạt động vì cộng đồng và hỗ trợ người nghèo. </p>
+                                                <p class="desc font18">Thông điệp từ Chủ tịch Hội đồng quản trị Trần Bá Dương gửi đến cho toàn thể cán bộ và nhân viên THACO vào năm 2019</p>
                                             </div>
                                         </div>
                                     </div>
@@ -111,14 +111,14 @@
                                         <div class="img-content">
                                             <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                 <div class="post-thumbnail">
-                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/3.jpg') }}" alt=""></a>
+                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/thongdiep/thong-diep-3.jpg') }}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                 
-                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Chủ tịch THACO chúc mừng Ngày Nhà giáo Việt Nam</h3></a>
+                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Thông điệp năm 2018 của Chủ tịch HĐQT Trần Bá Dương</h3></a>
                                                 <p class="time">23/06/2021</p>
-                                                <p class="desc font18">Nhân Ngày Nhà giáo Việt Nam 20/11/2020, THACO đã có nhiều hoạt động thể hiện tấm lòng tri ân đến các thầy cô giáo, những người đã cống hiến cho sự nghiệp giáo dục.</p>
+                                                <p class="desc font18">Thông điệp từ Chủ tịch Hội đồng quản trị Trần Bá Dương gửi đến cho toàn thể cán bộ và nhân viên THACO vào năm 2018</p>
                                             </div>
                                         </div>
                                     </div>
@@ -126,14 +126,14 @@
                                         <div class="img-content">
                                             <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                 <div class="post-thumbnail">
-                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/4.jpg') }}" alt=""></a>
+                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/thongdiep/thong-diep-4.jpg') }}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO 5 năm đồng hành cùng chương trình “Học trò xứ Quảng”</h3></a>
+                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Thông điệp năm 2017 của Chủ tịch HĐQT Trần Bá Dương</h3></a>
                                                 
                                                 <p class="time">23/06/2021</p>
-                                                <p class="desc font18">Sáng ngày 08/11 tại trường THPT chuyên Nguyễn Bỉnh Khiêm (thành phố Tam Kỳ, tỉnh Quảng Nam) đã diễn ra chương trình chung kết gameshow “Học trò xứ Quảng” năm 2020 do Đài Phát thanh - Truyền hình phối hợp với Sở Giáo dục và Đào tạo Quảng Nam tổ chức. </p>
+                                                <p class="desc font18">Thông điệp từ Chủ tịch Hội đồng quản trị Trần Bá Dương gửi đến cho toàn thể cán bộ và nhân viên THACO vào năm 2017 </p>
                                             </div>
                                         </div>
                                     </div>
@@ -141,18 +141,18 @@
                                      <div class="img-content">
                                          <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                              <div class="post-thumbnail">
-                                                 <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/connguoi/5.jpg') }}" alt=""></a>
+                                                 <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/thongdiep/thong-diep-5.jpg') }}" alt=""></a>
                                              </div>
                                          </div>
                                          <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                             <a href="/chi-tiet-truyen-thong"><h3 class="name font18">THACO ủng hộ đồng bào bị lũ lụt 3 tỷ đồng</h3></a>
+                                             <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Thông điệp năm 2016 của Chủ tịch HĐQT Trần Bá Dương</h3></a>
                                              
                                              <p class="time">23/06/2021</p>
-                                             <p class="desc font18">Ngày 16/10/2020, Công ty CP Ô tô Trường Hải (THACO) đã ủng hộ 3 tỷ đồng cho đồng bào miền Trung đang bị thiệt hại nặng nề do mưa lũ thông qua Ban cứu trợ - Ủy Ban mặt trận tổ quốc Việt Nam các tỉnh Quảng Nam, Thừa Thiên Huế, Quảng Trị, Quảng Bình.</p>
+                                             <p class="desc font18">Thông điệp từ Chủ tịch Hội đồng quản trị Trần Bá Dương gửi đến cho toàn thể cán bộ và nhân viên THACO vào năm 2016</p>
                                          </div>
                                      </div>
                                  </div>
-                                 <div class="media-item ">
+                                 {{-- <div class="media-item ">
                                      <div class="img-content">
                                          <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                              <div class="post-thumbnail">
@@ -196,7 +196,7 @@
                                              <p class="desc font18">Với mục tiêu quan tâm, chăm lo đời sống CBNV và đoàn viên công đoàn, Ban Lãnh đạo và Công đoàn cơ sở THACO đã luôn cập nhật và theo sát hoàn cảnh của CBNV tại đơn vị nhằm động viên và hỗ trợ kịp thời.</p>
                                          </div>
                                      </div>
-                                 </div>
+                                 </div> --}}
                                 </div>
                                     <div class="page-pagination mt-40 mb-40">
                                         <ul class="pagination font18">
