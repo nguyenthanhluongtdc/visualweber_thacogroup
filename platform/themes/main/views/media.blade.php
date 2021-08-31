@@ -19,7 +19,7 @@
                 <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                 <h1  class="font50 big-title">Hình ảnh</h1>
             </div>
-            <div class="tab-image mb-80">
+            <div class="tab-image">
                 <div class="media__tabs">
                     <ul class=" nav nav-tabs" id="tab-media" role="tablist">
                         <li class="__tabs__item " role="media">
@@ -294,7 +294,7 @@
                 <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                 <h2  class="font50 big-title">Video</h2> 
             </div>
-            <div class="tab-video mb-80">
+            <div class="tab-video">
                 <div class="media__tabs">
                     <ul class=" nav nav-tabs" id="tab-media" role="tablist">
                         <li class="__tabs__item " role="media">
@@ -548,14 +548,14 @@
             <div class="modal-body mCustomScrollbar p-0" data-mcs-theme="dark">
                     
                     <div class="list-album">
-                        <div class="album-item "data-target="#album_modal-detail" data-toggle="modal">
+                        <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
                             <img src="{{ Theme::asset()->url('images/media/1-detail.jpg') }}" alt="">
                             
                             <div class="album-item__download">
                                 <i class="fas fa-download"></i>
                             </div>
                         </div>
-                        <div class="album-item">
+                        <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
                             <img src="{{ Theme::asset()->url('images/media/2-detail.jpg') }}" alt="">
                           
                             <div class="album-item__download">
