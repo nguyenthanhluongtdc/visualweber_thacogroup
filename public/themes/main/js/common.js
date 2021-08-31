@@ -567,9 +567,15 @@ $(document).ready(function() {
 
 
 //end scroll when change page
-$(document).ready(function() {
-    var target = $('.list-media_wrapper');
-    $('html, body').stop().animate({
-        scrollTop: $(target).offset().top
-    }, 1000);
-});
+// $(document).ready(function() {
+
+//     $('html, body').animate({
+//         scrollTop: $("#scroll-list-news").offset().top
+//     }, 3000);
+
+// })
+
+// });
+// $("#top").click(function() {
+
+// });

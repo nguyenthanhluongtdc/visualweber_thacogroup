@@ -75,7 +75,7 @@
                                     </select>
                                 </form>
                              </div> --}}
-                             <div class="list-media_wrapper">
+                             <div class="list-media_wrapper" id="scroll-list-news">
                                 <div class="list-media mt-60">
                                     <div class="media-item ">
                                         <div class="img-content">
@@ -255,10 +255,10 @@
                                 <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                     <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
                                     <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold">Thông cáo báo chí</a>
-                                    <a href="/con-nguoi" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
+                                    <a href="/con-nguoi#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
                                     <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
-                                    <a href="/su-kien" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
-                                    <a href="/thong-diep" class="item_link list-group-item  font18 font-myria-bold active">Thông điệp</a>
+                                    <a href="/su-kien#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
+                                    <a href="/thong-diep#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold active">Thông điệp</a>
                                     <a href="/thu-vien-anh-va-video" class="item_link list-group-item  font18 font-myria-bold">Media</a>
                                 </div>
                                 <div class="list-post-new">
