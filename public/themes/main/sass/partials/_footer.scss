@@ -21,6 +21,7 @@
                 font-family: $MyriadPro-Bold;
             }
             .address {
+                max-width: 257px;
                 p {
                     margin-bottom: 10px;
                 }
@@ -86,6 +87,10 @@
         }
     }
     .footer-bottom {
+        .policy {
+            display: flex;
+            justify-content: space-around;
+        }
         background-color: $blue;
         p,
         a {

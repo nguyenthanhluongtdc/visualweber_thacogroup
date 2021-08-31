@@ -2,84 +2,81 @@
             <div class="container-customize ">
                 <div class="footer-content">
                     <div class="logo_footer">
-                        <img src="{{Theme::asset()->url('images/home/logo1.png')}}" alt="">
+                        <img src="{{ get_image_url(theme_option('logo-footer')) }}" alt="">
                     </div>
                     <div class="company_name">
-                        <h4 class="font30">CÔNG TY CỔ PHẦN TẬP ĐOÀN TRƯỜNG HẢI</h4>
+                        <h4 class="font30">{{theme_option('company-name') }}</h4>
                     </div>
                     <div class="office-wrapper">
                    
                             <div class="office">
-                                <h2 class="font18 text-white title">Văn Phòng TP. Hồ Chí Minh</h2>
+                                <h2 class="font18 text-white title">{!! theme_option('office-name') !!}</h2>
                                 <div class="address">
-                                        <p class="font18 text-white">Số 10 Mai Chí Thọ, P. Thủ Thiêm,<br>TP. Thủ Đức, TP.HCM.    
+                                        <p class="font18 text-white">  {!! theme_option('office-address') !!}  </p>
                                 </div>
                                 <div class="phone">
-                                    <a class="text-white" href="tel:+84-(0)8.39977.161">+84-(0)8.39977.161</a>
+                                    <a class="text-white" href="tel: {!! theme_option('office-phone') !!} "> {!! theme_option('office-phone') !!} </a>
                                 </div>
                                 <div class="global">
-                                    <a class="text-white" href="">www.truonghaiauto.com.vn</a>
+                                    <a class="text-white" href=""> {!! theme_option('office-global') !!} </a>
                                 </div>
                             </div>
                             <div class="office">
-                                <h2 class="font18 text-white title">Văn Phòng Thaco Chu Lai</h2>
+                                <h2 class="font18 text-white title">{!! theme_option('office-name-two') !!}</h2>
                                 <div class="address">
-                                   
-  
-                                        <p class="font18 text-white">Thôn 4, Xã Tam Hiệp, Huyện<br>
-                                            Núi thành, Tỉnh Quảng Nam                                            
+                                        <p class="font18 text-white">
+                                            {!! theme_option('office-address-two') !!}                                           
                                         </p>
-                                    
                                 </div>
                                 <div class="phone ">
-                                    <a class="text-white" href="tel:+84-(0)510.3567.161">+84-(0)510.3567.161</a>
+                                    <a class="text-white" href="tel:{!! theme_option('office-phone-two') !!}">{!! theme_option('office-phone-two') !!}</a>
                                 </div>
                                 <div class="global ">
-                                    <a class="text-white" href="">www.thacochulai.vn</a>
+                                    <a class="text-white" href="">{!! theme_option('office-global-two') !!}</a>
                                 </div>
                             </div>
                             <div class="office">
-                                <h2 class="font18 text-white title">Văn Phòng Hà Nội</h2>
+                                <h2 class="font18 text-white title">{!! theme_option('office-name-three') !!}</h2>
                                 <div class="address">
                                    
-                                        <p class="font18 text-white">Lô D6, KCN Hà Nội Đài Tư,<br>
-                                            Sài Đồng, Long Biên, Hà Nội
+                                        <p class="font18 text-white">
+                                            {!! theme_option('office-address-three') !!}
                                         </p>
                                     
                                 </div>
                                 <div class="phone">
-                                    <a class="text-white" href="tel:+84-(0)43.3567.161">+84-(0)43.3567.161</a>
+                                    <a class="text-white" href="tel: {!! theme_option('office-phone-three') !!}">{!! theme_option('office-phone-three') !!}</a>
                                 </div>
                                 <div  class="global">
-                                    <a class="text-white" href="">www.truonghaiauto.com.vn</a>
+                                    <a class="text-white" href="">{!! theme_option('office-global-three') !!}</a>
                                 </div>
                             </div>
                     </div>
                     <div class="list-social">
                         <ul>
                             <li>
-                                <a href="">
-                                    <img src="{{Theme::asset()->url('images/home/fb.png')}}" alt="">
+                                <a href="{!! theme_option('footer-facebook') !!}">
+                                    <img src="{{ get_image_url(theme_option('footer-facebook-icon')) }}" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="{{Theme::asset()->url('images/home/ytb.png')}}" alt="">
+                                <a href="{!! theme_option('footer-youtube') !!}">
+                                    <img src="{{ get_image_url(theme_option('footer-youtube-icon')) }}" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="{{Theme::asset()->url('images/home/call.png')}}" alt="">
+                                <a href="{!! theme_option('footer-phone') !!}">
+                                    <img src="{{ get_image_url(theme_option('footer-phone-icon')) }}" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="{{Theme::asset()->url('images/home/in.png')}}" alt="">
+                                <a href="{!! theme_option('footer-linkedin') !!}">
+                                    <img src="{{ get_image_url(theme_option('footer-linkedin-icon')) }}" alt="">
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    <img src="{{Theme::asset()->url('images/home/email.png')}}" alt="">
+                                <a href="{!! theme_option('footer-email') !!}">
+                                    <img src="{{ get_image_url(theme_option('footer-email-icon')) }}" alt="">
                                 </a>
                             </li>
                           
@@ -94,19 +91,16 @@
                     <div class="row">
                         <div class="col-md-7 col-sm-6 col-12">
                            <p class="text-white">
-                            Bản quyền thuộc về Công ty Cổ Phần Ô tô Trường Hải  © 2021</p> 
+                            {!! theme_option('license') !!}
+                           </p> 
     
                         </div>
-                        <div class="col-md-2 col-sm-2 col-6">
-                          <a class="text-white" href="/dieu-khoan-su-dung">Điều khoản sử dụng
-
-                        </a>
-                        </div>
-                        <div class="col-md-3 col-sm-4 col-6">
-                           <a href="/chinh-sach-bao-mat" class="text-white">Chính sách bảo mật
-
-                        </a>
-                        </div>
+                       
+                        {!! Menu::renderMenuLocation('footer-menu', [
+                            'options' => [],
+                            'theme' => true,
+                            'view' => 'policy',
+                        ]) !!}
                     </div>
                 </div>
                
