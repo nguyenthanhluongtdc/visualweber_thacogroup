@@ -524,24 +524,6 @@ if ($('.itemdown-show').length > 0) {
         return false;
     });
 }
-// scroll when change page
-$(document).ready(function() {
-    if ($('.list-group-item').length > 0) {
-        $('.list-group-item').click(function() {
-
-
-        }, function() {
-            $(window).on("load", function() {
-                var target = $('.list-media_wrapper');
-                $('html,body').stop().animate({
-                    scrollTop: $(target).offset().top
-                }, 200);
-            });
-        });
-    }
-
-});
-
 $('#support-tab>div').click(function(event) {
     $('.contact-fo').parent().css('display', '');
     var posTop = $('#support-tab').offset().top + $('#support-tab').outerHeight();
@@ -586,9 +568,8 @@ $(document).ready(function() {
 
 //end scroll when change page
 $(document).ready(function() {
-
-    // var target = $('.list-media_wrapper');
-    // $('html, body').stop().animate({
-    //     scrollTop: $(target).offset().top
-    // }, 200);
+    var target = $('.list-media_wrapper');
+    $('html, body').stop().animate({
+        scrollTop: $(target).offset().top
+    }, 1000);
 });
