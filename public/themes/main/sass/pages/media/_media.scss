@@ -381,6 +381,15 @@
         max-height: 90%;
         border-radius: 0;
         margin: auto;
+        @media screen and (max-width: 1680px) {
+            width: 75%;
+        }
+        @media screen and (max-width: 1440px) {
+            width: 70%;
+        }
+        @media screen and (max-width: 1366px) {
+            width: 60%;
+        }
         .mCSB_scrollTools {
             width: 6px;
         }
@@ -472,6 +481,15 @@
         border-radius: 0;
         margin: auto;
         background: #f1f1f1;
+        @media screen and (max-width: 1680px) {
+            width: 75%;
+        }
+        @media screen and (max-width: 1440px) {
+            width: 70%;
+        }
+        @media screen and (max-width: 1366px) {
+            width: 60%;
+        }
         .modal-header {
             padding: 0;
             margin: 0;
