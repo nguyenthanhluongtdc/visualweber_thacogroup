@@ -550,8 +550,6 @@ $('#support-tab>div').click(function(event) {
     } else {
         $('html, body').animate({ scrollTop: posTop - 20 }, 500);
     }
-
-
 });
 $(document).ready(function() {
     const info_contact = $('.office-contact-wrapper');
@@ -587,9 +585,10 @@ $(document).ready(function() {
 
 
 //end scroll when change page
-// $(document).ready(function() {
-//     var target = $('.list-media_wrapper');
-//     $('html, body').stop().animate({
-//         scrollTop: $(target).offset().top
-//     }, 200);
-// });
+$(document).ready(function() {
+
+    // var target = $('.list-media_wrapper');
+    // $('html, body').stop().animate({
+    //     scrollTop: $(target).offset().top
+    // }, 200);
+});

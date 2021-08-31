@@ -403,8 +403,8 @@
             border: unset;
             button {
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 5px;
+                right: 10px;
                 padding: 5px 5px 0 5px;
                 margin: 0;
                 background: #f1f1f1;
@@ -478,8 +478,8 @@
             border: unset;
             button {
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 5px;
+                right: 10px;
                 padding: 5px 5px 0 5px;
                 margin: 0;
                 background: #f1f1f1;
@@ -500,8 +500,33 @@
             // max-height: 30vw;
             .swiper-slide {
                 text-align: center;
+                .img-wrapper {
+                    position: relative;
+                    margin: 0 auto;
+                    .album-item__download {
+                        position: absolute;
+                        padding: 5px;
+                        color: #fff;
+                        background: rgba(0, 0, 0, .3);
+                        top: 20px;
+                        z-index: 2;
+                        right: 20px;
+                        @media screen and (max-width: 1680px) {
+                            right: 8%;
+                        }
+                        @media screen and (max-width: 1440px) {
+                            right: 13%;
+                        }
+                        @media screen and (max-width: 1366px) {
+                            right: 22%;
+                        }
+                    }
+                }
                 img {
                     width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    object-position: center;
                     @media screen and (max-width: 1680px) {
                         width: 90%;
                     }
@@ -511,9 +536,6 @@
                     @media screen and (max-width: 1366px) {
                         width: 60%;
                     }
-                    height: auto;
-                    object-fit: contain;
-                    object-position: center;
                 }
                 p {
                     padding: 10px 0;
@@ -583,8 +605,8 @@
             border: unset;
             button {
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 5px;
+                right: 10px;
                 padding: 5px 5px 0 5px;
                 margin: 0;
                 background: #f1f1f1;
@@ -667,8 +689,8 @@
             border: unset;
             button {
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 5px;
+                right: 10px;
                 padding: 5px 5px 0 5px;
                 margin: 0;
                 background: #f1f1f1;

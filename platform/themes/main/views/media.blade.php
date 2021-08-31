@@ -66,7 +66,7 @@
                                         <i class="fas fa-download"></i>
                                     </div>
                                 </div>
-                                <div class="album-item">
+                                <div class="album-item" data-target="#album_modal" data-toggle="modal">
                                     <img src="{{ Theme::asset()->url('images/media/2.jpg') }}" alt="">
                                     <div class="album-item__name ">
                                         <p class="name font20">50 tấn tinh bột sắn của Doanh nghiệp Việt Nam
@@ -83,7 +83,7 @@
                                         <i class="fas fa-download"></i>
                                     </div>
                                 </div>
-                                <div class="album-item">
+                                <div class="album-item" data-target="#album_modal" data-toggle="modal">
                                     <img src="{{ Theme::asset()->url('images/media/3.jpg') }}" alt="">
                                     <div class="album-item__name ">
                                         <p class="name font20">THACO tài trợ trang thiết bị, vật tư y tế phòng
@@ -100,7 +100,7 @@
                                         <i class="fas fa-download"></i>
                                     </div>
                                 </div>
-                                <div class="album-item">
+                                <div class="album-item" data-target="#album_modal" data-toggle="modal">
                                     <img src="{{ Theme::asset()->url('images/media/4.jpg') }}" alt="">
                                     <div class="album-item__name ">
                                         <p class="name font20">Những trái tim nhiệt huyết
@@ -116,7 +116,7 @@
                                         <i class="fas fa-download"></i>
                                     </div>
                                 </div>
-                                <div class="album-item">
+                                <div class="album-item" data-target="#album_modal" data-toggle="modal">
                                     <img src="{{ Theme::asset()->url('images/media/5.jpg') }}" alt="">
                                     <div class="album-item__name ">
                                         <p class="name font20">Tiêm vaccine Covid-19 cho người lao động
@@ -134,7 +134,7 @@
                                         <i class="fas fa-download"></i>
                                     </div>
                                 </div>
-                                <div class="album-item">
+                                <div class="album-item" data-target="#album_modal" data-toggle="modal">
                                     <img src="{{ Theme::asset()->url('images/media/6.jpg') }}" alt="">
                                     <div class="album-item__name ">
                                         <p class="name font20">Mazda “trình làng” loạt xe mới tại VMS 2016
@@ -562,54 +562,52 @@
                                 <i class="fas fa-download"></i>
                             </div>
                         </div>
-                        <div class="album-item">
+                        <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
                             <img src="{{ Theme::asset()->url('images/media/3-detail.jpg') }}" alt="">
                             
                             <div class="album-item__download">
                                 <i class="fas fa-download"></i>
                             </div>
                         </div>
-                        <div class="album-item">
+                        <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
                             <img src="{{ Theme::asset()->url('images/media/4-detail.jpg') }}" alt="">
                             <div class="album-item__download">
                                 <i class="fas fa-download"></i>
                             </div>
                         </div>
-                        <div class="album-item">
+                        <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
                             <img src="{{ Theme::asset()->url('images/media/5-detail.jpg') }}" alt="">
                             <div class="album-item__download">
                                 <i class="fas fa-download"></i>
                             </div>
                         </div>
-                        <div class="album-item">
+                        <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
                             <img src="{{ Theme::asset()->url('images/media/6-detail.jpg') }}" alt="">
                             
                             <div class="album-item__download">
                                 <i class="fas fa-download"></i>
                             </div>
                         </div>
-                        <div class="album-item">
+                        <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
                             <img src="{{ Theme::asset()->url('images/media/5-detail.jpg') }}" alt="">
                             <div class="album-item__download">
                                 <i class="fas fa-download"></i>
                             </div>
                         </div>
-                        <div class="album-item">
+                        <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
                             <img src="{{ Theme::asset()->url('images/media/6-detail.jpg') }}" alt="">
                             
                             <div class="album-item__download">
                                 <i class="fas fa-download"></i>
                             </div>
                         </div>
-                        <div class="album-item">
+                        <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
                             <img src="{{ Theme::asset()->url('images/media/6-detail.jpg') }}" alt="">
                             
                             <div class="album-item__download">
                                 <i class="fas fa-download"></i>
                             </div>
                         </div>
-                        
-                      
                     </div>
 
             </div>
@@ -635,19 +633,39 @@
                     </div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                            <div class="img-wrapper">
+                                <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                                <div class="album-item__download">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                            </div>
                             <p class="">THACO trao tặng 126 xe trong đó bao gồm 63 xe chuyên dụng vận chuyển vắcxin</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                            <div class="img-wrapper">
+                                <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                                <div class="album-item__download">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                            </div>
                             <p class="">THACO trao tặng 126 xe trong đó bao gồm 63 xe chuyên dụng vận chuyển vắcxin</p>
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                            <div class="img-wrapper">
+                                <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                                <div class="album-item__download">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                            </div>
                             <p class="">THACO trao tặng 126 xe trong đó bao gồm 63 xe chuyên dụng vận chuyển vắcxin</p>
                         </div>
                          <div class="swiper-slide">
-                            <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                            <div class="img-wrapper">
+                                <img src="{{ Theme::asset()->url('images/media/img-slide.jpg') }}" alt="">
+                                <div class="album-item__download">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                            </div>
                             <p class="">THACO trao tặng 126 xe trong đó bao gồm 63 xe chuyên dụng vận chuyển vắcxin</p>
                         </div>
                         
