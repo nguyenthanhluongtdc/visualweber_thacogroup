@@ -327,91 +327,119 @@
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
                                     <img src="{{ Theme::asset()->url('images/media/video-list-1.jpg') }}" alt="">
-                                    <div class="video-item__count">
-                                        <p class="quantity font18">20</p>
-                                        <img src="{{ Theme::asset()->url('images/media/icon-list-video.png') }}" alt="">
-                                        
-                                     </div>
+                                    
                                 </div> 
                                 <div class="video-item__name font20 ">
                                     <p class="name">Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA
                                     </p>
                                 </div>
                                 <span class="video-item__date">(25/08/2021)</span>
+                                <div class="video-item__count">
+                                       
+                                    <i class="fas fa-photo-video"></i>
+                                    <p class="quantity font18">100</p>
+                                </div>
+                                <div class="video-item__download">
+                                    <i class="fas fa-download"></i>
+                                </div>
                             </div>
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
                                     <img src="{{ Theme::asset()->url('images/media/video-list-2.jpg') }}" alt="">
-                                    <div class="video-item__count">
-                                        <p class="quantity font18">20</p>
-                                        <img src="{{ Theme::asset()->url('images/media/icon-list-video.png') }}" alt="">
-                                     </div>
+                                
                                 </div> 
                                 <div class="video-item__name font20 ">
                                     <p class="name">THACO tham dự Khai mạc Triển lãm ô tô Việt Nam 2016
                                     </p>
                                 </div>
                                 <span class="video-item__date">(25/08/2021)</span>
+                                <div class="video-item__count">
+                                       
+                                    <i class="fas fa-photo-video"></i>
+                                    <p class="quantity font18">100</p>
+                                </div>
+                                <div class="video-item__download">
+                                    <i class="fas fa-download"></i>
+                                </div>
                             </div>
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
                                     <img src="{{ Theme::asset()->url('images/media/video-list-3.jpg') }}" alt="">
-                                    <div class="video-item__count">
-                                        <p class="quantity font18">20</p>
-                                        <img src="{{ Theme::asset()->url('images/media/icon-list-video.png') }}" alt="">
-                                        
-                                     </div>
+                                    
                                 </div> 
                                 <div class="video-item__name font20 ">
                                     <p class="name">Triển lãm ô tô Việt Nam 2015: Thaco mang đến nhiều sự lựa chọn cho khách hàng
                                     </p>
                                 </div>
                                 <span class="video-item__date">(25/08/2021)</span>
+                                <div class="video-item__count">
+                                       
+                                    <i class="fas fa-photo-video"></i>
+                                    <p class="quantity font18">100</p>
+                                </div>
+                                <div class="video-item__download">
+                                    <i class="fas fa-download"></i>
+                                </div>
                             </div>
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
                                     <img src="{{ Theme::asset()->url('images/media/video-list-3.jpg') }}" alt="">
-                                    <div class="video-item__count">
-                                        <p class="quantity font18">20</p>
-                                        <img src="{{ Theme::asset()->url('images/media/icon-list-video.png') }}" alt="">
-                                        
-                                     </div>
                                 </div> 
                                 <div class="video-item__name font20 ">
                                     <p class="name">Lễ kỷ niệm 3 năm hợp tác chiến lược Thaco - Mazda
                                     </p>
                                 </div>
                                 <span class="video-item__date">(25/08/2021)</span>
+                                <div class="video-item__count">
+                                       
+                                    <i class="fas fa-photo-video"></i>
+                                    <p class="quantity font18">100</p>
+                                </div>
+                                <div class="video-item__download">
+                                    <i class="fas fa-download"></i>
+                                </div>
                             </div>
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
                                     <img src="{{ Theme::asset()->url('images/media/video-list-4.jpg') }}" alt="">
-                                    <div class="video-item__count">
-                                        <p class="quantity font18">20</p>
-                                        <img src="{{ Theme::asset()->url('images/media/icon-list-video.png') }}" alt="">
-                                        
-                                     </div>
+                            
                                 </div> 
                                 <div class="video-item__name font20 ">
                                     <p class="name">THACO giới thiệu thương hiệu PEUGEOT & xe PEUGEOT 408 tại Việt...
                                     </p>
                                 </div>
                                 <span class="video-item__date">(25/08/2021)</span>
+                                <div class="video-item__count">
+                                       
+                                    <i class="fas fa-photo-video"></i>
+                                    <p class="quantity font18">100</p>
+                                </div>
+                                <div class="video-item__download">
+                                    <i class="fas fa-download"></i>
+                                </div>
                             </div>
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
                                     <img src="{{ Theme::asset()->url('images/media/video-list-5.jpg') }}" alt="">
-                                    <div class="video-item__count">
+                                    {{-- <div class="video-item__count">
                                         <p class="quantity font18">20</p>
                                         <img src="{{ Theme::asset()->url('images/media/icon-list-video.png') }}" alt="">
                                         
-                                     </div>
+                                     </div> --}}
                                 </div> 
                                 <div class="video-item__name font20 ">
                                     <p class="name">Năm 2013 Công ty CP Ô tô Trường Hải phấn đấu bán 29.200 xe
                                     </p>
                                 </div>
                                 <span class="video-item__date">(25/08/2021)</span>
+                                <div class="video-item__count">
+                                       
+                                    <i class="fas fa-photo-video"></i>
+                                    <p class="quantity font18">100</p>
+                                </div>
+                                <div class="video-item__download">
+                                    <i class="fas fa-download"></i>
+                                </div>
                             </div>
                         </div>
                       </div>
