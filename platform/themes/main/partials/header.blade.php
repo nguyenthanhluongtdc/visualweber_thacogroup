@@ -110,7 +110,7 @@
                                 </div>
                             </li>
                             <li class="nav-item nav-link  dropdown dmenu fade-in ">
-                                <a class="item__link" href="/linh-vuc-hoat-dong">LĨNH VỰC HOẠT ĐỘNG</a>
+                                <a class="item__link" href="javascript:void(0);">LĨNH VỰC HOẠT ĐỘNG</a>
                                 <div class="dropdown-menu sm-menu" style="display:none">
                                     <div class="cmenu">
                                         <a href="" class="dropdown-item">
@@ -140,7 +140,7 @@
                                 </div>
                             </li>
                             <li class="nav-item nav-link dropdown dmenu">
-                                <a class="item__link" href="/quan-he-co-dong">QUAN HỆ CỔ ĐÔNG</a>
+                                <a class="item__link" href="javascript:void(0);">QUAN HỆ CỔ ĐÔNG</a>
                                 <div class="dropdown-menu sm-menu" style="display:none">
                                     <div class="cmenu">
                                         <a href="dieu-le-quy-che" class="dropdown-item">
