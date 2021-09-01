@@ -1,6 +1,8 @@
 
+ {{-- @dd($page); --}}
  <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-    <div class="swiper-wrapper">   
+    <div class="swiper-wrapper">
+        
         <div class="swiper-slide" >
             <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider h-100vh w-100">
             <div class="fade"></div>
@@ -18,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-slide" >
+        {{-- <div class="swiper-slide" >
             <img src="{{ Theme::asset()->url('images/home/banner-1.jpg') }}" alt="" class="img-slider  w-100 h-100vh">
             <div class="fade"></div>
             <div class="bg-post">
@@ -52,7 +54,7 @@
                     <a href="" class="read-more">Xem thêm</a>
                 </div>
             </div>
-        </div>
+        </div> --}}
         
        
     </div>

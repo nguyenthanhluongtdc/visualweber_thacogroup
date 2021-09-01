@@ -73,7 +73,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                THACO thông báo mời tham dự ĐHCĐ thường niên năm 2021
+                                                Phụ lục sửa đổi điều lệ lần thứ 13 của Thaco
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -111,7 +111,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Công bố thông tin về việc THACO hủy đăng ký công ty đại chúng
+                                                Điều lệ Công ty Cổ phần Ô tô Trường Hải
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -149,7 +149,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông báo: Về ngày đăng ký cuối cùng để thực hiện quyền tham dự đại hội cổ đông thường niên năm 2021
+                                                Quy chế quản trị nội bộ
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -187,7 +187,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông báo ngày chốt danh sách tham dự ĐHCĐ 2020
+                                                Phụ lục sửa đổi điều lệ lần thứ 13 của Thaco
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -225,7 +225,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông tin ứng viên vị trí thành viên HĐQT nhiệm kỳ 2019 - 2021 của Công ty CP Ô tô Trường Hải
+                                                Điều lệ Công ty Cổ phần Ô tô Trường Hải
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -263,7 +263,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông tin ứng viên vị trí thành viên Ban Kiểm soát nhiệm kỳ 2019 - 2021 của Công ty CP Ô tô Trường Hải
+                                                Quy chế quản trị nội bộ
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -301,7 +301,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Biên bản họp và Nghị quyết Đại hội đồng cổ đông Thường niên 2019
+                                                Phụ lục sửa đổi điều lệ lần thứ 13 của Thaco
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -339,7 +339,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông báo đăng ký thực hiện quyền lấy ý kiến cổ đông bằng văn bản
+                                                Điều lệ Công ty Cổ phần Ô tô Trường Hải
                                             </a>
                                         </h3>
                                         <p class="count">

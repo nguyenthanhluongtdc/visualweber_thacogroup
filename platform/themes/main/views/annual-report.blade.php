@@ -63,60 +63,60 @@
                             <div class="list-report">
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-thuong-nien/bao-cao-1.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">BCTC KIEM TOAN HOP NHAT 2019 .PDF</p>
+                                    <p class="name-file font18">BAO CAO THUONG NIEN 2017.pdf</p>
                                     <div class="download">
                                         <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
                                     </div>                                   
                                 </div>
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-thuong-nien/bao-cao-2.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">BCTC HOP NHAT QIV.2019.pdf</p>
+                                    <p class="name-file font18">Báo cáo quản trị 6 tháng cuối năm 2017</p>
                                    <div class="download">
                                          <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
                                    </div>
                                 </div>
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-thuong-nien/bao-cao-3.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">BCTC HOP NHAT QIII.2019.pdf</p>
+                                    <p class="name-file font18">Báo cáo quản trị 6 tháng cuối năm 2015</p>
                                     <div class="download">
                                         <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
                                     </div>
                                 </div>
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-thuong-nien/bao-cao-4.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">BCTC CTY ME QIV.2019.pdf</p>
+                                    <p class="name-file font18">Báo cáo quản trị 6 tháng đầu năm 2015</p>
                                     <div class="download">
                                         <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
                                     </div>
                                 </div>
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-thuong-nien/bao-cao-5.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">BCTC CTY ME KIEM TOAN 2019.pdf</p>
+                                    <p class="name-file font18">Báo cáo quản trị 6 tháng cuối năm 2014</p>
                                     <div class="download">
                                         <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
                                     </div>
                                 </div>
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-thuong-nien/bao-cao-6.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
-                                    <p class="name-file">BCTC CTY ME QUY III.2019.pdf</p>
+                                    <p class="name-file">Báo cáo quản trị 6 tháng đầu năm 2014</p>
                                     <div class="download">
                                         <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
                                     </div>
