@@ -1,62 +1,31 @@
 
- {{-- @dd($page); --}}
+ {{-- @dd($post); --}}
  <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
     <div class="swiper-wrapper">
-        
+        @if(has_field($page, 'main_slide_home'))
+        @foreach (get_field($page, 'main_slide_home') as $item)
         <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider h-100vh w-100">
-            <div class="fade"></div>
+            <img src="{{ has_sub_field($item , 'image') ? get_object_image(get_sub_field($item , 'image')) :''}}" alt="" class="img-slider h-100vh w-100">
+            @if(has_field($page, 'show_hide'))
             <div class="bg-post">
+               @php $post = get_featured_posts(1,[]) @endphp
+           
                 <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                     <h2 class="font24 title-post">
-                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
+                    {{$post[0]->name}}
                     </h2>
                     <div class="description text-justify">
                     <p class=" font18">
-                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
+                       {{$post[0]->description}}
                         </p>
                     </div>
                     <a href="" class="read-more">Xem thêm</a>
                 </div>
             </div>
+            @endif
         </div>
-        {{-- <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/banner-1.jpg') }}" alt="" class="img-slider  w-100 h-100vh">
-            <div class="fade"></div>
-            <div class="bg-post">
-                <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
-                    <h2 class="font24 title-post">
-                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
-                    </h2>
-                    <div class="description text-justify">
-                    <p class=" font18">
-                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
-                        </p>
-                    </div>
-                    <a href="" class="read-more">Xem thêm</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/banner-3.jpg') }}" alt="" class="img-slider  w-100 h-100vh ">
-            <div class="fade"></div>
-            <div class="bg-post">
-                <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
-                    <h2 class="font24 title-post">
-                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
-                    </h2>
-                    <div class="description text-justify">
-                    <p class=" font18">
-                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
-                        </p>
-                    </div>
-                    <a href="" class="read-more">Xem thêm</a>
-                </div>
-            </div>
-        </div> --}}
-        
-       
+        @endforeach
+        @endif   
     </div>
     <div class="swiper-pagination"></div>
   
