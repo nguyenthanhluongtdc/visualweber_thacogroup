@@ -65,7 +65,7 @@
                     <div class="office-hotline">
                         <i class="fas fa-phone-alt"></i>
                         
-                        <a href="tel:  {!! has_sub_field($item, 'hotline') ? has_sub_field($item, 'hotline') : '' !!}">
+                        <a href="tel:  {!! get_sub_field($item, 'hotline') !!}">
                             <p class="phone">SĐT: 
                             {!! has_sub_field($item, 'hotline') ? has_sub_field($item, 'hotline') : '' !!}</p>
                         </a>
@@ -73,7 +73,7 @@
                     <div class="office-email">
                         <i class="fas fa-envelope"></i>
                         
-                        <a href="mailto: {!! has_sub_field($item, 'mail') ? has_sub_field($item, 'mail') : '' !!}">
+                        <a href="mailto: {!! get_sub_field($item, 'mail') !!}">
                             <p class="email"> Email: 
                            {!! has_sub_field($item, 'mail') ? has_sub_field($item, 'mail') : '' !!}</p>
                         </a>
