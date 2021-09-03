@@ -18,6 +18,7 @@ register_page_template([
     'media-news' => 'News',
     'security-term' => 'Security Term',
     'media-gallery' => 'Media Gallery',
+    'contact' => 'Contact',
 ]);
 
 register_sidebar([

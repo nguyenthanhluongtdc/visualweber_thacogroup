@@ -455,7 +455,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                THACO thông báo mời tham dự ĐHCĐ thường niên năm 2021
+                                                Thông tin v/v THACO hủy đăng ký công ty đại chúng
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -493,7 +493,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Công bố thông tin về việc THACO hủy đăng ký công ty đại chúng
+                                                THACO khai trương tổ hợp showroom 3 thương hiệu BMW-MINI-BMW MOTORRAD tại TP.HCM.
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -531,7 +531,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông báo: Về ngày đăng ký cuối cùng để thực hiện quyền tham dự đại hội cổ đông thường niên năm 2021
+                                                THACO ra mắt xe MINI Countryman hoàn toàn mới
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -569,7 +569,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông báo ngày chốt danh sách tham dự ĐHCĐ 2020
+                                                Tập đoàn BMW châu Á và THACO giới thiệu thương hiệu BMW và MINI tại Việt Nam
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -607,7 +607,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông tin ứng viên vị trí thành viên HĐQT nhiệm kỳ 2019 - 2021 của Công ty CP Ô tô Trường Hải
+                                                Khách hàng Phạm Thị Hồng Lợi chủ xe Mazda 2 đưa thông tin không chính xác về sự cố hư hỏng động cơ
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -645,7 +645,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông tin ứng viên vị trí thành viên Ban Kiểm soát nhiệm kỳ 2019 - 2021 của Công ty CP Ô tô Trường Hải
+                                                Tập đoàn BMW ký Thư ngỏ ý với THACO
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -683,7 +683,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Biên bản họp và Nghị quyết Đại hội đồng cổ đông Thường niên 2019
+                                                THACO bàn giao xe bus ngắm cảnh 2 tầng cho Tập đoàn Empire
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -721,7 +721,7 @@
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông báo đăng ký thực hiện quyền lấy ý kiến cổ đông bằng văn bản
+                                                Mazda khẳng định xe Mazda3 và Mazda6 tại Việt Nam không bị lỗi phanh tay
                                             </a>
                                         </h3>
                                         <p class="count">

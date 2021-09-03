@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-tai-chinh/1.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
                                     <p class="name-file font18">BCTC HOP NHAT QIV.2019.pdf</p>
@@ -83,7 +83,7 @@
                                 </div>
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-tai-chinh/2.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
                                     <p class="name-file font18">BCTC HOP NHAT QIII.2019.pdf</p>
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-tai-chinh/3.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
                                     <p class="name-file font18">BCTC CTY ME QIV.2019.pdf</p>
@@ -103,7 +103,7 @@
                                 </div>
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-tai-chinh/4.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
                                     <p class="name-file font18">BCTC CTY ME KIEM TOAN 2019.pdf</p>
@@ -113,7 +113,7 @@
                                 </div>
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350" class="aos-init aos-animate">
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ Theme::asset()->url('images/relationship/bao-cao-tai-chinh/5.jpg') }}" alt="report">
                                     </div>
                                     <span class="date">20/02/2020</span>
                                     <p class="name-file">BCTC CTY ME QUY III.2019.pdf</p>

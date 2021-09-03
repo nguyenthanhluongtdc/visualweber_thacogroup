@@ -29,5 +29,8 @@ app()->booted(function () {
     add_shortcode('contact-form', __('Contact Form'), __('Contact Form'), function ($shortCode) {
         return Theme::partial('shortcodes.contact-form');
     });
+    add_shortcode('field-activity', __('Field Activity'), __('Field Activity'), function ($shortCode) {
+        return Theme::partial('shortcodes.field-activity');
+    });
 
 });

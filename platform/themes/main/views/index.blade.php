@@ -1,60 +1,31 @@
 
+ {{-- @dd($post); --}}
  <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-    <div class="swiper-wrapper">   
+    <div class="swiper-wrapper">
+        @if(has_field($page, 'main_slide_home'))
+        @foreach (get_field($page, 'main_slide_home') as $item)
         <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider h-100vh w-100">
-            <div class="fade"></div>
+            <img src="{{ has_sub_field($item , 'image') ? get_object_image(get_sub_field($item , 'image')) :''}}" alt="" class="img-slider h-100vh w-100">
+            @if(has_field($page, 'show_hide'))
             <div class="bg-post">
+               @php $post = get_featured_posts(1,[]) @endphp
+           
                 <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                     <h2 class="font24 title-post">
-                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
+                    {{$post[0]->name}}
                     </h2>
                     <div class="description text-justify">
                     <p class=" font18">
-                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
+                       {{$post[0]->description}}
                         </p>
                     </div>
                     <a href="" class="read-more">Xem thêm</a>
                 </div>
             </div>
+            @endif
         </div>
-        <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/banner-1.jpg') }}" alt="" class="img-slider  w-100 h-100vh">
-            <div class="fade"></div>
-            <div class="bg-post">
-                <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
-                    <h2 class="font24 title-post">
-                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
-                    </h2>
-                    <div class="description text-justify">
-                    <p class=" font18">
-                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
-                        </p>
-                    </div>
-                    <a href="" class="read-more">Xem thêm</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="swiper-slide" >
-            <img src="{{ Theme::asset()->url('images/home/banner-3.jpg') }}" alt="" class="img-slider  w-100 h-100vh ">
-            <div class="fade"></div>
-            <div class="bg-post">
-                <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
-                    <h2 class="font24 title-post">
-                    THACO TÀI TRỢ TRANG THIẾT BỊ, VẬT TƯ Y TẾ PHÒNG CHỐNG DỊCH CHO CÔNG AN TP.HCM
-                    </h2>
-                    <div class="description text-justify">
-                    <p class=" font18">
-                        Sáng ngày 3/7/2021, THACO đã bàn giao trang thiết bị phòng chống dịch Covid-19 cho Công an TP.HCM.Trước tình hình dịch bệnh Covid-19 vẫn còn đang diễn biến phức tạp, đặc biệt là tại TP. Hồ Chí Minh với nhiều ca nhiễm vẫn còn chưa được phát hiện trong cộng đồng, việc thực hiện các biện pháp phòng chống và truy vết dịch bệnh đang được tiến hành khẩn trương, triệt để trên diện rộng.
-                        </p>
-                    </div>
-                    <a href="" class="read-more">Xem thêm</a>
-                </div>
-            </div>
-        </div>
-        
-       
+        @endforeach
+        @endif   
     </div>
     <div class="swiper-pagination"></div>
   
@@ -62,130 +33,7 @@
 
 <div class="field-activity-wrapper mt-80">
     <div class="container-customize ">
-        <div class="field-activity">
-            <div class="field-activity__content">
-                <div class="field-activity__item">
-                    <a href="/oto-cokhi">
-                        <img class="w-100" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
-                        <div class="content-title">
-                            <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
-                            <div class="content-none">
-                                <ul class="list-item">
-                                    <li class="item-activity font18">
-                                        Ô tô
-                                    </li>
-                                    <li class="item-activity font18">
-                                        Linh kiện phụ tùng
-                                    </li>
-                                    <li class="item-activity font18">Cơ khí</li>
-                                </ul>
-                              
-                            </div>
-                        </div>
-                    </a>
-                   
-    
-                </div>
-                <div class="field-activity__item" >
-                    <a href="/nongnghiep">
-                        <img class="w-100" src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
-                        <div class="content-title">
-                            <h4 class="title font40">NÔNG NGHIỆP</h4>
-                            <div class="content-none">
-                                <ul class="list-item">
-                                    <li class="item-activity font18">
-                                       Trồng trọt và chế biến trái cây
-                                    </li>
-                                    <li class="item-activity font18">
-                                       Chăn nuôi heo
-                                    </li>
-                                    <li class="item-activity font18">
-                                        Chăn nuôi bò
-                                    </li>
-                                </ul>
-                             
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="field-activity__item">
-                    <a href="/logistics">
-                        <img class="w-100" src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
-                        <div class="content-title">
-                            <h4 class="title font40">LOGICSTICS</h4>
-                            <div class="content-none">
-                                <ul class="list-item">
-                                    <li class="item-activity font18">
-                                    Cảng biển
-                                    </li>
-                                    <li class="item-activity font18">
-                                      Vận tải biển
-                                    </li>
-                                    <li class="item-activity font18">
-                                        Vận tải đường bộ
-                                    </li>
-                                </ul>
-                               
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="field-activity__item">
-                   <a href="/dautu-xaydung">
-                    <img class="w-100" src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
-                    <div class="content-title">
-                        <h4 class="title font40">ĐẦU TƯ - XÂY DỰNG</h4>
-                        <div class="content-none">
-                            <ul class="list-item">
-                                <li class="item-activity font18">
-                                  Hạ tầng giao thông
-                                </li>
-                                <li class="item-activity font18">
-                                    Khu công nghiệp
-                                </li>
-                                <li class="item-activity font18">
-                                    Khu đô thị
-                                </li>
-                                <li class="item-activity font18">
-                                   Bất động sản
-                                </li>
-                                <li class="item-activity font18">
-                                   Khu phức hợp
-                                 </li>
-                                
-                            </ul>
-                            
-                        </div>
-                    </div>
-                   </a>
-                </div>
-                <div class="field-activity__item">
-                    <a href="/thuongmai-dichvu">
-                        <img class="w-100" src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
-                        <div class="content-title">
-                            <h4 class="title font40">THƯƠNG MẠI - DỊCH VỤ</h4>
-                            <div class="content-none">
-                                <ul class="list-item">
-                                    <li class="item-activity font18">
-                                    Trung tâm thương mại
-                                    </li>
-                                    <li class="item-activity font18">
-                                    F&B
-                                    </li>
-                                    <li class="item-activity font18">
-                                        Đại siêu thị
-                                    </li>
-                                    <li class="item-activity font18">
-                                    Trung tâm hội nghị
-                                    </li>
-                                </ul>
-                            
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        {!! do_shortcode('[field-activity][/field-activity]') !!}
     </div>
 </div>
 <div class="partner-wrapper">
