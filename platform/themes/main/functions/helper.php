@@ -283,8 +283,8 @@ if (!function_exists('get_image_width')) {
      */
     function get_image_width($path)
     {
-        list($width, $height) = getimagesize($path); 
-        return $width;
+        $data = getimagesize($path); 
+        return $data[0];
     }
 }
 if (!function_exists('get_image_height')) {
@@ -294,7 +294,7 @@ if (!function_exists('get_image_height')) {
      */
     function get_image_height($path)
     {
-        list($width, $height) = getimagesize($path); 
-        return $height;
+        $data = getimagesize($path); 
+        return $data[1];
     }
 }
