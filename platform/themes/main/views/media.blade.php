@@ -1,15 +1,20 @@
+@php
+    $posts = get_posts_by_category(15, 3);
+    $albumGallery = $posts->where('format_type' , 'gallery');
+    $albumVideo = $posts->where('format_type' , 'video');
+@endphp
 
 <section class="media-content">
     <div class="container-customize">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="/">Trang chủ</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="/truyenthong">Truyền thông</a>
-                        </li>
-                        <li class="breadcrumb-item active">Media</li>
+                <li class="breadcrumb-item">
+                    <a href="/">Trang chủ</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="/truyenthong">Truyền thông</a>
+                </li>
+                <li class="breadcrumb-item active">Media</li>
             </ol>
         </nav>
     </div>
@@ -37,36 +42,40 @@
                             Hình ảnh
                           
                             </a>
-                           
                         </li>
-                        
                     </ul>
                     {!! do_shortcode('[filter-media][/filter-media]') !!}
-                
                 </div>
                 <div class="tab-content" id="nav-tabContent3 tab-content2">
                     <div class="tab-pane fade active show" id="media-album" role="tabpanel" aria-labelledby="field-1-tab">
                         <div class="media-banner">
                           
                             <div class="list-album">
-                                <div class="album-item "data-target="#album_modal" data-toggle="modal">
-                                    <img src="{{ Theme::asset()->url('images/media/1.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">THACO trao tặng 126 xe chuyên dụng vận
-                                            chuyển vắc xin và phục vụ tiêm chủng lưu động
-                                            </p>
-                                    </div>
-                                    <span class="album-item__date">(25/08/2021)</span>
-                                    <div class="album-item__count">
-                                       
-                                        <i class="far fa-image"></i>
-                                        <p class="quantity font18">100</p>
-                                    </div>
-                                    <div class="album-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div>
-                                <div class="album-item" data-target="#album_modal" data-toggle="modal">
+
+                                @if(!empty($albumGallery))
+                                    @foreach($albumGallery as $post) 
+                                        <div class="album-item" data-target="#album_modal" data-toggle="modal">
+                                            <a data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal" >
+                                                <img src="{{ get_object_image($post->image) }}" alt="{!! $post->name !!}">
+                                                <div class="album-item__name ">
+                                                    <p class="name font20">
+                                                        {!! $post->name !!}
+                                                    </p>
+                                                </div>
+                                                <span class="album-item__date"> {{$post->created_at->format('d/m/y')}} </span>
+                                                <div class="album-item__count">
+                                                
+                                                    <i class="far fa-image"></i>
+                                                    <p class="quantity font18">100</p>
+                                                </div>
+                                                <div class="album-item__download">
+                                                    <i class="fas fa-download"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    @endforeach
+                                @endif
+                                {{-- <div class="album-item" data-target="#album_modal" data-toggle="modal">
                                     <img src="{{ Theme::asset()->url('images/media/2.jpg') }}" alt="">
                                     <div class="album-item__name ">
                                         <p class="name font20">50 tấn tinh bột sắn của Doanh nghiệp Việt Nam
@@ -149,30 +158,32 @@
                                     <div class="album-item__download">
                                         <i class="fas fa-download"></i>
                                     </div>
-                                </div>
-                              
+                                </div> --}}
                             </div>
-                            
                         </div>
                     </div>
                     <div class="tab-pane fade" id="media-single-image" role="tabpanel" aria-labelledby="field-2-tab">
                         <div class="media-banner">
                           
                             <div class="list-image">
-                                <div class="image-item">
-                                    <div class="img-click">
-                                        <img class="" src="{{ Theme::asset()->url('images/media/1.jpg') }}" alt="">
-                                    </div>
-                                  
-                                    <div class="image-item__back">
-                                        <i class="far fa-image"></i>
-                                        <p  class="text font18">Album</p>
-                                    </div>
-                                    <div class="image-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div>
-                                <div class="image-item">
+                                @if(!empty($albumGallery))
+                                    @foreach($albumGallery as $post)
+                                        <div class="image-item">
+                                            <div class="img-click" data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal-detail">
+                                                <img class="" src="{{ get_image_url($post->image) }}" alt="">
+                                            </div>
+                                        
+                                            <div class="image-item__back">
+                                                <i class="far fa-image"></i>
+                                                <p data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal"  class="text font18">Album</p>
+                                            </div>
+                                            <div class="image-item__download">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @endif
+                                {{-- <div class="image-item">
                                     <div class="img-click">
                                         <img class="" src="{{ Theme::asset()->url('images/media/2.jpg') }}" alt="">
                                     </div>
@@ -231,13 +242,14 @@
                                     <div class="image-item__download">
                                         <i class="fas fa-download"></i>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                             
                         </div>
                     </div>
                   
-                    <div class="page-pagination mt-40 mb-40">
+                    {{ $posts->links('vendor.pagination.custom') }}
+                    {{-- <div class="page-pagination mt-40 mb-40">
                         <ul class="pagination font18">
                             <li class="page-item active">
                                 <a href="" class="page-link">
@@ -286,7 +298,7 @@
                             </li>
                            
                         </ul>
-                     </div>
+                     </div> --}}
                 </div>
             </div>
 
@@ -324,26 +336,30 @@
                     <div class="tab-pane fade active show" id="media-video" role="tabpanel" aria-labelledby="field-1-tab">
                       <div class="list-video-wrapper">
                         <div class="list-video">
-                            <div class="video-item" data-target="#video_modal" data-toggle="modal">
-                                <div class="video-thumbnail">
-                                    <img src="{{ Theme::asset()->url('images/media/video-list-1.jpg') }}" alt="">
-                                    
-                                </div> 
-                                <div class="video-item__name font20 ">
-                                    <p class="name">Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA
-                                    </p>
-                                </div>
-                                <span class="video-item__date">(25/08/2021)</span>
-                                <div class="video-item__count">
-                                       
-                                    <i class="fas fa-photo-video"></i>
-                                    <p class="quantity font18">100</p>
-                                </div>
-                                <div class="video-item__download">
-                                    <i class="fas fa-download"></i>
-                                </div>
-                            </div>
-                            <div class="video-item" data-target="#video_modal" data-toggle="modal">
+                            @if(!empty($albumVideo))
+                                @foreach($albumVideo as $post) 
+                                    <div class="video-item" data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#video_modal">
+                                        <div class="video-thumbnail">
+                                            <img src="{{ Theme::asset()->url('images/media/video-list-1.jpg') }}" alt="">
+                                        </div> 
+                                        <div class="video-item__name font20 ">
+                                            <p class="name">
+                                                Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA
+                                            </p>
+                                        </div>
+                                        <span class="video-item__date">(25/08/2021)</span>
+                                        <div class="video-item__count">
+                                            
+                                            <i class="fas fa-photo-video"></i>
+                                            <p class="quantity font18">100</p>
+                                        </div>
+                                        <div class="video-item__download">
+                                            <i class="fas fa-download"></i>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endif
+                            {{-- <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
                                     <img src="{{ Theme::asset()->url('images/media/video-list-2.jpg') }}" alt="">
                                 
@@ -421,11 +437,6 @@
                             <div class="video-item" data-target="#video_modal" data-toggle="modal">
                                 <div class="video-thumbnail">
                                     <img src="{{ Theme::asset()->url('images/media/video-list-5.jpg') }}" alt="">
-                                    {{-- <div class="video-item__count">
-                                        <p class="quantity font18">20</p>
-                                        <img src="{{ Theme::asset()->url('images/media/icon-list-video.png') }}" alt="">
-                                        
-                                     </div> --}}
                                 </div> 
                                 <div class="video-item__name font20 ">
                                     <p class="name">Năm 2013 Công ty CP Ô tô Trường Hải phấn đấu bán 29.200 xe
@@ -440,59 +451,13 @@
                                 <div class="video-item__download">
                                     <i class="fas fa-download"></i>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                       </div>
-                      <div class="page-pagination mt-40 mb-40">
-                        <ul class="pagination font18">
-                            <li class="page-item active">
-                                <a href="" class="page-link">
-                                    1
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a href="" class="page-link">
-                                    2
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a href="" class="page-link">
-                                    3
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a href="" class="page-link">
-                                    4
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a href="" class="page-link">
-                                    5
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a href="" class="page-link">
-                                    6
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a href="" class="page-link">
-                                    7
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a href="" class="page-link">
-                                    >
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a href="" class="page-link">
-                                    >>
-                                </a>
-                            </li>
-                           
-                        </ul>
-                     </div>
+
+                      <!----paginate video----->
+                      {{ $posts->links('vendor.pagination.custom') }}
+                        <!----end paginate video---->
                     </div>
                     <div class="tab-pane fade" id="media-single-video" role="tabpanel" aria-labelledby="field-2-tab">
                         <div class="media-video mCustomScrollbar" data-mcs-theme="dark">
@@ -557,7 +522,7 @@
         </div>
     </div>
 </section>
-<div class="modal fade" id="album_modal" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
+{{-- <div class="modal fade" id="album_modal" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         
         <div class="modal-content">
@@ -641,8 +606,8 @@
             </div>
         </div>
     </div>
-</div>
-<div class="modal fade" id="album_modal-detail" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
+</div> --}}
+{{-- <div class="modal fade" id="album_modal-detail" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         
         <div class="modal-content">
@@ -709,8 +674,8 @@
         </div>
         
     </div>
-</div>
-<div class="modal fade" id="video_modal" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
+</div> --}}
+{{-- <div class="modal fade" id="video_modal" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         
         <div class="modal-content">
@@ -797,10 +762,9 @@
             </div>
         </div>
     </div>
-</div>
-<div class="modal fade" id="video_modal-detail" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
+</div> --}}
+{{-- <div class="modal fade" id="video_modal-detail" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        
         <div class="modal-content">
             <div class="modal-header">     
                 
@@ -823,13 +787,11 @@
                     </div>
                 </div>
               </div>
-             
-            
         </div>
-        
     </div>
-</div>
+</div> --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.34/swiper-bundle.min.js"></script>
+
 <script>
             var gallery_top = new Swiper(".gallery-top", {
     slidesPerView: 1,

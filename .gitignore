@@ -6,7 +6,7 @@ public/themes/main/css/common.css.map
 logs/
 public/phpMyAdmin
 public/phpRedisAdmin/
-
+database/migrations
 ############# Excute files #############
 !bin/
 bin/*

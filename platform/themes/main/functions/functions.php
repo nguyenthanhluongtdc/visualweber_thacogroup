@@ -17,6 +17,7 @@ register_page_template([
     'media-message' => 'Message',
     'media-news' => 'News',
     'security-term' => 'Security Term',
+    'media-gallery' => 'Media Gallery',
 ]);
 
 register_sidebar([
@@ -26,3 +27,25 @@ register_sidebar([
 ]);
 
 RvMedia::setUploadPathAndURLToPublic();
+
+if (is_plugin_active('blog')) {
+    register_post_format(
+        [
+            ''        => [
+                'key'  => '',
+                'icon' => null,
+                'name' => 'Default',
+            ],
+            'gallery' => [
+                'key'  => 'gallery',
+                'icon' => 'fa fa-image',
+                'name' => 'Gallery',
+            ],
+            'video'   => [
+                'key'  => 'video',
+                'icon' => 'fa fa-camera',
+                'name' => 'Video',
+            ],
+        ]
+    );
+}
