@@ -7,6 +7,14 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
 
         // Add your custom route here
         // Ex: Route::get('hello', 'MainController@getHello');
+;
+        Route::get('downloadFile/{file}', function($file) {
+            dd('sdfsd');
+            if(Storage::disk('public')->exists($file)) {
+                $file = Storage::disk('public')->get($file);
+                return Storage::download($file);
+            } 
+        })->name('public.downloadFile');
 
     });
 });

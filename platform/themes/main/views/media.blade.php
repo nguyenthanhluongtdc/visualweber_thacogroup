@@ -177,7 +177,9 @@
                                                 <p data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal"  class="text font18">Album</p>
                                             </div>
                                             <div class="image-item__download">
-                                                <i class="fas fa-download"></i>
+                                                <a href="{{ route('public.downloadFile', $post->image) }}">
+                                                    <i class="fas fa-download"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     @endforeach
