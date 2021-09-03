@@ -185,7 +185,7 @@
                             <select id="contact_address" name="address" class="form-control">
                                 @if (has_field($page, 'send_to_list'))
                                 @foreach (get_field($page, 'send_to_list') as $key => $item)
-                                <option value="{{ get_sub_field($item, 'send_to_item') }}">{{ get_sub_field($item, 'send_to_item') }}</option>
+                                <option value="{{ get_sub_field($item, 'send_to_item') }}">{{ get_sub_field($item, 'send_to_item') }}</option>  
                                 @endforeach
 
                                 @endif
