@@ -64,13 +64,19 @@
                     </div>
                     <div class="office-hotline">
                         <i class="fas fa-phone-alt"></i>
-                        <p class="phone">SĐT: 
-                            <a href="tel:>{!! has_sub_field($item, 'hotline') ? has_sub_field($item, 'hotline') : '' !!}">{!! has_sub_field($item, 'hotline') ? has_sub_field($item, 'hotline') : '' !!}</a></p>
+                        
+                        <a href="tel:  {!! has_sub_field($item, 'hotline') ? has_sub_field($item, 'hotline') : '' !!}">
+                            <p class="phone">SĐT: 
+                            {!! has_sub_field($item, 'hotline') ? has_sub_field($item, 'hotline') : '' !!}</p>
+                        </a>
                     </div>
                     <div class="office-email">
                         <i class="fas fa-envelope"></i>
-                        <p class="email"> Email: 
-                            <a href="mailto:{!! has_sub_field($item, 'mail') ? has_sub_field($item, 'mail') : '' !!}">{!! has_sub_field($item, 'mail') ? has_sub_field($item, 'mail') : '' !!}</a></p>
+                        
+                        <a href="mailto: {!! has_sub_field($item, 'mail') ? has_sub_field($item, 'mail') : '' !!}">
+                            <p class="email"> Email: 
+                           {!! has_sub_field($item, 'mail') ? has_sub_field($item, 'mail') : '' !!}</p>
+                        </a>
                     </div>
                     <div class="desc">
                         {!! has_sub_field($item, 'desc') ? has_sub_field($item, 'desc') : '' !!}
@@ -106,7 +112,7 @@
                             <a href=""> Loreissum@gmail.com</a></p>
                     </div>
                     <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                     </div>
                 </div>
             </div>
@@ -185,7 +191,7 @@
                             <select id="contact_address" name="address" class="form-control">
                                 @if (has_field($page, 'send_to_list'))
                                 @foreach (get_field($page, 'send_to_list') as $key => $item)
-                                <option value="{{ get_sub_field($item, 'send_to_item') }}">{{ get_sub_field($item, 'send_to_item') }}</option>  
+                                <option value="{{ get_sub_field($item, 'send_to_item') }}">{{ get_sub_field($item, 'send_to_item') }}</option>
                                 @endforeach
 
                                 @endif
@@ -223,7 +229,7 @@
         
         <div class="chat-online mb-60">
             @if(has_field($page, 'title_chat_online'))
-            <h2> {!! has_field($page,'title_chat_online') !!} </h2>
+            <h2> {!! has_field($page,'title_form_contact') !!} </h2>
             @endif
         </div>
     </div>
