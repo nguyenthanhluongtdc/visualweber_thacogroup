@@ -8,11 +8,11 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
         // Add your custom route here
         // Ex: Route::get('hello', 'MainController@getHello');
 ;
-        Route::get('downloadFile/{file}', function($file) {
+        Route::get('downloadFile/(:any)', function() {
             dd('sdfsd');
-            if(Storage::disk('public')->exists($file)) {
-                $file = Storage::disk('public')->get($file);
-                return Storage::download($file);
+            if(Storage::disk('public')->exists('media/4.jpg')) {
+                $file = Storage::disk('public')->get('media/4.jpg');
+                return Storage::download('mediaa/4.jpg');
             } 
         })->name('public.downloadFile');
 

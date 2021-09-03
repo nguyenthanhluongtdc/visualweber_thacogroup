@@ -1,6 +1,6 @@
 @php
-    $albumImage = get_posts_type_by_category(15, 3, 'gallery');
-    $albumVideo = get_posts_type_by_category(15, 3, 'video');
+    $albumImage = get_posts_type_by_category(15, 6, 'gallery');
+    $albumVideo = get_posts_type_by_category(15, 6, 'video');
 @endphp
 
 <section class="media-content">
@@ -21,25 +21,21 @@
         <div class="container-customize">
             <div class="image__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
-                <h1  class="font50 big-title">Hình ảnh</h1>
+                <h1  class="font50 big-title">{!! __('Hình ảnh') !!}</h1>
             </div>
             <div class="tab-image">
                 <div class="media__tabs">
                     <ul class=" nav nav-tabs" id="tab-media" role="tablist">
                         <li class="__tabs__item " role="media">
-                            <a class="__tabs__link nav-link active" id="media-album-tab" data-toggle="tab" role="tab" aria-controls="media-image" aria-selected="true" href="#media-album" title="Tất Cả">
+                            <a class="__tabs__link nav-link active" id="media-album-tab" data-toggle="tab" role="tab" aria-controls="media-image" aria-selected="true" href="#media-album" title="{!! __('Tất Cả') !!}">
                                 <i class="far fa-images"></i>
-                             Albums
-                            
+                                {!! __('Albums') !!}
                             </a>
-                          
                         </li>
                         <li class="__tabs__item" role="media">
-                          
-                            <a class="__tabs__link nav-link" id="media-single-image-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-single-image" title="Tất Cả">
+                            <a class="__tabs__link nav-link" id="media-single-image-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-single-image" title="{!! __('Tất Cả') !!}">
                                 <i class="fas fa-image"></i>
-                            Hình ảnh
-                          
+                                {!! __('Hình ảnh') !!}
                             </a>
                         </li>
                     </ul>
@@ -48,9 +44,7 @@
                 <div class="tab-content" id="nav-tabContent3 tab-content2">
                     <div class="tab-pane fade active show" id="media-album" role="tabpanel" aria-labelledby="field-1-tab">
                         <div class="media-banner">
-                          
                             <div class="list-album">
-
                                 @if(!empty($albumImage))
                                     @foreach($albumImage as $post) 
                                         <div class="album-item" data-target="#album_modal" data-toggle="modal">
@@ -63,9 +57,8 @@
                                                 </div>
                                                 <span class="album-item__date"> {{$post->created_at->format('d/m/y')}} </span>
                                                 <div class="album-item__count">
-                                                
                                                     <i class="far fa-image"></i>
-                                                    <p class="quantity font18">100</p>
+                                                    <p class="quantity font18">{{!empty($galleries = gallery_meta_data($post)) ? count($galleries): '0'}}</p>
                                                 </div>
                                                 <div class="album-item__download">
                                                     <i class="fas fa-download"></i>
@@ -163,7 +156,6 @@
                     </div>
                     <div class="tab-pane fade" id="media-single-image" role="tabpanel" aria-labelledby="field-2-tab">
                         <div class="media-banner">
-                          
                             <div class="list-image">
                                 @if(!empty($albumImage))
                                     @foreach($albumImage as $post)
@@ -171,14 +163,13 @@
                                             <div class="img-click" data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal-detail">
                                                 <img class="" src="{{ get_image_url($post->image) }}" alt="">
                                             </div>
-                                        
                                             <div class="image-item__back">
                                                 <i class="far fa-image"></i>
-                                                <p data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal"  class="text font18">Album</p>
+                                                <p data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal"  class="text font18">{!! __('Album') !!}</p>
                                             </div>
                                             <div class="image-item__download">
-                                                <a href="{{ route('public.downloadFile', $post->image) }}">
-                                                    <i class="fas fa-download"></i>
+                                                <a download href="{{ get_image_url($post->image) }}" title="{!! __('Tải xuống') !!}">
+                                                    <i class="fas fa-download text-white"></i>
                                                 </a>
                                             </div>
                                         </div>
@@ -249,7 +240,9 @@
                         </div>
                     </div>
                   
-                    {{ $albumImage->links('vendor.pagination.custom') }}
+                    @if(!empty($albumImage))
+                        {{ $albumImage->links('vendor.pagination.custom') }}
+                    @endif
                     {{-- <div class="page-pagination mt-40 mb-40">
                         <ul class="pagination font18">
                             <li class="page-item active">
@@ -305,32 +298,26 @@
 
             <div class="video__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
-                <h2  class="font50 big-title">Video</h2> 
+                <h2  class="font50 big-title">{!! __('Video') !!}</h2> 
             </div>
             <div class="tab-video">
                 <div class="media__tabs">
                     <ul class=" nav nav-tabs" id="tab-media" role="tablist">
                         <li class="__tabs__item " role="media">
-                            <a class="__tabs__link nav-link active" id="media-video-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-video" title="Tất Cả">
+                            <a class="__tabs__link nav-link active" id="media-video-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-video" title="{!! __('Tất Cả') !!}">
                                 <i class="far fa-images"></i>
-                             Albums
-                            
+                                {!! __('Albums') !!}
                             </a>
                           
                         </li>
                         <li class="__tabs__item" role="media">
-                          
-                            <a class="__tabs__link nav-link" id="media-single-video-tab" data-toggle="tab" role="tab" aria-controls="media-single-video" aria-selected="true" href="#media-single-video" title="Tất Cả">
+                            <a class="__tabs__link nav-link" id="media-single-video-tab" data-toggle="tab" role="tab" aria-controls="media-single-video" aria-selected="true" href="#media-single-video" title="{!! __('Tất Cả') !!}">
                                 <i class="fas fa-image"></i>
-                           Video
-                          
+                                {!! __('Video') !!}
                             </a>
-                           
                         </li>
-                        
                     </ul>
                     {!! do_shortcode('[filter-media][/filter-media]') !!}
-                
                 </div>
 
                 <div class="tab-content" id="nav-tabContent tab-content2">
@@ -352,7 +339,7 @@
                                         <div class="video-item__count">
                                             
                                             <i class="fas fa-photo-video"></i>
-                                            <p class="quantity font18">100</p>
+                                            <p class="quantity font18">{{!empty($galleries = gallery_meta_data($video)) ? count($galleries): '0'}}</p>
                                         </div>
                                         <div class="video-item__download">
                                             <i class="fas fa-download"></i>
@@ -457,7 +444,9 @@
                       </div>
 
                       <!----paginate video----->
-                      {{ $albumVideo->links('vendor.pagination.custom') }}
+                        @if(!empty($albumVideo))
+                            {{ $albumVideo->links('vendor.pagination.custom') }}
+                        @endif
                         <!----end paginate video---->
                     </div>
                     <div class="tab-pane fade" id="media-single-video" role="tabpanel" aria-labelledby="field-2-tab">
@@ -481,7 +470,6 @@
                                             <a href="" class="img-button">
                                                 <img src="{{ Theme::asset()->url('images/media/video-1.jpg') }}" alt="">
                                                 <i class="far fa-play-circle button-video"></i>
-
                                             </a>
                                            <p class="name font20">
                                             MAZDA CX-30: TÂN BINH PHÂN KHÚC SUV ĐÔ THỊ CÓ GÌ HẤP DẪN KHÁCH HÀNG?
@@ -514,8 +502,6 @@
                                 </div>
                                 
                             </div>
-                         
-                            
                         </div>
                     </div>
                 </div>
@@ -791,10 +777,10 @@
         </div>
     </div>
 </div> --}}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.34/swiper-bundle.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.34/swiper-bundle.min.js"></script>
 <script>
-            var gallery_top = new Swiper(".gallery-top", {
+    var gallery_top = new Swiper(".gallery-top", {
     slidesPerView: 1,
     speed: 400,
     scrollbar: {
@@ -805,7 +791,6 @@
         nextEl: '.gallery-top .swiper-button-next',
         prevEl: '.gallery-top .swiper-button-prev',
     },
-
 });
 </script>
 <style>

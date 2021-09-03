@@ -19,7 +19,9 @@
                                 <a data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal-detail">
                                     <img src="{{ get_image_url(Arr::get($item, 'img')) }}" alt="">
                                     <div class="album-item__download">
-                                        <i class="fas fa-download"></i>
+                                        <a download href="{{ get_image_url(Arr::get($item, 'img')) }}">
+                                            <i class="fas fa-download text-white"></i>
+                                        </a>
                                     </div>
                                 </a>
                             </div>
@@ -36,6 +38,11 @@
             </div>
         </div>
     </div>
+    <script>
+        $(".custom-fancybox-body").mCustomScrollbar({
+           theme:"dark",
+       });
+   </script>
 </div>
 
 <div id="album_modal-detail">
@@ -55,7 +62,9 @@
                                     <div class="img-wrapper">
                                         <img src="{{ get_image_url(Arr::get($item, 'img')) }}" alt="{{Arr::get($item, 'description')}}">
                                         <div class="album-item__download">
-                                            <i class="fas fa-download"></i>
+                                            <a download href="{{ get_image_url(Arr::get($item, 'img')) }}">
+                                                <i class="fas fa-download text-white"></i>
+                                            </a>
                                         </div>
                                     </div>
                                     <p class="">{{Arr::get($item, 'description')}}</p>
@@ -123,6 +132,11 @@
             </div>
         </div>
     </div>
+    <script>
+        $(".custom-fancybox-body").mCustomScrollbar({
+           theme:"dark",
+       });
+   </script>
 </div>
 
 {{-- <div class="modal fade" id="video_modal" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
