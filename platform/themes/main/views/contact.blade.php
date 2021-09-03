@@ -1,22 +1,30 @@
 <section class="banner-introduce">
-    <img class=" h-45vw img-mw-100" src="{{ Theme::asset()->url('images/introduce/banner-introduce.jpg') }}" alt="">
+    @if(has_field($page, 'banner_contact'))
+    <img class=" h-45vw img-mw-100" src="{{ Storage::disk('public')->exists(has_field($page,'banner_contact')) ? get_image_url(has_field($page,'banner_contact')) : RvMedia::getDefaultImage()}}" alt="">
+    @endif
 </section>
 <section class="contact-content">
     <div class="contact-wrapper">
         <div class="contact-title  mt-60 mb-60" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-            <h1 class="font40 title">HỖ TRỢ TỪ CHÚNG TÔI</h1> 
+            @if(has_field($page, 'banner_contact'))
+            <h1 class="font40 title text-uppercase"> {!! has_field($page,'contact_title') !!}  </h1> 
+            @endif
         </div>
         <div class="contact-box  mt-60 mb-60" id="support-tab">
+            @if(has_field($page, 'repeater_info_block'))
+            @foreach(has_field($page, 'repeater_info_block') as $item)
             <div class="contact-box__item info" data-filter=".data-filter-01" data-aos="flip-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 <div class="image">
-                    <img src="{{ Theme::asset()->url('images/contact/homepage.png') }}" alt="">
+                    <img src="{{ get_image_url(get_sub_field($item, 'symbol')) }}" alt="">
                 </div>
            
-                <h3 class="title font28">Thông tin liên hệ</h3>
-                <div class="content font20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>
+                <h3 class="title font28"> {!! has_sub_field($item, 'title') ? has_sub_field($item, 'title') : '' !!}</h3>
+                <div class="content font20"> {!! has_sub_field($item, 'desc') ? has_sub_field($item, 'desc') : '' !!}</div>
                 <i class="fas fa-angle-down"></i>
             </div>
-            <div class="contact-box__item email" data-aos="flip-up" data-filter=".data-filter-02" data-aos-duration="700" data-aos-delay="200" class="aos-init aos-animate">
+            @endforeach
+            @endif
+            {{-- <div class="contact-box__item email" data-aos="flip-up" data-filter=".data-filter-02" data-aos-duration="700" data-aos-delay="200" class="aos-init aos-animate">
                 <div class="image">
                     <img src="{{ Theme::asset()->url('images/contact/mail.png') }}" alt="">
                 </div>
@@ -33,40 +41,45 @@
                 <h3 class="title font28">Hỗ trợ trực tuyến</h3>
                 <div class="content font20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>
                 <i class="fas fa-angle-down"></i>
-            </div>
+            </div> --}}
         </div>
         <div class="office-contact-wrapper mt-100 data-filter-01">
+            
+            @if(has_field($page, 'repeater_contact_info'))
+            @foreach(has_field($page, 'repeater_contact_info') as $item)
             <div class="office-item mb-100" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
                 <div class="left">
                     <div class="office-name">
-                        <h3 class="name font21">VP HỒ CHÍ MINH</h3>
+                        <h3 class="name font21"> {!! has_sub_field($item, 'title') ? has_sub_field($item, 'title') : '' !!}</h3>
                     </div>
                     <div class="office-image">
-                        <img class="" src="{{ Theme::asset()->url('images/contact/office.jpg') }}" alt="">
+                        <img class="" src="{{ Storage::disk('public')->exists(has_sub_field($item,'image')) ? get_image_url(has_sub_field($item,'image')) : RvMedia::getDefaultImage()}}" alt="">
                     </div>
                 </div>
                 <div class="right font20">
                     <div class="office-address">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p class="address"> Địa chỉ : Số 10 Mai Chí Thọ, P. Thủ Thiêm, TP. Thủ Đức, TP.HCM.</p>
+                        <p class="address"> Địa chỉ : {!! has_sub_field($item, 'address') ? has_sub_field($item, 'address') : '' !!}</p>
                        
                     </div>
                     <div class="office-hotline">
                         <i class="fas fa-phone-alt"></i>
                         <p class="phone">SĐT: 
-                            <a href="">+84-(0)8-39977.824</a></p>
+                            <a href="">{!! has_sub_field($item, 'hotline') ? has_sub_field($item, 'hotline') : '' !!}</a></p>
                     </div>
                     <div class="office-email">
                         <i class="fas fa-envelope"></i>
                         <p class="email"> Email: 
-                            <a href="">rep-office@thaco.com.vn</a></p>
+                            <a href="">{!! has_sub_field($item, 'mail') ? has_sub_field($item, 'mail') : '' !!}</a></p>
                     </div>
                     <div class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                        {!! has_sub_field($item, 'desc') ? has_sub_field($item, 'desc') : '' !!}
                     </div>
                 </div>
             </div>
-            <div class="office-item mb-100" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
+            @endforeach
+            @endif
+            {{-- <div class="office-item mb-100" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
                 <div class="left">
                     <div class="office-name">
                         <h3 class="name font21">VP HÀ NỘI</h3>
@@ -126,7 +139,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
         {!! do_shortcode('[contact-form][/contact-form]') !!}
