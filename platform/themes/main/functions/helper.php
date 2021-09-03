@@ -7,6 +7,19 @@ use Platform\Blog\Repositories\Interfaces\PostInterface;
 use Platform\Blog\Repositories\Interfaces\TagInterface;
 use Platform\Blog\Supports\PostFormat;
 use Illuminate\Support\Arr;
+use Platform\Kernel\Repositories\Interfaces\PostInterface as PostInterfaceCustom;
+
+if (!function_exists('get_posts_type_by_category')) {
+    /**
+     * @param int $limit
+     * @param array $excepts
+     * @return \Illuminate\Support\Collection
+     */
+    function get_posts_type_by_category($categoryId, $paginate = 12, $format_type)
+    {
+        return app(PostInterfaceCustom::class)->getPostsTypeByCategory($categoryId, $paginate, $format_type);
+    }
+}
 
 if (!function_exists('get_featured_posts')) {
     /**

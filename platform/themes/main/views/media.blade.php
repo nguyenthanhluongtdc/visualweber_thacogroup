@@ -1,7 +1,6 @@
 @php
-    $posts = get_posts_by_category(15, 3);
-    $albumGallery = $posts->where('format_type' , 'gallery');
-    $albumVideo = $posts->where('format_type' , 'video');
+    $albumImage = get_posts_type_by_category(15, 3, 'gallery');
+    $albumVideo = get_posts_type_by_category(15, 3, 'video');
 @endphp
 
 <section class="media-content">
@@ -52,8 +51,8 @@
                           
                             <div class="list-album">
 
-                                @if(!empty($albumGallery))
-                                    @foreach($albumGallery as $post) 
+                                @if(!empty($albumImage))
+                                    @foreach($albumImage as $post) 
                                         <div class="album-item" data-target="#album_modal" data-toggle="modal">
                                             <a data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal" >
                                                 <img src="{{ get_object_image($post->image) }}" alt="{!! $post->name !!}">
@@ -166,8 +165,8 @@
                         <div class="media-banner">
                           
                             <div class="list-image">
-                                @if(!empty($albumGallery))
-                                    @foreach($albumGallery as $post)
+                                @if(!empty($albumImage))
+                                    @foreach($albumImage as $post)
                                         <div class="image-item">
                                             <div class="img-click" data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal-detail">
                                                 <img class="" src="{{ get_image_url($post->image) }}" alt="">
@@ -248,7 +247,7 @@
                         </div>
                     </div>
                   
-                    {{ $posts->links('vendor.pagination.custom') }}
+                    {{ $albumImage->links('vendor.pagination.custom') }}
                     {{-- <div class="page-pagination mt-40 mb-40">
                         <ul class="pagination font18">
                             <li class="page-item active">
@@ -337,17 +336,17 @@
                       <div class="list-video-wrapper">
                         <div class="list-video">
                             @if(!empty($albumVideo))
-                                @foreach($albumVideo as $post) 
-                                    <div class="video-item" data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#video_modal">
+                                @foreach($albumVideo as $video) 
+                                    <div class="video-item" data-fancybox data-type="ajax" data-src="{{$video->url}}" data-filter="#video_modal">
                                         <div class="video-thumbnail">
-                                            <img src="{{ Theme::asset()->url('images/media/video-list-1.jpg') }}" alt="">
+                                            <img src="{{ get_image_url($video->image) }}" alt="{!! $video->name !!}">
                                         </div> 
                                         <div class="video-item__name font20 ">
                                             <p class="name">
-                                                Lễ khởi công xây dựng Nhà máy sản xuất ô tô THACO MAZDA
+                                                {!! $video->name !!}
                                             </p>
                                         </div>
-                                        <span class="video-item__date">(25/08/2021)</span>
+                                        <span class="video-item__date"> {{$post->created_at->format('d/m/y')}} </span>
                                         <div class="video-item__count">
                                             
                                             <i class="fas fa-photo-video"></i>
@@ -456,7 +455,7 @@
                       </div>
 
                       <!----paginate video----->
-                      {{ $posts->links('vendor.pagination.custom') }}
+                      {{ $albumVideo->links('vendor.pagination.custom') }}
                         <!----end paginate video---->
                     </div>
                     <div class="tab-pane fade" id="media-single-video" role="tabpanel" aria-labelledby="field-2-tab">
