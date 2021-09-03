@@ -54,6 +54,7 @@ class MainController extends PublicController
         Theme::breadcrumb()->add(__('Trang chủ'), route('public.index'));
 
         event(RenderingHomePageEvent::class);
+       
     }
     public function getView($key = null)
     {

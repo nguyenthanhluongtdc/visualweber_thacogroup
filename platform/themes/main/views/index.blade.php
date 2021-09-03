@@ -1,5 +1,4 @@
 
- {{-- @dd($post); --}}
  <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
     <div class="swiper-wrapper">
         @if(has_field($page, 'main_slide_home'))
@@ -8,8 +7,8 @@
             <img src="{{ has_sub_field($item , 'image') ? get_object_image(get_sub_field($item , 'image')) :''}}" alt="" class="img-slider h-100vh w-100">
             @if(has_field($page, 'show_hide'))
             <div class="bg-post">
-               @php $post = get_featured_posts(1,[]) @endphp
-           
+               @if ($post = get_featured_posts(1,[]))
+               
                 <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                     <h2 class="font24 title-post">
                     {{$post[0]->name}}
@@ -21,6 +20,7 @@
                     </div>
                     <a href="" class="read-more">Xem thêm</a>
                 </div>
+                @endif
             </div>
             @endif
         </div>
@@ -37,7 +37,7 @@
     </div>
 </div>
 <div class="partner-wrapper">
-    <h3 class="title__company font40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">TẬP ĐOÀN VÀ TỔNG CÔNG TY</h3>
+    <h3 class="title__company font40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate"> {{has_field($page, 'tieu_de') ? get_field($page, 'tieu_de') : ''}}</h3>
     <div class="partner-banner parallax-window" data-parallax="scroll">
         <div class="container-customize logo-partner"> 
             <div class="swiper-container logo-company" style="display:none">
@@ -61,22 +61,16 @@
                 <div class="swiper-button-next"><img src="{{Theme::asset()->url("images/home/right-arrow.png")}}" alt="{{_('Next icon')}}"></div>
                 <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
             </div>
-            <div class="logo-desktop"   >
+            <div class="logo-desktop">
+                @if(has_field($page,'logo_company'))
+                @foreach (has_field($page,'logo_company') as $logo_item)
+                    
+              
                 <div class="logo-item"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <img class=""  src="{{Theme::asset()->url('images/home/logo/logo-1.png')}}" alt="">
+                    <img class=""  src="{{ has_sub_field($logo_item , 'image') ? get_object_image(get_sub_field($logo_item , 'image')) :''}}" alt="">
                 </div>
-                <div class="logo-item"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <img class=""  src="{{Theme::asset()->url('images/home/logo/logo-2.png')}}" alt="">
-                </div>
-                <div class="logo-item"  data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <img class=""  src="{{Theme::asset()->url('images/home/logo/logo-3.png')}}" alt="">
-                </div>
-                <div class="logo-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <img class="" src="{{Theme::asset()->url('images/home/logo/logo-4.png')}}" alt="">
-                </div>
-                <div class="logo-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <img class="" src="{{Theme::asset()->url('images/home/logo/logo-5.png')}}" alt="">
-                </div>
+                @endforeach
+                @endif
             </div>
             
         </div>
@@ -311,14 +305,14 @@
 </div>
 
 <div class="recruitment-wrapper">
-    <div class="recruitment-banner " style="background-image:url({{Theme::asset()->url('images/home/tuyen-dung-1.jpg') }})">
-        <div class="swiper-content">
+    <div class="recruitment-banner " style="background-image:url({{ has_field($page , 'image_bg') ? get_object_image(get_field($page , 'image_bg')) :''}})">
+        <div class="swiper-content">    
             <div class="swiper-content__desc">
-                <h3 class="title font28">Tuyển dụng</h3>
+                <h3 class="title font28">{{ has_field($page , 'title') ? get_field($page , 'title') :''}}</h3>
                 <p class="description font24 text-justify">
-                    THACO mong muốn tạo nên môi trường làm việc kỷ luật, văn hóa, đề cao tính nhân văn.Tại đây mỗi nhân viên được quan tâm tạo điều kiện để rèn luyện, phát triển bản thân và thăng tiến trong sự nghiệp
+                    {{ has_field($page , 'desc_short') ? get_field($page , 'desc_short') :''}}
                 </p>
-                <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" class="btn-apply font24">Ứng tuyển ngay</a>
+                <a href="{{ has_field($page , 'desc_short') ? get_field($page , 'desc_short') :''}}" class="btn-apply font24">Ứng tuyển ngay</a>
             </div>
             <div class="bottom_slider_wrapper">
                 <div class="title_label">
@@ -326,18 +320,23 @@
                 </div>
                
                 <div class="swiper-container recruitment-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-                        <div class="swiper-wrapper">   
-                            <div class="swiper-slide" >
-                                <div class="swiper-content-bottom">
-                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/611?code=)" target="_self">
-                                        <p class="postion-apply font28"> Chuyên Viên Nội Dung Marketing (tại VP SOFIC)
-                                        </p>
-                                    </a>
+                        <div class="swiper-wrapper">
+                            @if(has_field($page , 'position'))
+                                @foreach (get_field($page , 'position') as $position)
+                                <div class="swiper-slide" >
+                                    <div class="swiper-content-bottom">
+                                        <a href="{{ has_sub_field($position , 'link') ? get_sub_field($position , 'link') :''}}" target="_self">
+                                            <p class="postion-apply font28"> {{ has_sub_field($position , 'position_name') ? get_sub_field($position , 'position_name') :''}}
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide" >
+                                @endforeach
+                            @endif
+
+                            {{-- <div class="swiper-slide" >
                                 <div class="swiper-content-bottom">
-                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/588?code=" target="_self">
+                                    <a href="" target="_self">
                                         <p class="postion-apply font28"> Trưởng phòng quản trị hành chính
                                         </p>
                                     </a>
@@ -345,7 +344,7 @@
                             </div>
                             <div class="swiper-slide" >
                                 <div class="swiper-content-bottom">
-                                    <a href="https://tuyendung.thaco.com.vn/tieng-viet/jobs/583?code=" target="_self">
+                                    <a href="" target="_self">
                                         <p class="postion-apply font28">Chuyên viên pháp lý tố tụng
                                         </p>
                                     </a>
@@ -358,7 +357,7 @@
                                         </p>
                                     </a>
                                 </div>
-                            </div>
+                            </div> --}}
                            
                         </div>
                         <div class="swiper-pagination"></div>
