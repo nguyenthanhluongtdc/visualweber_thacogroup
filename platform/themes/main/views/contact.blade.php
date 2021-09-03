@@ -64,13 +64,18 @@
                     </div>
                     <div class="office-hotline">
                         <i class="fas fa-phone-alt"></i>
-                        <p class="phone">SĐT: 
-                            <a href="">{!! has_sub_field($item, 'hotline') ? has_sub_field($item, 'hotline') : '' !!}</a></p>
+                            <p class="phone">SĐT: 
+                                <a href="tel: {{get_sub_field($item, 'hotline')}}">
+                            {!! has_sub_field($item, 'hotline') ? has_sub_field($item, 'hotline') : '' !!} </a></p>
+                       
                     </div>
                     <div class="office-email">
                         <i class="fas fa-envelope"></i>
-                        <p class="email"> Email: 
-                            <a href="">{!! has_sub_field($item, 'mail') ? has_sub_field($item, 'mail') : '' !!}</a></p>
+                        
+                        <a href="mailto: {{get_sub_field($item, 'mail')}}">
+                            <p class="email"> Email: 
+                           {!! has_sub_field($item, 'mail') ? has_sub_field($item, 'mail') : '' !!}</p>
+                        </a>
                     </div>
                     <div class="desc">
                         {!! has_sub_field($item, 'desc') ? has_sub_field($item, 'desc') : '' !!}
@@ -223,7 +228,7 @@
         
         <div class="chat-online mb-60">
             @if(has_field($page, 'title_chat_online'))
-            <h2> {!! has_field($page,'title_chat_online') !!} </h2>
+            <h2> {!! has_field($page,'title_form_contact') !!} </h2>
             @endif
         </div>
     </div>
