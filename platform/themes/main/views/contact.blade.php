@@ -176,18 +176,18 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <input id='contact_name' type="text" class="form-control" name="name" value="{{ old('name') }}" id="contact_name"
-                                   placeholder="Họ và tên / Tên công ty">
+                                   placeholder="Họ và tên / Tên công ty" required="required">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <input type="email" class="form-control" name="email" value="{{ old('email') }}" id="contact_email"
-                                   placeholder="Thư điện tử">
+                                   placeholder="Thư điện tử" required="required">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <select id="contact_address" name="address" class="form-control">
+                            <select id="contact_address" name="address" class="form-control" required="required">
                                 @if (has_field($page, 'send_to_list'))
                                 @foreach (get_field($page, 'send_to_list') as $key => $item)
                                 <option value="{{ get_sub_field($item, 'send_to_item') }}">{{ get_sub_field($item, 'send_to_item') }}</option>
@@ -200,12 +200,12 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <input type="number" class="form-control" name="phone" value="{{ old('phone') }}" id="contact_phone"
-                                   placeholder="Số điện thoại">
+                                   placeholder="Số điện thoại" required="required">
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
-                            <textarea name="content" id="contact_content" class="form-control" rows="5" placeholder="Nội dung">{{ old('content') }}</textarea>
+                            <textarea name="content" id="contact_content" class="form-control" rows="5" placeholder="Nội dung" required="required">{{ old('content') }}</textarea>
                         </div>
                     </div>
                     @if (setting('enable_captcha') && is_plugin_active('captcha'))
@@ -234,3 +234,4 @@
     </div>
   
 </section>
+
