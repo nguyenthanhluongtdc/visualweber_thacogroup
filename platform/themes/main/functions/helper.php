@@ -275,3 +275,26 @@ if (!function_exists('get_post_formats')) {
         return PostFormat::getPostFormats($convertToList);
     }
 }
+
+if (!function_exists('get_image_width')) {
+    /**
+     * @param bool $convertToList
+     * @return array
+     */
+    function get_image_width($path)
+    {
+        list($width, $height) = getimagesize($path); 
+        return $width;
+    }
+}
+if (!function_exists('get_image_height')) {
+    /**
+     * @param bool $convertToList
+     * @return array
+     */
+    function get_image_height($path)
+    {
+        list($width, $height) = getimagesize($path); 
+        return $height;
+    }
+}

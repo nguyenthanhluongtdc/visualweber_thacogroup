@@ -1,5 +1,7 @@
 <section class="banner-introduce">
-    <img class=" h-45vw img-mw-100" src="{{ Theme::asset()->url('images/introduce/banner-introduce.jpg') }}" alt="">
+    <img class=" h-45vw img-mw-100"
+        width="{{@get_image_width(get_image_url(get_field($page, 'about_us_banner')))}}" height="{{@get_image_height(get_image_url(get_field($page, 'about_us_banner')))}}"
+        src="{{ get_field($page, 'about_us_banner') ? get_image_url(get_field($page, 'about_us_banner')) : Theme::asset()->url('images/introduce/banner-introduce.jpg') }}" alt="">
 </section>
 @includeIf("theme.main::views.breadcrumb")
 <section class="about-us mt-15">
@@ -531,48 +533,44 @@
                     </div>
                 </div>
                
-                    <div class="work-progress">
-                        <h3 class="title font20">QUÁ TRÌNH LÀM VIỆC TẠI THACO</h3>
-                        <div class="work-progress-table">
-                            <table class="table">
-                                <thead>
-                                  <tr>
-                                   
-                                    <th scope="col">Vị trí</th>
-                                    <th scope="col">Tổ chức</th>
-                                    <th scope="col">Thời gian bổ nhiệm</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Lorem Ipsum</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
-                                    <td>8/1/2021</td> 
-                                  </tr>
-                                  <tr>
-                                    <td>Lorem Ipsum</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
-                                    <td>8/1/2021</td> 
-                                  </tr>
-                                  <tr>
-                                    <td>Lorem Ipsum</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
-                                    <td>8/1/2021</td> 
-                                  </tr>
-                                  <tr>
-                                    <td>Lorem Ipsum</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
-                                    <td>8/1/2021</td> 
-                                  </tr>
-                                 
-                                </tbody>
-                              </table>
-                        </div>
+                <div class="work-progress">
+                    <h3 class="title font20">QUÁ TRÌNH LÀM VIỆC TẠI THACO</h3>
+                    <div class="work-progress-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                
+                                <th scope="col">Vị trí</th>
+                                <th scope="col">Tổ chức</th>
+                                <th scope="col">Thời gian bổ nhiệm</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>Lorem Ipsum</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
+                                <td>8/1/2021</td> 
+                                </tr>
+                                <tr>
+                                <td>Lorem Ipsum</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
+                                <td>8/1/2021</td> 
+                                </tr>
+                                <tr>
+                                <td>Lorem Ipsum</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
+                                <td>8/1/2021</td> 
+                                </tr>
+                                <tr>
+                                <td>Lorem Ipsum</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
+                                <td>8/1/2021</td> 
+                                </tr>
+                                
+                            </tbody>
+                            </table>
                     </div>
-                    
-                   
-                    
-                
+                </div>
             </div>
         </div>
     </div>
