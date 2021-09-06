@@ -1,0 +1,67 @@
+<div class="news-home-wrapper">
+    <div class="container-customize">
+        <div class="news-home__content">
+            <div class="swiper-container new-post-slide" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
+                <div class="swiper-wrapper">
+                    @if ($post_home_top = get_featured_posts(3,[]))
+                    @foreach ($post_home_top as $item_post)
+                    <div class="swiper-slide">
+                        <div class="news-home__top">
+                                    <div class="img-post">
+                                        <img class="img-mw-100" src="{{ RvMedia::getImageUrl($item_post->image, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$item_post->name}}">
+                                    </div>
+                                    <div class="news-post h-100">
+                                        <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
+                                        <a href="/chi-tiet-truyen-thong">
+                                            <h4 class="name font20">{{$item_post->name}}</h4>
+                                        </a>
+                                       
+                                        <span class="time">{{$item_post->created_at->format('d-m-y')}}</span>
+                                        <p class="description font18 text-justify">{{$item_post->description}}</p>
+                                        <a href="" class="read-more">Xem thêm</a>
+                                    </div>
+                        </div>
+                    </div>
+                    @endforeach
+                    @endif
+                </div>
+                
+                <div class="swiper-pagination"></div>
+            </div>    
+           
+           
+            <div class="post-slider">
+                <div class="swiper-container post-slide-bottom">
+                    <div class="swiper-wrapper">
+                        @if($post_home_bottom = get_recent_posts(6))
+                        @foreach ($post_home_bottom as $post_bottom)
+                            <div class="swiper-slide d-flex justify-content-center">             
+                                    <div class="post_content_bottom h-100">
+                                        <a class="post-wrapper" href="">
+                                            <div class="post-thumbnail">
+                                                <img src="{{ RvMedia::getImageUrl($post_bottom->image,'', false, RvMedia::getDefaultImage()) }}" alt="{{$item_post->name}}" alt="{{$post_bottom->name}}">
+                                            </div>
+                                        
+                                            <h4 class="post_name font20">{{$post_bottom->name}}</h4>
+                                            <p class="post_description font18">{{$post_bottom->description}}…
+                                            </p>
+                                            <span class="time">{{$item_post->created_at->format('d-m-y')}}</span>
+                                        </a>   
+                                    </div>
+                                
+                            </div>
+                        @endforeach
+                        @endif
+                    </div>
+                    <div class="swiper-button-next drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/Icon-right.png') }}" alt="">  </div>
+                    <div class="swiper-button-prev drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/icon-left.png') }}" alt=""> </div>
+                    
+        
+                </div>
+               
+            </div>
+            
+        </div>
+    </div>
+   
+</div>
