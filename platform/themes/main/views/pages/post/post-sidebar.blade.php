@@ -1,6 +1,6 @@
 <div class="post-sidebar-content">
     <div class="media__content_right">
-        <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+        <div class="list-media-menu" data-aos="fade-up" data-aos-duration="200" data-aos-delay="50" class="aos-init aos-animate">
             <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
             <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold active">Thông cáo báo chí</a>
             <a href="/con-nguoi#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
@@ -11,10 +11,10 @@
         </div>
         <div class="list-post-new">
             <div class="wrap">
-                <h2 class="font-mi-bold font30" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">tin tức mới</h2>
+                <h2 class="font-mi-bold font30" data-aos="fade-left" data-aos-duration="400" data-aos-delay="50" class="aos-init aos-animate">tin tức mới</h2>
                 <ul class="" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                     @php
-                   $postsLatest = get_posts_by_category($category->id ?? 15, 4);
+                   $postsLatest = get_recent_posts(3);
                     @endphp
                     @if (!empty( $postsLatest))
                     @foreach ( $postsLatest as $post)

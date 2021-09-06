@@ -275,6 +275,32 @@ if (!function_exists('get_post_formats')) {
         return PostFormat::getPostFormats($convertToList);
     }
 }
+if (!function_exists('get_file_name')) {
+    function get_file_name($reference)
+    {
+        $file = new SplFileInfo($reference);
+
+        return $file->getFilename();
+    }
+}
+
+if (!function_exists('get_file_size')) {
+    function get_file_size($path)
+    {
+        $bytes = sprintf('%u', filesize('storage/' . $path));
+
+        if ($bytes > 0) {
+            $unit = intval(log($bytes, 1024));
+            $units = array('B', 'KB', 'MB', 'GB');
+
+            if (array_key_exists($unit, $units) === true) {
+                return sprintf('%d %s', $bytes / pow(1024, $unit), $units[$unit]);
+            }
+        }
+
+        return $bytes;
+    }
+}
 
 // if (!function_exists('get_image_width')) {
 //     /**

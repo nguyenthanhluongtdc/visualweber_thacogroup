@@ -468,23 +468,23 @@
                                             </a>
                                         </h3>
                                         <p class="count">
-                                            2 files
+                                            1 files
                                         </p>
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" class="download">
+                                        <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}" class="download">
                                             <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
                                         </a>
                                         <div class="downcontent">
                                             <ul class="list-file">
                                                 <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        TB MOI THAM DU DHCD NAM 2021.pdf
+                                                    <a href="#" class="text-dark text-decoration-none">
+                                                        {{@get_file_name(get_field($post, 'newspapper_files'))}}
                                                     </a>
                                                 </li>
-                                                <li>
+                                                {{-- <li>
                                                     <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
                                                         XAC NHAN THAM DU.pdf
                                                     </a>
-                                                </li>
+                                                </li> --}}
                                             </ul>
                                         </div>
                                     </div>

@@ -37,7 +37,7 @@
 <section>
        <div class="media_content-wrapper mb-100">
            <div class="container-customize">
-               <div class="media-content">
+               <div class="media-content"> 
                    <div class="content-left">
                                <div class="media__content_left">
                                    <div class="news__content" data-aos="zoom-in-up" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate">
