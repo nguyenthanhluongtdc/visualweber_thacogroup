@@ -299,9 +299,14 @@
                         <span class="">{{ $post->created_at->format('d/m/y') }} </span>
                     </div>
                     <div class="right">
-                        <p class="share">Chia sẻ</p>
+                        
+                        <a data-href="{{ Request::url() }}" data-width="" data-layout="button_count" data-action="share" data-size="large" data-share="true">
+                            <p class="share  text-dark">Chia sẻ</p>
+                        </a>
+                      
                         <button class="print-button">
-                            <i class="fas fa-print"></i>
+                            <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}"> <i class="fas fa-print text-dark"> </i></a>
+                           
                         </button>
                     </div>
 
@@ -326,13 +331,14 @@
                 </div>
                 <div class="post-tag">
                     <h4 class="title">Từ khóa :</h4>
-
+                    @foreach ($post->tags as $tag)
                     <div class="tag-item active">
-                        <a href="">Thaco</a>
+                        <a href="">{{$tag->name}}</a>
                     </div>
-                    <div class="tag-item">
+                    @endforeach
+                    {{-- <div class="tag-item">
                         <a href="">Thaco Chu Lai</a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
