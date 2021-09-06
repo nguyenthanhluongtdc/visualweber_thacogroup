@@ -8,8 +8,8 @@
             @if(has_field($page, 'show_hide'))
             <div class="bg-post">
                @if ($post = get_featured_posts(1,[]))
-               
-                <div class="content" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
+              
+                <div class="content {{has_field($page, 'show_hide') == 'show' ? 'd-block' : 'd-none'}} " data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                     <h2 class="font24 title-post">
                     {{$post[0]->name}}
                     </h2>
@@ -20,6 +20,8 @@
                     </div>
                     <a href="" class="read-more">Xem thêm</a>
                 </div>
+              
+               
                 @endif
             </div>
             @endif
@@ -181,8 +183,8 @@
     </div>
    
 </div>
-<div class="transport-wrapper" >
-    <div class="transport-banner">
+<div class="media-wrapper" >
+    <div class="media-banner">
         <div class="swiper-container field-activity-slide-top" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
             <div class="swiper-wrapper">
                 @if (has_field($page, 'hinh_anh'))
@@ -212,8 +214,6 @@
                     @endif
                     @endif
 
-                   
-                    
                 </div>
                 @endforeach
                 @endif
