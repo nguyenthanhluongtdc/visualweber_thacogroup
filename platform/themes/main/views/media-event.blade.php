@@ -389,60 +389,7 @@
                            </div>
                       
                    </div>
-                       <div class="post-sidebar-content">
-                           <div class="media__content_right">
-                               <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                   <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
-                                   <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold">Thông cáo báo chí</a>
-                                   <a href="/con-nguoi#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
-                                   <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
-                                   <a href="/su-kien#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold active">Sự kiện</a>
-                                   <a href="/thong-diep#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
-                                   <a href="/thu-vien-anh-va-video" class="item_link list-group-item  font18 font-myria-bold">Media</a>
-                               </div>
-                               <div class="list-post-new">
-                                   <div class="wrap">
-                                       <h2 class="font-mi-bold font30" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">tin tức mới</h2>
-                                       <ul class="" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                           <div class="post-new-item">
-                                               <div class="post-thumbnail-wrap">
-                                                   <div class="post-thumbnail">
-                                                       <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-5.jpg') }}" alt=""></a>
-                                                   </div>
-                                               </div>
-                                               <div class="title font18">
-                                                   <a href="/chi-tiet-truyen-thong">THACO tài trợ trang thiết bị, vật tư y tế phòng dịch...</a>
-                                                   <p class="time">23/06/2021</p>
-                                               </div>
-                                           </div>
-                                           <div class="post-new-item">
-                                               <div class="post-thumbnail-wrap">
-                                                   <div class="post-thumbnail">
-                                                       <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-4.jpg') }}" alt=""></a>
-                                                   </div>
-                                               </div>
-                                               <div class="title font18">
-                                                   <a href="/chi-tiet-truyen-thong">THACO AUTO ủng hộ 1,5 tỷ đồng cho 3 địa phương chống dịch...</a>
-                                                   <p class="time">23/06/2021</p>
-                                               </div>
-                                           </div>
-                                           <div class="post-new-item">
-                                               <div class="post-thumbnail-wrap">
-                                                   <div class="post-thumbnail">
-                                                       <a href=""><img src="{{ Theme::asset()->url('images/media/post-3.jpg') }}" alt=""></a>
-                                                   </div>
-                                               </div>
-                                               <div class="title font18">
-                                                   <a href="/chi-tiet-truyen-thong">Chú bảo vệ đi làm 120km mỗi ngày...</a>
-                                                   <p class="time">23/06/2021</p>
-                                               </div>
-                                           </div>
-                                       </ul>
-                                       
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
+                   @includeIf("theme.main::views.pages.post.post-sidebar")
                </div>
              
            </div>

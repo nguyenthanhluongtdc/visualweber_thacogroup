@@ -441,21 +441,30 @@
                                     </select>
                                 </form>
                              </div>
-                            <div class="list-info">
+                            <div class="list-info overflow-x-hidden">
+                                @php
+                                $posts = get_posts_by_category($category->id ?? 16, 10);
+                                 @endphp
+                                  @if (!empty($posts))
+                                  @foreach ($posts as $post)
                                 <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                     <div class="info-left">
                                         <div class="date">
+                                            @php
+                                            $month = $post->created_at->format('m')
+                                             @endphp
                                             <p>
-                                                <span class="date-day">25</span>
-                                                <sup class="">/08</sup>
-                                            </p>
-                                            <p class="date-year fon16 text-center">2021</p>
+                                               
+                                                <span class="date-day"> {{ $post->created_at->format('d') }}</span>
+                                                <sup class=""> {{ $post->created_at->format('m') }}</sup>
+                                            </p> 
+                                            <p class="date-year fon16 text-center"> {{ $post->created_at->format('Y') }}</p>
                                         </div>
-                                    </div>
+                                    </div> 
                                     <div class="info-right">
                                         <h3 >
                                             <a href="" class="font25 itemdown-show">
-                                                Thông tin v/v THACO hủy đăng ký công ty đại chúng
+                                                {{$post->name}}
                                             </a>
                                         </h3>
                                         <p class="count">
@@ -480,272 +489,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" class="aos-init aos-animate">
-                                    <div class="info-left">
-                                        <div class="date">
-                                            <p>
-                                                <span class="date-day">20</span>
-                                                <sup class="">/05</sup>
-                                            </p>
-                                            <p class="date-year fon16 text-center">2021</p>
-                                        </div>
-                                    </div>
-                                    <div class="info-right">
-                                        <h3 >
-                                            <a href="" class="font25 itemdown-show">
-                                                THACO khai trương tổ hợp showroom 3 thương hiệu BMW-MINI-BMW MOTORRAD tại TP.HCM.
-                                            </a>
-                                        </h3>
-                                        <p class="count">
-                                            2 files
-                                        </p>
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" class="download">
-                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                                        </a>
-                                        <div class="downcontent">
-                                            <ul class="list-file">
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        Cong bo thong tin ve viec THACO huy dang ky cong ty dai chung.pdf
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        XAC NHAN THAM DU.pdf
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" class="aos-init aos-animate">
-                                    <div class="info-left">
-                                        <div class="date">
-                                            <p>
-                                                <span class="date-day">05</span>
-                                                <sup class="">/04</sup>
-                                            </p>
-                                            <p class="date-year fon16 text-center">2020</p>
-                                        </div>
-                                    </div>
-                                    <div class="info-right">
-                                        <h3 >
-                                            <a href="" class="font25 itemdown-show">
-                                                THACO ra mắt xe MINI Countryman hoàn toàn mới
-                                            </a>
-                                        </h3>
-                                        <p class="count">
-                                            2 files
-                                        </p>
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" class="download">
-                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                                        </a>
-                                        <div class="downcontent">
-                                            <ul class="list-file">
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        Thuc hien quyen tham du dai hoi co dong thuong nien nam 2021.pdf
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        XAC NHAN THAM DU.pdf
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" class="aos-init aos-animate">
-                                    <div class="info-left">
-                                        <div class="date">
-                                            <p>
-                                                <span class="date-day">22</span>
-                                                <sup class="">/05</sup>
-                                            </p>
-                                            <p class="date-year fon16 text-center">2020</p>
-                                        </div>
-                                    </div>
-                                    <div class="info-right">
-                                        <h3 >
-                                            <a href="" class="font25 itemdown-show">
-                                                Tập đoàn BMW châu Á và THACO giới thiệu thương hiệu BMW và MINI tại Việt Nam
-                                            </a>
-                                        </h3>
-                                        <p class="count">
-                                            2 files
-                                        </p>
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" class="download">
-                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                                        </a>
-                                        <div class="downcontent">
-                                            <ul class="list-file">
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        01-2020-TB HDQT-THACO.pdf
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        XAC NHAN THAM DU.pdf
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250" class="aos-init aos-animate">
-                                    <div class="info-left">
-                                        <div class="date">
-                                            <p>
-                                                <span class="date-day">25</span>
-                                                <sup class="">/08</sup>
-                                            </p>
-                                            <p class="date-year fon16 text-center">2021</p>
-                                        </div>
-                                    </div>
-                                    <div class="info-right">
-                                        <h3 >
-                                            <a href="" class="font25 itemdown-show">
-                                                Khách hàng Phạm Thị Hồng Lợi chủ xe Mazda 2 đưa thông tin không chính xác về sự cố hư hỏng động cơ
-                                            </a>
-                                        </h3>
-                                        <p class="count">
-                                            2 files
-                                        </p>
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" class="download">
-                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                                        </a>
-                                        <div class="downcontent">
-                                            <ul class="list-file">
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        TB MOI THAM DU DHCD NAM 2021.pdf
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        XAC NHAN THAM DU.pdf
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" class="aos-init aos-animate">
-                                    <div class="info-left">
-                                        <div class="date">
-                                            <p>
-                                                <span class="date-day">25</span>
-                                                <sup class="">/08</sup>
-                                            </p>
-                                            <p class="date-year fon16 text-center">2021</p>
-                                        </div>
-                                    </div>
-                                    <div class="info-right">
-                                        <h3 >
-                                            <a href="" class="font25 itemdown-show">
-                                                Tập đoàn BMW ký Thư ngỏ ý với THACO
-                                            </a>
-                                        </h3>
-                                        <p class="count">
-                                            2 files
-                                        </p>
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" class="download">
-                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                                        </a>
-                                        <div class="downcontent">
-                                            <ul class="list-file">
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        TB MOI THAM DU DHCD NAM 2021.pdf
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        XAC NHAN THAM DU.pdf
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="350" class="aos-init aos-animate">
-                                    <div class="info-left">
-                                        <div class="date">
-                                            <p>
-                                                <span class="date-day">25</span>
-                                                <sup class="">/08</sup>
-                                            </p>
-                                            <p class="date-year fon16 text-center">2021</p>
-                                        </div>
-                                    </div>
-                                    <div class="info-right">
-                                        <h3 >
-                                            <a href="" class="font25 itemdown-show">
-                                                THACO bàn giao xe bus ngắm cảnh 2 tầng cho Tập đoàn Empire
-                                            </a>
-                                        </h3>
-                                        <p class="count">
-                                            2 files
-                                        </p>
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" class="download">
-                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                                        </a>
-                                        <div class="downcontent">
-                                            <ul class="list-file">
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        TB MOI THAM DU DHCD NAM 2021.pdf
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        XAC NHAN THAM DU.pdf
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info-item"  data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" class="aos-init aos-animate">
-                                    <div class="info-left">
-                                        <div class="date">
-                                            <p>
-                                                <span class="date-day">25</span>
-                                                <sup class="">/08</sup>
-                                            </p>
-                                            <p class="date-year fon16 text-center">2021</p>
-                                        </div>
-                                    </div>
-                                    <div class="info-right">
-                                        <h3 >
-                                            <a href="" class="font25 itemdown-show">
-                                                Mazda khẳng định xe Mazda3 và Mazda6 tại Việt Nam không bị lỗi phanh tay
-                                            </a>
-                                        </h3>
-                                        <p class="count">
-                                            2 files
-                                        </p>
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" class="download">
-                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                                        </a>
-                                        <div class="downcontent">
-                                            <ul class="list-file">
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        TB MOI THAM DU DHCD NAM 2021.pdf
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        XAC NHAN THAM DU.pdf
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
+                                @endif
+                              
                             </div>
                             <div class="page-pagination mt-40 mb-40">
                                 <ul class="pagination font18">
@@ -798,60 +544,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="post-sidebar-content">
-                            <div class="media__content_right">
-                                <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
-                                    <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold active">Thông cáo báo chí</a>
-                                    <a href="/con-nguoi#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
-                                    <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
-                                    <a href="/su-kien#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
-                                    <a href="/thong-diep#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
-                                    <a href="/thu-vien-anh-va-video" class="item_link list-group-item  font18 font-myria-bold">Media</a>
-                                </div>
-                                <div class="list-post-new">
-                                    <div class="wrap">
-                                        <h2 class="font-mi-bold font30" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">tin tức mới</h2>
-                                        <ul class="" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-5.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title font18">
-                                                    <a href="/chi-tiet-truyen-thong">THACO tài trợ trang thiết bị, vật tư y tế phòng dịch</a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-4.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title font18">
-                                                    <a href="/chi-tiet-truyen-thong">THACO AUTO ủng hộ 1,5 tỷ đồng cho 3 địa phương chống dịch...</a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-3.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title font18">
-                                                    <a href="/chi-tiet-truyen-thong">Chú bảo vệ đi làm 120km mỗi ngày...</a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                            </div>
-                                        </ul>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @includeIf("theme.main::views.pages.post.post-sidebar")
                
              </div>
         </div>
