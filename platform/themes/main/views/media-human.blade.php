@@ -100,11 +100,11 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ get_object_image($post->image) }}" alt=""></a>
+                                                   <a href="{{$post->url}}"><img src="{{ get_object_image($post->image) }}" alt=""></a>
                                                </div>
                                            </div>
                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">{{$post->name}}</h3></a>
+                                               <a href="{{$post->url}}"><h3 class="name font18">{{$post->name}}</h3></a>
                                              
                                                <p class="time">{{date_format($post->created_at,"d-m-Y")}}</p>
                                                <p class="desc font18">{{$post->description}}</p>

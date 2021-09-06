@@ -284,7 +284,7 @@
                     <div class="left">
                         <span class="">{{ $post->created_at->format('d/m/y') }} </span>
                     </div>
-                    <div class="right">
+                    <div class="right"> 
                         
                         <a data-href="{{ Request::url() }}" data-width="" data-layout="button_count" data-action="share" data-size="large" data-share="true">
                             <p class="share  text-dark">Chia sẻ</p>
