@@ -276,25 +276,26 @@ if (!function_exists('get_post_formats')) {
     }
 }
 
-if (!function_exists('get_image_width')) {
-    /**
-     * @param bool $convertToList
-     * @return array
-     */
-    function get_image_width($path)
-    {
-        $data = getimagesize($path); 
-        return $data[0];
-    }
-}
-if (!function_exists('get_image_height')) {
-    /**
-     * @param bool $convertToList
-     * @return array
-     */
-    function get_image_height($path)
-    {
-        $data = getimagesize($path); 
-        return $data[1];
-    }
-}
+// if (!function_exists('get_image_width')) {
+//     /**
+//      * @param bool $convertToList
+//      * @return array
+//      */
+//     function get_image_width($path)
+//     {
+//         $data = getimagesize($path); 
+//         return $data[0];
+//     }
+// }
+// if (!function_exists('get_image_height')) {
+//     /**
+//      * @param bool $convertToList
+//      * @return array
+//      */
+//     function get_image_height($path)
+//     {
+//         $data = getimagesize($path);
+//         dd($data[1]);
+//         return $data[1];
+//     }
+// }
