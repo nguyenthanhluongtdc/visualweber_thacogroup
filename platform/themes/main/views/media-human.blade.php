@@ -51,7 +51,7 @@
                                                                <div class="news-post h-100">
                                                                  
                                                                    <h3 class=" title font18">BẢN TIN NỘI BỘ</h3>
-                                                                   <a href="/chi-tiet-truyen-thong">  <h4 class="name font18 ">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4></a>
+                                                                   <a href="/chi-tiet-truyen-thong">  <h4 class="name font18 ">THACO AUTO ỦN\\G HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4></a>
                                                                    <span class="time">23/06/2021</span>
                                                                    <p class="description font18  text-justify">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
                                                                    <a href="/chi-tiet-truyen-thong" class="read-more">Xem thêm</a>
@@ -88,8 +88,8 @@
                            
                                                                    </p>
                                                                    <a href="/chi-tiet-truyen-thong" class="read-more">Xem thêm</a>
-                                                               </div>
-                                                   </div>
+                                                    </div>
+                                                </div>
                            
                                                </div>
                                            </div>

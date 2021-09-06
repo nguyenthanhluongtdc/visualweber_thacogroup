@@ -43,9 +43,9 @@
                     margin: 5px 0 10px 0;
                     text-transform: uppercase;
                     line-height: 21px;
-                    height: 42px;
-                    @media screen and (max-width: 1680px) {
-                        height: 38px;
+                    @include height(100);
+                    @media screen and (max-width: 1300px) {
+                        @include height(130);
                         line-height: 19px;
                     }
                 }

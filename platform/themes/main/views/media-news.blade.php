@@ -539,20 +539,32 @@
                                         <option value="">Đầu tư xây dựng</option>
                                         <option value="">Logistics</option>
                                     </select>
-                                </form>
+                                </form> 
                              </div>
+                             @php
+                                $posts = get_posts_by_category($category->id ?? 16, 6);
+                            @endphp
+                            
                             <div class="list-report">
+                                @if (!empty($posts))
+                                @foreach ($posts as $post) 
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50" class="aos-init aos-animate">
+                                    
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ get_object_image($post->image) }}" alt="report">
                                     </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">Tạp chí THACO số 54</p>
+                                    <span class="date"> {{date_format($post->created_at,"d-m-Y")}}</span>
+                                    <a href="{{$post->url}}" class="text-dark">
+                                        <p class="name-file font18">{{$post->name}}</p>
+                                    </a>
+                                   
                                     <div class="download">
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
+                                        <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}" title="download">DOWNLOAD</a>
                                     </div>                                   
                                 </div>
-                                <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" class="aos-init aos-animate">
+                                @endforeach
+                                @endif
+                                {{-- <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" class="aos-init aos-animate">
                                     <div class="thumb-img">
                                         <img src="{{ Theme::asset()->url('images/media/bantin/53.jpg') }}" alt="report">
                                     </div>
@@ -561,8 +573,8 @@
                                    <div class="download">
                                          <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
                                    </div>
-                                </div>
-                                <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="aos-init aos-animate">
+                                </div> --}}
+                                {{-- <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="aos-init aos-animate">
                                     <div class="thumb-img">
                                         <img src="{{ Theme::asset()->url('images/media/bantin/52.jpg') }}" alt="report">
                                     </div>
@@ -571,8 +583,8 @@
                                     <div class="download">
                                         <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
                                     </div>
-                                </div>
-                                <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250" class="aos-init aos-animate">
+                                </div> --}}
+                                {{-- <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250" class="aos-init aos-animate">
                                     <div class="thumb-img">
                                         <img src="{{ Theme::asset()->url('images/media/bantin/51.jpg') }}" alt="report">
                                     </div>
@@ -601,7 +613,7 @@
                                     <div class="download">
                                         <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="page-pagination mt-40 mb-40">
                                 <ul class="pagination font18">
