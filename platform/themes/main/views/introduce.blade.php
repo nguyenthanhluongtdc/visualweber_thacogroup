@@ -1,6 +1,5 @@
 <section class="banner-introduce">
     <img class=" h-45vw img-mw-100"
-        width="{{@get_image_width(get_image_url(get_field($page, 'about_us_banner')))}}" height="{{@get_image_height(get_image_url(get_field($page, 'about_us_banner')))}}"
         src="{{ get_field($page, 'about_us_banner') ? get_image_url(get_field($page, 'about_us_banner')) : Theme::asset()->url('images/introduce/banner-introduce.jpg') }}" alt="">
 </section>
 @includeIf("theme.main::views.breadcrumb")
@@ -8,30 +7,29 @@
     <div class="container-customize">
         <div class="about-us__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
-            <h1  class="font50 big-title">Về chúng tôi</h1>
+            <h1  class="font50 big-title">{{has_field($page, 'about_us_title')}}</h1>
         </div>
         <div class="about-us__content mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-            <p class="text-about-us font24 text-justify">
-                Công ty ôtô Trường Hải (THACO) được thành lập vào ngày 29/04/1997. Người sáng lập là ông Trần Bá Dương, hiện là Chủ tịch Hội đồng Quản trị THACO. Văn phòng Tổng quản TP.HCM đặt tại Tòa nhà IIA, số 10 đường Mai Chí Thọ, phường Thủ Thiêm, Quận 2. Tổng số nhân sự hiện nay khoảng 20.000 người.
-            </p>
-            <p class="text-about-us font24 text-justify">
-                Sau 22 năm hình thành và phát triển, THACO đã trở thành Tập đoàn công nghiệp đa ngành, trong đó Cơ khí và Ô tô là chủ lực, đồng thời phát triển các lĩnh vực sản xuất kinh doanh bổ trợ cho nhau, tạo ra giá trị cộng hưởng và nâng cao năng lực cạnh tranh, bao gồm: Nông nghiệp; Đầu tư xây dựng; Logistics và Thương mại & Dịch vụ.
-            </p>
-            <p class="text-about-us font24 text-justify">
-                Bên cạnh hoạt động sản xuất kinh doanh, THACO còn xây dựng môi trường văn hóa doanh nghiệp lành mạnh, định hình được bản sắc văn hóa riêng của THACO dựa trên triết lý kinh doanh “Mang lại giá trị cho khách hàng, xã hội và có đóng góp thiết thực vào nền kinh tế đất nước” và nguyên tắc “8 chữ T: Tận tâm - Trung Thực - Trí Tuệ - Tự Tin - Tôn Trọng - Trung Tín - Tận Tình - Thuận Tiện”. Đây chính là giá trị cốt lõi của văn hóa THACO, là tài sản vô hình để tạo ra động lực thúc đẩy sự phát triển.
-            </p>
+            {!!has_field($page, 'about_us_content')!!}
         </div>
-        <div class="future-goal-banner mt-40" style="background-image:url('{{ Theme::asset()->url('images/introduce/tam-nhin-chien-luoc.jpg') }}')">
+        <div class="future-goal-banner mt-40" style="background-image:url('{{ get_field($page, 'vision_block_background') ? get_image_url(get_field($page, 'vision_block_background')) : Theme::asset()->url('images/introduce/tam-nhin-chien-luoc.jpg') }}')">
             <div class="future-goal-wrapper">
                 <div class="row mr-0 ml-0">
+                    @forelse (has_field($page, 'vision_block') as $key => $item)
                     <div class="col-sm-4 pl-0 pr-0">
-                        <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                            <img src="{{ Theme::asset()->url('images/introduce/tam-nhin.png') }}" alt="">
-                            <h3 class="title font40">Tầm nhìn</h3>
-                            <p class="desc font18">Tập đoàn công nghiệp đa ngành <br> của Việt Nam phát triển bền vững trong bối cảnh hội nhập khu vực và thế giới.</p>
+                        <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="{{50 + $key*100}}" class="aos-init aos-animate">
+                            <img src="{{ get_image_url(has_sub_field($item, 'logo')) }}" alt="{{has_sub_field($item, 'title')}}">
+                            <h3 class="title font40">{{has_sub_field($item, 'title')}}</h3>
+                            <p class="desc font18">
+                                {!!has_sub_field($item, 'description')!!}
+                            </p>
                         </div>
                     </div>
-                    <div class="col-sm-4 pl-0 pr-0">
+                        
+                    @empty
+                        ...{{__('Đang cập nhật')}}
+                    @endforelse
+                    {{-- <div class="col-sm-4 pl-0 pr-0">
                         <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/chien-luoc.png') }}" alt="">
                             <h3 class="title font40">Chiến lược</h3>
@@ -46,7 +44,7 @@
                             <p class="desc font18">Mang lại giá trị cho khách hàng, xã hội.
                                 Đồng thời đóng góp vào sự phát triền  kinh tế đất nước. </p>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
           
