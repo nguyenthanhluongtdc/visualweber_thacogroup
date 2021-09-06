@@ -35,23 +35,31 @@
         </nav>
     </div>
  </section>
+ @php
+$posts = get_posts_by_category($category->id ?? 16, 1);
+$postSlider = get_posts_by_category($category->id ?? 16, 6);
+@endphp
 <section class="media-message mb-60">
     <div class="media-message-wrapper">
         <div class="container-customize">
              <div class="media-message-content mt-40 mb-100">
                         <div class="media__content_left">
+                            @if (!empty($posts))
+                            @foreach ($posts as $post) 
                             <div class="news__top">
                                 <div class="img-post">
-                                    <img class="img-mw-100" src="{{ Theme::asset()->url('images/home/post.jpg') }}" alt="">
+                                    <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
                                 </div>
                                 <div class="news-post h-100">
                                     <h3 class=" title font18">BẢN TIN NỘI BỘ</h3>
-                                    <a href="/chi-tiet-truyen-thong">  <h4 class="name font18 ">THACO AUTO ỦNG HỘ 1,5 TỶ ĐỒNG CHO 3 ĐỊA PHƯƠNG CHỐNG DỊCH</h4></a>
-                                    <span class="time">23/06/2021</span>
-                                    <p class="description font18  text-justify">Với tinh thần sẻ chia, tương thân tương ái, chung tay cùng cả nước đẩy lùi dịch Covid-19, THACO AUTO đã quyết định ủng hộ các tỉnh Bắc Giang, Bắc Ninh, Vĩnh Phúc, mỗi tỉnh 500 triệu đồng để hỗ trợ công tác phòng chống dịch.Nhằm chung tay hỗ trợ công tác phòng chống dịch Covid-19, ngày 09/6/2021, Hiện nay, tình hình dịch bệnh Covid-19 đang diễn biến hết sức phức tạp, khó lường tại nhiều địa phương trên cả nước. Chỉ trong một tháng qua (từ ngày 27/4/2021 đến ngày 27/5/2021) Việt Nam đã ghi nhận 3104 ca nhiễm </p>
+                                    <a href="{{$post->url}}">  <h4 class="name font18 ">{{$post->name}}</h4></a>
+                                    <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span> 
+                                    <p class="description font18  text-justify">{{$post->description}}</p>
                                     <a href="/chi-tiet-truyen-thong" class="read-more">Xem thêm</a>
                                 </div>
                             </div>
+                            @endforeach
+                            @endif
                             {{-- <div class="filter-search-media mt-40">
                                 <form action="" class="form-search">
                                     <div class="search">
@@ -77,81 +85,26 @@
                              </div> --}}
                              <div class="list-media_wrapper" id="scroll-list-news">
                                 <div class="list-media mt-60">
+                                    @if (!empty($postSlider))
+                                    @foreach ($postSlider as $post) 
                                     <div class="media-item ">
                                         <div class="img-content">
                                             <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                 <div class="post-thumbnail">
-                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/thongdiep/thong-diep-1.jpg') }}" alt=""></a>
+                                                    <a href="{{$post->url}}"><img src="{{ get_object_image($post->image) }}" alt=""></a>
                                                 </div>
                                             </div>
                                             <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Thông điệp năm 2020 của Chủ tịch HĐQT Trần Bá Dương</h3></a>
+                                                <a href="{{$post->url}}"><h3 class="name font18">{{$post->name}}</h3></a>
                                               
-                                                <p class="time">23/06/2021</p>
-                                                <p class="desc font18">Thông điệp từ Chủ tịch Hội đồng quản trị Trần Bá Dương gửi đến cho toàn thể cán bộ và nhân viên THACO vào năm 2020 </p>
+                                                <p class="time">{{date_format($post->created_at,"d-m-Y")}}</p>
+                                                <p class="desc font18">{{$post->description}} </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="media-item ">
-                                        <div class="img-content">
-                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                                <div class="post-thumbnail">
-                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/thongdiep/thong-diep-2.jpg') }}" alt=""></a>
-                                                </div>
-                                            </div>
-                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                                <a href="/chi-tiet-truyen-thong">   <h3 class="name font18">Thông điệp năm 2019 của Chủ tịch HĐQT Trần Bá Dương</h3></a>
-                                             
-                                                <p class="time">23/06/2021</p>
-                                                <p class="desc font18">Thông điệp từ Chủ tịch Hội đồng quản trị Trần Bá Dương gửi đến cho toàn thể cán bộ và nhân viên THACO vào năm 2019</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media-item ">
-                                        <div class="img-content">
-                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                                <div class="post-thumbnail">
-                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/thongdiep/thong-diep-3.jpg') }}" alt=""></a>
-                                                </div>
-                                            </div>
-                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                                
-                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Thông điệp năm 2018 của Chủ tịch HĐQT Trần Bá Dương</h3></a>
-                                                <p class="time">23/06/2021</p>
-                                                <p class="desc font18">Thông điệp từ Chủ tịch Hội đồng quản trị Trần Bá Dương gửi đến cho toàn thể cán bộ và nhân viên THACO vào năm 2018</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media-item ">
-                                        <div class="img-content">
-                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                                <div class="post-thumbnail">
-                                                    <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/thongdiep/thong-diep-4.jpg') }}" alt=""></a>
-                                                </div>
-                                            </div>
-                                            <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                                <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Thông điệp năm 2017 của Chủ tịch HĐQT Trần Bá Dương</h3></a>
-                                                
-                                                <p class="time">23/06/2021</p>
-                                                <p class="desc font18">Thông điệp từ Chủ tịch Hội đồng quản trị Trần Bá Dương gửi đến cho toàn thể cán bộ và nhân viên THACO vào năm 2017 </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="media-item ">
-                                     <div class="img-content">
-                                         <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                             <div class="post-thumbnail">
-                                                 <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/thongdiep/thong-diep-5.jpg') }}" alt=""></a>
-                                             </div>
-                                         </div>
-                                         <div class="content" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                             <a href="/chi-tiet-truyen-thong"><h3 class="name font18">Thông điệp năm 2016 của Chủ tịch HĐQT Trần Bá Dương</h3></a>
-                                             
-                                             <p class="time">23/06/2021</p>
-                                             <p class="desc font18">Thông điệp từ Chủ tịch Hội đồng quản trị Trần Bá Dương gửi đến cho toàn thể cán bộ và nhân viên THACO vào năm 2016</p>
-                                         </div>
-                                     </div>
-                                 </div>
+                                    @endforeach
+                                    @endif
+                                   
                                  {{-- <div class="media-item ">
                                      <div class="img-content">
                                          <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
@@ -250,60 +203,7 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="post-sidebar-content">
-                            <div class="media__content_right">
-                                <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
-                                    <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold">Thông cáo báo chí</a>
-                                    <a href="/con-nguoi#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
-                                    <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold">Bản tin</a>
-                                    <a href="/su-kien#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
-                                    <a href="/thong-diep#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold active">Thông điệp</a>
-                                    <a href="/thu-vien-anh-va-video" class="item_link list-group-item  font18 font-myria-bold">Media</a>
-                                </div>
-                                <div class="list-post-new">
-                                    <div class="wrap">
-                                        <h2 class="font-mi-bold font30" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">tin tức mới</h2>
-                                        <ul class="" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-5.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title font18">
-                                                    <a href="/chi-tiet-truyen-thong">THACO tài trợ trang thiết bị, vật tư y tế phòng dịch...</a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-4.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title font18">
-                                                    <a href="/chi-tiet-truyen-thong">THACO AUTO ủng hộ 1,5 tỷ đồng cho 3 địa phương chống dịch...</a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-3.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title font18">
-                                                    <a href="/chi-tiet-truyen-thong">Chú bảo vệ đi làm 120km mỗi ngày...</a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                            </div>
-                                        </ul>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @includeIf("theme.main::views.pages.post.post-sidebar")
              </div>
         </div>
     </div>

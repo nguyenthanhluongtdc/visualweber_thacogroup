@@ -133,6 +133,7 @@ if (!function_exists('get_featured_categories')) {
     }
 }
 
+
 if (!function_exists('get_all_categories')) {
     /**
      * @param array $condition

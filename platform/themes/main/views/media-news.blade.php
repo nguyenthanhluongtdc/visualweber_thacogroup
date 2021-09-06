@@ -564,56 +564,7 @@
                                 </div>
                                 @endforeach
                                 @endif
-                                {{-- <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" class="aos-init aos-animate">
-                                    <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/media/bantin/53.jpg') }}" alt="report">
-                                    </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">Tạp chí THACO số 53</p>
-                                   <div class="download">
-                                         <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
-                                   </div>
-                                </div> --}}
-                                {{-- <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="aos-init aos-animate">
-                                    <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/media/bantin/52.jpg') }}" alt="report">
-                                    </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">Tạp chí THACO số 52</p>
-                                    <div class="download">
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
-                                    </div>
-                                </div> --}}
-                                {{-- <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250" class="aos-init aos-animate">
-                                    <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/media/bantin/51.jpg') }}" alt="report">
-                                    </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">Tạp chí THACO số 51</p>
-                                    <div class="download">
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
-                                    </div>
-                                </div>
-                                <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" class="aos-init aos-animate">
-                                    <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/media/bantin/50.jpg') }}" alt="report">
-                                    </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">Tạp chí THACO số 50</p>
-                                    <div class="download">
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
-                                    </div>
-                                </div>
-                                <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350" class="aos-init aos-animate">
-                                    <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/media/bantin/49.jpg') }}" alt="report">
-                                    </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file">Tạp chí THACO số 49    </p>
-                                    <div class="download">
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
-                                    </div>
-                                </div> --}}
+                              
                             </div>
                             <div class="page-pagination mt-40 mb-40">
                                 <ul class="pagination font18">
