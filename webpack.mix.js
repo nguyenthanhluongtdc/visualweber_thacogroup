@@ -9,6 +9,17 @@ mix.options({
     }
 });
 
+mix.webpackConfig({
+    resolve: {
+        extensions: [".js", ".vue", ".json"],
+        alias: {
+            "@": 'platform/themes/main/assets/js'
+        }
+    }
+})
+
+mix.js('platform/themes/main/assets/js/app.js', 'public/themes/main/js/app.js').vue();
+
 // Run all webpack.mix.js in app
 glob.sync('./platform/**/**/webpack.mix.js').forEach(item => require(item));
 

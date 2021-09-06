@@ -16,6 +16,9 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
             } 
         })->name('public.downloadFile');
 
+
+        Route::get('/api/media/{type}/{categoryId}', 'ApiController@getMedia');
+        Route::get('/api/gallery_meta_data/{slug}', 'ApiController@galleryMetaData');
     });
 });
 
