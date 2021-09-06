@@ -4,8 +4,8 @@ use Platform\Page\Repositories\Interfaces\PageInterface;
 $homepageId = BaseHelper::getHomepageId();
 $page = app(PageInterface::class)->findById($homepageId);   
 @endphp
-<div class="media-wrapper" >
-    <div class="media-banner">
+<div class="media-home-wrapper" >
+    <div class="media-home-banner">
         <div class="swiper-container field-activity-slide-top" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
             <div class="swiper-wrapper">
                 @if (has_field($page, 'hinh_anh'))
