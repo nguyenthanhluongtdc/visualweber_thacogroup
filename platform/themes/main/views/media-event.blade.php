@@ -1,25 +1,4 @@
-
-<section class="slide-post">
-    
-    <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-       <div class="swiper-wrapper">   
-           <div class="swiper-slide" >
-               <img src="{{ Theme::asset()->url('images/home/slider.jpg') }}" alt="" class="img-slider  h-45vw w-100">
-           </div>
-           <div class="swiper-slide" >
-               <img src="{{ Theme::asset()->url('images/media/banner-1.jpg') }}" alt="" class="img-slider  h-45vw  w-100 ">
-           </div>
-           
-           <div class="swiper-slide" >
-               <img src="{{ Theme::asset()->url('images/home/banner-3.jpg') }}" alt="" class="img-slider  h-45vw  w-100 ">
-           </div>
-           
-          
-       </div>
-       <div class="swiper-pagination"></div>
-     
-   </div>
-</section>
+@includeIf("theme.main::views.pages.post.slide")
    <div class="container-customize">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">

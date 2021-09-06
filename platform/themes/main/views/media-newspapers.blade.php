@@ -380,39 +380,8 @@
         </div>
     </div>
 </section> --}}
-<section class="slide-info">
-    <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-        <div class="swiper-wrapper">   
-            <div class="swiper-slide" >
-                <img src="{{ Theme::asset()->url('images/relationship/quan-he-co dong-banner.jpg') }}" alt="" class="img-slider  h-45vw w-100">
-            </div>
-            <div class="swiper-slide" >
-                <img src="{{ Theme::asset()->url('images/media/banner-1.jpg') }}" alt="" class="img-slider  h-45vw  w-100 ">
-            </div>
-            
-            <div class="swiper-slide" >
-                <img src="{{ Theme::asset()->url('images/home/banner-3.jpg') }}" alt="" class="img-slider  h-45vw  w-100 ">
-            </div>
-            
-           
-        </div>
-        <div class="swiper-pagination"></div>
-      
-    </div>
-</section>
-<div class="container-customize">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="/">Trang chủ</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="/truyenthong">Quan hệ cổ đông</a>
-                    </li>
-                    <li class="breadcrumb-item active">Thông cáo báo chí</li>
-        </ol>
-    </nav>
-</div>
+@includeIf("theme.main::views.pages.post.slide")
+@includeIf("theme.main::views.breadcrumb")
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
         <div class="container-customize"> 
