@@ -1,6 +1,6 @@
 <div class="post-sidebar-content">
     <div class="media__content_right">
-        <div class="list-media-menu" data-aos="fade-up" data-aos-duration="200" data-aos-delay="50" class="aos-init aos-animate">
+        <div class="list-media-menu" data-aos="fade-up" data-aos-duration="100" data-aos-delay="50" class="aos-init aos-animate">
             <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
             <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold active">Thông cáo báo chí</a>
             <a href="/con-nguoi#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Con người</a>

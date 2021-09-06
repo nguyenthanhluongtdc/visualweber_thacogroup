@@ -290,14 +290,13 @@
         <div class="content-middle order-2">
             <div class="content-main">
                 <div class="post-name">
-                    <h1 class=" name font-myria-bold">Nâng cao năng suất làm việc với 5S,<br>
-                        Kaizen và quản trị tinh gọn
+                    <h1 class=" name font-myria-bold"> {{ $post->name }}
                     </h1>
 
                 </div>
                 <div class="post-time-share">
                     <div class="left">
-                        <span class="">23/06/2021 </span>
+                        <span class="">{{ $post->created_at->format('d/m/y') }} </span>
                     </div>
                     <div class="right">
                         <p class="share">Chia sẻ</p>
@@ -308,19 +307,10 @@
 
                 </div>
                 <div class="post-content">
-                    <p class="text-post">Nhằm cải tiến môi trường làm việc và nâng cao hiệu quả sản xuất, từ tháng
-                        5/2021 - 7/2021 Trung tâm phát triển kỹ năng nghề nghiệp - Trường cao đẳng THACO phối hợp với
-                        các đơn vị, nhà máy tổ chức các lớp đào tạo về phương pháp 5S, triết lý Kaizen và quản trị tinh
-                        gọn cho toàn thể CBNV đang làm việc tại KCN THACO Chu Lai.</p>
+                    <p class="text-post"> {{$post->description}}</p>
                     <img src="{{ Theme::asset()->url('images/media/post-detail-1.jpg') }}" alt="">
-                    Khóa đào tạo được chia thành nhiều lớp, do cán bộ quản lý các đơn vị, nhà máy phụ trách giảng dạy.
-                    Tham gia khóa học, CBNV được phổ biến những kiến thức về nội dung, lợi ích của phương pháp 5S, triết
-                    lý Kaizen, phương thức quản trị tinh gọn, đồng thời tìm hiểu, nhận diện những tồn tại, hạn chế, lãng
-                    phí trong quá trình sản xuất, từ đó áp dụng các công cụ trên vào thực tiễn nhằm cắt giảm các loại
-                    lãng phí (hữu hình và vô hình), nâng cao năng suất và hiệu quả công việc, đặc biệt là năng lực quản
-                    trị cho đội ngũ quản lý, lãnh đạo. Ngoài hình thức đào tạo tập trung, khóa học còn có các lớp học
-                    trực tuyến cho các CBNV tham gia.
-                    <img class="mb-4" src="{{ Theme::asset()->url('images/media/post-detail-2.jpg') }}" alt="">
+                    {!! $post->content !!}
+                    {{-- <img class="mb-4" src="{{ Theme::asset()->url('images/media/post-detail-2.jpg') }}" alt="">
                     <div class="img-last">
                         <img class="img1" src="{{ Theme::asset()->url('images/media/post-detail-3.jpg') }}" alt="">
                         <img class="img2" src="{{ Theme::asset()->url('images/media/post-detail-4.jpg') }}" alt="">
@@ -330,7 +320,7 @@
                         củng cố kiến thức, khóa đào tạo còn nhằm nâng cao tính tự giác, ý thức trách nhiệm của mỗi CBNV
                         trong việc áp dụng các phương pháp trên vào công việc một cách khoa học, hiệu quả, tạo môi
                         trường làm việc an toàn, thuận tiện, nêu cao tinh thần cải tiến, sáng tạo, góp phần nâng cao
-                        chất lượng, hiệu suất lao động.</p>
+                        chất lượng, hiệu suất lao động.</p> --}}
 
 
                 </div>
@@ -346,7 +336,8 @@
                 </div>
             </div>
 
-
+            @php $relatedPosts = get_related_posts($post->id, 7); @endphp
+            @if ($relatedPosts->count())
             <div class="post-related mt-40 mb-60">
                 <div class="post-related__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50"
                     class="aos-init aos-animate">
@@ -354,13 +345,15 @@
                     <h2 class="font30 big-title">CÁC BÀI VIẾT LIÊN QUAN</h2>
                 </div>
                 <ul class="list-post-related">
+                    @foreach ($relatedPosts as $relatedItem)
                     <li class="font18">
-                        <a href="">
-                            Tiêm vaccine Covid-19 cho người lao động tại KCN THACO Chu Lai
+                        <a href="{{ $relatedItem->url }}">
+                            {{ $relatedItem->name }}
                         </a>
-                        <span class="time">(30/06/2021)</span>
+                        <span class="time">{{ $relatedItem->created_at->format('d/m/Y') }}</span>
                     </li>
-                    <li class="font18">
+                    @endforeach
+                    {{-- <li class="font18">
                         <a href="">
                             Công đoàn cơ sở THACO nhận cờ thi đua xuất sắc năm 2020
                         </a>
@@ -383,10 +376,11 @@
                             THACO nhận nhiệm vụ Khối Trưởng của Khối thi đua số 9
                         </a>
                         <span class="time">(24/03/2021)</span>
-                    </li>
+                    </li> --}}
 
                 </ul>
             </div>
+            @endif
         </div>
     </div>
 </div>
