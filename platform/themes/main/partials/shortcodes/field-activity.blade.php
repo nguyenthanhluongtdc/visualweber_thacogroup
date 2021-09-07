@@ -60,7 +60,7 @@ $page = app(PageInterface::class)->findById($homepageId);
             <a href="/oto-cokhi">
                 <img class="w-100" src="{{ has_sub_field($item_field[1] , 'image') ? get_object_image(get_sub_field($item_field[1], 'image')) :''}}" alt="">
                 <div class="content-title">
-                    <h4 class="title font40">{{ has_sub_field($item_field[1] , 'title') ? get_sub_field($item_field[0], 'title') :''}}</h4>
+                    <h4 class="title font40">{{ has_sub_field($item_field[1] , 'title') ? get_sub_field($item_field[1], 'title') :''}}</h4>
                     <div class="content-none">
                         <ul class="list-item">
                             @if(has_sub_field($item_field[1] , 'list'))
