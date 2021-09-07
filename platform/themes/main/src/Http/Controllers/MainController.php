@@ -108,9 +108,6 @@ class MainController extends PublicController
             return Theme::scope($view, $result['data'], Arr::get($result, 'default_view'))->render();
         }
         abort(404);
-<<<<<<< HEAD
         Theme::breadcrumb()->add(__('Home'), url("public.index"));
-=======
->>>>>>> 2f46422b5daefbc84c6ddd2d6bfe9361d377935b
     }
 }
