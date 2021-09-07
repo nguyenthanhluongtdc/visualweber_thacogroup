@@ -95,8 +95,10 @@ class MainController extends PublicController
         Theme::layout('default');
 
         if (!empty($result) && is_array($result)) {
-            $view = isset(Arr::get($result, 'data.page')->template) ? Arr::get($result, 'data.page')->template : Arr::get($result, 'data.category')->template;
-           
+            $view = Arr::get($result, 'data.page')->template??Arr::get($result, 'view', '');
+            // if ($view == 'post' || $view == 'page') {
+            //     Theme::asset()->usePath()->add('reset_css', 'css/non-reset.css');
+            // }
             // if (request('select_category') && Arr::get($result, 'default_view', '') == 'plugins/blog::themes.category') {
             //     return redirect()->route('public.single', array_merge(
             //         request()->except('select_category'),
