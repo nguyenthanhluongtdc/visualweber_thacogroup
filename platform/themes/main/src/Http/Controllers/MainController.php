@@ -99,6 +99,6 @@ class MainController extends PublicController
         }
 
         abort(404);
-        Theme::breadcrumb()->add(__('Gamalift'), url("/"));
+        Theme::breadcrumb()->add(__('Home'), url("public.index"));
     }
 }
