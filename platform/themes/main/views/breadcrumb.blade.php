@@ -6,6 +6,9 @@
                     <li class="breadcrumb-item">
                         <a href="{{ $crumb['url'] }}">Trang chủ</a>
                     </li>
+                    <li class="breadcrumb-item">
+                        <a href="/truyen-thong">Truyền thông</a>
+                    </li>
                 @else
                     <li class="breadcrumb-item active">{!! $crumb['label'] !!}</li>
                 @endif
@@ -14,3 +17,4 @@
     </nav>
 </div>
 
+ 

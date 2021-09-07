@@ -1,18 +1,5 @@
 @includeIf("theme.main::views.pages.post.slide")
-   <div class="container-customize">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="/">Trang chủ</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="/">Truyền thông</a>
-                        </li>
-                
-                        <li class="breadcrumb-item active">Sự kiện</li>
-            </ol>
-        </nav>
-    </div>
+@includeIf("theme.main::views.breadcrumb")
 @php
 $posts = get_posts_by_category($category->id ?? 16, 6);
 $postSlider = get_posts_by_category($category->id ?? 16, 6);
@@ -77,7 +64,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                                <div class="swiper-button-prev drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/icon-left.png') }}" alt=""> </div>
                                                
                                    
-                                           </div>
+                                         </div>
                                           
                                        </div>
                                     </div>
@@ -114,11 +101,11 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ get_object_image($post->image) }}" alt=""></a>
+                                                   <a href="{{$post->url}}"><img src="{{ get_object_image($post->image) }}" alt=""></a>
                                                </div>
                                            </div>
                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">{{$post->name}}</h3></a>
+                                               <a href="{{$post->url}}"><h3 class="name font18">{{$post->name}}</h3></a>
                                              
                                                <p class="time">{{date_format($post->created_at,"d-m-Y")}}</p>
                                                <p class="desc font18">{{$post->description}}</p>
@@ -131,56 +118,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                    
                
                                </div>
-                               <div class="page-pagination mt-40 mb-40">
-                                   <ul class="pagination font18">
-                                       <li class="page-item active">
-                                           <a href="" class="page-link">
-                                               1
-                                           </a>
-                                       </li>
-                                       <li class="page-item">
-                                           <a href="" class="page-link">
-                                               2
-                                           </a>
-                                       </li>
-                                       <li class="page-item">
-                                           <a href="" class="page-link">
-                                               3
-                                           </a>
-                                       </li>
-                                       <li class="page-item">
-                                           <a href="" class="page-link">
-                                               4
-                                           </a>
-                                       </li>
-                                       <li class="page-item">
-                                           <a href="" class="page-link">
-                                               5
-                                           </a>
-                                       </li>
-                                       <li class="page-item">
-                                           <a href="" class="page-link">
-                                               6
-                                           </a>
-                                       </li>
-                                       <li class="page-item">
-                                           <a href="" class="page-link">
-                                               7
-                                           </a>
-                                       </li>
-                                       <li class="page-item">
-                                           <a href="" class="page-link">
-                                               >
-                                           </a>
-                                       </li>
-                                       <li class="page-item">
-                                           <a href="" class="page-link">
-                                               >>
-                                           </a>
-                                       </li>
-                                      
-                                   </ul>
-                                </div>
+                               @includeIf("theme.main::views.pages.post.post-pagination")
                            </div>
                       
                    </div>
