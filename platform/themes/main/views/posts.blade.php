@@ -120,7 +120,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                    
                
                                </div>
-                               @includeIf("theme.main::views.pages.post.post-pagination")
+                               @includeIf("theme.main::views.pages.post.post")
                         </div>
                    
                 </div>

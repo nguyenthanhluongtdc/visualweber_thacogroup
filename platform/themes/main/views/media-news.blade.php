@@ -535,7 +535,7 @@
                                 @endif
                               
                             </div>
-                            @includeIf("theme.main::views.pages.post.post-pagination")
+                            {{ $posts->links('vendor.pagination.custom') }}
                         </div>
                         @includeIf("theme.main::views.pages.post.post-sidebar")
                         
