@@ -185,47 +185,32 @@ let newPostSlide = new Swiper('.new-post-slide', {
     },
 })
 let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
+    speed: 800,
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 25,
+    pagination: {
+        el: '.post-slide-bottom .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.post-slide-bottom .swiper-button-next',
+        prevEl: '.post-slide-bottom .swiper-button-prev',
+    },
+})
+let field_slider = new Swiper('.field-slider', {
         speed: 800,
         loop: true,
         slidesPerView: 3,
         spaceBetween: 25,
         pagination: {
-            el: '.post-slide-bottom .swiper-pagination',
+            el: '.field-slider .swiper-pagination',
             clickable: true,
         },
         navigation: {
-            nextEl: '.post-slide-bottom .swiper-button-next',
-            prevEl: '.post-slide-bottom .swiper-button-prev',
+            nextEl: '.field-slider .swiper-button-next',
+            prevEl: '.field-slider .swiper-button-prev',
         },
-        // breakpoints: {
-        //     1024: {
-        //         slidesPerView: 3,
-        //         // centeredSlides: true,
-        //         spaceBetween: 25,
-        //         navigation: {
-        //             nextEl: '.swiper-button-next',
-        //             prevEl: '.swiper-button-prev',
-        //         },
-        //     },
-        //     480: {
-        //         slidesPerView: 2,
-        //         centeredSlides: false,
-        //         spaceBetween: 40,
-        //         navigation: {
-        //             nextEl: '.swiper-button-next',
-        //             prevEl: '.swiper-button-prev',
-        //         },
-        //     },
-        //     320: {
-        //         slidesPerView: 1,
-        //         centeredSlides: false,
-        //         spaceBetween: 40,
-        //         navigation: {
-        //             nextEl: '.swiper-button-next',
-        //             prevEl: '.swiper-button-prev',
-        //         },
-        //     },
-        // },
     })
     // tuyen dung slider
 var recruitment_slider = new Swiper('.recruitment-slider', {
@@ -564,18 +549,28 @@ $(document).ready(function() {
     } else return;
 });
 
+// popup 
+var id = '#dialog';
 
+//transition effect		
+$('#mask').fadeIn(500);
+$('#mask').fadeTo("slow");
 
-//end scroll when change page
-// $(document).ready(function() {
+//transition effect
+$(id).fadeIn(1000);
 
-//     $('html, body').animate({
-//         scrollTop: $("#scroll-list-news").offset().top
-//     }, 3000);
+//if close button is clicked
+$('.window .close').click(function(e) {
+    //Cancel the link behavior
+    e.preventDefault();
 
-// })
+    $('#mask').hide();
+    $('.window').hide();
+});
 
-// });
-// $("#top").click(function() {
-
-// });
+//if mask is clicked
+$('#mask').click(function() {
+    $(this).hide();
+    $('.window').hide();
+});
+//end popup

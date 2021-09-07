@@ -1,28 +1,28 @@
 <div class="list-social-sidebar">
     <ul>
         <li class="social-item">
-            <a href="">
-                <img  class="drop-shadow" src="{{Theme::asset()->url('images/home/fb.png')}}" alt="">
+            <a href="{!! theme_option('footer-facebook') !!}">
+                <img  class="drop-shadow" src="{{ get_image_url(theme_option('footer-facebook-icon')) }}" alt="">
             </a>
         </li>
         <li class="social-item">
-            <a href="">
-                <img  class="drop-shadow" src="{{Theme::asset()->url('images/home/ytb.png')}}" alt="">
+            <a href="{!! theme_option('footer-youtube') !!}">
+                <img  class="drop-shadow" src="{{ get_image_url(theme_option('footer-youtube-icon')) }}" alt="">
             </a>
         </li>
         <li class="social-item">
-            <a href="">
-                <img  class="drop-shadow" src="{{Theme::asset()->url('images/home/call.png')}}" alt="">
+            <a href="{!! theme_option('footer-phone') !!}">
+                <img  class="drop-shadow" src="{{ get_image_url(theme_option('footer-phone-icon')) }}" alt="">
             </a>
         </li>
         <li class="social-item">
-            <a href="">
-                <img   class="drop-shadow" src="{{Theme::asset()->url('images/home/in.png')}}" alt="">
+            <a href="{!! theme_option('footer-linkedin') !!}">
+                <img   class="drop-shadow" src="{{ get_image_url(theme_option('footer-linkedin-icon')) }}" alt="">
             </a>
         </li>
         <li class="social-item">
-            <a href="">
-                <img class="drop-shadow" src="{{Theme::asset()->url('images/home/email.png')}}" alt="">
+            <a href="{!! theme_option('footer-email') !!}">
+                <img class="drop-shadow" src="{{ get_image_url(theme_option('footer-email-icon')) }}" alt="">
             </a>
         </li >
       

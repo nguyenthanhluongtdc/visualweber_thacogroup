@@ -245,6 +245,77 @@
                             background-color: #215a9cb3;
                         }
                     }
+                    .field-slider {
+                        .field-activity__item__slide {
+                            box-shadow: 0 5px 8px -5px #555;
+                            width: 100%;
+                            height: calc((100vh - 98px - 2vw)/2);
+                            margin-right: 2%;
+                            img {
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: bottom;
+                            }
+                            .content-title {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                top: 0;
+                                right: 0;
+                                color: #fff;
+                                z-index: 2;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                .title {
+                                    width: 100%;
+                                    text-align: center;
+                                    font-family: $MyriadPro-Bold;
+                                }
+                                .content-none {
+                                    ul {
+                                        list-style: disc;
+                                        margin-left: 20px;
+                                    }
+                                    // padding-right: 20px;
+                                    animation: mymove 0.5s ease-in;
+                                    transition: transform 0.5s,
+                                    visibility 0.5s ease-in;
+                                    display: none;
+                                    width: max-content;
+                                    font-family: "MyriadPro-Bold";
+                                    a {
+                                        margin-left: 40px;
+                                        color: $white;
+                                        display: inline-block;
+                                        padding: 7px 21px;
+                                        font-size: 15px;
+                                        border: 1px solid #a8a9ad;
+                                        text-decoration: none;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                            &:hover .content-none {
+                                display: block;
+                                cursor: pointer;
+                            }
+                            &:hover .content-title {
+                                background-color: #215a9cb3;
+                            }
+                        }
+                        .swiper-button-next {
+                            right: 32px;
+                        }
+                        .swiper-button-prev {
+                            left: 20px;
+                        }
+                        .swiper-button-prev:after,
+                        .swiper-button-next:after {
+                            display: none;
+                        }
+                    }
                 }
             }
             
@@ -844,6 +915,10 @@
             }
             
             .post-slider:hover .drop-shadow-button {
+                display: block;
+            }
+            
+            .field-slider:hover .drop-shadow-button {
                 display: block;
             }
             

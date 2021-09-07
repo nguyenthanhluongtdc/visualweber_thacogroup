@@ -1,19 +1,27 @@
+@php
+use Platform\Page\Repositories\Interfaces\PageInterface;
+$homepageId = BaseHelper::getHomepageId();
+$page = app(PageInterface::class)->findById($homepageId);   
+@endphp
 <div class="field-activity">
     <div class="field-activity__content">
+        @if(has_field($page,'about_us_field_16309827261'))
+        @if(count(get_field($page,'about_us_field_16309827261'))<=5)
+        @foreach (get_field($page,'about_us_field_16309827261') as $item_field)
         <div class="field-activity__item">
             <a href="/oto-cokhi">
-                <img class="w-100" src="{{ Theme::asset()->url('images/home/cokhi-oto.jpg') }}" alt="">
+                <img class="w-100" src="{{ has_sub_field($item_field , 'image') ? get_object_image(get_sub_field($item_field, 'image')) :''}}" alt="">
                 <div class="content-title">
-                    <h4 class="title font40">Ô TÔ & CƠ KHÍ</h4>
+                    <h4 class="title font40">{{ has_sub_field($item_field , 'title') ? get_sub_field($item_field, 'title') :''}}</h4>
                     <div class="content-none">
                         <ul class="list-item">
+                            @if(has_sub_field($item_field , 'list'))
+                            @foreach (get_sub_field($item_field , 'list') as $item_list)
                             <li class="item-activity font18">
-                                Ô tô
+                                {{ has_sub_field( $item_list, 'title') ? get_sub_field( $item_list, 'title') :''}}
                             </li>
-                            <li class="item-activity font18">
-                                Linh kiện phụ tùng
-                            </li>
-                            <li class="item-activity font18">Cơ khí</li>
+                            @endforeach
+                            @endif
                         </ul>
                       
                     </div>
@@ -22,104 +30,94 @@
            
 
         </div>
-        <div class="field-activity__item" >
-            <a href="/nongnghiep">
-                <img class="w-100" src="{{ Theme::asset()->url('images/home/nong-nghiep.jpg') }}" alt="">
+        @endforeach
+        @else
+        @php
+           $item_field =  get_field($page,'about_us_field_16309827261')
+        @endphp
+    
+        <div class="field-activity__item">
+            <a href="/oto-cokhi">
+                <img class="w-100" src="{{ has_sub_field($item_field[0] , 'image') ? get_object_image(get_sub_field($item_field[0], 'image')) :''}}" alt="">
                 <div class="content-title">
-                    <h4 class="title font40">NÔNG NGHIỆP</h4>
+                    <h4 class="title font40">{{ has_sub_field($item_field[0] , 'title') ? get_sub_field($item_field[0], 'title') :''}}</h4>
                     <div class="content-none">
                         <ul class="list-item">
+                            @if(has_sub_field($item_field[0] , 'list'))
+                            @foreach (get_sub_field($item_field[0] , 'list') as $item_list)
                             <li class="item-activity font18">
-                               Trồng trọt và chế biến trái cây
+                                {{ has_sub_field( $item_list, 'title') ? get_sub_field( $item_list, 'title') :''}}
                             </li>
-                            <li class="item-activity font18">
-                               Chăn nuôi heo
-                            </li>
-                            <li class="item-activity font18">
-                                Chăn nuôi bò
-                            </li>
+                            @endforeach
+                            @endif
                         </ul>
-                     
+                      
                     </div>
                 </div>
             </a>
         </div>
         <div class="field-activity__item">
-            <a href="/logistics">
-                <img class="w-100" src="{{ Theme::asset()->url('images/home/logistic.jpg') }}" alt="">
+            <a href="/oto-cokhi">
+                <img class="w-100" src="{{ has_sub_field($item_field[1] , 'image') ? get_object_image(get_sub_field($item_field[1], 'image')) :''}}" alt="">
                 <div class="content-title">
-                    <h4 class="title font40">LOGICSTICS</h4>
+                    <h4 class="title font40">{{ has_sub_field($item_field[1] , 'title') ? get_sub_field($item_field[0], 'title') :''}}</h4>
                     <div class="content-none">
                         <ul class="list-item">
+                            @if(has_sub_field($item_field[1] , 'list'))
+                            @foreach (get_sub_field($item_field[1] , 'list') as $item_list)
                             <li class="item-activity font18">
-                            Cảng biển
+                                {{ has_sub_field( $item_list, 'title') ? get_sub_field( $item_list, 'title') :''}}
                             </li>
-                            <li class="item-activity font18">
-                              Vận tải biển
-                            </li>
-                            <li class="item-activity font18">
-                                Vận tải đường bộ
-                            </li>
+                            @endforeach
+                            @endif
                         </ul>
-                       
+                      
                     </div>
                 </div>
             </a>
         </div>
-        <div class="field-activity__item">
-           <a href="/dautu-xaydung">
-            <img class="w-100" src="{{ Theme::asset()->url('images/home/dautu-xd.jpg') }}" alt="">
-            <div class="content-title">
-                <h4 class="title font40">ĐẦU TƯ - XÂY DỰNG</h4>
-                <div class="content-none">
-                    <ul class="list-item">
-                        <li class="item-activity font18">
-                          Hạ tầng giao thông
-                        </li>
-                        <li class="item-activity font18">
-                            Khu công nghiệp
-                        </li>
-                        <li class="item-activity font18">
-                            Khu đô thị
-                        </li>
-                        <li class="item-activity font18">
-                           Bất động sản
-                        </li>
-                        <li class="item-activity font18">
-                           Khu phức hợp
-                         </li>
-                        
-                    </ul>
-                    
+        <div class="swiper-container field-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
+            <div class="swiper-wrapper">
+                @foreach (get_field($page,'about_us_field_16309827261') as $key => $item_field_slide)
+                @php
+                if($key == 0 || $key == 1){
+                    continue;
+                }
+
+                @endphp
+                <div class="swiper-slide" >
+                    <div class="field-activity__item__slide">
+                        <a href="/oto-cokhi">
+                            <img class="w-100" src="{{ has_sub_field($item_field_slide , 'image') ? get_object_image(get_sub_field($item_field_slide, 'image')) :''}}" alt="">
+                            <div class="content-title">
+                                <h4 class="title font40">{{ has_sub_field($item_field_slide , 'title') ? get_sub_field($item_field_slide, 'title') :''}}</h4>
+                                <div class="content-none">
+                                    <ul class="list-item">
+                                        @if(has_sub_field($item_field_slide , 'list'))
+                                        @foreach (get_sub_field($item_field_slide , 'list') as $item_list)
+                                        <li class="item-activity font18">
+                                            {{ has_sub_field( $item_list, 'title') ? get_sub_field( $item_list, 'title') :''}}
+                                        </li>
+                                        @endforeach
+                                        @endif
+                                    </ul>
+                                  
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+                @endforeach
             </div>
-           </a>
+            <div class="swiper-button-next drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/Icon-right.png') }}" alt="">  </div>
+                    <div class="swiper-button-prev drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/icon-left.png') }}" alt=""> </div>
+          
+          
         </div>
-        <div class="field-activity__item">
-            <a href="/thuongmai-dichvu">
-                <img class="w-100" src="{{ Theme::asset()->url('images/home/thuongmai.jpg') }}" alt="">
-                <div class="content-title">
-                    <h4 class="title font40">THƯƠNG MẠI - DỊCH VỤ</h4>
-                    <div class="content-none">
-                        <ul class="list-item">
-                            <li class="item-activity font18">
-                            Trung tâm thương mại
-                            </li>
-                            <li class="item-activity font18">
-                            F&B
-                            </li>
-                            <li class="item-activity font18">
-                                Đại siêu thị
-                            </li>
-                            <li class="item-activity font18">
-                            Trung tâm hội nghị
-                            </li>
-                        </ul>
-                    
-                    </div>
-                </div>
-            </a>
-        </div>
-        
+        @endif
+        @endif
     </div>
 </div>
+{{-- @if($i>5)
+
+@endif --}}
