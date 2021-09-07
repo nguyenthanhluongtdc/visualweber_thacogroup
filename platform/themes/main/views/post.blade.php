@@ -204,7 +204,7 @@
                     </div>
                     <div class="right"> 
                         
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse data-width="" data-layout="button_count" data-action="share" data-size="large" data-share="true" class="fb-xfbml-parse-ignore">
+                        <a href="#"">
                             <p class="share  text-dark">Chia sẻ</p>
                         </a>
                       
