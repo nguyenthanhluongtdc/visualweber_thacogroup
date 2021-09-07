@@ -302,6 +302,17 @@ if (!function_exists('get_file_size')) {
         return $bytes;
     }
 }
+if (!function_exists('get_slug_by_template')) {
+    /**
+     * @param $template
+     * @return mixed
+     *
+     */
+    function get_slug_by_template($template)
+    {
+        return app(PageInterface::class)->getByTemplate($template);
+    }
+}
 
 // if (!function_exists('get_image_width')) {
 //     /**

@@ -29,7 +29,7 @@ $page = app(PageInterface::class)->findById($homepageId);
                     @endif
                     @if (get_sub_field($value, 'type') == 'img')
                     @if (has_sub_field($value, 'image'))
-                        <img  loading="lazy" class="w-100 h-100"
+                        <img
                             src="{{ RvMedia::getImageUrl(get_sub_field($value, 'image'), 'image') }}"
                             alt="Hình ảnh">
                     @endif
@@ -39,6 +39,8 @@ $page = app(PageInterface::class)->findById($homepageId);
                 @endforeach
                 @endif
                
+           
+            </div>
             <div class="swiper-pagination"></div>
             <a href="" class="read-more">Xem thêm</a>
         </div>
