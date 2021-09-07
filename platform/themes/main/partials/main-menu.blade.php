@@ -1,12 +1,14 @@
 <nav class="navbar navbar-expand-lg">
-    @if (theme_option('logo_white'))
-    <a class="logo_link-white" href="{{ route('public.single') }}">
-        <img src="{{ RvMedia::getImageUrl(theme_option('logo_white')) }}" alt="{{ theme_option('site_title') }}">
-    </a>
-    @endif
+  
+        <a class="logo_link-white" href="{{ route('public.single') }}">
+            @if (theme_option('logo_white'))
+            <img src="{{ RvMedia::getImageUrl(theme_option('logo_white')) }}" alt="{{ theme_option('site_title') }}">
+            @endif
+        </a>
+   
     <a class="logo_link-blue" href="{{ route('public.single') }}" >
         @if (theme_option('logo'))
-        <img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}">
+            <img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}">
         @endif
     </a>
 
