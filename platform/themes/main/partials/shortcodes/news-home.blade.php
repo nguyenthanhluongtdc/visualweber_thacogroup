@@ -16,7 +16,7 @@
                                             <h4 class="name font20">{{$item_post->name}}</h4>
                                         </a>
                                        
-                                        <span class="time">{{$item_post->created_at->format('d-m-y')}}</span>
+                                        <span class="time">{{date_format($item_post->created_at,"d-m-Y")}}</span>
                                         <p class="description font18 text-justify">{{$item_post->description}}</p>
                                         <a href="" class="read-more">Xem thêm</a>
                                     </div>
@@ -33,7 +33,7 @@
             <div class="post-slider">
                 <div class="swiper-container post-slide-bottom">
                     <div class="swiper-wrapper">
-                        @if($post_home_bottom = get_recent_posts(6))
+                        @if($post_home_bottom = get_posts_by_category(16,6))
                         @foreach ($post_home_bottom as $post_bottom)
                             <div class="swiper-slide d-flex justify-content-center">             
                                     <div class="post_content_bottom h-100">
@@ -45,7 +45,7 @@
                                             <h4 class="post_name font20">{{$post_bottom->name}}</h4>
                                             <p class="post_description font18">{{$post_bottom->description}}…
                                             </p>
-                                            <span class="time">{{$item_post->created_at->format('d-m-y')}}</span>
+                                            <span class="time">{{date_format($item_post->created_at,"d-m-Y")}}</span>
                                         </a>   
                                     </div>
                                 
