@@ -19,6 +19,7 @@ register_page_template([
     'security-term' => 'Security Term',
     'media-gallery' => 'Media Gallery',
     'contact' => 'Contact',
+    'field-activity' => 'Field Activity',
 ]);
 
 register_sidebar([
