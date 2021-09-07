@@ -174,16 +174,22 @@
 
 @else
 <section class="banner-post-detail">
-    <img class=" h-45vw img-mw-100" src="{{ Theme::asset()->url('images/media/banner-detail.jpg') }}" alt="">
+    @if(has_field($post, 'banner_post'))
+    <img class=" h-45vw img-mw-100" src="{{ Storage::disk('public')->exists(has_field($post,'banner_post')) ? get_image_url(has_field($post,'banner_post')) : RvMedia::getDefaultImage()}}" alt="">
+    @endif
 </section>
 @includeIf("theme.main::views.breadcrumb")
 <div class="post-detail-wrapper">
     <div class="post-detail-content">
         <div class="poster-left order-1">
-            <img src="{{ Theme::asset()->url('images/media/post-poster.jpg') }}" alt="">
+            @if(has_field($post, 'poster_left'))
+            <img src="{{ Storage::disk('public')->exists(has_field($post,'poster_left')) ? get_image_url(has_field($post,'poster_left')) : RvMedia::getDefaultImage()}}" alt="">
+            @endif
         </div>
         <div class="poster-right order-3">
-            <img src="{{ Theme::asset()->url('images/media/post-poster.jpg') }}" alt="">
+            @if(has_field($post, 'poster_right'))
+            <img src="{{ Storage::disk('public')->exists(has_field($post,'poster_right')) ? get_image_url(has_field($post,'poster_right')) : RvMedia::getDefaultImage()}}" alt="">
+            @endif
         </div>
         <div class="content-middle order-2">
             <div class="content-main">
