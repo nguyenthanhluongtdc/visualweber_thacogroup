@@ -1,20 +1,23 @@
 <div class="container-customize">
-    <nav aria-label="breadcrumb">
+
         <ol class="breadcrumb">
-            @foreach (Theme::breadcrumb()->getCrumbs() as $i => $crumb)
-                @if ($i != (count(Theme::breadcrumb()->getCrumbs()) - 1))
+            @foreach ($crumbs = Theme::breadcrumb()->getCrumbs() as $i => $crumb)
+                @if ($i != (count($crumbs) - 1))
                     <li class="breadcrumb-item">
-                        <a href="{{ $crumb['url'] }}">Trang chủ</a>
+                        <a href="{{ $crumb['url'] }}" title="{{ $crumb['label'] }}">  {{ $crumb['label'] }}  
+                        <meta itemprop="name" content="{{ $crumb['label'] }}" /></a>
+                        <meta itemprop="position" content="{{ $i + 1}}" />
                     </li>
-                    <li class="breadcrumb-item">
+                    
+                    {{-- <li class="breadcrumb-item">
                         <a href="/truyen-thong">Truyền thông</a>
-                    </li>
+                    </li> --}}
                 @else
-                    <li class="breadcrumb-item active">{!! $crumb['label'] !!}</li>
+                    <li class="breadcrumb-item active">{!! $crumb['label'] !!}
+                        <meta itemprop="name" content="{{ $crumb['label'] }}" />
+                        <meta itemprop="position" content="{{ $i + 1}}" /></li>
                 @endif
             @endforeach
         </ol>
-    </nav>
 </div>
-
  

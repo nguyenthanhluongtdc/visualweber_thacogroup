@@ -96,13 +96,13 @@
                     <a class="page-link" href="{{ $paginator->nextPageUrl() }}" rel="next" aria-label="@lang('pagination.next')">></a>
                 </li>
             @else
-                <li class="page-item active" class="disabled" aria-disabled="true" aria-label="@lang('pagination.next')">
+                <li class="page-item" class="disabled" aria-disabled="true" aria-label="@lang('pagination.next')">
                     <span class="page-link" aria-hidden="true">></span>
                 </li>
             @endif
 
             @if($paginator->lastPage() == $paginator->currentPage())
-                <li class="page-item active"> <span class="page-link">>></span> </li>
+                <li class="page-item"> <span class="page-link">>></span> </li>
             @else
                 <li class="page-item"> <a class="page-link" href="{{$elements[0][$paginator->lastPage()]}}"> >> </a> </li>
             @endif

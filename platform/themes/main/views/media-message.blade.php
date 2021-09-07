@@ -50,7 +50,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                    
                                 
                                 </div>
-                                @includeIf("theme.main::views.pages.post.post-pagination")
+                                {{ $posts->links('vendor.pagination.custom') }}
                             </div>
                         </div>
                         @includeIf("theme.main::views.pages.post.post-sidebar")

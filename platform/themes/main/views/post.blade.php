@@ -204,14 +204,17 @@
                     </div>
                     <div class="right"> 
                         
-                        <a data-href="{{ Request::url() }}" data-width="" data-layout="button_count" data-action="share" data-size="large" data-share="true">
+                        <a href="#"">
                             <p class="share  text-dark">Chia sẻ</p>
                         </a>
                       
-                        <button class="print-button">
+                        {{-- <button class="print-button">
                             <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}"> <i class="fas fa-print text-dark"> </i></a>
                            
-                        </button>
+                        </button> --}}
+                        <button class="print-button" onclick="window.print();">
+                            <i class="fas fa-print text-dark"></i>
+                       </button>
                     </div>
 
                 </div>

@@ -27,7 +27,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                                                    <a href="{{$post->url}}">  <h4 class="name font18 ">{{$post->name}}</h4></a>
                                                                    <span class="time"> {{date_format($post->created_at,"d-m-Y")}}</span>
                                                                    <p class="description font18  text-justify">{{$post->description}}</p>
-                                                                   <a href="/chi-tiet-truyen-thong" class="read-more">Xem thêm</a>
+                                                                   <a href="{{$post->url}}" class="read-more">Xem thêm</a>
                                                                </div>
                                                    </div>
                                                </div>
@@ -118,7 +118,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                    
                
                                </div>
-                               @includeIf("theme.main::views.pages.post.post-pagination")
+                               {{ $posts->links('vendor.pagination.custom') }}
                            </div>
                       
                    </div>
@@ -128,3 +128,5 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
            </div>
        </div>
    </section>
+
+   
