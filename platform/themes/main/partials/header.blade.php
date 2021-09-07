@@ -24,59 +24,14 @@
             <div class="header-top" id="header-top">
                 {{-- <div class="boder-header" id="boder-top"></div> --}}
                 <div class="container-customize ">
-                    <ul class="list-item-top">
-                        <li class="item-top">
-                            <a href="https://tuyendung.thaco.com.vn/tieng-viet" class="item-top__link" target="_self">
-                                Tuyển dụng
-                            </a>
-                        </li>
-                        <li class="item-top">
-                            <a href="/lien-he" class="item-top__link">
-                               Liên hệ
-                            </a>
-                        </li>
-                        <li class="item-top ">
-            
-                            {{-- <ul class="nav navbar-nav lan-menu">
-                                <li class="dropdown  dmenu">
-                                        <a href="#" class="item-top__link" data-toggle="">
-                                          EN <i class="fas fa-angle-down"></i>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                              <a href="#">
-                                               VN
-                                            </a>
-                                               
-                                            </li>
-                                        </ul>
-                                        
-                                </li>
-                            </ul> --}}
-                            <ul class="language">
-                                <li class="lang lang-vi">
-                                    <a class="item-top__link" rel="alternate" hreflang="vi" href="#">
-                
-                                        <span>VN</span>
-                                    </a>
-                                </li>
-                                <li class="lang lang-en ">
-                                    <a class="item-top__link" rel="alternate" hreflang="en" href="#">
-                
-                                        <span>EN</span>
-                                    </a>
-                                </li>
-                
-                                {{-- <li class="nav-item dropdown dmenu">
-                                    <div class="search-btn c-search-toggler open-search">
-                                        <i class="fa fa-search"></i>
-                
-                                    </div>
-                                </li> --}}
-                                
-                            </ul>
-                        </li>
-                    </ul>
+                    {!!
+                        Menu::renderMenuLocation('header-menu', [
+                            'options' => [],
+                            'theme' => true,
+                            'view' => 'header-menu',
+                        ])
+                    !!}
+                    
                 </div>
                 
             </div>
