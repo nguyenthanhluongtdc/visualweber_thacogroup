@@ -1,7 +1,7 @@
 <div class="post-sidebar-content">
     <div class="media__content_right">
         {!!
-            Menu::renderMenuLocation('sidebar-menu', [
+            Menu::renderMenuLocation('sidebar-media', [
                 'options' => [],
                 'theme' => true,
                 'view' => 'media-menu',
