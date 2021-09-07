@@ -585,11 +585,11 @@ export default {
         background-color: #f1f1f1;
     }
 
-    .scroll-area .ps__rail-y {
+    /* .scroll-area .ps__rail-y {
       background-color: gray;
     }
 
     .scroll-area .ps_rail-y .ps__thumb-y {
       background-color: white;
-    }
+    } */
 </style>
