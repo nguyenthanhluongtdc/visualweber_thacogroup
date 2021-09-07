@@ -15,7 +15,7 @@ register_page_template([
     'media-event' => 'Media Event',
     'media-human' => 'Human',
     'media-message' => 'Message',
-    'media-news' => 'News',
+    'media-news' => 'Media News',
     'security-term' => 'Security Term',
     'media-gallery' => 'Media Gallery',
     'contact' => 'Contact',

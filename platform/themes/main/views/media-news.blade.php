@@ -480,39 +480,8 @@
       
     </div>
 </section> --}}
-<section class="slide-info">
-    <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-        <div class="swiper-wrapper">   
-            <div class="swiper-slide" >
-                <img src="{{ Theme::asset()->url('images/relationship/quan-he-co dong-banner.jpg') }}" alt="" class="img-slider  h-45vw w-100">
-            </div>
-            <div class="swiper-slide" >
-                <img src="{{ Theme::asset()->url('images/media/banner-1.jpg') }}" alt="" class="img-slider  h-45vw  w-100 ">
-            </div>
-            
-            <div class="swiper-slide" >
-                <img src="{{ Theme::asset()->url('images/home/banner-3.jpg') }}" alt="" class="img-slider  h-45vw  w-100 ">
-            </div>
-            
-           
-        </div>
-        <div class="swiper-pagination"></div>
-      
-    </div>
-</section>
-<div class="container-customize">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="/">Trang chủ</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="/truyenthong">Truyền thông</a>
-                    </li>
-                    <li class="breadcrumb-item active">Bản tin</li>
-        </ol>
-    </nav>
-</div>
+@includeIf("theme.main::views.pages.post.slide")
+@includeIf("theme.main::views.breadcrumb")
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
         <div class="container-customize">
@@ -539,175 +508,36 @@
                                         <option value="">Đầu tư xây dựng</option>
                                         <option value="">Logistics</option>
                                     </select>
-                                </form>
+                                </form> 
                              </div>
+                             @php
+                                $posts = get_posts_by_category($category->id ?? 16, 6);
+                            @endphp
+                            
                             <div class="list-report">
+                                @if (!empty($posts))
+                                @foreach ($posts as $post) 
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50" class="aos-init aos-animate">
+                                    
                                     <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/relationship/report-1.jpg') }}" alt="report">
+                                        <img src="{{ get_object_image($post->image) }}" alt="report">
                                     </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">Tạp chí THACO số 54</p>
+                                    <span class="date"> {{date_format($post->created_at,"d-m-Y")}}</span>
+                                    <a href="{{$post->url}}" class="text-dark">
+                                        <p class="name-file font18">{{$post->name}}</p>
+                                    </a>
+                                   
                                     <div class="download">
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
+                                        <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}" title="download">DOWNLOAD</a>
                                     </div>                                   
                                 </div>
-                                <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" class="aos-init aos-animate">
-                                    <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/media/bantin/53.jpg') }}" alt="report">
-                                    </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">Tạp chí THACO số 53</p>
-                                   <div class="download">
-                                         <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
-                                   </div>
-                                </div>
-                                <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150" class="aos-init aos-animate">
-                                    <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/media/bantin/52.jpg') }}" alt="report">
-                                    </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">Tạp chí THACO số 52</p>
-                                    <div class="download">
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
-                                    </div>
-                                </div>
-                                <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250" class="aos-init aos-animate">
-                                    <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/media/bantin/51.jpg') }}" alt="report">
-                                    </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">Tạp chí THACO số 51</p>
-                                    <div class="download">
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
-                                    </div>
-                                </div>
-                                <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" class="aos-init aos-animate">
-                                    <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/media/bantin/50.jpg') }}" alt="report">
-                                    </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file font18">Tạp chí THACO số 50</p>
-                                    <div class="download">
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
-                                    </div>
-                                </div>
-                                <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350" class="aos-init aos-animate">
-                                    <div class="thumb-img">
-                                        <img src="{{ Theme::asset()->url('images/media/bantin/49.jpg') }}" alt="report">
-                                    </div>
-                                    <span class="date">20/02/2020</span>
-                                    <p class="name-file">Tạp chí THACO số 49    </p>
-                                    <div class="download">
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" title="download">DOWNLOAD</a>
-                                    </div>
-                                </div>
+                                @endforeach
+                                @endif
+                              
                             </div>
-                            <div class="page-pagination mt-40 mb-40">
-                                <ul class="pagination font18">
-                                    <li class="page-item active">
-                                        <a href="" class="page-link">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            2
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            3
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            4
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            5
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            6
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            7
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            >
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            >>
-                                        </a>
-                                    </li>
-                                   
-                                </ul>
-                            </div>
+                            @includeIf("theme.main::views.pages.post.post-pagination")
                         </div>
-                        <div class="post-sidebar-content">
-                            <div class="media__content_right">
-                                <div class="list-media-menu" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h3 class="font28 font-myria-bold">THÔNG TIN KHÁC</h3>
-                                    <a href="/thong-cao-bao-chi" class="item_link list-group-item font18 font-myria-bold">Thông cáo báo chí</a>
-                                    <a href="/con-nguoi#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Con người</a>
-                                    <a href="/ban-tin" class="item_link list-group-item  font18 font-myria-bold active">Bản tin</a>
-                                    <a href="/su-kien#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Sự kiện</a>
-                                    <a href="/thong-diep#scroll-list-news" class="item_link list-group-item  font18 font-myria-bold">Thông điệp</a>
-                                    <a href="/thu-vien-anh-va-video" class="item_link list-group-item  font18 font-myria-bold">Media</a>
-                                </div>
-                                <div class="list-post-new">
-                                    <div class="wrap">
-                                        <h2 class="font-mi-bold font30" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">tin tức mới</h2>
-                                        <ul class="" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-5.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title font18">
-                                                    <a href="/chi-tiet-truyen-thong">THACO tài trợ trang thiết bị, vật tư y tế phòng dịch </a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-4.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title font18">
-                                                    <a href="/chi-tiet-truyen-thong">THACO AUTO ủng hộ 1,5 tỷ đồng cho 3 địa phương chống dịch...</a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                            </div>
-                                            <div class="post-new-item">
-                                                <div class="post-thumbnail-wrap">
-                                                    <div class="post-thumbnail">
-                                                        <a href="/chi-tiet-truyen-thong"><img src="{{ Theme::asset()->url('images/media/post-3.jpg') }}" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="title font18">
-                                                    <a href="/chi-tiet-truyen-thong">Chú bảo vệ đi làm 120km mỗi ngày...</a>
-                                                    <p class="time">23/06/2021</p>
-                                                </div>
-                                            </div>
-                                        </ul>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @includeIf("theme.main::views.pages.post.post-sidebar")
                         
              </div>
         </div>
