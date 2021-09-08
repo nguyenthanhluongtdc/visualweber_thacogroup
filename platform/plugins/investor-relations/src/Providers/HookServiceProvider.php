@@ -8,6 +8,7 @@ use Platform\InvestorRelations\Repositories\Interfaces\InvestorRelationsInterfac
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Auth;
 use Menu;
+use Eloquent;
 
 class HookServiceProvider extends ServiceProvider
 {
@@ -18,6 +19,7 @@ class HookServiceProvider extends ServiceProvider
             Menu::addMenuOptionModel(Category::class);
             Menu::addMenuOptionModel(Tag::class);
             add_action(MENU_ACTION_SIDEBAR_OPTIONS, [$this, 'registerMenuOptions'], 2);
+            add_filter(BASE_FILTER_PUBLIC_SINGLE_DATA, [$this, 'handleSingleView'], 2);
         }
 
     }
@@ -31,5 +33,27 @@ class HookServiceProvider extends ServiceProvider
         if (Auth::user()->hasPermission('categories.index')) {
             Menu::registerMenuOptions(InvestorRelations::class, trans('plugins/blog::categories.menu')."Custom");
         }
+    }
+
+    public function handleSingleView($slug)
+    {
+        if (!$slug instanceof Eloquent) {
+            return $slug;
+        }
+
+        $condition = [
+            'id'     => $slug->reference_id,
+            'status' => BaseStatusEnum::PUBLISHED,
+        ];
+
+        $investorCategories = app(InvestorRelationsInterface::class)
+        ->getFirstBy($condition, ['*'], ['slugable']);
+
+        return [
+            'view'         => $investorCategories->template??'default',
+            'default_view' => 'plugins/blog::themes.category',
+            'data'         => compact('investorCategories'),
+            'slug'         => $investorCategories->slug,
+        ];
     }
 }
