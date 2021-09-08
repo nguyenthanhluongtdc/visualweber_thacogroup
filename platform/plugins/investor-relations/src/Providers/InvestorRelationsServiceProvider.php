@@ -45,7 +45,7 @@ class InvestorRelationsServiceProvider extends ServiceProvider
                 'priority'    => 5,
                 'parent_id'   => null,
                 'name'        => 'plugins/investor-relations::investor-relations.name',
-                'icon'        => 'fa fa-list',
+                'icon'        => 'fa fa-handshake',
                 'url'         => route('investor-relations.index'),
                 'permissions' => ['investor-relations.index'],
             ])

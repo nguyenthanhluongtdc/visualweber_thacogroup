@@ -7,5 +7,11 @@ use Platform\InvestorRelations\Repositories\Interfaces\InvestorRelationsInterfac
 
 class InvestorRelationsCacheDecorator extends CacheAbstractDecorator implements InvestorRelationsInterface
 {
-
+    /**
+    * {@inheritDoc}
+    */
+    public function getAllCategory()
+    {
+        return $this->getDataIfExistCache(__FUNCTION__, func_get_args());
+    }
 }

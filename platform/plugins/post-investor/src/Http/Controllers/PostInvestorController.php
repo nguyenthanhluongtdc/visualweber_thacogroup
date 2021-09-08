@@ -65,6 +65,11 @@ class PostInvestorController extends BaseController
 
         event(new CreatedContentEvent(POST_INVESTOR_MODULE_SCREEN_NAME, $request, $postInvestor));
 
+        $categories = $request->input('categories');
+        if (!empty($categories) && is_array($categories)) {
+            $postInvestor->categories()->sync($categories);
+        }
+
         return $response
             ->setPreviousUrl(route('post-investor.index'))
             ->setNextUrl(route('post-investor.edit', $postInvestor->id))
@@ -103,6 +108,13 @@ class PostInvestorController extends BaseController
         $postInvestor = $this->postInvestorRepository->createOrUpdate($postInvestor);
 
         event(new UpdatedContentEvent(POST_INVESTOR_MODULE_SCREEN_NAME, $request, $postInvestor));
+
+
+        $categories = $request->input('categories');
+        
+        if (!empty($categories) && is_array($categories)) {
+            $postInvestor->categories()->sync($categories);
+        }
 
         return $response
             ->setPreviousUrl(route('post-investor.index'))
