@@ -129,7 +129,7 @@ class BlogService
                     ->add(SeoHelper::getTitle(), $category->url);
 
                 return [
-                    'view'         => 'category',
+                    'view'         => $category->template ?? 'category',
                     'default_view' => 'plugins/blog::themes.category',
                     'data'         => compact('category', 'posts'),
                     'slug'         => $category->slug,
