@@ -11,23 +11,20 @@
             <div class="swiper-slide" >
                 <img src="{{ Theme::asset()->url('images/home/banner-3.jpg') }}" alt="" class="img-slider  h-45vw  w-100 ">
             </div>
-            
-           
         </div>
         <div class="swiper-pagination"></div>
-      
     </div>
 </section>
 <div class="container-customize">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="/">Trang chủ</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="/truyenthong">Quan hệ cổ đông</a>
-                    </li>
-                    <li class="breadcrumb-item active">Điều lệ quy chế</li>
+            <li class="breadcrumb-item">
+                <a href="/">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="/truyenthong">Quan hệ cổ đông</a>
+            </li>
+            <li class="breadcrumb-item active">Điều lệ quy chế</li>
         </ol>
     </nav>
 </div>
@@ -60,45 +57,56 @@
                                         </select> --}}
                                     </form>
                                  </div>
-                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                    <div class="info-left">
-                                        <div class="date">
-                                            <p>
-                                                <span class="date-day">25</span>
-                                                <sup class="">/08</sup>
-                                            </p>
-                                            <p class="date-year fon16 text-center">2021</p>
+
+
+                                @forelse($data as $item)
+                                    <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                        <div class="info-left">
+                                            <div class="date">
+                                                <p>
+                                                    <span class="date-day">
+                                                        {{$item->created_at->format('d')}}</span>
+                                                    <sup class="">/{{$item->created_at->format('m')}}</sup>
+                                                </p>
+                                                <p class="date-year fon16 text-center">{{$item->created_at->format('Y')}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="info-right">
+                                            <h3 >
+                                                <a href="" class="font25 itemdown-show">
+                                                    {!! $item->name !!}
+                                                </a>
+                                            </h3>
+
+                                            @if(has_field($item, 'repeater_file_post_investor'))
+                                                <p class="count">
+                                                    {!! 
+                                                        count(has_field($item, 'repeater_file_post_investor'))
+                                                        .' '.
+                                                        __('Files')
+                                                    !!}
+                                                </p>
+                                                <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" class="download">
+                                                    <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
+                                                </a>
+                                                <div class="downcontent">
+                                                    <ul class="list-file">
+                                                        @foreach(has_field($item, 'repeater_file_post_investor') as $sub)
+                                                            <li>
+                                                                <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
+                                                                        {{has_sub_field($sub, 'file')}}
+                                                                </a>
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            @endif
                                         </div>
                                     </div>
-                                    <div class="info-right">
-                                        <h3 >
-                                            <a href="" class="font25 itemdown-show">
-                                                Phụ lục sửa đổi điều lệ lần thứ 13 của Thaco
-                                            </a>
-                                        </h3>
-                                        <p class="count">
-                                            2 files
-                                        </p>
-                                        <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" class="download">
-                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                                        </a>
-                                        <div class="downcontent">
-                                            <ul class="list-file">
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        TB MOI THAM DU DHCD NAM 2021.pdf
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        XAC NHAN THAM DU.pdf
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" class="aos-init aos-animate">
+                                @empty
+                                @endforelse
+
+                                {{-- <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" class="aos-init aos-animate">
                                     <div class="info-left">
                                         <div class="date">
                                             <p>
@@ -363,7 +371,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
+
                             </div>
                             <div class="page-pagination mt-40 mb-40">
                                 <ul class="pagination font18">

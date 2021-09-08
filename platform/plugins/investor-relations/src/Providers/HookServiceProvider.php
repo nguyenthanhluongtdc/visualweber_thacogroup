@@ -5,6 +5,7 @@ namespace Platform\InvestorRelations\Providers;
 use Platform\InvestorRelations\Models\InvestorRelations;
 use Platform\Base\Enums\BaseStatusEnum;
 use Platform\InvestorRelations\Repositories\Interfaces\InvestorRelationsInterface;
+use Platform\PostInvestor\Repositories\Interfaces\PostInvestorInterface;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Auth;
 use Menu;
@@ -46,15 +47,19 @@ class HookServiceProvider extends ServiceProvider
             'status' => BaseStatusEnum::PUBLISHED,
         ];
 
+        $data = [];
+
         if($slug->reference_type == InvestorRelations::class) {
-            $investorCategories = app(InvestorRelationsInterface::class)
+            $category = app(InvestorRelationsInterface::class)
             ->getFirstBy($condition, ['*'], ['slugable']);
+
+            $data = app(PostInvestorInterface::class)->getByCategory($category->id, 6);
             
             return [
-                'view'         => $investorCategories->template??'default',
+                'view'         => $category->template??'default',
                 'default_view' => 'plugins/blog::themes.category',
-                'data'         => compact('investorCategories'),
-                'slug'         => $investorCategories->slug,
+                'data'         => compact('category', 'data'),
+                'slug'         => $category->slug,
             ];
         }
 

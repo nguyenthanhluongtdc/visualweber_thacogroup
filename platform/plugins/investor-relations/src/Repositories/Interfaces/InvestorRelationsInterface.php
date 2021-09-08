@@ -6,4 +6,5 @@ use Platform\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface InvestorRelationsInterface extends RepositoryInterface
 {
+    public function getAllCategory();
 }
