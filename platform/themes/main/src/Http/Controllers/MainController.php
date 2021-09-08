@@ -58,15 +58,15 @@ class MainController extends PublicController
     }
     public function getView($key = null)
     {
-        SeoHelper::setTitle(theme_option('seo_title', 'Thacogroup'))
-        ->setDescription(theme_option('seo_description', 'Thacogroup'))
-        ->openGraph()
-        ->setTitle(@theme_option('seo_title'))
-        ->setSiteName(@theme_option('site_title'))
-        ->setUrl(route('public.index'))
-        ->setImage(RvMedia::getImageUrl(theme_option('seo_og_image'), 'og'))
-        ->addProperty('image:width', '1200')
-        ->addProperty('image:height', '630');
+        SeoHelper::setTitle(theme_option('seo_title', 'ThacoAuto'))
+            ->setDescription(theme_option('seo_description', 'ThacoAuto'))
+            ->openGraph()
+            ->setTitle(@theme_option('seo_title'))
+            ->setSiteName(@theme_option('site_title'))
+            ->setUrl(route('public.index'))
+            ->setImage(RvMedia::getImageUrl(theme_option('seo_og_image'), 'og'))
+            ->addProperty('image:width', '1200')
+            ->addProperty('image:height', '630');
 
         if (empty($key)) {
             return $this->getIndex();
@@ -95,10 +95,18 @@ class MainController extends PublicController
         Theme::layout('default');
 
         if (!empty($result) && is_array($result)) {
-            return Theme::scope(isset(Arr::get($result, 'data.page')->template) ? Arr::get($result, 'data.page')->template : Arr::get($result, 'view', ''), $result['data'], Arr::get($result, 'default_view'))->render();
-            
+            $view = Arr::get($result, 'data.page')->template??Arr::get($result, 'view', '');
+            // if ($view == 'post' || $view == 'page') {
+            //     Theme::asset()->usePath()->add('reset_css', 'css/non-reset.css');
+            // }
+            // if (request('select_category') && Arr::get($result, 'default_view', '') == 'plugins/blog::themes.category') {
+            //     return redirect()->route('public.single', array_merge(
+            //         request()->except('select_category'),
+            //         ['slug' => request('select_category')]
+            //     ));
+            // }
+            return Theme::scope($view, $result['data'], Arr::get($result, 'default_view'))->render();
         }
         abort(404);
-        Theme::breadcrumb()->add(__('Home'), url("public.index"));
     }
 }
