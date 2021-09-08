@@ -183,7 +183,7 @@
     <div class="post-detail-content">
         <div class="poster-left order-1">
             @if(theme_option('poster_left'))
-            <img src="{{rvMedia::getImageUrl(theme_option('poster_left'))}} alt="">
+            <img src="{{rvMedia::getImageUrl(theme_option('poster_left'))}}" alt="">
             @endif
         </div>
         <div class="poster-right order-3">
