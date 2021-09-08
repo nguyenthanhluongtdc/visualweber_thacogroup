@@ -1,15 +1,15 @@
 <section class="banner-introduce">
     <img class=" h-45vw img-mw-100"
-        src="{{ get_field($page, 'about_us_banner') ? get_image_url(get_field($page, 'about_us_banner')) : Theme::asset()->url('images/introduce/banner-introduce.jpg') }}" alt="">
+        src="{{ get_field($page, 'about_us_banner') ? get_image_url(get_field($page, 'about_us_banner')) : Theme::asset()->url('images/introduce/banner-introduce.jpg') }}" alt="banner">
 </section>
 @includeIf("theme.main::views.breadcrumb")
 <section class="about-us mt-15">
     <div class="container-customize">
         <div class="about-us__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-            <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
+            <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="icon">
             <h1  class="font50 big-title">{{has_field($page, 'about_us_title')}}</h1>
         </div>
-        <div class="about-us__content mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+        <div class="about-us__content mt-40 text-justify" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             {!!has_field($page, 'about_us_content')!!}
         </div>
         <div class="future-goal-banner mt-40" style="background-image:url('{{ get_field($page, 'vision_block_background') ? get_image_url(get_field($page, 'vision_block_background')) : Theme::asset()->url('images/introduce/tam-nhin-chien-luoc.jpg') }}')">
@@ -29,22 +29,7 @@
                     @empty
                         ...{{__('Đang cập nhật')}}
                     @endforelse
-                    {{-- <div class="col-sm-4 pl-0 pr-0">
-                        <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
-                            <img src="{{ Theme::asset()->url('images/introduce/chien-luoc.png') }}" alt="">
-                            <h3 class="title font40">Chiến lược</h3>
-                            <p class="desc font18">THACO là tập đoàn công nghiệp đa ngành của Việt Nam.<br>
-                                Trong đó các ngành bổ trợ cho nhau và có tính tích hợp cao, phát triển bền vững theo xu thế số hoá và bối cảnh hội nhập khu vực và thế giới.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 pl-0 pr-0">
-                        <div class="future-goal last p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300" class="aos-init aos-animate">
-                            <img src="{{ Theme::asset()->url('images/introduce/su-menh.png') }}" alt="">
-                            <h3 class="title font40">Sứ mệnh</h3>
-                            <p class="desc font18">Mang lại giá trị cho khách hàng, xã hội.
-                                Đồng thời đóng góp vào sự phát triền  kinh tế đất nước. </p>
-                        </div>
-                    </div> --}}
+        
                 </div>
             </div>
           
@@ -52,7 +37,8 @@
         <div class="field-activity-intro-wrapper">
             <div class="desc-field pt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 <p class="desc-cotent font24 text-justify">
-                    Tổng tập đoàn THACO là một tập đoàn đa ngành với 2 ngành nghề chủ lực đó là Ô tô – Cơ khí và Nông nghiệp. Đồng thời các lĩnh vực khác vẫn được THACO đầu tư phát triển để có thể tạo ra giá trị cộng hưởng và nâng cao năng lực THACO bao gồm: Đầu tư xây dựng, Logistics, Thương mại – Dịch vụ.
+                    {!!has_field($page, 'about_us_field_description')!!}
+                 
                 </p>
             </div>
             {!! do_shortcode('[field-activity][/field-activity]') !!}
@@ -316,8 +302,8 @@
     
     <div class="develop-wrapper">
         <div class="develop__title pb-40 container-customize" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-            <img class="img-blue" src="{{ Theme::asset()->url('images/introduce/arrow.png') }}"  alt="">
-            <img class="img-white" src="{{ Theme::asset()->url('images/introduce/icon-arrow-white.png') }}"  alt="" style="display:none">
+            <img class="img-blue" src="{{ Theme::asset()->url('images/introduce/arrow.png') }}"  alt="icon">
+            <img class="img-white" src="{{ Theme::asset()->url('images/introduce/icon-arrow-white.png') }}"  alt="icon" style="display:none">
             <h2 class="font50 big-title">QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</h2>
         </div>
             <div class="develop-banner lazyloaded " style="background-image:url('{{ Theme::asset()->url('images/introduce/1.jpg')}}')">
