@@ -38,6 +38,16 @@ app()->booted(function () {
                 'value' => '#ff2b4a',
             ],
         ])
+        ->setField([
+            'id'         => 'logo_white',
+            'section_id' => 'opt-text-subsection-logo',
+            'type'       => 'mediaImage',
+            'label'      => __('Logo White'),
+            'attributes' => [
+                'name'    => 'logo_white',
+                'value'   => null,
+            ],
+    ])
         ->setSection(
             [ // Set section with no field
                 'title' => __('Footer'),

@@ -1,9 +1,15 @@
 <nav class="navbar navbar-expand-lg">
-    <a class="logo_link-white" href="/">
-        <img src="{{Theme::asset()->url('images/home/logo-white.png')}}" alt="">
-    </a>
-    <a class="logo_link-blue" href="/" >
-        <img src="{{Theme::asset()->url('images/home/logo.png')}}" alt="">
+  
+        <a class="logo_link-white" href="{{ route('public.single') }}">
+            @if (theme_option('logo_white'))
+            <img src="{{ RvMedia::getImageUrl(theme_option('logo_white')) }}" alt="{{ theme_option('site_title') }}">
+            @endif
+        </a>
+   
+    <a class="logo_link-blue" href="{{ route('public.single') }}" >
+        @if (theme_option('logo'))
+            <img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}">
+        @endif
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
