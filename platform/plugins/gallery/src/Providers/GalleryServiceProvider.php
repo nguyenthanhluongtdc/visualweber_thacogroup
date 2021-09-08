@@ -42,6 +42,8 @@ class GalleryServiceProvider extends ServiceProvider
         Helper::autoload(__DIR__ . '/../../helpers');
 
         AliasLoader::getInstance()->alias('Gallery', GalleryFacade::class);
+
+     
     }
 
     public function boot()
