@@ -19,7 +19,7 @@ class HookServiceProvider extends ServiceProvider
             Menu::addMenuOptionModel(Category::class);
             Menu::addMenuOptionModel(Tag::class);
             add_action(MENU_ACTION_SIDEBAR_OPTIONS, [$this, 'registerMenuOptions'], 2);
-            add_filter(BASE_FILTER_PUBLIC_SINGLE_DATA, [$this, 'handleSingleView'], 2);
+            add_filter(BASE_FILTER_PUBLIC_SINGLE_DATA, [$this, 'handleSingleView'], 1);
         }
 
     }
@@ -46,14 +46,18 @@ class HookServiceProvider extends ServiceProvider
             'status' => BaseStatusEnum::PUBLISHED,
         ];
 
-        $investorCategories = app(InvestorRelationsInterface::class)
-        ->getFirstBy($condition, ['*'], ['slugable']);
+        if($slug->reference_type == InvestorRelations::class) {
+            $investorCategories = app(InvestorRelationsInterface::class)
+            ->getFirstBy($condition, ['*'], ['slugable']);
+            
+            return [
+                'view'         => $investorCategories->template??'default',
+                'default_view' => 'plugins/blog::themes.category',
+                'data'         => compact('investorCategories'),
+                'slug'         => $investorCategories->slug,
+            ];
+        }
 
-        return [
-            'view'         => $investorCategories->template??'default',
-            'default_view' => 'plugins/blog::themes.category',
-            'data'         => compact('investorCategories'),
-            'slug'         => $investorCategories->slug,
-        ];
+        return $slug;
     }
 }

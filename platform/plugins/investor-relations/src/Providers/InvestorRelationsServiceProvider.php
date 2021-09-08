@@ -39,7 +39,8 @@ class InvestorRelationsServiceProvider extends ServiceProvider
             //    \Language::registerModule([InvestorRelations::class]);
             // }
 
-            dashboard_menu()->registerItem([
+            dashboard_menu()
+            ->registerItem([
                 'id'          => 'cms-plugins-investor-relations',
                 'priority'    => 5,
                 'parent_id'   => null,
@@ -47,10 +48,20 @@ class InvestorRelationsServiceProvider extends ServiceProvider
                 'icon'        => 'fa fa-list',
                 'url'         => route('investor-relations.index'),
                 'permissions' => ['investor-relations.index'],
+            ])
+            ->registerItem([
+                'id'          => 'cms-plugins-category-investor-relations',
+                'priority'    => 5,
+                'parent_id'   => 'cms-plugins-investor-relations',
+                'name'        => 'plugins/investor-relations::investor-relations.category',
+                'icon'        => null,
+                'url'         => route('investor-relations.index'),
+                'permissions' => ['investor-relations.index'],
             ]);
         });
         
         $this->app->register(HookServiceProvider::class);
+        
         \SlugHelper::registerModule(InvestorRelations::class);
         
     }
