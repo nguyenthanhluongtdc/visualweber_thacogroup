@@ -96,17 +96,7 @@ class MainController extends PublicController
 
         if (!empty($result) && is_array($result)) {
             return Theme::scope(isset(Arr::get($result, 'data.page')->template) ? Arr::get($result, 'data.page')->template : Arr::get($result, 'view', ''), $result['data'], Arr::get($result, 'default_view'))->render();
-            // $view = Arr::get($result, 'data.page')->template??Arr::get($result, 'view', '');
-            // // if ($view == 'post' || $view == 'page') {
-            // //     Theme::asset()->usePath()->add('reset_css', 'css/non-reset.css');
-            // // }
-            // // if (request('select_category') && Arr::get($result, 'default_view', '') == 'plugins/blog::themes.category') {
-            // //     return redirect()->route('public.single', array_merge(
-            // //         request()->except('select_category'),
-            // //         ['slug' => request('select_category')]
-            // //     ));
-            // // }
-            // return Theme::scope($view, $result['data'], Arr::get($result, 'default_view'))->render();
+            
         }
         abort(404);
         Theme::breadcrumb()->add(__('Home'), url("public.index"));

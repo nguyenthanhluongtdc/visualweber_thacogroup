@@ -380,7 +380,7 @@
         </div>
     </div>
 </section> --}}
-@includeIf("theme.main::views.pages.post.slide")
+@includeIf("theme.main::views.pages.post.slide", ['page' => $category])
 @includeIf("theme.main::views.breadcrumb")
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
