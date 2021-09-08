@@ -42,7 +42,7 @@ $page = app(PageInterface::class)->findById($homepageId);
            
             </div>
             <div class="swiper-pagination"></div>
-            <a href="" class="read-more">Xem thêm</a>
+            <a href="" class="read-more" title="xem thêm">Xem thêm</a>
         </div>
     </div>
 </div>

@@ -12,13 +12,13 @@
                                     </div>
                                     <div class="news-post h-100">
                                         <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
-                                        <a href="/chi-tiet-truyen-thong">
+                                        <a href="{{$item_post->url}}" title="{{$item_post->name}}">
                                             <h4 class="name font20">{{$item_post->name}}</h4>
                                         </a>
                                        
                                         <span class="time">{{date_format($item_post->created_at,"d-m-Y")}}</span>
                                         <p class="description font18 text-justify">{{$item_post->description}}</p>
-                                        <a href="" class="read-more">Xem thêm</a>
+                                        <a href="" class="read-more" title="Xem thêm">Xem thêm</a>
                                     </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                         @foreach ($post_home_bottom as $post_bottom)
                             <div class="swiper-slide d-flex justify-content-center">             
                                     <div class="post_content_bottom h-100">
-                                        <a class="post-wrapper" href="">
+                                        <a class="post-wrapper" href="{{$post_bottom->url}}" title="{{$post_bottom->name}}">
                                             <div class="post-thumbnail">
                                                 <img src="{{ RvMedia::getImageUrl($post_bottom->image,'', false, RvMedia::getDefaultImage()) }}" alt="{{$item_post->name}}" alt="{{$post_bottom->name}}">
                                             </div>
@@ -53,8 +53,8 @@
                         @endforeach
                         @endif
                     </div>
-                    <div class="swiper-button-next drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/Icon-right.png') }}" alt="">  </div>
-                    <div class="swiper-button-prev drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/icon-left.png') }}" alt=""> </div>
+                    <div class="swiper-button-next drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/Icon-right.png') }}" alt="next">  </div>
+                    <div class="swiper-button-prev drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/icon-left.png') }}" alt="prev"> </div>
                     
         
                 </div>
