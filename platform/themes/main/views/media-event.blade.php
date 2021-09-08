@@ -14,8 +14,8 @@ $postSlider = get_featured_posts(6);
                                    <div class="news__content" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                        <div class="swiper-container new-post-slide " style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                                            <div class="swiper-wrapper">
-                                            @if (!empty($posts))
-                                            @foreach ($posts as $post) 
+                                            @if (!empty($postSlider ))
+                                            @foreach ($postSlider  as $post) 
                                                <div class="swiper-slide">
                                                    <div class="news__top">
                                                                <div class="img-post">
