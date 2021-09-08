@@ -1,4 +1,4 @@
-@includeIf("theme.main::views.pages.post.slide", ['page' => $category])
+@includeIf("theme.main::views.pages.post.slide")
 @includeIf("theme.main::views.breadcrumb")
 @php
 $posts = get_posts_by_category($category->id ?? 16, 6);
@@ -10,7 +10,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                <div class="media-content">
                    <div class="content-left">
                                <div class="media__content_left">
-                                   <div class="news__content" data-aos="zoom-in-up" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate">
+                                   <div class="news__content" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                        <div class="swiper-container new-post-slide " style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                                            <div class="swiper-wrapper">
                                             @if (!empty($posts))
