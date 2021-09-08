@@ -16,7 +16,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                     <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
                                 </div>
                                 <div class="news-post h-100">
-                                    <h3 class=" title font18">BẢN TIN NỘI BỘ</h3>
+                                    <h3 class=" title font18 text-uppercase">BẢN TIN NỘI BỘ</h3>
                                     <a href="{{$post->url}}">  <h4 class="name font18 ">{{$post->name}}</h4></a>
                                     <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span> 
                                     <p class="description font18  text-justify">{{$post->description}}</p>
