@@ -53,7 +53,7 @@ class HookServiceProvider extends ServiceProvider
             'view'         => $investorCategories->template??'default',
             'default_view' => 'plugins/blog::themes.category',
             'data'         => compact('investorCategories'),
-            'slug'         => $slug,
+            'slug'         => $investorCategories->slug,
         ];
     }
 }

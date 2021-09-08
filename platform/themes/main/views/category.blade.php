@@ -1,4 +1,4 @@
-@includeIf("theme.main::views.pages.post.slide")
+@includeIf("theme.main::views.pages.post.slide", ['page' => $category])
 @includeIf("theme.main::views.breadcrumb")
 @php
 $posts = get_posts_by_category($category->id ?? 16, 6);
@@ -6,7 +6,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
 @endphp
 <section>
     <div class="media_content-wrapper">
-        <div class="container-customize">
+        <div class="container-customize"> 
             <div class="media-content">
                 <div class="content-left">
                             <div class="media__content_left">

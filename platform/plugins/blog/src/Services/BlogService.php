@@ -75,7 +75,9 @@ class BlogService
                     );
                 }
 
-                Theme::breadcrumb()->add(__('Home'), route('public.index'));
+                Theme::breadcrumb()
+                ->add(__('Trang chủ'), route('public.index'))
+                ->add(__('Truyền thông'), route('public.index'));
 
                 $category = $post->categories->first();
                 if ($category) {
@@ -132,7 +134,8 @@ class BlogService
                 do_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, CATEGORY_MODULE_SCREEN_NAME, $category);
 
                 Theme::breadcrumb()
-                    ->add(__('Home'), route('public.index'))
+                    ->add(__('Trang chủ'), route('public.index'))
+                    ->add(__('Truyền thông'), route('public.index'))
                     ->add(SeoHelper::getTitle(), $category->url);
 
                 $slug = $category->slug;
@@ -143,6 +146,7 @@ class BlogService
                     'data'         => compact('category', 'slug'),
                     'slug'         => $slug,
                 ];
+
             case Tag::class:
                 $tag = app(TagInterface::class)->getFirstBy($condition, ['*'], ['slugable']);
 
@@ -168,7 +172,7 @@ class BlogService
                 do_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, TAG_MODULE_SCREEN_NAME, $tag);
 
                 Theme::breadcrumb()
-                    ->add(__('Home'), route('public.index'))
+                    ->add(__('Trang chủ'), route('public.index'))
                     ->add(SeoHelper::getTitle(), $tag->url);
 
                 return [
