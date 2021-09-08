@@ -178,7 +178,10 @@
     <img class=" h-45vw img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
     @endif
 </section>
-@includeIf("theme.main::views.breadcrumb")
+<div class="breadcrum" style="background-color: #f1f1f1;">
+    @includeIf("theme.main::views.breadcrumb")
+</div>
+
 <div class="post-detail-wrapper">
     <div class="post-detail-content">
         <div class="poster-left order-1">
