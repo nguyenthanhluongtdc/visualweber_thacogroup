@@ -51,7 +51,7 @@ class MainController extends PublicController
 
         SeoHelper::setTitle(theme_option('site_title'));
 
-        Theme::breadcrumb()->add(__('Trang chủ'), route('public.index'));
+        Theme::breadcrumb()->add(__('Home'), route('public.index'));
 
         event(RenderingHomePageEvent::class);
        
