@@ -2,7 +2,8 @@
 @includeIf("theme.main::views.breadcrumb")
 @php
 $posts = get_posts_by_category($category->id ?? 16, 3);
-$postSlider = get_posts_by_category($category->id ?? 16, 6);
+$postSlider = get_featured_posts(6);
+
 @endphp
    <section>
        <div class="media_content-wrapper mb-100">
@@ -13,8 +14,8 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                    <div class="news__content" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                        <div class="swiper-container new-post-slide " style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                                            <div class="swiper-wrapper">
-                                            @if (!empty($posts))
-                                            @foreach ($posts as $post) 
+                                            @if (!empty($postSlider))
+                                            @foreach ($postSlider as $post) 
                                                <div class="swiper-slide">
                                                    <div class="news__top">
                                                                <div class="img-post">
@@ -63,7 +64,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                                <div class="swiper-button-prev drop-shadow-button"> <img src="{{ Theme::asset()->url('images/home/icon-left.png') }}" alt=""> </div>
                                                
                                    
-                                           </div>
+                                        </div>
                                           
                                        </div>
                                     </div>
@@ -91,7 +92,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                         </select>
                                     </form>
                             
-                        </div>
+                            </div>
                            <div class="list-media_wrapper" id="scroll-list-news">
                                <div class="list-media mt-60">
                                 @if (!empty($posts))
@@ -115,10 +116,10 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                    @endif
                                   
                                   
-                                   
+                                   {{ $posts->links('vendor.pagination.custom') }}
                
                                </div>
-                               {{ $posts->links('vendor.pagination.custom') }}
+                              
                            </div>
                       
                    </div>

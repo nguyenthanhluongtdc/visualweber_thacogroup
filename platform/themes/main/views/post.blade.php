@@ -174,21 +174,24 @@
 
 @else
 <section class="banner-post-detail">
-    @if(has_field($post, 'banner_post'))
-    <img class=" h-45vw img-mw-100" src="{{ Storage::disk('public')->exists(has_field($post,'banner_post')) ? get_image_url(has_field($post,'banner_post')) : RvMedia::getDefaultImage()}}" alt="">
+    @if(theme_option('image_banner'))
+    <img class=" h-45vw img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
     @endif
 </section>
-@includeIf("theme.main::views.breadcrumb")
+<div class="breadcrum" style="background-color: #f1f1f1;">
+    @includeIf("theme.main::views.breadcrumb")
+</div>
+
 <div class="post-detail-wrapper">
     <div class="post-detail-content">
         <div class="poster-left order-1">
-            @if(has_field($post, 'poster_left'))
-            <img src="{{ Storage::disk('public')->exists(has_field($post,'poster_left')) ? get_image_url(has_field($post,'poster_left')) : RvMedia::getDefaultImage()}}" alt="">
+            @if(theme_option('poster_left'))
+            <img src="{{rvMedia::getImageUrl(theme_option('poster_left'))}}" alt="">
             @endif
         </div>
         <div class="poster-right order-3">
-            @if(has_field($post, 'poster_right'))
-            <img src="{{ Storage::disk('public')->exists(has_field($post,'poster_right')) ? get_image_url(has_field($post,'poster_right')) : RvMedia::getDefaultImage()}}" alt="">
+            @if(theme_option('poster_right'))
+            <img src="{{rvMedia::getImageUrl(theme_option('poster_right'))}}" alt="">
             @endif
         </div>
         <div class="content-middle order-2">
