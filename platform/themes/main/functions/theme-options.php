@@ -510,5 +510,51 @@ app()->booted(function () {
                         'options' => [], // Optional
                     ],
                     'helper' => __('Enable popup in home page'),
+                ])
+                ->setSection([ // Set section with no field
+                    'title' => __('Media-image'),
+                    'desc' => __('Media-image'),
+                    'id' => 'opt-text-subsection-contact-form',
+                    'subsection' => true,
+                    'icon' => 'fa fa-home',
+                    'fields' => [
+                        [
+                            'id' => 'image_banner',
+                            'type' => 'mediaImage',
+                            'label' => __('Ảnh Banner'),
+                            'attributes' => [
+                                'name' => 'image_banner',
+                                'value' => null,
+                                'options' => [
+                                    'class'        => 'form-control',
+                                ],
+                            ],
+                        ],
+                        [
+                            'id' => 'poster_left',
+                            'type' => 'mediaImage',
+                            'label' => __('Ảnh Poster bên trái'),
+                            'attributes' => [
+                                'name' => 'poster_left',
+                                'value' => null,
+                                'options' => [
+                                    'class'        => 'form-control',
+                                ],
+                            ],
+                        ],
+                        [
+                            'id' => 'poster_right',
+                            'type' => 'mediaImage',
+                            'label' => __('Ảnh Poster bên phải'),
+                            'attributes' => [
+                                'name' => 'poster_right',
+                                'value' => null,
+                                'options' => [
+                                    'class'        => 'form-control',
+                                ],
+                            ],
+                        ],
+                        
+                    ]
                 ]);
 });
