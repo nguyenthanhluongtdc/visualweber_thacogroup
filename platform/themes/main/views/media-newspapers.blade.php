@@ -380,7 +380,7 @@
         </div>
     </div>
 </section> --}}
-@includeIf("theme.main::views.pages.post.slide", ['page' => $category])
+@includeIf("theme.main::views.pages.post.slide")
 @includeIf("theme.main::views.breadcrumb")
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
@@ -412,7 +412,7 @@
                              </div>
                             <div class="list-info overflow-x-hidden">
                                 @php
-                                $posts = get_posts_by_category($category->id ?? 18, 6);
+                                $posts = get_posts_by_category($category->id ?? 18, 5);
                                  @endphp
                                   @if (!empty($posts))
                                   @foreach ($posts as $post)

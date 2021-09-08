@@ -1,4 +1,4 @@
-@includeIf("theme.main::views.pages.post.slide", ['page' => $category])
+@includeIf("theme.main::views.pages.post.slide")
 @includeIf("theme.main::views.breadcrumb")
  @php
 $posts = get_posts_by_category($category->id ?? 16, 1);
@@ -11,12 +11,12 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                         <div class="media__content_left">
                             @if (!empty($posts))
                             @foreach ($posts as $post) 
-                            <div class="news__top">
+                            <div class="news__top" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                 <div class="img-post">
                                     <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
                                 </div>
                                 <div class="news-post h-100">
-                                    <h3 class=" title font18">BẢN TIN NỘI BỘ</h3>
+                                    <h3 class=" title font18 text-uppercase">BẢN TIN NỘI BỘ</h3>
                                     <a href="{{$post->url}}">  <h4 class="name font18 ">{{$post->name}}</h4></a>
                                     <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span> 
                                     <p class="description font18  text-justify">{{$post->description}}</p>
