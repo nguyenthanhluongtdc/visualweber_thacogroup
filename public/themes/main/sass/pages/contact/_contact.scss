@@ -32,8 +32,8 @@
                
             }
             @media only screen and (max-width: 1080px){ height: 22vw; }
-            @media only screen and (max-width: 480px){height: 27vw;}
-            @media only screen and (max-width: 350px){height: 32vw;}
+            @media only screen and (max-width: 480px){height: 30vw;}
+            @media only screen and (max-width: 350px){height: 35vw;}
             &:hover {
                 box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
                 transition: all .5s;
@@ -99,13 +99,16 @@
                 }
                 h3{
                     @media only screen and (max-width: 768px){
-                        font-size: 16px !important;
+                        font-size: 18px !important;
                     }
                     @media only screen and (max-width: 520px){
+                        font-size: 16px !important;
+                    }
+                    @media only screen and (max-width: 400px){
                         font-size: 15px !important;
                     }
-                    @media only screen and (max-width: 450px){
-                        font-size: 13px !important;
+                    @media only screen and (max-width: 300px){
+                        font-size: 12px !important;
                     }
                    
                     
@@ -215,6 +218,9 @@
                     flex: 100%;
                     margin: 2%;
                 }
+                @media only screen and (max-width: 420px){
+                    margin: 2% 5%;
+                }
                 @media screen and(max-width: 1100px) {
                     font-size: 16px;
                 }
@@ -226,7 +232,7 @@
                     align-items: center;
                     
                      @media only screen and (max-width: 480px){
-                        font-size: 12px !important;
+                        font-size: 14px !important;
                          
                      }
                     p {
@@ -298,7 +304,12 @@
                 color: $main-color;
                 border-radius: 5px;
                 font-size: 15px;
+                &::focus{
+                    border: unset;
+                    outline: none;
+                }
             }
+            
             input {
                 height: 40px;
                 margin-bottom: 15px;
