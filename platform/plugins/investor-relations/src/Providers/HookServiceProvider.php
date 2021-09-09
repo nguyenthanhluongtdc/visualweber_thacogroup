@@ -9,7 +9,10 @@ use Platform\PostInvestor\Repositories\Interfaces\PostInvestorInterface;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Auth;
 use Menu;
+use Theme;
+use SeoHelper;
 use Eloquent;
+use Illuminate\Support\Arr;
 
 class HookServiceProvider extends ServiceProvider
 {
@@ -41,6 +44,7 @@ class HookServiceProvider extends ServiceProvider
         if (!$slug instanceof Eloquent) {
             return $slug;
         }
+        
 
         $condition = [
             'id'     => $slug->reference_id,
@@ -54,6 +58,15 @@ class HookServiceProvider extends ServiceProvider
             ->getFirstBy($condition, ['*'], ['slugable']);
 
             $data = app(PostInvestorInterface::class)->getByCategory($category->id, 6);
+
+            Theme::breadcrumb()
+            ->add(__('Home'), route('public.index'));
+
+            if($category->parent->id) {
+                Theme::breadcrumb()->add($category->parent->name, $category->parent->url);
+            }
+
+            Theme::breadcrumb()->add($category->name, $category->url);
             
             return [
                 'view'         => $category->template??'default',

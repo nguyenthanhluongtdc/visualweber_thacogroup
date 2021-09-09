@@ -15,19 +15,11 @@
         <div class="swiper-pagination"></div>
     </div>
 </section>
-<div class="container-customize">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="/">Trang chủ</a>
-            </li>
-            <li class="breadcrumb-item">
-                <a href="/truyenthong">Quan hệ cổ đông</a>
-            </li>
-            <li class="breadcrumb-item active">Điều lệ quy chế</li>
-        </ol>
-    </nav>
-</div>
+
+<!--breadcrumb-->
+@includeIf("theme.main::views.components.breadcrumb")
+<!---end breadcrumb---->
+
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
         <div class="container-customize">

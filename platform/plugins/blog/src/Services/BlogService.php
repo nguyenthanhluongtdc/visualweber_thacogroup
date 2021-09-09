@@ -78,6 +78,11 @@ class BlogService
                 Theme::breadcrumb()->add(__('Home'), route('public.index'));
 
                 $category = $post->categories->first();
+
+                if($category->parent->id) {
+                    Theme::breadcrumb()->add($category->parent->name, $category->parent->url);
+                }
+
                 if ($category) {
                     Theme::breadcrumb()->add($category->name, $category->url);
                 }
@@ -128,11 +133,19 @@ class BlogService
 
                 // $posts = app(PostInterface::class)
                 //     ->getByCategory($allRelatedCategoryIds, theme_option('number_of_posts_in_a_category', 12));
+                $parent = app(CategoryInterface::class)->getFirstBy($condition, ['*'], ['parent']);
 
                 do_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, CATEGORY_MODULE_SCREEN_NAME, $category);
 
                 Theme::breadcrumb()
-                    ->add(__('Home'), route('public.index'))
+                    ->add(__('Home'), route('public.index'));
+
+                if($parent['parent']->id) {
+                    Theme::breadcrumb()
+                    ->add($parent['parent']->name, $parent['parent']->url);
+                }
+
+                Theme::breadcrumb()
                     ->add(SeoHelper::getTitle(), $category->url);
 
                 $slug = $category->slug;

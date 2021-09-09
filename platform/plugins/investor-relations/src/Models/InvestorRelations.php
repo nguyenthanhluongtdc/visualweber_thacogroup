@@ -6,6 +6,7 @@ use Platform\Base\Traits\EnumCastable;
 use Platform\Base\Enums\BaseStatusEnum;
 use Platform\Base\Models\BaseModel;
 use Platform\Slug\Traits\SlugTrait;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class InvestorRelations extends BaseModel
 {
@@ -40,4 +41,8 @@ class InvestorRelations extends BaseModel
     protected $casts = [
         'status' => BaseStatusEnum::class,
     ];
+
+    public function parent(): BelongsTo {
+        return $this->belongsTo(InvestorRelations::class, 'parent_id')->withDefault();
+    }
 }

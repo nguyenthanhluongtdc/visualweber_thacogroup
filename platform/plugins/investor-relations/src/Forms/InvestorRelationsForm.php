@@ -15,19 +15,18 @@ class InvestorRelationsForm extends FormAbstract
      */
     public function buildForm()
     {
+        $list = sort_item_with_children(get_all_investor_categories());
 
-        // $list = get_categories();
+        $categories = [];
+        foreach ($list as $row) {
+            if ($this->getModel() && ($this->model->id === $row->id || $this->model->id === $row->parent_id)) {
+                continue;
+            }
 
-        // $categories = [];
-        // foreach ($list as $row) {
-        //     if ($this->getModel() && ($this->model->id === $row->id || $this->model->id === $row->parent_id)) {
-        //         continue;
-        //     }
-
-        //     $categories[$row->id] = $row->indent_text . ' ' . $row->name;
-        // }
-        // $categories = [0 => trans('plugins/blog::categories.none')] + $categories;
-
+            $categories[$row->id] = $row->indent_text . ' ' . $row->name;
+        }
+        $categories = [0 => trans('plugins/blog::categories.none')] + $categories;
+        
         $this
             ->setupModel(new InvestorRelations)
             ->setValidatorClass(InvestorRelationsRequest::class)
@@ -40,14 +39,14 @@ class InvestorRelationsForm extends FormAbstract
                     'data-counter' => 120,
                 ],
             ])
-            // ->add('parent_id', 'customSelect', [
-            //     'label'      => trans('core/base::forms.parent'),
-            //     'label_attr' => ['class' => 'control-label required'],
-            //     'attr'       => [
-            //         'class' => 'select-search-full',
-            //     ],
-            //     'choices'    => $categories,
-            // ])
+            ->add('parent_id', 'customSelect', [
+                'label'      => trans('core/base::forms.parent'),
+                'label_attr' => ['class' => 'control-label required'],
+                'attr'       => [
+                    'class' => 'select-search-full',
+                ],
+                'choices'    => $categories,
+            ])
             ->add('description', 'textarea', [
                 'label'      => trans('core/base::forms.description'),
                 'label_attr' => ['class' => 'control-label'],
