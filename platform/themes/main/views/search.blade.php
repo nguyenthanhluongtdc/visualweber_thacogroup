@@ -17,7 +17,6 @@
             <div class="search-range pb-4 mt-5">
                 <form action="" class="form-search">
                     <div class="search-cate">
-
                         <div class="box">
                             <input id="one" type="checkbox">
                             <span class="check"></span>
