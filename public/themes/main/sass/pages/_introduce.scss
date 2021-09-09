@@ -569,17 +569,23 @@
     }
 }
 
-#info_admin_modal {
+.modal_admin {
+    display: none;
     .modal-dialog {
         max-width: 900px;
         .modal-content {
             padding: 30px;
             .modal-body {
-                // .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-                //     background: white;
-                // }
+                .mCSB_scrollTools .mCSB_draggerContainer {
+                    width: 4px;
+                    background: gray;
+                }
                 .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
-                    background: rgb(128, 128, 128);
+                    background: #fff;
+                }
+                .mCS-dark.mCSB_scrollTools .mCSB_dragger_bar {
+                    background: #fff;
+                    display: none
                 }
                 overflow-y: hidden;
                 overflow-x: hidden;
@@ -611,6 +617,9 @@
                             td {
                                 padding: 10px;
                                 border: unset;
+                                p {
+                                    margin: 0;
+                                }
                             }
                             th {
                                 padding: 10px;
@@ -630,18 +639,6 @@
     overflow-y: hidden;
 }
 
-// @media screen and (max-width:1680px) {
-//     .achievement-wrapper {
-//         .content-tab {
-//             .bottom {
-//                 padding: 2% 0;
-//                 .bottom-content {
-//                     max-width: 190px;
-//                 }
-//             }
-//         }
-//     }
-// }
 @media screen and(max-width:1100px) {
     .future-goal-banner {
         .future-goal-wrapper {
