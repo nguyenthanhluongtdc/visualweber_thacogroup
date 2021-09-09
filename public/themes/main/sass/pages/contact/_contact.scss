@@ -67,10 +67,10 @@
                         transform: scale(.5);
                     }
                     @media only screen and (max-width: 630px){
-                        transform: scale(.4);
+                        transform: scale(.36);
                     }
                     @media only screen and (max-width: 360px){
-                        transform: scale(.25);
+                        transform: scale(.28);
                     }
                 }
             }
@@ -101,8 +101,11 @@
                     @media only screen and (max-width: 768px){
                         font-size: 16px !important;
                     }
-                    @media only screen and (max-width: 480px){
-                        font-size: 14px !important;
+                    @media only screen and (max-width: 520px){
+                        font-size: 15px !important;
+                    }
+                    @media only screen and (max-width: 450px){
+                        font-size: 13px !important;
                     }
                    
                     
@@ -121,6 +124,7 @@
                     font-size: 18px;
                     
                 }
+               
                 @media only screen and (max-width: 480px){
                     font-size: 12px ;
                 }
@@ -140,8 +144,8 @@
             margin-top: 20px !important;
         }  
         
-        padding-right: 0;
-        padding-left: 0;
+        // padding-right: 0;
+        // padding-left: 0;
         .office-item {
             display: flex;
             box-shadow: rgb(0 0 0 / 20%) 0px 5px 15px;
@@ -209,6 +213,7 @@
                 
                 @media only screen and (max-width: 1080px){
                     flex: 100%;
+                    margin: 2%;
                 }
                 @media screen and(max-width: 1100px) {
                     font-size: 16px;
