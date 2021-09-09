@@ -131,168 +131,50 @@
                     <div class="achievement-tab-title">
                         <div class="achievement__title mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                             <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
-                            <h2 class="font50 big-title">Thành tựu</h2>
+                            <h2 class="font50 big-title"> {{has_field($page, 'title_achivement')}}</h2>
                         </div>
                         <div class="achievement__tabs" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                             <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
+                                @foreach (has_field($page, 'achivement') as $key =>$item_tab)
                                 <li class="__tabs__item " role="achievement">
-                                    <a class="__tabs__link nav-link active" id="achievement-company-tab" data-toggle="tab" role="tab" aria-controls="achievement-company" aria-selected="true" href="#achievement-company" title="Tất Cả">
-                                        THÀNH TỰU CỦA CÔNG TY
+                                    <a class="__tabs__link nav-link {{ $key==0? 'active': '' }}" id="achievement-company-{{$key}}" data-toggle="tab" role="tab" aria-controls="achievement-{{$key}}" aria-selected="true" href="#achievement-{{$key}}" title="{{has_field($page, 'title_tab')}}">
+                                        {{has_sub_field($item_tab, 'title_tab')}}
                                     </a>
                                 </li>
-                                <li class="__tabs__item" role="achievement">
-                                    <a class="__tabs__link nav-link" id="achievement-leader-tab" data-toggle="tab" role="tab" aria-controls="achievement-leader" aria-selected="true" href="#achievement-leader" title="Tất Cả">
-                                        THÀNH TỰU CỦA CHỦ TỊCH         
-                                    </a>
-                                </li>
+                                @endforeach
+                    
                                 
                             </ul>
                         
                         </div>
                     </div>
-                    
-                    <div class="tab-pane fade active show" id="achievement-company" role="tabpanel" aria-labelledby="field-1-tab">
-                            <div class="content-tab" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                <p class="content-title font18 mt-40 text-justify">
-                                    Từ lúc thành lập tới nay, Thaco đã vinh dự nhận được nhiều bằng khen, giải thưởng các cấp vinh danh những đóng góp và thành tích của công ty trong hoạt động sản xuất kinh doanh, hoạt động cộng đồng xã hội và sự nghiệp xây dựng, bảo vệ Tổ quốc:
-                                </p>
-                                <div class="top">
-                                    <div class="top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                        <div class="img-content">
-                                            <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
-                                            <p><span class="year font24">2002</span></p>
-                                        </div>
-                                    <p class="desc font18">Được Chủ tịch Nước CHXHCN Việt Nam  tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
+                    <div class="tab-content" id="nav-tabContent">
+                        @foreach (has_field($page, 'achivement') as $key =>$item_tab_content)
+                        <div class="tab-pane fade {{ $key==0? 'active show': '' }}" id="achievement-{{$key}}" role="tabpanel" aria-labelledby="field-1-tab">
+                                <div class="content-tab" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                                    <div class="content-title font18 mt-40 text-justify">
+                                        {!!has_sub_field($item_tab_content, 'block_desc')!!}
                                     </div>
-                                    <div class="top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
-                                        <p><span class="year font24">2012</span></p>
+                                    <div class="bottom">
+                                        @foreach (has_sub_field($item_tab_content, 'achivement_year') as $key2 =>$item_achivement_year)
+                                        <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" >
+                                            <div class="img-content">
+                                                {{-- <img src="{{ get_sub_field($item_achivement_year, 'image') ? get_image_url(get_sub_field($item_achivement_year, 'image')) :'' }}" alt="{!!has_sub_field($item_achivement_year, 'achivement_name')!!}"> --}}
+                                                <img src="{{ get_image_url(has_sub_field($item_achivement_year, 'image')) }}" alt="">
+                                                <div class="year font24">
+                                                    {{has_sub_field($item_achivement_year, 'year')}}
+                                                </div>
+                                            </div>
+                                            <div class="desc font18">
+                                                {!!has_sub_field($item_achivement_year, 'achivement_name')!!}
+                                            </div>
                                         </div>
-                                    <p class="desc font18">Được Chủ tịch Nước CHXHCN Việt Nam  tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>.</p>
-                                    </div>
-                                    
-                                    <div class="top-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
-                                    <p><span class="year font24">2017</span></p>
-                                        </div>
-                                    <p class="desc font18">Được Chủ tịch Nước CHXHCN Việt Nam  tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
+                                        @endforeach
                                     </div>
                                 </div>
-                                <div class="bottom">
-                                    <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                        <div class="img-content">
-                                            <img src="{{ Theme::asset()->url('images/introduce/thi-1.png') }}" alt="">
-                                            <p><span class="year font24">2012, 2013, 2014</span></p>
-                                        </div>
-                                    
-                                    
-                                    <p class="desc font18">Được Chính phủ Nước CHXHCN Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
-                                    </div>
-                                    <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" >
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
-                                        <p><span class="year font24">Từ 2012-2015</span></p>
-                                        </div>
-                                        <p class="desc font18">Được Chính phủ Nước CHXHCN Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
-                                    </div>
-                                    <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/sao-vang.png') }}" alt="">
-                                    <p><span class="year font24">Từ 2012 – 2016</span></p>
-                                        </div>
-                                    <p class="desc font18">5 lần đạt giải thưởng<strong class="font-myria-bold"> “ Sao vàng Đất Việt”.</strong>.</p>
-                                    </div>
-                                    <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/th-qg.png') }}" alt="">
-                                        <p><span class="year font24">Từ 2012 – 2020</span></p>
-                                        </div>
-                                    <p class="desc font18">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
-                                    </div>
-                                    <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/dn-thue.png') }}" alt="">
-                                    <p><span class="year font24">2020</span></p>
-                                        </div>
-                                    <p class="desc font18">Được Tổng Cục Thuế Tuyên dương <strong class="font-myria-bold">Doanh nghiệp nộp thuế tiêu biểu</strong>.</p>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        @endforeach
                     </div>
-                    {{-- <div class="tab-pane fade" id="achievement-leader" role="tabpanel" aria-labelledby="achievement-leader-tab">
-                            <div class="content-tab">
-                                <p class="content-title font18 mt-40">
-                                    Từ lúc thành lập tới nay, Thaco đã vinh dự nhận được nhiều bằng khen, giải thưởng các cấp vinh danh những đóng góp và thành tích của công ty trong hoạt động sản xuất kinh doanh, hoạt động cộng đồng xã hội và sự nghiệp xây dựng, bảo vệ Tổ quốc:
-                                </p>
-                                <div class="top">
-                                    <div class="top-content">
-                                        <div class="img-content">
-                                            <img src="{{ Theme::asset()->url('images/introduce/h3.png') }}" alt="">
-                                            <p><span class="year font24">2002</span></p>
-                                        </div>
-                                    
-                                    
-                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng <strong class="font-myria-bold">Huân chương Lao động hạng ba</strong>.</p>
-                                    </div>
-                                    <div class="top-content">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/h2.png') }}" alt="">
-                                        <p><span class="year font24">2012</span></p>
-                                        </div>
-                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhì</strong>..</p>
-                                    </div>
-                                    <div class="top-content">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/h1.png') }}" alt="">
-                                    <p><span class="year font24">2017</span></p>
-                                        </div>
-                                    <p class="desc font18">Được Chủ tịch Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng thưởng  <strong class="font-myria-bold">Huân chương Lao động hạng Nhất</strong>.</p>
-                                    </div>
-                                </div>
-                                <div class="bottom">
-                                    <div class="bottom-content">
-                                        <div class="img-content">
-                                            <img src="{{ Theme::asset()->url('images/introduce/thi-1.png') }}" alt="">
-                                            <p><span class="year font24">2012, 2013, 2014</span></p>
-                                        </div>
-                                    
-                                    
-                                    <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
-                                    </div>
-                                    <div class="bottom-content">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/thi-2.png') }}" alt="">
-                                        <p><span class="year font24">Từ 2012-2015</span></p>
-                                        </div>
-                                        <p class="desc font18">Được Chính phủ Nước Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam tặng  <strong class="font-myria-bold">cờ thi đua Xuất sắc</strong>.</p>
-                                    </div>
-                                    <div class="bottom-content">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/sao-vang.png') }}" alt="">
-                                    <p><span class="year font24">Từ 2012 – 2016</span></p>
-                                        </div>
-                                    <p class="desc font18">5 lần đạt giải thưởng<strong class="font-myria-bold"> “ Sao vàng Đất Việt”.</strong>.</p>
-                                    </div>
-                                    <div class="bottom-content">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/th-qg.png') }}" alt="">
-                                        <p><span class="year font24">Từ 2012 – 2020</span></p>
-                                        </div>
-                                    <p class="desc font18">5 lần đạt <strong class="font-myria-bold">“Thương Hiệu Quốc Gia” </strong>- Bộ Công Thương.</p>
-                                    </div>
-                                    <div class="bottom-content">
-                                        <div class="img-content">
-                                        <img src="{{ Theme::asset()->url('images/introduce/dn-thue.png') }}" alt="">
-                                    <p><span class="year font24">2020</span></p>
-                                        </div>
-                                    <p class="desc font18">Được Tổng Cục Thuế Tuyên dương <strong class="font-myria-bold">Doanh nghiệp nộp thuế tiêu biểu</strong>.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                    </div> --}}
                 </div>    
     </div>
     

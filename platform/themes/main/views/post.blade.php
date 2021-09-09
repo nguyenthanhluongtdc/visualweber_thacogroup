@@ -223,8 +223,13 @@
                 </div>
                 <div class="post-content">
                     <p class="text-post"> {{$post->description}}</p>
-                 
-                    {!! $post->content !!}
+                    
+                    <div class="text-content">
+                        <p>
+                            {!! $post->content !!}
+                        </p>
+                    </div>
+                   
                    
 
                 </div>
