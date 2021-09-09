@@ -73,11 +73,11 @@
                 @media only screen and (max-width: 768px){
                     margin: 10px 30px auto 30px;
                 }
-                @media only screen and (max-width: 480px){
+                @media only screen and (max-width: 630px){
                     margin: -5px 30px auto 30px;
                 } 
                 @media only screen and (max-width: 400px){
-                    margin: -14px 30px auto 30px;
+                    margin: -10px 30px auto 30px;
                 }
                 img {
                     @media screen and (max-width: 1440px) {
@@ -87,8 +87,8 @@
                     @media only screen and (max-width: 768px){
                         transform: scale(.5);
                     }
-                    @media only screen and (max-width: 480px){
-                        transform: scale(.3);
+                    @media only screen and (max-width: 630px){
+                        transform: scale(.35);
                     }
                     @media only screen and (max-width: 350px){
                         transform: scale(.25);
@@ -112,8 +112,11 @@
                     
                 }
                 @media only screen and (max-width: 480px){
-                    bottom: 15%;
+                    bottom: 17%;
                     
+                }
+                @media only screen and (max-width: 400px){
+                    bottom: 10%;
                 }
                 h3{
                     @media only screen and (max-width: 768px){
@@ -122,6 +125,7 @@
                     @media only screen and (max-width: 480px){
                         font-size: 14px !important;
                     }
+                   
                     
                 }
             }
