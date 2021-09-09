@@ -26,7 +26,14 @@ class InvestorRelationsForm extends FormAbstract
             $categories[$row->id] = $row->indent_text . ' ' . $row->name;
         }
         $categories = [0 => trans('plugins/blog::categories.none')] + $categories;
+
+        //dd(get_page_templates());
         
+        $templates = [
+            'rules-regulation' => __('Giao diện 1'),
+            'annual-report' => __('Giao diện 2'),
+        ];
+
         $this
             ->setupModel(new InvestorRelations)
             ->setValidatorClass(InvestorRelationsRequest::class)
@@ -82,7 +89,7 @@ class InvestorRelationsForm extends FormAbstract
             ->add('template', 'customSelect', [
                 'label'      => trans('core/base::forms.template'),
                 'label_attr' => ['class' => 'control-label required'],
-                'choices'    => get_page_templates(),
+                'choices'    => $templates,
             ])
             ->setBreakFieldPoint('status');
     }
