@@ -1,25 +1,4 @@
-.banner-introduce{
-    img{
-        height: 45vw;
-        object-fit: cover;
-        @media only screen and (max-width: 1556px){
-            height: 60vw;
-        } 
-        @media only screen and (max-width: 1200px){
-            height: 70vw;
-        } 
-        @media only screen and (max-width: 1080px){
-            height: 100vw;
-        } 
-        @media only screen and (max-width: 767px){
-            height: 120vw;
-        }
-        @media only screen and (max-width: 480px){
-            height: 180vw;
-        }
-    }
-    
-}
+
 .contact-wrapper {
     
     max-width: 1016px;
@@ -54,7 +33,7 @@
             }
             @media only screen and (max-width: 1080px){ height: 22vw; }
             @media only screen and (max-width: 480px){height: 27vw;}
-            @media only screen and (max-width: 350px){height: 35vw;}
+            @media only screen and (max-width: 350px){height: 32vw;}
             &:hover {
                 box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
                 transition: all .5s;
@@ -74,7 +53,7 @@
                     margin: 10px 30px auto 30px;
                 }
                 @media only screen and (max-width: 630px){
-                    margin: -5px 30px auto 30px;
+                    margin: -3px 30px auto 30px;
                 } 
                 @media only screen and (max-width: 400px){
                     margin: -10px 30px auto 30px;
@@ -88,9 +67,9 @@
                         transform: scale(.5);
                     }
                     @media only screen and (max-width: 630px){
-                        transform: scale(.35);
+                        transform: scale(.4);
                     }
-                    @media only screen and (max-width: 350px){
+                    @media only screen and (max-width: 360px){
                         transform: scale(.25);
                     }
                 }
@@ -159,7 +138,10 @@
     .office-contact-wrapper {
         @media only screen and (max-width: 992px){
             margin-top: 20px !important;
-        }
+        }  
+        
+        padding-right: 0;
+        padding-left: 0;
         .office-item {
             display: flex;
             box-shadow: rgb(0 0 0 / 20%) 0px 5px 15px;
@@ -167,8 +149,7 @@
             
             .left {
                 flex: 0 0 32.2%;
-                padding-right: 0;
-                padding-left: 0;
+              
                 @media only screen and (max-width: 1080px){
                     flex: 100%;
                     margin-bottom: -170px;
@@ -179,7 +160,7 @@
                 @media only screen and (max-width: 480px){margin-bottom: -70px;}
                 @media only screen and (max-width: 320px){margin-bottom: -60px;}
                 .office-name {
-                    height: 25%;
+                    height: 23%;
                     @media only screen and (max-width: 1080px){
                         height: 14%;
                     }
@@ -204,7 +185,7 @@
                     }
                 }
                 .office-image {
-                    height: 75%;
+                    height: 77%;
                     img {
                         max-width: 100%;
                         height: 100%;

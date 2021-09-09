@@ -1,6 +1,6 @@
 <section class="banner-introduce">
     @if(has_field($page, 'banner_contact'))
-    <img class=" img-mw-100" src="{{ Storage::disk('public')->exists(has_field($page,'banner_contact')) ? get_image_url(has_field($page,'banner_contact')) : RvMedia::getDefaultImage()}}" alt="">
+    <img class="h-100vh w-100" src="{{ Storage::disk('public')->exists(has_field($page,'banner_contact')) ? get_image_url(has_field($page,'banner_contact')) : RvMedia::getDefaultImage()}}" alt="">
     @endif
 </section>
 <section class="contact-content">
@@ -33,7 +33,10 @@
             
             @if(has_field($page, 'repeater_contact_info'))
             @foreach(has_field($page, 'repeater_contact_info') as $item)
-            <div class="office-item mb-100 row" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
+            <div class="office-item mb-100 " data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
+                <div class="row">
+
+                
                 <div class="left col-lg-12">
                     <div class="office-name">
                         <h3 class="name font21"> {!! has_sub_field($item, 'title') ? has_sub_field($item, 'title') : '' !!}</h3>
@@ -67,6 +70,7 @@
                         {!! has_sub_field($item, 'desc') ? has_sub_field($item, 'desc') : '' !!}
                     </div>
                 </div>
+            </div>
             </div>
             @endforeach
             @endif
