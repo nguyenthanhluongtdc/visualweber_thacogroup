@@ -77,14 +77,14 @@ class BlogService
 
                 Theme::breadcrumb()->add(__('Home'), route('public.index'));
 
-                $category = $post->categories->first();
+                $categories = $post->categories;
 
-                if($category->parent->id) {
-                    Theme::breadcrumb()->add($category->parent->name, $category->parent->url);
-                }
-
-                if ($category) {
-                    Theme::breadcrumb()->add($category->name, $category->url);
+                foreach($categories as $category) {
+                    if($category->parent->id) {
+                        Theme::breadcrumb()->add($category->parent->name, $category->parent->url)
+                                            ->add($category->name, $category->url);
+                       
+                    }
                 }
 
                 do_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, POST_MODULE_SCREEN_NAME, $post);
