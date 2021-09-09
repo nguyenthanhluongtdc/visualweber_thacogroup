@@ -21,7 +21,7 @@
     
 }
 .contact-wrapper {
-    overflow-x: hidden !important;
+    
     max-width: 1016px;
     margin: 0 auto;
     width: 80%;
@@ -51,7 +51,7 @@
             }
             @media only screen and (max-width: 1080px){ height: 22vw; }
             @media only screen and (max-width: 480px){height: 27vw;}
-            @media only screen and (max-width: 350px){height: 50vw;}
+            @media only screen and (max-width: 350px){height: 30vw;}
             &:hover {
                 box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
                 transition: all .5s;
