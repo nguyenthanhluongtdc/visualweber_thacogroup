@@ -18,6 +18,9 @@ use SiteMapManager;
 use SlugHelper;
 use Theme;
 use RvMedia;
+use Illuminate\Http\Request;
+use Platform\Blog\Supports\FilterPost;
+use Platform\Blog\Repositories\Interfaces\PostInterface;
 
 class MainController extends PublicController
 {
@@ -109,5 +112,21 @@ class MainController extends PublicController
         }
         abort(404);
         Theme::breadcrumb()->add(__('Trang chủ'), url("public.index"));
+    }
+
+    public function getSearch(Request $request, PostInterface $postRepository) {
+
+        if($request->has('keyword')) {
+            $request->merge(['search'=>$request->keyword]);
+            $request->request->remove('keyword');
+        }
+        
+        $filters = FilterPost::setFilters($request->input());
+
+        $data = $postRepository->getFilters($filters);
+
+        $total = $data->count();
+
+        return Theme::scope('search', compact('data'))->render();
     }
 }

@@ -47,9 +47,9 @@
                 <div class="dropdown-menu sm-menu dropdown--search">
                     <div class="row">
                         <div class="col-md-12">
-                            <form action="">
+                            <form action="{{route('public.search')}}">
                                 <div class="search-box input-group">
-                                    <input type="text" name="query" value="" aria-label="Search" class="form-control" placeholder="Tìm kiếm... ">
+                                    <input type="text" name="keyword" value="" aria-label="Search" class="form-control" placeholder="Tìm kiếm... ">
                                     <div class="input-group-append">
                                         <button class="btn btn-secondary" type="submit">
                                             <i class="fa fa-search"></i>

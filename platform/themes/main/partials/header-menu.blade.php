@@ -10,14 +10,12 @@
     <li class="item-top ">
         <ul class="language">
             <li class="lang lang-vi">
-                <a class="item-top__link" rel="alternate" hreflang="vi" href="#">
-
+                <a class="item-top__link" rel="alternate" hreflang="vi" href="{{ Language::getLocalizedURL('vi') }}">
                     <span>VN</span>
                 </a>
             </li>
             <li class="lang lang-en ">
-                <a class="item-top__link" rel="alternate" hreflang="en" href="#">
-
+                <a class="item-top__link" rel="alternate" hreflang="en" href="{{ Language::getLocalizedURL('en') }}">
                     <span>EN</span>
                 </a>
             </li>

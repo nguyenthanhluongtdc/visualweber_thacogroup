@@ -59,7 +59,7 @@ class PostInvestorServiceProvider extends ServiceProvider
                     // })
                     ->expandRule('other', 'Model', 'model_name', function () {
                         return [
-                            PostInvestor::class => __('Quan hệ cổ đông'),
+                            PostInvestor::class => __('Bài viết quan hệ cổ đông'),
                         ];
                     });
             }

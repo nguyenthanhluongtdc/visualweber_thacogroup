@@ -16,6 +16,9 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
             } 
         })->name('public.downloadFile');
 
+        Route::get('/search', 'MainController@getSearch')
+                ->name('public.search');
+
     });
 });
 

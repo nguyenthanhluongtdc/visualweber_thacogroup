@@ -77,7 +77,7 @@ class BlogService
 
                 Theme::breadcrumb()->add(__('Home'), route('public.index'));
 
-                $categories = $post->categories;
+                $categories = $post->categories->where('status', BaseStatusEnum::PUBLISHED);
 
                 foreach($categories as $category) {
                     if($category->parent->id) {
