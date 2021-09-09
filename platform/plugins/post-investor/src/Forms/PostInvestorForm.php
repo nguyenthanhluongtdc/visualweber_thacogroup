@@ -51,6 +51,10 @@ class PostInvestorForm extends FormAbstract
                 'choices'    => get_all_investor_categories(),
                 'value'      => old('categories', $selectedCategories),
             ])
+            ->add('image', 'mediaImage', [
+                'label'      => trans('core/base::forms.image'),
+                'label_attr' => ['class' => 'control-label'],
+            ])
             ->setBreakFieldPoint('status');
     }
 }

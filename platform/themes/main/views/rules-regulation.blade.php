@@ -96,6 +96,11 @@
                                         </div>
                                     </div>
                                 @empty
+
+                                <p class="text-center text-danger">
+                                    {!! __('Đang được cập nhật') !!}
+                                </p>
+                                    
                                 @endforelse
 
                                 {{-- <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" class="aos-init aos-animate">
@@ -366,71 +371,18 @@
                                 </div> --}}
 
                             </div>
-                            <div class="page-pagination mt-40 mb-40">
-                                <ul class="pagination font18">
-                                    <li class="page-item active">
-                                        <a href="" class="page-link">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            2
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            3
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            4
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            5
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            6
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            7
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            >
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="" class="page-link">
-                                            >>
-                                        </a>
-                                    </li>
-                                   
-                                </ul>
-                            </div>
+                            @if(!empty($data))
+                                {{ $data->links('vendor.pagination.custom') }}
+                            @endif
                         </div>
-                        <div class="relationship-sibar">
-                            <div class="relationship__content">
-                                <div class="list-relationship-menu" data-aos="flip-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                    <h3 class="font28 font-myria-bold">QUAN HỆ CỔ ĐÔNG</h3>
-                                    <a href="/dieu-le-quy-che" class="item_link list-group-item font18 font-myria-bold active">Điều lệ quy chế</a>
-                                    <a href="/cong-bo-thong-tin" class="item_link list-group-item  font18 font-myria-bold">Công bố thông tin</a>
-                                    <a href="/thong-tin-co-dong" class="item_link list-group-item  font18 font-myria-bold ">Thông tin cổ đông</a>
-                                    <a href="/bao-cao-thuong-nien" class="item_link list-group-item  font18 font-myria-bold">Báo cáo thường niên</a>
-                                    <a href="/bao-cao-tai-chinh" class="item_link list-group-item  font18 font-myria-bold">Báo cáo tài chính</a>
-                                   
-                                </div>
-                             
-                            </div>
-                        </div>
+                        
+                        {!!
+                            Menu::renderMenuLocation('menu-investor-relations', [ 
+                                'options' => [],
+                                'theme'   => true,
+                                'view'    => 'menu-investor-relations'
+                            ])
+                        !!}
                
              </div>
         </div>

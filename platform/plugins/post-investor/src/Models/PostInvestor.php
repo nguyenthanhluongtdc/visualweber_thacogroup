@@ -24,6 +24,7 @@ class PostInvestor extends BaseModel
      */
     protected $fillable = [
         'name',
+        'image',
         'status',
     ];
 

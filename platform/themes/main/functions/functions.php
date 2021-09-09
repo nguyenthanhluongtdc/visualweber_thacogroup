@@ -22,6 +22,8 @@ register_page_template([
     'field-activity' => 'Field Activity',
 ]);
 
+Menu::addMenuLocation('menu-investor-relations', 'Quan hệ cổ đông');
+
 register_sidebar([
     'id'          => 'second_sidebar',
     'name'        => 'Second sidebar',
