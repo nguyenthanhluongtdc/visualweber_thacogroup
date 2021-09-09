@@ -222,12 +222,10 @@
 
                 </div>
                 <div class="post-content">
-                    <p class="text-post"> {{$post->description}}</p>
-                    
                     <div class="text-content">
-                        <p>
+                      
                             {!! $post->content !!}
-                        </p>
+                       
                     </div>
                    
                    
