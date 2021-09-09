@@ -2,8 +2,20 @@
     img{
         height: 45vw;
         object-fit: cover;
+        @media only screen and (max-width: 1556px){
+            height: 60vw;
+        } 
+        @media only screen and (max-width: 1200px){
+            height: 70vw;
+        } 
         @media only screen and (max-width: 1080px){
-            height: 100vw !important;
+            height: 100vw;
+        } 
+        @media only screen and (max-width: 767px){
+            height: 120vw;
+        }
+        @media only screen and (max-width: 480px){
+            height: 180vw;
         }
     }
     
@@ -37,9 +49,9 @@
                 padding: 2%;
                
             }
-            @media only screen and (max-width: 1080px){ height: 22vw;}
+            @media only screen and (max-width: 1080px){ height: 22vw; }
             @media only screen and (max-width: 480px){height: 27vw;}
-            @media only screen and (max-width: 350px){height: 30vw;}
+            @media only screen and (max-width: 350px){height: 50vw;}
             &:hover {
                 box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
                 transition: all .5s;
@@ -273,6 +285,8 @@
                 margin-bottom: 30px;
                 text-align: center;
                 text-transform: uppercase;
+                @media only screen and (max-width: 1080px){ font-size: 25px;}
+                @media only screen and (max-width: 480px){ font-size: 20px;}
             }
             input,
             textarea,
