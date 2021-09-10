@@ -10,7 +10,7 @@ body {
     }
 }
 
-.container-customize {
+.container-customize { 
     padding-left: 11.6%;
     padding-right: 11.6%;
     @media (max-width: 1680px) {
@@ -61,7 +61,7 @@ body {
 }
 
 .mt-60 {
-    margin-top: 60px;
+    margin-top: 60px; 
 }
 
 .pt-40 {
@@ -102,7 +102,7 @@ body {
 
 .font-myria-bold {
     font-family: $MyriadPro-Bold;
-}
+} 
 
 .text-white {
     color: #fff;

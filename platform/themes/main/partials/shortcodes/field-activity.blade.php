@@ -34,7 +34,7 @@ $page = app(PageInterface::class)->findById($homepageId);
         @else
         @php
            $item_field =  get_field($page,'about_us_field_16309827261')
-        @endphp
+        @endphp 
     
         <div class="field-activity__item">
             <a href="/oto-cokhi">

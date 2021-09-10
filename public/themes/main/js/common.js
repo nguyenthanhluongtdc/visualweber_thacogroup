@@ -574,3 +574,44 @@ $('#mask').click(function() {
     $('.window').hide();
 });
 //end popup
+
+
+//slide feild of activity
+
+let commercialFieldSlider = new Swiper('.commercial-field-slider', {
+    speed: 1500,
+    loop: true,
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.commercial-field-slider .swiper-pagination',
+        clickable: true,
+    },
+    
+   
+})
+
+$(document).ready(function() {
+    var $swiper = $(".slide-news");
+    var $bottomSlide = null; 
+    var $bottomSlideContent = null; 
+    var mySwiper = new Swiper(".slide-news", {
+      spaceBetween: 1,
+      slidesPerView: 3,
+      centeredSlides: true,
+      roundLengths: true,
+      loop: true,
+      loopAdditionalSlides: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      pagination: {
+        el: '.slide-news .swiper-pagination',
+        clickable: true,
+    },
+    });
+  });
+  

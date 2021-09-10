@@ -1,42 +1,213 @@
-.activity .item-slider-top{
-    position: relative;
-    .post-banner{
-        position: absolute;
-        bottom: 20%;
-        right: 10%;
-        width: 605px;
-        background: rgba(161 , 161, 161 , 0.8);
-        padding: 40px;
-        color: #fff;
-        h2{
-            font-size: 30px;
-            font-family: $MyriadPro-Bold;
-            text-transform: uppercase;
-            line-height: 41px;
-            padding-top: 20px;
-            position: relative;
-            &::before{
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background: #fff;
-                width: 50%;
-                height: 4px;
-            }
-        }
-        p{
-            font-family: $MyriadPro-Regular;
-        }
-        a.link{
+.field-of-activity{
+    .item-slider-top{
+        position: relative;
+        .post-banner{
+            position: absolute;
+            bottom: 20%;
+            right: 10%;
+            width: 605px;
+            background: rgba(161 , 161, 161 , 0.8); 
+            padding: 40px;
             color: #fff;
-            float: right;
-            font-size: 17px;
-            font-family: $MyriadPro-Bold;
-            text-transform: uppercase;
-            span{
-                margin-left: 10px;
+            h2{
+                font-size: 30px;
+                font-family: $MyriadPro-Bold;
+                text-transform: uppercase;
+                line-height: 41px;
+                padding-top: 20px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #fff;
+                    width: 50%;
+                    height: 4px;
+                }
             }
+            p{
+                font-family: $MyriadPro-Regular;
+            }
+            a.link{
+                color: #fff;
+                float: right;
+                font-size: 17px;
+                font-family: $MyriadPro-Bold;
+                text-transform: uppercase;
+                span{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .commercial-field{
+        display: flex;
+       
+        &__left{
+            flex: 50% ; 
+           
+            .left-top{
+                display: flex;
+
+                img{
+                    width: 30px;
+                    height: 40px;
+                    align-self: center;
+                }
+                h3{
+                    align-self: center;
+                    margin: 7px 0 7px 5px;
+                    font-weight: bolder;
+                    color: #c2c0c0;
+                    font-family: $MyriadPro-Bold;
+                }
+            }
+            .content{
+                padding: 0 10%;
+                text-align: justify;
+            }
+        }
+        &__right{
+           
+            flex: 50%;
+            .commercial-field-slider{
+                padding-left: 5%;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                .swiper-slide{
+                    width: 100% !important;
+                  
+                } 
+
+               
+                
+            }
+            .commercial-field-slider.swiper-container-horizontal .swiper-pagination-bullet {
+                background: #fff!important;
+                border: 1px solid #000 !important; 
+            }
+            .commercial-field-slider.swiper-container-horizontal .swiper-pagination-bullet-active {
+                background: #000!important;
+                border: 1px solid #000 !important; 
+            }
+            //  .commercial-field-slider.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+            //     border: 1px solid black !important;
+               
+            //  }
+        }
+    }
+    .future-goal-banner-activity {
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 34.2%;
+        .future-goal-wrapper {
+            position: absolute;
+            color: $white;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            .future-goal {
+                img {
+                    height: 95px;
+                    width: 95px;
+                }
+                .title {
+                    font-family: $MyriadPro-Bold;
+                    margin-bottom: 40px;
+                    margin-top: 30px;
+                    text-transform: uppercase;
+                }
+                .desc {
+                    font-family: $MyriadPro-Bold;
+                }
+                border-right: 1px solid $white;
+
+                height: 100%;
+            }
+            .future-goal.last {
+                border: unset;
+            }
+        }
+    }
+    .activity-news{
+        &__top{
+            display: flex;
+            .title{
+                display: flex;
+    
+                img{
+                    width: 30px;
+                    height: 40px;
+                    align-self: center;
+                }
+                h2{
+                    align-self: center;
+                    margin: 7px 0 7px 5px;
+                    font-weight: bolder;
+                    color: #c2c0c0;
+                    font-family: $MyriadPro-Bold;
+                }
+            }
+            .readmore{
+                position: absolute;
+                right: 5%;
+                align-self: center;
+                
+            }
+        }
+        .slide-news {
+            position:relative;
+            width: 95vw;
+            height: 300px;
+           
+        }
+        .slide-news > .swiper-slide__content {
+          position:absolute;
+          top:0;
+         
+        }
+        
+        .swiper-slide {
+          height: 300px;
+          display:flex;
+          background: #eee;
+          align-items: center;
+          justify-content:center;
+          transition:all 200ms linear;
+          transform: scale(0.8);
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          
+          &.swiper-slide-active{
+            transform: scale(1);
+            background: #fc0
+          }
+        }
+        .swiper-slide__content {
+          height: 300px;
+        }
+        .swiper-container-horizontal > .swiper-pagination-bullets{
+           
+        }
+        .swiper-pagination{
+           
+        }
+        .slide-news.swiper-container-horizontal .swiper-pagination-bullet {
+            background: #fff!important;
+            border: 1px solid #000 !important; 
+            width: 11px !important;
+            height: 11px !important;
+        }
+        .slide-news.swiper-container-horizontal .swiper-pagination-bullet-active {
+            background: #b7b6b6!important;
+            border: 1px solid #b7b6b6 !important; 
         }
     }
 }
