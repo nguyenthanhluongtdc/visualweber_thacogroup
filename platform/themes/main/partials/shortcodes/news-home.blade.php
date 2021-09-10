@@ -18,7 +18,7 @@
                                        
                                         <span class="time">{{date_format($item_post->created_at,"d-m-Y")}}</span>
                                         <p class="description font18 text-justify">{{$item_post->description}}</p>
-                                        <a href="" class="read-more" title="Xem thêm">Xem thêm</a>
+                                        <a href="{{$item_post->url}}" class="read-more" title="Xem thêm">Xem thêm</a>
                                     </div>
                         </div>
                     </div>

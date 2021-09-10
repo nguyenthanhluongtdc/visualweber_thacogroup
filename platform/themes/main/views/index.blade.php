@@ -17,7 +17,7 @@
                        {{$post[0]->description}}
                         </p>
                     </div>
-                    <a href="" class="read-more" title="Xem thêm">Xem thêm</a>
+                    <a href="{{$post[0]->url}}" class="read-more" title="Xem thêm">Xem thêm</a>
                 </div>
                 @endif
             </div>
