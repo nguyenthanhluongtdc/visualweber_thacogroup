@@ -24,11 +24,21 @@ class PublicController extends BaseController {
         if(!$slug) {
             abort(404);
         }
-
         $categoryId = $slug->reference_id;
 
         $category = app(InvestorRelationsInterface::class)
         ->getFirstBy(['id'=>$categoryId], ['*'], ['slugable']);
+        
+        if ($category->slug!=null && $category->slug !== $slug->key) {
+            $params = [];
+            foreach($request->query() as $key => $value) {
+                $params[] = $key.'='.$value;
+            }
+
+            $params = !empty($params)?'/search?'.implode('&', $params):'';
+
+            return redirect()->to(route('public.single', $category->slug . $params));
+        }
 
         $data = $this->postInvestorRepository->getModel()
         ->whereHas('categories', function ($model) use ($categoryId, $keyword) {

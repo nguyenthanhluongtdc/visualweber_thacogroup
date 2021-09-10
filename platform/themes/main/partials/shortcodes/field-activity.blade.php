@@ -118,6 +118,3 @@ $page = app(PageInterface::class)->findById($homepageId);
         @endif
     </div>
 </div>
-{{-- @if($i>5)
-
-@endif --}}

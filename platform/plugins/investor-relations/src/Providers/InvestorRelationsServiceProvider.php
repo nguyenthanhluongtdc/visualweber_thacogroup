@@ -35,9 +35,9 @@ class InvestorRelationsServiceProvider extends ServiceProvider
             ->loadRoutes(['web']);
 
         Event::listen(RouteMatched::class, function () {
-            // if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
-            //    \Language::registerModule([InvestorRelations::class]);
-            // }
+            if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
+               \Language::registerModule([InvestorRelations::class]);
+            }
 
             dashboard_menu()
             ->registerItem([
