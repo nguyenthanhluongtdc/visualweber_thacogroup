@@ -20,6 +20,8 @@ register_page_template([
     'media-gallery' => 'Media Gallery',
     'contact' => 'Contact',
     'field-activity' => 'Field Activity',
+    'field-of-activity' => 'Field Of Activity'
+
 ]);
 
 Menu::addMenuLocation('menu-investor-relations', 'Quan hệ cổ đông');

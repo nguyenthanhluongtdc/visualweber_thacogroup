@@ -1,0 +1,42 @@
+.activity .item-slider-top{
+    position: relative;
+    .post-banner{
+        position: absolute;
+        bottom: 20%;
+        right: 10%;
+        width: 605px;
+        background: rgba(161 , 161, 161 , 0.8);
+        padding: 40px;
+        color: #fff;
+        h2{
+            font-size: 30px;
+            font-family: $MyriadPro-Bold;
+            text-transform: uppercase;
+            line-height: 41px;
+            padding-top: 20px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #fff;
+                width: 50%;
+                height: 4px;
+            }
+        }
+        p{
+            font-family: $MyriadPro-Regular;
+        }
+        a.link{
+            color: #fff;
+            float: right;
+            font-size: 17px;
+            font-family: $MyriadPro-Bold;
+            text-transform: uppercase;
+            span{
+                margin-left: 10px;
+            }
+        }
+    }
+}

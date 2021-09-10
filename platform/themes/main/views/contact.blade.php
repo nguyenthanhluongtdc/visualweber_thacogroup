@@ -3,7 +3,7 @@
     <img class="h-100vh w-100" src="{{ Storage::disk('public')->exists(has_field($page,'banner_contact')) ? get_image_url(has_field($page,'banner_contact')) : RvMedia::getDefaultImage()}}" alt="">
     @endif
 </section>
-<section class="contact-content overflow-x-hidden">
+<section class="contact-content">
     <div class="contact-wrapper">
         <div class="contact-title  mt-60 mb-60" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             @if(has_field($page, 'banner_contact'))

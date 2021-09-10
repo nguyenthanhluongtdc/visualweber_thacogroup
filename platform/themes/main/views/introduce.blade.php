@@ -57,11 +57,14 @@
                     </div>
                     <div class="admin-content {{$key == 0 ? 'top' : 'bottom'}}" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                         @foreach (has_sub_field($item_council, 'council_member') as $item_member)
+                        {{-- @dd(Str::slug({{has_sub_field($item_member, 'name')}})) --}}
                         <div class="item-member">
-                            <div class="admin-item" data-target="#info_admin_modal" data-toggle="modal">
+
+                            <div class="admin-item" data-target="#{{Str::slug(has_sub_field($item_member, 'name'))}}" data-toggle="modal">
                                 <img src="{{ get_image_url(has_sub_field($item_member, 'image')) }}" alt=" {!! has_sub_field($item_member, 'name')!!}">
                                
                                 <div class="name">
+                                  
                                     {!! has_sub_field($item_member, 'name')!!}
                                 </div>
                                 <div class="postion">
@@ -69,77 +72,14 @@
                                 </div>
                             </div>
                         </div>
-                       
+                        
                         @endforeach
+                       
                     </div>
+                  
                     @endforeach
-                    <div class="modal fade" id="info_admin_modal" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body mCustomScrollbar p-0" data-mcs-theme="dark">
-                                    
-                                    <div class="row mr-md-0">
-                                       
-                                        <div class="col-md-4 p-0 col-12 col-right pl-md-4">
-                                            <img class="w-100" src="{{Theme::asset()->url('images/introduce/anh-modal.jpg')}}" alt="">
-                                           
-                                        </div>
-                                        <div class="col-md-8">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <i class="fal fa-times"></i>
-                                                </button>
-                                            
-                                            <div class="info-admin">
-                                                <p class="name">Tên  : <strong class="">Trần Bá Dương</strong>  </p>
-                                                <p class="bof">Sinh năm  : <span>01/04/1960</span> </p>
-                                                <p class="addres-bof">Nơi sinh  : <span>TP. Huế, tỉnh Thừa Thiên Huế                            </span> </p>
-                                            </div>
-                                                
-                                        </div>
-                                    </div>
-                                   
-                                    <div class="work-progress">
-                                        <h3 class="title font20">QUÁ TRÌNH LÀM VIỆC TẠI THACO</h3>
-                                        <div class="work-progress-table">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                    
-                                                    <th scope="col">Vị trí</th>
-                                                    <th scope="col">Tổ chức</th>
-                                                    <th scope="col">Thời gian bổ nhiệm</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                    <td>Lorem Ipsum</td>
-                                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
-                                                    <td>8/1/2021</td> 
-                                                    </tr>
-                                                    <tr>
-                                                    <td>Lorem Ipsum</td>
-                                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
-                                                    <td>8/1/2021</td> 
-                                                    </tr>
-                                                    <tr>
-                                                    <td>Lorem Ipsum</td>
-                                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
-                                                    <td>8/1/2021</td> 
-                                                    </tr>
-                                                    <tr>
-                                                    <td>Lorem Ipsum</td>
-                                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing	</td>
-                                                    <td>8/1/2021</td> 
-                                                    </tr>
-                                                    
-                                                </tbody>
-                                                </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                  
                 </div>
                
                 <div class="achievement-wrapper mt-40">
@@ -253,4 +193,57 @@
     </div>
     
 </section>
+@foreach (has_field($page, 'council') as $key => $item_council_2)
+@foreach (has_sub_field($item_council_2, 'council_member') as $item_member)
+<div class="modal fade modal_admin" id="{{Str::slug(has_sub_field($item_member, 'name'))}}" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body mCustomScrollbar p-0" data-mcs-theme="dark">
+                <div class="row mr-md-0">
+                    <div class="col-md-4 p-0 col-12 col-right pl-md-4">
+                        <img class="w-100" src="{{ get_image_url(has_sub_field($item_member, 'image')) }}" alt="{!! has_sub_field($item_member, 'name')!!}">
+                       
+                    </div>
+                    <div class="col-md-8">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="fal fa-times"></i>
+                            </button>
+                        
+                        <div class="info-admin">
+                            {!! has_sub_field($item_member, 'info_work_detail')!!}
+                        </div>
+                            
+                    </div>
+                </div>
+               
+                <div class="work-progress">
+                    <h3 class="title font20">QUÁ TRÌNH LÀM VIỆC TẠI THACO</h3>
+                    <div class="work-progress-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                
+                                <th scope="col">Vị trí</th>
+                                <th scope="col">Tổ chức</th>
+                                <th scope="col">Thời gian bổ nhiệm</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (has_sub_field($item_member, 'works_for') as $key  =>  $item_work)
+                                <tr>
+                                <td> {{ has_sub_field($item_work, 'position')}}</td>
+                                <td>{!! has_sub_field($item_work, 'organization')!!}	</td>
+                                <td>{{has_sub_field($item_work, 'time_start')}}</td> 
+                                </tr>
+                                @endforeach
+                            </tbody>
+                            </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endforeach
+@endforeach
 

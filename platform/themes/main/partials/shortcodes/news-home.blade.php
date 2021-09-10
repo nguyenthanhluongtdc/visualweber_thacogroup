@@ -33,7 +33,7 @@
             <div class="post-slider">
                 <div class="swiper-container post-slide-bottom">
                     <div class="swiper-wrapper">
-                        @if($post_home_bottom = get_posts_by_category(16,6))
+                        @if($post_home_bottom =get_recent_posts(6))
                         @foreach ($post_home_bottom as $post_bottom)
                             <div class="swiper-slide d-flex justify-content-center">             
                                     <div class="post_content_bottom h-100">
