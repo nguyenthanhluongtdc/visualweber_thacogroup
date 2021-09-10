@@ -1,13 +1,19 @@
+
 .contact-wrapper {
+    
     max-width: 1016px;
     margin: 0 auto;
     width: 80%;
+    
     .contact-title {
         text-align: center;
         font-family: $MyriadPro-Bold;
     }
     .contact-box {
         display: flex;
+        @media only screen and (max-width: 992px){
+            margin-top: 20px !important;
+        }
         &__item {
             display: flex;
             flex-direction: column;
@@ -23,7 +29,11 @@
             cursor: pointer;
             @media screen and (max-width: 1440px) {
                 padding: 2%;
+               
             }
+            @media only screen and (max-width: 1080px){ height: 22vw; }
+            @media only screen and (max-width: 480px){height: 30vw;}
+            @media only screen and (max-width: 350px){height: 35vw;}
             &:hover {
                 box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
                 transition: all .5s;
@@ -36,22 +46,96 @@
             }
             .image {
                 margin: 30px;
+                @media only screen and (max-width: 1080px){
+                    margin: 20px 30px auto 30px;
+                }
+                @media only screen and (max-width: 768px){
+                    margin: 10px 30px auto 30px;
+                }
+                @media only screen and (max-width: 630px){
+                    margin: -3px 30px auto 30px;
+                } 
+                @media only screen and (max-width: 400px){
+                    margin: -10px 30px auto 30px;
+                }
                 img {
                     @media screen and (max-width: 1440px) {
                         transform: scale(.7);
+                    }
+                   
+                    @media only screen and (max-width: 768px){
+                        transform: scale(.5);
+                    }
+                    @media only screen and (max-width: 630px){
+                        transform: scale(.36);
+                    }
+                    @media only screen and (max-width: 360px){
+                        transform: scale(.28);
                     }
                 }
             }
             .content {
                 padding-bottom: 20px;
                 position: relative;
+                @media only screen and (max-width: 1080px){display: none;}
             }
+            .title{
+                position: relative;
+                padding-bottom: 0;
+                @media only screen and (max-width: 1080px){
+                    position: absolute;
+                    bottom: 23%;
+                }
+                @media only screen and (max-width: 768px){
+                    bottom: 18%;
+                    
+                }
+                @media only screen and (max-width: 480px){
+                    bottom: 17%;
+                    
+                }
+                @media only screen and (max-width: 400px){
+                    bottom: 10%;
+                }
+                h3{
+                    @media only screen and (max-width: 768px){
+                        font-size: 18px !important;
+                    }
+                    @media only screen and (max-width: 520px){
+                        font-size: 16px !important;
+                    }
+                    @media only screen and (max-width: 400px){
+                        font-size: 15px !important;
+                    }
+                    @media only screen and (max-width: 300px){
+                        font-size: 12px !important;
+                    }
+                   
+                    
+                }
+            }
+           
             i {
                 position: absolute;
                 opacity: 0;
                 visibility: hidden;
                 bottom: 20px;
                 font-size: 22px;
+                
+                @media only screen and (max-width: 768px){
+                    bottom: 12px;
+                    font-size: 18px;
+                    
+                }
+               
+                @media only screen and (max-width: 480px){
+                    font-size: 12px ;
+                }
+                @media only screen and (max-width: 400px){
+                    font-size: 10px ;
+                    bottom: 6px;
+                }
+                
             }
         }
         &__item:last-child {
@@ -59,27 +143,69 @@
         }
     }
     .office-contact-wrapper {
+        @media only screen and (max-width: 992px){
+            margin-top: 20px !important;
+        }  
+        
+        // padding-right: 0;
+        // padding-left: 0;
         .office-item {
             display: flex;
             box-shadow: rgb(0 0 0 / 20%) 0px 5px 15px;
             transition: all 0.5s;
+            
             .left {
                 flex: 0 0 32.2%;
+              
+                @media only screen and (max-width: 1080px){
+                    flex: 100%;
+                    margin-bottom: -250px;
+                }
+                @media only screen and (max-width: 992px){margin-bottom: -210px;}
+                @media only screen and (max-width: 820px){margin-bottom: -180px;}
+                @media only screen and (max-width: 768px){margin-bottom: -165px;}
+                @media only screen and (max-width: 640px){margin-bottom: -130px;}
+                @media only screen and (max-width: 480px){margin-bottom: -85px;}
+                @media only screen and (max-width: 320px){margin-bottom: -60px;}
                 .office-name {
-                    height: 25%;
+                    height: 23%;
+                    @media only screen and (max-width: 1080px){
+                        height: 14%;
+                    }
                     .name {
                         text-align: center;
                         background-color: $main_color;
                         padding: 8.5% 0;
                         margin-bottom: 0;
                         color: $white;
+                        
+                        @media only screen and (max-width: 1080px){
+                            padding: 4.5% 0;
+                        }
+                        @media only screen and (max-width: 480px){
+                           font-size: 20px !important;
+                            
+                        }
+                        @media only screen and (max-width: 350px){
+                            font-size: 18px !important;
+                             
+                         }
                     }
                 }
                 .office-image {
-                    height: 75%;
+                    height: 77%;
                     img {
                         max-width: 100%;
                         height: 100%;
+                        @media only screen and (max-width: 1080px){
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    @media only screen and (max-width: 1080px){
+                        width: 100%;
+                        height: 50%;
+                        object-fit: cover;
                     }
                 }
             }
@@ -88,6 +214,14 @@
                 margin: 2% 0;
                 padding: 0 5%;
                 color: #303030;
+                
+                @media only screen and (max-width: 1080px){
+                    flex: 100%;
+                    margin: 2%;
+                }
+                @media only screen and (max-width: 420px){
+                    margin: 2% 5%;
+                }
                 @media screen and(max-width: 1100px) {
                     font-size: 16px;
                 }
@@ -97,21 +231,49 @@
                     padding-bottom: 3.4%;
                     display: flex;
                     align-items: center;
+                    
+                     @media only screen and (max-width: 480px){
+                        font-size: 14px !important;
+                         
+                     }
                     p {
                         margin-bottom: 0;
                         margin-left: 10px;
+                        @media only screen and (max-width: 1080px){
+                            >span{
+                                display: none;
+                            }
+                        }
                     }
                     a {
                         color: #303030;
                         margin-left: 3px;
                     }
                 }
+                .office-address{
+                   position: relative;
+                   top: 0;
+                   i{
+                       position: absolute;
+                       top: 5px;
+                      
+                   }
+                   p{
+                    margin-left: 25px;
+                   }
+                   
+                }
                 .office-email {
                     border-bottom: 1px solid #303030;
+                    @media only screen and (max-width: 1080px){border-bottom: none;}
                 }
                 .desc {
                     padding-top: 3.4%;
                     text-align: justify;
+                    @media only screen and (max-width: 1080px){display: none;}
+                }
+                i{
+                    opacity: 60%;
                 }
             }
         }
@@ -124,6 +286,7 @@
         justify-content: center;
         .contact-fo-container {
             max-width: 70%;
+            @media only screen and (max-width: 1080px){ max-width: 100%;}
             h2 {
                 color: $main-color;
                 font-family: $MyriadPro-Bold;
@@ -131,6 +294,8 @@
                 margin-bottom: 30px;
                 text-align: center;
                 text-transform: uppercase;
+                @media only screen and (max-width: 1080px){ font-size: 25px;}
+                @media only screen and (max-width: 480px){ font-size: 20px;}
             }
             input,
             textarea,
@@ -140,7 +305,12 @@
                 color: $main-color;
                 border-radius: 5px;
                 font-size: 15px;
+                &::focus{
+                    border: unset;
+                    outline: none;
+                }
             }
+            
             input {
                 height: 40px;
                 margin-bottom: 15px;

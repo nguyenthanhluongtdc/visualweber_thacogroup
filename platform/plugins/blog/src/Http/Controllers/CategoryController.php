@@ -22,6 +22,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 use Throwable;
+use Platform\Blog\Tables\CategoryTable;
 
 class CategoryController extends BaseController
 {
@@ -43,32 +44,39 @@ class CategoryController extends BaseController
      * @return BaseHttpResponse|Factory|View|string
      * @throws Throwable
      */
-    public function index(FormBuilder $formBuilder, Request $request, BaseHttpResponse $response)
+    // public function index(FormBuilder $formBuilder, Request $request, BaseHttpResponse $response)
+    // {
+    //     page_title()->setTitle(trans('plugins/blog::categories.menu'));
+
+    //     $categories = $this->categoryRepository->getCategories(['*'], [
+    //         'created_at' => 'DESC',
+    //         'is_default' => 'DESC',
+    //         'order'      => 'ASC',
+    //     ]);
+
+    //     $categories->load('slugable')->loadCount('posts');
+
+    //     if ($request->ajax()) {
+    //         $data = view('core/base::forms.partials.tree-categories', $this->getOptions(compact('categories')))->render();
+
+    //         return $response->setData($data);
+    //     }
+
+    //     Assets::addStylesDirectly(['vendor/core/core/base/css/tree-category.css'])
+    //         ->addScriptsDirectly(['vendor/core/core/base/js/tree-category.js']);
+
+    //     $form = $formBuilder->create(CategoryForm::class, ['template' => 'core/base::forms.form-tree-category']);
+    //     $form = $this->setFormOptions($form, null, compact('categories'));
+
+    //     return $form->renderForm();
+    // }
+    public function index(CategoryTable $dataTable)
     {
         page_title()->setTitle(trans('plugins/blog::categories.menu'));
 
-        $categories = $this->categoryRepository->getCategories(['*'], [
-            'created_at' => 'DESC',
-            'is_default' => 'DESC',
-            'order'      => 'ASC',
-        ]);
-
-        $categories->load('slugable')->loadCount('posts');
-
-        if ($request->ajax()) {
-            $data = view('core/base::forms.partials.tree-categories', $this->getOptions(compact('categories')))->render();
-
-            return $response->setData($data);
-        }
-
-        Assets::addStylesDirectly(['vendor/core/core/base/css/tree-category.css'])
-            ->addScriptsDirectly(['vendor/core/core/base/js/tree-category.js']);
-
-        $form = $formBuilder->create(CategoryForm::class, ['template' => 'core/base::forms.form-tree-category']);
-        $form = $this->setFormOptions($form, null, compact('categories'));
-
-        return $form->renderForm();
+        return $dataTable->renderTable();
     }
+
 
     /**
      * @param FormBuilder $formBuilder
@@ -130,20 +138,31 @@ class CategoryController extends BaseController
      * @param FormBuilder $formBuilder
      * @return BaseHttpResponse|string
      */
-    public function edit($id, FormBuilder $formBuilder, Request $request, BaseHttpResponse $response)
+    // public function edit($id, FormBuilder $formBuilder, Request $request, BaseHttpResponse $response)
+    // {
+    //     $category = $this->categoryRepository->findOrFail($id);
+
+    //     event(new BeforeEditContentEvent($request, $category));
+
+    //     if ($request->ajax()) {
+    //         return $response->setData($this->getForm($category));
+    //     }
+
+    //     page_title()->setTitle(trans('plugins/blog::categories.edit') . ' "' . $category->name . '"');
+
+    //     return $formBuilder->create(CategoryForm::class, ['model' => $category])->renderForm();
+    // }
+    public function edit(Request $request, $id, FormBuilder $formBuilder)
     {
         $category = $this->categoryRepository->findOrFail($id);
 
         event(new BeforeEditContentEvent($request, $category));
 
-        if ($request->ajax()) {
-            return $response->setData($this->getForm($category));
-        }
-
         page_title()->setTitle(trans('plugins/blog::categories.edit') . ' "' . $category->name . '"');
 
         return $formBuilder->create(CategoryForm::class, ['model' => $category])->renderForm();
     }
+
 
     /**
      * @param int $id

@@ -175,6 +175,13 @@ const SectionMain = styled.div`
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
+    .nav-tabs {
+        button:focus {
+            border: none;
+            outline: none;
+        }
+    }
 `;
 
 const SectionVideo = styled.div`

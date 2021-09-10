@@ -77,16 +77,9 @@
                 }
                 .post-content {
                     margin-top: 10px;
-                    text-align: center;
-                    p {
-                        margin-top: 40px;
-                        margin-bottom: 40px;
-                        text-align: justify;
-                    }
-                    .text-post {
-                        font-weight: bold;
-                        margin-top: 0;
-                        text-align: justify;
+                    text-align: justify;
+                    .text-content {
+                        text-align: justify !important;
                     }
                     img {
                         object-fit: cover;

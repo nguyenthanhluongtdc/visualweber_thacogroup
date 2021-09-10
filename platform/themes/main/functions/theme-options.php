@@ -38,6 +38,16 @@ app()->booted(function () {
                 'value' => '#ff2b4a',
             ],
         ])
+        ->setField([
+            'id'         => 'logo_white',
+            'section_id' => 'opt-text-subsection-logo',
+            'type'       => 'mediaImage',
+            'label'      => __('Logo White'),
+            'attributes' => [
+                'name'    => 'logo_white',
+                'value'   => null,
+            ],
+    ])
         ->setSection(
             [ // Set section with no field
                 'title' => __('Footer'),
@@ -452,5 +462,99 @@ app()->booted(function () {
                         'value' => '',
                     ],
                 ]
-                );
+                )
+                ->setSection([ // Set section with no field
+                    'title' => __('Popup'),
+                    'desc' => __('Popup settings'),
+                    'id' => 'opt-text-subsection-popup',
+                    'subsection' => true,
+                    'icon' => 'fa fa-home',
+                ])
+                ->setField([
+                    'id' => 'image_popup',
+                    'section_id' => 'opt-text-subsection-popup',
+                    'type' => 'mediaImage',
+                    'label' => __('Image popup'),
+                    'attributes' => [
+                        'name' => 'image_popup',
+                        'value' => null,
+        
+                    ],
+                ])
+                ->setField([
+                    'id' => 'link_popup',
+                    'section_id' => 'opt-text-subsection-popup',
+                    'type' => 'text', // text, password, email, number
+                    'label' => __('Link popup'),
+                    'attributes' => [
+                        'name' => 'link_popup',
+                        'value' => null, // default value
+                        'options' => [
+                            'class' => 'form-control',
+                            'data-counter' => 200,
+                        ]
+                    ]
+                ])
+                ->setField([
+                    'id' => 'enable_popup',
+                    'section_id' => 'opt-text-subsection-popup',
+                    'type' => 'onOff',
+                    'label' => __('Enable popup'),
+                    'attributes' => [
+                        'name' => 'enable_popup',
+                        'value' => 0,
+                        'data' => [
+                            0 => 'No',
+                            1 => 'Yes',
+                        ],
+                        'options' => [], // Optional
+                    ],
+                    'helper' => __('Enable popup in home page'),
+                ])
+                ->setSection([ // Set section with no field
+                    'title' => __('Media-image'),
+                    'desc' => __('Media-image'),
+                    'id' => 'opt-text-subsection-contact-form',
+                    'subsection' => true,
+                    'icon' => 'fa fa-home',
+                    'fields' => [
+                        [
+                            'id' => 'image_banner',
+                            'type' => 'mediaImage',
+                            'label' => __('Ảnh Banner'),
+                            'attributes' => [
+                                'name' => 'image_banner',
+                                'value' => null,
+                                'options' => [
+                                    'class'        => 'form-control',
+                                ],
+                            ],
+                        ],
+                        [
+                            'id' => 'poster_left',
+                            'type' => 'mediaImage',
+                            'label' => __('Ảnh Poster bên trái'),
+                            'attributes' => [
+                                'name' => 'poster_left',
+                                'value' => null,
+                                'options' => [
+                                    'class'        => 'form-control',
+                                ],
+                            ],
+                        ],
+                        [
+                            'id' => 'poster_right',
+                            'type' => 'mediaImage',
+                            'label' => __('Ảnh Poster bên phải'),
+                            'attributes' => [
+                                'name' => 'poster_right',
+                                'value' => null,
+                                'options' => [
+                                    'class'        => 'form-control',
+                                ],
+                            ],
+                        ],
+                        
+                    ]
+                ]);
 });

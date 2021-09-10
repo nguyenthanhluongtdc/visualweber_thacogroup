@@ -133,6 +133,7 @@ if (!function_exists('get_featured_categories')) {
     }
 }
 
+
 if (!function_exists('get_all_categories')) {
     /**
      * @param array $condition
@@ -275,26 +276,64 @@ if (!function_exists('get_post_formats')) {
         return PostFormat::getPostFormats($convertToList);
     }
 }
+if (!function_exists('get_file_name')) {
+    function get_file_name($reference)
+    {
+        $file = new SplFileInfo($reference);
 
-if (!function_exists('get_image_width')) {
-    /**
-     * @param bool $convertToList
-     * @return array
-     */
-    function get_image_width($path)
-    {
-        $data = getimagesize($path); 
-        return $data[0];
+        return $file->getFilename();
     }
 }
-if (!function_exists('get_image_height')) {
-    /**
-     * @param bool $convertToList
-     * @return array
-     */
-    function get_image_height($path)
+
+if (!function_exists('get_file_size')) {
+    function get_file_size($path)
     {
-        $data = getimagesize($path); 
-        return $data[1];
+        $bytes = sprintf('%u', filesize('storage/' . $path));
+
+        if ($bytes > 0) {
+            $unit = intval(log($bytes, 1024));
+            $units = array('B', 'KB', 'MB', 'GB');
+
+            if (array_key_exists($unit, $units) === true) {
+                return sprintf('%d %s', $bytes / pow(1024, $unit), $units[$unit]);
+            }
+        }
+
+        return $bytes;
     }
 }
+if (!function_exists('get_slug_by_template')) {
+    /**
+     * @param $template
+     * @return mixed
+     *
+     */
+    function get_slug_by_template($template)
+    {
+        return app(PageInterface::class)->getByTemplate($template);
+    }
+}
+
+// if (!function_exists('get_image_width')) {
+//     /**
+//      * @param bool $convertToList
+//      * @return array
+//      */
+//     function get_image_width($path)
+//     {
+//         $data = getimagesize($path); 
+//         return $data[0];
+//     }
+// }
+// if (!function_exists('get_image_height')) {
+//     /**
+//      * @param bool $convertToList
+//      * @return array
+//      */
+//     function get_image_height($path)
+//     {
+//         $data = getimagesize($path);
+//         dd($data[1]);
+//         return $data[1];
+//     }
+// }

@@ -32,5 +32,14 @@ app()->booted(function () {
     add_shortcode('field-activity', __('Field Activity'), __('Field Activity'), function ($shortCode) {
         return Theme::partial('shortcodes.field-activity');
     });
+    add_shortcode('news-home', __('News Home'), __('News Home'), function ($shortCode) {
+        return Theme::partial('shortcodes.news-home');
+    });
+    add_shortcode('media-home', __('Media Home'), __('Media Home'), function ($shortCode) {
+        return Theme::partial('shortcodes.media-home');
+    });
+    add_shortcode('recruitment', __('Recruitment'), __('Recruitment'), function ($shortCode) {
+        return Theme::partial('shortcodes.recruitment');
+    });
 
 });

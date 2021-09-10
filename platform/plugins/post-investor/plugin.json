@@ -1,0 +1,9 @@
+{
+    "name": "PostInvestor",
+    "namespace": "Platform\\PostInvestor\\",
+    "provider": "Platform\\PostInvestor\\Providers\\PostInvestorServiceProvider",
+    "author": "Laravel Developer Team",
+    "url": "https://developers.laravel.com",
+    "version": "1.0",
+    "description": "The description for module post_investor"
+}

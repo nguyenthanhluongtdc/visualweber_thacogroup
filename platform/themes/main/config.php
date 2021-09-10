@@ -73,7 +73,7 @@ return [
 
             $theme->asset()->usePath()->add('style', 'css/common.css', [], [], time());
                
-            $theme->asset()->container('footer')->add('jquery', '//code.jquery.com/jquery-3.5.1.min.js');
+            $theme->asset()->container('header')->add('jquery', '//code.jquery.com/jquery-3.5.1.min.js');
             $theme->asset()->container('footer')->add('Swiper', '//cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js');
             // $theme->asset()->container('footer')->add('semantic', '//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js');
             $theme->asset()->container('footer')->add('popper', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js');

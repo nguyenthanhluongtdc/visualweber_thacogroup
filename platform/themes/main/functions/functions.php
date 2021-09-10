@@ -15,11 +15,16 @@ register_page_template([
     'media-event' => 'Media Event',
     'media-human' => 'Human',
     'media-message' => 'Message',
-    'media-news' => 'News',
+    'media-news' => 'Media News',
     'security-term' => 'Security Term',
     'media-gallery' => 'Media Gallery',
     'contact' => 'Contact',
+    'field-activity' => 'Field Activity',
+    'field-of-activity' => 'Field Of Activity'
+
 ]);
+
+Menu::addMenuLocation('menu-investor-relations', 'Quan hệ cổ đông');
 
 register_sidebar([
     'id'          => 'second_sidebar',

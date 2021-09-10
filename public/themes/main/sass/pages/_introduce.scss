@@ -99,12 +99,16 @@
             font-size: 23px;
         }
     }
-    .admin-top-content {
-        .row-1 {
+    .admin-content.top {
+        display: flex;
+        flex-wrap: wrap;
+        .item-member:nth-child(1) {
             margin-top: 20px;
-            .admin-top-item {
+            width: 100%;
+            .admin-item {
                 text-align: center;
-                max-width: 200px;
+                // max-width: 200px;
+                width: 19%;
                 .name {
                     margin-top: 20px;
                     margin-bottom: 0;
@@ -115,99 +119,108 @@
             align-items: center;
             justify-content: center;
             img {
-                width: 200px;
+                width: 100%;
             }
         }
-        .row-2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .admin-top-item:nth-child(1) {
-                text-align: center;
-                max-width: 200px;
+        .item-member:nth-child(2) {
+            width: 50%;
+            margin-top: 20px;
+            text-align: center;
+            padding-right: 10px;
+            .admin-item {
+                width: 38.4%;
+                float: right;
                 .name {
-                    margin-top: 20px;
-                    margin-bottom: 0;
-                    line-height: 15px
+                    margin-top: 10px;
+                    margin-bottom: -10px;
                 }
                 img {
-                    width: 200px;
-                }
-                margin-right: 10px;
-            }
-            .admin-top-item:nth-child(2) {
-                text-align: center;
-                .name {
-                    margin-top: 20px;
-                    margin-bottom: 0;
-                    line-height: 15px
-                }
-                max-width: 200px;
-                margin-left: 10px;
-                img {
-                    width: 200px;
+                    width: 100%;
                 }
             }
         }
-        .row-3 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .admin-top-item {
+        .item-member:nth-child(3) {
+            width: 50%;
+            margin-top: 20px;
+            text-align: center;
+            padding-left: 10px;
+            .admin-item {
+                float: left;
+                width: 38.4%;
+                .name {
+                    margin-top: 10px;
+                    margin-bottom: -10px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .item-member:nth-child(4),
+        .item-member:nth-child(5),
+        .item-member:nth-child(6),
+        .item-member:nth-child(7),
+        .item-member:nth-child(8) {
+            width: 19%;
+            margin-right: 1.25%;
+            .admin-item {
                 text-align: center;
                 .name {
                     margin-top: 20px;
                     margin-bottom: 0;
                     line-height: 15px
                 }
-                max-width: 200px;
-                margin-right: 20px;
+                // max-width: 200px;
+                // margin-right: 20px;
                 img {
-                    width: 200px;
+                    width: 100%;
                 }
             }
+        }
+        .item-member:nth-child(8) {
+            margin: 0px;
         }
     }
-    .admin-bottom-content {
+    .admin-content.bottom {
         margin-top: 20px;
-        .bottom-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .admin-bottom-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .item-member {
+            margin-right: 1.25%;
+            width: 19%;
+            .admin-item {
                 text-align: center;
                 .name {
                     margin-top: 20px;
                     margin-bottom: 0px;
                     line-height: 15px
                 }
-                max-width: 200px;
-                margin-right: 20px;
                 img {
-                    width: 200px;
+                    width: 100%;
                 }
             }
         }
     }
-    .title-admin-bottom {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-bottom: 1px solid #ccc;
-        .title-admin {
-            margin-bottom: 0;
-            display: block;
-            padding: 10px 15px;
-            background-color: #212121;
-            font-family: $MyriadPro-Bold;
-            text-transform: uppercase;
-            width: max-content;
-            text-align: center;
-            color: $white;
-            font-size: 23px;
-        }
-    }
+    // .title-admin-bottom {
+    //     width: 100%;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     border-bottom: 1px solid #ccc;
+    //     .title-admin {
+    //         margin-bottom: 0;
+    //         display: block;
+    //         padding: 10px 15px;
+    //         background-color: #212121;
+    //         font-family: $MyriadPro-Bold;
+    //         text-transform: uppercase;
+    //         width: max-content;
+    //         text-align: center;
+    //         color: $white;
+    //         font-size: 23px;
+    //     }
+    // }
 }
 
 .achievement-wrapper {
@@ -226,6 +239,7 @@
                 color: #BABABA;
                 font-family: $MyriadPro-Bold;
                 font-size: 20px;
+                text-transform: uppercase;
                 &:hover {
                     border-color: unset;
                 }
@@ -236,6 +250,9 @@
             .__tabs__item {
                 margin-right: 20px;
                 overflow: hidden;
+            }
+            .__tabs__item:last-child {
+                margin: 0;
             }
             .nav-link.active {
                 color: #00529E;
@@ -273,15 +290,53 @@
             max-width: 50%;
             font-family: $MyriadPro-Bold;
         }
-        .top {
+        // .top {
+        //     display: flex;
+        //     padding: 5% 10%;
+        //     justify-content: space-between;
+        //     .top-content {
+        //         max-width: 232px;
+        //         .img-content {
+        //             img {
+        //                 height: 120px;
+        //             }
+        //             text-align: center;
+        //             .year {
+        //                 font-family: $MyriadPro-Bold;
+        //                 margin-top: 15px;
+        //                 display: block;
+        //             }
+        //         }
+        //         .desc {
+        //             position: relative;
+        //             &::before {
+        //                 position: absolute;
+        //                 content: "";
+        //                 left: 0;
+        //                 right: 0;
+        //                 top: 0;
+        //                 height: 4px;
+        //                 background-color: #fff;
+        //                 width: 50%;
+        //             }
+        //         }
+        //     }
+        // }
+        .bottom {
             display: flex;
-            padding: 5% 10%;
-            justify-content: space-between;
-            .top-content {
-                max-width: 232px;
+            margin: 5% 0 -100px 0;
+            flex-wrap: wrap;
+            margin-left: -2%;
+            margin-right: -2%;
+            .bottom-content {
+                flex: 1 25%;
+                max-width: 25%;
+                padding-right: 2%;
+                padding-left: 2%;
+                margin-bottom: 3%;
                 .img-content {
                     img {
-                        height: 120px;
+                        max-height: 80px;
                     }
                     text-align: center;
                     .year {
@@ -291,38 +346,10 @@
                     }
                 }
                 .desc {
-                    position: relative;
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        left: 0;
-                        right: 0;
-                        top: 0;
-                        height: 4px;
-                        background-color: #fff;
-                        width: 50%;
-                    }
-                }
-            }
-        }
-        .bottom {
-            display: flex;
-            margin: 5% 0 -100px 0;
-            justify-content: space-between;
-            .bottom-content {
-                max-width: 232px;
-                .img-content {
-                    img {
-                        max-height: 75px;
-                    }
-                    text-align: center;
-                    .year {
+                    strong {
                         font-family: $MyriadPro-Bold;
-                        margin-top: 15px;
-                        display: block;
                     }
                 }
-                .desc {}
             }
         }
     }
@@ -542,17 +569,23 @@
     }
 }
 
-#info_admin_modal {
+.modal_admin {
+    display: none;
     .modal-dialog {
         max-width: 900px;
         .modal-content {
             padding: 30px;
             .modal-body {
-                // .mCS-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-                //     background: white;
-                // }
+                .mCSB_scrollTools .mCSB_draggerContainer {
+                    width: 4px;
+                    background: gray;
+                }
                 .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
-                    background: rgb(128, 128, 128);
+                    background: #fff;
+                }
+                .mCS-dark.mCSB_scrollTools .mCSB_dragger_bar {
+                    background: #fff;
+                    display: none
                 }
                 overflow-y: hidden;
                 overflow-x: hidden;
@@ -584,6 +617,9 @@
                             td {
                                 padding: 10px;
                                 border: unset;
+                                p {
+                                    margin: 0;
+                                }
                             }
                             th {
                                 padding: 10px;
@@ -601,19 +637,6 @@
 
 .modal-open .modal {
     overflow-y: hidden;
-}
-
-@media screen and (max-width:1680px) {
-    .achievement-wrapper {
-        .content-tab {
-            .bottom {
-                padding: 2% 0;
-                .bottom-content {
-                    max-width: 190px;
-                }
-            }
-        }
-    }
 }
 
 @media screen and(max-width:1100px) {

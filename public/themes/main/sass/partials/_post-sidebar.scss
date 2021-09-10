@@ -23,9 +23,9 @@
                     color: $main_color;
                 }
             }
-            .list-group-item:last-child {
-                border: none;
-            }
+            // .list-group-item:last-child {
+            //     border: none;
+            // }
             .list-group-item.active {
                 background: none;
                 color: $main_color;

@@ -1,21 +1,7 @@
 <section class="banner-post-detail">
     <img class=" h-45vw img-mw-100" src="{{ Theme::asset()->url('images/media/banner-detail.jpg') }}" alt="">
 </section>
-<div class="bg-gray">
-    <div class="container-customize">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="/">Trang chủ</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="/truyen-thong">Truyền thông</a>
-                        </li>
-                        <li class="breadcrumb-item active">Tin tức</li>
-            </ol>
-        </nav>
-    </div>
-</div>
+@includeIf("theme.main::views.breadcrumb")
 
 <div class="post-detail-wrapper">
     <div class="post-detail-content">

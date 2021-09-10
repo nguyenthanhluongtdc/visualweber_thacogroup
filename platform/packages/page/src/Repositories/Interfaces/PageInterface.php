@@ -36,4 +36,5 @@ interface PageInterface extends RepositoryInterface
      * @return mixed
      */
     public function getAllPages($active = true);
+    public function getByTemplate($template = "");
 }
