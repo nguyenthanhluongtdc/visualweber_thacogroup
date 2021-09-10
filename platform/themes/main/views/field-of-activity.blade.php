@@ -123,7 +123,7 @@
                 <!-- Slides -->
                 <div class="swiper-slide">1
                 </div>
-                <div class="swiper-slide">2
+                <div class="swiper-slide">2 
                 </div>
                 <div class="swiper-slide">3
                 </div>
@@ -133,8 +133,8 @@
                 </div>
             </div>
             
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
         <div class="swiper-pagination"></div>
         </div>

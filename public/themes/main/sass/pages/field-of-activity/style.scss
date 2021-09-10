@@ -86,10 +86,14 @@
             .commercial-field-slider.swiper-container-horizontal .swiper-pagination-bullet {
                 background: #fff!important;
                 border: 1px solid #000 !important; 
+                opacity: 1 !important;
+                width: 8px;
+                height: 8px;
             }
             .commercial-field-slider.swiper-container-horizontal .swiper-pagination-bullet-active {
                 background: #000!important;
                 border: 1px solid #000 !important; 
+                opacity: 1 !important;
             }
             //  .commercial-field-slider.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
             //     border: 1px solid black !important;
@@ -166,8 +170,10 @@
         .slide-news {
             position:relative;
             width: 95vw;
-            height: 300px;
-           
+            height: 380px;
+           .swiper-button-prev, .swiper-button-next{
+               margin-top: -50px !important;
+           }
         }
         .slide-news > .swiper-slide__content {
           position:absolute;
