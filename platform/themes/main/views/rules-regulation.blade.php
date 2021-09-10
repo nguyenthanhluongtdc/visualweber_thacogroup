@@ -46,10 +46,11 @@
                                                 <div class="downcontent">
                                                     <ul class="list-file">
                                                         @foreach(has_field($item, 'repeater_file_post_investor') as $sub)
-                                                            <li>
-                                                                <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
+                                                            <li> 
+                                                                <a href="{{ get_object_image(has_sub_field($sub, 'file')) }}">
                                                                         {{has_sub_field($sub, 'file')}}
                                                                 </a>
+                                                                <span class="left font-cond color-gray ml-2">{{@get_file_size(has_sub_field($sub, 'file'))}}</span>
                                                             </li>
                                                         @endforeach
                                                     </ul>
