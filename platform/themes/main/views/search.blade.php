@@ -1,4 +1,11 @@
-<div class="search-page">
+
+<div id="page-search">
+    <box-search result-search="{{json_encode($data)}}" route-search="{{route('public.search')}}"> </box-search>
+</div>
+
+<script src="themes/main/js/app.js"></script>
+
+{{-- <div class="search-page">
     <div class="container-customize">
         <div class="search-intro">
             <h1 class="font-myria-bold font60 text-center mt-5">KẾT QUẢ TÌM KIẾM</h1>
@@ -96,7 +103,23 @@
             @endforelse
         @endif
 
-        {{-- <div class="search-result row mb-md-4 mb-5" data-aos="fade-up" data-aos-duration="1000"
+        <div class="container d-flex justify-content-center mb-5 font-pri">
+            <ul class="pagination justify-content-center pagination-success">
+                <li class="page-item active"><a class="page-link" href="#" data-abc="true">1</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-abc="true">2</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-abc="true">3</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-abc="true">4</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-abc="true">5</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-abc="true">6</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-abc="true">7</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-abc="true">></a></li>
+                <li class="page-item"><a class="page-link" href="#" data-abc="true">>></a></li>
+            </ul>
+        </div>
+    </div>
+</div> --}}
+
+{{--    <div class="search-result row mb-md-4 mb-5" data-aos="fade-up" data-aos-duration="1000"
             data-aos-easing="ease-in-out">
             <div class="col-lg-3 col-md-5 result-img">
                 <a class="image h-100" href="#" title="">
@@ -185,22 +208,6 @@
             </div>
         </div> --}}
 
-        <div class="container d-flex justify-content-center mb-5 font-pri">
-            <ul class="pagination justify-content-center pagination-success">
-                <li class="page-item active"><a class="page-link" href="#" data-abc="true">1</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">2</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">3</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">4</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">5</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">6</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">7</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">></a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">>></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-</div>
 <style>
     .list-social-sidebar {
         display: none;
