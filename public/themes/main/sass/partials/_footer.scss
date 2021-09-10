@@ -102,6 +102,16 @@
     }
 }
 
+@media screen and (max-width:992px) {
+    .footer {
+        .footer-content {
+            .office-wrapper {
+                display: unset;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:768px) {
     .footer {
         .office {
@@ -114,7 +124,6 @@
         }
         .logo_footer {
             padding-top: 30px;
-            margin-top: 10px;
         }
     }
 }
