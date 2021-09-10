@@ -64,5 +64,18 @@ class InvestorRelationsServiceProvider extends ServiceProvider
         
         \SlugHelper::registerModule(InvestorRelations::class);
         
+        $this->app->booted(function () {
+            if (defined('CUSTOM_FIELD_MODULE_SCREEN_NAME')) {
+                \CustomField::registerModule(InvestorRelations::class)
+                    // ->registerRule('basic', __('Quan hệ cổ đông'), PostInvestor::class, function () {
+                    //     return $this->app->make(PostInvestorInterface::class)->pluck('name', 'id');
+                    // })
+                    ->expandRule('other', 'Model', 'model_name', function () {
+                        return [
+                            InvestorRelations::class => __('Danh mục quan hệ cổ đông'),
+                        ];
+                    });
+            }
+        });
     }
 }

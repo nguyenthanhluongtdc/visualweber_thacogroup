@@ -1,20 +1,4 @@
-<section class="slide-info">
-    <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-        <div class="swiper-wrapper">   
-            <div class="swiper-slide" >
-                <img src="{{ Theme::asset()->url('images/relationship/quan-he-co dong-banner.jpg') }}" alt="" class="img-slider  h-45vw w-100">
-            </div>
-            <div class="swiper-slide" >
-                <img src="{{ Theme::asset()->url('images/media/banner-1.jpg') }}" alt="" class="img-slider  h-45vw  w-100 ">
-            </div>
-            
-            <div class="swiper-slide" >
-                <img src="{{ Theme::asset()->url('images/home/banner-3.jpg') }}" alt="" class="img-slider  h-45vw  w-100 ">
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-</section>
+@includeIf('theme.main::views.components.banner-qhcd')
 
 <!--breadcrumb-->
 @includeIf("theme.main::views.components.breadcrumb")
@@ -26,30 +10,8 @@
              <div class="shareholder-infomation mb-100">
                         <div class="shareholder-infomation_left">
                             <div class="list-info">
-                                <div class="filter-search-media mb-40 non-field">
-                                    <form action="" class="form-search ">
-                                        <div class="search">
-                                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
-                                            <button class="btn btn-secondary" type="submit">
-                                                <i class="fas fa-search"></i>
-                                            </button>
-                                        </div>
-                                        <select class="select-year font18" id="">
-                                            <option value="">2019</option>
-                                            <option value="">2018</option>
-                                            <option value="">2017</option>
-                                            <option value="">2016</option>
-                                        </select>
-                                        {{-- <select class="select-by-field font18" id="">
-                                            <option value="">Ô tô - Cơ Khí</option>
-                                            <option value="">Nông nghiệp</option>
-                                            <option value="">Thương mại - dịch vụ</option>
-                                            <option value="">Đầu tư xây dựng</option>
-                                            <option value="">Logistics</option>
-                                        </select> --}}
-                                    </form>
-                                 </div>
 
+                                @includeIf('theme.main::views.components.filter-qhcd')
 
                                 @forelse($data as $item)
                                     <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
@@ -372,13 +334,13 @@
 
                             </div>
                             @if(!empty($data))
-                                {{ $data->links('vendor.pagination.custom') }}
+                                {{ $data->withQueryString()->links('vendor.pagination.custom') }}
                             @endif
                         </div>
                         
                         {!!
                             Menu::renderMenuLocation('menu-investor-relations', [ 
-                                'options' => [],
+                                'options' => [$category->id],
                                 'theme'   => true,
                                 'view'    => 'menu-investor-relations'
                             ])
@@ -388,3 +350,12 @@
         </div>
     </div>
 </section>
+
+<script>
+    let year = "{{Request::get('year')}}";
+    $('select > option').each(function() {
+        if($(this).val()==year) {
+            $(this).attr('selected', true);
+        }
+    })
+</script>

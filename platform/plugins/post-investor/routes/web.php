@@ -14,4 +14,9 @@ Route::group(['namespace' => 'Platform\PostInvestor\Http\Controllers', 'middlewa
         });
     });
 
+    Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
+        Route::get('{slug}/search', 'PublicController@getSearch')
+        ->name('public.search-post-investor');
+    });
+
 });

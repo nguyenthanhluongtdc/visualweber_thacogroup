@@ -1,23 +1,4 @@
-<section class="slide-info">
-    <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="{{ Theme::asset()->url('images/relationship/quan-he-co dong-banner.jpg') }}" alt=""
-                    class="img-slider  h-45vw w-100">
-            </div>
-            <div class="swiper-slide">
-                <img src="{{ Theme::asset()->url('images/media/banner-1.jpg') }}" alt=""
-                    class="img-slider  h-45vw  w-100 ">
-            </div>
-
-            <div class="swiper-slide">
-                <img src="{{ Theme::asset()->url('images/home/banner-3.jpg') }}" alt=""
-                    class="img-slider  h-45vw  w-100 ">
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-</section>
+@includeIf('theme.main::views.components.banner-qhcd')
 
 <!--breadcrumb-->
 @includeIf("theme.main::views.components.breadcrumb")
@@ -29,30 +10,9 @@
 
             <div class="financial-report  mb-100">
                 <div class="financial-report_left">
-                    <div class="filter-search-media mb-40 non-field-w66">
-                        <form action="" class="form-search ">
-                            <div class="search">
-                                <input type="text" class=" form-control form-control-sm "
-                                    placeholder="Nhập nội dung cần tìm" value="" name="q">
-                                <button class="btn btn-secondary" type="submit">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                            <select class="select-year font18" id="">
-                                <option value="">2019</option>
-                                <option value="">2018</option>
-                                <option value="">2017</option>
-                                <option value="">2016</option>
-                            </select>
-                            {{-- <select class="select-by-field font18" id="">
-                                <option value="">Ô tô - Cơ Khí</option>
-                                <option value="">Nông nghiệp</option>
-                                <option value="">Thương mại - dịch vụ</option>
-                                <option value="">Đầu tư xây dựng</option>
-                                <option value="">Logistics</option>
-                            </select> --}}
-                        </form>
-                    </div>
+
+                    @includeIf('theme.main::views.components.filter-qhcd')
+
                     <div class="list-report">
                         @forelse($data as $item)
                             <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50"
@@ -61,11 +21,11 @@
                                     <img src="{{ Storage::disk('public')->exists($item->image) ? get_object_image($item->image): RvMedia::getDefaultImage() }}"
                                         alt="report">
                                 </div>
-                                <span class="date">20/02/2020</span>
+                                <span class="date">{{$item->created_at->format('d/m/Y')}}</span>
                                 <p class="name-file font18"> {!! $item->name !!} </p>
                                 <div class="download">
                                     <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}"
-                                        title="download">DOWNLOAD</a>
+                                        title="download">{!! __('DOWNLOAD') !!}</a>
                                 </div>
                             </div>
                         @empty
@@ -141,12 +101,12 @@
                     </div>
                     
                     @if(!empty($data))
-                        {{ $data->links('vendor.pagination.custom') }}
+                        {{ $data->withQueryString()->links('vendor.pagination.custom') }}
                     @endif
                 </div>
                 {!!
                     Menu::renderMenuLocation('menu-investor-relations', [
-                        'options' => [],
+                        'options' => [$category->id],
                         'theme' => true,
                         'view' => 'menu-investor-relations'
                     ])
