@@ -17,7 +17,7 @@
                 <div class="row mr-0 ml-0">
                     @forelse (has_field($page, 'vision_block') as $key => $item)
                     <div class="col-sm-4 pl-0 pr-0">
-                        <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="{{50 + $key*100}}" class="aos-init aos-animate">
+                        <div class="future-goal {{$loop->last ? 'last' :''}} p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="{{50 + $key*100}}" class="aos-init aos-animate">
                             <img src="{{ get_image_url(has_sub_field($item, 'logo')) }}" alt="{{has_sub_field($item, 'title')}}">
                             <h3 class="title font40">{{has_sub_field($item, 'title')}}</h3>
                             <div class="desc font18">
