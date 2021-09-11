@@ -19,6 +19,8 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
         Route::get('/search', 'MainController@getSearch')
                 ->name('public.search');
 
+        Route::get('api/get/gallery/post/{id}', 'ApiController@getGalleryPost');
+
     });
 });
 

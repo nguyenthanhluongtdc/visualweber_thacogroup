@@ -6,7 +6,7 @@
     @endphp
 
     <div id="app">
-        <page-media :album-image="{{$albumImage}}" :album-video="{{$albumVideo}}"> </page-media>
+        <page-media album-image="{{json_encode($albumImage)}}" album-video="{{json_encode($albumVideo)}}"> </page-media>
     </div>
 
     <script src="themes/main/js/app.js"></script>
