@@ -1,13 +1,16 @@
-@php
-    $albumImage = get_posts_type_by_category(15, 6, 'gallery');
-    $albumVideo = get_posts_type_by_category(15, 6, 'video');
-@endphp
 
-<div id="app">
-    <page-media> </page-media>
-</div>
+@if(!blank($category) && isset($category))
+    @php
+        $albumImage = get_posts_type_by_category($category->id, 6, 'gallery');
+        $albumVideo = get_posts_type_by_category($category->id, 6, 'video');
+    @endphp
 
-<script src="themes/main/js/app.js"></script>
+    <div id="app">
+        <page-media :album-image="{{$albumImage}}" :album-video="{{$albumVideo}}"> </page-media>
+    </div>
+
+    <script src="themes/main/js/app.js"></script>
+@endif
 
 {{-- <section class="media-content">
     <div class="container-customize">

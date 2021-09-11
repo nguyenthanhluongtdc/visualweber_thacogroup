@@ -205,11 +205,16 @@
 <script>
 export default {
     name: 'Media',
+    props: ['albumImage', 'albumVideo'],
 
     data() {
         return {
             
         }
+    },
+
+    mounted() {
+        console.log(this.albumImage)
     },
 }
 </script>
