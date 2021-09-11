@@ -3,7 +3,13 @@
     $albumVideo = get_posts_type_by_category(15, 6, 'video');
 @endphp
 
-<section class="media-content">
+<div id="app">
+    <page-media> </page-media>
+</div>
+
+<script src="themes/main/js/app.js"></script>
+
+{{-- <section class="media-content">
     <div class="container-customize">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -67,90 +73,7 @@
                                         </div>
                                     @endforeach
                                 @endif
-                                {{-- <div class="album-item" data-target="#album_modal" data-toggle="modal">
-                                    <img src="{{ Theme::asset()->url('images/media/2.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">50 tấn tinh bột sắn của Doanh nghiệp Việt Nam
-                                            vừa được xuất khẩu qua Cảng Chu Lai                                            
-                                            </p>
-                                    </div>
-                                    <span class="album-item__date">(25/08/2021)</span>
-                                    <div class="album-item__count">
-                                       
-                                        <i class="far fa-image"></i>
-                                        <p class="quantity font18">100</p>
-                                    </div>
-                                    <div class="album-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div>
-                                <div class="album-item" data-target="#album_modal" data-toggle="modal">
-                                    <img src="{{ Theme::asset()->url('images/media/3.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">THACO tài trợ trang thiết bị, vật tư y tế phòng
-                                            chống dịch cho Công an TP.HCM                                            
-                                            </p>
-                                    </div>
-                                    <span class="album-item__date">(25/08/2021)</span>
-                                    <div class="album-item__count">
-                                       
-                                        <i class="far fa-image"></i>
-                                        <p class="quantity font18">100</p>
-                                    </div>
-                                    <div class="album-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div>
-                                <div class="album-item" data-target="#album_modal" data-toggle="modal">
-                                    <img src="{{ Theme::asset()->url('images/media/4.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">Những trái tim nhiệt huyết
-                                            </p>
-                                    </div>
-                                    <span class="album-item__date">(25/08/2021)</span>
-                                    <div class="album-item__count">
-                                       
-                                        <i class="far fa-image"></i>
-                                        <p class="quantity font18">100</p>
-                                    </div>
-                                    <div class="album-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div>
-                                <div class="album-item" data-target="#album_modal" data-toggle="modal">
-                                    <img src="{{ Theme::asset()->url('images/media/5.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">Tiêm vaccine Covid-19 cho người lao động
-                                            tại KCN THACO Chu Lai
-                                            
-                                            </p>
-                                    </div>
-                                    <span class="album-item__date">(25/08/2021)</span>
-                                    <div class="album-item__count">
-                                       
-                                        <i class="far fa-image"></i>
-                                        <p class="quantity font18">100</p>
-                                    </div>
-                                    <div class="album-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div>
-                                <div class="album-item" data-target="#album_modal" data-toggle="modal">
-                                    <img src="{{ Theme::asset()->url('images/media/6.jpg') }}" alt="">
-                                    <div class="album-item__name ">
-                                        <p class="name font20">Mazda “trình làng” loạt xe mới tại VMS 2016
-                                            </p>
-                                    </div>
-                                    <span class="album-item__date">(25/08/2021)</span>
-                                    <div class="album-item__count">
-                                       
-                                        <i class="far fa-image"></i>
-                                        <p class="quantity font18">100</p>
-                                    </div>
-                                    <div class="album-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div> --}}
+                               
                             </div>
                         </div>
                     </div>
@@ -175,66 +98,7 @@
                                         </div>
                                     @endforeach
                                 @endif
-                                {{-- <div class="image-item">
-                                    <div class="img-click">
-                                        <img class="" src="{{ Theme::asset()->url('images/media/2.jpg') }}" alt="">
-                                    </div>
-                                    <div class="image-item__back">
-                                        <i class="far fa-image"></i>
-                                        <p  class="text font18">Album</p>
-                                    </div>
-                                    <div class="image-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div>
-                                <div class="image-item">
-                                    <div class="img-click">
-                                        <img class="" src="{{ Theme::asset()->url('images/media/3.jpg') }}" alt="">
-                                    </div>
-                                    <div class="image-item__back">
-                                        <i class="far fa-image"></i>
-                                        <p  class="text font18">Album</p>
-                                    </div>
-                                    <div class="image-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div>
-                                <div class="image-item">
-                                    <div class="img-click">
-                                        <img class="" src="{{ Theme::asset()->url('images/media/4.jpg') }}" alt="">
-                                    </div>
-                                    <div class="image-item__back">
-                                        <i class="far fa-image"></i>
-                                        <p  class="text font18">Album</p>
-                                    </div>
-                                    <div class="image-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div>
-                                <div class="image-item">
-                                    <div class="img-click">
-                                        <img class="" src="{{ Theme::asset()->url('images/media/5.jpg') }}" alt="">
-                                    </div>
-                                    <div class="image-item__back">
-                                        <i class="far fa-image"></i>
-                                        <p  class="text font18">Album</p>
-                                    </div>
-                                    <div class="image-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div>
-                                <div class="image-item">
-                                    <div class="img-click">
-                                        <img class="" src="{{ Theme::asset()->url('images/media/6.jpg') }}" alt="">
-                                    </div>
-                                    <div class="image-item__back">
-                                        <i class="far fa-image"></i>
-                                        <p  class="text font18">Album</p>
-                                    </div>
-                                    <div class="image-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </div> --}}
+                               
                             </div>
                             
                         </div>
@@ -297,99 +161,6 @@
                                     </div>
                                 @endforeach
                             @endif
-                            {{-- <div class="video-item" data-target="#video_modal" data-toggle="modal">
-                                <div class="video-thumbnail">
-                                    <img src="{{ Theme::asset()->url('images/media/video-list-2.jpg') }}" alt="">
-                                
-                                </div> 
-                                <div class="video-item__name font20 ">
-                                    <p class="name">THACO tham dự Khai mạc Triển lãm ô tô Việt Nam 2016
-                                    </p>
-                                </div>
-                                <span class="video-item__date">(25/08/2021)</span>
-                                <div class="video-item__count">
-                                       
-                                    <i class="fas fa-photo-video"></i>
-                                    <p class="quantity font18">100</p>
-                                </div>
-                                <div class="video-item__download">
-                                    <i class="fas fa-download"></i>
-                                </div>
-                            </div>
-                            <div class="video-item" data-target="#video_modal" data-toggle="modal">
-                                <div class="video-thumbnail">
-                                    <img src="{{ Theme::asset()->url('images/media/video-list-3.jpg') }}" alt="">
-                                    
-                                </div> 
-                                <div class="video-item__name font20 ">
-                                    <p class="name">Triển lãm ô tô Việt Nam 2015: Thaco mang đến nhiều sự lựa chọn cho khách hàng
-                                    </p>
-                                </div>
-                                <span class="video-item__date">(25/08/2021)</span>
-                                <div class="video-item__count">
-                                       
-                                    <i class="fas fa-photo-video"></i>
-                                    <p class="quantity font18">100</p>
-                                </div>
-                                <div class="video-item__download">
-                                    <i class="fas fa-download"></i>
-                                </div>
-                            </div>
-                            <div class="video-item" data-target="#video_modal" data-toggle="modal">
-                                <div class="video-thumbnail">
-                                    <img src="{{ Theme::asset()->url('images/media/video-list-3.jpg') }}" alt="">
-                                </div> 
-                                <div class="video-item__name font20 ">
-                                    <p class="name">Lễ kỷ niệm 3 năm hợp tác chiến lược Thaco - Mazda
-                                    </p>
-                                </div>
-                                <span class="video-item__date">(25/08/2021)</span>
-                                <div class="video-item__count">
-                                       
-                                    <i class="fas fa-photo-video"></i>
-                                    <p class="quantity font18">100</p>
-                                </div>
-                                <div class="video-item__download">
-                                    <i class="fas fa-download"></i>
-                                </div>
-                            </div>
-                            <div class="video-item" data-target="#video_modal" data-toggle="modal">
-                                <div class="video-thumbnail">
-                                    <img src="{{ Theme::asset()->url('images/media/video-list-4.jpg') }}" alt="">
-                            
-                                </div> 
-                                <div class="video-item__name font20 ">
-                                    <p class="name">THACO giới thiệu thương hiệu PEUGEOT & xe PEUGEOT 408 tại Việt...
-                                    </p>
-                                </div>
-                                <span class="video-item__date">(25/08/2021)</span>
-                                <div class="video-item__count">
-                                       
-                                    <i class="fas fa-photo-video"></i>
-                                    <p class="quantity font18">100</p>
-                                </div>
-                                <div class="video-item__download">
-                                    <i class="fas fa-download"></i>
-                                </div>
-                            </div>
-                            <div class="video-item" data-target="#video_modal" data-toggle="modal">
-                                <div class="video-thumbnail">
-                                    <img src="{{ Theme::asset()->url('images/media/video-list-5.jpg') }}" alt="">
-                                </div> 
-                                <div class="video-item__name font20 ">
-                                    <p class="name">Năm 2013 Công ty CP Ô tô Trường Hải phấn đấu bán 29.200 xe
-                                    </p>
-                                </div>
-                                <span class="video-item__date">(25/08/2021)</span>
-                                <div class="video-item__count">
-                                       
-                                    <i class="fas fa-photo-video"></i>
-                                    <p class="quantity font18">100</p>
-                                </div>
-                                <div class="video-item__download">
-                                    <i class="fas fa-download"></i>
-                                </div>
-                            </div> --}}
                         </div>
                       </div>
 
@@ -458,7 +229,9 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
+
+
 {{-- <div class="modal fade" id="album_modal" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         

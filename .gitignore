@@ -564,3 +564,6 @@ public/mix-manifest.json
 /storage/installing
 public/docs
 public/vendor
+platform/themes/main/public/css/common.css
+platform/themes/main/public/css/common.css.map
+platform/themes/main/public/css/style.css.map
