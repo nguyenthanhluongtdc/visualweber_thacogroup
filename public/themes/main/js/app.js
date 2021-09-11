@@ -178,6 +178,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Media',
   data: function data() {
@@ -313,7 +351,10 @@ var staticRenderFns = [
             },
             [
               _c("img", {
-                attrs: { src: "images/introduce/arrow.png", alt: "" }
+                attrs: {
+                  src: "themes/main/images/introduce/arrow.png",
+                  alt: ""
+                }
               }),
               _vm._v(" "),
               _c("h1", { staticClass: "font50 big-title" }, [
@@ -421,7 +462,10 @@ var staticRenderFns = [
                           },
                           [
                             _c("img", {
-                              attrs: { src: "images/media/2.jpg", alt: "" }
+                              attrs: {
+                                src: "themes/main/images/media/2.jpg",
+                                alt: ""
+                              }
                             }),
                             _vm._v(" "),
                             _c("div", { staticClass: "album-item__name " }, [
@@ -461,7 +505,10 @@ var staticRenderFns = [
                           },
                           [
                             _c("img", {
-                              attrs: { src: "images/media/3.jpg", alt: "" }
+                              attrs: {
+                                src: "themes/main/images/media/3.jpg",
+                                alt: ""
+                              }
                             }),
                             _vm._v(" "),
                             _c("div", { staticClass: "album-item__name " }, [
@@ -501,7 +548,10 @@ var staticRenderFns = [
                           },
                           [
                             _c("img", {
-                              attrs: { src: "images/media/4.jpg", alt: "" }
+                              attrs: {
+                                src: "themes/main/images/media/4.jpg",
+                                alt: ""
+                              }
                             }),
                             _vm._v(" "),
                             _c("div", { staticClass: "album-item__name " }, [
@@ -541,7 +591,10 @@ var staticRenderFns = [
                           },
                           [
                             _c("img", {
-                              attrs: { src: "images/media/5.jpg", alt: "" }
+                              attrs: {
+                                src: "themes/main/images/media/5.jpg",
+                                alt: ""
+                              }
                             }),
                             _vm._v(" "),
                             _c("div", { staticClass: "album-item__name " }, [
@@ -581,93 +634,173 @@ var staticRenderFns = [
                           },
                           [
                             _c("img", {
-                              attrs: { src: "images/media/6.jpg", alt: "" }
+                              attrs: {
+                                src: "themes/main/images/media/6.jpg",
+                                alt: ""
+                              }
                             }),
                             _vm._v(" "),
-                            _c("p", { staticClass: "name font20" }, [
-                              _vm._v(
-                                "Mazda “trình làng” loạt xe mới tại VMS 2016\n                                            "
-                              )
+                            _c("div", { staticClass: "album-item__name " }, [
+                              _c("p", { staticClass: "name font20" }, [
+                                _vm._v(
+                                  "Mazda “trình làng” loạt xe mới tại VMS 2016\n                                            "
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "album-item__date" }, [
+                              _vm._v("(25/08/2021)")
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "album-item__count" }, [
+                              _c("i", { staticClass: "far fa-image" }),
+                              _vm._v(" "),
+                              _c("p", { staticClass: "quantity font18" }, [
+                                _vm._v("100")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "album-item__download" }, [
+                              _c("i", { staticClass: "fas fa-download" })
                             ])
                           ]
-                        ),
-                        _vm._v(" "),
-                        _c("span", { staticClass: "album-item__date" }, [
-                          _vm._v("(25/08/2021)")
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "album-item__count" }, [
-                          _c("i", { staticClass: "far fa-image" }),
+                        )
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "tab-pane fade",
+                    attrs: {
+                      id: "media-single-image",
+                      role: "tabpanel",
+                      "aria-labelledby": "field-2-tab"
+                    }
+                  },
+                  [
+                    _c("div", { staticClass: "media-banner" }, [
+                      _c("div", { staticClass: "list-image" }, [
+                        _c("div", { staticClass: "image-item" }, [
+                          _c("div", { staticClass: "img-click" }, [
+                            _c("img", {
+                              attrs: {
+                                src: "themes/main/images/media/2.jpg",
+                                alt: ""
+                              }
+                            })
+                          ]),
                           _vm._v(" "),
-                          _c("p", { staticClass: "quantity font18" }, [
-                            _vm._v("100")
+                          _c("div", { staticClass: "image-item__back" }, [
+                            _c("i", { staticClass: "far fa-image" }),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "text font18" }, [
+                              _vm._v("Album")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "image-item__download" }, [
+                            _c("i", { staticClass: "fas fa-download" })
                           ])
                         ]),
                         _vm._v(" "),
-                        _c("div", { staticClass: "album-item__download" }, [
-                          _c("i", { staticClass: "fas fa-download" })
+                        _c("div", { staticClass: "image-item" }, [
+                          _c("div", { staticClass: "img-click" }, [
+                            _c("img", {
+                              attrs: {
+                                src: "themes/main/images/media/3.jpg",
+                                alt: ""
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "image-item__back" }, [
+                            _c("i", { staticClass: "far fa-image" }),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "text font18" }, [
+                              _vm._v("Album")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "image-item__download" }, [
+                            _c("i", { staticClass: "fas fa-download" })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "image-item" }, [
+                          _c("div", { staticClass: "img-click" }, [
+                            _c("img", {
+                              attrs: {
+                                src: "themes/main/images/media/4.jpg",
+                                alt: ""
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "image-item__back" }, [
+                            _c("i", { staticClass: "far fa-image" }),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "text font18" }, [
+                              _vm._v("Album")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "image-item__download" }, [
+                            _c("i", { staticClass: "fas fa-download" })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "image-item" }, [
+                          _c("div", { staticClass: "img-click" }, [
+                            _c("img", {
+                              attrs: {
+                                src: "themes/main/images/media/5.jpg",
+                                alt: ""
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "image-item__back" }, [
+                            _c("i", { staticClass: "far fa-image" }),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "text font18" }, [
+                              _vm._v("Album")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "image-item__download" }, [
+                            _c("i", { staticClass: "fas fa-download" })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "image-item" }, [
+                          _c("div", { staticClass: "img-click" }, [
+                            _c("img", {
+                              attrs: {
+                                src: "themes/main/images/media/6.jpg",
+                                alt: ""
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "image-item__back" }, [
+                            _c("i", { staticClass: "far fa-image" }),
+                            _vm._v(" "),
+                            _c("p", { staticClass: "text font18" }, [
+                              _vm._v("Album")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "image-item__download" }, [
+                            _c("i", { staticClass: "fas fa-download" })
+                          ])
                         ])
                       ])
                     ])
                   ]
                 )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "tab-pane fade",
-                attrs: {
-                  id: "media-single-image",
-                  role: "tabpanel",
-                  "aria-labelledby": "field-2-tab"
-                }
-              },
-              [
-                _c("div", { staticClass: "media-banner" }, [
-                  _c("div", { staticClass: "list-image" }, [
-                    _c("div", { staticClass: "image-item" }, [
-                      _c("div", { staticClass: "img-click" }, [
-                        _c("img", {
-                          attrs: { src: "images/media/2.jpg", alt: "" }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "image-item__back" }, [
-                        _c("i", { staticClass: "far fa-image" }),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "text font18" }, [
-                          _vm._v("Album")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "image-item__download" }, [
-                        _c("i", { staticClass: "fas fa-download" })
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "image-item" }, [
-                      _c("div", { staticClass: "img-click" }, [
-                        _c("img", {
-                          attrs: { src: "images/media/2.jpg", alt: "" }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "image-item__back" }, [
-                        _c("i", { staticClass: "far fa-image" }),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "text font18" }, [
-                          _vm._v("Album")
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "image-item__download" }, [
-                        _c("i", { staticClass: "fas fa-download" })
-                      ])
-                    ])
-                  ])
-                ])
               ]
             )
           ])

@@ -501,7 +501,7 @@
     </div>
 </div> --}}
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.34/swiper-bundle.min.js"></script>
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.34/swiper-bundle.min.js"></script>
 <script>
     var gallery_top = new Swiper(".gallery-top", {
     slidesPerView: 1,
@@ -515,7 +515,8 @@
         prevEl: '.gallery-top .swiper-button-prev',
     },
 });
-</script>
+</script> --}}
+
 <style>
     .list-social-sidebar {
     display: none;
