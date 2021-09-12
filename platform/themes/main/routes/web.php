@@ -20,6 +20,7 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
                 ->name('public.search');
 
         Route::get('api/get/gallery/post/{id}', 'ApiController@getGalleryPost');
+        Route::get('api/get/album/image', 'ApiController@getAlbumImage');
 
     });
 });

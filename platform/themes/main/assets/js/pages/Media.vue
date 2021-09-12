@@ -31,7 +31,7 @@
                                         Albums
                                     </a>
                                 </li>
-                            <li class="__tabs__item" role="media">
+                                <li class="__tabs__item" role="media">
                                     <a class="__tabs__link nav-link" id="media-single-image-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-single-image" title="Tất Cả">
                                         <i class="fas fa-image"></i>
                                         Hình ảnh
@@ -121,8 +121,8 @@
                             <div class="tab-pane fade active show" id="media-album" role="tabpanel" aria-labelledby="field-1-tab">
                                 <div class="media-banner">
                                     <div class="list-album">
-                                        <div class="album-item" data-target="#album_modal" data-toggle="modal" v-for="(item) in dataImage.data">
-                                            <div class="album-item__img" @click="loadGallery(item.id)">
+                                        <div class="album-item" data-target="#album_modal" data-toggle="modal" v-for="(item) in dataImage.data" :key="item.id">
+                                            <div class="album-item__img" @click="loadGallery(item.id, 'album')">
                                                 <img :src="'storage/'+item.image" alt="">
                                             </div>
                                             <div class="album-item__name ">
@@ -146,16 +146,16 @@
                             <div class="tab-pane fade" id="media-single-image" role="tabpanel" aria-labelledby="field-2-tab">
                                 <div class="media-banner">
                                     <div class="list-image">
-                                        <div class="image-item" v-for="(item) in dataImage.data">
-                                            <div class="image-item__img">
+                                        <div class="image-item" v-for="(item) in dataImage.data" :key="item.id">
+                                            <div class="image-item__img" @click="loadGallery(item.id)">
                                                 <img class="" :src="'storage/'+item.image" alt="">
                                             </div>
-                                            <div class="image-item__back">
+                                            <div class="image-item__back" @click="loadGallery(item.id, 'album')">
                                                 <i class="far fa-image"></i>
                                                 <p  class="text font18">Album</p>
                                             </div>
-                                            <div class="image-item__download">
-                                                <a download :href="'storage/'+item.image"title="Tải xuống">
+                                            <div class="icon--download">
+                                                <a download :href="'storage/'+item.image" title="Tải xuống">
                                                     <i class="fas fa-download text-white"></i>
                                                 </a>
                                             </div>
@@ -165,28 +165,43 @@
                             </div>
                         </div>
                     </div>
+
+                    <paginationn
+                        :totalPages="albumImageTotalPages"
+                        :perPage="albumImagePerPage"
+                        :currentPage="albumImageCurrentPage"
+                        @pagechanged="albumImageOnPageChange"
+                    />
                 </div>
             </div>
         </div>
 
-        <modal name="my-first-modal">
+        <modal name="albumImage-modal">
             <div class="modal-main p-4">
                 <div class="modal-header-custom">
                     <p class="text-right">
-                        <button class="btn-close border-0 font30 font-weight-normal bg-white" @click="hideModalAlbumImage">
+                        <button class="btn-close border-0 font30 font-weight-normal bg-white"@click="hideModalAlbumImage">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
-                    <h2 class="name font28 text-center mb-4 font-weight-bold">
-                        THACO tài trợ trang thiết bị, vật tư y tế phòng chống dịch cho Công an TP.HCM
-                    </h2>
+                    <PuSkeleton circle height="50px" :count="5">
+                        <h2 class="name font28 text-center mb-4 font-weight-bold">
+                            {{galleryImage.name}}
+                        </h2>
+                    </PuSkeleton>
                 </div>
+                
                 <div class="modal-body-custom">
                     <vue-custom-scrollbar class="scroll-area"  :settings="settingsScrollbar">
                         <div class="row m-n2">
-                            <div class="col-lg-4 p-2" v-for="(item) in galleryImage">
-                                <div class="box-img">
+                            <div class="col-lg-4 p-2" v-for="(item, i) in galleryImage.data" :key="i">
+                                <div class="box-img" @click="showModalSliderImage">
                                     <img :src="'storage/'+item.img" class="mw-100 fit-cover" /> 
+                                </div>
+                                <div class="icon--download">
+                                    <a download :href="'storage/'+item.img" title="Tải xuống">
+                                        <i class="fas fa-download text-white"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -194,58 +209,168 @@
                 </div>
             </div>
         </modal>
+
+         <modal name="sliderImage-modal">
+            <div class="modal-main p-4">
+                <div class="modal-header-custom mb-4">
+                    <p class="text-right">
+                        <button class="btn-close border-0 font30 font-weight-normal bg-white" @click="hideModalSliderImage">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </p>
+                    <h2 class="name font28 text-center font-weight-bold">
+                        {{galleryImage.name}}
+                    </h2>
+                </div>
+                
+                <div class="modal-body-custom pb-4">
+                    <template>
+                        <div class="swiper-galleryImage h-100">
+                            <swiper ref="galleryImage" :options="swiperOptions">
+                                <swiper-slide v-for="(item, i) in galleryImage.data" :key="i">
+                                    <img :src="'storage/'+item.img" alt="" class="w-100 h-100 fit-cover">
+                                    <div class="icon--download">
+                                        <a download :href="'storage/'+item.img" title="Tải xuống">
+                                            <i class="fas fa-download text-white"></i>
+                                        </a>
+                                    </div>
+                                </swiper-slide>
+
+                                <div class="swiper-pagination" slot="pagination"></div>
+                                <div class="swiper-button-prev" slot="button-prev"></div>
+                                <div class="swiper-button-next" slot="button-next"></div>
+                            </swiper>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </modal>
     </div>
 </template>
 
 <script>
-import vueCustomScrollbar from 'vue-custom-scrollbar'
+
+//custom-scrollbar
+import vueCustomScrollbar from 'vue-custom-scrollbar';
 import "vue-custom-scrollbar/dist/vueScrollbar.css"
+
+//pagination
+import Paginationn from '../components/Pagination.vue'
+
+//swiper
+import { Swiper as SwiperClass, Pagination, Navigation } from 'swiper/js/swiper.esm'
+import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
+const { Swiper, SwiperSlide } = getAwesomeSwiper(SwiperClass)
+
+// Swiper modules
+SwiperClass.use([Pagination, Navigation])
 
 export default {
     name: 'Media',
-    props: ['albumImage', 'albumVideo'],
+    props: ['categoryId'],
     components: {
-        vueCustomScrollbar
+        vueCustomScrollbar,
+        Swiper,
+        SwiperSlide,
+        Paginationn,
     },
 
     data() {
         return {
-            dataImage: JSON.parse(this.albumImage),
-            dataVideo: JSON.parse(this.albumVideo),
+             swiperOptions: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'progressbar'
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            },
+            indexItem: -1,
+            dataImage: [],
+            dataVideo: [],
             galleryImage: [],
             settingsScrollbar: {
                 suppressScrollY: false,
-                suppressScrollX: false,
+                suppressScrollX: true,
                 wheelPropagation: false
-            }
+            },
+            albumImageCurrentPage: 1,
+            albumImageTotalPages: 2,
+            albumImagePerPage: -1,
         }
     },
 
     methods: {
-        loadGallery: function(id) {
-            this.$http.get('api/get/gallery/post/'+id,)
-                .then(response=> {
-                    return response.data.data
-                })
-                .then(response=> {
-                    this.galleryImage = response
-                    this.showModalAlbumImage();
-                })
-                .catch(error=> {
-                    console.log(error)
-                })
+        loadGallery: async function(id, album="") {
+
+            if(this.indexItem != id) {
+                this.indexItem = id;
+
+                await this.$http.get('api/get/gallery/post/'+id)
+                    .then(response=> {
+                        return response.data
+                    })
+                    .then(response=> {
+                        this.galleryImage = response
+                        this.showGallery(album)
+                    })
+                    .catch(error=> {
+                        console.log(error)
+                    })
+            }else {
+                this.showGallery(album)
+            }
         },
 
-        showModalAlbumImage () {
-            this.$modal.show('my-first-modal');
+        loadAlbumImage: async function() {
+            await this.$http.get('api/get/album/image?page='+this.albumImageCurrentPage)
+                    .then(response=> {
+                        return response.data.data
+                    })
+                    .then(response=> {
+                        this.dataImage = response
+                        this.albumImagePerPage = response.per_page
+                        console.log(response)
+                    })
+                    .catch(error=> {
+                        console.log(error)
+                    })
         },
-        hideModalAlbumImage () {
-            this.$modal.hide('my-first-modal');
+
+        showGallery: function(album) {
+            if(album) {
+                this.showModalAlbumImage();
+            }else {
+                this.showModalSliderImage()
+            }
+        },
+
+        showModalAlbumImage: function() {
+            this.$modal.show('albumImage-modal');
+        },
+        hideModalAlbumImage: function() {
+            this.$modal.hide('albumImage-modal');
+        },
+        showModalSliderImage: function() {
+            this.$modal.show('sliderImage-modal');
+        },
+        hideModalSliderImage: function() {
+            this.$modal.hide('sliderImage-modal');
+        },
+        albumImageOnPageChange(page) {
+            this.albumImageCurrentPage = page;
+            this.loadAlbumImage();
+            
+            console.log(page)
         }
     },
 
     mounted() {
-       
+        this.loadAlbumImage()
     },
 }
 </script>
@@ -261,5 +386,57 @@ export default {
 
     .fit-cover {
         object-fit: cover;
+    }
+
+    .modal-main {
+        height: 100%;
+    }
+
+    .modal-header-custom {
+        height: 20%;
+    }
+
+    .modal-body-custom {
+        height: 80%;
+    }
+
+    .scroll-area {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal-header-custom .name {
+        font-family: "MyriadPro-Bold";
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+    }
+
+    .swiper-galleryImage .swiper-container {
+        height: 100%;
+        padding-bottom: 15px;
+    }
+
+    /* .swiper-galleryImage .swiper-slide img{
+        transform: scale(0.8);
+        transition: transform 300ms;
+        opacity: 0.6;
+    }
+    .swiper-galleryImage .swiper-slide-active img {
+        transform: scale(1);
+        opacity: 1;
+    } */
+
+    .swiper-container-horizontal > .swiper-pagination-progressbar {
+        top: inherit;
+        bottom: 0;
+    }
+
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+        background: #2e3951;
     }
 </style>

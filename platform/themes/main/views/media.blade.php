@@ -6,7 +6,7 @@
     @endphp
 
     <div id="app">
-        <page-media album-image="{{json_encode($albumImage)}}" album-video="{{json_encode($albumVideo)}}"> </page-media>
+        <page-media category-id="{{$category->id}}"> </page-media>
     </div>
 
     <script src="themes/main/js/app.js"></script>
@@ -519,6 +519,23 @@
     },
 });
 </script> --}}
+
+<script>
+    $(document).ready(function() {
+        var gallery_top = new Swiper(".swiper-image", {
+            slidesPerView: 1,
+            speed: 400,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+
+            },
+            navigation: {
+                nextEl: '.gallery-top .swiper-button-next',
+                prevEl: '.gallery-top .swiper-button-prev',
+            },
+        });
+    })
+</script> 
 
 <style>
     .list-social-sidebar {

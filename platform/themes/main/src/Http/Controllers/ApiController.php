@@ -28,8 +28,17 @@ class ApiController extends Controller {
 
         //return
         return response()->json([
-            'data'=> $gallery,
-            'message'=> 'success'
+            'data'      => $gallery,
+            'name'      => $post->name,
+            'message'   => 'success'
+        ], 200);
+    }
+    
+    public function getAlbumImage() {
+        $data = get_posts_type_by_category(15, 3, 'gallery');
+
+        return response()->json([
+            'data'  => $data,
         ], 200);
     }
 }
