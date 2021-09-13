@@ -56,8 +56,8 @@
             </div>
             <div class="commercial-field__right">
                <div class="swiper-container commercial-field-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
-                    <div class="swiper-wrapper mt-4">
-                        <div class="swiper-slide ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                             <img src="{{Theme::asset()->url('images/lvhd/thiso.jpg') }}" alt="slide" class="img-slider img-mw-100">
                         </div>
                         <div class="swiper-slide">
@@ -106,6 +106,262 @@
     </div>
     
 
+
+
+
+
+    <div class="activity-content-detail-slide mt-40 mb-40">
+        <div class="activity-content-detail-slide__main-content">
+            <div class="content">
+                <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
+                <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                <h2 class="text-uppercase title mb-3 ">
+                    bán lẻ tiêu dùng
+                </h2>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
+                </p>
+            </div>
+            
+        </div>
+        <div class="activity-content-detail-slide__detail-content">
+            <div class="swiper-container swiper-content-detail">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv1.jpg') }}" alt="slide" class="bg-img">
+                        <h2 class="title text-uppercase text-light font40">đại siêu thị</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">đại siêu thị</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv2.jpg') }}" alt="slide" class="bg-img">
+                        <h2 class="title text-uppercase text-light font40">siêu thị</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">siêu thị</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv1.jpg') }}" alt="slide" class="bg-img">
+                        <h2 class="title text-uppercase text-light font40">cửa hàng tiện lợi</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">cửa hàng tiện lợi</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv2.jpg') }}" alt="slide" class="bg-img">
+                        <h2 class="title text-uppercase text-light font40">đại siêu thị</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">đại siêu thị</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-counter"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+               
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div class="activity-detail-wrapper">
+        <div class="activity-detail mb-40 mt-40">
+            <div class="activity-detail__left">
+                <div class="row item">
+                    <div class="col content">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv4.jpg') }}" alt="slide" class="">
+                        <h2 class="title text-uppercase text-light font40">rạp chiếu phim</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">rạp chiếu phim</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                    <div class="col content">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv5.jpg') }}" alt="slide" class="">
+                        <h2 class="title text-uppercase text-light font40">kid theme park</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">kid theme park</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                    <div class="col content">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv6.jpg') }}" alt="slide" class="">
+                        <h2 class="title text-uppercase text-light font40">kid cafe</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">kid cafe</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="activity-detail__right">
+                <div class="content">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso2.png') }}" alt="slide" class="symbol">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                    <h2 class="text-uppercase title mb-3 ">
+                        vui chơi giải trí
+                    </h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity-detail mb-40 mt-40">
+            <div class="activity-detail__left">
+                <div class="row item">
+                    <div class="col content">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv7.jpg') }}" alt="slide" class="">
+                        <h2 class="title text-uppercase text-light font40">ăn uống</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">ăn uống</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                    <div class="col content">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv8.jpg') }}" alt="slide" class="">
+                        <h2 class="title text-uppercase text-light font40">nhà hàng</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">nhà hàng</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                    <div class="col content">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv9.jpg') }}" alt="slide" class="">
+                        <h2 class="title text-uppercase text-light font40">cafe</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">cafe</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="activity-detail__right">
+                <div class="content">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso3.png') }}" alt="slide" class="symbol">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                    <h2 class="text-uppercase title mb-3 ">
+                        ẩm thực
+                    </h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity-detail mb-40 mt-40">
+            <div class="activity-detail__left">
+                <div class="row item">
+                    <div class="col content">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv10.jpg') }}" alt="slide" class="">
+                        <h2 class="title text-uppercase text-light font40">trung tâm hội nghị - tiệc cưới cao cấp</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">trung tâm hội nghị - tiệc cưới cao cấp</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                    <div class="col content">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv11.jpg') }}" alt="slide" class="">
+                        <h2 class="title text-uppercase text-light font40">trung tâm hội nghị - tiệc cưới trung cấp</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">trung tâm hội nghị - tiệc cưới trung cấp</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="activity-detail__right">
+                <div class="content">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso4.png') }}" alt="slide" class="symbol">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                    <h2 class="text-uppercase title mb-3 ">
+                        trung tâm hội nghị - tiệc cưới
+                    </h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="activity-detail mb-40 mt-40">
+            <div class="activity-detail__left">
+                <div class="row item">
+                    <div class="col content">
+                        <div class="bg"></div>
+                        <img src="{{Theme::asset()->url('images/lvhd/lv12.jpg') }}" alt="slide" class="">
+                        <h2 class="title text-uppercase text-light font40">thời trang - mỹ phẩm cao cấp</h2>
+                        <div class="detail">
+                            <h2 class="titlee text-uppercase text-light font30">thời trang - mỹ phẩm cao cấp</h2>
+                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus tenetur facilis vel voluptates, possimus nemo dolores architecto numquam non.</p>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="activity-detail__right">
+                <div class="content">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso5.png') }}" alt="slide" class="symbol">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                    <h2 class="text-uppercase title mb-3 ">
+                        department store
+                    </h2>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
     <div class="activity-news mt-60 mb-60">
         <div class="activity-news__top container-customize mt-40 mb-40">
             <div class="title ">
@@ -121,23 +377,136 @@
         <div class="swiper-container slide-news">
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">1
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="news-top">
+                            <img src="{{Theme::asset()->url('images/lvhd/news1.jpg') }}">
+                        </div>
+                        <div class="news-bottom">
+                            <div class="title text-uppercase">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </div>
+                            <div class="desc text-justify mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
+                            </div>
+                            <div class="date">
+                                10/12/2021
+                            </div>
+                        </div>
+                    </a>
+                    
                 </div>
-                <div class="swiper-slide">2 
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="news-top">
+                            <img src="{{Theme::asset()->url('images/lvhd/news1.jpg') }}">
+                        </div>
+                        <div class="news-bottom">
+                            <div class="title text-uppercase">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </div>
+                            <div class="desc text-justify mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
+                            </div>
+                            <div class="date">
+                                10/12/2021
+                            </div>
+                        </div>
+                    </a>
+                    
                 </div>
-                <div class="swiper-slide">3
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="news-top">
+                            <img src="{{Theme::asset()->url('images/lvhd/news1.jpg') }}">
+                        </div>
+                        <div class="news-bottom">
+                            <div class="title text-uppercase">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </div>
+                            <div class="desc text-justify mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
+                            </div>
+                            <div class="date">
+                                10/12/2021
+                            </div>
+                        </div>
+                    </a>
+                    
                 </div>
-                <div class="swiper-slide">4
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="news-top">
+                            <img src="{{Theme::asset()->url('images/lvhd/news1.jpg') }}">
+                        </div>
+                        <div class="news-bottom">
+                            <div class="title text-uppercase">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </div>
+                            <div class="desc text-justify mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
+                            </div>
+                            <div class="date">
+                                10/12/2021
+                            </div>
+                        </div>
+                    </a>
+                    
                 </div>
-                <div class="swiper-slide">5
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="news-top">
+                            <img src="{{Theme::asset()->url('images/lvhd/news1.jpg') }}">
+                        </div>
+                        <div class="news-bottom">
+                            <div class="title text-uppercase">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </div>
+                            <div class="desc text-justify mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
+                            </div>
+                            <div class="date">
+                                10/12/2021
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <div class="news-top">
+                            <img src="{{Theme::asset()->url('images/lvhd/news1.jpg') }}">
+                        </div>
+                        <div class="news-bottom">
+                            <div class="title text-uppercase">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </div>
+                            <div class="desc text-justify mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
+                            </div>
+                            <div class="date">
+                                10/12/2021
+                            </div>
+                        </div>
+                    </a>
+                    
                 </div>
             </div>
             
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
 
-        <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="opt">
+            <img src="{{Theme::asset()->url('images/lvhd/opt2.png') }}">
         </div>
     </div>
+
+
+
+
 </div>
+
 

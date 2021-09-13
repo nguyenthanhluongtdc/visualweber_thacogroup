@@ -615,3 +615,42 @@ $(document).ready(function() {
     });
   });
   
+
+
+console.clear();
+
+function updSwiperNumericPagination() {
+  this.el.querySelector( '.swiper-counter' )
+    .innerHTML = '<span class="count">'+ (this.realIndex + 1) +'</span>/<span class="total">'+ this.el.slidesQuantity +'</span>';
+}
+
+
+document.addEventListener( 'DOMContentLoaded', function () {
+  document.querySelectorAll( '.swiper-content-detail' ).forEach( function( node ) {
+    
+    node.slidesQuantity = node.querySelectorAll( '.swiper-slide' ).length;
+    
+    // Swiper initialization
+    new Swiper( node, {
+      speed:         1000,
+      loop:          true,
+    //   autoplay:      { delay: 2000, },
+    
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 0,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     type: "fraction"
+        //   },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      on: {
+        init:        updSwiperNumericPagination,
+        slideChange: updSwiperNumericPagination
+      }
+    });
+  });
+});
