@@ -8,6 +8,7 @@ use Platform\Blog\Models\Post;
 use Illuminate\Support\Arr;
 use ZipArchive;
 use File;
+use Carbon\Carbon;
 
 class ApiController extends Controller {
     protected $postRepository;
@@ -60,22 +61,26 @@ class ApiController extends Controller {
         );
 
         //get gallery by post
-        $gallery = gallery_meta_data($post);
+        $galleries = gallery_meta_data($post);
 
         $zip = new ZipArchive;
-        $fileName = 'myzip.zip';
+        
+        $currentTime = Carbon::now();
+
+        return ;
+        return 'album_'.$currentTime->format('d_m_Y').'_'.$currentTime->toArray()['timestamp'];
+
+        return $post->name;
         
         if($zip->open(public_path($fileName), ZipArchive::CREATE)==TRUE) {
-            $files = File::files(public_path('storage/contact'));
-            foreach($gallery as $file) {
-                $filee = public_path('storage/',$file['img']);
-                $relativeName = basename($filee);
-                $zip->addFile($filee, $relativeName);
+            foreach($galleries as $file) {
+                $relativeName = basename($file['img']);
+                $zip->addFile(public_path('storage/'.$file['img']), $relativeName);
             }
 
             $zip->close();
         }
 
-        return response()->download($fileName);
+        return response()->download(public_path($fileName));
     }
 }
