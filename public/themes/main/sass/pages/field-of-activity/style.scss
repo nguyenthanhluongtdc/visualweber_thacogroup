@@ -206,7 +206,7 @@
                     .content{
                        
                         justify-content: center;
-                        padding: 8% 25%;
+                        padding: 8% 20%;
                         @media only screen and (max-width: 1680px){padding: 8% 20%;}
                         .symbol, .title, .text{
                             display: table;
@@ -378,19 +378,20 @@
                 }
                 .swiper-button-prev{
                     position: absolute;
-                    left: 20%;
+                    left: 20.6%;
                     z-index: 99;
                     top: 52%;
                     @media only screen and (max-width: 1680px){ top: 50%;}
+                    @media only screen and (max-width: 1100px){left: 20%;}
                     
                 }
                 .swiper-button-next{
                     position: absolute;
-                    left: 28.5%;
+                    left: 27.8%;
                     z-index: 99;
                     top: 52%;
                     @media only screen and (max-width: 1680px){ top: 50%;}
-                    @media only screen and (max-width: 1100px){left: 27.5%;}
+                    @media only screen and (max-width: 1320px){left: 27.2%;}
                 }
                 .swiper-button-prev:after,
                 .swiper-button-next:after{
