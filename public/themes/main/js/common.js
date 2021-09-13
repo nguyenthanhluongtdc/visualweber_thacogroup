@@ -582,7 +582,7 @@ let commercialFieldSlider = new Swiper('.commercial-field-slider', {
     speed: 1500,
     loop: true,
     autoplay: {
-        delay: 6000,
+        delay: 1000,
         disableOnInteraction: false,
     },
     pagination: {
@@ -619,38 +619,61 @@ $(document).ready(function() {
 
 console.clear();
 
-function updSwiperNumericPagination() {
-  this.el.querySelector( '.swiper-counter' )
-    .innerHTML = '<span class="count">'+ (this.realIndex + 1) +'</span>/<span class="total">'+ this.el.slidesQuantity +'</span>';
-}
+// function updSwiperNumericPagination() {
+//   this.el.querySelector( '.swiper-counter' )
+//     .innerHTML = '<span class="count">'+ (this.realIndex + 1) +'</span>/<span class="total">'+ this.el.slidesQuantity +'</span>';
+// }
 
 
-document.addEventListener( 'DOMContentLoaded', function () {
-  document.querySelectorAll( '.swiper-content-detail' ).forEach( function( node ) {
+// document.addEventListener( 'DOMContentLoaded', function () {
+//   document.querySelectorAll( '.swiper-content-detail' ).forEach( function( node ) {
     
-    node.slidesQuantity = node.querySelectorAll( '.swiper-slide' ).length;
+//     node.slidesQuantity = node.querySelectorAll( '.swiper-slide' ).length;
     
-    // Swiper initialization
-    new Swiper( node, {
-      speed:         1000,
-      loop:          true,
-    //   autoplay:      { delay: 2000, },
+//     // Swiper initialization
+//     new Swiper( node, {
+//       speed:         1000,
+//       loop:          true,
+//     //   autoplay:      { delay: 2000, },
     
-        slidesPerView: 3,
-        paginationClickable: true,
-        spaceBetween: 0,
-        // pagination: {
-        //     el: ".swiper-pagination",
-        //     type: "fraction"
-        //   },
+//         slidesPerView: 4,
+//         paginationClickable: true,
+//         spaceBetween: 0,
+//         pagination: {
+//             el: '.swiper-pagination',
+//             type: 'fraction',
+//             formatFractionCurrent: function (number) {
+//                 return '0' + number;
+//             }
+//           },
+//       navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev"
+//       },
+//       on: {
+//         init:        updSwiperNumericPagination,
+//         slideChange: updSwiperNumericPagination
+//       }
+//     });
+//   });
+// });
+
+$(function () {
+    var swiper = new Swiper('.swiper-content-detail', {
+      loop: true,
+      slidesPerView: 4,
+    paginationClickable: true,
+    spaceBetween: 0,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+          formatFractionCurrent: function (number) {
+              return  + number;
+          }
+        },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      on: {
-        init:        updSwiperNumericPagination,
-        slideChange: updSwiperNumericPagination
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
       }
     });
-  });
 });

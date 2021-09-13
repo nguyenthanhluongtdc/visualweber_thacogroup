@@ -111,7 +111,7 @@
 
 
     <div class="activity-content-detail-slide mt-40 mb-40">
-        <div class="activity-content-detail-slide__main-content">
+        {{-- <div class="activity-content-detail-slide__main-content">
             <div class="content">
                 <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
                 <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
@@ -121,12 +121,28 @@
                 <p class="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
                 </p>
+               
             </div>
             
-        </div>
+        </div> --}}
         <div class="activity-content-detail-slide__detail-content">
             <div class="swiper-container swiper-content-detail">
+                <div class="main-content">
+                    <div class="content">
+                        <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
+                        <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                        <h2 class="text-uppercase title mb-3 ">
+                            bán lẻ tiêu dùng
+                        </h2>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
+                        </p>
+                       
+                    </div>
+                    
+                </div>
                 <div class="swiper-wrapper">
+                   
                     <div class="swiper-slide">
                         <div class="bg"></div>
                         <img src="{{Theme::asset()->url('images/lvhd/lv1.jpg') }}" alt="slide" class="bg-img">
@@ -169,11 +185,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-counter"></div>
+                <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                
             </div>
+           
+           
         </div>
         
     </div>
@@ -370,7 +388,7 @@
             </div>
     
             <div class="readmore">
-                <a href="#" class="text-dark">Xem thêm<Span>>></Span> </a>
+                <a href="#" class="text-dark">Xem thêm <Span>>></Span> </a>
             </div>
         </div>
         
