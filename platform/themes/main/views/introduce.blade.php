@@ -9,7 +9,7 @@
             <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="icon">
             <h1  class="font50 big-title">{{has_field($page, 'about_us_title')}}</h1>
         </div>
-        <div class="about-us__content mt-40 text-justify" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+        <div class="about-us__content mt-40 font18 text-justify" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             {!!has_field($page, 'about_us_content')!!}
         </div>
         <div class="future-goal-banner mt-40" style="background-image:url('{{ get_field($page, 'vision_block_background') ? get_image_url(get_field($page, 'vision_block_background')) : Theme::asset()->url('images/introduce/tam-nhin-chien-luoc.jpg') }}')">
