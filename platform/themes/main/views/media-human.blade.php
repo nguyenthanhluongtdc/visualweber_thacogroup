@@ -114,12 +114,9 @@ $postSlider = get_featured_posts(6);
                                    </div>
                                    @endforeach
                                    @endif
-                                  
-                                  
                                    {{ $posts->links('vendor.pagination.custom') }}
                
                                </div>
-                              
                            </div>
                       
                    </div>
