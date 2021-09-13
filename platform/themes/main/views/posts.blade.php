@@ -157,7 +157,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                         
                         </div>
                         <div class="view-all">
-                            <a href="">Xem tất cả</a>
+                            <a href="{!! has_field($category,'link') !!}  ">Xem tất cả</a>
                         </div>
                     </div>
                     
