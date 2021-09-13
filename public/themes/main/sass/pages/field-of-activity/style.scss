@@ -693,8 +693,16 @@
         }
     }
 }
-
+#button-activity{
+    display: block;
+    visibility: hidden;
+}
+.show-button-activity {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
 .field-of-activity-box{
+    
     .box-node-right {
         position: fixed;
         top: 45%;

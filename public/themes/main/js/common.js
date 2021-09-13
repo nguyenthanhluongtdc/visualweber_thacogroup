@@ -677,3 +677,16 @@ $(function () {
       }
     });
 });
+
+//btn activity
+if ($('#button-activity').length > 0) {
+    var btnTop = $('#button-activity')
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btnTop.addClass('show-button-activity')
+        } else {
+            btnTop.removeClass('show-button-activity')
+        }
+    })
+    
+}

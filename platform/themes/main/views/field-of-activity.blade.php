@@ -536,7 +536,7 @@
 
 
 
-<div class="field-of-activity-box">
+<div class="field-of-activity-box" id="button-activity">
     <div class="box-node-right">
         <ul class="pagination-customize" >
             <li class="pagi-item" >
