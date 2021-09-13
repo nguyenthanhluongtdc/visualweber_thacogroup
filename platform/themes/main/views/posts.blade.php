@@ -175,13 +175,16 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                     
                         <div class="swiper-container media-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
                             <div class="swiper-wrapper">
-
+                                @if(has_field($category, 'repeater_media_img_slide'))
+                                @foreach(has_field($category, 'repeater_media_img_slide') as $item)
                                 <div class="swiper-slide">
                                                     
-                                    <img src="{{Theme::asset()->url('images/home/transport/icon2-img1.jpg') }}" alt="">
+                                    <img src="{{get_image_url(has_sub_field($item,'image'))}}" alt="">
                                     
                                 </div>
-                                <div class="swiper-slide">                  
+                                @endforeach
+                                @endif
+                                {{-- <div class="swiper-slide">                  
                                 
                                     <img src="{{Theme::asset()->url('images/home/transport/icon2-img2.jpg') }}" alt="">
                                     
@@ -200,7 +203,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                 
                                     <img src="{{Theme::asset()->url('images/home/transport/icon5-img1.jpg') }}" alt="">
                                     
-                                </div>
+                                </div> --}}
                             
                             </div>
                             <div class="swiper-pagination"></div>
@@ -216,14 +219,18 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">             
                                     <div class="video-wrapper">
+                                        @if(has_field($category, 'video_media'))
                                         <video muted   autoplay class="__video w-100">
-                                            <source src="{{ Theme::asset()->url('images/video/chuc-mung-nam-moi.mp4') }}" type="video/mp4">
+                                           
+                                            <source src="{{get_image_url(has_field($category,'video_media'))}}" type="video/mp4">
+                                                
                                         </video> 
+                                        @endif
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
-                        </div>
+                        </div> 
                         
                         <a href="" class="read-more">Xem thêm</a>
                     

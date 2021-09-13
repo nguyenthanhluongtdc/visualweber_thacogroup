@@ -235,11 +235,11 @@ var recruitment_slider = new Swiper('.recruitment-slider', {
 var media_sider = new Swiper('.media-slider', {
 
 
-    // loop: true,
-    // autoplay: {
-    //     delay: 4000,
-    //     disableOnInteraction: false,
-    // },
+    loop: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
     speed: 2000,
 
     pagination: {
