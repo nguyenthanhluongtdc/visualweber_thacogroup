@@ -18,15 +18,15 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                             <div class="swiper-slide">
                                                 <div class="news__top">
                                                             <div class="img-post">
-                                                                <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
+                                                                <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="{{$post->name}}">
                                                             </div>
                                                             <div class="news-post h-100">
                                                               
-                                                                <h3 class=" title font18">BẢN TIN NỘI BỘ</h3>
+                                                                <h3 class=" title font18">{!!__('BẢN TIN NỘI BỘ')!!}</h3>
                                                                 <a href="{{$post->url}}">  <h4 class="name font18 ">{{$post->name}}</h4></a>
                                                                 <span class="time"> {{date_format($post->created_at,"d-m-Y")}}</span>
                                                                 <p class="description font18  text-justify">{{$post->description}}</p>
-                                                                <a href="/chi-tiet-truyen-thong" class="read-more">Xem thêm</a>
+                                                                <a href="{{$post->url}}" class="read-more">Xem thêm</a>
                                                             </div>
                                                 </div>
                                             </div>
@@ -46,7 +46,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                                                <div class="post_content_bottom h-100">
                                                                    <a class="post-wrapper" href=" {{$post->url}}">
                                                                        <div class="post-thumbnail">
-                                                                           <img src="{{ get_object_image($post->image) }}" alt="">
+                                                                           <img src="{{ get_object_image($post->image) }}" alt="{{$post->name}}">
                                                                        </div>
                                                                       
                                                                        <h4 class="post_name font18">{{$post->name}}</h4>
@@ -103,11 +103,11 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                        <div class="img-content">
                                            <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <div class="post-thumbnail">
-                                                   <a href="/chi-tiet-truyen-thong"><img src="{{ get_object_image($post->image) }}" alt=""></a>
+                                                   <a href="{{$post->url}}"><img src="{{ get_object_image($post->image) }}" alt="{{$post->name}}"></a>
                                                </div>
                                            </div>
                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                               <a href="/chi-tiet-truyen-thong"><h3 class="name font18">{{$post->name}}</h3></a>
+                                               <a href="{{$post->url}}"><h3 class="name font18">{{$post->name}}</h3></a>
                                              
                                                <p class="time">{{date_format($post->created_at,"d-m-Y")}}</p>
                                                <p class="desc font18">{{$post->description}}</p>
