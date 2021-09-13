@@ -8,10 +8,6 @@
                         <meta itemprop="name" content="{{ $crumb['label'] }}" /></a>
                         <meta itemprop="position" content="{{ $i + 1}}" />
                     </li>
-                    
-                    {{-- <li class="breadcrumb-item">
-                        <a href="/truyen-thong">Truyền thông</a>
-                    </li> --}}
                 @else
                     <li class="breadcrumb-item active">{!! $crumb['label'] !!}
                         <meta itemprop="name" content="{{ $crumb['label'] }}" />

@@ -56,26 +56,26 @@
                         <ul>
                             <li>
                                 <a href="{!! theme_option('footer-facebook') !!}">
-                                    <img src="{{ get_image_url(theme_option('footer-facebook-icon')) }}" alt="">
+                                    <img src="{{ get_image_url(theme_option('footer-facebook-icon')) }}" alt="{!! theme_option('footer-facebook') !!}">
                                 </a>
                             </li>
                             <li>
                                 <a href="{!! theme_option('footer-youtube') !!}">
-                                    <img src="{{ get_image_url(theme_option('footer-youtube-icon')) }}" alt="">
+                                    <img src="{{ get_image_url(theme_option('footer-youtube-icon')) }}" alt="{!! theme_option('footer-youtube') !!}">
                                 </a>
                             </li>
                             <li>
-                                <a href="{!! theme_option('footer-phone') !!}">
-                                    <img src="{{ get_image_url(theme_option('footer-phone-icon')) }}" alt="">
+                                <a href="tel:{!! theme_option('footer-phone') !!}">
+                                    <img src="{{ get_image_url(theme_option('footer-phone-icon')) }}" alt="{!! theme_option('footer-phone') !!}">
                                 </a>
                             </li>
                             <li>
                                 <a href="{!! theme_option('footer-linkedin') !!}">
-                                    <img src="{{ get_image_url(theme_option('footer-linkedin-icon')) }}" alt="">
+                                    <img src="{{ get_image_url(theme_option('footer-linkedin-icon')) }}" alt="{!! theme_option('footer-linkedin') !!}">
                                 </a>
                             </li>
                             <li>
-                                <a href="{!! theme_option('footer-email') !!}">
+                                <a href="maito:{!! theme_option('footer-email') !!}">
                                     <img src="{{ get_image_url(theme_option('footer-email-icon')) }}" alt="">
                                 </a>
                             </li>

@@ -9,7 +9,7 @@
             <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="icon">
             <h1  class="font50 big-title">{{has_field($page, 'about_us_title')}}</h1>
         </div>
-        <div class="about-us__content mt-40 text-justify" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+        <div class="about-us__content mt-40 font18 text-justify" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             {!!has_field($page, 'about_us_content')!!}
         </div>
         <div class="future-goal-banner mt-40" style="background-image:url('{{ get_field($page, 'vision_block_background') ? get_image_url(get_field($page, 'vision_block_background')) : Theme::asset()->url('images/introduce/tam-nhin-chien-luoc.jpg') }}')">
@@ -17,7 +17,7 @@
                 <div class="row mr-0 ml-0">
                     @forelse (has_field($page, 'vision_block') as $key => $item)
                     <div class="col-sm-4 pl-0 pr-0">
-                        <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="{{50 + $key*100}}" class="aos-init aos-animate">
+                        <div class="future-goal {{$loop->last ? 'last' :''}} p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="{{50 + $key*100}}" class="aos-init aos-animate">
                             <img src="{{ get_image_url(has_sub_field($item, 'logo')) }}" alt="{{has_sub_field($item, 'title')}}">
                             <h3 class="title font40">{{has_sub_field($item, 'title')}}</h3>
                             <div class="desc font18">
@@ -36,7 +36,7 @@
         </div>
         <div class="field-activity-intro-wrapper">
             <div class="desc-field pt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                <p class="desc-cotent font24 text-justify">
+                <p class="desc-cotent font18 text-justify">
                     {!!has_field($page, 'about_us_field_description')!!}
                  
                 </p>

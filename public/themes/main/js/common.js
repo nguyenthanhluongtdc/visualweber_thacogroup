@@ -574,3 +574,119 @@ $('#mask').click(function() {
     $('.window').hide();
 });
 //end popup
+
+
+//slide feild of activity
+
+let commercialFieldSlider = new Swiper('.commercial-field-slider', {
+    speed: 1500,
+    loop: true,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.commercial-field-slider .swiper-pagination',
+        clickable: true,
+    },
+    
+   
+})
+
+$(document).ready(function() {
+    var $swiper = $(".slide-news");
+    var $bottomSlide = null; 
+    var $bottomSlideContent = null; 
+    var mySwiper = new Swiper(".slide-news", {
+      spaceBetween: 1,
+      slidesPerView: 3,
+      centeredSlides: true,
+      roundLengths: true,
+      loop: true,
+      loopAdditionalSlides: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      pagination: {
+        el: '.slide-news .swiper-pagination',
+        clickable: true,
+    },
+    });
+  });
+  
+
+
+console.clear();
+
+// function updSwiperNumericPagination() {
+//   this.el.querySelector( '.swiper-counter' )
+//     .innerHTML = '<span class="count">'+ (this.realIndex + 1) +'</span>/<span class="total">'+ this.el.slidesQuantity +'</span>';
+// }
+
+
+// document.addEventListener( 'DOMContentLoaded', function () {
+//   document.querySelectorAll( '.swiper-content-detail' ).forEach( function( node ) {
+    
+//     node.slidesQuantity = node.querySelectorAll( '.swiper-slide' ).length;
+    
+//     // Swiper initialization
+//     new Swiper( node, {
+//       speed:         1000,
+//       loop:          true,
+//     //   autoplay:      { delay: 2000, },
+    
+//         slidesPerView: 4,
+//         paginationClickable: true,
+//         spaceBetween: 0,
+//         pagination: {
+//             el: '.swiper-pagination',
+//             type: 'fraction',
+//             formatFractionCurrent: function (number) {
+//                 return '0' + number;
+//             }
+//           },
+//       navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev"
+//       },
+//       on: {
+//         init:        updSwiperNumericPagination,
+//         slideChange: updSwiperNumericPagination
+//       }
+//     });
+//   });
+// });
+
+$(function () {
+    var swiper = new Swiper('.swiper-content-detail', {
+      loop: true,
+      slidesPerView: 4,
+    paginationClickable: true,
+    spaceBetween: 0,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+          formatFractionCurrent: function (number) {
+              return  + number;
+          }
+        },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+});
+
+//btn activity
+if ($('#button-activity').length > 0) {
+    var btnTop = $('#button-activity')
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btnTop.addClass('show-button-activity')
+        } else {
+            btnTop.removeClass('show-button-activity')
+        }
+    })
+    
+}

@@ -17,7 +17,7 @@
                         @foreach($galleries as $item)
                             <div class="album-item">
                                 <a data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal-detail">
-                                    <img src="{{ get_image_url(Arr::get($item, 'img')) }}" alt="">
+                                    <img src="{{ get_image_url(Arr::get($item, 'img')) }}" alt="image">
                                     <div class="album-item__download">
                                         <a download href="{{ get_image_url(Arr::get($item, 'img')) }}">
                                             <i class="fas fa-download text-white"></i>
@@ -113,7 +113,7 @@
                         @foreach($galleries as $item)
                             <div class="album-item">
                                 <a data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#video_modal-detail">
-                                    <img src="{{ get_image_url(Arr::get($item, 'img')) }}" alt="">
+                                    <img src="{{ get_image_url(Arr::get($item, 'img')) }}" alt="image">
                                     <div class="album-item__download">
                                         <i class="fas fa-download"></i>
                                     </div>
@@ -179,19 +179,36 @@
     @endif
 </section>
 <div class="breadcrum" style="background-color: #f1f1f1;">
-    @includeIf("theme.main::views.breadcrumb")
+    <div class="container-customize">
+        <ol class="breadcrumb">
+            @foreach ($crumbs = Theme::breadcrumb()->getCrumbs() as $i => $crumb)
+                @if ($i != (count($crumbs) - 1))
+                    <li class="breadcrumb-item">
+                        <a href="{{ $crumb['url'] }}" title="{{ $crumb['label'] }}">  {{ $crumb['label'] }}  
+                        <meta itemprop="name" content="{{ $crumb['label'] }}" /></a>
+                        <meta itemprop="position" content="{{ $i + 1}}" />
+                    </li>
+                @else
+                    <li class="breadcrumb-item active">{!!__('Bài viết')!!}
+                        <meta itemprop="name" content="{{ $crumb['label'] }}" />
+                        <meta itemprop="position" content="{{ $i + 1}}" /></li>
+                @endif
+            @endforeach
+        </ol>
+</div>
+ 
 </div>
 
 <div class="post-detail-wrapper">
     <div class="post-detail-content">
         <div class="poster-left order-1">
             @if(theme_option('poster_left'))
-            <img src="{{rvMedia::getImageUrl(theme_option('poster_left'))}}" alt="">
+            <img src="{{rvMedia::getImageUrl(theme_option('poster_left'))}}" alt="poster">
             @endif
         </div>
         <div class="poster-right order-3">
             @if(theme_option('poster_right'))
-            <img src="{{rvMedia::getImageUrl(theme_option('poster_right'))}}" alt="">
+            <img src="{{rvMedia::getImageUrl(theme_option('poster_right'))}}" alt="poster">
             @endif
         </div>
         <div class="content-middle order-2">
@@ -203,18 +220,13 @@
                 </div>
                 <div class="post-time-share">
                     <div class="left">
-                        <span class="">{{ $post->created_at->format('d/m/y') }} </span>
+                        <span class="">{{date_format($post->created_at,"d-m-Y")}} </span>
                     </div>
                     <div class="right"> 
                         
-                        <a href="#"">
+                        <a href="#">
                             <p class="share  text-dark">Chia sẻ</p>
                         </a>
-                      
-                        {{-- <button class="print-button">
-                            <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}"> <i class="fas fa-print text-dark"> </i></a>
-                           
-                        </button> --}}
                         <button class="print-button" onclick="window.print();">
                             <i class="fas fa-print text-dark"></i>
                        </button>
@@ -223,16 +235,11 @@
                 </div>
                 <div class="post-content">
                     <div class="text-content">
-                      
                             {!! $post->content !!}
-                       
                     </div>
-                   
-                   
-
                 </div>
                 <div class="post-tag">
-                    <h4 class="title">Từ khóa :</h4>
+                    <h4 class="title">{!!__('Từ khóa:')!!}</h4>
                     @foreach ($post->tags as $tag)
                     <div class="tag-item active">
                         <a href="">{{$tag->name}}</a>
@@ -256,7 +263,7 @@
                         <a href="{{ $relatedItem->url }}">
                             {{ $relatedItem->name }}
                         </a>
-                        <span class="time">{{ $relatedItem->created_at->format('d/m/Y') }}</span>
+                        <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span>
                     </li>
                     @endforeach
                    

@@ -71,6 +71,9 @@
                                     &:hover {
                                         color: $main_color;
                                     }
+                                    &:focus {
+                                        color: unset;
+                                    }
                                 }
                             }
                         }

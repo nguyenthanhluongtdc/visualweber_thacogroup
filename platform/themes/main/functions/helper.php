@@ -310,7 +310,7 @@ if (!function_exists('get_slug_by_template')) {
      */
     function get_slug_by_template($template)
     {
-        return app(PageInterface::class)->getByTemplate($template);
+        return app(PostInterface::class)->getByTemplate($template);
     }
 }
 
