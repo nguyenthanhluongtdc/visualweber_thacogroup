@@ -1,12 +1,13 @@
 
 @if(!blank($category) && isset($category))
     @php
-        $albumImage = get_posts_type_by_category($category->id, 6, 'gallery');
-        $albumVideo = get_posts_type_by_category($category->id, 6, 'video');
+        $albumImage = get_posts_type_by_category($category->id, 4, 'gallery');
+        $albumVideo = get_posts_type_by_category($category->id, 3, 'video');
+        
     @endphp
 
     <div id="app">
-        <page-media category-id="{{$category->id}}"> </page-media>
+        <page-media per-page="{{json_decode(json_encode($albumImage))->per_page}}" total-pages="{{json_decode(json_encode($albumImage))->last_page}}" category-id="{{$category->id}}" album-image="{{json_encode($albumImage)}}" album-video="{{json_encode($albumVideo)}}"> </page-media>
     </div>
 
     <script src="themes/main/js/app.js"></script>

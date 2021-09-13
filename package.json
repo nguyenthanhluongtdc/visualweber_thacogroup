@@ -27,6 +27,7 @@
         "@fullhuman/postcss-purgecss": "^4.0.0",
         "bootstrap-vue": "^2.21.1",
         "css-loader": "^6.2.0",
+        "laravel-vue-pagination": "^2.3.1",
         "moment": "^2.29.1",
         "postcss": "^8.2.10",
         "sanitize-html": "^2.3.3",

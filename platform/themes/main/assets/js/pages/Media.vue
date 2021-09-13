@@ -50,7 +50,7 @@
                                         </div>
                                         <div class="calender">
                                             <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
-                                                <input type="date" id="datepicker" name="calendars" autocomplete="off" class="font15">
+                                                <input type="date" @change="changeDate($event)" id="datepicker" name="calendars" autocomplete="off" class="font15">
                                             </div>
                                         </div>
                                         <div class="filter" id="filter">
@@ -135,7 +135,7 @@
                                                 <i class="far fa-image"></i>
                                                 <p class="quantity font18">100</p>
                                             </div>
-                                            <div class="album-item__download">
+                                            <div class="album-item__download" @click="zipDownload(item.id)">
                                                 <i class="fas fa-download"></i>
                                             </div>
                                         </div>
@@ -166,12 +166,14 @@
                         </div>
                     </div>
 
-                    <paginationn
-                        :totalPages="albumImageTotalPages"
+                    <!-- <paginationn 
                         :perPage="albumImagePerPage"
+                        :totalPages="albumImageTotalPages"
                         :currentPage="albumImageCurrentPage"
                         @pagechanged="albumImageOnPageChange"
-                    />
+                    /> -->
+
+                    <paginationn :data="dataImage" @pagination-change-page="albumImageOnPageChange"></paginationn>
                 </div>
             </div>
         </div>
@@ -255,7 +257,7 @@ import vueCustomScrollbar from 'vue-custom-scrollbar';
 import "vue-custom-scrollbar/dist/vueScrollbar.css"
 
 //pagination
-import Paginationn from '../components/Pagination.vue'
+import Paginationn from 'laravel-vue-pagination';
 
 //swiper
 import { Swiper as SwiperClass, Pagination, Navigation } from 'swiper/js/swiper.esm'
@@ -267,12 +269,12 @@ SwiperClass.use([Pagination, Navigation])
 
 export default {
     name: 'Media',
-    props: ['categoryId'],
+    props: ['categoryId','albumImage', 'albumVideo', 'perPage', 'totalPages'],
     components: {
         vueCustomScrollbar,
         Swiper,
         SwiperSlide,
-        Paginationn,
+        Paginationn
     },
 
     data() {
@@ -290,17 +292,20 @@ export default {
                 }
             },
             indexItem: -1,
-            dataImage: [],
-            dataVideo: [],
+            dataImage: JSON.parse(this.albumImage),
+            dataVideo: JSON.parse(this.albumVideo),
             galleryImage: [],
             settingsScrollbar: {
                 suppressScrollY: false,
                 suppressScrollX: true,
                 wheelPropagation: false
             },
-            albumImageCurrentPage: 1,
-            albumImageTotalPages: 2,
-            albumImagePerPage: -1,
+            filterAlbumImage: {
+                keyword: "",
+                date: "",
+                type: "",
+                sort: "",
+            } 
         }
     },
 
@@ -312,6 +317,7 @@ export default {
 
                 await this.$http.get('api/get/gallery/post/'+id)
                     .then(response=> {
+                        console.log("response")
                         return response.data
                     })
                     .then(response=> {
@@ -326,15 +332,14 @@ export default {
             }
         },
 
-        loadAlbumImage: async function() {
-            await this.$http.get('api/get/album/image?page='+this.albumImageCurrentPage)
+        loadAlbumImage: async function(page=1) {
+            await this.$http.post('api/get/album/image?page='+page, {data: this.filterAlbumImage} )
                     .then(response=> {
+                        console.log(response)
                         return response.data.data
                     })
                     .then(response=> {
                         this.dataImage = response
-                        this.albumImagePerPage = response.per_page
-                        console.log(response)
                     })
                     .catch(error=> {
                         console.log(error)
@@ -362,15 +367,30 @@ export default {
             this.$modal.hide('sliderImage-modal');
         },
         albumImageOnPageChange(page) {
-            this.albumImageCurrentPage = page;
-            this.loadAlbumImage();
-            
-            console.log(page)
+            this.loadAlbumImage(page);
+        },
+        changeDate: function(event) {
+            console.log(event.target.value)
+        },
+        zipDownload: async function(id) {
+            await this.$http.get('api/download/album/image/'+id)
+                .then(response=> {
+                    console.log(response)
+                    return response.data
+                })
+                .catch(error=> {
+                    console.log(error)
+                })
+        }
+    },
+    computed: {
+        sortedDate: function() {
+            return this.dataImage.data.sort((a, b) => new Date(a.date) - new Date(b.date))
         }
     },
 
     mounted() {
-        this.loadAlbumImage()
+        this.loadAlbumImage();
     },
 }
 </script>
@@ -438,5 +458,11 @@ export default {
 
     .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
         background: #2e3951;
+    }
+
+    .pagination {
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 </style>
