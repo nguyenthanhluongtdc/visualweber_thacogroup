@@ -27,7 +27,7 @@
                                         </div>
                                         <div class="info-right">
                                             <h3 >
-                                                <a href="" class="font25 itemdown-show">
+                                                <a href="{{count(has_field($item, 'repeater_file_post_investor'))==1 ? get_object_image(has_sub_field($sub, 'file')) : ''}}" class="font25 {{count(has_field($item, 'repeater_file_post_investor'))>1 ? 'itemdown-show':'' }} ">
                                                     {!! $item->name !!}
                                                 </a>
                                             </h3>
