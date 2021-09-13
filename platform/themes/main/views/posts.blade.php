@@ -157,7 +157,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                         
                         </div>
                         <div class="view-all">
-                            <a href="">Xem tất cả</a>
+                            <a href="{!! has_field($category,'link') !!}  ">Xem tất cả</a>
                         </div>
                     </div>
                     
@@ -209,7 +209,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                             <div class="swiper-pagination"></div>
                         </div>
                         
-                        <a href="" class="read-more">Xem thêm</a>
+                        <a href="{!! has_field($category,'link') !!} " class="read-more">Xem thêm</a>
                     
                 </div>
             </div>
@@ -232,7 +232,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                             <div class="swiper-pagination"></div>
                         </div> 
                         
-                        <a href="" class="read-more">Xem thêm</a>
+                        <a href="{!! has_field($category,'link') !!} " class="read-more">Xem thêm</a>
                     
                 </div>
             </div>

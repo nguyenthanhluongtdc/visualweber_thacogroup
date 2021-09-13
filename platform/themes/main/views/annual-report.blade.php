@@ -21,9 +21,9 @@
                                     alt="report">
                             </div>
                             <span class="date">{{$item->created_at->format('d/m/Y')}}</span>
-                            <p class="name-file font18"> {!! $item->name !!} </p>
+                            <a href="{{get_object_image(has_sub_field(has_field($item, 'repeater_file_post_investor')[0], 'file'))}}" target="_blank"><p class="name-file font18"> {!! $item->name !!} </p></a>
                             <div class="download">
-                                <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}"
+                                <a download href="{{get_object_image(has_sub_field(has_field($item, 'repeater_file_post_investor')[0], 'file'))}}"
                                     title="download">{!! __('DOWNLOAD') !!}</a>
                             </div>
                         </div>
