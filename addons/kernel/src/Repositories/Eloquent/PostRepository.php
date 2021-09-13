@@ -136,4 +136,23 @@ class PostRepository extends BlogPostRepository
         ->orderBy('posts.created_at', 'desc');
         return $this->applyBeforeExecuteQuery($data)->paginate($paginate);
     }
+
+    public function getFilterPostByCategory($filter) {
+        
+        $categoryId = $filter['categoryId'];
+
+        $data = $this->model
+            ->whereHas('categories', function($model) use($categoryId){
+                $model->where('categories.id', $categoryId);
+            });
+
+        $data->where('posts.name','like', '%'. $filter['keyword'] .'%');
+        $data->where('posts.format_type', $filter['format_type']);
+
+        if($filter['date']) {
+            $data->where('posts.created_at', '>=', $filter['date']);
+        }
+
+        return $this->applyBeforeExecuteQuery($data)->paginate(1);
+    }
 }

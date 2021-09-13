@@ -7,7 +7,7 @@
     @endphp
 
     <div id="app">
-        <page-media per-page="{{json_decode(json_encode($albumImage))->per_page}}" total-pages="{{json_decode(json_encode($albumImage))->last_page}}" category-id="{{$category->id}}" album-image="{{json_encode($albumImage)}}" album-video="{{json_encode($albumVideo)}}"> </page-media>
+        <page-media category-id="{{$category->id}}"> </page-media>
     </div>
 
     <script src="themes/main/js/app.js"></script>

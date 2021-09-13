@@ -22,7 +22,10 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
         Route::get('api/get/gallery/post/{id}', 'ApiController@getGalleryPost');
         Route::post('api/get/album/image', 'ApiController@getAlbumImage');
         Route::get('api/filter/album/image', 'ApiController@getFilterImage');
-        Route::get('api/download/album/image/{id}', 'ApiController@zipDownload');
+        Route::post('api/download/album/image', 'ApiController@zipDownload');
+
+        //video
+        Route::get('api/get/video/post/{id}', 'ApiController@getGalleryVideoPost');
 
     });
 });

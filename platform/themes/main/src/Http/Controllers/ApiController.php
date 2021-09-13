@@ -3,7 +3,7 @@ namespace Theme\Main\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
-use Platform\Blog\Repositories\Interfaces\PostInterface;
+use Platform\Kernel\Repositories\Interfaces\PostInterface as PostInterfaceCustom;
 use Platform\Blog\Models\Post;
 use Illuminate\Support\Arr;
 use ZipArchive;
@@ -11,16 +11,34 @@ use File;
 use Carbon\Carbon;
 
 class ApiController extends Controller {
-    protected $postRepository;
+    
 
-    public function __contruct(PostInterface $postRepository) {
-        $this->postRepository = $postRepository;
+    public function __contruct() {
+
+    }
+
+    public function getAlbumImage(Request $request) {
+
+        $filter = $request->data;
+
+        if(!$filter['categoryId']) {
+            return response()->json([
+                'data'  => [],
+            ], 200);
+        }
+
+        $data = app(PostInterfaceCustom::class)->getFilterPostByCategory($filter);
+                
+
+        return response()->json([
+            'data'  => $data,
+        ], 200);
     }
 
     public function getGalleryPost($id) {
         
         //get post by id
-        $post = app(PostInterface::class)->getFirstBy(
+        $post = app(PostInterfaceCustom::class)->getFirstBy(
             ['id'=> $id],
             ['*'],
             ['slugable']
@@ -28,7 +46,6 @@ class ApiController extends Controller {
 
         //get gallery by post
         $gallery = gallery_meta_data($post);
-        return basename($gallery[0]['img']);
 
         //return
         return response()->json([
@@ -37,43 +54,31 @@ class ApiController extends Controller {
             'message'   => 'success'
         ], 200);
     }
-    
-    public function getAlbumImage(Request $request) {
-        $data = get_posts_type_by_category(15, 4, 'gallery');
-        $filter = $request->data;
-
-        
-
-        return response()->json([
-            'data'  => $data,
-        ], 200);
-    }
 
     public function getFilterImage() {
 
     }
 
-    public function zipDownload($id) {
-        $post = app(PostInterface::class)->getFirstBy(
+    public function zipDownload(Request $request) {
+        $id = $request->id;
+
+        $post = app(PostInterfaceCustom::class)->getFirstBy(
             ['id'=> $id],
             ['*'],
             ['slugable']
         );
 
         //get gallery by post
-        $galleries = gallery_meta_data($post);
+        $gallery = gallery_meta_data($post);
 
         $zip = new ZipArchive;
         
         $currentTime = Carbon::now();
 
-        return ;
-        return 'album_'.$currentTime->format('d_m_Y').'_'.$currentTime->toArray()['timestamp'];
-
-        return $post->name;
+        $fileName = 'album_'.$currentTime->format('d_m_Y').'_'.$currentTime->toArray()['timestamp'];
         
         if($zip->open(public_path($fileName), ZipArchive::CREATE)==TRUE) {
-            foreach($galleries as $file) {
+            foreach($gallery as $file) {
                 $relativeName = basename($file['img']);
                 $zip->addFile(public_path('storage/'.$file['img']), $relativeName);
             }
@@ -82,5 +87,34 @@ class ApiController extends Controller {
         }
 
         return response()->download(public_path($fileName));
+    }
+
+    //video
+    public function getGalleryVideoPost($id) {
+        $post = app(PostInterfaceCustom::class)->getFirstBy(
+            ['id'=> $id],
+            ['*'],
+            ['slugable']
+        );
+
+        $data = [];
+        $description = "";
+        $youtube_code = "";
+
+        foreach(has_field($post, 'repeater_video') as $row) {
+            $description = has_sub_field($row, 'description');
+            $youtube_code = has_sub_field($row, 'youtube');
+            $data[] = [
+                'description'   => $description,
+                'youtube_code'  => $youtube_code,
+
+            ];
+        }
+
+        return response()->json([
+            'data'      => $data,
+            'name'      => $post->name,
+            'message'   => 'success'
+        ], 200);
     }
 }
