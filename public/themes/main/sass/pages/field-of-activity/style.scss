@@ -5,17 +5,21 @@
             position: absolute;
             bottom: 20%;
             right: 10%;
-            width: 605px;
+            width: 400px;
+            height: 400px;
             background: rgba(161 , 161, 161 , 0.8); 
             padding: 40px;
             color: #fff;
             h2{
-                font-size: 30px;
+                font-size: 25px;
                 font-family: $MyriadPro-Bold;
                 text-transform: uppercase;
-                line-height: 41px;
+                line-height: 1;
                 padding-top: 20px;
+                
                 position: relative;
+                
+                @include split_str(4);
                 &::before{
                     content: '';
                     position: absolute;
@@ -28,11 +32,14 @@
             }
             p{
                 font-family: $MyriadPro-Regular;
+                font-size: 16px;
+                @include split_str(5);
+                padding-top: 10px;
             }
             a.link{
                 color: #fff;
                 float: right;
-                font-size: 17px;
+                font-size: 14px;
                 font-family: $MyriadPro-Bold;
                 text-transform: uppercase;
                 span{
@@ -55,6 +62,7 @@
                     width: 30px;
                     height: 40px;
                     align-self: center;
+                   
                 }
                 h3{
                     align-self: center;
@@ -62,13 +70,18 @@
                     font-weight: bolder;
                     color: #c2c0c0;
                     font-family: $MyriadPro-Bold;
-                   
+                    font-size: 40px;
+                    @media only screen and (max-width: 1680px){font-size: 30px;}
+                    @media only screen and (max-width: 1100px){font-size: 25px;}
                 }
             }
             .content{
                 padding: 0 10%;
                 text-align: justify;
                 line-height: 1.2;
+                font-size: 18px;
+                @media only screen and (max-width: 1680px){font-size: 15px;}
+                @media only screen and (max-width: 1100px){font-size: 12px;}
             }
         }
         &__right{
@@ -130,15 +143,28 @@
                 img {
                     height: 95px;
                     width: 95px;
+                    @media only screen and (max-width: 1320px){
+                        height: 75px;
+                        width: 75px;
+                    }
+                    @media only screen and (max-width: 1100px){
+                        height: 65px;
+                        width: 65px;
+                    }
                 }
                 .title {
                     font-family: $MyriadPro-Bold;
                     margin-bottom: 40px;
                     margin-top: 30px;
                     text-transform: uppercase;
+                    @media only screen and (max-width: 1100px){
+                        margin-bottom: 20px;
+                        margin-top: 15px;
+                    }
                 }
                 .desc {
                     font-family: $MyriadPro-Bold;
+                    @media only screen and (max-width: 1320px){font-size: 12px !important;}
                 }
                 border-right: 1px solid $white;
 
@@ -157,8 +183,15 @@
             // flex: 75%;
            
             .swiper-container{
-                &:nth-child(2n+1) {
+                display: flex;
+                &:nth-child(even) {
                     flex-direction: row-reverse;
+                    .swiper-pagination{
+                       display: none}
+                    .swiper-button-prev:after,
+                    .swiper-button-next:after{
+                       display: none;
+                    }
                 }
                 .main-content{
                     height: 20vw;
@@ -210,12 +243,10 @@
             
             .swiper-content-detail{
                 overflow: hidden;
-                 width: 98.9vw;
+                 width: auto;
                  height: 20vw;
                 
                  @media only screen and (max-width: 1680px){ height: 25vw;}
-
-                
                 .swiper-slide {
                     width: auto;
                     display: flex;
@@ -251,10 +282,6 @@
                         visibility .5s ease-in;
                         display: none;
                         position: absolute;
-                        // bottom: 0;
-                        // left: 0;
-                        // top: 0;
-                        // right: 0;
                         z-index: 2;
                         width: 100%;
                         height: 100%;
@@ -665,4 +692,140 @@
             }
         }
     }
+}
+
+.field-of-activity-box{
+    .box-node-right {
+        position: fixed;
+        top: 45%;
+        right: 10px;
+        z-index: 999;
+    
+        .pagination-customize {
+         
+          .pagi-item {
+            margin-bottom: 10px;
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            &:hover{
+                background-color: #dddcdcd0;
+                border-radius: 30px;
+            }
+            .number{
+                width: 3.4vw;
+                height: 3.4vw;
+                background-color: #fff;
+                border-radius: 50%;
+              border: 1px solid rgba(0, 0, 0, 0.253);
+              
+              img{
+                  width: 2.4vw;
+                  height: 1.5vw;
+                margin: 18px 10px 5px 10px;
+                  border-radius: 50%;
+                  @media only screen and (max-width: 1860px){margin: 15px 8px 5px 8px;}
+                  @media only screen and (max-width: 1440px){margin: 12px 10px 5px 8px;}
+                  @media only screen and (max-width: 1320px){margin: 10px 10px 5px 6px;}
+                  @media only screen and (max-width: 1100px){margin: 8px 10px 5px 4.5px;}
+              }
+             
+            }
+            .icon {
+            
+                img {
+                    width: 5vw;
+                    filter: invert(42%) sepia(56%) saturate(491%) hue-rotate(174deg) brightness(89%) contrast(84%);
+                }
+            }
+    
+            .icon,
+            .text {
+                text-align: center;
+                line-height: 3.6vw;
+                height: 3.4vw;
+                
+               
+                @media(max-width : 1440px){
+                    height: 3.1vw;
+                    line-height: 3.3vw;
+                }
+                @media(max-width : 1199px){
+                    height: 2.8vw;
+                    line-height: 3.1vw;
+                }
+                background-color: #fff;
+            }
+    
+            .text {
+              padding-left: 15px;
+              padding-right: 15px;
+              text-transform: uppercase;
+            border-radius: 30px 0 0 30px ;
+              opacity: 0;
+              pointer-events: none;
+              transition: all 400ms;
+              transform: translateX(100%);
+              background-color: #fff;
+             
+            }
+    
+            .icon {
+             
+              font-size: 25px;
+    
+              background-color: #fff;
+             
+              
+              @media(max-width : 1440px){
+                  width: 3.1vw;
+              }
+              @media(max-width : 1199px){
+                  width: 2.8vw;
+              }
+              
+            }
+    
+            &:hover {
+              .text {
+                background-color: transparent;
+                color: #fff;
+                opacity: 1;
+                pointer-events: all;
+                transform: translateX(0);
+                padding-left: 50px;
+                padding-right: 50px;
+                font-family: $MyriadPro-Bold;
+              }
+              .icon {
+                background-color: #fff;
+                img {
+                    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(204deg) brightness(101%) contrast(101%);
+                }
+              }
+            }
+          }
+    
+        //   > li:first-child {
+        //     .icon {
+        //         border: 1px solid rgba(0, 0, 0, 0.253);
+        //     }
+        //   }
+          .pagi-item.active {
+            .text {
+                background-color: #fff;
+                color: #fff;
+                opacity: 1;
+                pointer-events: all;
+                transform: translateX(0);
+              }
+              .icon {
+                background-color: #fff;
+                img {
+                    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(204deg) brightness(101%) contrast(101%);
+                }
+              }
+          }
+        }
+      }
 }

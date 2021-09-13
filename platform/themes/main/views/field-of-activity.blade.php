@@ -42,9 +42,9 @@
             <div class="commercial-field__left">
                 <div class="left-top d-flex justify-content-center" >
                     <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}">
-                    <h3 class="text-uppercase font40">LĨNH VỰC THƯƠNG MẠI & DỊCH VỤ</h3>
+                    <h3 class="text-uppercase">LĨNH VỰC THƯƠNG MẠI & DỊCH VỤ</h3>
                 </div>
-                <p class="content mt-25 font18">
+                <p class="content mt-25 ">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
@@ -126,7 +126,7 @@
             
         </div> --}}
         <div class="activity-content-detail-slide__detail-content">
-            <div class="swiper-container swiper-content-detail">
+            <div class="swiper-container swiper-content-detail mb-40">
                 
                 <div class="main-content">
                     <div class="content">
@@ -185,6 +185,7 @@
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -534,3 +535,52 @@
 </div>
 
 
+
+<div class="field-of-activity-box">
+    <div class="box-node-right">
+        <ul class="pagination-customize" >
+            <li class="pagi-item" >
+                <span class="text text-uppercase"> thiso </span>
+                <a href="#" title="" class="number click_scroll">
+                    <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thilogi-logo.png') }}" alt="" class="icon">
+
+                </a>
+              
+
+            </li>
+
+            <li class="pagi-item" >
+                <span class="text text-uppercase"> thadico </span>
+                <a href="#" title="" class="number click_scroll">
+                    <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thadico-logo.png') }}" alt="" class="icon">
+                </a>
+                
+            </li>
+
+            <li class="pagi-item">
+                <span class="text text-uppercase"> thacoauto </span>
+                <a href="#" title="" class="number click_scroll">
+                    <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thacoauto-logo.png') }}" alt="" class="icon">
+                </a>
+                
+            </li>
+
+            <li class="pagi-item">
+                <span class="text text-uppercase"> thagrico </span>
+                <a href="#" title="" class="number click_scroll">
+                    <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thagrico-logo.png') }}" alt="" class="icon">
+                </a>
+               
+            </li>
+
+            <li class="pagi-item">
+                <span class="text text-uppercase"> thiso </span>
+                <a href="#" title="" class="number click_scroll">
+                    <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thiso-logo.png') }}" alt="" class="icon">
+                </a>
+              
+            </li>
+
+        </ul>
+    </div>
+</div>
