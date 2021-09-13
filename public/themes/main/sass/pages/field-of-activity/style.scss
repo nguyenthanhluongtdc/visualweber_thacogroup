@@ -204,6 +204,7 @@
         &__detail-content{
             // flex: 75%;
             .swiper-container{
+                
                 .main-content{
                     height: 20vw;
                     width: 24.8vw;
@@ -218,7 +219,7 @@
                        
                         justify-content: center;
                         padding: 8% 25%;
-                        @media only screen and (max-width: 1680px){padding: 8% 15%;}
+                        @media only screen and (max-width: 1680px){padding: 8% 20%;}
                         .symbol, .title, .text{
                             display: table;
                             margin: 0 auto;
@@ -255,13 +256,14 @@
                 overflow: hidden;
                  width: 98.9vw;
                  height: 20vw;
-                 
+                
                  @media only screen and (max-width: 1680px){ height: 25vw;}
 
                 
                 .swiper-slide {
                     width: auto;
                     display: flex;
+
                     justify-content: center;
                     align-items: center;
                     position: relative;
@@ -354,7 +356,10 @@
                 // }
                 .swiper-pagination{
                 position: absolute ;
-                top: 37%;
+                align-items: center;
+                justify-content: center;
+                justify-self: center;
+                top: 40%;
                 left: 23%;
                 transform: translateX(-10%);
                 z-index: 10;
@@ -367,6 +372,12 @@
                 letter-spacing: .1em;
                 background: rgba(rgb(0, 0, 0),.4);
                 color: white;
+                font-weight: bold;
+                font-family: $MyriadPro-Bold;
+                @media only screen and (max-width: 1680px){padding-top: 32px; font-size: 12px;}
+                @media only screen and (max-width: 1440px){padding-top: 28px;}
+                @media only screen and (max-width: 1320px){padding-top: 23px;}
+                @media only screen and (max-width: 1100px){padding-top: 18px;}
                 
                 }
                
@@ -382,22 +393,25 @@
                     position: absolute;
                     left: 20%;
                     z-index: 99;
-                   
+                    top: 52%;
+                    @media only screen and (max-width: 1680px){ top: 50%;}
                     
                 }
                 .swiper-button-next{
                     position: absolute;
                     left: 28.5%;
-                    top: 50%;
                     z-index: 99;
-                   
-                   
+                    top: 52%;
+                    @media only screen and (max-width: 1680px){ top: 50%;}
+                    @media only screen and (max-width: 1100px){left: 27.5%;}
                 }
                 .swiper-button-prev:after,
                 .swiper-button-next:after{
                     color: black !important;
                     opacity: 40%;
-                    font-size: 22px;
+                    font-size: 30px;
+                    font-weight: 900;
+                    @media only screen and (max-width: 1680px){ font-size: 25px;}
                     
                 }
             }
