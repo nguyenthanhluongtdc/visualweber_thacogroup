@@ -127,6 +127,7 @@
         </div> --}}
         <div class="activity-content-detail-slide__detail-content">
             <div class="swiper-container swiper-content-detail">
+                
                 <div class="main-content">
                     <div class="content">
                         <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
@@ -189,10 +190,15 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                
+
+                
             </div>
            
            
+            
         </div>
+
+        
         
     </div>
 
@@ -388,7 +394,7 @@
             </div>
     
             <div class="readmore">
-                <a href="#" class="text-dark">Xem thêm <Span>>></Span> </a>
+                <a href="#">Xem thêm <Span>>></Span> </a>
             </div>
         </div>
         
