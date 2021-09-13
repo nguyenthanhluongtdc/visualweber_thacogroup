@@ -525,7 +525,10 @@
         </div>
 
         <div class="opt">
-            <img src="{{Theme::asset()->url('images/lvhd/opt2.png') }}">
+            <a href="#">
+                <img src="{{Theme::asset()->url('images/lvhd/opt2.png') }}">
+            </a>
+           
         </div>
     </div>
 
