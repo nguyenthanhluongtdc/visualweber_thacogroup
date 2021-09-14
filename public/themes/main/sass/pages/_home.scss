@@ -54,8 +54,9 @@
                                 z-index: 2;
                                 transform: translateY(-50%);
                                 padding: 30px;
-                                max-width: 400px;
-                                height: 400px;
+                                max-width: 420px;
+                                height: 420px;
+                              
                                 @media screen and (max-width: 1680px) {
                                     left: 65%;
                                     height: 380px;
@@ -66,7 +67,7 @@
                                 }
                                 @media screen and (max-width: 1280px) {
                                     left: 57%;
-                                    max-width: 330px;
+                                    max-width: 430px;
                                 }
                                 .title-post {
                                     position: relative;
@@ -96,7 +97,10 @@
                                     color: $white;
                                     border: 1px solid #fff;
                                     text-decoration: none;
+                                    position: absolute;
+                                    bottom: 5%;
                                 }
+                               
                             }
                         }
                     }

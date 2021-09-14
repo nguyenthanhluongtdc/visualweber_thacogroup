@@ -12,11 +12,11 @@ $page = app(PageInterface::class)->findById($homepageId);
                 <p class="description font24 text-justify">
                     {{ has_field($page , 'desc_short') ? get_field($page , 'desc_short') :''}}
                 </p>
-                <a href="{{ has_field($page , 'link_apply') ? get_field($page , 'link_apply') :''}}" class="btn-apply font24" title="{{has_field($page , 'link_apply')}}">Ứng tuyển ngay</a>
+                <a href="{{ has_field($page , 'link_apply') ? get_field($page , 'link_apply') :''}}" class="btn-apply font24" title="{{has_field($page , 'link_apply')}}">{!!__ ('Ứng tuyển ngay') !!}</a>
             </div>
-            <div class="bottom_slider_wrapper">
+            <div class="bottom_slider_wrapper"> 
                 <div class="title_label">
-                    <h3 class="title font28 font-myria-bold">Vị trí</h3>
+                    <h3 class="title font28 font-myria-bold">{!!__ ('Vị trí')!!}</h3>
                 </div>
                
                 <div class="swiper-container recruitment-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
