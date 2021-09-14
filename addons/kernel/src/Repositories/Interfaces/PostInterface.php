@@ -52,5 +52,5 @@ interface PostInterface extends BlogPostInterface
      */
     public function getAllWithFeatured(int $limit = 5, array $with = []);
 
-    public function getFilterPostByCategory(array $filter);
+    public function getFilterPostByCategory(array $filter, int $paginate = 6);
 }

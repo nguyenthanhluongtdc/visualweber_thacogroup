@@ -195,17 +195,17 @@
                         <h1 class="font50 big-title">Video</h1>
                     </div>
                     
-                    <div class="tab-image">
+                    <div class="tab-video">
                         <div class="media__tabs">
                             <ul class=" nav nav-tabs" id="tab-media" role="tablist">
                                 <li class="__tabs__item " role="media">
-                                    <a class="__tabs__link nav-link active" id="media-album-tab" data-toggle="tab" role="tab" aria-controls="media-image" aria-selected="true" href="#media-album" title="Tất Cả">
+                                    <a class="__tabs__link nav-link active" id="media-video-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-video" title="Tất Cả">
                                         <i class="far fa-images"></i>
                                         Albums
                                     </a>
                                 </li>
                                 <li class="__tabs__item" role="media">
-                                    <a class="__tabs__link nav-link" id="media-single-image-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-single-image" title="Tất Cả">
+                                    <a class="__tabs__link nav-link" id="media-single-video-tab" data-toggle="tab" role="tab" aria-controls="media-single-video" aria-selected="true" href="#media-single-video" title="Tất Cả">
                                         <i class="fas fa-image"></i>
                                         Video
                                     </a>
@@ -291,24 +291,24 @@
                         </div>
 
                         <div class="tab-content" id="nav-tabContent3 tab-content2">
-                            <div class="tab-pane fade active show" id="media-album" role="tabpanel" aria-labelledby="field-1-tab">
-                                <div class="media-banner">
-                                    <div class="list-album">
-                                        <div class="album-item" data-target="#album_modal" data-toggle="modal" v-if="dataVideo" v-for="(item) in dataVideo.data" :key="item.id">
-                                            <div class="album-item__img" @click="loadGalleryVideo(item.id, 'album')">
+                            <div class="tab-pane fade active show" id="media-video" role="tabpanel" aria-labelledby="field-1-tab">
+                                <div class="list-video-wrapper">
+                                    <div class="list-video">
+                                        <div class="video-item" data-target="#album_modal" data-toggle="modal" v-if="dataVideo" v-for="(item) in dataVideo.data" :key="item.id">
+                                            <div class="video-thumbnail" @click="loadGalleryVideo(item.id, 'album')">
                                                 <img :src="'storage/'+item.image" alt="">
                                             </div>
-                                            <div class="album-item__name ">
+                                            <div class="video-item__name font20">
                                                 <p class="name font20">
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="album-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
-                                            <div class="album-item__count">
-                                                <i class="far fa-image"></i>
+                                            <span class="video-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
+                                            <div class="video-item__count">
+                                                <i class="fas fa-photo-video"></i>
                                                 <p class="quantity font18">100</p>
                                             </div>
-                                            <div title="Tải xuống album" class="album-item__download" @click="zipDownload(item.id)">
+                                            <div title="Tải xuống album" class="video-item__download" @click="zipDownload(item.id)">
                                                 <i class="fas fa-download"></i>
                                             </div>
                                         </div>
@@ -316,25 +316,56 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="media-single-image" role="tabpanel" aria-labelledby="field-2-tab">
-                                <div class="media-banner">
-                                    <div class="list-image">
-                                        <div class="image-item" v-if="dataImage" v-for="(item) in dataImage.data" :key="item.id">
-                                            <div class="image-item__img" @click="loadGalleryVideo(item.id)">
-                                                <img class="" :src="'storage/'+item.image" alt="">
+                            <div class="tab-pane fade" id="media-single-video" role="tabpanel" aria-labelledby="field-2-tab">
+                                    <div class="media-video mCustomScrollbar" data-mcs-theme="dark">
+                                        <div class="list-video" >
+                                            <div class="left">
+                                                <div class="video-main">
+                                                    <div class="video-wrapper">
+                                                        <video muted loop  autoplay class="__video w-100">
+                                                            <source src="themes/main/images/video/chuc-mung-nam-moi.mp4" type="video/mp4">
+                                                        </video> 
+                                                    </div>
+                                                    <p class="name font30">
+                                                        THACO CHÚC MỪNG NĂM MỚI – XUÂN TÂN SỬU 2021
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <div class="image-item__back" @click="loadGalleryVideo(item.id, 'album')">
-                                                <i class="far fa-image"></i>
-                                                <p  class="text font18">Album</p>
-                                            </div>
-                                            <div class="icon--download">
-                                                <a download :href="'storage/'+item.image" title="Tải xuống">
-                                                    <i class="fas fa-download text-white"></i>
-                                                </a>
+                                            <div class="right">
+                                                <div class="list-video-left">
+                                                    <div class="video-item">
+                                                        <a href="" class="img-button">
+                                                            <img src="themes/main/images/media/video-1.jpg" alt="">
+                                                            <i class="far fa-play-circle button-video"></i>
+                                                        </a>
+                                                        <p class="name font20">
+                                                            MAZDA CX-30: TÂN BINH PHÂN KHÚC SUV ĐÔ THỊ CÓ GÌ HẤP DẪN KHÁCH HÀNG?
+                                                        </p>                         
+                                                    </div>
+                                                    <div class="video-item ">
+                                                        <a href="" class="img-button">
+                                                            <img src="themes/main/images/media/video-2.jpg" alt="">
+                                                            <i class="far fa-play-circle button-video"></i>
+                                                        </a>
+                                                        
+                                                        <p class="name  font20">
+                                                            10 ĐIỂM GIÚP MAZDA6 MỚI THUYẾT PHỤC KHÁCH HÀNG VIỆT NAM
+                                                        </p>
+                                                    </div>
+                                                    <div class="video-item ">
+                                                        <a href="" class="img-button">
+                                                            <img src="themes/main/images/media/video-2.jpg" alt="">
+                                                            <i class="far fa-play-circle button-video"></i>
+                                                        </a>
+                                                    
+                                                        <p class="name  font20">
+                                                            10 ĐIỂM GIÚP MAZDA6 MỚI THUYẾT PHỤC KHÁCH HÀNG VIỆT NAM
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>

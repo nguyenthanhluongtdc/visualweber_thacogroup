@@ -137,7 +137,7 @@ class PostRepository extends BlogPostRepository
         return $this->applyBeforeExecuteQuery($data)->paginate($paginate);
     }
 
-    public function getFilterPostByCategory($filter) {
+    public function getFilterPostByCategory($filter, $paginate = 6) {
         
         $categoryId = $filter['categoryId'];
 
@@ -153,6 +153,6 @@ class PostRepository extends BlogPostRepository
             $data->where('posts.created_at', '>=', $filter['date']);
         }
 
-        return $this->applyBeforeExecuteQuery($data)->paginate(1);
+        return $this->applyBeforeExecuteQuery($data)->paginate($paginate);
     }
 }

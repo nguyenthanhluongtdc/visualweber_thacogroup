@@ -27,7 +27,9 @@ class ApiController extends Controller {
             ], 200);
         }
 
-        $data = app(PostInterfaceCustom::class)->getFilterPostByCategory($filter);
+        $paginate = theme_option('number_of_posts_in_a_category');
+
+        $data = app(PostInterfaceCustom::class)->getFilterPostByCategory($filter, $paginate);
                 
 
         return response()->json([

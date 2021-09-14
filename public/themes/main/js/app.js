@@ -2569,6 +2569,37 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //custom-scrollbar
 
  //pagination
@@ -36726,7 +36757,7 @@ var render = function() {
             [
               _vm._m(7),
               _vm._v(" "),
-              _c("div", { staticClass: "tab-image" }, [
+              _c("div", { staticClass: "tab-video" }, [
                 _c("div", { staticClass: "media__tabs" }, [
                   _vm._m(8),
                   _vm._v(" "),
@@ -36813,23 +36844,23 @@ var render = function() {
                       {
                         staticClass: "tab-pane fade active show",
                         attrs: {
-                          id: "media-album",
+                          id: "media-video",
                           role: "tabpanel",
                           "aria-labelledby": "field-1-tab"
                         }
                       },
                       [
-                        _c("div", { staticClass: "media-banner" }, [
+                        _c("div", { staticClass: "list-video-wrapper" }, [
                           _c(
                             "div",
-                            { staticClass: "list-album" },
+                            { staticClass: "list-video" },
                             _vm._l(_vm.dataVideo.data, function(item) {
                               return _vm.dataVideo
                                 ? _c(
                                     "div",
                                     {
                                       key: item.id,
-                                      staticClass: "album-item",
+                                      staticClass: "video-item",
                                       attrs: {
                                         "data-target": "#album_modal",
                                         "data-toggle": "modal"
@@ -36839,7 +36870,7 @@ var render = function() {
                                       _c(
                                         "div",
                                         {
-                                          staticClass: "album-item__img",
+                                          staticClass: "video-thumbnail",
                                           on: {
                                             click: function($event) {
                                               return _vm.loadGalleryVideo(
@@ -36861,7 +36892,9 @@ var render = function() {
                                       _vm._v(" "),
                                       _c(
                                         "div",
-                                        { staticClass: "album-item__name " },
+                                        {
+                                          staticClass: "video-item__name font20"
+                                        },
                                         [
                                           _c(
                                             "p",
@@ -36879,7 +36912,7 @@ var render = function() {
                                       _vm._v(" "),
                                       _c(
                                         "span",
-                                        { staticClass: "album-item__date" },
+                                        { staticClass: "video-item__date" },
                                         [
                                           _vm._v(
                                             _vm._s(
@@ -36897,7 +36930,7 @@ var render = function() {
                                       _c(
                                         "div",
                                         {
-                                          staticClass: "album-item__download",
+                                          staticClass: "video-item__download",
                                           attrs: { title: "Tải xuống album" },
                                           on: {
                                             click: function($event) {
@@ -36926,99 +36959,58 @@ var render = function() {
                       {
                         staticClass: "tab-pane fade",
                         attrs: {
-                          id: "media-single-image",
+                          id: "media-single-video",
                           role: "tabpanel",
                           "aria-labelledby": "field-2-tab"
                         }
                       },
                       [
-                        _c("div", { staticClass: "media-banner" }, [
-                          _c(
-                            "div",
-                            { staticClass: "list-image" },
-                            _vm._l(_vm.dataImage.data, function(item) {
-                              return _vm.dataImage
-                                ? _c(
-                                    "div",
-                                    { key: item.id, staticClass: "image-item" },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "image-item__img",
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.loadGalleryVideo(
-                                                item.id
-                                              )
-                                            }
-                                          }
+                        _c(
+                          "div",
+                          {
+                            staticClass: "media-video mCustomScrollbar",
+                            attrs: { "data-mcs-theme": "dark" }
+                          },
+                          [
+                            _c("div", { staticClass: "list-video" }, [
+                              _c("div", { staticClass: "left" }, [
+                                _c("div", { staticClass: "video-main" }, [
+                                  _c("div", { staticClass: "video-wrapper" }, [
+                                    _c(
+                                      "video",
+                                      {
+                                        staticClass: "__video w-100",
+                                        attrs: {
+                                          muted: "",
+                                          loop: "",
+                                          autoplay: ""
                                         },
-                                        [
-                                          _c("img", {
-                                            attrs: {
-                                              src: "storage/" + item.image,
-                                              alt: ""
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "image-item__back",
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.loadGalleryVideo(
-                                                item.id,
-                                                "album"
-                                              )
-                                            }
+                                        domProps: { muted: true }
+                                      },
+                                      [
+                                        _c("source", {
+                                          attrs: {
+                                            src:
+                                              "themes/main/images/video/chuc-mung-nam-moi.mp4",
+                                            type: "video/mp4"
                                           }
-                                        },
-                                        [
-                                          _c("i", {
-                                            staticClass: "far fa-image"
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "p",
-                                            { staticClass: "text font18" },
-                                            [_vm._v("Album")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "icon--download" },
-                                        [
-                                          _c(
-                                            "a",
-                                            {
-                                              attrs: {
-                                                download: "",
-                                                href: "storage/" + item.image,
-                                                title: "Tải xuống"
-                                              }
-                                            },
-                                            [
-                                              _c("i", {
-                                                staticClass:
-                                                  "fas fa-download text-white"
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                : _vm._e()
-                            }),
-                            0
-                          )
-                        ])
+                                        })
+                                      ]
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("p", { staticClass: "name font30" }, [
+                                    _vm._v(
+                                      "\n                                                    THACO CHÚC MỪNG NĂM MỚI – XUÂN TÂN SỬU 2021\n                                                "
+                                    )
+                                  ])
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _vm._m(13)
+                            ])
+                          ]
+                        )
                       ]
                     )
                   ]
@@ -37671,12 +37663,12 @@ var staticRenderFns = [
             {
               staticClass: "__tabs__link nav-link active",
               attrs: {
-                id: "media-album-tab",
+                id: "media-video-tab",
                 "data-toggle": "tab",
                 role: "tab",
-                "aria-controls": "media-image",
+                "aria-controls": "media-video",
                 "aria-selected": "true",
-                href: "#media-album",
+                href: "#media-video",
                 title: "Tất Cả"
               }
             },
@@ -37695,12 +37687,12 @@ var staticRenderFns = [
             {
               staticClass: "__tabs__link nav-link",
               attrs: {
-                id: "media-single-image-tab",
+                id: "media-single-video-tab",
                 "data-toggle": "tab",
                 role: "tab",
-                "aria-controls": "media-video",
+                "aria-controls": "media-single-video",
                 "aria-selected": "true",
-                href: "#media-single-image",
+                href: "#media-single-video",
                 title: "Tất Cả"
               }
             },
@@ -37828,10 +37820,66 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "album-item__count" }, [
-      _c("i", { staticClass: "far fa-image" }),
+    return _c("div", { staticClass: "video-item__count" }, [
+      _c("i", { staticClass: "fas fa-photo-video" }),
       _vm._v(" "),
       _c("p", { staticClass: "quantity font18" }, [_vm._v("100")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "right" }, [
+      _c("div", { staticClass: "list-video-left" }, [
+        _c("div", { staticClass: "video-item" }, [
+          _c("a", { staticClass: "img-button", attrs: { href: "" } }, [
+            _c("img", {
+              attrs: { src: "themes/main/images/media/video-1.jpg", alt: "" }
+            }),
+            _vm._v(" "),
+            _c("i", { staticClass: "far fa-play-circle button-video" })
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "name font20" }, [
+            _vm._v(
+              "\n                                                        MAZDA CX-30: TÂN BINH PHÂN KHÚC SUV ĐÔ THỊ CÓ GÌ HẤP DẪN KHÁCH HÀNG?\n                                                    "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "video-item " }, [
+          _c("a", { staticClass: "img-button", attrs: { href: "" } }, [
+            _c("img", {
+              attrs: { src: "themes/main/images/media/video-2.jpg", alt: "" }
+            }),
+            _vm._v(" "),
+            _c("i", { staticClass: "far fa-play-circle button-video" })
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "name  font20" }, [
+            _vm._v(
+              "\n                                                        10 ĐIỂM GIÚP MAZDA6 MỚI THUYẾT PHỤC KHÁCH HÀNG VIỆT NAM\n                                                    "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "video-item " }, [
+          _c("a", { staticClass: "img-button", attrs: { href: "" } }, [
+            _c("img", {
+              attrs: { src: "themes/main/images/media/video-2.jpg", alt: "" }
+            }),
+            _vm._v(" "),
+            _c("i", { staticClass: "far fa-play-circle button-video" })
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "name  font20" }, [
+            _vm._v(
+              "\n                                                        10 ĐIỂM GIÚP MAZDA6 MỚI THUYẾT PHỤC KHÁCH HÀNG VIỆT NAM\n                                                    "
+            )
+          ])
+        ])
+      ])
     ])
   }
 ]
