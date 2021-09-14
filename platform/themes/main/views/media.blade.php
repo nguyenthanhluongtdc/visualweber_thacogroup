@@ -85,6 +85,11 @@
                     @endif
                 </div>
             </div>
+@if(!blank($category) && isset($category))
+    {{-- @php
+        $albumImage = get_posts_type_by_category($category->id, 4, 'gallery');
+        $albumVideo = get_posts_type_by_category($category->id, 3, 'video');
+    @endphp --}}
 
     <div id="app">
         <page-media category-id="{{$category->id}}"> </page-media>
