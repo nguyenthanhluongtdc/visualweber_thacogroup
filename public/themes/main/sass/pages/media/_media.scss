@@ -159,15 +159,6 @@
                   font-size: 18px;
                 }
               }
-              &__download {
-                position: absolute;
-                padding: 5px;
-                color: #fff;
-                background: rgba(0, 0, 0, 0.3);
-                top: 20px;
-                z-index: 2;
-                right: 20px;
-              }
               img {
                 max-width: 100%;
               }
@@ -306,15 +297,7 @@
                 &__count.album {
                   cursor: pointer;
                 }
-                &__download {
-                  position: absolute;
-                  padding: 5px;
-                  color: #fff;
-                  background: rgba(0, 0, 0, 0.3);
-                  top: 20px;
-                  z-index: 2;
-                  right: 20px;
-                }
+               
                 img {
                   max-width: 100%;
                 }
@@ -815,4 +798,24 @@
     padding: 0 15px;
     line-height: 1.2;
   }
+}
+
+.icon--download {
+  position: absolute;
+  padding: 5px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  top: 20px;
+  z-index: 2;
+  right: 20px;
+}
+
+.video-item__download {
+  position: absolute;
+  padding: 5px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  top: 20px;
+  z-index: 2;
+  right: 20px;
 }
