@@ -178,7 +178,7 @@
     <img class=" h-45vw img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
     @endif
 </section>
-{{-- <div class="container-customize">
+<div class="container-customize">
 
     <ol class="breadcrumb">
         @foreach ($crumbs = Theme::breadcrumb()->getCrumbs() as $i => $crumb)
@@ -195,7 +195,7 @@
             @endif
         @endforeach
     </ol>
-</div> --}}
+</div>
 
   
 </div>
