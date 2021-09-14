@@ -26,7 +26,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                                                 <a href="{{$post->url}}">  <h4 class="name font18 ">{{$post->name}}</h4></a>
                                                                 <span class="time"> {{date_format($post->created_at,"d-m-Y")}}</span>
                                                                 <p class="description font18  text-justify">{{$post->description}}</p>
-                                                                <a href="{{$post->url}}" class="read-more">Xem thêm</a>
+                                                                <a href="{{$post->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
                                                             </div>
                                                 </div>
                                             </div>
@@ -144,7 +144,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                             <ul class=" nav nav-tabs mb-0" id="tab-media" role="tablist">
                                 <li class="__tabs__item " role="media">
                                     <a class="__tabs__link nav-link active" id="media-image-tab" data-toggle="tab" role="tab" aria-controls="media-image" aria-selected="true" href="#media-image" title="Tất Cả">
-                                       HÌNH ẢNH 
+                                          {!! __('IMAGE') !!}
                                     </a>
                                 </li>
                                 <li class="__tabs__item" role="media">
@@ -157,7 +157,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                         
                         </div>
                         <div class="view-all">
-                            <a href="{!! has_field($category,'link') !!}  ">Xem tất cả</a>
+                            <a href="{!! has_field($category,'link') !!}  ">{!!__('Xem tất cả')!!}</a>
                         </div>
                     </div>
                     
@@ -184,32 +184,13 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                 </div>
                                 @endforeach
                                 @endif
-                                {{-- <div class="swiper-slide">                  
                                 
-                                    <img src="{{Theme::asset()->url('images/home/transport/icon2-img2.jpg') }}" alt="">
-                                    
-                                </div>
-                                <div class="swiper-slide">                  
-                                
-                                    <img src="{{Theme::asset()->url('images/home/transport/icon3-img1.jpg') }}" alt="">
-                                    
-                                </div>
-                                <div class="swiper-slide">                  
-                                    
-                                    <img src="{{Theme::asset()->url('images/home/transport/icon4-img1.jpg') }}" alt="">
-                                    
-                                </div>
-                                <div class="swiper-slide">                  
-                                
-                                    <img src="{{Theme::asset()->url('images/home/transport/icon5-img1.jpg') }}" alt="">
-                                    
-                                </div> --}}
                             
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
                         
-                        <a href="{!! has_field($category,'link') !!} " class="read-more">Xem thêm</a>
+                        <a href="{!! has_field($category,'link') !!} " class="read-more">{!!__('Xem thêm')!!}</a>
                     
                 </div>
             </div>
@@ -232,7 +213,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                             <div class="swiper-pagination"></div>
                         </div> 
                         
-                        <a href="{!! has_field($category,'link') !!} " class="read-more">Xem thêm</a>
+                        <a href="{!! has_field($category,'link') !!} " class="read-more">{!!__('Xem thêm')!!}</a>
                     
                 </div>
             </div>

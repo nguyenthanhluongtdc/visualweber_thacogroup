@@ -178,25 +178,8 @@
     <img class=" h-45vw img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
     @endif
 </section>
-<div class="breadcrum" style="background-color: #f1f1f1;">
-    <div class="container-customize">
-        <ol class="breadcrumb">
-            @foreach ($crumbs = Theme::breadcrumb()->getCrumbs() as $i => $crumb)
-                @if ($i != (count($crumbs) - 1))
-                    <li class="breadcrumb-item">
-                        <a href="{{ $crumb['url'] }}" title="{{ $crumb['label'] }}">  {{ $crumb['label'] }}  
-                        <meta itemprop="name" content="{{ $crumb['label'] }}" /></a>
-                        <meta itemprop="position" content="{{ $i + 1}}" />
-                    </li>
-                @else
-                    <li class="breadcrumb-item active">{!!__('Bài viết')!!}
-                        <meta itemprop="name" content="{{ $crumb['label'] }}" />
-                        <meta itemprop="position" content="{{ $i + 1}}" /></li>
-                @endif
-            @endforeach
-        </ol>
-</div>
- 
+@includeIf("theme.main::views.breadcrumb")
+  
 </div>
 
 <div class="post-detail-wrapper">
@@ -255,7 +238,7 @@
                 <div class="post-related__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50"
                     class="aos-init aos-animate">
                     <img src="{{ Theme::asset()->url('images/media/icon-title.png') }}" alt="">
-                    <h2 class="font30 big-title">CÁC BÀI VIẾT LIÊN QUAN</h2>
+                    <h2 class="font30 big-title">{!! __('CÁC BÀI VIẾT LIÊN QUAN') !!}</h2>
                 </div>
                 <ul class="list-post-related">
                     @foreach ($relatedPosts as $relatedItem)

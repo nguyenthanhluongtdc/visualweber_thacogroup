@@ -48,12 +48,12 @@
                 <div class="right font20 col-lg-12">
                     <div class="office-address">
                         <i class="fas fa-map-marker-alt location"></i>
-                        <p class="address"> <span> Địa chỉ : </span>{!! has_sub_field($item, 'address') ? has_sub_field($item, 'address') : '' !!}</p>
+                        <p class="address"> <span> {!!__ ('Địa chỉ') !!} : </span>{!! has_sub_field($item, 'address') ? has_sub_field($item, 'address') : '' !!}</p>
                        
                     </div>
                     <div class="office-hotline">
                         <i class="fas fa-phone-alt"></i>
-                            <p class="phone"> <span> SĐT: </span>
+                            <p class="phone"> <span> {!!__ ('SĐT') !!}: </span>
                                 <a href="tel: {{get_sub_field($item, 'hotline')}}">
                             {!! has_sub_field($item, 'hotline') ? has_sub_field($item, 'hotline') : '' !!} </a></p>
                        
@@ -106,13 +106,13 @@
                     <div class="col-xl-6 col-lg-12">
                         <div class="form-group">
                             <input id='contact_name' type="text" class="form-control" name="name" value="{{ old('name') }}" id="contact_name"
-                                   placeholder="Họ và tên / Tên công ty" required="required">
+                                   placeholder="{!!__ ('Họ và tên / Tên công ty') !!}" required="required">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-12">
                         <div class="form-group">
                             <input type="email" class="form-control" name="email" value="{{ old('email') }}" id="contact_email"
-                                   placeholder="Thư điện tử" required="required">
+                                   placeholder="{!!__ ('Thư điện tử') !!}" required="required">
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-12">
@@ -130,12 +130,12 @@
                     <div class="col-xl-6 col-lg-12">
                         <div class="form-group">
                             <input type="number" class="form-control" name="phone" value="{{ old('phone') }}" id="contact_phone"
-                                   placeholder="Số điện thoại" required="required">
+                                   placeholder="{!!__ ('Số điện thoại')!!}" required="required">
                         </div>
                     </div>
                     <div class="col-xl-12">
                         <div class="form-group">
-                            <textarea name="content" id="contact_content" class="form-control" rows="5" placeholder="Nội dung" required="required">{{ old('content') }}</textarea>
+                            <textarea name="content" id="contact_content" class="form-control" rows="5" placeholder="{!!__ ('Nội dung')!!}" required="required">{{ old('content') }}</textarea>
                         </div>
                     </div>
                     @if (setting('enable_captcha') && is_plugin_active('captcha'))
@@ -147,7 +147,7 @@
                     @endif
                     <div class="col-xl-12">
                         <div class="form-group d-flex justify-content-center">
-                            <button type="submit" class="btn cyan text">Gửi ngay</button>
+                            <button type="submit" class="btn cyan text">{!!__ ('Gửi ngay') !!}</button>
                         </div>
         
                     </div>

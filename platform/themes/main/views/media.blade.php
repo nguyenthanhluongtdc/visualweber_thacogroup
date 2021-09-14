@@ -9,7 +9,7 @@
         <div class="container-customize">
             <div class="image__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="icon">
-                <h1  class="font50 big-title">{!! __('Hình ảnh') !!}</h1>
+                <h1  class="font50 big-title"> {!! __('IMAGE') !!}</h1>
             </div>
             <div class="tab-image">
                 <div class="media__tabs">
@@ -23,7 +23,7 @@
                         <li class="__tabs__item" role="media">
                             <a class="__tabs__link nav-link" id="media-single-image-tab" data-toggle="tab" role="tab" aria-controls="media-video" aria-selected="true" href="#media-single-image" title="{!! __('Tất Cả') !!}">
                                 <i class="fas fa-image"></i>
-                                {!! __('Hình ảnh') !!}
+                                {!! __('IMAGE') !!}
                             </a>
                         </li>
                     </ul>
