@@ -11,18 +11,18 @@
                                         <img class="img-mw-100" src="{{ RvMedia::getImageUrl($item_post->image, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$item_post->name}}">
                                     </div>
                                     <div class="news-post h-100">
-                                        <h3 class="font20 title">BẢN TIN NỘI BỘ</h3>
+                                        <h3 class="font20 title">{!!__ ('BẢN TIN NỘI BỘ') !!}</h3>
                                         <a href="{{$item_post->url}}" title="{{$item_post->name}}">
                                             <h4 class="name font20">{{$item_post->name}}</h4>
                                         </a>
                                        
                                         <span class="time">{{date_format($item_post->created_at,"d-m-Y")}}</span>
                                         <p class="description font18 text-justify">{{$item_post->description}}</p>
-                                        <a href="{{$item_post->url}}" class="read-more" title="Xem thêm">Xem thêm</a>
+                                        <a href="{{$item_post->url}}" class="read-more" title="Xem thêm">{!!__('Xem thêm')!!}</a>
                                     </div>
                         </div>
                     </div>
-                    @endforeach
+                    @endforeach 
                     @endif
                 </div>
                 
@@ -33,7 +33,7 @@
             <div class="post-slider">
                 <div class="swiper-container post-slide-bottom">
                     <div class="swiper-wrapper">
-                        @if($post_home_bottom =get_recent_posts(6))
+                        @if($post_home_bottom =get_featured_posts(6))
                         @foreach ($post_home_bottom as $post_bottom)
                             <div class="swiper-slide d-flex justify-content-center">             
                                     <div class="post_content_bottom h-100">
