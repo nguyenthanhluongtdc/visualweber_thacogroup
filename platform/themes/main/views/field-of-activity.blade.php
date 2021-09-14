@@ -151,7 +151,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">đại siêu thị</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                         
                     </div>
@@ -162,7 +162,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">siêu thị</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -172,8 +172,8 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">cửa hàng tiện lợi</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
-                        </div>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
+                        </div> 
                     </div>
                     <div class="swiper-slide">
                         <div class="bg"></div>
@@ -182,7 +182,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">đại siêu thị</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                     
@@ -216,7 +216,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">rạp chiếu phim</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <div class="col content">
@@ -226,7 +226,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">kid theme park</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <div class="col content">
@@ -236,7 +236,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">kid cafe</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -265,7 +265,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">ăn uống</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <div class="col content">
@@ -275,7 +275,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">nhà hàng</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <div class="col content">
@@ -285,7 +285,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">cafe</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -314,7 +314,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">trung tâm hội nghị - tiệc cưới cao cấp</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                     <div class="col content">
@@ -324,7 +324,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">trung tâm hội nghị - tiệc cưới trung cấp</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                    
@@ -356,7 +356,7 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font30">thời trang - mỹ phẩm cao cấp</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus tenetur facilis vel voluptates, possimus nemo dolores architecto numquam non.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm >></a>
+                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                    

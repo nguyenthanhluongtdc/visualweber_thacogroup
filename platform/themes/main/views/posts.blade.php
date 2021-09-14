@@ -1,8 +1,8 @@
 @includeIf("theme.main::views.pages.post.slide")
 @includeIf("theme.main::views.breadcrumb")
 @php
-$posts = get_posts_by_category($category->id ?? 16, 6);
-$postSlider = get_posts_by_category($category->id ?? 16, 6);
+$posts = get_posts_by_category($category->id ?? 16, 3);
+$postSlider = get_featured_posts(6);
 @endphp
 <section>
     <div class="media_content-wrapper">
@@ -117,7 +117,7 @@ $postSlider = get_posts_by_category($category->id ?? 16, 6);
                                    @endforeach
                                    @endif
                                
-                                   
+                                   {{ $posts->links('vendor.pagination.custom') }} 
                
                                </div>
                                @includeIf("theme.main::views.pages.post.post")
