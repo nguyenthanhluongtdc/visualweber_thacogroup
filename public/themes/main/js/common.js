@@ -5,7 +5,7 @@ $('.slider-for').slick({
     fade: true,
     speed: 1500,
     asNavFor: '.slider-nav',
-}) 
+})
 $('.slider-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -14,7 +14,7 @@ $('.slider-nav').slick({
     vertical: true,
     autoplay: true,
     autoplaySpeed: 5000,
-    // speed: 1000,
+    speed: 1000,
     infinite: true,
     loop: true,
     asNavFor: '.slider-for',
@@ -23,33 +23,14 @@ $('.slider-nav').slick({
     verticalSwiping: true,
     pauseOnHover: false,
     responsive: [{
-            breakpoint: 992,
-            settings: {
-                vertical: true,
-            },
-        },
-        {
             breakpoint: 768,
             settings: {
-                vertical: true,
+                vertical: false,
                 slidesToShow: 3,
+
             },
         },
-        
-        {
-            breakpoint: 580,
-            settings: {
-                vertical: true,
-                slidesToShow: 3,
-            },
-        },
-        {
-            breakpoint: 380,
-            settings: {
-                vertical: true,
-                slidesToShow: 3,
-            },
-        },
+
     ],
 })
 const pause = $('.pause').on('click', function() {
@@ -591,32 +572,32 @@ let commercialFieldSlider = new Swiper('.commercial-field-slider', {
         el: '.commercial-field-slider .swiper-pagination',
         clickable: true,
     },
-    
-   
+
+
 })
 
 $(document).ready(function() {
     var $swiper = $(".slide-news");
-    var $bottomSlide = null; 
-    var $bottomSlideContent = null; 
+    var $bottomSlide = null;
+    var $bottomSlideContent = null;
     var mySwiper = new Swiper(".slide-news", {
-      spaceBetween: 1,
-      slidesPerView: 3,
-      centeredSlides: true,
-      roundLengths: true,
-      loop: true,
-      loopAdditionalSlides: 30,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      pagination: {
-        el: '.slide-news .swiper-pagination',
-        clickable: true,
-    },
+        spaceBetween: 1,
+        slidesPerView: 3,
+        centeredSlides: true,
+        roundLengths: true,
+        loop: true,
+        loopAdditionalSlides: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+            el: '.slide-news .swiper-pagination',
+            clickable: true,
+        },
     });
-  });
-  
+});
+
 
 
 console.clear();
@@ -629,15 +610,15 @@ console.clear();
 
 // document.addEventListener( 'DOMContentLoaded', function () {
 //   document.querySelectorAll( '.swiper-content-detail' ).forEach( function( node ) {
-    
+
 //     node.slidesQuantity = node.querySelectorAll( '.swiper-slide' ).length;
-    
+
 //     // Swiper initialization
 //     new Swiper( node, {
 //       speed:         1000,
 //       loop:          true,
 //     //   autoplay:      { delay: 2000, },
-    
+
 //         slidesPerView: 4,
 //         paginationClickable: true,
 //         spaceBetween: 0,
@@ -660,23 +641,23 @@ console.clear();
 //   });
 // });
 
-$(function () {
+$(function() {
     var swiper = new Swiper('.swiper-content-detail', {
-      loop: true,
-      slidesPerView: 4,
-    paginationClickable: true,
-    spaceBetween: 0,
+        loop: true,
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 0,
         pagination: {
-          el: '.swiper-pagination',
-          type: 'fraction',
-          formatFractionCurrent: function (number) {
-              return  + number;
-          }
+            el: '.swiper-pagination',
+            type: 'fraction',
+            formatFractionCurrent: function(number) {
+                return +number;
+            }
         },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      }
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
     });
 });
 
