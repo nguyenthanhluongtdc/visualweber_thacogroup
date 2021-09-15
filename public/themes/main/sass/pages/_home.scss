@@ -18,6 +18,7 @@
                             margin-bottom: 0;
                         }
                     }
+                    
                     @keyframes mymovetop {
                         from {
                             margin-top: -100px;
@@ -26,14 +27,25 @@
                             margin-top: 0;
                         }
                     }
+                    
                     @keyframes mymoveleft {
-                        from {left: -200px;}
-                        to {left: 0px;}
-                      }
-                    @keyframes mymoveright {
-                        from {right: -200px;}
-                        to {right: 0px;}
+                        from {
+                            left: -200px;
+                        }
+                        to {
+                            left: 0px;
+                        }
                     }
+                    
+                    @keyframes mymoveright {
+                        from {
+                            right: -200px;
+                        }
+                        to {
+                            right: 0px;
+                        }
+                    }
+                    
                     .main-slider {
                         .swiper-slide {
                             .img-slider {
@@ -50,13 +62,12 @@
                                 background-color: #0f4a7db8;
                                 position: absolute;
                                 top: calc(50% + 98px);
-                                left: 68%; 
+                                left: 68%;
                                 z-index: 2;
                                 transform: translateY(-50%);
                                 padding: 30px;
                                 max-width: 420px;
                                 height: 420px;
-                              
                                 @media screen and (max-width: 1680px) {
                                     left: 65%;
                                     height: 380px;
@@ -73,7 +84,7 @@
                                     position: relative;
                                     padding: 15px 0;
                                     line-height: 1.5;
-                                    text-transform: uppercase; 
+                                    text-transform: uppercase;
                                     &::before {
                                         position: absolute;
                                         content: "";
@@ -100,7 +111,6 @@
                                     position: absolute;
                                     bottom: 5%;
                                 }
-                               
                             }
                         }
                     }
@@ -896,6 +906,26 @@
                                     }
                                     img {
                                         max-height: 60vw;
+                                    }
+                                }
+                            }
+                        }
+                        .recruitment-wrapper {
+                            .recruitment-banner {
+                                .swiper-content {
+                                    .swiper-content__desc {
+                                        height: 75%;
+                                        .title {
+                                            margin: 10px 0;
+                                        }
+                                        .description {
+                                            font-size: 14px;
+                                            margin-bottom: 20px;
+                                        }
+                                    }
+                                    .btn-apply {
+                                        padding: 10px 15px;
+                                        line-height: unset;
                                     }
                                 }
                             }
