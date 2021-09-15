@@ -431,6 +431,7 @@
                     
                     // margin: 0 20px;
                 }
+                @media only screen and (max-width: 380px){width: 20vw;}
             }
             .__tabs__item:last-child {
                 margin: 0;
@@ -442,6 +443,7 @@
                     
                     // margin: 0 20px;
                 }
+                @media only screen and (max-width: 380px){width: 20vw;}
             }
             .nav-link.active {
                 color: #00529E;
