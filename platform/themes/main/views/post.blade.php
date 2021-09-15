@@ -178,7 +178,25 @@
     <img class=" h-45vw img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
     @endif
 </section>
-@includeIf("theme.main::views.breadcrumb")
+<div class="container-customize">
+
+    <ol class="breadcrumb">
+        @foreach ($crumbs = Theme::breadcrumb()->getCrumbs() as $i => $crumb)
+            @if ($i != (count($crumbs) - 1))
+                <li class="breadcrumb-item">
+                    <a href="{{ $crumb['url'] }}" title="{{ $crumb['label'] }}">  {{ $crumb['label'] }}  
+                    <meta itemprop="name" content="{{ $crumb['label'] }}" /></a>
+                    <meta itemprop="position" content="{{ $i + 1}}" />
+                </li>
+            @else
+                <li class="breadcrumb-item active">{{__('Bài viết')}}
+                    <meta itemprop="name" content="{{ $crumb['label'] }}" />
+                    <meta itemprop="position" content="{{ $i + 1}}" /></li>
+            @endif
+        @endforeach
+    </ol>
+</div>
+
   
 </div>
 

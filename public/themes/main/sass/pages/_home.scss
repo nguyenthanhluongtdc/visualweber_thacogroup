@@ -18,6 +18,7 @@
                             margin-bottom: 0;
                         }
                     }
+                    
                     @keyframes mymovetop {
                         from {
                             margin-top: -100px;
@@ -26,14 +27,25 @@
                             margin-top: 0;
                         }
                     }
+                    
                     @keyframes mymoveleft {
-                        from {left: -200px;}
-                        to {left: 0px;}
-                      }
-                    @keyframes mymoveright {
-                        from {right: -200px;}
-                        to {right: 0px;}
+                        from {
+                            left: -200px;
+                        }
+                        to {
+                            left: 0px;
+                        }
                     }
+                    
+                    @keyframes mymoveright {
+                        from {
+                            right: -200px;
+                        }
+                        to {
+                            right: 0px;
+                        }
+                    }
+                    
                     .main-slider {
                         .swiper-slide {
                             .img-slider {
@@ -50,13 +62,12 @@
                                 background-color: #0f4a7db8;
                                 position: absolute;
                                 top: calc(50% + 98px);
-                                left: 68%; 
+                                left: 68%;
                                 z-index: 2;
                                 transform: translateY(-50%);
                                 padding: 30px;
                                 max-width: 420px;
                                 height: 420px;
-                              
                                 @media screen and (max-width: 1680px) {
                                     left: 65%;
                                     height: 380px;
@@ -73,7 +84,7 @@
                                     position: relative;
                                     padding: 15px 0;
                                     line-height: 1.5;
-                                    text-transform: uppercase; 
+                                    text-transform: uppercase;
                                     &::before {
                                         position: absolute;
                                         content: "";
@@ -100,7 +111,6 @@
                                     position: absolute;
                                     bottom: 5%;
                                 }
-                               
                             }
                         }
                     }
@@ -791,8 +801,65 @@
                                 }
                             }
                         }
-                        .news-home-wrapper {
+                        .news-home__content {
                             display: none;
+                        }
+                        .news-home-wrapper {
+                            background-color: unset;
+                            padding-top: 20px;
+                        }
+                        .news-home-mobile {
+                            display: block!important;
+                            .post-wrapper {
+                                .post-item {
+                                    a {
+                                        color: $white;
+                                        display: block;
+                                        text-transform: uppercase;
+                                        .post-content {
+                                            background-color: $main_color;
+                                            display: flex;
+                                            .time {
+                                                flex: 1 15%;
+                                                max-width: 15%;
+                                                padding: 15px 0;
+                                                font-family: $MyriadPro-Bold;
+                                                text-align: center;
+                                                .day {
+                                                    font-size: 20px;
+                                                    line-height: 15px;
+                                                }
+                                                .month {
+                                                    font-size: 30px;
+                                                    line-height: 30px;
+                                                }
+                                                .year {
+                                                    font-size: 15px;
+                                                    line-height: 15px;
+                                                }
+                                            }
+                                            .name {
+                                                position: relative;
+                                                font-family: $MyriadPro-Bold;
+                                                display: flex;
+                                                align-items: center;
+                                                h3 {
+                                                    margin: 0;
+                                                    font-size: 25px;
+                                                    padding: 15px 30px;
+                                                }
+                                                &::before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    width: 1px;
+                                                    height: 90%;
+                                                    background: #f1f1f1;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         .field-activity {
                             height: unset;
@@ -844,7 +911,7 @@
                                             }
                                             .list-item {
                                                 .item-activity {
-                                                    font-size: 13px;
+                                                    font-size: 14px;
                                                     line-height: 16px;
                                                 }
                                             }
@@ -866,6 +933,22 @@
                                             padding: 2px 4px;
                                             right: 5px;
                                             font-size: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .news-home-mobile {
+                            .post-wrapper {
+                                .post-item {
+                                    a {
+                                        .post-content {
+                                            .name {
+                                                h3 {
+                                                    padding: 15px 20px;
+                                                    font-size: 20px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -896,6 +979,114 @@
                                     }
                                     img {
                                         max-height: 60vw;
+                                    }
+                                }
+                            }
+                        }
+                        .recruitment-wrapper {
+                            .recruitment-banner {
+                                padding-top: 40vw;
+                                min-height: 250px;
+                                .swiper-content {
+                                    .swiper-container {
+                                        height: 28px;
+                                    }
+                                    .swiper-content__desc {
+                                        .title {
+                                            margin: 10px 0;
+                                        }
+                                        .description {
+                                            font-size: 14px;
+                                            margin-bottom: 20px;
+                                        }
+                                    }
+                                    .bottom_slider_wrapper {
+                                        .title_label {
+                                            margin-right: 7px;
+                                            .title {
+                                                font-size: 14px;
+                                                margin-bottom: 4px;
+                                            }
+                                        }
+                                        .swiper-content-bottom {
+                                            a {
+                                                .postion-apply {
+                                                    font-size: 14px;
+                                                    display: -webkit-box;
+                                                    margin: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .btn-apply {
+                                        padding: 10px 15px;
+                                        line-height: unset;
+                                    }
+                                    .swiper-container-vertical>.swiper-pagination-bullets {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        .news-home-mobile {
+                            .post-wrapper {
+                                .post-item {
+                                    a {
+                                        .post-content {
+                                            .time {
+                                                padding: 15px;
+                                                .day {
+                                                    font-size: 15px;
+                                                    line-height: 12px;
+                                                }
+                                                .month {
+                                                    font-size: 20px;
+                                                    line-height: 20px;
+                                                }
+                                                .year {
+                                                    font-size: 12px;
+                                                    line-height: 12px;
+                                                }
+                                            }
+                                            .name {
+                                                h3 {
+                                                    padding: 15px;
+                                                    font-size: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    
+                    @media screen and(max-width:380px) {
+                        .partner-wrapper {
+                            .title__company {
+                                font-size: 18px;
+                            }
+                        }
+                        .recruitment-wrapper {
+                            .recruitment-banner {
+                                min-height: 280px;
+                            }
+                        }
+                        .news-home-mobile {
+                            .post-wrapper {
+                                .post-item {
+                                    a {
+                                        .post-content {
+                                            .time {
+                                                padding: 7px;
+                                            }
+                                            .name {
+                                                h3 {
+                                                    padding: 7px;
+                                                    font-size: 12px;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }

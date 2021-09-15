@@ -51,6 +51,10 @@
                                     <a class="text-white" href="{!! theme_option('office-global-three') !!}">{!! theme_option('office-global-three') !!}</a>
                                 </div>
                             </div>
+
+                    </div>
+                    <div class="title-connect" style="display: none">
+                        <h3 class="font18">Kết nối với chúng tôi</h3>
                     </div>
                     <div class="list-social">
                         <ul>
@@ -82,12 +86,20 @@
                           
 
                         </ul>
+
+                    </div>
+                    <div class="footer-bottom-mobile">
+                        {!! Menu::renderMenuLocation('footer-menu', [
+                            'options' => [],
+                            'theme' => true,
+                            'view' => 'policy',
+                        ]) !!}
                     </div>
                    
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="container-customize ">
+                <div class="container-customize desktop ">
                     <div class="row">
                         <div class="col-md-7 col-sm-6 col-12">
                            <p class="text-white">
@@ -103,8 +115,11 @@
                         ]) !!}
                     </div>
                 </div>
-               
+               <div class="copyright-mobile font18" style="display: none">
+                {!! theme_option('license') !!}
+               </div>
             </div>
+            
         </footer>
         {!! Theme::footer() !!}
         <script>

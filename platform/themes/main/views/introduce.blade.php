@@ -251,15 +251,15 @@
                             </div>
                         
                             <div class="work-progress">
-                                <h3 class="title font20">QUÁ TRÌNH LÀM VIỆC TẠI THACO</h3>
+                                <h3 class="title font20">{!!__ ('QUÁ TRÌNH LÀM VIỆC TẠI THACO') !!}</h3>
                                 <div class="work-progress-table">
                                     <table class="table">
                                         <thead>
                                             <tr>
                                             
-                                            <th scope="col">Vị trí</th>
-                                            <th scope="col">Tổ chức</th>
-                                            <th scope="col">Thời gian bổ nhiệm</th>
+                                            <th scope="col">{!!__('Vị trí')!!}</th>
+                                            <th scope="col">{!!__('Tổ chức')!!}</th>
+                                            <th scope="col">{!!__('Thời gian bổ nhiệm')!!}</th>
                                             </tr>
                                         </thead>
                                         <tbody>
