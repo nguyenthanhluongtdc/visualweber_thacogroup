@@ -5,7 +5,7 @@ $('.slider-for').slick({
     fade: true,
     speed: 1500,
     asNavFor: '.slider-nav',
-})
+}) 
 $('.slider-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -25,27 +25,29 @@ $('.slider-nav').slick({
     responsive: [{
             breakpoint: 992,
             settings: {
-                vertical: false,
+                vertical: true,
             },
         },
         {
             breakpoint: 768,
             settings: {
-                vertical: false,
+                vertical: true,
+                slidesToShow: 3,
             },
         },
+        
         {
             breakpoint: 580,
             settings: {
-                vertical: false,
+                vertical: true,
                 slidesToShow: 3,
             },
         },
         {
             breakpoint: 380,
             settings: {
-                vertical: false,
-                slidesToShow: 2,
+                vertical: true,
+                slidesToShow: 3,
             },
         },
     ],

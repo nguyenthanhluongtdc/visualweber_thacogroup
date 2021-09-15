@@ -1,20 +1,26 @@
 <section class="banner-introduce">
-    <img class=" h-45vw img-mw-100"
+    <img class="h-100vh w-100"
         src="{{ get_field($page, 'about_us_banner') ? get_image_url(get_field($page, 'about_us_banner')) : Theme::asset()->url('images/introduce/banner-introduce.jpg') }}" alt="banner">
 </section>
-@includeIf("theme.main::views.breadcrumb")
-<section class="about-us mt-15">
-    <div class="container-customize">
-        <div class="about-us__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-            <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="icon">
-            <h1  class="font50 big-title">{{has_field($page, 'about_us_title')}}</h1>
+<div class="breadcrum-intro">
+    @includeIf("theme.main::views.breadcrumb")
+</div>
+
+<section class="about-us mt-40">
+
+        <div class="container-customize">
+            <div class="about-us__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="icon">
+                <h1  class="font50 big-title">{{has_field($page, 'about_us_title')}}</h1>
+            </div>
+            <div class="about-us__content mt-40 text-justify" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                {!!has_field($page, 'about_us_content')!!}
+            </div>
         </div>
-        <div class="about-us__content mt-40 text-justify" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-            {!!has_field($page, 'about_us_content')!!}
-        </div>
+        
         <div class="future-goal-banner mt-40" style="background-image:url('{{ get_field($page, 'vision_block_background') ? get_image_url(get_field($page, 'vision_block_background')) : Theme::asset()->url('images/introduce/tam-nhin-chien-luoc.jpg') }}')">
             <div class="future-goal-wrapper">
-                <div class="row mr-0 ml-0">
+                <div class="row mr-0 ml-0"> 
                     
                     @if(has_field($page, 'vision_block'))
                         @forelse (has_field($page, 'vision_block') as $key => $item)
@@ -37,15 +43,18 @@
             </div>
           
         </div>
-        <div class="field-activity-intro-wrapper">
-            <div class="desc-field pt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                <p class="desc-cotent font24 text-justify">
-                    {!!has_field($page, 'about_us_field_description')!!}
-                 
-                </p>
+        <div class="container-customize">
+            <div class="field-activity-intro-wrapper">
+                <div class="desc-field pt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                    <p class="desc-cotent font24 text-justify">
+                        {!!has_field($page, 'about_us_field_description')!!}
+                     
+                    </p>
+                </div>
+                {!! do_shortcode('[field-activity][/field-activity]') !!}
             </div>
-            {!! do_shortcode('[field-activity][/field-activity]') !!}
-        </div>
+        
+       
             
                 <div class="leader-of-us-wrapper mt-40">
                     <div class="leader-of-us__title mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
@@ -82,26 +91,44 @@
                     @endif
                 </div>
                
-                <div class="achievement-wrapper mt-40">
+                <div class="achievement-wrapper mt-40 mb-60">
                     <div class="achievement-tab-title">
-                        <div class="achievement__title mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                            <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
-                            <h2 class="font50 big-title"> {{has_field($page, 'title_achivement')}}</h2>
-                        </div>
-                        <div class="achievement__tabs" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                            <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
-                                @if(has_field($page, 'achivement'))
-                                    @foreach (has_field($page, 'achivement') as $key =>$item_tab)
-                                    <li class="__tabs__item " role="achievement">
-                                        <a class="__tabs__link nav-link {{ $key==0? 'active': '' }}" id="achievement-company-{{$key}}" data-toggle="tab" role="tab" aria-controls="achievement-{{$key}}" aria-selected="true" href="#achievement-{{$key}}" title="{{has_field($page, 'title_tab')}}">
-                                            {{has_sub_field($item_tab, 'title_tab')}}
-                                        </a>
-                                    </li>
-                                    @endforeach
-                                @endif
-                            </ul>
+                            <div class="achievement__title mt-40 " data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                                <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
+                                <h2 class="font50 big-title"> {{has_field($page, 'title_achivement')}}</h2>
+                            </div>
+                            <div class="achievement__tabs" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                                
+                                <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
+                                    @if(has_field($page, 'achivement'))
+                                        @foreach (has_field($page, 'achivement') as $key =>$item_tab)
+                                        <li class="__tabs__item " role="achievement">
+                                            <a class="__tabs__link nav-link {{ $key==0? 'active': '' }}" id="achievement-company-{{$key}}" data-toggle="tab" role="tab" aria-controls="achievement-{{$key}}" aria-selected="true" href="#achievement-{{$key}}" title="{{has_field($page, 'title_tab')}}">
+                                                {{has_sub_field($item_tab, 'title_tab')}}
+                                            </a>
+                                        </li>
+                                        @endforeach
+                                    @endif
+                                </ul>
+                            
+                            </div>
+                      
                         
-                        </div>
+                    </div>
+                    <div class="achievement-tabs-mobile" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                                
+                        <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
+                            @if(has_field($page, 'achivement'))
+                                @foreach (has_field($page, 'achivement') as $key =>$item_tab)
+                                <li class="__tabs__item " role="achievement">
+                                    <a class="__tabs__link nav-link {{ $key==0? 'active': '' }}" id="achievement-company-{{$key}}" data-toggle="tab" role="tab" aria-controls="achievement-{{$key}}" aria-selected="true" href="#achievement-{{$key}}" title="{{has_field($page, 'title_tab')}}">
+                                        {{has_sub_field($item_tab, 'title_tab')}}
+                                    </a>
+                                </li>
+                                @endforeach
+                            @endif
+                        </ul>
+                    
                     </div>
                     <div class="tab-content" id="nav-tabContent">
                         @if(has_field($page, 'achivement'))
@@ -134,6 +161,8 @@
                     </div>
                 </div>    
     </div>
+
+    
     <div class="develop-wrapper">
         <div class="develop__title pb-40 container-customize" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             <img class="img-blue" src="{{ Theme::asset()->url('images/introduce/arrow.png') }}"  alt="icon">
@@ -144,7 +173,7 @@
                 <div class="develop-content-wrapper">
                     <div class="develop-content__slider">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-3 ">
                                 <div class="cycle-list-wrap">
                                     <ul class="slider slider-nav thumb-year">
                                         @if(has_field($page,'content_slide'))
@@ -158,7 +187,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-9">
                                 <div class="thumb-wrapper">
                                     <div class="slider slider-for">
                                         @if(has_field($page,'content_slide'))

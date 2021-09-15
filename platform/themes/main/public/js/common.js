@@ -14,7 +14,7 @@ $('.slider-nav').slick({
     vertical: true,
     autoplay: true,
     autoplaySpeed: 5000,
-    // speed: 1000,
+    speed: 1000,
     infinite: true,
     loop: true,
     asNavFor: '.slider-for',
@@ -25,26 +25,27 @@ $('.slider-nav').slick({
     responsive: [{
             breakpoint: 992,
             settings: {
-                vertical: false,
+                vertical: true,
             },
         },
         {
             breakpoint: 768,
             settings: {
-                vertical: false,
+                vertical: true,
+                slidesToShow: 3,
             },
         },
         {
             breakpoint: 580,
             settings: {
-                vertical: false,
+                vertical: true,
                 slidesToShow: 3,
             },
         },
         {
             breakpoint: 380,
             settings: {
-                vertical: false,
+                vertical: true,
                 slidesToShow: 2,
             },
         },
@@ -574,3 +575,5 @@ $('#mask').click(function() {
     $('.window').hide();
 });
 //end popup
+
+

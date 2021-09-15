@@ -5,7 +5,7 @@ $posts = get_posts_by_category($category->id ?? 16, 3);
 $postSlider = get_featured_posts(6);
 
 @endphp
-   <section>
+   <section> 
        <div class="media_content-wrapper mb-100">
            <div class="container-customize">
                <div class="media-content">
