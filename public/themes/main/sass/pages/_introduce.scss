@@ -303,25 +303,6 @@
             }
         }
     }
-    // .title-admin-bottom {
-    //     width: 100%;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     border-bottom: 1px solid #ccc;
-    //     .title-admin {
-    //         margin-bottom: 0;
-    //         display: block;
-    //         padding: 10px 15px;
-    //         background-color: #212121;
-    //         font-family: $MyriadPro-Bold;
-    //         text-transform: uppercase;
-    //         width: max-content;
-    //         text-align: center;
-    //         color: $white;
-    //         font-size: 23px;
-    //     }
-    // }
 }
 
 .achievement-wrapper {
@@ -496,38 +477,6 @@
                 font-size: 14px;
             }
         }
-        // .top {
-        //     display: flex;
-        //     padding: 5% 10%;
-        //     justify-content: space-between;
-        //     .top-content {
-        //         max-width: 232px;
-        //         .img-content {
-        //             img {
-        //                 height: 120px;
-        //             }
-        //             text-align: center;
-        //             .year {
-        //                 font-family: $MyriadPro-Bold;
-        //                 margin-top: 15px;
-        //                 display: block;
-        //             }
-        //         }
-        //         .desc {
-        //             position: relative;
-        //             &::before {
-        //                 position: absolute;
-        //                 content: "";
-        //                 left: 0;
-        //                 right: 0;
-        //                 top: 0;
-        //                 height: 4px;
-        //                 background-color: #fff;
-        //                 width: 50%;
-        //             }
-        //         }
-        //     }
-        // }
         .bottom {
             display: flex;
             margin: 5% 0 -100px 0;
@@ -618,7 +567,7 @@
         }
         @media only screen and (max-width: 768px) {
             padding-top: 53vw;
-            min-height: 280px;
+            min-height: 420px;
         }
         .develop-content-wrapper {
             position: absolute;
@@ -665,12 +614,16 @@
                                 max-height: calc(37vw - 100px);
                                 cursor: pointer;
                                 @media only screen and (max-width: 768px) {
-                                    max-height: calc(45vw - 20px);
+                                    max-height: 300px;
                                 }
                                 .mCSB_scrollTools .mCSB_draggerContainer {
                                     opacity: 0;
                                     visibility: hidden;
                                     width: 4px;
+                                    @media only screen and (max-width: 768px) {
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
                                 }
                                 &:hover .mCSB_scrollTools .mCSB_draggerContainer {
                                     transition: height 10s;
@@ -690,10 +643,10 @@
                                     height: 20vw;
                                     width: 100%;
                                     @media only screen and (max-width: 768px) {
-                                        height: 30vw;
+                                        height: 200px;
                                     }
                                     @media only screen and (max-width: 480px) {
-                                        height: 35vw;
+                                        height: 200px;
                                     }
                                 }
                                 .content-slider {
