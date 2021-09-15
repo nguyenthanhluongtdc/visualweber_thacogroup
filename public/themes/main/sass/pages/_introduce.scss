@@ -27,21 +27,18 @@
 
     
 .future-goal-banner {
-    @media only screen and (max-width: 1080px) {
-        .container-customize {
-          min-width: 100% !important;
-          max-width: 100% !important;
-        }
-      }
+    
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 44.2%;
+    @media only screen and (max-width: 1080px){
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     .future-goal-wrapper {
-        @media only screen and (max-width: 1080px){
-            padding-left: 0;
-            padding-right: 0 ;
-        }
+        
+       
         position: absolute;
         color: $white;
         top: 0;

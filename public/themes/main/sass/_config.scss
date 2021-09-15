@@ -27,6 +27,27 @@ body {
     }
 }
 
+.container-customize-mobile {
+    padding-left: 11.6%;
+    padding-right: 11.6%;
+    @media (max-width: 1680px) {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    @media (max-width: 992px) {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    @media (max-width: 768px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (max-width: 1080px){
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .mCSB_scrollTools {
     right: 0;
 }
