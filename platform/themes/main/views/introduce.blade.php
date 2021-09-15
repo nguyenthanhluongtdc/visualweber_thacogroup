@@ -142,7 +142,7 @@
                                             @foreach (has_sub_field($item_tab_content, 'achivement_year') as $key2 =>$item_achivement_year)
                                             <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" >
                                                 <div class="img-content">
-                                                    {{-- <img src="{{ get_sub_field($item_achivement_year, 'image') ? get_image_url(get_sub_field($item_achivement_year, 'image')) :'' }}" alt="{!!has_sub_field($item_achivement_year, 'achivement_name')!!}"> --}}
+                                                   
                                                     <img src="{{ get_image_url(has_sub_field($item_achivement_year, 'image')) }}" alt="{{has_sub_field($item_achivement_year, 'year')}}">
                                                     <div class="year font24">
                                                         {{has_sub_field($item_achivement_year, 'year')}}
