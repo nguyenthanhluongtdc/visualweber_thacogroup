@@ -127,7 +127,7 @@
             text-align: center;
             color: $white;
             font-size: 23px;
-            @media only screen and (max-width: 420px){font-size: 14px;}
+            @media only screen and (max-width: 420px){font-size: 16px;}
         }
     }
     .admin-content.top {
@@ -144,7 +144,7 @@
                     width: 25%;
                 }
                 @media only screen and (max-width: 420px){
-                    width: 30%;
+                    width: 40%;
                 }
                 .name {
                     margin-top: 20px;
@@ -176,7 +176,7 @@
                     width: 45%;
                 }
                 @media only screen and (max-width: 420px){
-                    width: 50%;
+                    width: 80%;
                 }
                 .name {
                     margin-top: 10px;
@@ -199,7 +199,7 @@
                     width: 45%;
                 }
                 @media only screen and (max-width: 420px){
-                    width: 50%;
+                    width: 80%;
                 }
                 .name {
                     margin-top: 10px;
@@ -215,12 +215,33 @@
                 margin-left: 12%;
          
             }
+            @media only screen and (max-width: 420px){
+                margin-left: 10%;
+         
+            }
+           
         }
-
+        .item-member:nth-child(6){
+            @media only screen and (max-width: 420px){
+                margin-left: 10%;
+         
+            }
+           
+        }
+        .item-member:nth-child(8){
+            @media only screen and (max-width: 420px){
+                margin-left: 30% !important;
+         
+            }
+           
+        }
         .item-member:nth-child(7){
             @media only screen and (max-width: 1080px){
                 margin-left: 24%;
          
+            }
+            @media only screen and (max-width: 420px){
+                margin-left: 0;
             }
         }
        
@@ -237,6 +258,9 @@
                 justify-content: center;
                 align-items: center;
         
+            }
+            @media only screen and (max-width: 420px){
+                width: 40%;
             }
             
             .admin-item {
@@ -268,6 +292,9 @@
             width: 19%;
             @media only screen and (max-width: 1080px){
                 width: 25%;
+            }
+            @media only screen and (max-width: 420px){
+                width: 70% !important;
             }
             .admin-item {
                 text-align: center;
@@ -515,6 +542,10 @@
                 padding-right: 2%;
                 padding-left: 2%;
                 margin-bottom: 3%;
+                @media only screen and (max-width: 400px){
+                    flex: 1 50%;
+                    max-width: 50%;
+                }
                 .img-content {
                     img {
                         max-height: 80px;
@@ -525,13 +556,13 @@
                         font-family: $MyriadPro-Bold;
                         margin-top: 15px;
                         display: block;
-                        @media only screen and (max-width: 420px){font-size: 13px;}
+                        @media only screen and (max-width: 420px){font-size: 16px;}
                     }
                 }
                 .desc {
                     text-align: center;
                     line-height: 1;
-                    @media only screen and (max-width: 420px){font-size: 12px !important;}
+                    @media only screen and (max-width: 420px){font-size: 15px !important;}
                     strong {
 
                         font-family: $MyriadPro-Bold;
@@ -640,8 +671,11 @@
                     }
                     @media only screen and (max-width: 730px){
                        
-                        margin-left: 50px;
+                        margin-left: 80px;
                         margin-top: -25px;
+                    }
+                    @media only screen and (max-width: 380px){
+                        margin-left: 70px;
                     }
                     .slick-list {
                        
@@ -657,7 +691,7 @@
                                     max-height: calc(40vw - 100px);
                                 }
                                 @media only screen and (max-width: 680px){
-                                    max-height: calc(46vw - 100px);
+                                    max-height: calc(55vw - 100px);
                                 }
                                 @media only screen and (max-width: 380px){
                                     max-height: calc(63vw - 100px);
@@ -803,9 +837,10 @@
                         }
                         @media only screen and (max-width: 680px){
                             margin-left: 50px;
-                            margin-top: 0;
+                            margin-top: -30px;
                         }
                         @media only screen and (max-width: 380px){
+                            height: 80%;
                            margin-top: -40px;
                         }
                         li {
