@@ -575,5 +575,3 @@ $('#mask').click(function() {
     $('.window').hide();
 });
 //end popup
-
-

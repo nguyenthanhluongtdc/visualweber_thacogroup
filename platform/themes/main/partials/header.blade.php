@@ -20,7 +20,7 @@
     </head>
     <body @if (BaseHelper::siteLanguageDirection() == 'rtl') dir="rtl" @endif>
         {!! apply_filters(THEME_FRONT_BODY, null) !!}
-        <header class="header nav-down d-none d-lg-block" id="header">
+        <header class="header nav-down d-none d-lg-block " id="header">
             <div class="header-top" id="header-top">
                 {{-- <div class="boder-header" id="boder-top"></div> --}}
                 <div class="container-customize ">
@@ -46,7 +46,7 @@
             </div>
             
         </header>
-        <div class="header-mobie" id="header-mobie">
+        {{-- <div class="header-mobie" id="header-mobie">
             <a class="logo_link-blue" href="{{ route('public.single') }}" >
                 @if (theme_option('logo'))
                     <img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}">
@@ -72,7 +72,15 @@
                         </a>
                     </li>
                 </ul>
-            </li>
-        </div>
-        @includeIf("theme.main::views.sidebar")
-        <a id="button-top" class=""></a>
+            </li>  
+           
+        </div> --}}
+
+
+
+        
+
+@includeIf("theme.main::views.sidebar")
+<a id="button-top" class=""></a>
+
+
