@@ -175,7 +175,7 @@
                 <div class="develop-content-wrapper">
                     <div class="develop-content__slider">
                         <div class="row">
-                            <div class="col-3 ">
+                            <div class="col-md-3 col-12">
                                 <div class="cycle-list-wrap">
                                     <ul class="slider slider-nav thumb-year">
                                         @if(has_field($page,'content_slide'))
@@ -189,7 +189,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-md-9 col-12">
                                 <div class="thumb-wrapper">
                                     <div class="slider slider-for">
                                         @if(has_field($page,'content_slide'))

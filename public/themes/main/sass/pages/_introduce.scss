@@ -7,13 +7,15 @@
         font-family: $MyriadPro-Bold;
         text-transform: uppercase;
         color: $big-title;
-        img{
-            @media only screen and (max-width: 420px){ width: 6vw;}
-           
+        img {
+            @media only screen and (max-width: 420px) {
+                width: 6vw;
+            }
         }
-        h1{
-            @media only screen and (max-width: 420px){font-size: 25px;}
-           
+        h1 {
+            @media only screen and (max-width: 420px) {
+                font-size: 25px;
+            }
         }
         .big-title {
             margin-bottom: 0;
@@ -21,24 +23,23 @@
         }
     }
 }
-.breadcrum-intro{
-    @media only screen and (max-width: 1080px){display: none;}
+
+.breadcrum-intro {
+    @media only screen and (max-width: 1080px) {
+        display: none;
+    }
 }
 
-    
 .future-goal-banner {
-    
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 44.2%;
-    @media only screen and (max-width: 1080px){
+    @media only screen and (max-width: 1080px) {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
     .future-goal-wrapper {
-        
-       
         position: absolute;
         color: $white;
         top: 0;
@@ -81,13 +82,14 @@
             text-align: center;
             padding: 0 13%;
             font-family: $MyriadPro-Bold;
-            @media only screen and (max-width: 1080px){padding: 0;}
+            @media only screen and (max-width: 1080px) {
+                padding: 0;
+            }
         }
     }
 }
 
 .leader-of-us-wrapper {
-   
     .leader-of-us__title {
         display: flex;
         align-items: center;
@@ -96,13 +98,15 @@
         font-family: $MyriadPro-Bold;
         text-transform: uppercase;
         color: $big-title;
-        img{
-            @media only screen and (max-width: 420px){ width: 6vw;}
-           
+        img {
+            @media only screen and (max-width: 420px) {
+                width: 6vw;
+            }
         }
-        h2{
-            @media only screen and (max-width: 420px){font-size: 25px;}
-           
+        h2 {
+            @media only screen and (max-width: 420px) {
+                font-size: 25px;
+            }
         }
         .big-title {
             margin-bottom: 0;
@@ -110,7 +114,9 @@
         }
     }
     .title-admin-top {
-        @media only screen and (max-width: 1080px){padding: 5% 0 0 0;}
+        @media only screen and (max-width: 1080px) {
+            padding: 5% 0 0 0;
+        }
         width: 100%;
         display: flex;
         align-items: center;
@@ -127,7 +133,9 @@
             text-align: center;
             color: $white;
             font-size: 23px;
-            @media only screen and (max-width: 420px){font-size: 16px;}
+            @media only screen and (max-width: 420px) {
+                font-size: 16px;
+            }
         }
     }
     .admin-content.top {
@@ -140,20 +148,18 @@
                 text-align: center;
                 // max-width: 200px;
                 width: 19%;
-                @media only screen and (max-width: 1080px){
+                @media only screen and (max-width: 1080px) {
                     width: 25%;
                 }
-                @media only screen and (max-width: 420px){
+                @media only screen and (max-width: 420px) {
                     width: 40%;
                 }
                 .name {
                     margin-top: 20px;
                     margin-bottom: 0;
                     line-height: 15px;
-                    @media only screen and (max-width: 420px){
+                    @media only screen and (max-width: 420px) {
                         margin-top: 10px;
-                       
-                    
                     }
                 }
             }
@@ -172,10 +178,10 @@
             .admin-item {
                 width: 38.4%;
                 float: right;
-                @media only screen and (max-width: 1080px){
+                @media only screen and (max-width: 1080px) {
                     width: 45%;
                 }
-                @media only screen and (max-width: 420px){
+                @media only screen and (max-width: 420px) {
                     width: 80%;
                 }
                 .name {
@@ -195,10 +201,10 @@
             .admin-item {
                 float: left;
                 width: 38.4%;
-                @media only screen and (max-width: 1080px){
+                @media only screen and (max-width: 1080px) {
                     width: 45%;
                 }
-                @media only screen and (max-width: 420px){
+                @media only screen and (max-width: 420px) {
                     width: 80%;
                 }
                 .name {
@@ -210,41 +216,32 @@
                 }
             }
         }
-        .item-member:nth-child(4){
-            @media only screen and (max-width: 1080px){
+        .item-member:nth-child(4) {
+            @media only screen and (max-width: 1080px) {
                 margin-left: 12%;
-         
             }
-            @media only screen and (max-width: 420px){
+            @media only screen and (max-width: 420px) {
                 margin-left: 10%;
-         
             }
-           
         }
-        .item-member:nth-child(6){
-            @media only screen and (max-width: 420px){
+        .item-member:nth-child(6) {
+            @media only screen and (max-width: 420px) {
                 margin-left: 10%;
-         
             }
-           
         }
-        .item-member:nth-child(8){
-            @media only screen and (max-width: 420px){
+        .item-member:nth-child(8) {
+            @media only screen and (max-width: 420px) {
                 margin-left: 30% !important;
-         
             }
-           
         }
-        .item-member:nth-child(7){
-            @media only screen and (max-width: 1080px){
+        .item-member:nth-child(7) {
+            @media only screen and (max-width: 1080px) {
                 margin-left: 24%;
-         
             }
-            @media only screen and (max-width: 420px){
+            @media only screen and (max-width: 420px) {
                 margin-left: 0;
             }
         }
-       
         .item-member:nth-child(4),
         .item-member:nth-child(5),
         .item-member:nth-child(6),
@@ -252,20 +249,17 @@
         .item-member:nth-child(8) {
             width: 19%;
             margin-right: 1.25%;
-            @media only screen and (max-width: 1080px){
+            @media only screen and (max-width: 1080px) {
                 width: 25%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-        
             }
-            @media only screen and (max-width: 420px){
+            @media only screen and (max-width: 420px) {
                 width: 40%;
             }
-            
             .admin-item {
                 text-align: center;
-                
                 .name {
                     margin-top: 20px;
                     margin-bottom: 0;
@@ -290,10 +284,10 @@
         .item-member {
             margin-right: 1.25%;
             width: 19%;
-            @media only screen and (max-width: 1080px){
+            @media only screen and (max-width: 1080px) {
                 width: 25%;
             }
-            @media only screen and (max-width: 420px){
+            @media only screen and (max-width: 420px) {
                 width: 70% !important;
             }
             .admin-item {
@@ -334,23 +328,23 @@
     .achievement-tab-title {
         display: flex;
         align-items: center;
-        img{
-            @media only screen and (max-width: 420px){ width: 6vw;}
-           
+        img {
+            @media only screen and (max-width: 420px) {
+                width: 6vw;
+            }
         }
-        h2{
-            @media only screen and (max-width: 420px){font-size: 25px;}
-           
+        h2 {
+            @media only screen and (max-width: 420px) {
+                font-size: 25px;
+            }
         }
-
         .achievement__tabs {
             margin-left: 20px;
-            @media only screen and (max-width: 1080px){
-            display: none;
+            @media only screen and (max-width: 1080px) {
+                display: none;
             }
             .nav-tabs {
                 // border: unset;
-            
                 .nav-link {
                     padding: 0;
                     margin: 0;
@@ -362,7 +356,9 @@
                     // @media only screen and (max-width: 1080px){
                     //     width: 42vw;
                     // }
-                    @media only screen and (max-width: 420px){font-size: 16px;}
+                    @media only screen and (max-width: 420px) {
+                        font-size: 16px;
+                    }
                     &:hover {
                         border-color: unset;
                     }
@@ -373,11 +369,9 @@
                 .__tabs__item {
                     margin-right: 20px;
                     overflow: hidden;
-                    
                 }
                 .__tabs__item:last-child {
                     margin: 0;
-                   
                 }
                 .nav-link.active {
                     color: #00529E;
@@ -397,34 +391,30 @@
                 }
             }
         }
-    
-    .achievement__title {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        line-height: 43px;
-        font-family: $MyriadPro-Bold;
-        text-transform: uppercase;
-        color: $big-title;
-        .big-title {
-            margin-bottom: 0;
-            margin-left: 10px;
+        .achievement__title {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            line-height: 43px;
+            font-family: $MyriadPro-Bold;
+            text-transform: uppercase;
+            color: $big-title;
+            .big-title {
+                margin-bottom: 0;
+                margin-left: 10px;
+            }
         }
     }
-      
-    }
-    
-    .achievement-tabs-mobile{
+    .achievement-tabs-mobile {
         display: none;
         margin-left: 20px;
-        @media only screen and (max-width: 1080px){
+        @media only screen and (max-width: 1080px) {
             display: block;
             margin-left: 0;
             margin-top: 2%;
         }
         .nav-tabs {
             // border: unset;
-        
             .nav-link {
                 padding: 0;
                 margin: 0;
@@ -433,12 +423,14 @@
                 font-family: $MyriadPro-Bold;
                 font-size: 20px;
                 text-transform: uppercase;
-                @media only screen and (max-width: 1080px){
+                @media only screen and (max-width: 1080px) {
                     width: 40vw;
                     appearance: none;
                     -webkit-appearance: none;
                 }
-                @media only screen and (max-width: 420px){font-size: 16px;}
+                @media only screen and (max-width: 420px) {
+                    font-size: 16px;
+                }
                 &:hover {
                     border-color: unset;
                 }
@@ -449,29 +441,31 @@
             .__tabs__item {
                 margin-right: 20px;
                 overflow: hidden;
-                @media only screen and (max-width: 1080px){
+                @media only screen and (max-width: 1080px) {
                     width: 25vw;
                     display: table;
                     margin: 0 auto;
                     text-align: center;
                     appearance: none;
                     -webkit-appearance: none;
-                   
                 }
-                @media only screen and (max-width: 380px){width: 20vw;}
+                @media only screen and (max-width: 380px) {
+                    width: 20vw;
+                }
             }
             .__tabs__item:last-child {
                 margin: 0;
-                @media only screen and (max-width: 1080px){
+                @media only screen and (max-width: 1080px) {
                     width: 25vw;
                     display: table;
                     margin: 0 auto;
                     text-align: center;
                     appearance: none;
                     -webkit-appearance: none;
-                    
                 }
-                @media only screen and (max-width: 380px){width: 20vw;}
+                @media only screen and (max-width: 380px) {
+                    width: 20vw;
+                }
             }
             .nav-link.active {
                 color: #00529E;
@@ -495,8 +489,12 @@
         .content-title {
             max-width: 50%;
             font-family: $MyriadPro-Bold;
-            @media only screen and (max-width: 1080px){max-width: 100%;}
-            @media only screen and (max-width: 420px){font-size: 14px;}
+            @media only screen and (max-width: 1080px) {
+                max-width: 100%;
+            }
+            @media only screen and (max-width: 420px) {
+                font-size: 14px;
+            }
         }
         // .top {
         //     display: flex;
@@ -542,30 +540,34 @@
                 padding-right: 2%;
                 padding-left: 2%;
                 margin-bottom: 3%;
-                @media only screen and (max-width: 400px){
+                @media only screen and (max-width: 400px) {
                     flex: 1 50%;
                     max-width: 50%;
                 }
                 .img-content {
                     img {
                         max-height: 80px;
-                        @media only screen and (max-width: 420px){height: 40px;}
+                        @media only screen and (max-width: 420px) {
+                            height: 40px;
+                        }
                     }
                     text-align: center;
                     .year {
                         font-family: $MyriadPro-Bold;
                         margin-top: 15px;
                         display: block;
-                        @media only screen and (max-width: 420px){font-size: 16px;}
+                        @media only screen and (max-width: 420px) {
+                            font-size: 16px;
+                        }
                     }
                 }
                 .desc {
                     text-align: center;
                     line-height: 1;
-                    text-align: justify;
-                    @media only screen and (max-width: 420px){font-size: 15px !important;}
+                    @media only screen and (max-width: 420px) {
+                        font-size: 15px !important;
+                    }
                     strong {
-
                         font-family: $MyriadPro-Bold;
                     }
                 }
@@ -573,19 +575,6 @@
         }
     }
 }
-
-
-
-   
-
-
-
-
-
-
-
-
-
 
 .develop-wrapper {
     // margin-bottom: -40px;
@@ -598,17 +587,19 @@
         text-transform: uppercase;
         color: $big-title;
         padding-top: 140px;
-        h2{
-            @media only screen and (max-width: 420px){font-size: 25px;}
-           
-        }
-        img{
-            @media only screen and (max-width: 420px){ width: 6vw;}
-           
-        }
         .big-title {
             margin-bottom: 0;
             margin-left: 10px;
+        }
+        h2 {
+            @media screen and (max-width: 420px) {
+                font-size: 25px;
+            }
+        }
+        img {
+            @media screen and (max-width: 420px) {
+                width: 6vw;
+            }
         }
     }
     .develop__title.active {
@@ -621,12 +612,15 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        padding-top: 37vw; 
-        @media only screen and (max-width: 1080px){
+        padding-top: 37vw;
+        @media only screen and (max-width: 1080px) {
             padding-bottom: 10vw;
         }
+        @media only screen and (max-width: 768px) {
+            padding-top: 53vw;
+            min-height: 280px;
+        }
         .develop-content-wrapper {
-            
             position: absolute;
             top: 0;
             left: 0;
@@ -644,16 +638,11 @@
                 .thumb-wrapper {
                     padding: 0 20%;
                     margin-left: -60px;
-                    @media only screen and (max-width: 992px){
+                    @media only screen and (max-width: 992px) {
                         padding: 0 20%;
-                        
                     }
-                    @media only screen and (max-width: 768px){
-                        padding: 0 25%;
-                        
-                    }
-                    @media only screen and (max-width: 380px){
-                        
+                    @media only screen and (max-width: 768px) {
+                        padding: 0 10%;
                     }
                 }
                 .slider.slider-for {
@@ -663,39 +652,20 @@
                     height: 100%;
                     display: flex;
                     align-items: center;
-                    @media only screen and (max-width: 1080px){
+                    @media only screen and (max-width: 768px) {
                         margin-left: 50px;
+                        padding-top: 0;
                     }
-                    @media only screen and (max-width: 992px){
-                        
-                        margin-left: 100px;
-                    }
-                    @media only screen and (max-width: 730px){
-                       
-                        margin-left: 80px;
-                        margin-top: -25px;
-                    }
-                    @media only screen and (max-width: 380px){
-                        margin-left: 70px;
+                    @media only screen and (max-width: 480px) {
+                        margin-left: 40px;
                     }
                     .slick-list {
-                       
                         .slick-track {
-                           
                             .thumbnail-image {
                                 max-height: calc(37vw - 100px);
                                 cursor: pointer;
-                                @media only screen and (max-width: 780px){
-                                    max-height: calc(42vw - 100px);
-                                }
-                                @media only screen and (max-width: 730px){
-                                    max-height: calc(40vw - 100px);
-                                }
-                                @media only screen and (max-width: 680px){
-                                    max-height: calc(55vw - 100px);
-                                }
-                                @media only screen and (max-width: 380px){
-                                    max-height: calc(63vw - 100px);
+                                @media only screen and (max-width: 768px) {
+                                    max-height: calc(45vw - 20px);
                                 }
                                 .mCSB_scrollTools .mCSB_draggerContainer {
                                     opacity: 0;
@@ -716,18 +686,25 @@
                                     display: none
                                 }
                                 .image-slider img {
-                                    // max-width: 70%;
                                     object-fit: cover;
                                     height: 20vw;
                                     width: 100%;
-                                    // width: 700px;
+                                    @media only screen and (max-width: 768px) {
+                                        height: 30vw;
+                                    }
+                                    @media only screen and (max-width: 480px) {
+                                        height: 35vw;
+                                    }
                                 }
                                 .content-slider {
                                     .title {
                                         font-family: $MyriadPro-Bold;
                                         margin: 20px 0;
-                                        @media only screen and (max-width: 380px){
-                                           font-size: 16px;
+                                        @media only screen and (max-width: 768px) {
+                                            margin: 10px 0;
+                                        }
+                                        @media only screen and (max-width: 380px) {
+                                            font-size: 16px;
                                         }
                                     }
                                     .desc__wrapper {
@@ -735,9 +712,9 @@
                                             max-width: 100%;
                                             text-align: justify;
                                             cursor: pointer;
-                                            @media only screen and (max-width: 380px){
+                                            @media only screen and (max-width: 380px) {
                                                 font-size: 12px;
-                                             }
+                                            }
                                         }
                                     }
                                 }
@@ -747,14 +724,14 @@
                 }
                 .cycle-list-wrap {
                     padding: 25% 0;
-                    @media only screen and (max-width: 992px){
+                    @media only screen and (max-width: 992px) {
                         padding: 0;
                     }
-                    .thumb-year{
-                        @media only screen and (max-width: 1080px){
+                    .thumb-year {
+                        @media only screen and (max-width: 1080px) {
                             margin-top: -40px;
                         }
-                        @media only screen and (max-width: 1280px){
+                        @media only screen and (max-width: 1280px) {
                             margin-top: -40px;
                             margin-left: 40px;
                         }
@@ -768,9 +745,6 @@
                             -ms-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(.1, rgba(0, 0, 0, .75)), color-stop(.75, #000), color-stop(1, rgba(0, 0, 0, 0)));
                             -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(.1, rgba(0, 0, 0, .75)), color-stop(.75, #000), color-stop(1, rgba(0, 0, 0, 0)));
                             mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(.1, #000), color-stop(.75, #000), color-stop(1, rgba(0, 0, 0, 0)));
-                            
-                           
-                           
                         }
                         button {
                             height: 40px;
@@ -783,6 +757,9 @@
                             margin: 0;
                             padding: 0;
                             color: transparent;
+                            @media only screen and (max-width: 768px) {
+                                display: none!important;
+                            }
                             &:focus {
                                 outline: none;
                                 border: none;
@@ -800,8 +777,9 @@
                             position: absolute;
                             top: 0;
                             right: 50%;
-                            
-                            @media only screen and (max-width: 1080px){display: none;}
+                            @media only screen and (max-width: 1080px) {
+                                display: none;
+                            }
                         }
                         .slick-next::after {
                             content: "\f078";
@@ -814,35 +792,22 @@
                             margin-left: -20px;
                             position: absolute;
                             right: 50%;
-                            @media only screen and (max-width: 1080px){display: none;}
+                            @media only screen and (max-width: 1080px) {
+                                display: none;
+                            }
                         }
                         width: 100%;
                         height: 100%;
                         overflow: hidden;
                         padding: 20px 0 0;
-                        @media only screen and (max-width: 992px){
+                        @media only screen and (max-width: 992px) {
                             margin-top: 10px;
-                           margin-left: 55px;
-                           padding: 2%;
+                            margin-left: 55px;
+                            padding: 2%;
                         }
-                        @media only screen and (max-width: 780px){
-                            margin-top: 5px;
-                            padding: 5%;
-                           
-                            margin-left: 50px;
-
-                        }
-                        @media only screen and (max-width: 730px){
-                               
-                                margin-left: 60px; 
-                        }
-                        @media only screen and (max-width: 680px){
-                            margin-left: 50px;
-                            margin-top: -30px;
-                        }
-                        @media only screen and (max-width: 380px){
-                            height: 80%;
-                           margin-top: -40px;
+                        @media only screen and (max-width: 768px) {
+                            margin: 0;
+                            padding: 20px 0;
                         }
                         li {
                             font-size: 2rem;
@@ -850,7 +815,7 @@
                             cursor: pointer;
                             text-align: center;
                             float: none;
-                            width: 100%!important;
+                            // width: 100%!important;
                             color: #fff;
                             webkit-transition: font-size .5s ease;
                             transition: font-size .5s ease;
@@ -859,39 +824,27 @@
                             outline: 0;
                             padding: 0 30px 0 0;
                             opacity: .5;
-                           
-                            @media only screen and (max-width: 992px){
-                               margin: 5PX 0;
-                                font-size: 1.5rem;
-                                
-                            }
-                            @media only screen and (max-width: 730px){
-                                margin:  0;
+                            @media only screen and (max-width: 480px) {
                                 font-size: 1rem;
-                                padding: 0 20px 0 0;
-                            }
-                            @media only screen and (max-width: 380px){
-                                font-size: .8rem;
                             }
                         }
                         li.slick-center {
                             font-size: 4rem;
                             font-family: $MyriadPro-Bold;
                             opacity: 1;
-                            @media only screen and (max-width: 992px){
+                            @media only screen and (max-width: 992px) {
                                 font-size: 2.5rem;
                             }
-                            @media only screen and (max-width: 730px){
-                                font-size: 2rem;
-                            }
-                            @media only screen and (max-width: 380px){
+                            @media only screen and (max-width: 480px) {
                                 font-size: 1.5rem;
                             }
                         }
                     }
                 }
                 .carousel-controls {
-                    @media only screen and (max-width: 1080px){display: none;}
+                    @media only screen and (max-width: 1080px) {
+                        display: none;
+                    }
                     position: absolute;
                     bottom: 30px;
                     left: 30px;
@@ -1031,4 +984,3 @@
 .cycle-list-wrap:hover~.carousel-controls {
     display: block!important;
 }
-
