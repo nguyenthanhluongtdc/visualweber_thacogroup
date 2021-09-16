@@ -76,8 +76,8 @@
                         <span>EN</span>
                     </a>
                 </li>
-            </ul>
-            <nav>
+            </ul> 
+            <nav class="menu-mobile">
                     <div class="nav-mobile">
                         <a id="nav-toggle" href="#"><span></span>
                         </a>

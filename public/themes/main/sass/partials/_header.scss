@@ -291,40 +291,34 @@
 
   
 .nav-bar-mobile {
-    height: 70px;
+   
     background: #fff ;
     display: none;
     
     @media only screen and (max-width: 1080px){
         display: block;
-        position: fixed;
-        z-index: 99; 
     .nav-container {
-        max-width: 1000px;
-        margin: 0 auto;
-        
        
         .brand {
-            position: absolute;
-            top: 0;
-            right: 45%;
-            bottom: 0;
-            padding-top: 20px;
+            position: fixed;
+            z-index: 998; 
+           top: 22px;
+           left: 40%;
+            @media only screen and (max-width: 768px){left: 38%;}
+            @media only screen and (max-width: 600px){left: 40%; top: 24.5px;}
+            @media only screen and (max-width: 400px){left: 39%; top: 25px;}
            a img{
-                transform: translateX(40vw);
-                position: fixed;
-                z-index: 998; 
-                @media only screen and (max-width: 768px){ transform: translateX(38vw);}
-                @media only screen and (max-width: 600px){ transform: translateX(33vw);}
-                @media only screen and (max-width: 400px){ transform: translateX(37.7vw);}
-           }
-            @media only screen and (max-width: 768px){ right: 40%;}
-            a img {
+              
                 max-height: 70px;
                 @media only screen and (max-width: 600px){
                     max-height: 15px;
                 }
-            }
+                @media only screen and (max-width: 400px){
+                    max-height: 13px;
+                }
+           }
+          
+           
             a,a:visited {
                 color: #ffffff;
                 text-decoration: none;
@@ -337,11 +331,9 @@
             display: flex;
             position: fixed;
             z-index: 999; 
+            top: 32px;
             right: 5%;
-            top: 2%;
-            @media only screen and (max-width: 768px){top: 3%;}
-            @media only screen and (max-width: 600px){top: 3.6%;}
-            @media only screen and (max-width: 400px){top: 3.4%;}
+            // @media only screen and (max-width: 600px){right: 80px;}
             
             #wrap {
                 margin: -5px 8px;
@@ -369,31 +361,31 @@
             }
             
             input[type="text"] {
-            height: 55px;
-           
-            font-size: 25px;
-            display: inline-block;
-            font-family: $MyriadPro-Regular;
-            font-weight: 100;
-            border: none;
-            outline: none;
-            color: #555;
-            padding: 3px;
-            padding-right: 60px;
-            margin-top: -12px;
-            width: 0px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: none;
-            z-index: 999;
-            transition: width .8s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-            cursor: pointer;
-            @media only screen and (max-width: 600px){font-size: 16px; height: 50px;}
-            }
+                height: 55px;
+            
+                font-size: 25px;
+                display: inline-block;
+                font-family: $MyriadPro-Regular;
+                font-weight: 100;
+                border: none;
+                outline: none;
+                color: #555;
+                padding: 3px;
+                padding-right: 60px;
+                margin-top: -12px;
+                width: 0px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: none;
+                z-index: 999;
+                transition: width .8s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+                cursor: pointer;
+                @media only screen and (max-width: 600px){font-size: 16px; height: 50px;}
+                }
             
             input[type="text"]:focus:hover {
-            border-bottom: 1px solid #BBB;
+            // border-bottom: 1px solid #BBB;
             }
             
             input[type="text"]:focus {
@@ -465,21 +457,27 @@
            }
           
         }
-        nav {
+        .menu-mobile {
             float: left;
             position: fixed;
             z-index: 99; 
             background: #fff;
            
-            ul {
+            .nav-list {
                 list-style: none;
                 margin: 0;
                 padding: 0;
                 background: #fff;
-                margin: 20px 0;
-                
+                margin: 20px 15px;
+                .nav-item{
+                 text-transform: uppercase;
+                    
+                }
                 .nav-dropdown{
-                    margin: 5px 0;
+                    margin: 5px -20px;
+                    .dropdown-item{
+
+                    }
                 }
                 .icon-social{
                     display: flex;
@@ -499,6 +497,8 @@
                        }
                    }
                 }
+
+                
             }
             
         }
@@ -506,19 +506,12 @@
     }   
 
   
-  
-  
-  nav ul li {
-    float: left;
-    position: relative;
-    text-transform: uppercase;
-    
-  }
-  nav ul li a,
-  nav ul li a:visited {
+
+  .menu-mobile .nav-list .nav-item a,
+  .menu-mobile .nav-list .nav-item a:visited {
     display: block;
     padding: 0 20px;
-    line-height: 70px;
+    line-height: 50px;
      background: #fff;
     color: $gray_text;
     text-decoration: none;
@@ -529,22 +522,22 @@
         font-size: 15px;
     }
   }
-  nav ul li a:hover,
-  nav ul li a:visited:hover {
-    
+  .menu-mobile .nav-list .nav-item a:hover,
+  .menu-mobile .nav-list .nav-item a:visited:hover {
+
     color: $main_color;
   }
-  nav ul li a:not(:only-child):after,
-  nav ul li a:visited:not(:only-child):after {
+  .menu-mobile .nav-list .nav-item a:not(:only-child):after,
+  .menu-mobile .nav-list .nav-item a:visited:not(:only-child):after {
     padding-left: 4px;
     
   }
-  nav ul li ul li {
+  .menu-mobile .nav-list .nav-item .nav-dropdown .dropdown-item {
     min-width: 190px;
   }
-  nav ul li ul li a {
+  .menu-mobile .nav-list .nav-item .nav-dropdown .dropdown-item a {
     padding: 15px;
-    line-height: 20px;
+    line-height: 7px;
     @media only screen and (max-width: 600px){
         padding: 5px;
     }
@@ -574,7 +567,7 @@
   @media only screen and (max-width: 1080px) {
     
   
-    nav {
+    .menu-mobile {
       width: 100%;
       padding: 70px 0 15px;
       box-shadow: 0 5px 5px -5px rgba(116, 116, 116, 0.61);
@@ -582,18 +575,18 @@
         padding: 50px 0 15px;
         }
     }
-    nav ul {
+    .menu-mobile .nav-list {
       display: none;
      
     }
-    nav ul li {
+    .menu-mobile .nav-list .nav-item {
       float: none;
       .logo{
           color: #000;
          
       }
     }
-    nav ul li a {
+    .menu-mobile .nav-list .nav-item a {
       padding: 15px;
       line-height: 20px;
       padding-left: 5%;
@@ -603,8 +596,8 @@
       }
        
     }
-    nav ul li ul li a {
-      padding-left: 10%;
+    .menu-mobile .nav-list .nav-item .nav-dropdown .dropdown-item a {
+      padding-left: 0;
       font-family: $MyriadPro-Regular;
     }
   
@@ -634,14 +627,12 @@
   }
   #nav-toggle {
     position: absolute;
+  
     left: 50%;
-    top: 22px;
+    bottom: 15px;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
-    @media only screen and (max-width: 600px){
-        left: 30%;
-        
-    }
+    
     
   }
   #nav-toggle span,
@@ -660,12 +651,23 @@
        width: 25px;
        height: 3.5px;
     }
+    @media only screen and (max-width: 600px){
+        width: 20px;
+        height: 3px;
+     }
+    
   }
   #nav-toggle span:before {
     top: -10px;
+    @media only screen and (max-width: 600px){
+        top: -5px;
+     }
   }
   #nav-toggle span:after {
     bottom: -10px;
+    @media only screen and (max-width: 600px){
+        bottom: -5px;
+     }
   }
   #nav-toggle.active span {
     background-color: transparent;
