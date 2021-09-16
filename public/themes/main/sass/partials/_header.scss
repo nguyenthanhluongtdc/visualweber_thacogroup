@@ -302,11 +302,11 @@
         .brand {
             position: fixed;
             z-index: 998; 
-           top: 22px;
+           top: 18px;
            left: 40%;
             @media only screen and (max-width: 768px){left: 38%;}
-            @media only screen and (max-width: 600px){left: 40%; top: 24.5px;}
-            @media only screen and (max-width: 400px){left: 39%; top: 25px;}
+            @media only screen and (max-width: 600px){left: 40%; top: 20.5px;}
+            @media only screen and (max-width: 400px){left: 39%; top: 21px;}
            a img{
               
                 max-height: 70px;
@@ -331,7 +331,7 @@
             display: flex;
             position: fixed;
             z-index: 999; 
-            top: 32px;
+            top: 28px;
             right: 5%;
             // @media only screen and (max-width: 600px){right: 80px;}
             
@@ -629,7 +629,7 @@
     position: absolute;
   
     left: 50%;
-    bottom: 15px;
+    bottom: 19px;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
     
