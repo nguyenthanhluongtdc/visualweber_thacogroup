@@ -46,39 +46,105 @@
             </div>
             
         </header>
-        {{-- <div class="header-mobie" id="header-mobie">
-            <a class="logo_link-blue" href="{{ route('public.single') }}" >
-                @if (theme_option('logo'))
+
+
+          
+    <div class="nav-bar-mobile">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="" class="logo">@if (theme_option('logo'))
                     <img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}">
-                @endif
-            </a>
-            <div class="box-search-mobile">
-                <form action="{{route('public.search')}}" method="GET">
-                    <input type="text" placeholder="{!! __('Tìm kiếm') !!}"
-                    name="keyword" value="{{ request()->get('keyword') }}">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+                @endif</a>
+               
             </div>
-            <li class="item-top ">
-                <ul class="language">
-                    <li class="lang lang-vi">
-                        <a class="item-top__link" rel="alternate" hreflang="vi" href="{{ Language::getLocalizedURL('vi') }}">
-                            <span>VN</span>
+            
+            
+            <ul class="language">
+                <div id="wrap">
+                    <form action="" autocomplete="on">
+                        <ion-icon name="search-outline"></ion-icon>
+                    <input id="search" name="search" type="text" placeholder="Search..">
+                    <input id="search_submit" value="Rechercher" type="submit">
+                    </form>
+                  </div>
+                <li class="active">
+                    <a rel="alternate" hreflang="vi" href="{{ Language::getLocalizedURL('vi') }}">
+                        <span>VN</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a rel="alternate" hreflang="en" href="{{ Language::getLocalizedURL('en') }}">
+                        <span>EN</span>
+                    </a>
+                </li>
+            </ul>
+            <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!"><span></span>
                         </a>
-                    </li>
-                    <li class="lang lang-en ">
-                        <a class="item-top__link" rel="alternate" hreflang="en" href="{{ Language::getLocalizedURL('en') }}">
-                            <span>EN</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>  
-           
-        </div> --}}
-
-
-
-        
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Lĩnh vực hoạt động</a>
+                        </li>
+                        <li>
+                            <a href="#">Quan hệ cổ đông</a>
+                            <ul class="nav-dropdown">
+                            <li>
+                                <a href="#">Công bô thông tin</a>
+                            </li>
+                            <li>
+                                <a href="#">abc</a>
+                            </li>
+                            <li>
+                                <a href="#">xyz</a>
+                            </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Lĩnh vực hoạt động</a>
+                        </li>
+                        <li>
+                            <a href="#">Quan hệ cổ đông</a>
+                            <ul class="nav-dropdown">
+                            <li>
+                                <a href="#">Công bô thông tin</a>
+                            </li>
+                            <li>
+                                <a href="#">abc</a>
+                            </li>
+                            <li>
+                                <a href="#">xyz</a>
+                            </li>
+                            </ul>
+                        </li>
+                        <li class="icon-social">
+                            <a href="#" >
+                                <img src="{{Theme::asset()->url('images/home/logo/fb.png') }}" alt="" style="width: 40px; height: 40px;">
+                            </a>
+                            <a href="#" >
+                                <img src="{{Theme::asset()->url('images/home/logo/youtube.png') }}" alt="" style="width: 40px; height: 40px;">
+                            </a>
+                            <a href="#" >
+                                <img src="{{Theme::asset()->url('images/home/logo/linkedin.png') }}" alt="" style="width: 40px; height: 40px;">
+                            </a>
+                            <a href="#" >
+                                <img src="{{Theme::asset()->url('images/home/logo/phone.png') }}" alt="" style="width: 40px; height: 40px;">
+                            </a>
+                            <a href="#" >
+                                <img src="{{Theme::asset()->url('images/home/logo/mail.png') }}" alt="" style="width: 40px; height: 40px;">
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+    </div>
 
 @includeIf("theme.main::views.sidebar")
 <a id="button-top" class=""></a>
