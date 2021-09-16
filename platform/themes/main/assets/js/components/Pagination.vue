@@ -109,7 +109,7 @@ export default {
 <style>
 
 .page-item .page-link.active {
-  background-color: #0B5CA8;
+  background-color: #0f4685;
   color: #ffffff !important;
 }
 </style>

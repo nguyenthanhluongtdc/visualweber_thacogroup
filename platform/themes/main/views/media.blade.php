@@ -13,6 +13,17 @@
 @endif
 
 <style>
+
+.ps__thumb-y {
+    background-color: #fff !important;
+    width: 2px;
+    border-radius:unset; 
+}
+
+.ps__rail-y {
+    background-color: gray !important;
+    width: 4px;
+}
     .list-social-sidebar {
         display: none;
     }

@@ -14,7 +14,6 @@
                     </ol>
                 </nav>
             </div>
-
             <!---gallery--->
             <div class="media-wrapper">
                 <div class="container-customize">
@@ -821,11 +820,11 @@ export default {
     }
 
     .ps__rail-y {
-        background-color: #aaa !important;
+        background-color: #fff !important;
     }
 
     .ps__thumb-y {
-        background-color: white !important;
+        background-color: gray !important;
     }
 
     .modal-header-custom .name {
