@@ -482,7 +482,13 @@
                     
                 }
                 .nav-dropdown{
-                    margin: 5px -20px;
+                    margin: 5px 2%;
+                    @media only screen and (max-width: 600px){
+                        margin-left: -15px !important;
+                    }
+                    @media only screen and (max-width: 768px){
+                        margin-left: 0;
+                    }
                    
                 }
                 .icon-social{
