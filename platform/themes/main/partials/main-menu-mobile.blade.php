@@ -6,7 +6,7 @@
     @foreach ($menu_nodes as $key => $row)
     @if ($row->has_child)
     <li>
-        <a href="{{$row->url}}">{{$row->name}}</a>
+        <a href="#">{{$row->name}}</a>
        
         <ul class="nav-dropdown">
             @foreach($row->child as $key => $child)
