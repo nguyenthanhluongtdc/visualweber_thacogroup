@@ -315,6 +315,7 @@
                 position: fixed;
                 z-index: 998; 
                 @media only screen and (max-width: 768px){ transform: translateX(36vw);}
+                @media only screen and (max-width: 600px){ transform: translateX(33vw);}
            }
             @media only screen and (max-width: 768px){ right: 40%;}
             a img {
@@ -338,7 +339,8 @@
             right: 5%;
             top: 2%;
             @media only screen and (max-width: 768px){top: 3%;}
-            @media only screen and (max-width: 600px){top: 3.7%;}
+            @media only screen and (max-width: 600px){top: 3.6%;}
+            @media only screen and (max-width: 400px){top: 3.4%;}
             
             #wrap {
                 margin: -5px 8px;
