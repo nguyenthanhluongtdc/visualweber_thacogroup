@@ -10,9 +10,9 @@
        
         <ul class="nav-dropdown">
             @foreach($row->child as $key => $child)
-        <li>
-            <a href="{{ $child->url }}">{{$child->name}}</a>
-        </li>
+            <li>
+                <a href="{{ $child->url }}" class=" {{ $row->active ? "active" : ""}}"">{{$child->name}}</a>
+            </li>
             @endforeach
         </ul>
         

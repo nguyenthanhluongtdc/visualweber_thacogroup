@@ -603,6 +603,11 @@
   
     .nav-dropdown {
       position: static;
+      ul{
+          .active{
+              color: $main_color;
+          }
+      }
       
     }
       .brand a img {

@@ -835,6 +835,9 @@
     display: none;
     .modal-dialog {
         max-width: 900px;
+        @media only screen and (max-width: 992px){ max-width: 700px;}
+        @media only screen and (max-width: 768px){max-width: 500px;}
+        @media only screen and (max-width: 600px){max-width: 400px;}
         .modal-content {
             padding: 30px;
             .modal-body {
@@ -916,7 +919,7 @@
         }
     }
 }
-
+ 
 @media screen and(max-width:768px) {
     .future-goal-banner {
         min-height: 500px;
