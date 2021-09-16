@@ -126,19 +126,19 @@
                         </li>
                         <li class="icon-social">
                             <a href="#" >
-                                <img src="{{Theme::asset()->url('images/home/logo/fb.png') }}" alt="" style="width: 40px; height: 40px;">
+                                <img src="{{Theme::asset()->url('images/home/logo/fb.png') }}" alt="">
                             </a>
                             <a href="#" >
-                                <img src="{{Theme::asset()->url('images/home/logo/youtube.png') }}" alt="" style="width: 40px; height: 40px;">
+                                <img src="{{Theme::asset()->url('images/home/logo/youtube.png') }}" alt="" >
                             </a>
                             <a href="#" >
-                                <img src="{{Theme::asset()->url('images/home/logo/linkedin.png') }}" alt="" style="width: 40px; height: 40px;">
+                                <img src="{{Theme::asset()->url('images/home/logo/linkedin.png') }}" alt="" >
                             </a>
                             <a href="#" >
-                                <img src="{{Theme::asset()->url('images/home/logo/phone.png') }}" alt="" style="width: 40px; height: 40px;">
+                                <img src="{{Theme::asset()->url('images/home/logo/phone.png') }}" alt="" >
                             </a>
                             <a href="#" >
-                                <img src="{{Theme::asset()->url('images/home/logo/mail.png') }}" alt="" style="width: 40px; height: 40px;">
+                                <img src="{{Theme::asset()->url('images/home/logo/mail.png') }}" alt="" >
                             </a>
                         </li>
                     </ul>

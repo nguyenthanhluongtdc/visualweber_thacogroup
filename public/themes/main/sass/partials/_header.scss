@@ -294,7 +294,7 @@
     height: 70px;
     background: #fff ;
     display: none;
-  
+    
     @media only screen and (max-width: 1080px){
         display: block;
         position: fixed;
@@ -312,9 +312,12 @@
             padding-top: 20px;
             position: fixed;
             z-index: 999; 
-            
+           
             a img {
                 max-height: 70px;
+                @media only screen and (max-width: 600px){
+                    max-height: 15px;
+                }
             }
             a,a:visited {
                 color: #ffffff;
@@ -329,15 +332,9 @@
             position: fixed;
             z-index: 999; 
             right: 5%;
-            top: 3%;
-            // .search{
-            //     ion-icon{
-            //         font-size: 22px;
-            //         margin: 0 5px;
-            //     }
-                
-               
-            // }
+            top: 2%;
+            @media only screen and (max-width: 768px){top: 3%;}
+            @media only screen and (max-width: 600px){top: 3.7%;}
             #wrap {
                 margin: -5px 8px;
                 display: inline-block;
@@ -346,9 +343,16 @@
                 float: right;
                 padding: 0;
                 position: relative;
-               
+                @media only screen and (max-width: 600px){
+                    margin-top: -3px;
+                    margin-right: 5px;
+                }
                 ion-icon{
                     font-size: 25px;
+                    color: rgba(0, 0, 0, 0.568);
+                    @media only screen and (max-width: 600px){
+                        font-size: 18px;
+                    }
                 }
             }
             
@@ -373,6 +377,7 @@
             z-index: 999;
             transition: width .8s cubic-bezier(0.000, 0.795, 0.000, 1.000);
             cursor: pointer;
+            @media only screen and (max-width: 600px){font-size: 16px;}
             }
             
             input[type="text"]:focus:hover {
@@ -418,11 +423,19 @@
                 text-overflow: clip;
                 line-height: 22px;
                 height: 20px;
+                @media only screen and (max-width: 600px){
+                    height: 15px;
+                    line-height: 17px;
+                }
                a{
                
                    color: rgba(0, 0, 0, 0.568);
                    font-size: 20px;
                    font-family: $MyriadPro-Regular;
+                   @media only screen and (max-width: 600px){
+                    font-size: 15px;
+                   
+                    }
                   &:hover{
                       color: $main_color;
                   }
@@ -451,19 +464,31 @@
             position: fixed;
             z-index: 99; 
             background: #fff;
+            
             ul {
                 list-style: none;
                 margin: 0;
                 padding: 0;
-                background: $bg-gray;
+                background: #fff;
+                margin: 20px 0;
+                .nav-dropdown{
+                    margin: 5px 0;
+                }
                 .icon-social{
                     display: flex;
                     margin-left: 10px;
+                    @media only screen and (max-width: 600px){margin-left: 5px;}
                    a{
                       
                        img{
-                           width: 100%;
+                          width: 40px;
+                          height: 40px;
                            margin: 0 -10px;
+                           @media only screen and (max-width: 600px){
+                            width: 30px;
+                            height: 30px;
+                            margin: 0 -5px;
+                           }
                        }
                    }
                 }
@@ -479,6 +504,7 @@
   nav ul li {
     float: left;
     position: relative;
+    text-transform: uppercase;
     
   }
   nav ul li a,
@@ -486,11 +512,15 @@
     display: block;
     padding: 0 20px;
     line-height: 70px;
-     background: $bg-gray;
+     background: #fff;
     color: $gray_text;
     text-decoration: none;
     font-size: 25px;
     font-family: $MyriadPro-Bold;
+    
+    @media only screen and (max-width: 600px){
+        font-size: 15px;
+    }
   }
   nav ul li a:hover,
   nav ul li a:visited:hover {
@@ -508,24 +538,30 @@
   nav ul li ul li a {
     padding: 15px;
     line-height: 20px;
+    @media only screen and (max-width: 600px){
+        padding: 5px;
+    }
+    
   }
-  
+
   .nav-dropdown {
     position: absolute;
     display: none;
     z-index: 1;
     // box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     font-family: $MyriadPro-Regular;
+   
   }
   .nav-mobile {
     position: absolute;
     top: 0;
     left: 0;
-    background: #fff;
+    // background: #fff;
     height: 70px;
     width: 70px;
     position: fixed;
     z-index: 99; 
+    
   }
   
   @media only screen and (max-width: 1080px) {
@@ -534,7 +570,9 @@
     nav {
       width: 100%;
       padding: 70px 0 15px;
-     
+      @media only screen and (max-width: 600px){
+        padding: 50px 0 15px;
+        }
     }
     nav ul {
       display: none;
@@ -551,7 +589,10 @@
       padding: 15px;
       line-height: 20px;
       padding-left: 5%;
-      
+      @media only screen and (max-width: 600px){
+          padding: 5px;
+          padding-left: 5%;
+      }
        
     }
     nav ul li ul li a {
@@ -566,6 +607,7 @@
       .brand a img {
           max-height: 60px;
           margin-top: 5px;
+         
           
       }
   }
@@ -574,6 +616,7 @@
       display: block !important;
       position: fixed;
       z-index: 997; 
+     
     }
   }
   #nav-toggle {
@@ -582,6 +625,11 @@
     top: 22px;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
+    @media only screen and (max-width: 600px){
+        left: 30%;
+        
+    }
+    
   }
   #nav-toggle span,
   #nav-toggle span:before,
@@ -595,6 +643,10 @@
     display: block;
     content: '';
     transition: all 300ms ease-in-out;
+    @media only screen and (max-width: 600px){
+       width: 25px;
+       height: 3.5px;
+    }
   }
   #nav-toggle span:before {
     top: -10px;
@@ -603,7 +655,7 @@
     bottom: -10px;
   }
   #nav-toggle.active span {
-    background-color: #fff;
+    background-color: transparent;
    
   }
   #nav-toggle.active span:before, #nav-toggle.active span:after {
