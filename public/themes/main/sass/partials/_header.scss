@@ -314,8 +314,9 @@
                 transform: translateX(40vw);
                 position: fixed;
                 z-index: 998; 
-                @media only screen and (max-width: 768px){ transform: translateX(36vw);}
+                @media only screen and (max-width: 768px){ transform: translateX(38vw);}
                 @media only screen and (max-width: 600px){ transform: translateX(33vw);}
+                @media only screen and (max-width: 400px){ transform: translateX(37.7vw);}
            }
             @media only screen and (max-width: 768px){ right: 40%;}
             a img {
