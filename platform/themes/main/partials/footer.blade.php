@@ -88,7 +88,7 @@
                         </ul>
 
                     </div>
-                    <div class="footer-bottom-mobile">
+                    <div class="footer-bottom-mobile d-block d-lg-none">
                         {!! Menu::renderMenuLocation('footer-menu', [
                             'options' => [],
                             'theme' => true,

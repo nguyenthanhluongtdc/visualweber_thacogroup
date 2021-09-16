@@ -48,7 +48,7 @@
         <div class="container-customize">
             <div class="field-activity-intro-wrapper">
                 <div class="desc-field pt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
-                    <p class="desc-cotent font24 text-justify">
+                    <p class="desc-cotent font18 text-justify">
                         {!!has_field($page, 'about_us_field_description')!!}
                      
                     </p>
