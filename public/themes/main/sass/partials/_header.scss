@@ -307,12 +307,12 @@
         .brand {
             position: absolute;
             top: 0;
-            right: 40%;
+            right: 45%;
             bottom: 0;
             padding-top: 20px;
             position: fixed;
             z-index: 999; 
-           
+            @media only screen and (max-width: 768px){ right: 40%;}
             a img {
                 max-height: 70px;
                 @media only screen and (max-width: 600px){
@@ -335,6 +335,7 @@
             top: 2%;
             @media only screen and (max-width: 768px){top: 3%;}
             @media only screen and (max-width: 600px){top: 3.7%;}
+            
             #wrap {
                 margin: -5px 8px;
                 display: inline-block;
@@ -416,11 +417,7 @@
             input[type="submit"]:hover {
             opacity: 0;
             }
-            
-            
-            
-           
-            
+
            li{
                white-space: unset; 
                 overflow: hidden;
@@ -438,14 +435,14 @@
                    font-family: $MyriadPro-Regular;
                    @media only screen and (max-width: 600px){
                     font-size: 15px;
-                   
                     }
-                  &:hover{
-                      color: $main_color;
-                  }
-                  
-               }
-              
+                    &:hover{
+                        color: $main_color;
+                    }
+                }
+              .active{
+                color: $main_color;
+              }
                &:last-child{
                 margin-left: 5px;
                 margin-right: 5px;
@@ -457,9 +454,7 @@
             &:hover{
                 color: $main_color;
             }
-            .active{
-                color: $main_color;
-                }
+            
            }
           
         }

@@ -52,23 +52,22 @@
     <div class="nav-bar-mobile">
         <div class="nav-container">
             <div class="brand">
-                <a href="" class="logo">@if (theme_option('logo'))
+                <a href="{{ route('public.single') }}" class="logo">@if (theme_option('logo'))
                     <img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}">
                 @endif</a>
                
             </div>
-            
-            
+
             <ul class="language">
                 <div id="wrap">
                     <form action="" autocomplete="on">
                         <ion-icon name="search-outline"></ion-icon>
-                    <input id="search" name="search" type="text" placeholder="Search..">
+                    <input id="search" name="search" type="text" placeholder="{!!__ ('Tìm kiếm...')!!}">
                     <input id="search_submit" value="Rechercher" type="submit">
                     </form>
                   </div>
-                <li class="active">
-                    <a rel="alternate" hreflang="vi" href="{{ Language::getLocalizedURL('vi') }}">
+                <li class="">
+                    <a rel="alternate active" hreflang="vi" href="{{ Language::getLocalizedURL('vi') }}">
                         <span>VN</span>
                     </a>
                 </li>
@@ -83,65 +82,11 @@
                         <a id="nav-toggle" href="#!"><span></span>
                         </a>
                     </div>
-                    <ul class="nav-list">
-                        <li>
-                            <a href="#">Trang chủ</a>
-                        </li>
-                        <li>
-                            <a href="#">Lĩnh vực hoạt động</a>
-                        </li>
-                        <li>
-                            <a href="#">Quan hệ cổ đông</a>
-                            <ul class="nav-dropdown">
-                            <li>
-                                <a href="#">Công bô thông tin</a>
-                            </li>
-                            <li>
-                                <a href="#">abc</a>
-                            </li>
-                            <li>
-                                <a href="#">xyz</a>
-                            </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Trang chủ</a>
-                        </li>
-                        <li>
-                            <a href="#">Lĩnh vực hoạt động</a>
-                        </li>
-                        <li>
-                            <a href="#">Quan hệ cổ đông</a>
-                            <ul class="nav-dropdown">
-                            <li>
-                                <a href="#">Công bô thông tin</a>
-                            </li>
-                            <li>
-                                <a href="#">abc</a>
-                            </li>
-                            <li>
-                                <a href="#">xyz</a>
-                            </li>
-                            </ul>
-                        </li>
-                        <li class="icon-social">
-                            <a href="#" >
-                                <img src="{{Theme::asset()->url('images/home/logo/fb.png') }}" alt="">
-                            </a>
-                            <a href="#" >
-                                <img src="{{Theme::asset()->url('images/home/logo/youtube.png') }}" alt="" >
-                            </a>
-                            <a href="#" >
-                                <img src="{{Theme::asset()->url('images/home/logo/linkedin.png') }}" alt="" >
-                            </a>
-                            <a href="#" >
-                                <img src="{{Theme::asset()->url('images/home/logo/phone.png') }}" alt="" >
-                            </a>
-                            <a href="#" >
-                                <img src="{{Theme::asset()->url('images/home/logo/mail.png') }}" alt="" >
-                            </a>
-                        </li>
-                    </ul>
+                    {!!
+                        Menu::renderMenuLocation('main-menu-mobile', [
+                            'view' => 'main-menu-mobile',
+                        ])
+                    !!}
             </nav>
         </div>
     </div>
