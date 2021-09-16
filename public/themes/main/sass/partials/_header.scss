@@ -548,7 +548,7 @@
     min-width: 190px;
   }
   .menu-mobile .nav-list .nav-item .nav-dropdown .dropdown-item a {
-    padding: 15px;
+    padding: 10px;
     line-height: 7px;
     @media only screen and (max-width: 600px){
         padding: 5px;
@@ -610,6 +610,7 @@
     }
     .menu-mobile .nav-list .nav-item .nav-dropdown .dropdown-item a {
       padding-left: 0;
+      font-size: 20px;
       font-family: $MyriadPro-Regular;
     }
   
