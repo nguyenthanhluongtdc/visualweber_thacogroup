@@ -175,6 +175,7 @@
             margin-top: 20px;
             text-align: center;
             padding-right: 10px;
+            @media only screen and (max-width: 600px){padding-right: 5px;}
             .admin-item {
                 width: 38.4%;
                 float: right;
@@ -197,7 +198,7 @@
             width: 50%;
             margin-top: 20px;
             text-align: center;
-            padding-left: 10px;
+            // padding-left: 10px;
             .admin-item {
                 float: left;
                 width: 38.4%;
@@ -833,13 +834,15 @@
 
 .modal_admin {
     display: none;
+   
     .modal-dialog {
         max-width: 900px;
         @media only screen and (max-width: 992px){ max-width: 700px;}
         @media only screen and (max-width: 768px){max-width: 500px;}
-        @media only screen and (max-width: 600px){max-width: 400px;}
+        @media only screen and (max-width: 600px){max-width: 400px; margin: 50px 10px;}
         .modal-content {
             padding: 30px;
+          
             .modal-body {
                 .mCSB_scrollTools .mCSB_draggerContainer {
                     width: 4px;
