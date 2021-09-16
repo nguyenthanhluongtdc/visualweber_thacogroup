@@ -1,4 +1,4 @@
-<div class="post-sidebar-content">
+<div class="post-sidebar-content desktop mobile">
     <div class="media__content_right">
         {!!
             Menu::renderMenuLocation('sidebar-media', [

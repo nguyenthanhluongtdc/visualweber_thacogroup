@@ -99,3 +99,84 @@
         }
     }
 }
+
+@media screen and(max-width:991px) {
+    .post-sidebar-content.desktop {
+        display: none;
+    }
+    .post-sidebar-content.mobile {
+        display: block;
+    }
+    .post-sidebar-content {
+        margin: 40px 0;
+        max-width: unset;
+        position: unset;
+        padding: 0 6%;
+        .media__content_right {
+            box-shadow: unset;
+            .list-media-menu {
+                padding: unset;
+                h3 {
+                    font-size: 35px;
+                }
+                .item_link {
+                    font-size: 25px;
+                }
+            }
+            .list-post-new {
+                .wrap {
+                    h2 {
+                        font-size: 35px;
+                    }
+                    .post-new-item {
+                        padding-top: 20px;
+                        .post-thumbnail-wrap {
+                            width: 22%;
+                        }
+                        .title {
+                            width: 76%;
+                            font-size: 25px;
+                        }
+                        .time {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+    .post-sidebar-content {
+        margin: 40px 0;
+        max-width: unset;
+        position: unset;
+        padding: 0 15px;
+        .media__content_right {
+            .list-media-menu {
+                h3 {
+                    font-size: 25px;
+                }
+                .item_link {
+                    font-size: 20px;
+                }
+            }
+            .list-post-new {
+                .wrap {
+                    h2 {
+                        font-size: 20px;
+                    }
+                    .post-new-item {
+                        .title {
+                            font-size: 20px;
+                        }
+                        .time {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
