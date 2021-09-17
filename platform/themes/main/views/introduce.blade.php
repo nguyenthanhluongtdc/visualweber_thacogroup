@@ -9,11 +9,11 @@
 <section class="about-us mt-40">
 
         <div class="container-customize">
-            <div class="about-us__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+            <div class="about-us__title" >
                 <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="icon">
                 <h1  class="font50 big-title">{{has_field($page, 'about_us_title')}}</h1>
             </div>
-            <div class="about-us__content mt-40 text-justify" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+            <div class="about-us__content mt-40 text-justify" >
                 {!!has_field($page, 'about_us_content')!!}
             </div>
         </div>
@@ -25,7 +25,7 @@
                         @if(has_field($page, 'vision_block'))
                             @forelse (has_field($page, 'vision_block') as $key => $item)
                             <div class="col-sm-4 pl-0 pr-0">
-                                <div class="future-goal p-lr-90" data-aos="fade-up" data-aos-duration="700" data-aos-delay="{{50 + $key*100}}" class="aos-init aos-animate">
+                                <div class="future-goal p-lr-90" >
                                     <img src="{{ get_image_url(has_sub_field($item, 'logo')) }}" alt="{{has_sub_field($item, 'title')}}">
                                     <h3 class="title font40">{{has_sub_field($item, 'title')}}</h3>
                                     <div class="desc font18">
@@ -47,7 +47,7 @@
         
         <div class="container-customize">
             <div class="field-activity-intro-wrapper">
-                <div class="desc-field pt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                <div class="desc-field pt-40" >
                     <p class="desc-cotent font18 text-justify">
                         {!!has_field($page, 'about_us_field_description')!!}
                      
@@ -59,7 +59,7 @@
        
             
                 <div class="leader-of-us-wrapper mt-40">
-                    <div class="leader-of-us__title mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                    <div class="leader-of-us__title mt-40" >
                         <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                         <h2 class="font50 big-title">   {!!has_field($page, 'leadership_title')!!}</h2>
                     </div>
@@ -70,7 +70,7 @@
                             <div class="title-admin-top ">
                                 <h3 class="title-admin">{{has_sub_field($item_council, 'council_name')}}</h3>
                             </div>
-                            <div class="admin-content {{$key == 0 ? 'top' : 'bottom'}}" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                            <div class="admin-content {{$key == 0 ? 'top' : 'bottom'}}">
                                 @foreach (has_sub_field($item_council, 'council_member') as $item_member)
                                 {{-- @dd(Str::slug({{has_sub_field($item_member, 'name')}})) --}}
                                     <div class="item-member">
@@ -95,11 +95,11 @@
                
                 <div class="achievement-wrapper mt-40 mb-60">
                     <div class="achievement-tab-title">
-                            <div class="achievement__title mt-40 " data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                            <div class="achievement__title mt-40 " >
                                 <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="">
                                 <h2 class="font50 big-title"> {{has_field($page, 'title_achivement')}}</h2>
                             </div>
-                            <div class="achievement__tabs" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                            <div class="achievement__tabs" >
                                 
                                 <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
                                     @if(has_field($page, 'achivement'))
@@ -117,7 +117,7 @@
                       
                         
                     </div>
-                    <div class="achievement-tabs-mobile" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                    <div class="achievement-tabs-mobile">
                                 
                         <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
                             @if(has_field($page, 'achivement'))
@@ -136,13 +136,13 @@
                         @if(has_field($page, 'achivement'))
                             @foreach (has_field($page, 'achivement') as $key =>$item_tab_content)
                             <div class="tab-pane fade {{ $key==0? 'active show': '' }}" id="achievement-{{$key}}" role="tabpanel" aria-labelledby="field-1-tab">
-                                    <div class="content-tab" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                                    <div class="content-tab">
                                         <div class="content-title font18 mt-40 text-justify">
                                             {!!has_sub_field($item_tab_content, 'block_desc')!!}
                                         </div>
                                         <div class="bottom">
                                             @foreach (has_sub_field($item_tab_content, 'achivement_year') as $key2 =>$item_achivement_year)
-                                            <div class="bottom-content" data-aos="fade-up" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate" >
+                                            <div class="bottom-content" >
                                                 <div class="img-content">
                                                    
                                                     <img src="{{ get_image_url(has_sub_field($item_achivement_year, 'image')) }}" alt="{{has_sub_field($item_achivement_year, 'year')}}">
@@ -166,7 +166,7 @@
 
     
     <div class="develop-wrapper">
-        <div class="develop__title pb-40 container-customize" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+        <div class="develop__title pb-40 container-customize">
             <img class="img-blue" src="{{ Theme::asset()->url('images/introduce/arrow.png') }}"  alt="icon">
             <img class="img-white" src="{{ Theme::asset()->url('images/introduce/icon-arrow-white.png') }}"  alt="icon" style="display:none">
             <h2 class="font50 big-title"> {!!has_field($page, 'title_develop')!!}</h2>
