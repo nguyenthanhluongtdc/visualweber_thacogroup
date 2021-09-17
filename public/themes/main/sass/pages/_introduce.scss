@@ -864,9 +864,8 @@
                 overflow-y: hidden;
                 overflow-x: hidden;
                 height: 500px;
-               
                 @media only screen and (max-width: 600px){
-                    height: auto;
+                    height: 400px;
                   
                 }
                 .modal-content-top{
