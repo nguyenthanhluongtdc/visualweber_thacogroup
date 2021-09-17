@@ -391,6 +391,7 @@
                                         margin: 0;
                                         font-family: $MyriadPro-Bold;
                                         @include split_str(2);
+                                        font-size: 20px;
                                     }
                                     background-color: #f1f1f1;
                                 }
@@ -436,9 +437,6 @@
                                 .name {
                                     font-size: 20px;
                                 }
-                                .desc {
-                                    font-size: 18px;
-                                }
                             }
                         }
                     }
@@ -481,6 +479,7 @@
             .content-left {
                 .list-media {
                     .media-item {
+                        padding: 15px 0;
                         .img-content {
                             .content {
                                 .name {
@@ -499,6 +498,13 @@
 }
 
 @media screen and(max-width:576px) {
+    .media__title {
+        margin-right: 0;
+        margin-bottom: 10px;
+        img {
+            width: 6vw;
+        }
+    }
     .media_content-wrapper {
         .media-content {
             .content-left {
@@ -560,7 +566,7 @@
                         .img-content {
                             .content {
                                 .name {
-                                    font-size: 16px;
+                                    font-size: 14px;
                                 }
                             }
                         }
