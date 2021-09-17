@@ -115,7 +115,7 @@ class MainController extends PublicController
     }
 
     public function getSearch(Request $request, PostInterface $postRepository) {
-
+        $query = $request->input('keyword');
         if($request->has('keyword')) {
             $request->merge(['search'=>$request->keyword]);
             $request->request->remove('keyword');
@@ -123,10 +123,14 @@ class MainController extends PublicController
         
         $filters = FilterPost::setFilters($request->input());
 
-        $data = $postRepository->getFilters($filters);
+        $posts = $postRepository->getFilters($filters);
 
-        $total = $data->count();
+        $total = $posts->count();
+        $count = $posts->total().' '. __('kết quả được tìm thấy với từ khóa') .
+            "<strong class='text-uppercase font20'> $query </strong>";
 
-        return Theme::scope('search', compact('data'))->render();
+        return Theme::scope('search', compact('posts' ,'count'))->render();
     }
+    
 }
+

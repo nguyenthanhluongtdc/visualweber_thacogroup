@@ -20,7 +20,9 @@
 </div>
 
 <script>
-    let scroll = "{{$check}}";
+   
+    if(screen.width>1080){
+        let scroll = "{{$check}}";
     if(scroll) {
         let position = $('.relationship-sibar').position();
         $('html, body').animate({
