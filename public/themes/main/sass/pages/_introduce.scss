@@ -848,7 +848,7 @@
         @media only screen and (max-width: 600px){max-width: 400px; margin: 50px 10px;}
         .modal-content {
             padding: 30px;
-          
+            
             .modal-body {
                 .mCSB_scrollTools .mCSB_draggerContainer {
                     width: 4px;
@@ -864,15 +864,22 @@
                 overflow-y: hidden;
                 overflow-x: hidden;
                 height: 500px;
+               
                 @media only screen and (max-width: 600px){
-                    height: 450px;
+                    height: auto;
                   
+                }
+                .modal-content-top{
+                    @media only screen and (max-width: 600px){
+                        margin-right: -5px;
+                        margin-left: -10px;
+                        margin-bottom: -20px;
+                    }
+                   
                 }
                 .mCS_img_loaded{
                     @media only screen and (max-width: 600px){
-                        width: 50% !important;
-                        margin: 0 auto;
-                        padding-left: 40px;
+                        padding: 10px;
                     }
                 }
                 // .close{
@@ -895,6 +902,9 @@
                     }
                     p {
                         margin-bottom: 10px;
+                        @media only screen and (max-width: 600px){
+                            margin: 0;
+                        }
                     }
                 }
                 .work-progress {

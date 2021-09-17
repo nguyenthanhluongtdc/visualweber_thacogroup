@@ -232,15 +232,18 @@
     @foreach (has_field($page, 'council') as $key => $item_council_2)
             @foreach (has_sub_field($item_council_2, 'council_member') as $item_member)
             <div class="modal fade modal_admin" id="{{Str::slug(has_sub_field($item_member, 'name'))}}" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
+                
                 <div class="modal-dialog" role="document">
+                  
                     <div class="modal-content">
+                      
                         <div class="modal-body mCustomScrollbar p-0" data-mcs-theme="dark">
-                            <div class="row mr-md-0 ">
-                                <div class="col-md-4 p-0 col-12 col-right pl-md-4">
+                            <div class="row mr-md-0 modal-content-top">
+                                <div class="col-md-4 p-0 col-4 col-right pl-md-4">
                                     <img class="w-100" src="{{ get_image_url(has_sub_field($item_member, 'image')) }}" alt="{!! has_sub_field($item_member, 'name')!!}">
                                 
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8 col-8">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <i class="fal fa-times"></i>
                                         </button>
