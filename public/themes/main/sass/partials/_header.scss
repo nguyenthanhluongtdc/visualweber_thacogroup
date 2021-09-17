@@ -295,15 +295,16 @@
 .nav-bar-mobile {
     background: #fff;
     display: none;
+    @media only screen and (max-width: 768px) {
+        height: 10vw;
+    }
+    @media only screen and (max-width: 600px) {
+        height: 15vw;
+    }
     @media only screen and (max-width: 1080px) {
         display: block;
         height: 8vw;
-        @media only screen and (max-width: 768px) {
-            height: 10vw;
-        }
-        @media only screen and (max-width: 600px) {
-            height: 15vw;
-        }
+       
         .nav-container {
             .brand {
                 position: fixed;
