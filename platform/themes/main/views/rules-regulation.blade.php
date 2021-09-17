@@ -16,7 +16,7 @@
     
                         @includeIf('theme.main::views.components.filter-qhcd')
                         @forelse($data as $item)
-                            <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50"
+                            <div class="info-item" data-aos="fade-left" data-aos-duration="500" data-aos-delay="50"
                                 class="aos-init aos-animate">
                                 <div class="info-left">
                                     <div class="date">
