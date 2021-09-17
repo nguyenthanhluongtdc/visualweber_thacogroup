@@ -777,7 +777,7 @@
                             float: none;
                             // width: 100%!important;
                             color: #fff;
-                            webkit-transition: font-size .5s ease;
+                            -webkit-transition: font-size .5s ease;
                             transition: font-size .5s ease;
                             margin: 10px 0;
                             display: inline-block;
@@ -864,9 +864,17 @@
                 overflow-y: hidden;
                 overflow-x: hidden;
                 height: 500px;
+                @media only screen and (max-width: 600px){
+                    height: 450px;
+                  
+                }
                 .info-admin {
                     margin-left: 40px;
                     margin-top: 40px;
+                    @media only screen and (max-width: 600px){
+                        margin: 15px 0;
+                      
+                    }
                     .name {
                         color: $gray_text;
                     }
