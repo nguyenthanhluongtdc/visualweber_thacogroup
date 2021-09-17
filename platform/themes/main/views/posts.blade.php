@@ -9,7 +9,7 @@ $postSlider = get_featured_posts(6);
         <div class="container-customize"> 
             <div class="media-content">
                 <div class="content-left">
-                    <div class="media__content_left  d-none d-lg-block">
+                    <div class="media__content_left">
                         <div class="news__content" data-aos="zoom-in-up" data-aos-duration="300" data-aos-delay="50" class="aos-init aos-animate">
                             <div class="swiper-container new-post-slide " style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                                 <div class="swiper-wrapper">
@@ -99,7 +99,7 @@ $postSlider = get_featured_posts(6);
                        
                         
                     </div>
-                    <div class="filter-search-media mt-40">
+                    <div class="filter-search-media field mt-40">
                                 <form action="" class="form-search">
                                     <div class="search">
                                         <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
@@ -128,12 +128,12 @@ $postSlider = get_featured_posts(6);
                             @foreach ($posts as $post) 
                                <div class="media-item ">
                                    <div class="img-content">
-                                       <div class="image" data-aos="fade-right" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                       <div class="image"  data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                            <div class="post-thumbnail">
                                                <a href="{{$post->url}}"><img src="{{ get_object_image($post->image) }}" alt="{{$post->name}}"></a>
                                            </div>
                                        </div>
-                                       <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                       <div class="content"  data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                            <a href="{{$post->url}}"><h3 class="name font18">{{$post->name}}</h3></a>
                                          
                                            <p class="time">{{date_format($post->created_at,"d-m-Y")}}</p>
@@ -246,5 +246,5 @@ $postSlider = get_featured_posts(6);
       
     </div>
 </section>
-@includeIf("theme.main::views.pages.post.post-sidebar")
+@includeIf("theme.main::views.pages.post.post-sidebar-mb")
 

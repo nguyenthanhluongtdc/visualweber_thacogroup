@@ -1,4 +1,4 @@
-<div class="post-sidebar-content">
+<div class="post-sidebar-content mb">
     <div class="media__content_right">
         {!!
             Menu::renderMenuLocation('sidebar-media', [
@@ -37,4 +37,3 @@
         </div>
     </div>
 </div>
-
