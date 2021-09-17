@@ -1,21 +1,26 @@
 <div class="search-page">
-    <div class="container-customize">
-        <div class="search-intro">
-            <h1 class="font-myria-bold font60 text-center mt-5">KẾT QUẢ TÌM KIẾM</h1>
-        </div>
-        <div class="search-wrapper">
-            <div class="search-input mt-5 mb-3">
-                <div class="search-bar mb-4">
-                    <div class="search">
-                        <input type="text" class="form-control font20" id="search-bar" placeholder="Tìm kiếm"
-                            name="search" value="">
-                        <button id="button-addon5" type="submit" class="btn"><i class="fas fa-search"></i></button>
-                    </div>
-                    <p class="font-pri mt-2">Có 43 kết quả được tìm thấy</p>
-                </div>
+    <form action="{{route('public.search')}}" class="form-search" method="GET">
+        <div class="container-customize">
+            <div class="search-intro">
+                <h1 class="font-myria-bold font60 text-center mt-5"> {!! __('KẾT QUẢ TÌM KIẾM') !!}</h1>
             </div>
-            <div class="search-range pb-4 mt-5">
-                <form action="" class="form-search">
+            <div class="search-wrapper">
+                <div class="search-input mt-5 mb-3">
+                    <div class="search-bar mb-4">
+                        <div class="search">
+                            <input type="text" class="form-control font20" id="search-bar" placeholder="Tìm kiếm"
+                                name="keyword" value="">
+                            <button id="button-addon5" type="submit" class="btn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <p class="font-pri mt-2">
+                            @if(isset($count))
+                            {!!$count!!}
+                            @endif
+                        </p>
+                    </div>
+                </div>
+                <div class="search-range pb-4 mt-5">
+                   <div class="form-search">
                     <div class="search-cate">
                         <div class="box">
                             <input id="one" type="checkbox">
@@ -63,142 +68,41 @@
                             <option value="3">2019</option>
                         </select>
                     </div>
-                </form>
-            </div>
-        </div>
+                   </div>
 
-        @if(!empty($data))
-            @forelse($data as $item)
-                <div class="search-result row mb-md-4 mb-5" data-aos="fade-up" data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
-                    <div class="col-lg-3 col-md-5 result-img">
-                        <a class="image h-100" href="{{$item->url}}" title="">
-                            <img src="{{ Storage::disk('public')->exists($item->image) ? get_object_image($item->image) : RvMedia::getDefaultImage() }}" alt="img-detail"
-                                class="w-100 h-100 object-fit-cover">
-                        </a>
-                    </div>
-                    <div class="col-lg-9 col-md-7 result-content">
-                        <div class="content">
-                            <a href="{{$item->url}}">
-                                <h3 class="font-myria-bold font30  color-gray">
-                                    {!! $item->name !!}
-                                </h3>
+                </div>
+            </div>
+            @if(!empty($posts))
+                @forelse($posts as $item)
+                    <div class="search-result row mb-md-4 mb-5" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
+                        <div class="col-lg-3 col-md-5 result-img">
+                            <a class="image h-100" href="{{$item->url}}" title="">
+                                <img src="{{ Storage::disk('public')->exists($item->image) ? get_object_image($item->image) : RvMedia::getDefaultImage() }}" alt="img-detail"
+                                    class="w-100 h-100 object-fit-cover">
                             </a>
-                            <p class="font-pri my-3 font15">
-                                {!! $item->description??$item->name !!}
-                            </p>
-                            <p class="font-pri date font15"> {{$item->created_at->format('d/m/Y')}} </p>
+                        </div>
+                        <div class="col-lg-9 col-md-7 result-content">
+                            <div class="content">
+                                <a href="{{$item->url}}">
+                                    <h3 class="font-myria-bold font30  color-gray">
+                                        {!! $item->name !!}
+                                    </h3>
+                                </a>
+                                <p class="font-pri my-3 font15">
+                                    {!! $item->description??$item->name !!}
+                                </p>
+                                <p class="font-pri date font15"> {{$item->created_at->format('d/m/Y')}} </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                @empty
+                    @empty
 
-            @endforelse
-        @endif
-
-        {{-- <div class="search-result row mb-md-4 mb-5" data-aos="fade-up" data-aos-duration="1000"
-            data-aos-easing="ease-in-out">
-            <div class="col-lg-3 col-md-5 result-img">
-                <a class="image h-100" href="#" title="">
-                    <img src="{{ Theme::asset()->url('images/media/search-2.jpg') }}" alt="img-detail"
-                        class="w-100 h-100 object-fit-cover">
-                </a>
-            </div>
-            <div class="col-lg-9 col-md-7 result-content">
-                <div class="content">
-                    <a href="#">
-                        <h3 class="font-myria-bold font30  color-gray">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Dolore, perspiciatis? Cupiditate eligen dol optio placeat.</h3>
-                    </a>
-                    <p class="font-pri my-3 font15">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-                        laborum officiis nisi omnis! Illum, quibusdam. Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Unde eligendi deleniti quam amet earum laudantium.
-                    </p>
-                    <p class="font-pri date font15">20-12-20201</p>
-                </div>
-            </div>
+                @endforelse
+            @endif
+            {{ $posts->links('vendor.pagination.custom') }} 
         </div>
-        <div class="search-result row mb-md-4 mb-5" data-aos="fade-up" data-aos-duration="1000"
-            data-aos-easing="ease-in-out">
-            <div class="col-lg-3 col-md-5 result-img">
-                <a class="image h-100" href="#" title="">
-                    <img src="{{ Theme::asset()->url('images/media/search-3.jpg') }}" alt="img-detail"
-                        class="w-100 h-100 object-fit-cover">
-                </a>
-            </div>
-            <div class="col-lg-9 col-md-7 result-content">
-                <div class="content">
-                    <a href="#">
-                        <h3 class="font-myria-bold font30  color-gray">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Dolore, perspiciatis? Cupiditate eligen dol optio placeat.</h3>
-                    </a>
-                    <p class="font-pri my-3 font15">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-                        laborum officiis nisi omnis! Illum, quibusdam. Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Unde eligendi deleniti quam amet earum laudantium.
-                    </p>
-                    <p class="font-pri date font15">20-12-20201</p>
-                </div>
-            </div>
-        </div>
-        <div class="search-result row mb-md-4 mb-5" data-aos="fade-up" data-aos-duration="1000"
-            data-aos-easing="ease-in-out">
-            <div class="col-lg-3 col-md-5 result-img">
-                <a class="image h-100" href="#" title="">
-                    <img src="{{ Theme::asset()->url('images/media/search-4.jpg') }}" alt="img-detail"
-                        class="w-100 h-100 object-fit-cover">
-                </a>
-            </div>
-            <div class="col-lg-9 col-md-7 result-content">
-                <div class="content">
-                    <a href="#">
-                        <h3 class="font-myria-bold font30  color-gray">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Dolore, perspiciatis? Cupiditate eligen dol optio placeat.</h3>
-                    </a>
-                    <p class="font-pri my-3 font15">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-                        laborum officiis nisi omnis! Illum, quibusdam. Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Unde eligendi deleniti quam amet earum laudantium.
-                    </p>
-                    <p class="font-pri date font15">20-12-20201</p>
-                </div>
-            </div>
-        </div>
-        <div class="search-result row mb-md-4 mb-5" data-aos="fade-up" data-aos-duration="1000"
-            data-aos-easing="ease-in-out">
-            <div class="col-lg-3 col-md-5 result-img">
-                <a class="image h-100" href="#" title="">
-                    <img src="{{ Theme::asset()->url('images/media/search-5.jpg') }}" alt="img-detail"
-                        class="w-100 h-100 object-fit-cover">
-                </a>
-            </div>
-            <div class="col-lg-9 col-md-7 result-content">
-                <div class="content">
-                    <a href="#">
-                        <h3 class="font-myria-bold font30 color-gray">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Dolore, perspiciatis? Cupiditate eligen dol optio placeat.</h3>
-                    </a>
-                    <p class="font-pri my-3 font15">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-                        laborum officiis nisi omnis! Illum, quibusdam. Lorem ipsum dolor, sit amet consectetur
-                        adipisicing elit. Unde eligendi deleniti quam amet earum laudantium.
-                    </p>
-                    <p class="font-pri date font15">20-12-20201</p>
-                </div>
-            </div>
-        </div> --}}
-
-        <div class="container d-flex justify-content-center mb-5 font-pri">
-            <ul class="pagination justify-content-center pagination-success">
-                <li class="page-item active"><a class="page-link" href="#" data-abc="true">1</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">2</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">3</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">4</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">5</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">6</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">7</a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">></a></li>
-                <li class="page-item"><a class="page-link" href="#" data-abc="true">>></a></li>
-            </ul>
-        </div>
-    </div>
+    </form>
 </div>
 </div>
 <style>

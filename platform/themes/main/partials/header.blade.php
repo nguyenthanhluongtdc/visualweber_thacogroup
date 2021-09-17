@@ -60,9 +60,9 @@
 
             <ul class="language">
                 <div id="wrap">
-                    <form action="" autocomplete="on">
+                    <form action="{{route('public.search')}}" autocomplete="on">
                         <i class="fal fa-search"></i>
-                    <input id="search" name="search" type="text" placeholder="{!!__ ('Tìm kiếm...')!!}">
+                    <input id="search" name="keyword" type="text" placeholder="{!!__ ('Tìm kiếm...')!!}">
                     <input id="search_submit" value="Rechercher" type="submit">
                     </form>
                   </div>
