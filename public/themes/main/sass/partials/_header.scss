@@ -344,6 +344,10 @@
             // @media only screen and (max-width: 600px){right: 80px;}
             
             #wrap {
+                appearance: none;
+                -webkit-appearance: none;
+                opacity: 1 !important;
+                -moz-appearance: none;
                 margin: -5px 8px;
                 display: inline-block;
                 position: relative;
@@ -355,13 +359,14 @@
                     margin-top: -3px;
                     margin-right: 5px;
                 }
-                ion-icon{
+                i{
                     appearance: none;
                     -webkit-appearance: none;
-                    opacity: 1;
+                    opacity: 1 !important;
                     -moz-appearance: none;
                     font-size: 25px;
                     color: rgba(0, 0, 0, 0.568);
+                   
                     @media only screen and (max-width: 600px){
                         font-size: 18px;
                     }
@@ -369,8 +374,8 @@
             }
             
             input[type="text"] {
+                -webkit-appearance: none;
                 height: 55px;
-            
                 font-size: 25px;
                 display: inline-block;
                 font-family: $MyriadPro-Regular;
@@ -404,6 +409,7 @@
             background: #fff;
             }
             input[type="submit"] {
+            -webkit-appearance: none;
             height: 67px;
             width: 63px;
             display: inline-block;
@@ -461,6 +467,9 @@
             &:hover{
                 color: $main_color;
             }
+            .active{
+                color: $main_color;
+              }
             
            }
           
@@ -476,13 +485,13 @@
                 margin: 0;
                 padding: 0;
                 background: #fff;
-                margin: 20px 15px;
+                margin: 10px 15px;
                 .nav-item{
                  text-transform: uppercase;
                     
                 }
                 .nav-dropdown{
-                    margin: 5px 2%;
+                    margin: 5px 2%; 
                     @media only screen and (max-width: 600px){
                         margin-left: -15px !important;
                     }
@@ -524,7 +533,7 @@
     display: block;
     padding: 0 20px;
     line-height: 50px;
-     background: #fff;
+    background: #fff;
     color: $gray_text;
     text-decoration: none;
     font-size: 25px;
@@ -536,7 +545,6 @@
   }
   .menu-mobile .nav-list .nav-item a:hover,
   .menu-mobile .nav-list .nav-item a:visited:hover {
-
     color: $main_color;
   }
   .menu-mobile .nav-list .nav-item a:not(:only-child):after,
@@ -548,10 +556,10 @@
     min-width: 190px;
   }
   .menu-mobile .nav-list .nav-item .nav-dropdown .dropdown-item a {
-    padding: 10px;
+    padding: 8px !important;
     line-height: .4;
     @media only screen and (max-width: 600px){
-        padding: 5px;
+        padding: 5px !important;
     }
     
   }
@@ -599,9 +607,9 @@
       }
     }
     .menu-mobile .nav-list .nav-item a {
-      padding: 15px;
-      line-height: 20px;
-      padding-left: 5%;
+      padding: 18px !important;
+      line-height: 1px;
+      padding-left: 5% !important;
       @media only screen and (max-width: 600px){
           padding: 5px;
           padding-left: 5%;
