@@ -13,7 +13,7 @@
                                 name="keyword" value="">
                             <button id="button-addon5" type="submit" class="btn"><i class="fas fa-search"></i></button>
                         </div>
-                        <div class="search-month-year-mb">
+                        <div class="search-month-year-mb" style="display:none">
                             <select name="search-month" id="search-month" class="search-month font18">
                                 <option value="1">Tháng 7</option>
                                 <option value="2">Tháng 8</option>
