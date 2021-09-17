@@ -310,12 +310,13 @@
         .brand {
             position: fixed;
             z-index: 998; 
-           top: 18px;
-           left: 40%;
+            top: 21px;
+            left: 40%;
             @media only screen and (max-width: 768px){left: 38%;}
             @media only screen and (max-width: 600px){left: 40%; top: 20.5px;}
             @media only screen and (max-width: 400px){left: 39%; top: 21px;}
-           a img{
+            @media only screen and (max-width: 350px){left: 37%;}
+            a img{
               
                 max-height: 70px;
                 @media only screen and (max-width: 600px){
@@ -339,9 +340,10 @@
             display: flex;
             position: fixed;
             z-index: 999; 
-            top: 28px;
-            right: 5%;
-            // @media only screen and (max-width: 600px){right: 80px;}
+            top: 31px;
+            right: 3%;
+            @media only screen and (max-width: 600px){top: 28px;}
+           
             
             #wrap {
                 appearance: none;
@@ -651,12 +653,17 @@
   }
   #nav-toggle {
     position: absolute;
-  
     left: 50%;
-    bottom: 19px;
+    bottom: 16px;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
-    
+    @media only screen and (max-width: 600px){
+        left: 30%;
+        bottom: 18px;
+    }
+    @media only screen and (max-width: 350px){
+        bottom: 20px;
+    }
     
   }
   #nav-toggle span,
