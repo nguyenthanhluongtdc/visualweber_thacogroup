@@ -101,10 +101,14 @@
                         }
                         ion-icon{
                             display: none;
+                            appearance: none;
+                            -webkit-appearance: none;
+                            opacity: 1 !important;
+                            -moz-appearance: none;
                             @media only screen and (max-width: 1080px){
                                 display: block;
                                 color: black;
-                                font-size: 25px;
+                                font-size: 25px; 
                             }
                         }
                     }
