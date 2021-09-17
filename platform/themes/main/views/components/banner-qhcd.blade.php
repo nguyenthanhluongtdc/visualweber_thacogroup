@@ -1,4 +1,4 @@
-<section class="slide-info">
+<section class="slide-info  financial-report-mobile">
     <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
         <div class="swiper-wrapper">   
             @if(has_field($category, 'repeater_banner'))
@@ -13,7 +13,7 @@
                     {!! __('Đang được cập nhật') !!}
                 </p>
             @endif
-        </div>
+        </div> 
         <div class="swiper-pagination"></div>
     </div>
 </section>

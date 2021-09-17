@@ -1,4 +1,4 @@
-<section class="slide-info">
+{{-- <section class="slide-info financial-report-mobile">
     <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
         <div class="swiper-wrapper">   
             <div class="swiper-slide" >
@@ -17,8 +17,8 @@
         <div class="swiper-pagination"></div>
       
     </div>
-</section>
-<div class="container-customize">
+</section> --}}
+{{-- <div class="container-customize">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
                     <li class="breadcrumb-item">
@@ -30,7 +30,7 @@
                     <li class="breadcrumb-item active">Báo cáo tài chính</li>
         </ol>
     </nav>
-</div>
+</div>  --}}
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
         <div class="container-customize">

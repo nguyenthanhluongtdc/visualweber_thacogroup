@@ -407,7 +407,7 @@ function hasScrolled() {
         } else {
             // Scroll Up
 
-            if (st + $(window).height() < $(document).height()) {
+            if (st + $(window).height() < $(document).height()) { 
                 $('header').removeClass('nav-up').addClass('nav-down');
                 $('.post-sidebar-content').css('top', 100);
                 $('.relationship-sibar').css('top', 100);

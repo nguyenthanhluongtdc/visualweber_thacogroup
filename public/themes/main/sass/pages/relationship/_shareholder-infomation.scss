@@ -1,14 +1,27 @@
 .shareholder-infomation {
     display: flex;
+    @media only screen and (max-width: 1080px){display: unset;}
     &_left {
         max-width: 68.2%;
         margin-right: 2.7%;
-        flex: 1;
+        flex: 1; 
+        @media only screen and (max-width: 1080px){max-width: 100%;}
         .list-info {
+            .title-mobile{
+                display: none;
+                @media only screen and (max-width: 1080px){ 
+                    display: block;
+                    font-family: $MyriadPro-Bold;
+                   
+                }
+            }
             .info-item {
                 display: flex;
                 padding: 15px 0;
                 border-bottom: 1px solid #d7d7d7;
+                &:last-child{
+                    border: unset;
+                }
                 &:hover .itemdown-show {
                     color: $main_color;
                 }
@@ -47,20 +60,44 @@
                         margin: 0;
                         padding-right: 65px;
                         line-height: 1.1;
+                        @media only screen and (max-width: 600px){
+                            padding-right: 30px; 
+                           
+                        }
                         a {
                             color: unset;
                             display: inline-block;
                             line-height: 1.5;
+                            @media only screen and (max-width: 768px){
+                                line-height: 1.2;
+                                font-size: 16px !important;
+                                @include split_str(4);
+                            }
+                            @media only screen and (max-width: 350px){
+                                font-size: 14px !important;
+                            }
                         }
                     }
                     .count {
                         color: #707070;
                         margin-bottom: 0;
+                        font-style: italic;
                     }
                     .download {
                         position: absolute;
                         right: 0;
                         top: 0;
+                        img{
+                            @media only screen and (max-width: 1080px){display: none;}
+                        }
+                        ion-icon{
+                            display: none;
+                            @media only screen and (max-width: 1080px){
+                                display: block;
+                                color: black;
+                                font-size: 25px;
+                            }
+                        }
                     }
                     .downcontent {
                         .list-file {
@@ -74,11 +111,18 @@
                                     &:focus {
                                         color: unset;
                                     }
+                                    @media only screen and (max-width: 600px){
+                                        @include split_str(1);
+                                    }
+                                }
+                                span{
+                                    @media only screen and (max-width: 1080px){display: none;}
                                 }
                             }
                         }
                         padding: 20px 0 0;
                         display: none;
+                        @media only screen and (max-width: 400px){padding: 0;}
                     }
                 }
             }
@@ -90,5 +134,10 @@
         position: sticky;
         flex: 1;
         top: 0px;
+        @media only screen and (max-width: 1080px){
+            max-width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
     }
 }

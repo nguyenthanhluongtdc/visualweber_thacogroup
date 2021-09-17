@@ -7,6 +7,7 @@
             display: flex;
             align-items: baseline;
             background-color: #f1f1f1;
+           
             input {
                 border: none;
                 outline: none;
@@ -43,6 +44,7 @@
             background-color: #f1f1f1;
             border: unset;
             color: #2E2E2E;
+            
         }
         .select-by-field {
             width: 18%;
@@ -55,5 +57,11 @@
             background-color: #f1f1f1;
             color: #2E2E2E;
         }
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .filter-search-media{
+        margin-bottom: 20px !important;
     }
 }

@@ -6,10 +6,14 @@
 
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
-        <div class="container-customize">
+        <div class="container-customize"> 
             <div class="shareholder-infomation mb-100">
                 <div class="shareholder-infomation_left">
                     <div class="list-info">
+                        @if($category)
+                        <h2 class="title-mobile text-uppercase mb-4 font30"> {!! $category->name !!} </h2>
+                        @endif
+    
                         @includeIf('theme.main::views.components.filter-qhcd')
                         @forelse($data as $item)
                             <div class="info-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50"
@@ -44,6 +48,7 @@
                                     <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}"
                                         class="download">
                                         <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
+                                        <ion-icon name="download-outline"></ion-icon>
                                     </a>
                                     <div class="downcontent">
                                         <ul class="list-file">

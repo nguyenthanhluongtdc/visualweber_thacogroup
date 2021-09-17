@@ -25,6 +25,8 @@
         let position = $('.relationship-sibar').position();
         $('html, body').animate({
             scrollTop: position.top-100
-        }, 1500);
+        }, 1000);
+        
     }
+   
 </script>
