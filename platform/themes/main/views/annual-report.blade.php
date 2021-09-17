@@ -12,9 +12,7 @@
                     @if($category)
                     <h2 class="title-mobile text-uppercase mb-4 font30"> {!! $category->name !!} </h2>
                     @endif
- 
                     @includeIf('theme.main::views.components.filter-qhcd')
-
                     <div class="list-report">  
                         @forelse($data as $item)
                         <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50"
