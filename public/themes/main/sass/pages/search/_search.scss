@@ -57,92 +57,20 @@
         .search-range {
             .form-search {
                 display: flex;
-                .search-cate {
+                .filter-list {
                     background-color: #f1f1f1;
                     display: flex;
                     width: 66%;
                     margin-right: 1%;
-                    padding: 20px 0;
-                    .box {
-                        width: 25%;
+                    padding: 15px;
+                    .search-cate {
+                        padding: 0;
+                        background-color: #f1f1f1;
                         display: flex;
-                        align-items: center;
-                        // margin-left: 40px;
-                        user-select: none;
-                        label {
-                            margin-top: 10px;
-                            color: #4D4D4D;
-                            position: absolute;
-                            z-index: 10;
-                            padding-left: 30px;
-                            cursor: pointer;
-                            @media screen and(max-width: 1260px) {
-                                padding-left: 20px;
-                            }
+                        justify-content: space-between;
+                        .pretty {
+                            line-height: 1.1;
                         }
-                        input {
-                            opacity: 0;
-                            visibility: hidden;
-                            position: absolute;
-                            &:checked {
-                                ~.check {
-                                    border-color: .5px solid #000;
-                                    box-shadow: 0px 0px 0px 5px #fff inset;
-                                    &::after {
-                                        opacity: 1;
-                                        transform: scale(1);
-                                        background-color: #0054a0;
-                                        border-radius: 100px;
-                                        width: 9px;
-                                        height: 9px;
-                                    }
-                                }
-                            }
-                        }
-                        .check {
-                            width: 15px;
-                            height: 15px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            position: relative;
-                            border-radius: 100px;
-                            background-color: #f1f1f1;
-                            border: .5px solid #4D4D4D;
-                            box-shadow: 0px 0px 0px 0px #0054a0 inset;
-                            transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
-                            &::after {
-                                content: '';
-                                width: 100%;
-                                height: 100%;
-                                opacity: 0;
-                                z-index: 4;
-                                position: absolute;
-                                transform: scale(0);
-                                background-size: 50%;
-                                background-repeat: no-repeat;
-                                background-position: center;
-                                transition-delay: 0.2s !important;
-                                transition: all 0.25s cubic-bezier(0, 1.05, 0.72, 1.07);
-                            }
-                        }
-                    }
-                    .box:nth-child(1) {
-                        width: 20%;
-                        margin-left: 7%;
-                    }
-                    .box:nth-child(2) {
-                        width: 25%;
-                    }
-                    .box:nth-child(3) {
-                        width: 30%;
-                    }
-                    .box:nth-child(4) {
-                        width: 13%;
-                    }
-                    .item {
-                        transform: translateX(-30px);
-                        width: 45%;
                     }
                 }
                 .select-time-wrapper {
@@ -283,4 +211,159 @@
 
 .object-fit-cover {
     object-fit: cover;
+    @media screen and(max-width: 768px) {
+        max-height: 15rem;
+    }
+    @media screen and(max-width: 480px) {
+        max-height: 12rem;
+    }
+}
+
+@media screen and(max-width:1080px) {
+    .search-page {
+        margin-top: -96px;
+        .search-intro {
+            h1 {
+                text-align: unset!important;
+                font-size: 40px;
+            }
+        }
+        .search-wrapper {
+            .search-input {
+                margin-left: unset;
+                .search-bar {
+                    display: flex;
+                    .search {
+                        max-width: 80%;
+                        flex: 1 80%;
+                    }
+                    .search-month-year-mb {
+                        position: relative;
+                        display: flex;
+                        flex: 1 20%;
+                        max-width: 20%;
+                        min-width: 200px;
+                        margin-left: 10px;
+                        &::after {
+                            content: "";
+                            width: 1px;
+                            height: 80%;
+                            top: 10%;
+                            position: absolute;
+                            background-color: #BABABA;
+                            left: 50%;
+                        }
+                        .search-month {
+                            width: 49%;
+                            outline: 0;
+                            box-shadow: none;
+                            padding: 3px 8px;
+                            cursor: pointer;
+                            background-color: #f1f1f1;
+                            border: unset;
+                            color: #4d4d4d;
+                        }
+                        .search-year {
+                            width: 49%;
+                            outline: 0;
+                            box-shadow: none;
+                            padding: 3px 8px;
+                            cursor: pointer;
+                            background-color: #f1f1f1;
+                            border: unset;
+                            color: #4d4d4d;
+                        }
+                    }
+                }
+            }
+            .search-range {
+                .form-search {
+                    .filter-list {
+                        width: 100%;
+                        margin-right: 0;
+                    }
+                    .select-time-wrapper {
+                        display: none;
+                    }
+                    .search-month-year {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .search-result {
+            .result-content {
+                .content {
+                    h3 {
+                        font-size: 20px;
+                    }
+                    .desc {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:480px) {
+    .search-page {
+        .search-intro {
+            h1 {
+                font-size: 30px;
+            }
+        }
+        .search-wrapper {
+            .search-input {
+                .search-bar {
+                    display: unset;
+                    .search-month-year-mb {
+                        margin: 10px 0;
+                        .search-month {
+                            padding: 11px 8px;
+                        }
+                    }
+                }
+            }
+            .search-range {
+                .form-search {
+                    .filter-list {
+                        padding: 10px 10px 0 10px;
+                        .search-cate {
+                            display: unset;
+                            .pretty {
+                                margin-left: 0;
+                                margin-right: 0;
+                                margin-bottom: 10px;
+                                width: 49%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .search-result {
+            .result-content {
+                .content {
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:380px) {
+    .search-page {
+        .search-result {
+            .result-content {
+                .content {
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 }

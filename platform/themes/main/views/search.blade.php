@@ -7,21 +7,35 @@
             <div class="search-wrapper">
                 <div class="search-input mt-5 mb-3">
                     <div class="search-bar mb-4">
+
                         <div class="search">
                             <input type="text" class="form-control font20" id="search-bar" placeholder="Tìm kiếm"
                                 name="keyword" value="">
                             <button id="button-addon5" type="submit" class="btn"><i class="fas fa-search"></i></button>
                         </div>
-                        <p class="font-pri mt-2">
-                            @if(isset($count))
-                            {!!$count!!}
-                            @endif
-                        </p>
+                        <div class="search-month-year-mb">
+                            <select name="search-month" id="search-month" class="search-month font18">
+                                <option value="1">Tháng 7</option>
+                                <option value="2">Tháng 8</option>
+                                <option value="3">Tháng 9</option>
+                            </select>
+                            <select name="search-year" id="search-year" class="search-year font18">
+                                <option value="1">2021</option>
+                                <option value="2">2020</option>
+                                <option value="3">2019</option>
+                            </select>
+                        </div>
+                       
                     </div>
+                    <p class=" mt-2">
+                        @if(isset($count))
+                        {!!$count!!}
+                        @endif
+                    </p>
                 </div>
                 <div class="search-range pb-4 mt-5">
                    <div class="form-search">
-                    <div class="search-cate">
+                    {{-- <div class="search-cate">
                         <div class="box">
                             <input id="one" type="checkbox">
                             <span class="check"></span>
@@ -41,6 +55,35 @@
                             <input id="four" type="checkbox">
                             <span class="check"></span>
                             <label for="four" class=" font18">Tất cả</label>
+                        </div>
+                    </div> --}}
+                    <div class="filter-list">
+                        <div class="col-md-12 col-12 search-cate">
+                            <div class="pretty p-default p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-primary">
+                                    <label>Media</label>
+                                </div>
+                            </div>
+                            <div class="pretty p-default p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-primary">
+                                    <label>Truyền thông</label>
+                                </div>
+                            </div>  
+                            <div class="pretty p-default p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-primary">
+                                    <label>Quan hệ cổ đông</label>
+                                </div>
+                            </div> 
+                            <div class="pretty p-default p-smooth">
+                                <input type="checkbox" />
+                                <div class="state p-primary">
+                                    <label>Tất cả</label>
+                                </div>
+                            </div> 
+                           
                         </div>
                     </div>
                     <div class="select-time-wrapper">
@@ -71,6 +114,7 @@
                    </div>
 
                 </div>
+                
             </div>
             @if(!empty($posts))
                 @forelse($posts as $item)
@@ -89,10 +133,10 @@
                                         {!! $item->name !!}
                                     </h3>
                                 </a>
-                                <p class="font-pri my-3 font15">
+                                <p class=" desc my-3 font15">
                                     {!! $item->description??$item->name !!}
                                 </p>
-                                <p class="font-pri date font15"> {{$item->created_at->format('d/m/Y')}} </p>
+                                <p class=" date font15"> {{$item->created_at->format('d/m/Y')}} </p>
                             </div>
                         </div>
                     </div>
