@@ -61,7 +61,7 @@
             <ul class="language">
                 <div id="wrap">
                     <form action="" autocomplete="on">
-                        <i class="fas fa-search"></i>
+                        <i class="fal fa-search"></i>
                     <input id="search" name="search" type="text" placeholder="{!!__ ('Tìm kiếm...')!!}">
                     <input id="search_submit" value="Rechercher" type="submit">
                     </form>
