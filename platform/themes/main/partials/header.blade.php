@@ -46,7 +46,11 @@
             </div>
             
         </header>
-
+        @php
+        $supportedLocales = array_reverse(Language::getSupportedLocales()) ;
+        $showRelated = setting('language_show_default_item_if_current_version_not_existed', true);
+        $currentLanguage = Language::getCurrentLocale();
+        @endphp
 
           
     <div class="nav-bar-mobile">
@@ -66,16 +70,18 @@
                     <input id="search_submit" value="Rechercher" type="submit">
                     </form>
                   </div>
-                <li class="">
-                    <a rel="alternate active" hreflang="vi" href="{{ Language::getLocalizedURL('vi') }}">
-                        <span>VN</span>
+                @foreach($supportedLocales as $name => $language)
+                <li class="text-uppercase">
+                    <a rel="alternate" hreflang="{{$name}}" href="{{$showRelated ? Language::getLocalizedURL($name) : url($name)}}">
+                        <span class="{{$name==$currentLanguage?'active':''}}" >{{$name}}</span>
                     </a>
                 </li>
-                <li class="">
+                @endforeach
+                {{-- <li class="">
                     <a rel="alternate" hreflang="en" href="{{ Language::getLocalizedURL('en') }}">
                         <span>EN</span>
                     </a>
-                </li>
+                </li> --}}
             </ul> 
             <nav class="menu-mobile">
                     <div class="nav-mobile">
