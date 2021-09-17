@@ -117,7 +117,7 @@
                       
                         
                     </div>
-                    <div class="achievement-tabs-mobile" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+                    <div class="achievement-tabs-mobile">
                                 
                         <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
                             @if(has_field($page, 'achivement'))
