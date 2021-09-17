@@ -116,6 +116,7 @@
                             height: auto;
                             font-size: 35px;
                             line-height: 1.2;
+                            @include split_str(2);
                         }
                         @media only screen and (max-width: 768px){
                             font-size: 25px;
@@ -131,7 +132,7 @@
                            font-size: 14px;
                         }
                     }
-                }
+                } 
                 .download a {
                     background: $main_color;
                     color: #fff;
