@@ -48,8 +48,8 @@
                                     <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}"
                                         class="download">
                                         <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                                        <ion-icon name="download-outline"></ion-icon>
-                                    </a>
+                                        <img src="{{ Theme::asset()->url('images/relationship/down.png') }}" alt="" class="img-mobile">
+                                    </a>  
                                     <div class="downcontent">
                                         <ul class="list-file">
                                             @foreach(has_field($item, 'repeater_file_post_investor') as $sub)
