@@ -295,74 +295,6 @@
 .nav-bar-mobile {
     background: #fff;
     display: none;
-<<<<<<< HEAD
-    @media only screen and (max-width: 768px){
-        height: 10vw;
-    }
-    
-    @media only screen and (max-width: 600px){
-        height: 15vw;
-    }
-    @media only screen and (max-width: 1080px){
-        display: block;
-        height: 8vw;
-      
-    .nav-container {
-       
-        .brand {
-            position: fixed;
-            z-index: 998; 
-            top: 21px;
-            left: 40%;
-            @media only screen and (max-width: 768px){left: 38%;}
-            @media only screen and (max-width: 600px){left: 40%; top: 20.5px;}
-            @media only screen and (max-width: 400px){left: 39%; top: 21px;}
-            @media only screen and (max-width: 350px){left: 37%;}
-            a img{
-              
-                max-height: 70px;
-                @media only screen and (max-width: 600px){
-                    max-height: 15px;
-                }
-                @media only screen and (max-width: 400px){
-                    max-height: 13px;
-                }
-           }
-          
-           
-            a,a:visited {
-                color: #ffffff;
-                text-decoration: none;
-                
-            }
-            
-        }
-       
-        .language{
-            display: flex;
-            position: fixed;
-            z-index: 999; 
-            top: 31px;
-            right: 3%;
-            @media only screen and (max-width: 600px){top: 29px;}
-           
-            
-            #wrap {
-                appearance: none;
-                -webkit-appearance: none;
-                opacity: 1 !important;
-                -moz-appearance: none;
-                margin: -5px 8px;
-                display: inline-block;
-                position: relative;
-                height: 60px;
-                float: right;
-                padding: 0;
-                position: relative;
-                @media only screen and (max-width: 600px){
-                    margin-top: -3px;
-                    margin-right: 5px;
-=======
     @media only screen and (max-width: 1080px) {
         display: block;
         height: 8vw;
@@ -391,7 +323,6 @@
                 }
                 @media only screen and (max-width: 350px) {
                     left: 37%;
->>>>>>> 924b4719724da1cdb2a704a7a81c9116c7a6e838
                 }
                 a img {
                     max-height: 70px;
