@@ -402,7 +402,10 @@
         }
         .nav-tabs {
             // border: unset;
-           
+                appearance: none;
+                -webkit-appearance: none;
+                opacity: 1;
+                -moz-appearance: none;
             .nav-link {
                 padding: 0;
                 margin: 0;
@@ -411,6 +414,10 @@
                 font-family: $MyriadPro-Bold;
                 font-size: 20px;
                 text-transform: uppercase;
+                appearance: none;
+                -webkit-appearance: none;
+                opacity: 1;
+                -moz-appearance: none;
                 @media only screen and (max-width: 1080px) {
                     width: 40vw;
 
@@ -427,10 +434,7 @@
                 }
             }
             .__tabs__item {
-                appearance: none;
-                -webkit-appearance: none;
-                opacity: 1;
-                -moz-appearance: none;
+               
                 margin-right: 20px;
                 overflow: hidden;
                 @media only screen and (max-width: 1080px) {
