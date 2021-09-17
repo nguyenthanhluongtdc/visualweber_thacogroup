@@ -235,7 +235,7 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body mCustomScrollbar p-0" data-mcs-theme="dark">
-                            <div class="row mr-md-0">
+                            <div class="row mr-md-0 ">
                                 <div class="col-md-4 p-0 col-12 col-right pl-md-4">
                                     <img class="w-100" src="{{ get_image_url(has_sub_field($item_member, 'image')) }}" alt="{!! has_sub_field($item_member, 'name')!!}">
                                 

@@ -848,7 +848,7 @@
         @media only screen and (max-width: 600px){max-width: 400px; margin: 50px 10px;}
         .modal-content {
             padding: 30px;
-          
+            margin-top: 40vw;
             .modal-body {
                 .mCSB_scrollTools .mCSB_draggerContainer {
                     width: 4px;
@@ -868,6 +868,21 @@
                     height: 450px;
                   
                 }
+                .mCS_img_loaded{
+                    @media only screen and (max-width: 600px){
+                        width: 50% !important;
+                        margin: 0 auto;
+                        padding-left: 40px;
+                    }
+                }
+                // .close{
+                //     i{
+                //         @media only screen and (max-width: 600px){
+                //             transform: translateY(-65vw);
+                //         }
+                //     }
+                   
+                // }
                 .info-admin {
                     margin-left: 40px;
                     margin-top: 40px;
