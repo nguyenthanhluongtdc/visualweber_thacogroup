@@ -1,6 +1,6 @@
 <section class="banner-introduce overflow-x-hidden">
     @if(has_field($page, 'banner_contact'))
-    <img class="h-100vh w-100" src="{{ Storage::disk('public')->exists(has_field($page,'banner_contact')) ? get_image_url(has_field($page,'banner_contact')) : RvMedia::getDefaultImage()}}" alt="">
+    <img class=" h-auto w-100" src="{{ Storage::disk('public')->exists(has_field($page,'banner_contact')) ? get_image_url(has_field($page,'banner_contact')) : RvMedia::getDefaultImage()}}" alt="">
     @endif
 </section>
 <section class="contact-content">

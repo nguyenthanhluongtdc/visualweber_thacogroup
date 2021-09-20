@@ -24,7 +24,7 @@ $postSlider = get_featured_posts(6);
                                                                <div class="news-post h-100">
                                                                  
                                                                    <h3 class=" title font18">{!!__ ('BẢN TIN NỘI BỘ') !!}</h3>
-                                                                   <a href="{{$post->url}}">  <h4 class="name font18 ">{{$post->name}}</h4></a>
+                                                                   <a href="{{$post->url}}">  <h4 class="name font18 text-justify">{{$post->name}}</h4></a>
                                                                    <span class="time"> {{date_format($post->created_at,"d-m-Y")}}</span>
                                                                    <p class="description font18  text-justify">{{$post->description}}</p>
                                                                    <a href="{{$post->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
@@ -49,7 +49,7 @@ $postSlider = get_featured_posts(6);
                                                                        <img src="{{ get_object_image($post->image) }}" alt="">
                                                                    </div>
                                                                   
-                                                                   <h4 class="post_name font18">{{$post->name}}</h4>
+                                                                   <h4 class="post_name font18 text-justify">{{$post->name}}</h4>
                                                                    <p class="post_description font18">{{$post->description}}
                                                                    </p>
                                                                    <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span>

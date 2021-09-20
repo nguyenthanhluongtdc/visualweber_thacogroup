@@ -48,9 +48,9 @@
                                             <p class="date-year fon16 text-center">{{ $post->created_at->format('Y') }}</p>
                                         </div>
                                     </div> 
-                                    <div class="info-right">
+                                    <div class="info-right"> 
                                         <h3 >
-                                            <a href="" class="font25 itemdown-show">
+                                            <a href="" class="font25 itemdown-show text-justify">
                                                 {{$post->name}}
                                             </a> 
                                         </h3>

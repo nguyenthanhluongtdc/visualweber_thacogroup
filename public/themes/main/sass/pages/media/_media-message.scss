@@ -1,9 +1,12 @@
 .media-message-wrapper {
     .media-message-content {
         display: flex;
+        
         .media__content_left {
+            
             max-width: 68.2%;
             margin-right: 2.7%;
+          
             .news__top {
                 margin-top: 8px;
                 margin-bottom: 20px;
@@ -178,6 +181,7 @@
                             .name {
                                 font-family: $MyriadPro-Bold;
                                 text-transform: uppercase;
+                                text-align: justify;
                                 @media screen and (max-width: 1680px) {
                                     @include split_str(2);
                                 }

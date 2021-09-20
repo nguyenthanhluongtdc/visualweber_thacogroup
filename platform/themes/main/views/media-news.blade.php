@@ -43,7 +43,7 @@
                                     </div>
                                     <span class="date"> {{date_format($post->created_at,"d-m-Y")}}</span>
                                     <a href="{{$post->url}}" class="text-dark">
-                                        <p class="name-file font18">{{$post->name}}</p>
+                                        <p class="name-file font18 ">{{$post->name}}</p>
                                     </a>
                                    
                                     <div class="download">

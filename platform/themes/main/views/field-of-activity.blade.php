@@ -3,7 +3,7 @@
         <div class="swiper-wrapper">
            
             <div class="swiper-slide item-slider-top">
-                <img src="{{Theme::asset()->url('images/lvhd/slider3.jpg') }}" alt="slide" class="img-slider h-100vh w-100">
+                <img src="{{Theme::asset()->url('images/lvhd/slider3.jpg') }}" alt="slide" class="img-slider  h-auto w-100">
                 <div class="post-banner">
                     <h2 class="font24">
                         THILOGI thay đổi nhận diện thương hiệu trên các phương tiện vận chuyển
@@ -18,7 +18,7 @@
                 </div> 
             </div>
             <div class="swiper-slide item-slider-top">
-                <img src="{{Theme::asset()->url('images/lvhd/slider2.jpg') }}" alt="slide" class="img-slider h-100vh w-100">
+                <img src="{{Theme::asset()->url('images/lvhd/slider2.jpg') }}" alt="slide" class="img-slider  h-auto w-100">
                 <div class="post-banner">
                     <h2 class="font24">
                         THILOGI thay đổi nhận diện thương hiệu trên các phương tiện vận chuyển

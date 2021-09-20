@@ -175,7 +175,7 @@
 @else
 <section class="banner-post-detail">
     @if(theme_option('image_banner'))
-    <img class=" h-45vw img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
+    <img class=" h-auto img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
     @endif
 </section>
 <div class="bg-gray">

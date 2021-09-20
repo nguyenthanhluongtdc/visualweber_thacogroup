@@ -139,7 +139,10 @@ body {
     height: 45vw !important;
     object-fit: cover !important;
 }
-
+.h-auto{
+    height: 100%;
+    object-fit: cover !important;
+}
 .h-100vh {
     height: 100vh!important;
     object-fit: cover!important;
