@@ -229,11 +229,11 @@
                     <div class="right"> 
                         {{-- <p class="share  text-dark">Chia sẻ</p>
                          --}}
-                        <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=u{{$post->url}}">
+                        <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{urlencode($post->url)}}">
                            
                             <img src="{{Theme::asset()->url('images/media/fb-share.png')}}" alt="icon-fb">
                         </a>
-                        <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{$post->url}}&source=LinkedIn">
+                        <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{urlencode($post->url)}}&source=LinkedIn">
                             <img src="{{Theme::asset()->url('images/media/in.png')}}" alt="icon-linkdin">
                         </a>
                         <button class="print-button" onclick="window.print();">
