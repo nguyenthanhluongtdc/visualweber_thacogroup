@@ -558,6 +558,7 @@ export default {
         return {
             //gallery
             swiperOptions: {
+                
                 keyboard: {
                 enabled: true,
                 onlyInViewport: false,

@@ -5,7 +5,7 @@
         <div class="container-customize"> 
              <div class="shareholder-infomation mb-100">
                         <div class="shareholder-infomation_left">
-                            <div class="filter-search-media mb-40 field">
+                            <div class="filter-search-media field">
                                 <form action="" class="form-search ">
                                     <div class="search">
                                         <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
