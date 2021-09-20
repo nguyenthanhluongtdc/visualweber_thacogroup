@@ -64,11 +64,12 @@
                                             <ul class="list-file">
                                                 <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}">
                                                     <div class="text-dark">
-                                                        {{ get_object_image(get_field($post, 'newspapper_files')) }}
+                                                        {{@get_file_name(get_field($post, 'newspapper_files'))}}
                                                         
                                                     </div>
                                                 </a>
                                                 
+                                               
                                             </ul>
                                         </div>
                                     </div>
