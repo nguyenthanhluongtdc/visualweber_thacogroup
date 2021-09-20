@@ -16,7 +16,7 @@ $postSlider = get_featured_posts(1);
                                     <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
                                 </div>
                                 <div class="news-post h-100">
-                                    <h3 class=" title font18 text-uppercase">{!!__ ('BẢN TIN NỘI BỘ') !!}</h3>
+                                    <h3 class=" title font18 text-uppercase">{!!__ ('THÔNG ĐIỆP NĂM') !!}</h3>
                                     <a href="{{$post->url}}">  <h4 class="name font18 ">{{$post->name}}</h4></a>
                                     <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span> 
                                     <p class="description font18  text-justify">{{$post->description}}</p>

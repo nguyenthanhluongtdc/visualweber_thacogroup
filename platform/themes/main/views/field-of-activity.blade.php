@@ -415,7 +415,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
                             <div class="date">
-                                10/12/2021
+                                10-12-2021
                             </div>
                         </div>
                     </a>
@@ -434,7 +434,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
                             <div class="date">
-                                10/12/2021
+                                10-12-2021
                             </div>
                         </div>
                     </a>
@@ -453,7 +453,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
                             <div class="date">
-                                10/12/2021
+                                10-12-2021
                             </div>
                         </div>
                     </a>
@@ -472,7 +472,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
                             <div class="date">
-                                10/12/2021
+                                10-12-2021
                             </div>
                         </div>
                     </a>
@@ -491,7 +491,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
                             <div class="date">
-                                10/12/2021
+                                10-12-2021
                             </div>
                         </div>
                     </a>
@@ -510,7 +510,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
                             <div class="date">
-                                10/12/2021
+                                10-12-2021
                             </div>
                         </div>
                     </a>

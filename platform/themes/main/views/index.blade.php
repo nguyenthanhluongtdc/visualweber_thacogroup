@@ -30,7 +30,7 @@
   
 </div>
 
-<div class="field-activity-wrapper mt-80">
+<div class="field-activity-wrapper mt-40"> 
     <div class="container-customize ">
         {!! do_shortcode('[field-activity][/field-activity]') !!}
     </div>

@@ -130,7 +130,7 @@
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="album-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
+                                            <span class="album-item__date">{{item.created_at | formatDate('d-m-Y')}}</span>
                                             <div class="album-item__count">
                                                 <i class="far fa-image"></i>
                                                 <p class="quantity font18">100</p>
