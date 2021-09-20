@@ -62,16 +62,13 @@
                                         </a>
                                         <div class="downcontent">
                                             <ul class="list-file">
-                                                <li>
-                                                    <a href="{{@get_file_name(get_field($post, 'newspapper_files'))}}" target="_blank" class="text-dark text-decoration-none">
-                                                       <p> {{@get_file_name(get_field($post, 'newspapper_files'))}}</p>
-                                                    </a>
-                                                </li>
-                                                {{-- <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        XAC NHAN THAM DU.pdf
-                                                    </a>
-                                                </li> --}}
+                                                <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}">
+                                                    <div class="text-dark">
+                                                        {{ get_object_image(get_field($post, 'newspapper_files')) }}
+                                                        
+                                                    </div>
+                                                </a>
+                                                
                                             </ul>
                                         </div>
                                     </div>
