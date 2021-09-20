@@ -55,7 +55,7 @@
                                             </a> 
                                         </h3>
                                         <p class="count">
-                                            1 files
+                                            1 files  
                                         </p>
                                         <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}" class="download">
                                             <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
