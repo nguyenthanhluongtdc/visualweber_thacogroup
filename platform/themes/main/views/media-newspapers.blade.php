@@ -40,7 +40,7 @@
                                             @php
                                             $month = $post->created_at->format('m')
                                              @endphp
-                                            <p>
+                                            <p> 
                                                
                                                 <span class="date-day"> {{ $post->created_at->format('d') }}</span>
                                                 <sup class=""> {{ $post->created_at->format('m') }}</sup>
@@ -63,8 +63,8 @@
                                         <div class="downcontent">
                                             <ul class="list-file">
                                                 <li>
-                                                    <a href="#" class="text-dark text-decoration-none">
-                                                        {{@get_file_name(get_field($post, 'newspapper_files'))}}
+                                                    <a href="{{@get_file_name(get_field($post, 'newspapper_files'))}}" target="_blank" class="text-dark text-decoration-none">
+                                                       <p> {{@get_file_name(get_field($post, 'newspapper_files'))}}</p>
                                                     </a>
                                                 </li>
                                                 {{-- <li>
