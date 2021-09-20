@@ -15,7 +15,7 @@
                     <a href="#" class="link">
                         Xem thêm <span><i class="fas fa-arrow-right"></i></span>
                     </a>
-                </div>
+                </div> 
             </div>
             <div class="swiper-slide item-slider-top">
                 <img src="{{Theme::asset()->url('images/lvhd/slider2.jpg') }}" alt="slide" class="img-slider h-100vh w-100">
@@ -42,7 +42,7 @@
             <div class="commercial-field__left">
                 <div class="left-top d-flex justify-content-center" >
                     <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}">
-                    <h3 class="text-uppercase">LĨNH VỰC THƯƠNG MẠI & DỊCH VỤ</h3>
+                    <h3 class="text-uppercase ">LĨNH VỰC THƯƠNG MẠI & DỊCH VỤ</h3>
                 </div>
                 <p class="content mt-25 ">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -132,10 +132,10 @@
                     <div class="content">
                         <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
                         <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
-                        <h2 class="text-uppercase title mb-3 ">
+                        <h2 class="text-uppercase title mb-3 font40">
                             bán lẻ tiêu dùng
                         </h2>
-                        <p class="text">
+                        <p class="text font18">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
                         </p>
                        
@@ -149,7 +149,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv1.jpg') }}" alt="slide" class="bg-img">
                         <h2 class="title text-uppercase text-light font40">đại siêu thị</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">đại siêu thị</h2>
+                            <h2 class="titlee text-uppercase text-light font40">đại siêu thị</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -160,7 +160,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv2.jpg') }}" alt="slide" class="bg-img">
                         <h2 class="title text-uppercase text-light font40">siêu thị</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">siêu thị</h2>
+                            <h2 class="titlee text-uppercase text-light font40">siêu thị</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -170,7 +170,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv1.jpg') }}" alt="slide" class="bg-img">
                         <h2 class="title text-uppercase text-light font40">cửa hàng tiện lợi</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">cửa hàng tiện lợi</h2>
+                            <h2 class="titlee text-uppercase text-light font40">cửa hàng tiện lợi</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div> 
@@ -180,7 +180,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv2.jpg') }}" alt="slide" class="bg-img">
                         <h2 class="title text-uppercase text-light font40">đại siêu thị</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">đại siêu thị</h2>
+                            <h2 class="titlee text-uppercase text-light font40">đại siêu thị</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -214,7 +214,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv4.jpg') }}" alt="slide" class="">
                         <h2 class="title text-uppercase text-light font40">rạp chiếu phim</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">rạp chiếu phim</h2>
+                            <h2 class="titlee text-uppercase text-light font40">rạp chiếu phim</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -224,7 +224,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv5.jpg') }}" alt="slide" class="">
                         <h2 class="title text-uppercase text-light font40">kid theme park</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">kid theme park</h2>
+                            <h2 class="titlee text-uppercase text-light font40">kid theme park</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -234,7 +234,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv6.jpg') }}" alt="slide" class="">
                         <h2 class="title text-uppercase text-light font40">kid cafe</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">kid cafe</h2>
+                            <h2 class="titlee text-uppercase text-light font40">kid cafe</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -245,10 +245,10 @@
                 <div class="content">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso2.png') }}" alt="slide" class="symbol">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
-                    <h2 class="text-uppercase title mb-3 ">
+                    <h2 class="text-uppercase title mb-3 font40">
                         vui chơi giải trí
                     </h2>
-                    <p class="text">
+                    <p class="text font18">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
                     </p>
                 </div>
@@ -263,7 +263,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv7.jpg') }}" alt="slide" class="">
                         <h2 class="title text-uppercase text-light font40">ăn uống</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">ăn uống</h2>
+                            <h2 class="titlee text-uppercase text-light font40">ăn uống</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -273,7 +273,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv8.jpg') }}" alt="slide" class="">
                         <h2 class="title text-uppercase text-light font40">nhà hàng</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">nhà hàng</h2>
+                            <h2 class="titlee text-uppercase text-light font40">nhà hàng</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -283,7 +283,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv9.jpg') }}" alt="slide" class="">
                         <h2 class="title text-uppercase text-light font40">cafe</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">cafe</h2>
+                            <h2 class="titlee text-uppercase text-light font40">cafe</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -294,10 +294,10 @@
                 <div class="content">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso3.png') }}" alt="slide" class="symbol">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
-                    <h2 class="text-uppercase title mb-3 ">
+                    <h2 class="text-uppercase title mb-3 font40">
                         ẩm thực
                     </h2>
-                    <p class="text">
+                    <p class="text font18">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
                     </p>
                 </div>
@@ -312,7 +312,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv10.jpg') }}" alt="slide" class="">
                         <h2 class="title text-uppercase text-light font40">trung tâm hội nghị - tiệc cưới cao cấp</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">trung tâm hội nghị - tiệc cưới cao cấp</h2>
+                            <h2 class="titlee text-uppercase text-light font40">trung tâm hội nghị - tiệc cưới cao cấp</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -322,7 +322,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv11.jpg') }}" alt="slide" class="">
                         <h2 class="title text-uppercase text-light font40">trung tâm hội nghị - tiệc cưới trung cấp</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">trung tâm hội nghị - tiệc cưới trung cấp</h2>
+                            <h2 class="titlee text-uppercase text-light font40">trung tâm hội nghị - tiệc cưới trung cấp</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -334,10 +334,10 @@
                 <div class="content">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso4.png') }}" alt="slide" class="symbol">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
-                    <h2 class="text-uppercase title mb-3 ">
+                    <h2 class="text-uppercase title mb-3 font40">
                         trung tâm hội nghị - tiệc cưới
                     </h2>
-                    <p class="text">
+                    <p class="text font18">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
                     </p>
                 </div>
@@ -354,7 +354,7 @@
                         <img src="{{Theme::asset()->url('images/lvhd/lv12.jpg') }}" alt="slide" class="">
                         <h2 class="title text-uppercase text-light font40">thời trang - mỹ phẩm cao cấp</h2>
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font30">thời trang - mỹ phẩm cao cấp</h2>
+                            <h2 class="titlee text-uppercase text-light font40">thời trang - mỹ phẩm cao cấp</h2>
                             <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus tenetur facilis vel voluptates, possimus nemo dolores architecto numquam non.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -366,10 +366,10 @@
                 <div class="content">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso5.png') }}" alt="slide" class="symbol">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
-                    <h2 class="text-uppercase title mb-3 ">
+                    <h2 class="text-uppercase title mb-3 font40">
                         department store
                     </h2>
-                    <p class="text">
+                    <p class="text font18">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
                     </p>
                 </div>
@@ -408,10 +408,10 @@
                             <img src="{{Theme::asset()->url('images/lvhd/news1.jpg') }}">
                         </div>
                         <div class="news-bottom">
-                            <div class="title text-uppercase">
+                            <div class="title text-uppercase font20">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </div>
-                            <div class="desc text-justify mt-2">
+                            <div class="desc text-justify mt-2 font18">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
                             <div class="date">
@@ -503,10 +503,10 @@
                             <img src="{{Theme::asset()->url('images/lvhd/news1.jpg') }}">
                         </div>
                         <div class="news-bottom">
-                            <div class="title text-uppercase">
+                            <div class="title text-uppercase font20">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </div>
-                            <div class="desc text-justify mt-2">
+                            <div class="desc text-justify mt-2 font18">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
                             <div class="date">
