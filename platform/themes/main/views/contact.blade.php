@@ -138,6 +138,7 @@
                             <textarea name="content" id="contact_content" class="form-control" rows="5" placeholder="{!!__ ('Nội dung')!!}" required="required">{{ old('content') }}</textarea>
                         </div>
                     </div>
+                  
                     @if (setting('enable_captcha') && is_plugin_active('captcha'))
                         <div class="col-md-12 d-flex justify-content-center">
                             <div class="form-group">
