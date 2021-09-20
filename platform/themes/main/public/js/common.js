@@ -141,8 +141,14 @@ let logo_company = new Swiper('.logo-company', {
 // slider post home
 
 let newPostSlide = new Swiper('.new-post-slide', {
+    effect: 'flip',
+    grabCursor: true,
+    flipEffect: {
+        rotate: 100,
+        slideShadows: true,
+    },
     speed: 1500,
-    loop: true,
+    loop: true, 
     autoplay: {
         delay: 6000,
         disableOnInteraction: false,

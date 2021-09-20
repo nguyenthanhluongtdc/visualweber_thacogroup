@@ -5,7 +5,7 @@
                 <div class="swiper-wrapper">
                     @if ($post_home_top = get_featured_posts(3,[]))
                     @foreach ($post_home_top as $item_post)
-                    <div class="swiper-slide">
+                    <div class="swiper-slide"> 
                         <div class="news-home__top">
                                     <div class="img-post">
                                         <img class="img-mw-100" src="{{ RvMedia::getImageUrl($item_post->image, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$item_post->name}}">
