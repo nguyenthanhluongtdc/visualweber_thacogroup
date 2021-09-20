@@ -25,6 +25,8 @@ register_page_template([
 ]);
 
 Menu::addMenuLocation('menu-investor-relations', 'Quan hệ cổ đông');
+Menu::addMenuLocation('photo-gallery-menu', 'Menu bộ lọc hình ảnh');
+Menu::addMenuLocation('video-gallery-menu', 'Menu bộ lọc video');
 
 register_sidebar([
     'id'          => 'second_sidebar',

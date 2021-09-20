@@ -60,42 +60,12 @@
                                             </div>
                                             <div class="filler-list">
                                                 <div class="col-md-12 col-12 search-cate">
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
+                                                    <div class="pretty p-default p-smooth" v-for="(item, i) in menuFilterImage">
+                                                        <input type="radio" :value="item.reference_id" v-model="changeFilterPhoto" />
                                                         <div class="state p-primary">
-                                                            <label>THACO</label>
+                                                            <label> {{item.title}} </label>
                                                         </div>
-                                                    </div>
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Ô tô & Cơ khí</label>
-                                                        </div>
-                                                    </div>  
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Nông Lâm Nghiệp</label>
-                                                        </div>
-                                                    </div> 
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Đầu tư - Xây Dựng</label>
-                                                        </div>
-                                                    </div> 
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Thương mại - Dịch vụ</label>
-                                                        </div>
-                                                    </div> 
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Logistics</label>
-                                                        </div>
-                                                    </div>     
+                                                    </div>    
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +100,7 @@
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="album-item__date">{{item.created_at | formatDate('d-m-Y')}}</span>
+                                            <span class="album-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
                                             <div class="album-item__count">
                                                 <i class="far fa-image"></i>
                                                 <p class="quantity font18">100</p>
@@ -317,13 +287,15 @@
 
                             <div class="tab-pane fade" id="media-single-video" role="tabpanel" aria-labelledby="field-2-tab">
                                     <div class="media-video mCustomScrollbar" data-mcs-theme="dark">
-                                        <div class="list-video" >
+                                        <div class="list-video">
                                             <div class="left">
                                                 <div class="video-main">
-                                                    <div class="video-wrapper">
-                                                        <video muted loop  autoplay class="__video w-100">
+                                                    <div class="video-wrapper" v-if="dataVideo.data">
+                                                        <!-- <video muted loop  autoplay class="__video w-100">
                                                             <source src="themes/main/images/video/chuc-mung-nam-moi.mp4" type="video/mp4">
-                                                        </video> 
+                                                        </video>  -->
+
+                                                        <iframe style="width: 100%; height: 350px;" class="youtube-player" id="player" type="text/html" :src="'https://www.youtube.com/embed/'+dataVideo.data[0].youtube_code+'?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1'" frameborder="0" muted="muted"></iframe>
                                                     </div>
                                                     <p class="name font30">
                                                         THACO CHÚC MỪNG NĂM MỚI – XUÂN TÂN SỬU 2021
@@ -332,16 +304,18 @@
                                             </div>
                                             <div class="right">
                                                 <div class="list-video-left">
-                                                    <div class="video-item">
-                                                        <a href="" class="img-button">
-                                                            <img src="themes/main/images/media/video-1.jpg" alt="">
+                                                    <div class="video-item" v-if="dataVideo" v-for="(item) in dataVideo.data" :key="item.id">
+                                                        <!-- <a :href="'https://www.youtube.com/watch?v='+item.youtube_code" class="img-button" data-fancybox>
+                                                            <img :src="'storage/'+item.image" alt="">
                                                             <i class="far fa-play-circle button-video"></i>
-                                                        </a>
+                                                        </a> -->
+                                                        <iframe style="width: 100%;" class="youtube-player" id="player" type="text/html" :src="'https://www.youtube.com/embed/'+item.youtube_code+'?wmode=opaque&autohide=1'" frameborder="0" muted="muted"></iframe>
                                                         <p class="name font20">
                                                             MAZDA CX-30: TÂN BINH PHÂN KHÚC SUV ĐÔ THỊ CÓ GÌ HẤP DẪN KHÁCH HÀNG?
                                                         </p>                         
                                                     </div>
-                                                    <div class="video-item ">
+
+                                                    <!-- <div class="video-item ">
                                                         <a href="" class="img-button">
                                                             <img src="themes/main/images/media/video-2.jpg" alt="">
                                                             <i class="far fa-play-circle button-video"></i>
@@ -360,7 +334,7 @@
                                                         <p class="name  font20">
                                                             10 ĐIỂM GIÚP MAZDA6 MỚI THUYẾT PHỤC KHÁCH HÀNG VIỆT NAM
                                                         </p>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -373,7 +347,7 @@
                         :perPage="albumImagePerPage"
                         :totalPages="albumImageTotalPages"
                         :currentPage="albumImageCurrentPage"
-                         @pagechanged="albumImageOnPageChange"
+                        @pagechanged="albumImageOnPageChange"
                     /> -->
 
                         <paginationn  
@@ -558,12 +532,6 @@ export default {
         return {
             //gallery
             swiperOptions: {
-                
-                keyboard: {
-                enabled: true,
-                onlyInViewport: false,
-                },
-
                 slidesPerView: 1,
                 spaceBetween: 30,
                 pagination: {
@@ -586,12 +554,16 @@ export default {
             filterAlbumImage: {
                 keyword: "",
                 date: "",
-                type: "",
+                type: [],
                 sort: "",
                 format_type: 'gallery',
                 categoryId: this.categoryId,
             },
             keyword: '',
+            changeFilterPhoto: {
+                type: Number,
+            },
+            menuFilterImage: [],
 
             //video
             dataVideo: [],
@@ -616,7 +588,10 @@ export default {
         },
         keywordVideo(after, before) {
             this.loadAlbumVideo();
-        }
+        },
+        changeFilterPhoto() {
+             this.loadAlbumImage()
+        },
     },
 
     //init method
@@ -645,6 +620,7 @@ export default {
 
         loadAlbumImage: function(page=1) {
             this.filterAlbumImage.keyword = this.keyword
+            this.filterAlbumImage.type = this.changeFilterPhoto
 
             this.loadAlbumCommon(page, this.filterAlbumImage)
             // await this.$http.post('api/get/album/image?page='+page, {data: this.filterAlbumImage} )
@@ -738,6 +714,18 @@ export default {
                     console.log(error)
                 })
         },
+        loadMenuFilter: async function(location) {
+            await this.$http.post('api/get/menu/',{location: location})
+                .then(response=> {
+                    return response.data
+                })
+                .then(response=> {
+                    this.menuFilterImage = response.data
+                })
+                .catch(error=> {
+                    console.log(error)
+                })
+        },
 
         //video
         loadAlbumVideo: function(page=1) {
@@ -789,6 +777,9 @@ export default {
 
         //load album video
         this.loadAlbumVideo();
+
+        //menu filter
+        this.loadMenuFilter('photo-gallery-menu');
     },
 }
 </script>
@@ -816,7 +807,6 @@ export default {
 
     .modal-body-custom {
         height: 80%;
-        width: 80% !important;
     }
 
     .scroll-area {

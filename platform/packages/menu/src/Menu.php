@@ -417,4 +417,55 @@ class Menu
 
         return $this;
     }
+
+    public function getDataMenu(string $location, array $attributes = [])
+    {
+
+        $this->load();
+
+        $data = [];
+
+        foreach ($this->data as $menu) {
+            if (!in_array($location, $menu->locations->pluck('location')->all())) {
+                continue;
+            }
+
+            $args['slug'] = $menu->slug;
+
+            $this->load();
+
+            $menu = Arr::get($args, 'menu');
+
+            $slug = Arr::get($args, 'slug');
+            if (!$menu && !$slug) {
+                return null;
+            }
+
+            $parentId = Arr::get($args, 'parent_id', 0);
+
+            if (!$menu) {
+                $menu = $this->data->where('slug', $slug)->first();
+            }
+
+            if (!$menu) {
+                return null;
+            }
+
+            if (!Arr::has($args, 'menu_nodes')) {
+                $menuNodes = $menu->menuNodes->where('parent_id', $parentId);
+            } else {
+                $menuNodes = Arr::get($args, 'menu_nodes', []);
+            }
+
+            if ($menuNodes instanceof Collection) {
+                $menuNodes = $menuNodes->sortBy('position');
+            }
+
+            $data = [
+                'menu_nodes' => $menuNodes,
+            ];
+        }
+
+        return $data;
+    }
 }
