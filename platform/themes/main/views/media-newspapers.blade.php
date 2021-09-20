@@ -42,10 +42,10 @@
                                              @endphp
                                             <p> 
                                                
-                                                <span class="date-day"> {{ $post->created_at->format('d') }}</span>
-                                                <sup class=""> {{ $post->created_at->format('m') }}</sup>
+                                                <span class="date-day">{{ $post->created_at->format('d') }}</span>
+                                                <sup class="">-{{ $post->created_at->format('m') }}</sup>
                                             </p> 
-                                            <p class="date-year fon16 text-center"> {{ $post->created_at->format('Y') }}</p>
+                                            <p class="date-year fon16 text-center">{{ $post->created_at->format('Y') }}</p>
                                         </div>
                                     </div> 
                                     <div class="info-right">

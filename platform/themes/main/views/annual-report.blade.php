@@ -28,7 +28,7 @@
                                 <div class="download">
                                     <a download href="{{get_object_image(has_sub_field(has_field($item, 'repeater_file_post_investor')[0], 'file'))}}"
                                         title="download">{!! __('DOWNLOAD') !!}</a>
-                                </div> 
+                                </div>  
                             </div>
                             
                         </div>

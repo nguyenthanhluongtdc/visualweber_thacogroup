@@ -23,7 +23,7 @@
                                         <p>
                                             <span class="date-day">
                                                 {{$item->created_at->format('d')}}</span>
-                                            <sup class="">/{{$item->created_at->format('m')}}</sup>
+                                            <sup class="">-{{$item->created_at->format('m')}}</sup>
                                         </p>
                                         <p class="date-year fon16 text-center">{{$item->created_at->format('Y')}}</p>
                                     </div>
@@ -39,11 +39,7 @@
 
                                     @if(has_field($item, 'repeater_file_post_investor'))
                                     <p class="count">
-                                        {!!
-                                        count(has_field($item, 'repeater_file_post_investor'))
-                                        .' '.
-                                        __('Files')
-                                        !!}
+                                        {!! count(has_field($item, 'repeater_file_post_investor')).' '.__('Files') !!}
                                     </p>
                                     <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}"
                                         class="download">
