@@ -57,12 +57,13 @@
                                         <p class="count">
                                             1 files  
                                         </p>
-                                        <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}" class="download">
-                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
+                                        <a href="{{ get_image_url(get_field($post, 'newspapper_files')) }}" class="download" target="_blank" download>
+
+                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="" >
                                         </a>
                                         <div class="downcontent">
                                             <ul class="list-file">
-                                                <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}">
+                                                <a href="{{ get_image_url(get_field($post, 'newspapper_files')) }}" target="_blank" download>
                                                     <div class="text-dark">
                                                         {{@get_file_name(get_field($post, 'newspapper_files'))}}
                                                         

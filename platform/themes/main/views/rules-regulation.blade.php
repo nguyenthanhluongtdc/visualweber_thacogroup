@@ -42,7 +42,7 @@
                                         {!! count(has_field($item, 'repeater_file_post_investor')).' '.__('Files') !!}
                                     </p>
                                     <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}"
-                                        class="download">
+                                        class="download" \>
                                         <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
                                         <img src="{{ Theme::asset()->url('images/relationship/down.png') }}" alt="" class="img-mobile">
                                     </a>  
@@ -50,15 +50,16 @@
                                         <ul class="list-file">
                                             @foreach(has_field($item, 'repeater_file_post_investor') as $sub)
                                             <li>
-                                                <a href="{{ get_object_image(has_sub_field($sub, 'file')) }}" target="_blank">
+                                                <a href="{{ get_image_url(has_sub_field($sub, 'file')) }}" target="_blank">
                                                     {{has_sub_field($sub, 'file')}}
+                                                   
                                                 </a>
                                                 <span
                                                     class="left font-cond color-gray ml-2">{{@get_file_size(has_sub_field($sub, 'file'))}}</span>
                                             </li>
                                             @endforeach
                                         </ul>
-                                    </div>
+                                    </div> 
                                     @endif
                                 </div>
                             </div>

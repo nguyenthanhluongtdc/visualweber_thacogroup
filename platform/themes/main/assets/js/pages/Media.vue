@@ -373,7 +373,7 @@
                         :perPage="albumImagePerPage"
                         :totalPages="albumImageTotalPages"
                         :currentPage="albumImageCurrentPage"
-                        @pagechanged="albumImageOnPageChange"
+                         @pagechanged="albumImageOnPageChange"
                     /> -->
 
                         <paginationn  
@@ -810,6 +810,7 @@ export default {
 
     .modal-body-custom {
         height: 80%;
+        width: 80% !important;
     }
 
     .scroll-area {
