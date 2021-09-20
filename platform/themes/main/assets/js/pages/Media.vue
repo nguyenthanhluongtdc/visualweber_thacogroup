@@ -558,6 +558,11 @@ export default {
         return {
             //gallery
             swiperOptions: {
+                keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+                },
+
                 slidesPerView: 1,
                 spaceBetween: 30,
                 pagination: {

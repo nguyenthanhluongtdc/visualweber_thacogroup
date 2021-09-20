@@ -15,7 +15,7 @@ $postSlider = get_featured_posts(6);
                                        <div class="swiper-container new-post-slide " style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                                            <div class="swiper-wrapper">
                                             @if (!empty($postSlider ))
-                                            @foreach ($postSlider  as $post) 
+                                            @foreach ($postSlider  as $post)  
                                                <div class="swiper-slide">
                                                    <div class="news__top">
                                                                <div class="img-post">

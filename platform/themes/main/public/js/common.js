@@ -188,6 +188,10 @@ let newPostSlide = new Swiper('.new-post-slide', {
     },
 })
 let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
     speed: 800,
     loop: true,
     slidesPerView: 3,

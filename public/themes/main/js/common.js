@@ -182,6 +182,10 @@ let news_post_mobile = new Swiper('.new-post-slide-mb ', {
     },
 });
 let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
     speed: 800,
     loop: true,
     slidesPerView: 3,
