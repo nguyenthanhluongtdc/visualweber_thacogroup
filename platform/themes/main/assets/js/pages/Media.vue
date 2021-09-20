@@ -388,9 +388,9 @@
 
         <!---modal-album--->
         <modal name="albumImage-modal">
-            <div class="modal-main p-4">
+            <div class="modal-main px-4 pb-4 pt-3">
                 <div class="modal-header-custom">
-                    <p class="text-right">
+                    <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white"@click="hideModalAlbumImage">
                             <i class="fas fa-times"></i>
                         </button>
@@ -404,7 +404,7 @@
                 
                 <div class="modal-body-custom">
                     <vue-custom-scrollbar class="scroll-area"  :settings="settingsScrollbar">
-                        <div class="row m-n2 pr-5">
+                        <div class="row m-n2 pr-4">
                             <div class="col-lg-4 p-2" v-if="galleryImage" v-for="(item, i) in galleryImage.data" :key="i">
                                 <div class="box-img" @click="showModalSliderImage">
                                     <img :src="'storage/'+item.img" class="mw-100 fit-cover" /> 
@@ -424,9 +424,9 @@
 
         <!---modal-album video--->
         <modal name="albumVideo-modal">
-            <div class="modal-main p-4">
+            <div class="modal-main px-4 pb-4 pt-3">
                 <div class="modal-header-custom">
-                    <p class="text-right">
+                    <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white"@click="hideModalAlbumVideo">
                             <i class="fas fa-times"></i>
                         </button>
@@ -440,7 +440,7 @@
                 
                 <div class="modal-body-custom">
                     <vue-custom-scrollbar class="scroll-area"  :settings="settingsScrollbar">
-                        <div class="row m-n2 pr-5">
+                        <div class="row m-n2 pr-4">
                             <div class="col-lg-4 p-2" v-if="galleryVideo" v-for="(item, i) in galleryVideo.data" :key="i">
                                 <div class="box-img" @click="showModalSliderVideo(item)">
                                     <img :src="'http://img.youtube.com/vi/'+item.youtube_code+'/mqdefault.jpg'" class="mw-100 fit-cover" /> 
@@ -460,9 +460,9 @@
 
         <!---modal-detail--->
         <modal name="sliderImage-modal">
-            <div class="modal-main p-4">
-                <div class="modal-header-custom mb-4">
-                    <p class="text-right">
+            <div class="modal-main px-4 pb-4 pt-3">
+                <div class="modal-header-custom">
+                    <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white" @click="hideModalSliderImage">
                             <i class="fas fa-times"></i>
                         </button>
@@ -498,9 +498,9 @@
 
         <!---modal-detail--->
         <modal name="sliderVideo-modal">
-            <div class="modal-main p-4">
-                <div class="modal-header-custom mb-4">
-                    <p class="text-right">
+            <div class="modal-main px-4 pb-4 pt-3">
+                <div class="modal-header-custom">
+                    <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white" @click="hideModalSliderVideo">
                             <i class="fas fa-times"></i>
                         </button>
@@ -864,5 +864,17 @@ export default {
         justify-content: center;
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+
+    .ps .ps__rail-y {
+        opacity: 1 !important;
+        display: block;
+    }
+
+    .ps__thumb-y {
+        left: 50%;
+        transform: translateX(-50%);
+        right: 0;
+        width: 50% !important;
     }
 </style>
