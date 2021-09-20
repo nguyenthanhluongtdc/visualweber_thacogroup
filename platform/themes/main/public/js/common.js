@@ -141,8 +141,10 @@ let logo_company = new Swiper('.logo-company', {
 // slider post home
 
 let newPostSlide = new Swiper('.new-post-slide', {
+    spaceBetween: 30,
+        effect: "fade",
     speed: 1500,
-    loop: true,
+    loop: true, 
     autoplay: {
         delay: 6000,
         disableOnInteraction: false,
