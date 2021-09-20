@@ -5,7 +5,7 @@
         <div class="container-customize"> 
              <div class="shareholder-infomation mb-100">
                         <div class="shareholder-infomation_left">
-                            <div class="filter-search-media mb-40 field">
+                            <div class="filter-search-media field">
                                 <form action="" class="form-search ">
                                     <div class="search">
                                         <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
@@ -40,38 +40,37 @@
                                             @php
                                             $month = $post->created_at->format('m')
                                              @endphp
-                                            <p>
+                                            <p> 
                                                
-                                                <span class="date-day"> {{ $post->created_at->format('d') }}</span>
-                                                <sup class=""> {{ $post->created_at->format('m') }}</sup>
+                                                <span class="date-day">{{ $post->created_at->format('d') }}</span>
+                                                <sup class="">-{{ $post->created_at->format('m') }}</sup>
                                             </p> 
-                                            <p class="date-year fon16 text-center"> {{ $post->created_at->format('Y') }}</p>
+                                            <p class="date-year fon16 text-center">{{ $post->created_at->format('Y') }}</p>
                                         </div>
                                     </div> 
-                                    <div class="info-right">
+                                    <div class="info-right"> 
                                         <h3 >
-                                            <a href="" class="font25 itemdown-show">
+                                            <a href="" class="font25 itemdown-show text-justify">
                                                 {{$post->name}}
                                             </a> 
                                         </h3>
                                         <p class="count">
-                                            1 files
+                                            1 files  
                                         </p>
-                                        <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}" class="download">
-                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
+                                        <a href="{{ get_image_url(get_field($post, 'newspapper_files')) }}" class="download" target="_blank" download>
+
+                                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="" >
                                         </a>
                                         <div class="downcontent">
                                             <ul class="list-file">
-                                                <li>
-                                                    <a href="#" class="text-dark text-decoration-none">
+                                                <a href="{{ get_image_url(get_field($post, 'newspapper_files')) }}" target="_blank" download>
+                                                    <div class="text-dark">
                                                         {{@get_file_name(get_field($post, 'newspapper_files'))}}
-                                                    </a>
-                                                </li>
-                                                {{-- <li>
-                                                    <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}">
-                                                        XAC NHAN THAM DU.pdf
-                                                    </a>
-                                                </li> --}}
+                                                        
+                                                    </div>
+                                                </a>
+                                                
+                                               
                                             </ul>
                                         </div>
                                     </div>

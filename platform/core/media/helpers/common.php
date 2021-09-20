@@ -11,7 +11,7 @@ if (!function_exists('is_image')) {
     function is_image($mimeType)
     {
         return RvMedia::isImage($mimeType);
-    }
+    } 
 }
 
 if (!function_exists('get_image_url')) {

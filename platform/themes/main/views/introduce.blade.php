@@ -1,11 +1,11 @@
 <section class="banner-introduce">
-    <img class="h-100vh w-100"
+    <img class=" h-auto w-100"
         src="{{ get_field($page, 'about_us_banner') ? get_image_url(get_field($page, 'about_us_banner')) : Theme::asset()->url('images/introduce/banner-introduce.jpg') }}" alt="banner">
 </section>
 <div class="breadcrum-intro">
     @includeIf("theme.main::views.breadcrumb")
 </div>
-
+  
 <section class="about-us mt-40">
 
         <div class="container-customize">

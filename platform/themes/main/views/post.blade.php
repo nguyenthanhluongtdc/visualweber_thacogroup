@@ -175,7 +175,7 @@
 @else
 <section class="banner-post-detail">
     @if(theme_option('image_banner'))
-    <img class=" h-45vw img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
+    <img class=" h-auto img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
     @endif
 </section>
 <div class="bg-gray">
@@ -227,9 +227,14 @@
                         <span class="">{{date_format($post->created_at,"d-m-Y")}} </span>
                     </div>
                     <div class="right"> 
-                        
-                        <a href="#">
-                            <p class="share  text-dark">Chia sẻ</p>
+                        {{-- <p class="share  text-dark">Chia sẻ</p>
+                         --}}
+                        <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{urlencode($post->url)}}">
+                           
+                            <img src="{{Theme::asset()->url('images/media/fb-share.png')}}" alt="icon-fb">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{urlencode($post->url)}}&source=LinkedIn">
+                            <img src="{{Theme::asset()->url('images/media/in.png')}}" alt="icon-linkdin">
                         </a>
                         <button class="print-button" onclick="window.print();">
                             <i class="fas fa-print text-dark"></i>

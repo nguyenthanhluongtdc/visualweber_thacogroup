@@ -130,7 +130,7 @@
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="album-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
+                                            <span class="album-item__date">{{item.created_at | formatDate('d-m-Y')}}</span>
                                             <div class="album-item__count">
                                                 <i class="far fa-image"></i>
                                                 <p class="quantity font18">100</p>
@@ -373,7 +373,7 @@
                         :perPage="albumImagePerPage"
                         :totalPages="albumImageTotalPages"
                         :currentPage="albumImageCurrentPage"
-                        @pagechanged="albumImageOnPageChange"
+                         @pagechanged="albumImageOnPageChange"
                     /> -->
 
                         <paginationn  
@@ -558,6 +558,12 @@ export default {
         return {
             //gallery
             swiperOptions: {
+                
+                keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+                },
+
                 slidesPerView: 1,
                 spaceBetween: 30,
                 pagination: {
@@ -810,6 +816,7 @@ export default {
 
     .modal-body-custom {
         height: 80%;
+        width: 80% !important;
     }
 
     .scroll-area {

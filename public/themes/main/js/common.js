@@ -123,6 +123,8 @@ let logo_company = new Swiper('.logo-company', {
 // slider post home
 
 let newPostSlide = new Swiper('.new-post-slide', {
+    spaceBetween: 30,
+    effect: "fade",
     speed: 1500,
     loop: true,
     autoplay: {
@@ -137,7 +139,7 @@ let newPostSlide = new Swiper('.new-post-slide', {
         nextEl: '.new-post-slide .swiper-button-next',
         prevEl: '.new-post-slide .swiper-button-prev',
     },
-    breakpoints: {
+    breakpoints: { 
         1024: {
             slidesPerView: 1,
             // centeredSlides: true,
@@ -180,6 +182,10 @@ let news_post_mobile = new Swiper('.new-post-slide-mb ', {
     },
 });
 let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
     speed: 800,
     loop: true,
     slidesPerView: 3,

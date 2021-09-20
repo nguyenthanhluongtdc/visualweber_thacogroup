@@ -1,6 +1,6 @@
 <section class="banner-introduce overflow-x-hidden">
     @if(has_field($page, 'banner_contact'))
-    <img class="h-100vh w-100" src="{{ Storage::disk('public')->exists(has_field($page,'banner_contact')) ? get_image_url(has_field($page,'banner_contact')) : RvMedia::getDefaultImage()}}" alt="">
+    <img class=" h-auto w-100" src="{{ Storage::disk('public')->exists(has_field($page,'banner_contact')) ? get_image_url(has_field($page,'banner_contact')) : RvMedia::getDefaultImage()}}" alt="">
     @endif
 </section>
 <section class="contact-content">
@@ -138,6 +138,7 @@
                             <textarea name="content" id="contact_content" class="form-control" rows="5" placeholder="{!!__ ('Nội dung')!!}" required="required">{{ old('content') }}</textarea>
                         </div>
                     </div>
+                  
                     @if (setting('enable_captcha') && is_plugin_active('captcha'))
                         <div class="col-md-12 d-flex justify-content-center">
                             <div class="form-group">

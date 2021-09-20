@@ -293,7 +293,7 @@
                                         height: 18px;
                                         font-size: 18px;
                                     }
-                                }
+                                } 
                                 &__count.album {
                                     cursor: pointer;
                                 }
@@ -813,4 +813,10 @@
     top: 20px;
     z-index: 2;
     right: 20px;
+}
+
+.modal-main{
+    .modal-header-custom{
+        
+    }
 }
