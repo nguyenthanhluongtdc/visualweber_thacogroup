@@ -277,9 +277,9 @@
                                                 <i class="fas fa-photo-video"></i>
                                                 <p class="quantity font18">100</p>
                                             </div>
-                                            <div title="Tải xuống album" class="video-item__download" @click="zipDownload(item.id)">
+                                            <!-- <div title="Tải xuống album" class="video-item__download" @click="zipDownload(item.id)">
                                                 <i class="fas fa-download"></i>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -362,7 +362,7 @@
 
         <!---modal-album--->
         <modal name="albumImage-modal">
-            <div class="modal-main px-4 pb-4 pt-3">
+            <div class="modal-main">
                 <div class="modal-header-custom">
                     <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white"@click="hideModalAlbumImage">
@@ -378,10 +378,10 @@
                 
                 <div class="modal-body-custom">
                     <vue-custom-scrollbar class="scroll-area"  :settings="settingsScrollbar">
-                        <div class="row m-n2 pr-4">
-                            <div class="col-lg-4 p-2" v-if="galleryImage" v-for="(item, i) in galleryImage.data" :key="i">
+                        <div class="list-item">
+                            <div class="item" v-if="galleryImage" v-for="(item, i) in galleryImage.data" :key="i">
                                 <div class="box-img" @click="showModalSliderImage">
-                                    <img :src="'storage/'+item.img" class="mw-100 fit-cover" /> 
+                                    <img :src="'storage/'+item.img" class=" fit-cover" /> 
                                 </div>
                                 <div class="icon--download">
                                     <a download :href="'storage/'+item.img" title="Tải xuống">
@@ -398,7 +398,7 @@
 
         <!---modal-album video--->
         <modal name="albumVideo-modal">
-            <div class="modal-main px-4 pb-4 pt-3">
+            <div class="modal-main ">
                 <div class="modal-header-custom">
                     <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white"@click="hideModalAlbumVideo">
@@ -414,16 +414,16 @@
                 
                 <div class="modal-body-custom">
                     <vue-custom-scrollbar class="scroll-area"  :settings="settingsScrollbar">
-                        <div class="row m-n2 pr-4">
-                            <div class="col-lg-4 p-2" v-if="galleryVideo" v-for="(item, i) in galleryVideo.data" :key="i">
+                        <div class="list-item">
+                            <div class="item" v-if="galleryVideo" v-for="(item, i) in galleryVideo.data" :key="i">
                                 <div class="box-img" @click="showModalSliderVideo(item)">
-                                    <img :src="'http://img.youtube.com/vi/'+item.youtube_code+'/mqdefault.jpg'" class="mw-100 fit-cover" /> 
+                                    <img :src="'http://img.youtube.com/vi/'+item.youtube_code+'/mqdefault.jpg'" class=" fit-cover" /> 
                                 </div>
-                                <div class="icon--download">
+                                <!-- <div class="icon--download">
                                     <a download :href="'http://img.youtube.com/vi/'+item.youtube_code+'/mqdefault.jpg'" title="Tải xuống">
                                         <i class="fas fa-download text-white"></i>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </vue-custom-scrollbar>
@@ -434,7 +434,7 @@
 
         <!---modal-detail--->
         <modal name="sliderImage-modal">
-            <div class="modal-main px-4 pb-4 pt-3">
+            <div class="modal-main">
                 <div class="modal-header-custom">
                     <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white" @click="hideModalSliderImage">
@@ -446,17 +446,17 @@
                     </h2>
                 </div>
                 
-                <div class="modal-body-custom pb-4">
+                <div class="modal-body-custom">
                     <template>
                         <div class="swiper-galleryImage h-100">
                             <swiper ref="galleryImage" :options="swiperOptions">
                                 <swiper-slide v-if="galleryImage" v-for="(item, i) in galleryImage.data" :key="i">
                                     <img :src="'storage/'+item.img" alt="" class="w-100 h-100 fit-cover">
-                                    <div class="icon--download">
+                                    <!-- <div class="icon--download">
                                         <a download :href="'storage/'+item.img" title="Tải xuống">
                                             <i class="fas fa-download text-white"></i>
                                         </a>
-                                    </div>
+                                    </div> -->
                                 </swiper-slide>
 
                                 <div class="swiper-pagination" slot="pagination"></div>
@@ -472,7 +472,7 @@
 
         <!---modal-detail--->
         <modal name="sliderVideo-modal">
-            <div class="modal-main px-4 pb-4 pt-3">
+            <div class="modal-main">
                 <div class="modal-header-custom">
                     <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white" @click="hideModalSliderVideo">
@@ -484,7 +484,7 @@
                     </h2>
                 </div>
                 
-                <div class="modal-body-custom pb-4">
+                <div class="modal-body-custom ">
                     <iframe width="420" class="w-100" height="345" :src="'https://www.youtube.com/embed/'+itemVideoDetail.youtube_code"></iframe>
                 </div>
             </div>
@@ -793,95 +793,10 @@ export default {
     },
 }
 </script>
-
 <style>
-    .vm--modal {
-        height: 80vh !important;
-        width: 60% !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-50%, -50%);
-    }
-
-    .fit-cover {
-        object-fit: cover;
-    }
-
-    .modal-main {
-        height: 100%;
-    }
-
-    .modal-header-custom {
-        height: 20%;
-    }
-
-    .modal-body-custom {
-        height: 80%;
-    }
-
-    .scroll-area {
-        position: relative;
-        margin: auto;
-        width: 100%;
-        height: 100%;
-    }
-
-    .ps__rail-y {
-        background-color: #fff !important;
-    }
-
-    .ps__thumb-y {
-        background-color: gray !important;
-    }
-
-    .modal-header-custom .name {
-        font-family: "MyriadPro-Bold";
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-    }
-
-    .swiper-galleryImage .swiper-container {
-        height: 100%;
-        padding-bottom: 15px;
-    }
-
-    /* .swiper-galleryImage .swiper-slide img{
-        transform: scale(0.8);
-        transition: transform 300ms;
-        opacity: 0.6;
-    }
-    .swiper-galleryImage .swiper-slide-active img {
-        transform: scale(1);
-        opacity: 1;
-    } */
-
-    .swiper-container-horizontal > .swiper-pagination-progressbar {
-        top: inherit;
-        bottom: 0;
-    }
-
-    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-        background: #2e3951;
-    }
-
-    .pagination {
-        justify-content: center;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    .ps .ps__rail-y {
-        opacity: 1 !important;
-        display: block;
-    }
-
-    .ps__thumb-y {
-        left: 50%;
-        transform: translateX(-50%);
-        right: 0;
-        width: 50% !important;
-    }
+.pagination {
+    width: 100%;
+    justify-content: center;
+    margin: 40px 0;
+}
 </style>
