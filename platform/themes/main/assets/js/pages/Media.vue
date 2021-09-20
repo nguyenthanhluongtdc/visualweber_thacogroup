@@ -289,29 +289,29 @@
                                     <div class="media-video mCustomScrollbar" data-mcs-theme="dark">
                                         <div class="list-video">
                                             <div class="left">
-                                                <div class="video-main">
-                                                    <div class="video-wrapper" v-if="dataVideo.data">
+                                                <div class="video-main" v-if="videoPlay">
+                                                    <div class="video-wrapper">
                                                         <!-- <video muted loop  autoplay class="__video w-100">
                                                             <source src="themes/main/images/video/chuc-mung-nam-moi.mp4" type="video/mp4">
                                                         </video>  -->
 
-                                                        <iframe style="width: 100%; height: 350px;" class="youtube-player" id="player" type="text/html" :src="'https://www.youtube.com/embed/'+dataVideo.data[0].youtube_code+'?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1'" frameborder="0" muted="muted"></iframe>
+                                                        <iframe style="width: 100%; height: 350px;" class="youtube-player" id="player" type="text/html" :src="'https://www.youtube.com/embed/'+videoPlay.youtube_code+'?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1'" frameborder="0" muted="muted"></iframe>
+
                                                     </div>
                                                     <p class="name font30">
-                                                        THACO CHÚC MỪNG NĂM MỚI – XUÂN TÂN SỬU 2021
+                                                        {{dataVideo.name}}
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="right">
                                                 <div class="list-video-left">
                                                     <div class="video-item" v-if="dataVideo" v-for="(item) in dataVideo.data" :key="item.id">
-                                                        <!-- <a :href="'https://www.youtube.com/watch?v='+item.youtube_code" class="img-button" data-fancybox>
+                                                        <div class="img-button" @click="changeVideoPlay(item)">
                                                             <img :src="'storage/'+item.image" alt="">
                                                             <i class="far fa-play-circle button-video"></i>
-                                                        </a> -->
-                                                        <iframe style="width: 100%;" class="youtube-player" id="player" type="text/html" :src="'https://www.youtube.com/embed/'+item.youtube_code+'?wmode=opaque&autohide=1'" frameborder="0" muted="muted"></iframe>
+                                                        </div>
                                                         <p class="name font20">
-                                                            MAZDA CX-30: TÂN BINH PHÂN KHÚC SUV ĐÔ THỊ CÓ GÌ HẤP DẪN KHÁCH HÀNG?
+                                                           {{item.name}}
                                                         </p>                         
                                                     </div>
 
@@ -578,6 +578,7 @@ export default {
             },
             keywordVideo: '',
             itemVideoDetail: [],
+            videoPlay: [],
         }
     },
 
@@ -647,7 +648,10 @@ export default {
 
                     if(filter.format_type=='gallery') {
                         this.dataImage = response
-                    }else this.dataVideo = response
+                    }else {
+                        this.dataVideo = response
+                        this.videoPlay = this.dataVideo.data[0]
+                    }
                     
                 })
                 .catch(error=> {
@@ -752,6 +756,11 @@ export default {
                 this.showGalleryVideo(album)
             }
         },
+        //change video play
+        changeVideoPlay: function(video) {
+            this.videoPlay = video
+        },
+
         //filter date
         changeDateAndLoadDataVideo: function(event) {
             this.filterAlbumVideo.date = event.target.value;
@@ -761,6 +770,7 @@ export default {
         albumVideoOnPageChange(page) {
             this.loadAlbumVideo(page);
         },
+
     },
 
     //computed
