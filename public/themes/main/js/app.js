@@ -2573,33 +2573,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //custom-scrollbar
 
  //pagination
@@ -2654,12 +2627,16 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
       filterAlbumImage: {
         keyword: "",
         date: "",
-        type: "",
+        type: [],
         sort: "",
         format_type: 'gallery',
         categoryId: this.categoryId
       },
       keyword: '',
+      changeFilterPhoto: {
+        type: Number
+      },
+      menuFilterImage: [],
       //video
       dataVideo: [],
       galleryVideo: [],
@@ -2672,7 +2649,8 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
         categoryId: this.categoryId
       },
       keywordVideo: '',
-      itemVideoDetail: []
+      itemVideoDetail: [],
+      videoPlay: []
     };
   },
   //event watch
@@ -2682,6 +2660,9 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
     },
     keywordVideo: function keywordVideo(after, before) {
       this.loadAlbumVideo();
+    },
+    changeFilterPhoto: function changeFilterPhoto() {
+      this.loadAlbumImage();
     }
   },
   //init method
@@ -2740,6 +2721,7 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
     loadAlbumImage: function loadAlbumImage() {
       var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
       this.filterAlbumImage.keyword = this.keyword;
+      this.filterAlbumImage.type = this.changeFilterPhoto;
       this.loadAlbumCommon(page, this.filterAlbumImage); // await this.$http.post('api/get/album/image?page='+page, {data: this.filterAlbumImage} )
       //         .then(response=> {
       //             // console.log(response)
@@ -2775,7 +2757,10 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
                 }).then(function (response) {
                   if (filter.format_type == 'gallery') {
                     _this2.dataImage = response;
-                  } else _this2.dataVideo = response;
+                  } else {
+                    _this2.dataVideo = response;
+                    _this2.videoPlay = _this2.dataVideo.data[0];
+                  }
                 })["catch"](function (error) {
                   console.log(error);
                 });
@@ -2869,51 +2854,26 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
 
       return zipDownload;
     }(),
-    //video
-    loadAlbumVideo: function loadAlbumVideo() {
-      var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-      this.filterAlbumVideo.keyword = this.keywordVideo;
-      this.loadAlbumCommon(page, this.filterAlbumVideo);
-    },
-    loadGalleryVideo: function () {
-      var _loadGalleryVideo = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4(id) {
+    loadMenuFilter: function () {
+      var _loadMenuFilter = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee4(location) {
         var _this3 = this;
 
-        var album,
-            _args4 = arguments;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee4$(_context4) {
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
-                album = _args4.length > 1 && _args4[1] !== undefined ? _args4[1] : "";
-
-                if (!(this.indexItem != id)) {
-                  _context4.next = 7;
-                  break;
-                }
-
-                this.indexItem = id;
-                _context4.next = 5;
-                return this.$http.get('api/get/video/post/' + id).then(function (response) {
+                _context4.next = 2;
+                return this.$http.post('api/get/menu/', {
+                  location: location
+                }).then(function (response) {
                   return response.data;
                 }).then(function (response) {
-                  _this3.galleryVideo = response;
-
-                  _this3.showGalleryVideo(album);
-
-                  console.log(_this3.galleryVideo);
+                  _this3.menuFilterImage = response.data;
                 })["catch"](function (error) {
                   console.log(error);
                 });
 
-              case 5:
-                _context4.next = 8;
-                break;
-
-              case 7:
-                this.showGalleryVideo(album);
-
-              case 8:
+              case 2:
               case "end":
                 return _context4.stop();
             }
@@ -2921,12 +2881,74 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
         }, _callee4, this);
       }));
 
-      function loadGalleryVideo(_x3) {
+      function loadMenuFilter(_x3) {
+        return _loadMenuFilter.apply(this, arguments);
+      }
+
+      return loadMenuFilter;
+    }(),
+    //video
+    loadAlbumVideo: function loadAlbumVideo() {
+      var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+      this.filterAlbumVideo.keyword = this.keywordVideo;
+      this.loadAlbumCommon(page, this.filterAlbumVideo);
+    },
+    loadGalleryVideo: function () {
+      var _loadGalleryVideo = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee5(id) {
+        var _this4 = this;
+
+        var album,
+            _args5 = arguments;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                album = _args5.length > 1 && _args5[1] !== undefined ? _args5[1] : "";
+
+                if (!(this.indexItem != id)) {
+                  _context5.next = 7;
+                  break;
+                }
+
+                this.indexItem = id;
+                _context5.next = 5;
+                return this.$http.get('api/get/video/post/' + id).then(function (response) {
+                  return response.data;
+                }).then(function (response) {
+                  _this4.galleryVideo = response;
+
+                  _this4.showGalleryVideo(album);
+
+                  console.log(_this4.galleryVideo);
+                })["catch"](function (error) {
+                  console.log(error);
+                });
+
+              case 5:
+                _context5.next = 8;
+                break;
+
+              case 7:
+                this.showGalleryVideo(album);
+
+              case 8:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5, this);
+      }));
+
+      function loadGalleryVideo(_x4) {
         return _loadGalleryVideo.apply(this, arguments);
       }
 
       return loadGalleryVideo;
     }(),
+    //change video play
+    changeVideoPlay: function changeVideoPlay(video) {
+      this.videoPlay = video;
+    },
     //filter date
     changeDateAndLoadDataVideo: function changeDateAndLoadDataVideo(event) {
       this.filterAlbumVideo.date = event.target.value;
@@ -2950,7 +2972,9 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
     //load album image
     this.loadAlbumImage(); //load album video
 
-    this.loadAlbumVideo();
+    this.loadAlbumVideo(); //menu filter
+
+    this.loadMenuFilter('photo-gallery-menu');
   }
 });
 
@@ -4478,7 +4502,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.vm--modal {\n    height: 80vh !important;\n    width: 60% !important;\n    top: 50% !important;\n    left: 50% !important;\n    transform: translate(-50%, -50%);\n}\n.fit-cover {\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.modal-main {\n    height: 100%;\n}\n.modal-header-custom {\n    height: 20%;\n}\n.modal-body-custom {\n    height: 80%;\n}\n.scroll-area {\n    position: relative;\n    margin: auto;\n    width: 100%;\n    height: 100%;\n}\n.ps__rail-y {\n    background-color: #aaa !important;\n}\n.ps__thumb-y {\n    background-color: white !important;\n}\n.modal-header-custom .name {\n    font-family: \"MyriadPro-Bold\";\n    overflow: hidden;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-box-orient: vertical;\n    -webkit-line-clamp: 1;\n}\n.swiper-galleryImage .swiper-container {\n    height: 100%;\n    padding-bottom: 15px;\n}\n\n/* .swiper-galleryImage .swiper-slide img{\n    transform: scale(0.8);\n    transition: transform 300ms;\n    opacity: 0.6;\n}\n.swiper-galleryImage .swiper-slide-active img {\n    transform: scale(1);\n    opacity: 1;\n} */\n.swiper-container-horizontal > .swiper-pagination-progressbar {\n    top: inherit;\n    bottom: 0;\n}\n.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {\n    background: #2e3951;\n}\n.pagination {\n    justify-content: center;\n    margin-top: 40px;\n    margin-bottom: 40px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.vm--modal {\n    height: 80vh !important;\n    width: 60% !important;\n    top: 50% !important;\n    left: 50% !important;\n    transform: translate(-50%, -50%);\n}\n.fit-cover {\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.modal-main {\n    height: 100%;\n}\n.modal-header-custom {\n    height: 20%;\n}\n.modal-body-custom {\n    height: 80%;\n}\n.scroll-area {\n    position: relative;\n    margin: auto;\n    width: 100%;\n    height: 100%;\n}\n.ps__rail-y {\n    background-color: #fff !important;\n}\n.ps__thumb-y {\n    background-color: gray !important;\n}\n.modal-header-custom .name {\n    font-family: \"MyriadPro-Bold\";\n    overflow: hidden;\n    text-overflow: ellipsis;\n    display: -webkit-box;\n    -webkit-box-orient: vertical;\n    -webkit-line-clamp: 1;\n}\n.swiper-galleryImage .swiper-container {\n    height: 100%;\n    padding-bottom: 15px;\n}\n\n/* .swiper-galleryImage .swiper-slide img{\n    transform: scale(0.8);\n    transition: transform 300ms;\n    opacity: 0.6;\n}\n.swiper-galleryImage .swiper-slide-active img {\n    transform: scale(1);\n    opacity: 1;\n} */\n.swiper-container-horizontal > .swiper-pagination-progressbar {\n    top: inherit;\n    bottom: 0;\n}\n.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {\n    background: #2e3951;\n}\n.pagination {\n    justify-content: center;\n    margin-top: 40px;\n    margin-bottom: 40px;\n}\n.ps .ps__rail-y {\n    opacity: 1 !important;\n    display: block;\n}\n.ps__thumb-y {\n    left: 50%;\n    transform: translateX(-50%);\n    right: 0;\n    width: 50% !important;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -36501,7 +36525,67 @@ var render = function() {
                           )
                         ]),
                         _vm._v(" "),
-                        _vm._m(4),
+                        _c(
+                          "div",
+                          { staticClass: "filter", attrs: { id: "filter" } },
+                          [
+                            _vm._m(4),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "filler-list" }, [
+                              _c(
+                                "div",
+                                { staticClass: "col-md-12 col-12 search-cate" },
+                                _vm._l(_vm.menuFilterImage, function(item, i) {
+                                  return _c(
+                                    "div",
+                                    {
+                                      staticClass: "pretty p-default p-smooth"
+                                    },
+                                    [
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.changeFilterPhoto,
+                                            expression: "changeFilterPhoto"
+                                          }
+                                        ],
+                                        attrs: { type: "radio" },
+                                        domProps: {
+                                          value: item.reference_id,
+                                          checked: _vm._q(
+                                            _vm.changeFilterPhoto,
+                                            item.reference_id
+                                          )
+                                        },
+                                        on: {
+                                          change: function($event) {
+                                            _vm.changeFilterPhoto =
+                                              item.reference_id
+                                          }
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "state p-primary" },
+                                        [
+                                          _c("label", [
+                                            _vm._v(
+                                              " " + _vm._s(item.title) + " "
+                                            )
+                                          ])
+                                        ]
+                                      )
+                                    ]
+                                  )
+                                }),
+                                0
+                              )
+                            ])
+                          ]
+                        ),
                         _vm._v(" "),
                         _vm._m(5)
                       ])
@@ -36974,40 +37058,102 @@ var render = function() {
                           [
                             _c("div", { staticClass: "list-video" }, [
                               _c("div", { staticClass: "left" }, [
-                                _c("div", { staticClass: "video-main" }, [
-                                  _c("div", { staticClass: "video-wrapper" }, [
-                                    _c(
-                                      "video",
-                                      {
-                                        staticClass: "__video w-100",
-                                        attrs: {
-                                          muted: "",
-                                          loop: "",
-                                          autoplay: ""
-                                        },
-                                        domProps: { muted: true }
-                                      },
-                                      [
-                                        _c("source", {
-                                          attrs: {
-                                            src:
-                                              "themes/main/images/video/chuc-mung-nam-moi.mp4",
-                                            type: "video/mp4"
-                                          }
-                                        })
-                                      ]
-                                    )
-                                  ]),
-                                  _vm._v(" "),
-                                  _c("p", { staticClass: "name font30" }, [
-                                    _vm._v(
-                                      "\n                                                    THACO CHÚC MỪNG NĂM MỚI – XUÂN TÂN SỬU 2021\n                                                "
-                                    )
-                                  ])
-                                ])
+                                _vm.videoPlay
+                                  ? _c("div", { staticClass: "video-main" }, [
+                                      _c(
+                                        "div",
+                                        { staticClass: "video-wrapper" },
+                                        [
+                                          _c("iframe", {
+                                            staticClass: "youtube-player",
+                                            staticStyle: {
+                                              width: "100%",
+                                              height: "350px"
+                                            },
+                                            attrs: {
+                                              id: "player",
+                                              type: "text/html",
+                                              src:
+                                                "https://www.youtube.com/embed/" +
+                                                _vm.videoPlay.youtube_code +
+                                                "?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1",
+                                              frameborder: "0",
+                                              muted: "muted"
+                                            }
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c("p", { staticClass: "name font30" }, [
+                                        _vm._v(
+                                          "\n                                                    " +
+                                            _vm._s(_vm.dataVideo.name) +
+                                            "\n                                                "
+                                        )
+                                      ])
+                                    ])
+                                  : _vm._e()
                               ]),
                               _vm._v(" "),
-                              _vm._m(13)
+                              _c("div", { staticClass: "right" }, [
+                                _c(
+                                  "div",
+                                  { staticClass: "list-video-left" },
+                                  _vm._l(_vm.dataVideo.data, function(item) {
+                                    return _vm.dataVideo
+                                      ? _c(
+                                          "div",
+                                          {
+                                            key: item.id,
+                                            staticClass: "video-item"
+                                          },
+                                          [
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass: "img-button",
+                                                on: {
+                                                  click: function($event) {
+                                                    return _vm.changeVideoPlay(
+                                                      item
+                                                    )
+                                                  }
+                                                }
+                                              },
+                                              [
+                                                _c("img", {
+                                                  attrs: {
+                                                    src:
+                                                      "storage/" + item.image,
+                                                    alt: ""
+                                                  }
+                                                }),
+                                                _vm._v(" "),
+                                                _c("i", {
+                                                  staticClass:
+                                                    "far fa-play-circle button-video"
+                                                })
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "p",
+                                              { staticClass: "name font20" },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                       " +
+                                                    _vm._s(item.name) +
+                                                    "\n                                                    "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      : _vm._e()
+                                  }),
+                                  0
+                                )
+                              ])
                             ])
                           ]
                         )
@@ -37030,12 +37176,12 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("modal", { attrs: { name: "albumImage-modal" } }, [
-        _c("div", { staticClass: "modal-main p-4" }, [
+        _c("div", { staticClass: "modal-main px-4 pb-4 pt-3" }, [
           _c(
             "div",
             { staticClass: "modal-header-custom" },
             [
-              _c("p", { staticClass: "text-right" }, [
+              _c("p", { staticClass: "text-right mb-0" }, [
                 _c(
                   "button",
                   {
@@ -37084,7 +37230,7 @@ var render = function() {
                 [
                   _c(
                     "div",
-                    { staticClass: "row m-n2 pr-5" },
+                    { staticClass: "row m-n2 pr-4" },
                     _vm._l(_vm.galleryImage.data, function(item, i) {
                       return _vm.galleryImage
                         ? _c("div", { key: i, staticClass: "col-lg-4 p-2" }, [
@@ -37133,12 +37279,12 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("modal", { attrs: { name: "albumVideo-modal" } }, [
-        _c("div", { staticClass: "modal-main p-4" }, [
+        _c("div", { staticClass: "modal-main px-4 pb-4 pt-3" }, [
           _c(
             "div",
             { staticClass: "modal-header-custom" },
             [
-              _c("p", { staticClass: "text-right" }, [
+              _c("p", { staticClass: "text-right mb-0" }, [
                 _c(
                   "button",
                   {
@@ -37187,7 +37333,7 @@ var render = function() {
                 [
                   _c(
                     "div",
-                    { staticClass: "row m-n2 pr-5" },
+                    { staticClass: "row m-n2 pr-4" },
                     _vm._l(_vm.galleryVideo.data, function(item, i) {
                       return _vm.galleryVideo
                         ? _c("div", { key: i, staticClass: "col-lg-4 p-2" }, [
@@ -37248,9 +37394,9 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("modal", { attrs: { name: "sliderImage-modal" } }, [
-        _c("div", { staticClass: "modal-main p-4" }, [
-          _c("div", { staticClass: "modal-header-custom mb-4" }, [
-            _c("p", { staticClass: "text-right" }, [
+        _c("div", { staticClass: "modal-main px-4 pb-4 pt-3" }, [
+          _c("div", { staticClass: "modal-header-custom" }, [
+            _c("p", { staticClass: "text-right mb-0" }, [
               _c(
                 "button",
                 {
@@ -37352,9 +37498,9 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("modal", { attrs: { name: "sliderVideo-modal" } }, [
-        _c("div", { staticClass: "modal-main p-4" }, [
-          _c("div", { staticClass: "modal-header-custom mb-4" }, [
-            _c("p", { staticClass: "text-right" }, [
+        _c("div", { staticClass: "modal-main px-4 pb-4 pt-3" }, [
+          _c("div", { staticClass: "modal-header-custom" }, [
+            _c("p", { staticClass: "text-right mb-0" }, [
               _c(
                 "button",
                 {
@@ -37518,64 +37664,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "filter", attrs: { id: "filter" } }, [
-      _c("div", { staticClass: "filter__title" }, [
-        _c("label", { attrs: { for: "" } }, [_vm._v("Filter ")]),
-        _vm._v(" "),
-        _c("i", { staticClass: "fas fa-angle-down" })
-      ]),
+    return _c("div", { staticClass: "filter__title" }, [
+      _c("label", { attrs: { for: "" } }, [_vm._v("Filter ")]),
       _vm._v(" "),
-      _c("div", { staticClass: "filler-list" }, [
-        _c("div", { staticClass: "col-md-12 col-12 search-cate" }, [
-          _c("div", { staticClass: "pretty p-default p-smooth" }, [
-            _c("input", { attrs: { type: "checkbox" } }),
-            _vm._v(" "),
-            _c("div", { staticClass: "state p-primary" }, [
-              _c("label", [_vm._v("THACO")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "pretty p-default p-smooth" }, [
-            _c("input", { attrs: { type: "checkbox" } }),
-            _vm._v(" "),
-            _c("div", { staticClass: "state p-primary" }, [
-              _c("label", [_vm._v("Ô tô & Cơ khí")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "pretty p-default p-smooth" }, [
-            _c("input", { attrs: { type: "checkbox" } }),
-            _vm._v(" "),
-            _c("div", { staticClass: "state p-primary" }, [
-              _c("label", [_vm._v("Nông Lâm Nghiệp")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "pretty p-default p-smooth" }, [
-            _c("input", { attrs: { type: "checkbox" } }),
-            _vm._v(" "),
-            _c("div", { staticClass: "state p-primary" }, [
-              _c("label", [_vm._v("Đầu tư - Xây Dựng")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "pretty p-default p-smooth" }, [
-            _c("input", { attrs: { type: "checkbox" } }),
-            _vm._v(" "),
-            _c("div", { staticClass: "state p-primary" }, [
-              _c("label", [_vm._v("Thương mại - Dịch vụ")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "pretty p-default p-smooth" }, [
-            _c("input", { attrs: { type: "checkbox" } }),
-            _vm._v(" "),
-            _c("div", { staticClass: "state p-primary" }, [
-              _c("label", [_vm._v("Logistics")])
-            ])
-          ])
-        ])
-      ])
+      _c("i", { staticClass: "fas fa-angle-down" })
     ])
   },
   function() {
@@ -37824,62 +37916,6 @@ var staticRenderFns = [
       _c("i", { staticClass: "fas fa-photo-video" }),
       _vm._v(" "),
       _c("p", { staticClass: "quantity font18" }, [_vm._v("100")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "right" }, [
-      _c("div", { staticClass: "list-video-left" }, [
-        _c("div", { staticClass: "video-item" }, [
-          _c("a", { staticClass: "img-button", attrs: { href: "" } }, [
-            _c("img", {
-              attrs: { src: "themes/main/images/media/video-1.jpg", alt: "" }
-            }),
-            _vm._v(" "),
-            _c("i", { staticClass: "far fa-play-circle button-video" })
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "name font20" }, [
-            _vm._v(
-              "\n                                                        MAZDA CX-30: TÂN BINH PHÂN KHÚC SUV ĐÔ THỊ CÓ GÌ HẤP DẪN KHÁCH HÀNG?\n                                                    "
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "video-item " }, [
-          _c("a", { staticClass: "img-button", attrs: { href: "" } }, [
-            _c("img", {
-              attrs: { src: "themes/main/images/media/video-2.jpg", alt: "" }
-            }),
-            _vm._v(" "),
-            _c("i", { staticClass: "far fa-play-circle button-video" })
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "name  font20" }, [
-            _vm._v(
-              "\n                                                        10 ĐIỂM GIÚP MAZDA6 MỚI THUYẾT PHỤC KHÁCH HÀNG VIỆT NAM\n                                                    "
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "video-item " }, [
-          _c("a", { staticClass: "img-button", attrs: { href: "" } }, [
-            _c("img", {
-              attrs: { src: "themes/main/images/media/video-2.jpg", alt: "" }
-            }),
-            _vm._v(" "),
-            _c("i", { staticClass: "far fa-play-circle button-video" })
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "name  font20" }, [
-            _vm._v(
-              "\n                                                        10 ĐIỂM GIÚP MAZDA6 MỚI THUYẾT PHỤC KHÁCH HÀNG VIỆT NAM\n                                                    "
-            )
-          ])
-        ])
-      ])
     ])
   }
 ]
