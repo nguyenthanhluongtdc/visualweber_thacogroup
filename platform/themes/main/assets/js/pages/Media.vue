@@ -60,12 +60,42 @@
                                             </div>
                                             <div class="filler-list">
                                                 <div class="col-md-12 col-12 search-cate">
-                                                    <div class="pretty p-default p-smooth" v-for="(item, i) in menuFilterImage">
-                                                        <input type="radio" :value="item.reference_id" v-model="changeFilterPhoto" />
+                                                    <div class="pretty p-default p-smooth">
+                                                        <input type="checkbox" />
                                                         <div class="state p-primary">
-                                                            <label> {{item.title}} </label>
+                                                            <label>THACO</label>
                                                         </div>
-                                                    </div>    
+                                                    </div>
+                                                    <div class="pretty p-default p-smooth">
+                                                        <input type="checkbox" />
+                                                        <div class="state p-primary">
+                                                            <label>Ô tô & Cơ khí</label>
+                                                        </div>
+                                                    </div>  
+                                                    <div class="pretty p-default p-smooth">
+                                                        <input type="checkbox" />
+                                                        <div class="state p-primary">
+                                                            <label>Nông Lâm Nghiệp</label>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pretty p-default p-smooth">
+                                                        <input type="checkbox" />
+                                                        <div class="state p-primary">
+                                                            <label>Đầu tư - Xây Dựng</label>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pretty p-default p-smooth">
+                                                        <input type="checkbox" />
+                                                        <div class="state p-primary">
+                                                            <label>Thương mại - Dịch vụ</label>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="pretty p-default p-smooth">
+                                                        <input type="checkbox" />
+                                                        <div class="state p-primary">
+                                                            <label>Logistics</label>
+                                                        </div>
+                                                    </div>     
                                                 </div>
                                             </div>
                                         </div>
@@ -197,7 +227,7 @@
                                         </div>
                                         <div class="filter" id="filter">
                                             <div class="filter__title">
-                                                <label for="">Filter </label>    
+                                                <label for="">Ngành nghề </label>    
                                                 <i class="fas fa-angle-down"></i>
                                             </div>
                                             <div class="filler-list">

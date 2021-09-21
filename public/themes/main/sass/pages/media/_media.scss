@@ -760,7 +760,7 @@
 //       margin-bottom: 3%;
 //       font-family: $MyriadPro-Bold;
 //       text-align: center;
-//       @include split_str(1);
+//       @include split_str(2);
 //       .name {
 //         margin-bottom: 0;
 //       }
@@ -816,12 +816,16 @@
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%);
+    
+    @media only screen and (max-width: 1080px){ height: 45vh !important; width: 80% !important;}
+    @media only screen and (max-width: 768px){ height: 35vh !important; padding: 15px 0 0 0;}
+    @media only screen and (max-width: 600px){ height: 30vh !important;}
     // display: none;
     .modal-main {
         padding: 4%;
         height: 100%;
         .modal-header-custom {
-            height: 10%;
+            height: 5vw;
             p {
                 position: absolute;
                 top: 10px;
@@ -908,6 +912,7 @@
             
             @media only screen and (max-width: 1080px){
                 object-fit: unset !important;
+                padding: 15px 0;
             }
         }
     }
@@ -923,12 +928,24 @@
 }
 
 .swiper-galleryImage {
+    .swiper-button-prev{
+        @media only screen and (max-width: 600px){ 
+            margin-left: -10px;
+        }
+    }
+    .swiper-button-next{
+        @media only screen and (max-width: 600px){ 
+            margin-right: -10px;
+        }
+    }
     .swiper-button-prev::after {
         color: #464646b2;
         font-size: 50px;
+        @media only screen and (max-width: 600px){  font-size: 30px;}
     }
     .swiper-button-next::after {
         color: #464646b2;
         font-size: 50px;
+        @media only screen and (max-width: 600px){  font-size: 30px;}
     }
 }
