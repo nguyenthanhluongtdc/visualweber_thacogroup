@@ -36741,7 +36741,7 @@ var render = function() {
                     !_vm.dataImage.data
                       ? _c("p", [
                           _vm._v(
-                            "\n                            Du lieu\n                        "
+                            "\n                            Khong tim thay du lieu\n                        "
                           )
                         ])
                       : _vm._e(),
@@ -37679,7 +37679,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "album-item__count" }, [
       _c("i", { staticClass: "far fa-image" }),
       _vm._v(" "),
-      _c("p", { staticClass: "quantity font18" }, [_vm._v("100")])
+      _c("p", { staticClass: "quantity font18" }, [_vm._v("100 ")])
     ])
   },
   function() {

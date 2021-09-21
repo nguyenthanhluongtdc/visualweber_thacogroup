@@ -103,7 +103,7 @@
                                             <span class="album-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
                                             <div class="album-item__count">
                                                 <i class="far fa-image"></i>
-                                                <p class="quantity font18">100</p>
+                                                <p class="quantity font18">100 </p>
                                             </div>
                                             <div title="Tải xuống album" class="album-item__download" @click="zipDownload(item.id)">
                                                 <i class="fas fa-download"></i>
@@ -114,7 +114,7 @@
                             </div>
 
                             <p v-if="!dataImage.data">
-                                Du lieu
+                                Khong tim thay du lieu
                             </p>
 
                             <div class="tab-pane fade" id="media-single-image" role="tabpanel" aria-labelledby="field-2-tab">
@@ -605,7 +605,7 @@ export default {
     },
 
     //init method
-    methods: {
+    methods: { 
 
         //gallery
         loadGallery: async function(id, album="") {
