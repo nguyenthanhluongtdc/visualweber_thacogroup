@@ -10,18 +10,18 @@ use Illuminate\Support\Arr;
 use Platform\Kernel\Repositories\Interfaces\PostInterface as PostInterfaceCustom;
 
 
-// if (!function_exists('get_featured_posts_by_category')) {
-//     /**
-//      * @param array $categoryId
-//      * @param int $limit
-//      * @param array $with
-//      * @return \Illuminate\Support\Collection
-//      */
-//     function get_featured_posts_by_category($categoryId, $limit, array $with = [])
-//     {
-//         return app(PostInterfaceCustom::class)->getFeaturedByCategory($categoryId, $limit, $with);
-//     }
-// }
+if (!function_exists('get_featured_posts_by_category')) {
+    /**
+     * @param array $categoryId
+     * @param int $limit
+     * @param array $with
+     * @return \Illuminate\Support\Collection
+     */
+    function get_featured_posts_by_category($categoryId, $limit, array $with = [])
+    {
+        return app(PostInterfaceCustom::class)->getFeaturedByCategory($categoryId, $limit, $with);
+    }
+}
 if (!function_exists('get_posts_type_by_category')) {
     /**
      * @param int $limit

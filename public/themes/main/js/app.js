@@ -12,7 +12,7 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 /***/ }),
 
-/***/ "./node_modules/axios/index.js":
+/***/ "./node_modules/axios/index.js": 
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
   \*************************************/
