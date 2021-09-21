@@ -2590,8 +2590,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
 //custom-scrollbar
 
  //pagination
@@ -36476,16 +36474,18 @@ var render = function() {
     "div",
     [
       _c("div", { staticClass: "media-content" }, [
+        _vm._m(0),
+        _vm._v(" "),
         _c("div", { staticClass: "media-wrapper" }, [
           _c(
             "div",
             { staticClass: "container-customize" },
             [
-              _vm._m(0),
+              _vm._m(1),
               _vm._v(" "),
               _c("div", { staticClass: "tab-image" }, [
                 _c("div", { staticClass: "media__tabs" }, [
-                  _vm._m(1),
+                  _vm._m(2),
                   _vm._v(" "),
                   _c("div", { staticClass: "filter-media " }, [
                     _c("form", { attrs: { action: "" } }, [
@@ -36503,7 +36503,7 @@ var render = function() {
                             staticClass: " form-control form-control-sm ",
                             attrs: {
                               type: "text",
-                              placeholder: "Nhập nội dung cần tìm...",
+                              placeholder: "Nhập nội dung cần tìm",
                               value: "",
                               name: "keyword",
                               autocomplete: "off"
@@ -36519,7 +36519,7 @@ var render = function() {
                             }
                           }),
                           _vm._v(" "),
-                          _vm._m(2)
+                          _vm._m(3)
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "calender" }, [
@@ -36550,13 +36550,69 @@ var render = function() {
                           )
                         ]),
                         _vm._v(" "),
-<<<<<<< HEAD
-                        _vm._m(3),
-=======
-                        _vm._m(4),
->>>>>>> 07227b1d69902570c913449142670b748043732c
+                        _c(
+                          "div",
+                          { staticClass: "filter", attrs: { id: "filter" } },
+                          [
+                            _vm._m(4),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "filler-list" }, [
+                              _c(
+                                "div",
+                                { staticClass: "col-md-12 col-12 search-cate" },
+                                _vm._l(_vm.menuFilterImage, function(item, i) {
+                                  return _c(
+                                    "div",
+                                    {
+                                      staticClass: "pretty p-default p-smooth"
+                                    },
+                                    [
+                                      _c("input", {
+                                        directives: [
+                                          {
+                                            name: "model",
+                                            rawName: "v-model",
+                                            value: _vm.changeFilterPhoto,
+                                            expression: "changeFilterPhoto"
+                                          }
+                                        ],
+                                        attrs: { type: "radio" },
+                                        domProps: {
+                                          value: item.reference_id,
+                                          checked: _vm._q(
+                                            _vm.changeFilterPhoto,
+                                            item.reference_id
+                                          )
+                                        },
+                                        on: {
+                                          change: function($event) {
+                                            _vm.changeFilterPhoto =
+                                              item.reference_id
+                                          }
+                                        }
+                                      }),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "state p-primary" },
+                                        [
+                                          _c("label", [
+                                            _vm._v(
+                                              " " + _vm._s(item.title) + " "
+                                            )
+                                          ])
+                                        ]
+                                      )
+                                    ]
+                                  )
+                                }),
+                                0
+                              )
+                            ])
+                          ]
+                        ),
                         _vm._v(" "),
-                        _vm._m(4)
+                        _vm._m(5)
                       ])
                     ])
                   ])
@@ -36585,98 +36641,96 @@ var render = function() {
                             "div",
                             { staticClass: "list-album" },
                             _vm._l(_vm.dataImage.data, function(item) {
-                              return _c(
-                                "div",
-                                {
-                                  key: item.id,
-                                  staticClass: "album-item",
-                                  attrs: {
-                                    "data-target": "#album_modal",
-                                    "data-toggle": "modal"
-                                  }
-                                },
-                                [
-                                  _c(
+                              return _vm.dataImage
+                                ? _c(
                                     "div",
                                     {
-                                      staticClass: "album-item__img",
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.loadGallery(
-                                            item.id,
-                                            "album"
-                                          )
-                                        }
+                                      key: item.id,
+                                      staticClass: "album-item",
+                                      attrs: {
+                                        "data-target": "#album_modal",
+                                        "data-toggle": "modal"
                                       }
                                     },
                                     [
-                                      _c("img", {
-                                        attrs: {
-                                          src: "storage/" + item.image,
-                                          alt: ""
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "album-item__name " },
-                                    [
-                                      _c("p", { staticClass: "name font20" }, [
-                                        _vm._v(
-                                          "\n                                            " +
-                                            _vm._s(item.name) +
-                                            "                                         \n                                            "
-                                        )
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "span",
-                                    { staticClass: "album-item__date" },
-                                    [
-                                      _vm._v(
-                                        _vm._s(
-                                          _vm._f("formatDate")(
-                                            item.created_at,
-<<<<<<< HEAD
-                                            "DD-MM-YYYY"
-=======
-                                            "d/m/Y"
->>>>>>> 07227b1d69902570c913449142670b748043732c
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "album-item__img",
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.loadGallery(
+                                                item.id,
+                                                "album"
+                                              )
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c("img", {
+                                            attrs: {
+                                              src: "storage/" + item.image,
+                                              alt: ""
+                                            }
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "album-item__name " },
+                                        [
+                                          _c(
+                                            "p",
+                                            { staticClass: "name font20" },
+                                            [
+                                              _vm._v(
+                                                "\n                                            " +
+                                                  _vm._s(item.name) +
+                                                  "                                         \n                                            "
+                                              )
+                                            ]
                                           )
-                                        )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        { staticClass: "album-item__date" },
+                                        [
+                                          _vm._v(
+                                            _vm._s(
+                                              _vm._f("formatDate")(
+                                                item.created_at,
+                                                "d/m/Y"
+                                              )
+                                            )
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _vm._m(6, true),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "album-item__download",
+                                          attrs: { title: "Tải xuống album" },
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.zipDownload(item.id)
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c("i", {
+                                            staticClass: "fas fa-download"
+                                          })
+                                        ]
                                       )
                                     ]
-                                  ),
-                                  _vm._v(" "),
-<<<<<<< HEAD
-                                  _vm._m(5, true),
-=======
-                                  _vm._m(6, true),
->>>>>>> 07227b1d69902570c913449142670b748043732c
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "album-item__download",
-                                      attrs: { title: "Tải xuống album" },
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.zipDownload(item.id)
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "fas fa-download"
-                                      })
-                                    ]
                                   )
-                                ]
-                              )
+                                : _vm._e()
                             }),
                             0
                           )
@@ -36687,7 +36741,7 @@ var render = function() {
                     !_vm.dataImage.data
                       ? _c("p", [
                           _vm._v(
-                            "\n                            Du lieu\n                        "
+                            "\n                            Khong tim thay du lieu\n                        "
                           )
                         ])
                       : _vm._e(),
@@ -36708,72 +36762,82 @@ var render = function() {
                             "div",
                             { staticClass: "list-image" },
                             _vm._l(_vm.dataImage.data, function(item) {
-                              return _c(
-                                "div",
-                                { key: item.id, staticClass: "image-item" },
-                                [
-                                  _c(
+                              return _vm.dataImage
+                                ? _c(
                                     "div",
-                                    {
-                                      staticClass: "image-item__img",
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.loadGallery(item.id)
-                                        }
-                                      }
-                                    },
+                                    { key: item.id, staticClass: "image-item" },
                                     [
-                                      _c("img", {
-                                        attrs: {
-                                          src: "storage/" + item.image,
-                                          alt: ""
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "image-item__back",
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.loadGallery(
-                                            item.id,
-                                            "album"
-                                          )
-                                        }
-                                      }
-                                    },
-                                    [
-                                      _c("i", { staticClass: "far fa-image" }),
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "image-item__img",
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.loadGallery(item.id)
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c("img", {
+                                            attrs: {
+                                              src: "storage/" + item.image,
+                                              alt: ""
+                                            }
+                                          })
+                                        ]
+                                      ),
                                       _vm._v(" "),
-                                      _c("p", { staticClass: "text font18" }, [
-                                        _vm._v("Album")
-                                      ])
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "image-item__back",
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.loadGallery(
+                                                item.id,
+                                                "album"
+                                              )
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c("i", {
+                                            staticClass: "far fa-image"
+                                          }),
+                                          _vm._v(" "),
+                                          _c(
+                                            "p",
+                                            { staticClass: "text font18" },
+                                            [_vm._v("Album")]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        { staticClass: "icon--download" },
+                                        [
+                                          _c(
+                                            "a",
+                                            {
+                                              attrs: {
+                                                download: "",
+                                                href: "storage/" + item.image,
+                                                title: "Tải xuống"
+                                              }
+                                            },
+                                            [
+                                              _c("i", {
+                                                staticClass:
+                                                  "fas fa-download text-white"
+                                              })
+                                            ]
+                                          )
+                                        ]
+                                      )
                                     ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c("div", { staticClass: "icon--download" }, [
-                                    _c(
-                                      "a",
-                                      {
-                                        attrs: {
-                                          download: "",
-                                          href: "storage/" + item.image,
-                                          title: "Tải xuống"
-                                        }
-                                      },
-                                      [
-                                        _c("i", {
-                                          staticClass:
-                                            "fas fa-download text-white"
-                                        })
-                                      ]
-                                    )
-                                  ])
-                                ]
-                              )
+                                  )
+                                : _vm._e()
                             }),
                             0
                           )
@@ -36800,11 +36864,11 @@ var render = function() {
             "div",
             { staticClass: "container-customize" },
             [
-              _vm._m(6),
+              _vm._m(7),
               _vm._v(" "),
               _c("div", { staticClass: "tab-video" }, [
                 _c("div", { staticClass: "media__tabs" }, [
-                  _vm._m(7),
+                  _vm._m(8),
                   _vm._v(" "),
                   _c("div", { staticClass: "filter-media" }, [
                     _c("form", { attrs: { action: "" } }, [
@@ -36838,7 +36902,7 @@ var render = function() {
                             }
                           }),
                           _vm._v(" "),
-                          _vm._m(8)
+                          _vm._m(9)
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "calender" }, [
@@ -36869,9 +36933,9 @@ var render = function() {
                           )
                         ]),
                         _vm._v(" "),
-                        _vm._m(9),
+                        _vm._m(10),
                         _vm._v(" "),
-                        _vm._m(10)
+                        _vm._m(11)
                       ])
                     ])
                   ])
@@ -36900,80 +36964,80 @@ var render = function() {
                             "div",
                             { staticClass: "list-video" },
                             _vm._l(_vm.dataVideo.data, function(item) {
-                              return _c(
-                                "div",
-                                {
-                                  key: item.id,
-                                  staticClass: "video-item",
-                                  attrs: {
-                                    "data-target": "#album_modal",
-                                    "data-toggle": "modal"
-                                  }
-                                },
-                                [
-                                  _c(
+                              return _vm.dataVideo
+                                ? _c(
                                     "div",
                                     {
-                                      staticClass: "video-thumbnail",
-                                      on: {
-                                        click: function($event) {
-                                          return _vm.loadGalleryVideo(
-                                            item.id,
-                                            "album"
-                                          )
-                                        }
+                                      key: item.id,
+                                      staticClass: "video-item",
+                                      attrs: {
+                                        "data-target": "#album_modal",
+                                        "data-toggle": "modal"
                                       }
                                     },
                                     [
-                                      _c("img", {
-                                        attrs: {
-                                          src: "storage/" + item.image,
-                                          alt: ""
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "video-item__name font20" },
-                                    [
-                                      _c("p", { staticClass: "name font20" }, [
-                                        _vm._v(
-                                          "\n                                            " +
-                                            _vm._s(item.name) +
-                                            "                                         \n                                            "
-                                        )
-                                      ])
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "span",
-                                    { staticClass: "video-item__date" },
-                                    [
-                                      _vm._v(
-                                        _vm._s(
-                                          _vm._f("formatDate")(
-                                            item.created_at,
-<<<<<<< HEAD
-                                            "DD-MM-YYYY"
-=======
-                                            "d/m/Y"
->>>>>>> 07227b1d69902570c913449142670b748043732c
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "video-thumbnail",
+                                          on: {
+                                            click: function($event) {
+                                              return _vm.loadGalleryVideo(
+                                                item.id,
+                                                "album"
+                                              )
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c("img", {
+                                            attrs: {
+                                              src: "storage/" + item.image,
+                                              alt: ""
+                                            }
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "video-item__name font20"
+                                        },
+                                        [
+                                          _c(
+                                            "p",
+                                            { staticClass: "name font20" },
+                                            [
+                                              _vm._v(
+                                                "\n                                            " +
+                                                  _vm._s(item.name) +
+                                                  "                                         \n                                            "
+                                              )
+                                            ]
                                           )
-                                        )
-                                      )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "span",
+                                        { staticClass: "video-item__date" },
+                                        [
+                                          _vm._v(
+                                            _vm._s(
+                                              _vm._f("formatDate")(
+                                                item.created_at,
+                                                "d/m/Y"
+                                              )
+                                            )
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _vm._m(12, true)
                                     ]
-                                  ),
-                                  _vm._v(" "),
-<<<<<<< HEAD
-                                  _vm._m(11, true)
-=======
-                                  _vm._m(12, true)
->>>>>>> 07227b1d69902570c913449142670b748043732c
-                                ]
-                              )
+                                  )
+                                : _vm._e()
                             }),
                             0
                           )
@@ -37011,7 +37075,7 @@ var render = function() {
                                             staticClass: "youtube-player",
                                             staticStyle: {
                                               width: "100%",
-                                              height: "440px"
+                                              height: "350px"
                                             },
                                             attrs: {
                                               id: "player",
@@ -37043,51 +37107,56 @@ var render = function() {
                                   "div",
                                   { staticClass: "list-video-left" },
                                   _vm._l(_vm.dataVideo.data, function(item) {
-                                    return _c(
-                                      "div",
-                                      {
-                                        key: item.id,
-                                        staticClass: "video-item"
-                                      },
-                                      [
-                                        _c(
+                                    return _vm.dataVideo
+                                      ? _c(
                                           "div",
                                           {
-                                            staticClass: "img-button",
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.changeVideoPlay(item)
-                                              }
-                                            }
+                                            key: item.id,
+                                            staticClass: "video-item"
                                           },
                                           [
-                                            _c("img", {
-                                              attrs: {
-                                                src: "storage/" + item.image,
-                                                alt: ""
-                                              }
-                                            }),
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass: "img-button",
+                                                on: {
+                                                  click: function($event) {
+                                                    return _vm.changeVideoPlay(
+                                                      item
+                                                    )
+                                                  }
+                                                }
+                                              },
+                                              [
+                                                _c("img", {
+                                                  attrs: {
+                                                    src:
+                                                      "storage/" + item.image,
+                                                    alt: ""
+                                                  }
+                                                }),
+                                                _vm._v(" "),
+                                                _c("i", {
+                                                  staticClass:
+                                                    "far fa-play-circle button-video"
+                                                })
+                                              ]
+                                            ),
                                             _vm._v(" "),
-                                            _c("i", {
-                                              staticClass:
-                                                "far fa-play-circle button-video"
-                                            })
-                                          ]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "p",
-                                          { staticClass: "name font20" },
-                                          [
-                                            _vm._v(
-                                              "\n                                                       " +
-                                                _vm._s(item.name) +
-                                                "\n                                                    "
+                                            _c(
+                                              "p",
+                                              { staticClass: "name font20" },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                       " +
+                                                    _vm._s(item.name) +
+                                                    "\n                                                    "
+                                                )
+                                              ]
                                             )
                                           ]
                                         )
-                                      ]
-                                    )
+                                      : _vm._e()
                                   }),
                                   0
                                 )
@@ -37170,39 +37239,41 @@ var render = function() {
                     "div",
                     { staticClass: "list-item" },
                     _vm._l(_vm.galleryImage.data, function(item, i) {
-                      return _c("div", { key: i, staticClass: "item" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "box-img",
-                            on: { click: _vm.showModalSliderImage }
-                          },
-                          [
-                            _c("img", {
-                              staticClass: " fit-cover",
-                              attrs: { src: "storage/" + item.img }
-                            })
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "icon--download" }, [
-                          _c(
-                            "a",
-                            {
-                              attrs: {
-                                download: "",
-                                href: "storage/" + item.img,
-                                title: "Tải xuống"
-                              }
-                            },
-                            [
-                              _c("i", {
-                                staticClass: "fas fa-download text-white"
-                              })
-                            ]
-                          )
-                        ])
-                      ])
+                      return _vm.galleryImage
+                        ? _c("div", { key: i, staticClass: "item" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "box-img",
+                                on: { click: _vm.showModalSliderImage }
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: " fit-cover",
+                                  attrs: { src: "storage/" + item.img }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "icon--download" }, [
+                              _c(
+                                "a",
+                                {
+                                  attrs: {
+                                    download: "",
+                                    href: "storage/" + item.img,
+                                    title: "Tải xuống"
+                                  }
+                                },
+                                [
+                                  _c("i", {
+                                    staticClass: "fas fa-download text-white"
+                                  })
+                                ]
+                              )
+                            ])
+                          ])
+                        : _vm._e()
                     }),
                     0
                   )
@@ -37271,30 +37342,32 @@ var render = function() {
                     "div",
                     { staticClass: "list-item" },
                     _vm._l(_vm.galleryVideo.data, function(item, i) {
-                      return _c("div", { key: i, staticClass: "item" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "box-img",
-                            on: {
-                              click: function($event) {
-                                return _vm.showModalSliderVideo(item)
-                              }
-                            }
-                          },
-                          [
-                            _c("img", {
-                              staticClass: " fit-cover",
-                              attrs: {
-                                src:
-                                  "http://img.youtube.com/vi/" +
-                                  item.youtube_code +
-                                  "/mqdefault.jpg"
-                              }
-                            })
-                          ]
-                        )
-                      ])
+                      return _vm.galleryVideo
+                        ? _c("div", { key: i, staticClass: "item" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "box-img",
+                                on: {
+                                  click: function($event) {
+                                    return _vm.showModalSliderVideo(item)
+                                  }
+                                }
+                              },
+                              [
+                                _c("img", {
+                                  staticClass: " fit-cover",
+                                  attrs: {
+                                    src:
+                                      "http://img.youtube.com/vi/" +
+                                      item.youtube_code +
+                                      "/mqdefault.jpg"
+                                  }
+                                })
+                              ]
+                            )
+                          ])
+                        : _vm._e()
                     }),
                     0
                   )
@@ -37351,12 +37424,14 @@ var render = function() {
                       },
                       [
                         _vm._l(_vm.galleryImage.data, function(item, i) {
-                          return _c("swiper-slide", { key: i }, [
-                            _c("img", {
-                              staticClass: "w-100 h-100 fit-cover",
-                              attrs: { src: "storage/" + item.img, alt: "" }
-                            })
-                          ])
+                          return _vm.galleryImage
+                            ? _c("swiper-slide", { key: i }, [
+                                _c("img", {
+                                  staticClass: "w-100 h-100 fit-cover",
+                                  attrs: { src: "storage/" + item.img, alt: "" }
+                                })
+                              ])
+                            : _vm._e()
                         }),
                         _vm._v(" "),
                         _c("div", {
@@ -37436,6 +37511,28 @@ var render = function() {
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container-customize" }, [
+      _c("nav", { attrs: { "aria-label": "breadcrumb" } }, [
+        _c("ol", { staticClass: "breadcrumb" }, [
+          _c("li", { staticClass: "breadcrumb-item" }, [
+            _c("a", { attrs: { href: "/" } }, [_vm._v("Trang chủ")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "breadcrumb-item" }, [
+            _c("a", { attrs: { href: "/truyenthong" } }, [
+              _vm._v("Truyền thông")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "breadcrumb-item active" }, [_vm._v("Media")])
+        ])
+      ])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -37534,16 +37631,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "filter", attrs: { id: "filter" } }, [
-      _c("div", { staticClass: "filter__title" }, [
-        _c("label", { attrs: { for: "" } }, [_vm._v("Ngành nghề ")]),
-        _vm._v(" "),
-        _c("i", { staticClass: "fas fa-angle-down" })
-      ]),
+    return _c("div", { staticClass: "filter__title" }, [
+      _c("label", { attrs: { for: "" } }, [_vm._v("Ngành nghề ")]),
       _vm._v(" "),
-      _c("div", { staticClass: "filler-list" }, [
-        _c("div", { staticClass: "col-md-12 col-12 search-cate" })
-      ])
+      _c("i", { staticClass: "fas fa-angle-down" })
     ])
   },
   function() {
@@ -37588,7 +37679,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "album-item__count" }, [
       _c("i", { staticClass: "far fa-image" }),
       _vm._v(" "),
-      _c("p", { staticClass: "quantity font18" }, [_vm._v("100")])
+      _c("p", { staticClass: "quantity font18" }, [_vm._v("100 ")])
     ])
   },
   function() {
