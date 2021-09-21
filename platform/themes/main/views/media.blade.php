@@ -15,6 +15,7 @@
     @endphp --}}
 
     <div id="app">
+       
         <page-media category-id="{{$category->id}}"> </page-media>
     </div>
 
