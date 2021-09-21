@@ -1,25 +1,12 @@
 <template>
     <div>
         <div class="media-content">
-            <div class="container-customize">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="/">Trang chủ</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="/truyenthong">Truyền thông</a>
-                        </li>
-                        <li class="breadcrumb-item active">Media</li>
-                    </ol>
-                </nav>
-            </div>
             <!---gallery--->
             <div class="media-wrapper">
                 <div class="container-customize">
                     <div class="image__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">
                         <img src="themes/main/images/introduce/arrow.png" alt="" />
-                        <h1 class="font50 big-title">Hình ảnh</h1>
+                        <h1 class="font50 big-title">Hình ảnh</h1> 
                     </div>
                     
                     <div class="tab-image">
@@ -55,7 +42,7 @@
                                         </div>
                                         <div class="filter" id="filter">
                                             <div class="filter__title">
-                                                <label for="">Ngành nghề </label>    
+                                                <label for="">Filter</label>    
                                                 <i class="fas fa-angle-down"></i>
                                             </div>
                                             <div class="filler-list">
@@ -130,7 +117,7 @@
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="album-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
+                                            <span class="album-item__date">{{item.created_at | formatDate('DD-MM-YYYY')}}</span>
                                             <div class="album-item__count">
                                                 <i class="far fa-image"></i>
                                                 <p class="quantity font18">100 </p>
@@ -302,7 +289,7 @@
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="video-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
+                                            <span class="video-item__date">{{item.created_at | formatDate('DD-MM-YYYY')}}</span>
                                             <div class="video-item__count">
                                                 <i class="fas fa-photo-video"></i>
                                                 <p class="quantity font18">100</p>

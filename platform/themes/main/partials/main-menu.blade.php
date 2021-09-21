@@ -25,7 +25,7 @@
                     @foreach($row->child as $key => $child)
                     <div class="cmenu">
                         <a href="{{ $child->url }}" title="{{$child->name}}" class="dropdown-item">
-                            {{$child->name}}
+                            {!!$child->name!!}
                         </a>
                     </div>
                     @endforeach
