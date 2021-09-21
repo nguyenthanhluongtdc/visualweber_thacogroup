@@ -103,7 +103,7 @@
                                             <span class="album-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
                                             <div class="album-item__count">
                                                 <i class="far fa-image"></i>
-                                                <p class="quantity font18">100</p>
+                                                <p class="quantity font18">100 </p>
                                             </div>
                                             <div title="Tải xuống album" class="album-item__download" @click="zipDownload(item.id)">
                                                 <i class="fas fa-download"></i>
