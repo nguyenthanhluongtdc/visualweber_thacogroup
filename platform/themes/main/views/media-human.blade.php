@@ -69,7 +69,7 @@ $postSlider = get_featured_posts(6);
                                        </div>
                                     </div>
                                </div>
-                        <div class="filter-search-media field mt-40">
+                        <div class="filter-search-media field mt-40 human">
                                     <form action="" class="form-search">
                                         <div class="search">
                                             <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
