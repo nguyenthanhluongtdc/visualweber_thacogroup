@@ -114,7 +114,7 @@
                             </div>
 
                             <p v-if="!dataImage.data">
-                                Du lieu
+                                Khong tim thay du lieu
                             </p>
 
                             <div class="tab-pane fade" id="media-single-image" role="tabpanel" aria-labelledby="field-2-tab">
