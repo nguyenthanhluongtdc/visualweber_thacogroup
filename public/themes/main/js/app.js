@@ -36876,7 +36876,7 @@ var render = function() {
                             staticClass: " form-control form-control-sm ",
                             attrs: {
                               type: "text",
-                              placeholder: "Nhập nội dung cần tìm",
+                              placeholder: "Nhập nội dung cần tìm....",
                               value: "",
                               name: "keyword",
                               autocomplete: "off"
