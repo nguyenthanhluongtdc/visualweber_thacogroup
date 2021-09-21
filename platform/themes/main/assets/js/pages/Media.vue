@@ -45,7 +45,7 @@
                                 <form action="">
                                     <div class="list-tool">
                                         <div class="search">
-                                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="keyword" autocomplete="off" v-model="keyword">
+                                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm..." value="" name="keyword" autocomplete="off" v-model="keyword">
                                             <button class="btn btn-secondary" type="submit">
                                                 <i class="fas fa-search"></i>
                                             </button>
@@ -57,17 +57,17 @@
                                         </div>
                                         <div class="filter" id="filter">
                                             <div class="filter__title">
-                                                <label for="">Filter </label>    
+                                                <label for="">Ngành nghề </label>    
                                                 <i class="fas fa-angle-down"></i>
                                             </div>
                                             <div class="filler-list">
                                                 <div class="col-md-12 col-12 search-cate">
-                                                    <div class="pretty p-default p-smooth" v-for="(item, i) in menuFilterImage">
+                                                    <!-- <div class="pretty p-default p-smooth" v-for="(item, i) in menuFilterImage">
                                                         <input type="radio" :value="item.reference_id" v-model="changeFilterPhoto" />
                                                         <div class="state p-primary">
                                                             <label> {{item.title}} </label>
                                                         </div>
-                                                    </div>    
+                                                    </div>     -->
                                                 </div>
                                             </div>
                                         </div>
@@ -93,7 +93,7 @@
                             <div class="tab-pane fade active show" id="media-album" role="tabpanel" aria-labelledby="field-1-tab">
                                 <div class="media-banner">
                                     <div class="list-album">
-                                        <div class="album-item" data-target="#album_modal" data-toggle="modal" v-if="dataImage" v-for="(item) in dataImage.data" :key="item.id">
+                                        <div class="album-item" data-target="#album_modal" data-toggle="modal" v-for="(item) in dataImage.data" :key="item.id">
                                             <div class="album-item__img" @click="loadGallery(item.id, 'album')">
                                                 <img :src="'storage/'+item.image" alt="">
                                             </div>
@@ -122,7 +122,7 @@
                             <div class="tab-pane fade" id="media-single-image" role="tabpanel" aria-labelledby="field-2-tab">
                                 <div class="media-banner">
                                     <div class="list-image">
-                                        <div class="image-item" v-if="dataImage" v-for="(item) in dataImage.data" :key="item.id">
+                                        <div class="image-item" v-for="(item) in dataImage.data" :key="item.id">
                                             <div class="image-item__img" @click="loadGallery(item.id)">
                                                 <img class="" :src="'storage/'+item.image" alt="">
                                             </div>
@@ -265,7 +265,7 @@
                             <div class="tab-pane fade active show" id="media-video" role="tabpanel" aria-labelledby="field-1-tab">
                                 <div class="list-video-wrapper">
                                     <div class="list-video">
-                                        <div class="video-item" data-target="#album_modal" data-toggle="modal" v-if="dataVideo" v-for="(item) in dataVideo.data" :key="item.id">
+                                        <div class="video-item" data-target="#album_modal" data-toggle="modal" v-for="(item) in dataVideo.data" :key="item.id">
                                             <div class="video-thumbnail" @click="loadGalleryVideo(item.id, 'album')">
                                                 <img :src="'storage/'+item.image" alt="">
                                             </div>
@@ -307,7 +307,7 @@
                                             </div>
                                             <div class="right">
                                                 <div class="list-video-left">
-                                                    <div class="video-item" v-if="dataVideo" v-for="(item) in dataVideo.data" :key="item.id">
+                                                    <div class="video-item" v-for="(item) in dataVideo.data" :key="item.id">
                                                         <div class="img-button" @click="changeVideoPlay(item)">
                                                             <img :src="'storage/'+item.image" alt="">
                                                             <i class="far fa-play-circle button-video"></i>
@@ -367,7 +367,7 @@
             <div class="modal-main">
                 <div class="modal-header-custom">
                     <p class="text-right mb-0">
-                        <button class="btn-close border-0 font30 font-weight-normal bg-white"@click="hideModalAlbumImage">
+                        <button class="btn-close border-0 font30 font-weight-normal bg-white" @click="hideModalAlbumImage">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
@@ -381,7 +381,7 @@
                 <div class="modal-body-custom">
                     <vue-custom-scrollbar class="scroll-area"  :settings="settingsScrollbar">
                         <div class="list-item">
-                            <div class="item" v-if="galleryImage" v-for="(item, i) in galleryImage.data" :key="i">
+                            <div class="item" v-for="(item, i) in galleryImage.data" :key="i">
                                 <div class="box-img" @click="showModalSliderImage">
                                     <img :src="'storage/'+item.img" class=" fit-cover" /> 
                                 </div>
@@ -403,7 +403,7 @@
             <div class="modal-main ">
                 <div class="modal-header-custom">
                     <p class="text-right mb-0">
-                        <button class="btn-close border-0 font30 font-weight-normal bg-white"@click="hideModalAlbumVideo">
+                        <button class="btn-close border-0 font30 font-weight-normal bg-white" @click="hideModalAlbumVideo">
                             <i class="fas fa-times"></i>
                         </button>
                     </p>
@@ -417,7 +417,7 @@
                 <div class="modal-body-custom">
                     <vue-custom-scrollbar class="scroll-area"  :settings="settingsScrollbar">
                         <div class="list-item">
-                            <div class="item" v-if="galleryVideo" v-for="(item, i) in galleryVideo.data" :key="i">
+                            <div class="item"  v-for="(item, i) in galleryVideo.data" :key="i">
                                 <div class="box-img" @click="showModalSliderVideo(item)">
                                     <img :src="'http://img.youtube.com/vi/'+item.youtube_code+'/mqdefault.jpg'" class=" fit-cover" /> 
                                 </div>
@@ -452,7 +452,7 @@
                     <template>
                         <div class="swiper-galleryImage h-100">
                             <swiper ref="galleryImage" :options="swiperOptions">
-                                <swiper-slide v-if="galleryImage" v-for="(item, i) in galleryImage.data" :key="i">
+                                <swiper-slide  v-for="(item, i) in galleryImage.data" :key="i">
                                     <img :src="'storage/'+item.img" alt="" class="w-100 h-100 fit-cover">
                                     <!-- <div class="icon--download">
                                         <a download :href="'storage/'+item.img" title="Tải xuống">
@@ -534,20 +534,29 @@ export default {
         return {
             //gallery
             swiperOptions: {
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: false,
+                },
                 slidesPerView: 1,
                 spaceBetween: 30,
                 pagination: {
                     el: '.swiper-pagination',
                     type: 'progressbar'
                 },
+                 keyboard: {
+                    enabled: true,
+                    onlyInViewport: false,
+                },
                 navigation: {
                     nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
+                    prevEl: '.swiper-button-prev' 
                 }
             },
             indexItem: -1,
             dataImage: [],
             galleryImage: [],
+            
             settingsScrollbar: {
                 suppressScrollY: false,
                 suppressScrollX: true,

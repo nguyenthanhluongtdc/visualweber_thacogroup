@@ -39,7 +39,8 @@
     }
 
     .page-content {
-        padding-top: 96px;
+        padding-top: 7%;
+        
     }
 
     .header {

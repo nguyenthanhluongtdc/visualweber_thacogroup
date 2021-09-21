@@ -93,6 +93,16 @@
                     padding: 2% 0.7% 2% 2%;
                     .pretty {
                         line-height: 1.1;
+                        
+                    }
+                    
+                    @media only screen and (max-width: 1080px){
+                        flex-wrap: wrap;
+                        margin: 2% 0;
+                        justify-content: flex-start;
+                        .pretty {
+                            margin: 10px;
+                        }
                     }
                 }
             }
@@ -114,4 +124,4 @@
             }
         }
     }
-}
+} 

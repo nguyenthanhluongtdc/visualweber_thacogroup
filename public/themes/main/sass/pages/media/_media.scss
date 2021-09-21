@@ -45,6 +45,8 @@
                         border: none;
                         border-top-left-radius: 0;
                         border-top-right-radius: 0;
+                        
+                       
                     }
                     .nav-link.active {
                         border: 1px solid $main_color;
@@ -62,10 +64,10 @@
                             margin-bottom: 1.5%;
                             position: relative;
                             background: #f1f1f1;
-                            // @media only screen and (max-width: 1080px){
-                            //     width: 48.5%;
-                            //     margin: 0 1% 1% 0;
-                            // }
+                            @media only screen and (max-width: 1080px){
+                                width: 48.5%;
+                                background: #fff;
+                            }
                             &:hover {
                                 .album-item__name {
                                     color: $main_color;
@@ -131,6 +133,14 @@
                         .album-item:last-child,
                         .album-item:nth-child(3) {
                             margin-right: 0;
+                            
+                           
+                        }
+                        .album-item:nth-child(n+1){
+                            @media only screen and (max-width: 1080px){
+                                margin-left: 1%;
+                                margin-right: 0;
+                            }
                         }
                     }
                 }
@@ -143,6 +153,10 @@
                             margin-right: 1.5%;
                             margin-bottom: 1.5%;
                             position: relative;
+                            @media only screen and (max-width: 1080px){
+                                width: 48.5%;
+                                background: #fff;
+                            }
                             &__back {
                                 position: absolute;
                                 padding: 5px;
@@ -171,6 +185,12 @@
                         .image-item:last-child,
                         .image-item:nth-child(3) {
                             margin-right: 0;
+                        }
+                        .image-item:nth-child(n+1){
+                            @media only screen and (max-width: 1080px){
+                                margin-left: 1%;
+                                margin-right: 0;
+                            }
                         }
                     }
                 }
@@ -228,9 +248,10 @@
                                 margin-bottom: 1.5%;
                                 position: relative;
                                 background: #f1f1f1;
-                                // @media only screen and (max-width: 1080px){
-                                //     width: 48.5%;
-                                // }
+                                @media only screen and (max-width: 1080px){
+                                    width: 48.5%;
+                                    background: #fff;
+                                }
                                 &:hover {
                                     .video-item__name {
                                         color: $main_color;
@@ -289,6 +310,12 @@
                             .video-item:nth-child(3),
                             .video-item:nth-child(6) {
                                 margin-right: 0;
+                            }
+                            .video-item:nth-child(n+1){
+                                @media only screen and (max-width: 1080px){
+                                    margin-left: 1%;
+                                    margin-right: 0;
+                                }
                             }
                         }
                     }
@@ -870,6 +897,20 @@
 .swiper-galleryImage .swiper-container {
     height: 100%;
     padding-bottom: 15px;
+    .swiper-slide{
+        img{
+            width: 80% !important;
+            height: 100%;
+            object-fit: contain;
+            position: relative;
+            align-self: center;
+            margin: 0 10%;
+            
+            @media only screen and (max-width: 1080px){
+                object-fit: unset !important;
+            }
+        }
+    }
 }
 
 .swiper-container-horizontal>.swiper-pagination-progressbar {
@@ -883,11 +924,11 @@
 
 .swiper-galleryImage {
     .swiper-button-prev::after {
-        color: #f1f1f1;
+        color: #464646b2;
         font-size: 50px;
     }
     .swiper-button-next::after {
-        color: #f1f1f1;
+        color: #464646b2;
         font-size: 50px;
     }
 }
