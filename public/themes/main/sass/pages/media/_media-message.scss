@@ -172,6 +172,8 @@
                         .content {
                             margin-left: 7%;
                             width: 56%;
+                            position: relative;
+                            align-self: center;
                             a {
                                 color: unset;
                                 &:hover {
