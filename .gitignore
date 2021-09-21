@@ -567,4 +567,4 @@ public/vendor
 platform/themes/main/public/css/common.css
 platform/themes/main/public/css/common.css.map
 platform/themes/main/public/css/style.css.map
-#platform/themes/main/assets/js/common.js
+public/themes/main/js/app.js

@@ -146,6 +146,28 @@ class PostRepository extends BlogPostRepository
                 $model->where('categories.id', $categoryId);
             });
 
+        // $categoryId = $filter['categoryId'];
+
+        // if (!is_array($filter['type'])) {
+        //     $filterCate = [$filter['type']];
+        // }
+
+        // $data = $this->model
+        //     ->where('posts.status', BaseStatusEnum::PUBLISHED)
+        //     ->join('post_categories', 'post_categories.post_id', '=', 'posts.id')
+        //     ->join('categories', 'post_categories.category_id', '=', 'categories.id')
+        //     ->select('posts.*')
+        //     ->distinct()
+        //     ->with('slugable')
+        //     ->orderBy('posts.created_at', 'desc');
+
+        // if($filter['type']) {
+        //     $data->whereIn('post_categories.category_id', $filterCate)
+        //         ->where('categories', 'categories.parent_id', $categoryId);
+        // }else {
+        //     $data->where('post_categories.category_id', $categoryId);
+        // }
+
         $data->where('posts.name','like', '%'. $filter['keyword'] .'%');
         $data->where('posts.format_type', $filter['format_type']);
 

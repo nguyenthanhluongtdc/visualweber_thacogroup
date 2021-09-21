@@ -9,6 +9,7 @@ use Illuminate\Support\Arr;
 use ZipArchive;
 use File;
 use Carbon\Carbon;
+use Menu;
 
 class ApiController extends Controller {
     
@@ -30,7 +31,13 @@ class ApiController extends Controller {
         $paginate = theme_option('number_of_posts_in_a_category');
 
         $data = app(PostInterfaceCustom::class)->getFilterPostByCategory($filter, $paginate);
-                
+
+        foreach($data as $da) {
+            $da['youtube_code'] = "";
+            if(has_field($da, 'youtube_code')) {
+                $da['youtube_code'] = has_field($da, 'youtube_code');
+            }
+        }
 
         return response()->json([
             'data'  => $data,
@@ -117,6 +124,16 @@ class ApiController extends Controller {
             'data'      => $data,
             'name'      => $post->name,
             'message'   => 'success'
+        ], 200);
+    }
+
+    public function getMenuByLocation(Request $request) {
+        $menu_name = $request->location;
+
+        $menu_nodes = Menu::getDataMenu($menu_name);
+        
+        return response()->json([
+            'data'  => $menu_nodes['menu_nodes'],
         ], 200);
     }
 }

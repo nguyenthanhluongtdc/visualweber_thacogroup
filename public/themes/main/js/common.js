@@ -139,7 +139,7 @@ let newPostSlide = new Swiper('.new-post-slide', {
         nextEl: '.new-post-slide .swiper-button-next',
         prevEl: '.new-post-slide .swiper-button-prev',
     },
-    breakpoints: { 
+    breakpoints: {
         1024: {
             slidesPerView: 1,
             // centeredSlides: true,
@@ -413,7 +413,7 @@ function hasScrolled() {
         } else {
             // Scroll Up
 
-            if (st + $(window).height() < $(document).height()) { 
+            if (st + $(window).height() < $(document).height()) {
                 $('header').removeClass('nav-up').addClass('nav-down');
                 $('.post-sidebar-content').css('top', 100);
                 $('.relationship-sibar').css('top', 100);
@@ -619,45 +619,6 @@ $(document).ready(function() {
 
 
 console.clear();
-
-// function updSwiperNumericPagination() {
-//   this.el.querySelector( '.swiper-counter' )
-//     .innerHTML = '<span class="count">'+ (this.realIndex + 1) +'</span>/<span class="total">'+ this.el.slidesQuantity +'</span>';
-// }
-
-
-// document.addEventListener( 'DOMContentLoaded', function () {
-//   document.querySelectorAll( '.swiper-content-detail' ).forEach( function( node ) {
-
-//     node.slidesQuantity = node.querySelectorAll( '.swiper-slide' ).length;
-
-//     // Swiper initialization
-//     new Swiper( node, {
-//       speed:         1000,
-//       loop:          true,
-//     //   autoplay:      { delay: 2000, },
-
-//         slidesPerView: 4,
-//         paginationClickable: true,
-//         spaceBetween: 0,
-//         pagination: {
-//             el: '.swiper-pagination',
-//             type: 'fraction',
-//             formatFractionCurrent: function (number) {
-//                 return '0' + number;
-//             }
-//           },
-//       navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev"
-//       },
-//       on: {
-//         init:        updSwiperNumericPagination,
-//         slideChange: updSwiperNumericPagination
-//       }
-//     });
-//   });
-// });
 
 $(function() {
     var swiper = new Swiper('.swiper-content-detail', {

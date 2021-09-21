@@ -60,42 +60,12 @@
                                             </div>
                                             <div class="filler-list">
                                                 <div class="col-md-12 col-12 search-cate">
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
+                                                    <div class="pretty p-default p-smooth" v-for="(item, i) in menuFilterImage">
+                                                        <input type="radio" :value="item.reference_id" v-model="changeFilterPhoto" />
                                                         <div class="state p-primary">
-                                                            <label>THACO</label>
+                                                            <label> {{item.title}} </label>
                                                         </div>
-                                                    </div>
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Ô tô & Cơ khí</label>
-                                                        </div>
-                                                    </div>  
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Nông Lâm Nghiệp</label>
-                                                        </div>
-                                                    </div> 
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Đầu tư - Xây Dựng</label>
-                                                        </div>
-                                                    </div> 
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Thương mại - Dịch vụ</label>
-                                                        </div>
-                                                    </div> 
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Logistics</label>
-                                                        </div>
-                                                    </div>     
+                                                    </div>    
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +100,7 @@
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="album-item__date">{{item.created_at | formatDate('d-m-Y')}}</span>
+                                            <span class="album-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
                                             <div class="album-item__count">
                                                 <i class="far fa-image"></i>
                                                 <p class="quantity font18">100</p>
@@ -307,9 +277,9 @@
                                                 <i class="fas fa-photo-video"></i>
                                                 <p class="quantity font18">100</p>
                                             </div>
-                                            <div title="Tải xuống album" class="video-item__download" @click="zipDownload(item.id)">
+                                            <!-- <div title="Tải xuống album" class="video-item__download" @click="zipDownload(item.id)">
                                                 <i class="fas fa-download"></i>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -317,31 +287,35 @@
 
                             <div class="tab-pane fade" id="media-single-video" role="tabpanel" aria-labelledby="field-2-tab">
                                     <div class="media-video mCustomScrollbar" data-mcs-theme="dark">
-                                        <div class="list-video" >
+                                        <div class="list-video">
                                             <div class="left">
-                                                <div class="video-main">
+                                                <div class="video-main" v-if="videoPlay">
                                                     <div class="video-wrapper">
-                                                        <video muted loop  autoplay class="__video w-100">
+                                                        <!-- <video muted loop  autoplay class="__video w-100">
                                                             <source src="themes/main/images/video/chuc-mung-nam-moi.mp4" type="video/mp4">
-                                                        </video> 
+                                                        </video>  -->
+
+                                                        <iframe style="width: 100%; height: 350px;" class="youtube-player" id="player" type="text/html" :src="'https://www.youtube.com/embed/'+videoPlay.youtube_code+'?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1'" frameborder="0" muted="muted"></iframe>
+
                                                     </div>
                                                     <p class="name font30">
-                                                        THACO CHÚC MỪNG NĂM MỚI – XUÂN TÂN SỬU 2021
+                                                        {{dataVideo.name}}
                                                     </p>
                                                 </div>
                                             </div>
                                             <div class="right">
                                                 <div class="list-video-left">
-                                                    <div class="video-item">
-                                                        <a href="" class="img-button">
-                                                            <img src="themes/main/images/media/video-1.jpg" alt="">
+                                                    <div class="video-item" v-if="dataVideo" v-for="(item) in dataVideo.data" :key="item.id">
+                                                        <div class="img-button" @click="changeVideoPlay(item)">
+                                                            <img :src="'storage/'+item.image" alt="">
                                                             <i class="far fa-play-circle button-video"></i>
-                                                        </a>
+                                                        </div>
                                                         <p class="name font20">
-                                                            MAZDA CX-30: TÂN BINH PHÂN KHÚC SUV ĐÔ THỊ CÓ GÌ HẤP DẪN KHÁCH HÀNG?
+                                                           {{item.name}}
                                                         </p>                         
                                                     </div>
-                                                    <div class="video-item ">
+
+                                                    <!-- <div class="video-item ">
                                                         <a href="" class="img-button">
                                                             <img src="themes/main/images/media/video-2.jpg" alt="">
                                                             <i class="far fa-play-circle button-video"></i>
@@ -360,7 +334,7 @@
                                                         <p class="name  font20">
                                                             10 ĐIỂM GIÚP MAZDA6 MỚI THUYẾT PHỤC KHÁCH HÀNG VIỆT NAM
                                                         </p>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -373,7 +347,7 @@
                         :perPage="albumImagePerPage"
                         :totalPages="albumImageTotalPages"
                         :currentPage="albumImageCurrentPage"
-                         @pagechanged="albumImageOnPageChange"
+                        @pagechanged="albumImageOnPageChange"
                     /> -->
 
                         <paginationn  
@@ -388,9 +362,9 @@
 
         <!---modal-album--->
         <modal name="albumImage-modal">
-            <div class="modal-main p-4">
+            <div class="modal-main">
                 <div class="modal-header-custom">
-                    <p class="text-right">
+                    <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white"@click="hideModalAlbumImage">
                             <i class="fas fa-times"></i>
                         </button>
@@ -404,10 +378,10 @@
                 
                 <div class="modal-body-custom">
                     <vue-custom-scrollbar class="scroll-area"  :settings="settingsScrollbar">
-                        <div class="row m-n2 pr-5">
-                            <div class="col-lg-4 p-2" v-if="galleryImage" v-for="(item, i) in galleryImage.data" :key="i">
+                        <div class="list-item">
+                            <div class="item" v-if="galleryImage" v-for="(item, i) in galleryImage.data" :key="i">
                                 <div class="box-img" @click="showModalSliderImage">
-                                    <img :src="'storage/'+item.img" class="mw-100 fit-cover" /> 
+                                    <img :src="'storage/'+item.img" class=" fit-cover" /> 
                                 </div>
                                 <div class="icon--download">
                                     <a download :href="'storage/'+item.img" title="Tải xuống">
@@ -424,9 +398,9 @@
 
         <!---modal-album video--->
         <modal name="albumVideo-modal">
-            <div class="modal-main p-4">
+            <div class="modal-main ">
                 <div class="modal-header-custom">
-                    <p class="text-right">
+                    <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white"@click="hideModalAlbumVideo">
                             <i class="fas fa-times"></i>
                         </button>
@@ -440,16 +414,16 @@
                 
                 <div class="modal-body-custom">
                     <vue-custom-scrollbar class="scroll-area"  :settings="settingsScrollbar">
-                        <div class="row m-n2 pr-5">
-                            <div class="col-lg-4 p-2" v-if="galleryVideo" v-for="(item, i) in galleryVideo.data" :key="i">
+                        <div class="list-item">
+                            <div class="item" v-if="galleryVideo" v-for="(item, i) in galleryVideo.data" :key="i">
                                 <div class="box-img" @click="showModalSliderVideo(item)">
-                                    <img :src="'http://img.youtube.com/vi/'+item.youtube_code+'/mqdefault.jpg'" class="mw-100 fit-cover" /> 
+                                    <img :src="'http://img.youtube.com/vi/'+item.youtube_code+'/mqdefault.jpg'" class=" fit-cover" /> 
                                 </div>
-                                <div class="icon--download">
+                                <!-- <div class="icon--download">
                                     <a download :href="'http://img.youtube.com/vi/'+item.youtube_code+'/mqdefault.jpg'" title="Tải xuống">
                                         <i class="fas fa-download text-white"></i>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </vue-custom-scrollbar>
@@ -460,9 +434,9 @@
 
         <!---modal-detail--->
         <modal name="sliderImage-modal">
-            <div class="modal-main p-4">
-                <div class="modal-header-custom mb-4">
-                    <p class="text-right">
+            <div class="modal-main">
+                <div class="modal-header-custom">
+                    <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white" @click="hideModalSliderImage">
                             <i class="fas fa-times"></i>
                         </button>
@@ -472,17 +446,17 @@
                     </h2>
                 </div>
                 
-                <div class="modal-body-custom pb-4">
+                <div class="modal-body-custom">
                     <template>
                         <div class="swiper-galleryImage h-100">
                             <swiper ref="galleryImage" :options="swiperOptions">
                                 <swiper-slide v-if="galleryImage" v-for="(item, i) in galleryImage.data" :key="i">
                                     <img :src="'storage/'+item.img" alt="" class="w-100 h-100 fit-cover">
-                                    <div class="icon--download">
+                                    <!-- <div class="icon--download">
                                         <a download :href="'storage/'+item.img" title="Tải xuống">
                                             <i class="fas fa-download text-white"></i>
                                         </a>
-                                    </div>
+                                    </div> -->
                                 </swiper-slide>
 
                                 <div class="swiper-pagination" slot="pagination"></div>
@@ -498,9 +472,9 @@
 
         <!---modal-detail--->
         <modal name="sliderVideo-modal">
-            <div class="modal-main p-4">
-                <div class="modal-header-custom mb-4">
-                    <p class="text-right">
+            <div class="modal-main">
+                <div class="modal-header-custom">
+                    <p class="text-right mb-0">
                         <button class="btn-close border-0 font30 font-weight-normal bg-white" @click="hideModalSliderVideo">
                             <i class="fas fa-times"></i>
                         </button>
@@ -510,7 +484,7 @@
                     </h2>
                 </div>
                 
-                <div class="modal-body-custom pb-4">
+                <div class="modal-body-custom ">
                     <iframe width="420" class="w-100" height="345" :src="'https://www.youtube.com/embed/'+itemVideoDetail.youtube_code"></iframe>
                 </div>
             </div>
@@ -558,12 +532,6 @@ export default {
         return {
             //gallery
             swiperOptions: {
-                
-                keyboard: {
-                enabled: true,
-                onlyInViewport: false,
-                },
-
                 slidesPerView: 1,
                 spaceBetween: 30,
                 pagination: {
@@ -586,12 +554,16 @@ export default {
             filterAlbumImage: {
                 keyword: "",
                 date: "",
-                type: "",
+                type: [],
                 sort: "",
                 format_type: 'gallery',
                 categoryId: this.categoryId,
             },
             keyword: '',
+            changeFilterPhoto: {
+                type: Number,
+            },
+            menuFilterImage: [],
 
             //video
             dataVideo: [],
@@ -606,6 +578,7 @@ export default {
             },
             keywordVideo: '',
             itemVideoDetail: [],
+            videoPlay: [],
         }
     },
 
@@ -616,7 +589,10 @@ export default {
         },
         keywordVideo(after, before) {
             this.loadAlbumVideo();
-        }
+        },
+        changeFilterPhoto() {
+             this.loadAlbumImage()
+        },
     },
 
     //init method
@@ -645,6 +621,7 @@ export default {
 
         loadAlbumImage: function(page=1) {
             this.filterAlbumImage.keyword = this.keyword
+            this.filterAlbumImage.type = this.changeFilterPhoto
 
             this.loadAlbumCommon(page, this.filterAlbumImage)
             // await this.$http.post('api/get/album/image?page='+page, {data: this.filterAlbumImage} )
@@ -671,7 +648,10 @@ export default {
 
                     if(filter.format_type=='gallery') {
                         this.dataImage = response
-                    }else this.dataVideo = response
+                    }else {
+                        this.dataVideo = response
+                        this.videoPlay = this.dataVideo.data[0]
+                    }
                     
                 })
                 .catch(error=> {
@@ -738,6 +718,18 @@ export default {
                     console.log(error)
                 })
         },
+        loadMenuFilter: async function(location) {
+            await this.$http.post('api/get/menu/',{location: location})
+                .then(response=> {
+                    return response.data
+                })
+                .then(response=> {
+                    this.menuFilterImage = response.data
+                })
+                .catch(error=> {
+                    console.log(error)
+                })
+        },
 
         //video
         loadAlbumVideo: function(page=1) {
@@ -764,6 +756,11 @@ export default {
                 this.showGalleryVideo(album)
             }
         },
+        //change video play
+        changeVideoPlay: function(video) {
+            this.videoPlay = video
+        },
+
         //filter date
         changeDateAndLoadDataVideo: function(event) {
             this.filterAlbumVideo.date = event.target.value;
@@ -773,6 +770,7 @@ export default {
         albumVideoOnPageChange(page) {
             this.loadAlbumVideo(page);
         },
+
     },
 
     //computed
@@ -789,87 +787,16 @@ export default {
 
         //load album video
         this.loadAlbumVideo();
+
+        //menu filter
+        this.loadMenuFilter('photo-gallery-menu');
     },
 }
 </script>
-
 <style>
-    .vm--modal {
-        height: 80vh !important;
-        width: 60% !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-50%, -50%);
-    }
-
-    .fit-cover {
-        object-fit: cover;
-    }
-
-    .modal-main {
-        height: 100%;
-    }
-
-    .modal-header-custom {
-        height: 20%;
-    }
-
-    .modal-body-custom {
-        height: 80%;
-        width: 80% !important;
-    }
-
-    .scroll-area {
-        position: relative;
-        margin: auto;
-        width: 100%;
-        height: 100%;
-    }
-
-    .ps__rail-y {
-        background-color: #fff !important;
-    }
-
-    .ps__thumb-y {
-        background-color: gray !important;
-    }
-
-    .modal-header-custom .name {
-        font-family: "MyriadPro-Bold";
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-    }
-
-    .swiper-galleryImage .swiper-container {
-        height: 100%;
-        padding-bottom: 15px;
-    }
-
-    /* .swiper-galleryImage .swiper-slide img{
-        transform: scale(0.8);
-        transition: transform 300ms;
-        opacity: 0.6;
-    }
-    .swiper-galleryImage .swiper-slide-active img {
-        transform: scale(1);
-        opacity: 1;
-    } */
-
-    .swiper-container-horizontal > .swiper-pagination-progressbar {
-        top: inherit;
-        bottom: 0;
-    }
-
-    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-        background: #2e3951;
-    }
-
-    .pagination {
-        justify-content: center;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+.pagination {
+    width: 100%;
+    justify-content: center;
+    margin: 40px 0;
+}
 </style>

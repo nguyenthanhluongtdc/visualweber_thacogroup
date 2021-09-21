@@ -1,5 +1,14 @@
 
 @if(!blank($category) && isset($category))
+
+
+    @php
+        // $menu = app(Platform\Menu\Repositories\Interfaces\MenuLocationInterface::class)->getByMenuId(6);
+
+        // dd($menu);
+
+        //dd(Menu::getDataMenu('main-menu'));
+    @endphp
     {{-- @php
         $albumImage = get_posts_type_by_category($category->id, 4, 'gallery');
         $albumVideo = get_posts_type_by_category($category->id, 3, 'video');
