@@ -81,3 +81,9 @@
         }
     }
 }
+
+.filter-search-media.field.human{
+    @media only screen and (max-width: 1080px){
+        margin-top: 0 !important;
+    }
+}

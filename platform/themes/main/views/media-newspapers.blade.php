@@ -28,7 +28,7 @@
                                     </select>
                                 </form>
                              </div>
-                            <div class="list-info">
+                            <div class="list-info"> 
                                 @php
                                 $posts = get_posts_by_category($category->id ?? 18, 5);
                                  @endphp
@@ -60,6 +60,7 @@
                                         <a href="{{ get_image_url(get_field($post, 'newspapper_files')) }}" class="download" target="_blank" download>
 
                                             <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="" >
+                                            <img src="{{ Theme::asset()->url('images/relationship/down.png') }}" alt="" class="img-mobile">
                                         </a>
                                         <div class="downcontent">
                                             <ul class="list-file">
