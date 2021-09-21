@@ -1,19 +1,6 @@
 <template>
     <div>
         <div class="media-content">
-            <div class="container-customize">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="/">Trang chủ</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="/truyenthong">Truyền thông</a>
-                        </li>
-                        <li class="breadcrumb-item active">Media</li>
-                    </ol>
-                </nav>
-            </div>
             <!---gallery--->
             <div class="media-wrapper">
                 <div class="container-customize">
@@ -55,7 +42,7 @@
                                         </div>
                                         <div class="filter" id="filter">
                                             <div class="filter__title">
-                                                <label for="">Ngành nghề </label>    
+                                                <label for="">Filter</label>    
                                                 <i class="fas fa-angle-down"></i>
                                             </div>
                                             <div class="filler-list">
