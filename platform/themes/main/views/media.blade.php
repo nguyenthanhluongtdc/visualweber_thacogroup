@@ -15,7 +15,7 @@
     @endphp --}}
 
     <div id="app">
-       
+        @includeIf("theme.main::views.breadcrumb")
         <page-media category-id="{{$category->id}}"> </page-media>
     </div>
 

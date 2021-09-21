@@ -87,7 +87,7 @@
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="album-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
+                                            <span class="album-item__date">{{item.created_at | formatDate('DD-MM-YYYY')}}</span>
                                             <div class="album-item__count">
                                                 <i class="far fa-image"></i>
                                                 <p class="quantity font18">100 </p>
@@ -259,7 +259,7 @@
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="video-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
+                                            <span class="video-item__date">{{item.created_at | formatDate('DD-MM-YYYY')}}</span>
                                             <div class="video-item__count">
                                                 <i class="fas fa-photo-video"></i>
                                                 <p class="quantity font18">100</p>
