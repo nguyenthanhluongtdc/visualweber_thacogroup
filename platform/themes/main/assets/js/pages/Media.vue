@@ -6,7 +6,7 @@
                 <div class="container-customize">
                     <div class="image__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">
                         <img src="themes/main/images/introduce/arrow.png" alt="" />
-                        <h1 class="font50 big-title">Hình ảnh</h1>
+                        <h1 class="font50 big-title">Hình ảnh</h1> 
                     </div>
                     
                     <div class="tab-image">
