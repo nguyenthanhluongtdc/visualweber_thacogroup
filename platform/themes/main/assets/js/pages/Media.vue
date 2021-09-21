@@ -605,7 +605,7 @@ export default {
     },
 
     //init method
-    methods: {
+    methods: { 
 
         //gallery
         loadGallery: async function(id, album="") {
