@@ -14,7 +14,7 @@
                 </div>
                 <div class="filter" id="filter">
                     <div class="filter__title">
-                        <label for="">Filter </label>    
+                        <label for="">Filterrrrr </label>    
                         <i class="fas fa-angle-down"></i>
                     </div>
                     <div class="filler-list">
@@ -74,5 +74,5 @@
             </div>
         </form>
     </div>
-    
+
     

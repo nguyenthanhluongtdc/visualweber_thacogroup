@@ -2092,6 +2092,8 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -2617,20 +2619,28 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
   },
   //init data
   data: function data() {
+    var _swiperOptions;
+
     return {
       //gallery
-      swiperOptions: {
+      swiperOptions: (_swiperOptions = {
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false
+        },
         slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
           el: '.swiper-pagination',
           type: 'progressbar'
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
         }
-      },
+      }, _defineProperty(_swiperOptions, "keyboard", {
+        enabled: true,
+        onlyInViewport: false
+      }), _defineProperty(_swiperOptions, "navigation", {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }), _swiperOptions),
       indexItem: -1,
       dataImage: [],
       galleryImage: [],
@@ -36493,7 +36503,7 @@ var render = function() {
                             staticClass: " form-control form-control-sm ",
                             attrs: {
                               type: "text",
-                              placeholder: "Nhập nội dung cần tìm",
+                              placeholder: "Nhập nội dung cần tìm...",
                               value: "",
                               name: "keyword",
                               autocomplete: "off"
@@ -36540,67 +36550,7 @@ var render = function() {
                           )
                         ]),
                         _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "filter", attrs: { id: "filter" } },
-                          [
-                            _vm._m(4),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "filler-list" }, [
-                              _c(
-                                "div",
-                                { staticClass: "col-md-12 col-12 search-cate" },
-                                _vm._l(_vm.menuFilterImage, function(item, i) {
-                                  return _c(
-                                    "div",
-                                    {
-                                      staticClass: "pretty p-default p-smooth"
-                                    },
-                                    [
-                                      _c("input", {
-                                        directives: [
-                                          {
-                                            name: "model",
-                                            rawName: "v-model",
-                                            value: _vm.changeFilterPhoto,
-                                            expression: "changeFilterPhoto"
-                                          }
-                                        ],
-                                        attrs: { type: "radio" },
-                                        domProps: {
-                                          value: item.reference_id,
-                                          checked: _vm._q(
-                                            _vm.changeFilterPhoto,
-                                            item.reference_id
-                                          )
-                                        },
-                                        on: {
-                                          change: function($event) {
-                                            _vm.changeFilterPhoto =
-                                              item.reference_id
-                                          }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "state p-primary" },
-                                        [
-                                          _c("label", [
-                                            _vm._v(
-                                              " " + _vm._s(item.title) + " "
-                                            )
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                }),
-                                0
-                              )
-                            ])
-                          ]
-                        ),
+                        _vm._m(4),
                         _vm._v(" "),
                         _vm._m(5)
                       ])
@@ -36631,96 +36581,90 @@ var render = function() {
                             "div",
                             { staticClass: "list-album" },
                             _vm._l(_vm.dataImage.data, function(item) {
-                              return _vm.dataImage
-                                ? _c(
+                              return _c(
+                                "div",
+                                {
+                                  key: item.id,
+                                  staticClass: "album-item",
+                                  attrs: {
+                                    "data-target": "#album_modal",
+                                    "data-toggle": "modal"
+                                  }
+                                },
+                                [
+                                  _c(
                                     "div",
                                     {
-                                      key: item.id,
-                                      staticClass: "album-item",
-                                      attrs: {
-                                        "data-target": "#album_modal",
-                                        "data-toggle": "modal"
+                                      staticClass: "album-item__img",
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.loadGallery(
+                                            item.id,
+                                            "album"
+                                          )
+                                        }
                                       }
                                     },
                                     [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "album-item__img",
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.loadGallery(
-                                                item.id,
-                                                "album"
-                                              )
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("img", {
-                                            attrs: {
-                                              src: "storage/" + item.image,
-                                              alt: ""
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "album-item__name " },
-                                        [
-                                          _c(
-                                            "p",
-                                            { staticClass: "name font20" },
-                                            [
-                                              _vm._v(
-                                                "\n                                            " +
-                                                  _vm._s(item.name) +
-                                                  "                                         \n                                            "
-                                              )
-                                            ]
+                                      _c("img", {
+                                        attrs: {
+                                          src: "storage/" + item.image,
+                                          alt: ""
+                                        }
+                                      })
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "album-item__name " },
+                                    [
+                                      _c("p", { staticClass: "name font20" }, [
+                                        _vm._v(
+                                          "\n                                            " +
+                                            _vm._s(item.name) +
+                                            "                                         \n                                            "
+                                        )
+                                      ])
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "span",
+                                    { staticClass: "album-item__date" },
+                                    [
+                                      _vm._v(
+                                        _vm._s(
+                                          _vm._f("formatDate")(
+                                            item.created_at,
+                                            "d/m/Y"
                                           )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        { staticClass: "album-item__date" },
-                                        [
-                                          _vm._v(
-                                            _vm._s(
-                                              _vm._f("formatDate")(
-                                                item.created_at,
-                                                "d/m/Y"
-                                              )
-                                            )
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _vm._m(6, true),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "album-item__download",
-                                          attrs: { title: "Tải xuống album" },
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.zipDownload(item.id)
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("i", {
-                                            staticClass: "fas fa-download"
-                                          })
-                                        ]
+                                        )
                                       )
                                     ]
+                                  ),
+                                  _vm._v(" "),
+                                  _vm._m(6, true),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "album-item__download",
+                                      attrs: { title: "Tải xuống album" },
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.zipDownload(item.id)
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _c("i", {
+                                        staticClass: "fas fa-download"
+                                      })
+                                    ]
                                   )
-                                : _vm._e()
+                                ]
+                              )
                             }),
                             0
                           )
@@ -36752,82 +36696,72 @@ var render = function() {
                             "div",
                             { staticClass: "list-image" },
                             _vm._l(_vm.dataImage.data, function(item) {
-                              return _vm.dataImage
-                                ? _c(
+                              return _c(
+                                "div",
+                                { key: item.id, staticClass: "image-item" },
+                                [
+                                  _c(
                                     "div",
-                                    { key: item.id, staticClass: "image-item" },
+                                    {
+                                      staticClass: "image-item__img",
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.loadGallery(item.id)
+                                        }
+                                      }
+                                    },
                                     [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "image-item__img",
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.loadGallery(item.id)
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("img", {
-                                            attrs: {
-                                              src: "storage/" + item.image,
-                                              alt: ""
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "image-item__back",
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.loadGallery(
-                                                item.id,
-                                                "album"
-                                              )
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("i", {
-                                            staticClass: "far fa-image"
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "p",
-                                            { staticClass: "text font18" },
-                                            [_vm._v("Album")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "icon--download" },
-                                        [
-                                          _c(
-                                            "a",
-                                            {
-                                              attrs: {
-                                                download: "",
-                                                href: "storage/" + item.image,
-                                                title: "Tải xuống"
-                                              }
-                                            },
-                                            [
-                                              _c("i", {
-                                                staticClass:
-                                                  "fas fa-download text-white"
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      )
+                                      _c("img", {
+                                        attrs: {
+                                          src: "storage/" + item.image,
+                                          alt: ""
+                                        }
+                                      })
                                     ]
-                                  )
-                                : _vm._e()
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "image-item__back",
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.loadGallery(
+                                            item.id,
+                                            "album"
+                                          )
+                                        }
+                                      }
+                                    },
+                                    [
+                                      _c("i", { staticClass: "far fa-image" }),
+                                      _vm._v(" "),
+                                      _c("p", { staticClass: "text font18" }, [
+                                        _vm._v("Album")
+                                      ])
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "icon--download" }, [
+                                    _c(
+                                      "a",
+                                      {
+                                        attrs: {
+                                          download: "",
+                                          href: "storage/" + item.image,
+                                          title: "Tải xuống"
+                                        }
+                                      },
+                                      [
+                                        _c("i", {
+                                          staticClass:
+                                            "fas fa-download text-white"
+                                        })
+                                      ]
+                                    )
+                                  ])
+                                ]
+                              )
                             }),
                             0
                           )
@@ -36876,7 +36810,7 @@ var render = function() {
                             staticClass: " form-control form-control-sm ",
                             attrs: {
                               type: "text",
-                              placeholder: "Nhập nội dung cần tìm",
+                              placeholder: "Nhập nội dung cần tìm....",
                               value: "",
                               name: "keyword",
                               autocomplete: "off"
@@ -36954,80 +36888,72 @@ var render = function() {
                             "div",
                             { staticClass: "list-video" },
                             _vm._l(_vm.dataVideo.data, function(item) {
-                              return _vm.dataVideo
-                                ? _c(
+                              return _c(
+                                "div",
+                                {
+                                  key: item.id,
+                                  staticClass: "video-item",
+                                  attrs: {
+                                    "data-target": "#album_modal",
+                                    "data-toggle": "modal"
+                                  }
+                                },
+                                [
+                                  _c(
                                     "div",
                                     {
-                                      key: item.id,
-                                      staticClass: "video-item",
-                                      attrs: {
-                                        "data-target": "#album_modal",
-                                        "data-toggle": "modal"
+                                      staticClass: "video-thumbnail",
+                                      on: {
+                                        click: function($event) {
+                                          return _vm.loadGalleryVideo(
+                                            item.id,
+                                            "album"
+                                          )
+                                        }
                                       }
                                     },
                                     [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "video-thumbnail",
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.loadGalleryVideo(
-                                                item.id,
-                                                "album"
-                                              )
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("img", {
-                                            attrs: {
-                                              src: "storage/" + item.image,
-                                              alt: ""
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "video-item__name font20"
-                                        },
-                                        [
-                                          _c(
-                                            "p",
-                                            { staticClass: "name font20" },
-                                            [
-                                              _vm._v(
-                                                "\n                                            " +
-                                                  _vm._s(item.name) +
-                                                  "                                         \n                                            "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        { staticClass: "video-item__date" },
-                                        [
-                                          _vm._v(
-                                            _vm._s(
-                                              _vm._f("formatDate")(
-                                                item.created_at,
-                                                "d/m/Y"
-                                              )
-                                            )
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _vm._m(12, true)
+                                      _c("img", {
+                                        attrs: {
+                                          src: "storage/" + item.image,
+                                          alt: ""
+                                        }
+                                      })
                                     ]
-                                  )
-                                : _vm._e()
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "video-item__name font20" },
+                                    [
+                                      _c("p", { staticClass: "name font20" }, [
+                                        _vm._v(
+                                          "\n                                            " +
+                                            _vm._s(item.name) +
+                                            "                                         \n                                            "
+                                        )
+                                      ])
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "span",
+                                    { staticClass: "video-item__date" },
+                                    [
+                                      _vm._v(
+                                        _vm._s(
+                                          _vm._f("formatDate")(
+                                            item.created_at,
+                                            "d/m/Y"
+                                          )
+                                        )
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _vm._m(12, true)
+                                ]
+                              )
                             }),
                             0
                           )
@@ -37097,56 +37023,51 @@ var render = function() {
                                   "div",
                                   { staticClass: "list-video-left" },
                                   _vm._l(_vm.dataVideo.data, function(item) {
-                                    return _vm.dataVideo
-                                      ? _c(
+                                    return _c(
+                                      "div",
+                                      {
+                                        key: item.id,
+                                        staticClass: "video-item"
+                                      },
+                                      [
+                                        _c(
                                           "div",
                                           {
-                                            key: item.id,
-                                            staticClass: "video-item"
+                                            staticClass: "img-button",
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.changeVideoPlay(item)
+                                              }
+                                            }
                                           },
                                           [
-                                            _c(
-                                              "div",
-                                              {
-                                                staticClass: "img-button",
-                                                on: {
-                                                  click: function($event) {
-                                                    return _vm.changeVideoPlay(
-                                                      item
-                                                    )
-                                                  }
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "storage/" + item.image,
-                                                    alt: ""
-                                                  }
-                                                }),
-                                                _vm._v(" "),
-                                                _c("i", {
-                                                  staticClass:
-                                                    "far fa-play-circle button-video"
-                                                })
-                                              ]
-                                            ),
+                                            _c("img", {
+                                              attrs: {
+                                                src: "storage/" + item.image,
+                                                alt: ""
+                                              }
+                                            }),
                                             _vm._v(" "),
-                                            _c(
-                                              "p",
-                                              { staticClass: "name font20" },
-                                              [
-                                                _vm._v(
-                                                  "\n                                                       " +
-                                                    _vm._s(item.name) +
-                                                    "\n                                                    "
-                                                )
-                                              ]
+                                            _c("i", {
+                                              staticClass:
+                                                "far fa-play-circle button-video"
+                                            })
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "p",
+                                          { staticClass: "name font20" },
+                                          [
+                                            _vm._v(
+                                              "\n                                                       " +
+                                                _vm._s(item.name) +
+                                                "\n                                                    "
                                             )
                                           ]
                                         )
-                                      : _vm._e()
+                                      ]
+                                    )
                                   }),
                                   0
                                 )
@@ -37229,41 +37150,39 @@ var render = function() {
                     "div",
                     { staticClass: "list-item" },
                     _vm._l(_vm.galleryImage.data, function(item, i) {
-                      return _vm.galleryImage
-                        ? _c("div", { key: i, staticClass: "item" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass: "box-img",
-                                on: { click: _vm.showModalSliderImage }
-                              },
-                              [
-                                _c("img", {
-                                  staticClass: " fit-cover",
-                                  attrs: { src: "storage/" + item.img }
-                                })
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "icon--download" }, [
-                              _c(
-                                "a",
-                                {
-                                  attrs: {
-                                    download: "",
-                                    href: "storage/" + item.img,
-                                    title: "Tải xuống"
-                                  }
-                                },
-                                [
-                                  _c("i", {
-                                    staticClass: "fas fa-download text-white"
-                                  })
-                                ]
-                              )
-                            ])
-                          ])
-                        : _vm._e()
+                      return _c("div", { key: i, staticClass: "item" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "box-img",
+                            on: { click: _vm.showModalSliderImage }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: " fit-cover",
+                              attrs: { src: "storage/" + item.img }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "icon--download" }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                download: "",
+                                href: "storage/" + item.img,
+                                title: "Tải xuống"
+                              }
+                            },
+                            [
+                              _c("i", {
+                                staticClass: "fas fa-download text-white"
+                              })
+                            ]
+                          )
+                        ])
+                      ])
                     }),
                     0
                   )
@@ -37332,32 +37251,30 @@ var render = function() {
                     "div",
                     { staticClass: "list-item" },
                     _vm._l(_vm.galleryVideo.data, function(item, i) {
-                      return _vm.galleryVideo
-                        ? _c("div", { key: i, staticClass: "item" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass: "box-img",
-                                on: {
-                                  click: function($event) {
-                                    return _vm.showModalSliderVideo(item)
-                                  }
-                                }
-                              },
-                              [
-                                _c("img", {
-                                  staticClass: " fit-cover",
-                                  attrs: {
-                                    src:
-                                      "http://img.youtube.com/vi/" +
-                                      item.youtube_code +
-                                      "/mqdefault.jpg"
-                                  }
-                                })
-                              ]
-                            )
-                          ])
-                        : _vm._e()
+                      return _c("div", { key: i, staticClass: "item" }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "box-img",
+                            on: {
+                              click: function($event) {
+                                return _vm.showModalSliderVideo(item)
+                              }
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: " fit-cover",
+                              attrs: {
+                                src:
+                                  "http://img.youtube.com/vi/" +
+                                  item.youtube_code +
+                                  "/mqdefault.jpg"
+                              }
+                            })
+                          ]
+                        )
+                      ])
                     }),
                     0
                   )
@@ -37414,14 +37331,12 @@ var render = function() {
                       },
                       [
                         _vm._l(_vm.galleryImage.data, function(item, i) {
-                          return _vm.galleryImage
-                            ? _c("swiper-slide", { key: i }, [
-                                _c("img", {
-                                  staticClass: "w-100 h-100 fit-cover",
-                                  attrs: { src: "storage/" + item.img, alt: "" }
-                                })
-                              ])
-                            : _vm._e()
+                          return _c("swiper-slide", { key: i }, [
+                            _c("img", {
+                              staticClass: "w-100 h-100 fit-cover",
+                              attrs: { src: "storage/" + item.img, alt: "" }
+                            })
+                          ])
                         }),
                         _vm._v(" "),
                         _c("div", {
@@ -37621,10 +37536,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "filter__title" }, [
-      _c("label", { attrs: { for: "" } }, [_vm._v("Filter ")]),
+    return _c("div", { staticClass: "filter", attrs: { id: "filter" } }, [
+      _c("div", { staticClass: "filter__title" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Ngành nghề ")]),
+        _vm._v(" "),
+        _c("i", { staticClass: "fas fa-angle-down" })
+      ]),
       _vm._v(" "),
-      _c("i", { staticClass: "fas fa-angle-down" })
+      _c("div", { staticClass: "filler-list" }, [
+        _c("div", { staticClass: "col-md-12 col-12 search-cate" })
+      ])
     ])
   },
   function() {
@@ -50521,7 +50442,7 @@ Vue.compile = compileToFunctions;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"_from":"axios@^0.21.1","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"range","registry":true,"raw":"axios@^0.21.1","name":"axios","escapedName":"axios","rawSpec":"^0.21.1","saveSpec":null,"fetchSpec":"^0.21.1"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_shasum":"c67b90dc0568e5c1cf2b0b858c43ba28e2eda575","_spec":"axios@^0.21.1","_where":"C:\\\\xampp\\\\htdocs\\\\thacogroup","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundleDependencies":false,"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"deprecated":false,"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
+module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"Promise based HTTP client for the browser and node.js","main":"index.js","scripts":{"test":"grunt test","start":"node ./sandbox/server.js","build":"NODE_ENV=production grunt build","preversion":"npm test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json","postversion":"git push && git push --tags","examples":"node ./examples/server.js","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","fix":"eslint --fix lib/**/*.js"},"repository":{"type":"git","url":"https://github.com/axios/axios.git"},"keywords":["xhr","http","ajax","promise","node"],"author":"Matt Zabriskie","license":"MIT","bugs":{"url":"https://github.com/axios/axios/issues"},"homepage":"https://axios-http.com","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"jsdelivr":"dist/axios.min.js","unpkg":"dist/axios.min.js","typings":"./index.d.ts","dependencies":{"follow-redirects":"^1.14.0"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}]}');
 
 /***/ })
 
