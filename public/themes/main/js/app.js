@@ -2588,6 +2588,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 //custom-scrollbar
 
  //pagination
@@ -36464,18 +36466,16 @@ var render = function() {
     "div",
     [
       _c("div", { staticClass: "media-content" }, [
-        _vm._m(0),
-        _vm._v(" "),
         _c("div", { staticClass: "media-wrapper" }, [
           _c(
             "div",
             { staticClass: "container-customize" },
             [
-              _vm._m(1),
+              _vm._m(0),
               _vm._v(" "),
               _c("div", { staticClass: "tab-image" }, [
                 _c("div", { staticClass: "media__tabs" }, [
-                  _vm._m(2),
+                  _vm._m(1),
                   _vm._v(" "),
                   _c("div", { staticClass: "filter-media " }, [
                     _c("form", { attrs: { action: "" } }, [
@@ -36509,7 +36509,7 @@ var render = function() {
                             }
                           }),
                           _vm._v(" "),
-                          _vm._m(3)
+                          _vm._m(2)
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "calender" }, [
@@ -36544,7 +36544,7 @@ var render = function() {
                           "div",
                           { staticClass: "filter", attrs: { id: "filter" } },
                           [
-                            _vm._m(4),
+                            _vm._m(3),
                             _vm._v(" "),
                             _c("div", { staticClass: "filler-list" }, [
                               _c(
@@ -36602,7 +36602,7 @@ var render = function() {
                           ]
                         ),
                         _vm._v(" "),
-                        _vm._m(5)
+                        _vm._m(4)
                       ])
                     ])
                   ])
@@ -36692,14 +36692,14 @@ var render = function() {
                                             _vm._s(
                                               _vm._f("formatDate")(
                                                 item.created_at,
-                                                "d/m/Y"
+                                                "DD-MM-YYYY"
                                               )
                                             )
                                           )
                                         ]
                                       ),
                                       _vm._v(" "),
-                                      _vm._m(6, true),
+                                      _vm._m(5, true),
                                       _vm._v(" "),
                                       _c(
                                         "div",
@@ -36854,11 +36854,11 @@ var render = function() {
             "div",
             { staticClass: "container-customize" },
             [
-              _vm._m(7),
+              _vm._m(6),
               _vm._v(" "),
               _c("div", { staticClass: "tab-video" }, [
                 _c("div", { staticClass: "media__tabs" }, [
-                  _vm._m(8),
+                  _vm._m(7),
                   _vm._v(" "),
                   _c("div", { staticClass: "filter-media" }, [
                     _c("form", { attrs: { action: "" } }, [
@@ -36892,7 +36892,7 @@ var render = function() {
                             }
                           }),
                           _vm._v(" "),
-                          _vm._m(9)
+                          _vm._m(8)
                         ]),
                         _vm._v(" "),
                         _c("div", { staticClass: "calender" }, [
@@ -36923,9 +36923,9 @@ var render = function() {
                           )
                         ]),
                         _vm._v(" "),
-                        _vm._m(10),
+                        _vm._m(9),
                         _vm._v(" "),
-                        _vm._m(11)
+                        _vm._m(10)
                       ])
                     ])
                   ])
@@ -37017,14 +37017,14 @@ var render = function() {
                                             _vm._s(
                                               _vm._f("formatDate")(
                                                 item.created_at,
-                                                "d/m/Y"
+                                                "DD-MM-YYYY"
                                               )
                                             )
                                           )
                                         ]
                                       ),
                                       _vm._v(" "),
-                                      _vm._m(12, true)
+                                      _vm._m(11, true)
                                     ]
                                   )
                                 : _vm._e()
@@ -37065,7 +37065,7 @@ var render = function() {
                                             staticClass: "youtube-player",
                                             staticStyle: {
                                               width: "100%",
-                                              height: "350px"
+                                              height: "440px"
                                             },
                                             attrs: {
                                               id: "player",
@@ -37501,28 +37501,6 @@ var render = function() {
   )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container-customize" }, [
-      _c("nav", { attrs: { "aria-label": "breadcrumb" } }, [
-        _c("ol", { staticClass: "breadcrumb" }, [
-          _c("li", { staticClass: "breadcrumb-item" }, [
-            _c("a", { attrs: { href: "/" } }, [_vm._v("Trang chủ")])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "breadcrumb-item" }, [
-            _c("a", { attrs: { href: "/truyenthong" } }, [
-              _vm._v("Truyền thông")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("li", { staticClass: "breadcrumb-item active" }, [_vm._v("Media")])
-        ])
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

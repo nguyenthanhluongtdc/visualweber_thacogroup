@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="media-content">
-            <div class="container-customize">
+            <!-- <div class="container-customize">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
@@ -13,8 +13,10 @@
                         <li class="breadcrumb-item active">Media</li>
                     </ol>
                 </nav>
-            </div>
+            </div> -->
             <!---gallery--->
+       
+          
             <div class="media-wrapper">
                 <div class="container-customize">
                     <div class="image__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">
@@ -100,7 +102,7 @@
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="album-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
+                                            <span class="album-item__date">{{item.created_at | formatDate("DD-MM-YYYY")}}</span>
                                             <div class="album-item__count">
                                                 <i class="far fa-image"></i>
                                                 <p class="quantity font18">100</p>
@@ -272,7 +274,7 @@
                                                 {{item.name}}                                         
                                                 </p>
                                             </div>
-                                            <span class="video-item__date">{{item.created_at | formatDate('d/m/Y')}}</span>
+                                            <span class="video-item__date">{{item.created_at | formatDate("DD-MM-YYYY")}}</span>
                                             <div class="video-item__count">
                                                 <i class="fas fa-photo-video"></i>
                                                 <p class="quantity font18">100</p>
@@ -295,7 +297,7 @@
                                                             <source src="themes/main/images/video/chuc-mung-nam-moi.mp4" type="video/mp4">
                                                         </video>  -->
 
-                                                        <iframe style="width: 100%; height: 350px;" class="youtube-player" id="player" type="text/html" :src="'https://www.youtube.com/embed/'+videoPlay.youtube_code+'?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1'" frameborder="0" muted="muted"></iframe>
+                                                        <iframe style="width: 100%; height: 440px;" class="youtube-player" id="player" type="text/html" :src="'https://www.youtube.com/embed/'+videoPlay.youtube_code+'?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1'" frameborder="0" muted="muted"></iframe>
 
                                                     </div>
                                                     <p class="name font30">
