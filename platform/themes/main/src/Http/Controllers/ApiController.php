@@ -31,7 +31,6 @@ class ApiController extends Controller {
         $paginate = theme_option('number_of_posts_in_a_category');
 
         $data = app(PostInterfaceCustom::class)->getFilterPostByCategory($filter, $paginate);
-
         foreach($data as $da) {
             $da['youtube_code'] = "";
             if(has_field($da, 'youtube_code')) {
@@ -135,5 +134,8 @@ class ApiController extends Controller {
         return response()->json([
             'data'  => $menu_nodes['menu_nodes'],
         ], 200);
+    }
+    public function FilterTime(){
+        
     }
 }
