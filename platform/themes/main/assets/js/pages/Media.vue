@@ -215,7 +215,7 @@
                                 <form action="">
                                     <div class="list-tool">
                                         <div class="search">
-                                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="keyword" autocomplete="off" v-model="keywordVideo">
+                                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm...." value="" name="keyword" autocomplete="off" v-model="keywordVideo">
                                             <button class="btn btn-secondary" type="submit">
                                                 <i class="fas fa-search"></i>
                                             </button>
@@ -455,7 +455,7 @@
                     </vue-custom-scrollbar>
                 </div>
             </div>
-        </modal>
+        </modal> 
         <!---end modal-album--->
 
         <!---modal-detail--->
