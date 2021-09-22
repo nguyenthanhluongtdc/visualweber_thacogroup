@@ -1,17 +1,13 @@
 <ul class="nav-list">
-{{--     
-    <li>
-        <a href="#">Lĩnh vực hoạt động</a>
-    </li> --}}
     @foreach ($menu_nodes as $key => $row)
     @if ($row->has_child)
     <li class="nav-item">
-        <a href="#">{{$row->name}}</a>
+        <a href="javascript:;">{{$row->name}}</a>
        
         <ul class="nav-dropdown">
             @foreach($row->child as $key => $child)
             <li class="dropdown-item">
-                <a href="{{ $child->url }}" class=" {{ $row->active ? "active" : ""}}"">{{$child->name}}</a>
+                <a href="{{ $child->url }}" class="{{ $row->active ? "active" : ""}}">{{$child->name}}</a>
             </li>
             @endforeach
         </ul>
@@ -24,20 +20,21 @@
     @endif
     @endforeach
     <li class="icon-social nav-item">
-        <a href="#" >
-            <img src="{{Theme::asset()->url('images/home/logo/fb.png') }}" alt="">
+        <a href="{!! theme_option('footer-facebook') !!}" target="_blank">
+            <img src="{{ get_image_url(theme_option('footer-facebook-icon-mb')) }}" alt="{!! theme_option('footer-facebook') !!}">
         </a>
-        <a href="#" >
-            <img src="{{Theme::asset()->url('images/home/logo/youtube.png') }}" alt="" >
+        <a href="{!! theme_option('footer-youtube') !!}" target="_blank">
+            <img src="{{Theme::asset()->url('images/home/logo/youtube.png') }}" alt="{!! theme_option('footer-youtube') !!}" >
         </a>
-        <a href="#" >
-            <img src="{{Theme::asset()->url('images/home/logo/linkedin.png') }}" alt="" >
+        <a href="tel:{!! theme_option('footer-phone') !!}" target="_blank">
+            <img src="{{ get_image_url(theme_option('footer-phone-icon-mb')) }}" alt="{!! theme_option('footer-phone') !!}" >
         </a>
-        <a href="#" >
-            <img src="{{Theme::asset()->url('images/home/logo/phone.png') }}" alt="" >
+        <a href="{!! theme_option('footer-linkedin') !!}" target="_blank" >
+            <img src="{{ get_image_url(theme_option('footer-linkedin-icon-mb')) }}" alt="{!! theme_option('footer-linkedin') !!}" >
         </a>
-        <a href="#" >
-            <img src="{{Theme::asset()->url('images/home/logo/mail.png') }}" alt="" >
+        
+        <a href="maito:{!! theme_option('footer-email') !!}" target="_blank" >
+            <img src="{{ get_image_url(theme_option('footer-email-icon-mb')) }}" alt="{!! theme_option('footer-email') !!}" >
         </a>
     </li>
 </ul>

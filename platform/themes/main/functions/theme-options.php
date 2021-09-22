@@ -344,6 +344,18 @@ app()->booted(function () {
             ]
         )
         ->setField(
+            [
+                'id' => 'footer-facebook-icon-mb',
+                'section_id' => 'opt-text-subsection-footer',
+                'type' => 'mediaImage',
+                'label' => __('Icon facebook Mobie'),
+                'attributes' => [
+                    'name' => 'footer-facebook-icon-mb',
+                    'value' => '',
+                ],
+            ]
+        )
+        ->setField(
 
             [
                 'id' => 'footer-youtube',
@@ -369,6 +381,18 @@ app()->booted(function () {
                 'label' => __('Icon youtube'),
                 'attributes' => [
                     'name' => 'footer-youtube-icon',
+                    'value' => '',
+                ],
+            ]
+        )
+        ->setField(
+            [
+                'id' => 'footer-youtube-icon-mb',
+                'section_id' => 'opt-text-subsection-footer',
+                'type' => 'mediaImage',
+                'label' => __('Icon youtube Mobile'),
+                'attributes' => [
+                    'name' => 'footer-youtube-icon-mb',
                     'value' => '',
                 ],
             ]
@@ -404,6 +428,18 @@ app()->booted(function () {
             ]
         )
         ->setField(
+            [
+                'id' => 'footer-phone-icon-mb',
+                'section_id' => 'opt-text-subsection-footer',
+                'type' => 'mediaImage',
+                'label' => __('Icon phone Mobie'),
+                'attributes' => [
+                    'name' => 'footer-phone-icon-mb',
+                    'value' => '',
+                ],
+            ]
+        )
+        ->setField(
 
             [
                 'id' => 'footer-linkedin',
@@ -429,6 +465,18 @@ app()->booted(function () {
                 'label' => __('Icon linkedin'),
                 'attributes' => [
                     'name' => 'footer-linkedin-icon',
+                    'value' => '',
+                ],
+            ]
+        )
+        ->setField(
+            [
+                'id' => 'footer-linkedin-icon-mb',
+                'section_id' => 'opt-text-subsection-footer',
+                'type' => 'mediaImage',
+                'label' => __('Icon linkedin Mobile'),
+                'attributes' => [
+                    'name' => 'footer-linkedin-icon-mb',
                     'value' => '',
                 ],
             ]
@@ -463,6 +511,18 @@ app()->booted(function () {
                     ],
                 ]
                 )
+                ->setField(
+                    [
+                        'id' => 'footer-email-icon-mb',
+                        'section_id' => 'opt-text-subsection-footer',
+                        'type' => 'mediaImage',
+                        'label' => __('Icon email Mobile'),
+                        'attributes' => [
+                            'name' => 'footer-email-icon-mb',
+                            'value' => '',
+                        ],
+                    ]
+                    )
                 ->setSection([ // Set section with no field
                     'title' => __('Popup'),
                     'desc' => __('Popup settings'),
@@ -556,5 +616,13 @@ app()->booted(function () {
                         ],
                         
                     ]
+                ])
+                ->setSection([ // Set section with no field
+                    'title' => __('Social Mobile'),
+                    'desc' => __('Social Mobile'),
+                    'id' => 'opt-text-subsection-social-mb',
+                    'subsection' => true,
+                    'icon' => 'fa fa-home',
                 ]);
+    
 });
