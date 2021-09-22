@@ -20,7 +20,7 @@
             @foreach ($menu_nodes as $key => $row)
             @if ($row->has_child)
             <li class="nav-item nav-link dropdown dmenu">
-                <a class="item__link" href="{{($key==1||$key == 2) ? $row->url : "javascript:;" }}" title="{{$row->name}}">{{$row->name}}</a>
+                <a class="item__link" href="{{ $row->url }}" title="{{$row->name}}">{{$row->name}}</a>
                 <div class="dropdown-menu sm-menu" style="display:none">
                     @foreach($row->child as $key => $child)
                     <div class="cmenu">
