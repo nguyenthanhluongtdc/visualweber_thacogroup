@@ -83,7 +83,7 @@ class ApiController extends Controller {
         
         $currentTime = Carbon::now();
 
-        $fileName = 'album_'.$currentTime->format('d_m_Y').'_'.$currentTime->toArray()['timestamp'];
+        $fileName = 'album_'.$currentTime->format('d_m_Y').'_'.$currentTime->toArray()['timestamp'].'.zip';
         
         if($zip->open(public_path($fileName), ZipArchive::CREATE)==TRUE) {
             foreach($gallery as $file) {
