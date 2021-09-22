@@ -11,7 +11,7 @@
             </a>
         </li>
         <li class="social-item">
-            <a href="tel:{!! theme_option('footer-phone') !!}" target="_blank">
+            <a href="tel:{!! theme_option('footer-phone') !!}">
                 <img  class="drop-shadow" src="{{ get_image_url(theme_option('footer-phone-icon')) }}" alt="{!! theme_option('footer-phone') !!}">
             </a>
         </li>
@@ -21,7 +21,7 @@
             </a>
         </li>
         <li class="social-item">
-            <a href=" mailto:{!! theme_option('footer-email') !!}" target="_blank">
+            <a href=" mailto:{!! theme_option('footer-email') !!}">
                 <img class="drop-shadow" src="{{ get_image_url(theme_option('footer-email-icon')) }}" alt="">
             </a>
         </li >

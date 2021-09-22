@@ -26,14 +26,14 @@
         <a href="{!! theme_option('footer-youtube') !!}" target="_blank">
             <img src="{{Theme::asset()->url('images/home/logo/youtube.png') }}" alt="{!! theme_option('footer-youtube') !!}" >
         </a>
-        <a href="tel:{!! theme_option('footer-phone') !!}" target="_blank">
+        <a href="tel:{!! theme_option('footer-phone') !!}">
             <img src="{{ get_image_url(theme_option('footer-phone-icon-mb')) }}" alt="{!! theme_option('footer-phone') !!}" >
         </a>
         <a href="{!! theme_option('footer-linkedin') !!}" target="_blank" >
             <img src="{{ get_image_url(theme_option('footer-linkedin-icon-mb')) }}" alt="{!! theme_option('footer-linkedin') !!}" >
         </a>
         
-        <a href="maito:{!! theme_option('footer-email') !!}" target="_blank" >
+        <a href="maito:{!! theme_option('footer-email') !!}" >
             <img src="{{ get_image_url(theme_option('footer-email-icon-mb')) }}" alt="{!! theme_option('footer-email') !!}" >
         </a>
     </li>

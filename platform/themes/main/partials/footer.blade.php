@@ -69,7 +69,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:{!! theme_option('footer-phone') !!}" target="_blank">
+                                <a href="tel:{!! theme_option('footer-phone') !!}">
                                     <img src="{{ get_image_url(theme_option('footer-phone-icon')) }}" alt="{!! theme_option('footer-phone') !!}">
                                 </a>
                             </li>
@@ -79,7 +79,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="maito:{!! theme_option('footer-email') !!}" target="_blank">
+                                <a href="maito:{!! theme_option('footer-email') !!}">
                                     <img src="{{ get_image_url(theme_option('footer-email-icon')) }}" alt="">
                                 </a>
                             </li>
