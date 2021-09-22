@@ -8,6 +8,7 @@
         transform: scale(1);
     }
 }
+
 .media-content {
     .media-wrapper { 
         .image__title {
@@ -102,28 +103,14 @@
                                 display: flex;
                                 left: 20px;
                                 align-items: center;
-                                @media only screen and (max-width: 600px){
-                                    top: 6px;
-                                    left: 6px;
-                                    padding: 2px 3px;
-                                }
                                 .quantity {
                                     margin-bottom: -5px;
                                     margin-left: 10px;
-                                    @media only screen and (max-width: 600px){
-                                        margin-bottom: -2px;
-                                        font-size: 12px !important;
-                                        margin-left: -2px;
-                                    }
                                 }
                                 i {
                                     width: 18px;
                                     height: 18px;
                                     font-size: 18px;
-                                    @media only screen and (max-width: 600px){
-                                        font-size: 12px;
-                                        margin-top: 4px;
-                                    }
                                 }
                             }
                             &__count.album {
@@ -137,16 +124,6 @@
                                 top: 20px;
                                 z-index: 2;
                                 right: 20px;
-                                @media only screen and (max-width: 600px){
-                                    top: 4px;
-                                    right: 4px;
-                                }
-                                i{
-                                    @media only screen and (max-width: 600px){
-                                        font-size: 12px;
-                                        margin-top: 4px;
-                                    }
-                                }
                             }
                             img {
                                 max-width: 100%;
@@ -841,7 +818,7 @@
     
     @media only screen and (max-width: 1080px){ height: 45vh !important; width: 80% !important;}
     @media only screen and (max-width: 768px){ height: 35vh !important; padding: 15px 0 0 0;}
-   
+    @media only screen and (max-width: 600px){ height: 30vh !important;}
     
     .modal-main {
         padding: 4%;
@@ -861,16 +838,6 @@
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 1;
             }
-            .text-right{
-                button{
-                    @media only screen and (max-width: 600px){
-                       margin-right: -10px;
-                       margin-top: -20px;
-                       padding: 1px 3px !important;
-                        font-size: 15px;
-                    }
-                }
-            }
         }
         .modal-body-custom {
             iframe {
@@ -887,7 +854,6 @@
                 @media screen and (max-width: 1440px) {
                     gap: 15px
                 }
-               
                 padding-right: 30px;
                 .item {
                     position: relative;
@@ -910,15 +876,6 @@
     top: 15px;
     z-index: 2;
     right: 15px;
-    @media only screen and (max-width: 600px){
-        top: 4px;
-        right: 4px;
-    }
-    i{
-        @media only screen and (max-width: 600px){
-           font-size: 12px;
-        }
-    }
 }
 
 .fit-cover {
@@ -991,6 +948,3 @@
         @media only screen and (max-width: 600px){  font-size: 30px;}
     }
 }
-
-
-
