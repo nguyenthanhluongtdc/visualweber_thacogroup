@@ -40,7 +40,7 @@
 
     .page-content {
         padding-top: 7%;
-        
+       
     }
 
     .header {

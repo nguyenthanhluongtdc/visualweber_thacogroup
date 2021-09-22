@@ -26,9 +26,12 @@
         .tab-image {
             margin-top: 25px;
             .media__tabs {
+                
                 display: flex;
                 position: relative;
+               
                 .nav-tabs {
+                   
                     margin-bottom: 30px;
                     border: unset;
                     flex: 1 33.833%;
@@ -849,16 +852,16 @@
     left: 50% !important;
     transform: translate(-50%, -50%);
     
-    @media only screen and (max-width: 1080px){ height: 45vh !important; width: 80% !important;}
-    @media only screen and (max-width: 768px){ height: 35vh !important; padding: 15px 0 0 0;}
-    @media only screen and (max-width: 600px){ width: 95% !important;}
+    @media  (max-width: 1080px){ height: 45vh !important; width: 80% !important;}
+    @media (max-width: 768px){ height: 35vh !important; padding: 15px 0 0 0;}
+    @media  (max-width: 600px){ width: 95% !important;}
     
     .modal-main {
         padding: 4%;
         height: 100%;
         .modal-header-custom {
-            height: 5vw;
-            @media only screen and (max-width: 600px){ height: 12vw;}
+            height: 3vw;
+            @media (max-width: 600px){ height: 12vw;}
             p {
                 position: absolute;
                 top: 10px;

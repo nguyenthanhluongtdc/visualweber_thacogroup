@@ -2877,7 +2877,7 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
                 return this.$http.post('api/download/album/image/', {
                   id: id
                 }).then(function (response) {
-                  console.log(response.message);
+                  window.location = response.data;
                 })["catch"](function (error) {
                   console.log(error);
                 });
@@ -36565,67 +36565,7 @@ var render = function() {
                           )
                         ]),
                         _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "filter", attrs: { id: "filter" } },
-                          [
-                            _vm._m(4),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "filler-list" }, [
-                              _c(
-                                "div",
-                                { staticClass: "col-md-12 col-12 search-cate" },
-                                _vm._l(_vm.menuFilterImage, function(item, i) {
-                                  return _c(
-                                    "div",
-                                    {
-                                      staticClass: "pretty p-default p-smooth"
-                                    },
-                                    [
-                                      _c("input", {
-                                        directives: [
-                                          {
-                                            name: "model",
-                                            rawName: "v-model",
-                                            value: _vm.changeFilterPhoto,
-                                            expression: "changeFilterPhoto"
-                                          }
-                                        ],
-                                        attrs: { type: "radio" },
-                                        domProps: {
-                                          value: item.reference_id,
-                                          checked: _vm._q(
-                                            _vm.changeFilterPhoto,
-                                            item.reference_id
-                                          )
-                                        },
-                                        on: {
-                                          change: function($event) {
-                                            _vm.changeFilterPhoto =
-                                              item.reference_id
-                                          }
-                                        }
-                                      }),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "state p-primary" },
-                                        [
-                                          _c("label", [
-                                            _vm._v(
-                                              " " + _vm._s(item.title) + " "
-                                            )
-                                          ])
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                }),
-                                0
-                              )
-                            ])
-                          ]
-                        ),
+                        _vm._m(3),
                         _vm._v(" "),
                         _vm._m(4)
                       ])
@@ -37624,10 +37564,64 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "filter__title" }, [
-      _c("label", { attrs: { for: "" } }, [_vm._v("Ngành nghề ")]),
+    return _c("div", { staticClass: "filter", attrs: { id: "filter" } }, [
+      _c("div", { staticClass: "filter__title" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Filter")]),
+        _vm._v(" "),
+        _c("i", { staticClass: "fas fa-angle-down" })
+      ]),
       _vm._v(" "),
-      _c("i", { staticClass: "fas fa-angle-down" })
+      _c("div", { staticClass: "filler-list" }, [
+        _c("div", { staticClass: "col-md-12 col-12 search-cate" }, [
+          _c("div", { staticClass: "pretty p-default p-smooth" }, [
+            _c("input", { attrs: { type: "checkbox" } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "state p-primary" }, [
+              _c("label", [_vm._v("THACO")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "pretty p-default p-smooth" }, [
+            _c("input", { attrs: { type: "checkbox" } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "state p-primary" }, [
+              _c("label", [_vm._v("Ô tô & Cơ khí")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "pretty p-default p-smooth" }, [
+            _c("input", { attrs: { type: "checkbox" } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "state p-primary" }, [
+              _c("label", [_vm._v("Nông Lâm Nghiệp")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "pretty p-default p-smooth" }, [
+            _c("input", { attrs: { type: "checkbox" } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "state p-primary" }, [
+              _c("label", [_vm._v("Đầu tư - Xây Dựng")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "pretty p-default p-smooth" }, [
+            _c("input", { attrs: { type: "checkbox" } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "state p-primary" }, [
+              _c("label", [_vm._v("Thương mại - Dịch vụ")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "pretty p-default p-smooth" }, [
+            _c("input", { attrs: { type: "checkbox" } }),
+            _vm._v(" "),
+            _c("div", { staticClass: "state p-primary" }, [
+              _c("label", [_vm._v("Logistics")])
+            ])
+          ])
+        ])
+      ])
     ])
   },
   function() {
