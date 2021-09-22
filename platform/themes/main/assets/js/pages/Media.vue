@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="media-content">
-            <!---gallery--->
+            <!---gallery---> 
             <div class="media-wrapper">
                 <div class="container-customize">
                     <div class="image__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50">
