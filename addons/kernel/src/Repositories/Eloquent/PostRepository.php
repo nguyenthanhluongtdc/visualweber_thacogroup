@@ -26,7 +26,7 @@ class PostRepository extends BlogPostRepository
             ->select('posts.*')
             ->limit($limit)
             ->distinct()
-            ->with(array_merge(['slugable'], $with))
+            ->with(array_merge(['slugable'], $with)) 
             ->orderBy('posts.is_featured', 'desc')
             ->orderBy('posts.created_at', 'desc');
 

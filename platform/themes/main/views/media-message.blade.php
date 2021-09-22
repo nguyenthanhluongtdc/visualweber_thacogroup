@@ -2,7 +2,7 @@
 @includeIf("theme.main::views.breadcrumb")
  @php
 $posts = get_posts_by_category($category->id ?? 16, 3);
-$postSlider = get_featured_posts(1);
+$postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
 @endphp
 <section class="media-message mb-60">
     <div class="media-message-wrapper">
