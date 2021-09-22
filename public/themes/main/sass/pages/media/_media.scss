@@ -191,6 +191,7 @@
                                 left: 20px;
                                 align-items: center;
                                 cursor: pointer;
+                                
                                 .text {
                                     margin-bottom: -5px;
                                     margin-left: 10px;
@@ -313,6 +314,11 @@
                                     display: flex;
                                     left: 20px;
                                     align-items: center;
+                                    @media only screen and (max-width: 600px){
+                                        top: 6px;
+                                        left: 6px;
+                                        padding: 2px 3px;
+                                    }
                                     .quantity {
                                         margin-bottom: -5px;
                                         margin-left: 10px;
@@ -841,13 +847,14 @@
     
     @media only screen and (max-width: 1080px){ height: 45vh !important; width: 80% !important;}
     @media only screen and (max-width: 768px){ height: 35vh !important; padding: 15px 0 0 0;}
-    @media only screen and (max-width: 600px){ width: 90% !important; top: 35% !important;}
+    @media only screen and (max-width: 600px){ width: 90% !important;}
     
     .modal-main {
         padding: 4%;
         height: 100%;
         .modal-header-custom {
             height: 5vw;
+            @media only screen and (max-width: 600px){ height: 12vw;}
             p {
                 position: absolute;
                 top: 10px;
@@ -891,9 +898,10 @@
                     grid-template-columns: 1fr 1fr;
                     gap: 10px;
                     padding-right: 0;
-                    padding-top: 10px;
+                    padding-top: 15px;
                 }
                 padding-right: 30px;
+                @media only screen and (max-width: 1080px){padding-right: 0;}
                 .item {
                     position: relative;
                     .box-img {
