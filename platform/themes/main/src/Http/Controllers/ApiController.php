@@ -94,7 +94,9 @@ class ApiController extends Controller {
             $zip->close();
         }
 
-        return response()->download(public_path($fileName));
+        //$delete = response()->download(public_path($fileName))->deleteFileAfterSend(true);
+
+        return $fileName;
     }
 
     //video

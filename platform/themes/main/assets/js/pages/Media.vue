@@ -184,7 +184,7 @@
                                         </div>
                                         <div class="filter" id="filter">
                                             <div class="filter__title">
-                                                <label for="">Filter </label>    
+                                                <label for="">Filter</label>    
                                                 <i class="fas fa-angle-down"></i>
                                             </div>
                                             <div class="filler-list">
@@ -708,7 +708,7 @@ export default {
         zipDownload: async function(id) {
             await this.$http.post('api/download/album/image/',{id: id})
                 .then(response=> {
-                    console.log(response.message)
+                    window.location = response.data
                 })
                 .catch(error=> {
                     console.log(error)
