@@ -7,26 +7,22 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
 
         // Add your custom route here
         // Ex: Route::get('hello', 'MainController@getHello');
-;
-        Route::get('downloadFile/(:any)', function() {
-            dd('sdfsd');
-            if(Storage::disk('public')->exists('media/4.jpg')) {
-                $file = Storage::disk('public')->get('media/4.jpg');
-                return Storage::download('mediaa/4.jpg');
-            } 
-        })->name('public.downloadFile');
+       
 
         Route::get('/search', 'MainController@getSearch')
                 ->name('public.search');
 
-        Route::get('api/get/gallery/post/{id}', 'ApiController@getGalleryPost');
-        Route::post('api/get/album/image', 'ApiController@getAlbumImage');
-        Route::get('api/filter/album/image', 'ApiController@getFilterImage');
-        Route::post('api/download/album/image', 'ApiController@zipDownload');
-        Route::post('api/get/menu/', 'ApiController@getMenuByLocation');
-
         //video
-        Route::get('api/get/video/post/{id}', 'ApiController@getGalleryVideoPost');
+
+        Route::prefix('api')->group(function () {
+            Route::get('/filter/album/image', 'ApiController@getFilterImage');
+            Route::post('/download/album/image', 'ApiController@zipDownload');
+
+            Route::get('/get/video/post/{id}', 'ApiController@getGalleryVideoPost');
+            Route::get('/get/gallery/post/{id}', 'ApiController@getGalleryPost');
+            Route::post('/get/album/image', 'ApiController@getAlbumImage');
+            Route::post('/get/menu/', 'ApiController@getMenuByLocation');
+        });
 
     });
 });
