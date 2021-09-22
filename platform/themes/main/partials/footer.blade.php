@@ -59,12 +59,12 @@
                     <div class="list-social">
                         <ul>
                             <li>
-                                <a href="{!! theme_option('footer-facebook') !!}">
+                                <a href="{!! theme_option('footer-facebook') !!}" target="_blank">
                                     <img src="{{ get_image_url(theme_option('footer-facebook-icon')) }}" alt="{!! theme_option('footer-facebook') !!}">
                                 </a>
                             </li>
                             <li>
-                                <a href="{!! theme_option('footer-youtube') !!}">
+                                <a href="{!! theme_option('footer-youtube') !!}" target="_blank">
                                     <img src="{{ get_image_url(theme_option('footer-youtube-icon')) }}" alt="{!! theme_option('footer-youtube') !!}">
                                 </a>
                             </li>
@@ -74,7 +74,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="{!! theme_option('footer-linkedin') !!}">
+                                <a href="{!! theme_option('footer-linkedin') !!}" target="_blank">
                                     <img src="{{ get_image_url(theme_option('footer-linkedin-icon')) }}" alt="{!! theme_option('footer-linkedin') !!}">
                                 </a>
                             </li>

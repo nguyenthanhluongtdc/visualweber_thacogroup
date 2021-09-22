@@ -738,7 +738,7 @@ export default {
         zipDownload: async function(id) {
             await this.$http.post('api/download/album/image/',{id: id})
                 .then(response=> {
-                    console.log(response.message)
+                    window.location = response.data
                 })
                 .catch(error=> {
                     console.log(error)
