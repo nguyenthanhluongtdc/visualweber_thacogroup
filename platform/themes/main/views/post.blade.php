@@ -231,10 +231,10 @@
                          --}}
                         <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{urlencode($post->url)}}">
                            
-                            <img src="{{Theme::asset()->url('images/media/fb-share.png')}}" alt="icon-fb">
+                            <img src="{{Theme::asset()->url('images/media/face.png')}}" alt="icon-fb">
                         </a>
                         <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{urlencode($post->url)}}&source=LinkedIn">
-                            <img src="{{Theme::asset()->url('images/media/in.png')}}" alt="icon-linkdin">
+                            <img src="{{Theme::asset()->url('images/media/linkedin.png')}}" alt="icon-linkdin">
                         </a>
                         <button class="print-button" onclick="window.print();">
                             <i class="fas fa-print text-dark"></i>

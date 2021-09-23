@@ -10,4 +10,7 @@ class PostInvestorCacheDecorator extends CacheAbstractDecorator implements PostI
     public function getByCategory(int $categoryId, int $paginate = 6, int $limit = 0) {
         return $this->getDataIfExistCache(__FUNCTION__, func_get_args());
     }
+    public function getAll( int $paginate = 6) {
+        return $this->getDataIfExistCache(__FUNCTION__, func_get_args());
+    }
 }
