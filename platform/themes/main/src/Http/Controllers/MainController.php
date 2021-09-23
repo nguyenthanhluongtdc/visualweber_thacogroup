@@ -139,19 +139,30 @@ class MainController extends PublicController
     public function getShareholder(Request $request){
        
         try {
-        $categoryId = $request->categoryId;
-        $category = app(InvestorRelationsInterface::class)->getFirstBy(
-            [
-                'id' => $categoryId
-            ],
-            ['*'],
-            ['slugable']
-        );
+            $categoryId = $request->categoryId;
+            $category = app(InvestorRelationsInterface::class)->getFirstBy(
+                [
+                    'id' => $categoryId,
+                    'status' => BaseStatusEnum::PUBLISHED
+                ],
+                ['*'],
+                ['slugable']
+            );
 
-        $data = app(PostInvestorInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
+            $data = app(PostInvestorInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
 
-        $view = 'templates/'.$category->template;
-        return Theme::partial($view, compact('data'));
+            Theme::breadcrumb()
+            ->add(__('Home'), route('public.index'));
+
+            if($category->parent->id) {
+                Theme::breadcrumb()->add($category->parent->name, $category->parent->url);
+            }
+
+            Theme::breadcrumb()->add($category->name, $category->url);
+
+
+            $view = 'templates/'.$category->template;
+            return Theme::partial($view, compact('data','category'));
 
         } catch (\Throwable $th) {
          

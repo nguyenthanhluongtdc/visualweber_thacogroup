@@ -693,14 +693,10 @@ var Ajax = {
                     $('.loading').removeClass('d-none')
                 },
                 success: function(data) {
-
-                    console.log(data)
-                    $('.list-info').html(data)
-                    if ($('.list-info').length) {
-                        $('.list-info').html(data)
-                    }
-                    if ($('.list-report').length) {
-                        $('.list-report').html(data.shareholders_report)
+                    
+                    if ($('.render-html').length) {
+                        $("#breadcrum").load(" #breadcrum1");
+                        $('.render-html').html(data)
                     }
 
                 },
