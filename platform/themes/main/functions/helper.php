@@ -8,6 +8,8 @@ use Platform\Blog\Repositories\Interfaces\TagInterface;
 use Platform\Blog\Supports\PostFormat;
 use Illuminate\Support\Arr;
 use Platform\Kernel\Repositories\Interfaces\PostInterface as PostInterfaceCustom;
+use Platform\InvestorRelations\Repositories\Interfaces\InvestorRelationsInterface;
+use Platform\PostInvestor\Repositories\Interfaces\PostInvestorInterface;
 
 
 if (!function_exists('get_featured_posts_by_category')) {
@@ -327,26 +329,39 @@ if (!function_exists('get_slug_by_template')) {
     }
 }
 
-// if (!function_exists('get_image_width')) {
-//     /**
-//      * @param bool $convertToList
-//      * @return array
-//      */
-//     function get_image_width($path)
-//     {
-//         $data = getimagesize($path); 
-//         return $data[0];
-//     }
-// }
-// if (!function_exists('get_image_height')) {
-//     /**
-//      * @param bool $convertToList
-//      * @return array
-//      */
-//     function get_image_height($path)
-//     {
-//         $data = getimagesize($path);
-//         dd($data[1]);
-//         return $data[1];
-//     }
-// }
+if (!function_exists('get_shareholder_categories')) {
+    /**
+     * @return \Illuminate\Support\Collection
+     * @throws Exception
+     */
+    function get_shareholder_categories()
+    {
+        $categories = app(InvestorRelationsInterface::class)
+            ->getAllCategory();
+
+        return $categories;
+    }
+}
+if (!function_exists('get_all_shareholders')) {
+    /**
+     * @param boolean $active
+     * @return mixed
+     */
+    function get_all_shareholders($paginate)
+    {
+        return app(PostInvestorInterface::class)
+        ->getAll($paginate);
+    }
+}
+if (!function_exists('get_shareholder_by_category_id')) {
+    /**
+     * @return \Illuminate\Support\Collection
+     * @throws Exception
+     */
+    function get_shareholder_by_category_id($categoryId, $paginate = 6,$limit = 0)
+    {
+        $data = app(PostInvestorInterface::class)->getByCategory($categoryId, $paginate,0);
+
+        return $data;
+    }
+}

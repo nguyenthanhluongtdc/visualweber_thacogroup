@@ -616,10 +616,6 @@ $(document).ready(function() {
     });
 });
 
-
-
-console.clear();
-
 $(function() {
     var swiper = new Swiper('.swiper-content-detail', {
         loop: true,
@@ -676,3 +672,51 @@ if ($('#button-activity').length > 0) {
         });
     });
 })(jQuery);
+
+
+var Ajax = {
+    getShareholder: () => {
+        // const shareholderResult = $('.shareholder-infomation_left')
+        // if (!shareholderResult) return
+        $(document).on('click', '.item_link_shareholder', function() {
+            // $(this).addClass('active').parent().siblings().children().removeClass('active')
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: getShareholderUrl,
+                data: {
+                    categoryId: $(this).data('category')
+                },
+                method: "GET",
+                beforeSend: function() {
+                    $('.loading').removeClass('d-none')
+                },
+                success: function(data) {
+
+                    console.log(data)
+                    $('.list-info').html(data)
+                    if ($('.list-info').length) {
+                        $('.list-info').html(data)
+                    }
+                    if ($('.list-report').length) {
+                        $('.list-report').html(data.shareholders_report)
+                    }
+
+                },
+                error: function(xhr, thrownError) {
+                    console.log('error')
+                    console.log(xhr.responseText);
+                    console.log(thrownError)
+                    $('.loading').addClass('d-none')
+                },
+                complete: function(xhr, status) {
+                    $('.loading').addClass('d-none')
+                }
+            })
+        })
+    },
+}
+$(document).ready(function() {
+    Ajax.getShareholder();
+})

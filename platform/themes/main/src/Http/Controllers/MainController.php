@@ -21,6 +21,10 @@ use RvMedia;
 use Illuminate\Http\Request;
 use Platform\Blog\Supports\FilterPost;
 use Platform\Blog\Repositories\Interfaces\PostInterface;
+use Platform\InvestorRelations\Repositories\Interfaces\InvestorRelationsInterface;
+use Platform\PostInvestor\Repositories\Interfaces\PostInvestorInterface;
+use Illuminate\Support\Facades\Log;
+use Platform\Base\Enums\BaseStatusEnum;
 
 class MainController extends PublicController
 {
@@ -130,6 +134,28 @@ class MainController extends PublicController
             "<strong class='text-uppercase font20'> $query </strong>";
 
         return Theme::scope('search', compact('posts' ,'count'))->render();
+    }
+
+    public function getShareholder(Request $request){
+       
+        try {
+        $categoryId = $request->categoryId;
+        $category = app(InvestorRelationsInterface::class)->getFirstBy(
+            [
+                'id' => $categoryId
+            ],
+            ['*'],
+            ['slugable']
+        );
+
+        $data = app(PostInvestorInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
+
+        $view = 'templates/'.$category->template;
+        return Theme::partial($view, compact('data'));
+
+        } catch (\Throwable $th) {
+         
+        }
     }
     
 }
