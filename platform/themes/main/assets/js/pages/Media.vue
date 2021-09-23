@@ -166,9 +166,6 @@
                              <li class="dropdown-submenu sort-mobile">
                                <div class="sort-list">
                                         <select name="sort" class="font18 js-example-basic-single" placeholder="Sắp xếp">
-                                            <!-- <option value="" selected disabled>
-                                                Sắp xếp <span class="caret"></span>
-                                            </option> -->
                                             <option value="new">Thời gian mới nhất</option>
                                             <option value="old">Thời gian cũ nhất</option>
                                             <option value="a-z">Từ A-Z</option>
