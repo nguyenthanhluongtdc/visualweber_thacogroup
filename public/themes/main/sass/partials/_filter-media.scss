@@ -1,10 +1,25 @@
 .filter-media {
     flex: 1 66.1667%;
     max-width: 66.1667%;
+    @media only screen and (max-width: 600px){
+        flex-wrap: wrap;
+        flex: 1 100%;
+        max-width: 100%;
+    }
     .list-tool {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        @media only screen and (max-width: 600px){
+            flex-wrap: wrap;
+            
+        }
+        .search.video{
+            @media only screen and (max-width: 600px){
+                width: 100%;
+                margin-left: 0;
+            }
+        }
         .search {
             width: 49%;
             height: 40px;
@@ -14,6 +29,10 @@
             margin-right: 1%;
             @media only screen and (max-width: 1080px){
                 width: 66.5%;
+            }
+            @media only screen and (max-width: 600px){
+                width: 100%;
+                margin-left: 16px;
             }
             input {
                 border: none;
@@ -138,6 +157,13 @@
                 }
             }
         }
+        .dropdown-filter-mobile.video{
+            @media only screen and (max-width: 600px){
+              
+                margin-left: 0px;
+               
+            }
+        }
         .dropdown-filter-mobile{
             display: none;
             @media only screen and (max-width: 1080px){
@@ -145,10 +171,25 @@
                 margin-right: 5px;
                 cursor: pointer;
                 width: 15%;
-                
-                .datepicker-mobile{
+                @media only screen and (max-width: 600px){
+                    width: 60%;
+                    margin-left: 16px;
+                    margin-top: 5px;
+                }
+                @media only screen and (max-width: 400px){
+                    width: 57%;
+                }
+                @media only screen and (max-width: 350px){
+                    width: 52%;
+                }
+    
+   
+            .datepicker-mobile{
                     margin: -2px -97px;
                     border: none;
+                    @media only screen and (max-width: 600px){
+                        margin: 129px 1px;
+                    }
                     li{
                     height: 50px;
                     
@@ -169,6 +210,9 @@
                     top: 2px !important;
                     left: -103px !important;
                     border: none;
+                    @media only screen and (max-width: 600px){
+                        left: 0 !important;
+                    }
                     .date-mobile{
                         font-size: 20px;
                         position: absolute;
@@ -188,6 +232,17 @@
                     left: -377px !important;
                     border: none;
                     transform: translateX(-197px);
+                    @media only screen and (max-width: 768px){
+                        left: -253px !important;
+                    }
+                    @media only screen and (max-width: 600px){
+                        left: -48px !important;
+                        top: 130px !important;
+                        transform: translateX(49px);
+                    }
+                    @media only screen and (max-width: 400px){
+                        transform: translateX(0px);
+                    }
                 }
                 ul{
                     background-color: #f1f1f1;
@@ -228,6 +283,7 @@
                             .select2-container--open .select2-dropdown--below{
                                 margin: -106px -158px !important;
                                 border: none !important;
+                               
                             }
                            
                             .select2-search.select2-search--dropdown .select2-search__field{
@@ -256,6 +312,7 @@
                                 .select2-selection__rendered{
                                     width: 157px;
                                     padding-left: 0;
+                                   
                                 }
                             }
                         }
@@ -265,13 +322,17 @@
                    
                 }
               
-
+               
                 button{
                     width: 100%;
                     border-radius: unset;
                     height: 40px;
                     background-color: #f1f1f1 !important;
                     margin-left: 0;
+                    // @media only screen and (max-width: 600px){
+                    //     transform: translate(-120px, 41px);
+                    //     width: 346%;
+                    // }
                     i{
                         font-size: 20px;
                         position: absolute;
@@ -298,6 +359,9 @@
                 
 
             }
+            @media only screen and (max-width: 600px){
+                margin-top: 5px;
+            }
         }
     }
 } 
@@ -307,5 +371,8 @@
         border: none !important;
         margin: -133px -186px;
     }
-   
+    @media only screen and (max-width: 600px){
+        margin: -225px -128px;
+        width: 109px !important;
+    }
 }

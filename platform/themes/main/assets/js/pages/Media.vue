@@ -102,7 +102,7 @@
 
 
                     
-                    <div class="dropdown-filter-mobile">
+                    <div class="dropdown-filter-mobile ">
                          <div class="dropdown">
                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Lọc
                              <i class="fal fa-angle-down"></i></button>
@@ -282,7 +282,7 @@
                             <div class="filter-media">
                                 <form action="">
                                     <div class="list-tool">
-                                        <div class="search">
+                                        <div class="search video">
                                             <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="keyword" autocomplete="off" v-model="keywordVideo">
                                             <button class="btn btn-secondary" type="submit">
                                                 <i class="fas fa-search"></i>
@@ -352,7 +352,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                         <div class="dropdown-filter-mobile">
+                                         <div class="dropdown-filter-mobile video">
                          <div class="dropdown">
                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Lọc
                              <i class="fal fa-angle-down"></i></button>

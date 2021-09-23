@@ -36734,7 +36734,7 @@ var render = function() {
                         _vm._v(" "),
                         _vm._m(4),
                         _vm._v(" "),
-                        _c("div", { staticClass: "dropdown-filter-mobile" }, [
+                        _c("div", { staticClass: "dropdown-filter-mobile " }, [
                           _c("div", { staticClass: "dropdown" }, [
                             _vm._m(5),
                             _vm._v(" "),
@@ -37065,7 +37065,7 @@ var render = function() {
                   _c("div", { staticClass: "filter-media" }, [
                     _c("form", { attrs: { action: "" } }, [
                       _c("div", { staticClass: "list-tool" }, [
-                        _c("div", { staticClass: "search" }, [
+                        _c("div", { staticClass: "search video" }, [
                           _c("input", {
                             directives: [
                               {
@@ -37129,75 +37129,88 @@ var render = function() {
                         _vm._v(" "),
                         _vm._m(15),
                         _vm._v(" "),
-                        _c("div", { staticClass: "dropdown-filter-mobile" }, [
-                          _c("div", { staticClass: "dropdown" }, [
-                            _vm._m(16),
-                            _vm._v(" "),
-                            _c(
-                              "ul",
-                              {
-                                staticClass:
-                                  "dropdown-menu dropdown-menu-lg-end"
-                              },
-                              [
-                                _c("li", { staticClass: "dropdown-submenu " }, [
-                                  _vm._m(17),
-                                  _vm._v(" "),
+                        _c(
+                          "div",
+                          { staticClass: "dropdown-filter-mobile video" },
+                          [
+                            _c("div", { staticClass: "dropdown" }, [
+                              _vm._m(16),
+                              _vm._v(" "),
+                              _c(
+                                "ul",
+                                {
+                                  staticClass:
+                                    "dropdown-menu dropdown-menu-lg-end"
+                                },
+                                [
                                   _c(
-                                    "ul",
-                                    {
-                                      staticClass:
-                                        "dropdown-menu datepicker-mobile"
-                                    },
+                                    "li",
+                                    { staticClass: "dropdown-submenu " },
                                     [
-                                      _c("li", [
-                                        _c(
-                                          "a",
-                                          {
-                                            attrs: { tabindex: "-1", href: "#" }
-                                          },
-                                          [
+                                      _vm._m(17),
+                                      _vm._v(" "),
+                                      _c(
+                                        "ul",
+                                        {
+                                          staticClass:
+                                            "dropdown-menu datepicker-mobile"
+                                        },
+                                        [
+                                          _c("li", [
                                             _c(
-                                              "div",
+                                              "a",
                                               {
-                                                staticClass:
-                                                  "md-form md-outline input-with-post-icon datepicker",
                                                 attrs: {
-                                                  id: "date-picker-example"
+                                                  tabindex: "-1",
+                                                  href: "#"
                                                 }
                                               },
                                               [
-                                                _c("input", {
-                                                  staticClass: "font15",
-                                                  attrs: {
-                                                    type: "date",
-                                                    id: "datepicker",
-                                                    name: "calendars"
-                                                  },
-                                                  on: {
-                                                    change: function($event) {
-                                                      return _vm.changeDateAndLoadDataVideo(
-                                                        $event
-                                                      )
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass:
+                                                      "md-form md-outline input-with-post-icon datepicker",
+                                                    attrs: {
+                                                      id: "date-picker-example"
                                                     }
-                                                  }
-                                                })
+                                                  },
+                                                  [
+                                                    _c("input", {
+                                                      staticClass: "font15",
+                                                      attrs: {
+                                                        type: "date",
+                                                        id: "datepicker",
+                                                        name: "calendars"
+                                                      },
+                                                      on: {
+                                                        change: function(
+                                                          $event
+                                                        ) {
+                                                          return _vm.changeDateAndLoadDataVideo(
+                                                            $event
+                                                          )
+                                                        }
+                                                      }
+                                                    })
+                                                  ]
+                                                )
                                               ]
                                             )
-                                          ]
-                                        )
-                                      ])
+                                          ])
+                                        ]
+                                      )
                                     ]
-                                  )
-                                ]),
-                                _vm._v(" "),
-                                _vm._m(18),
-                                _vm._v(" "),
-                                _vm._m(19)
-                              ]
-                            )
-                          ])
-                        ]),
+                                  ),
+                                  _vm._v(" "),
+                                  _vm._m(18),
+                                  _vm._v(" "),
+                                  _vm._m(19)
+                                ]
+                              )
+                            ])
+                          ]
+                        ),
                         _vm._v(" "),
                         _vm._m(20)
                       ])
