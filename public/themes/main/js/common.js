@@ -693,7 +693,7 @@ var Ajax = {
                     $('.loading').removeClass('d-none')
                 },
                 success: function(data) {
-                    
+
                     if ($('.render-html').length) {
                         $("#breadcrum").load(" #breadcrum1");
                         $('.render-html').html(data)
