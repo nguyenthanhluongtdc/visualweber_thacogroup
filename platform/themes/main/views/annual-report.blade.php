@@ -1,5 +1,7 @@
 @includeIf('theme.main::views.components.banner-qhcd')
-
+<script>
+    const getShareholderUrl = '{{route('public.ajax.getShareholder')}}'
+</script>
 <!--breadcrumb-->
 @includeIf("theme.main::views.components.breadcrumb")
 <!---end breadcrumb---->
@@ -9,11 +11,14 @@
         <div class="container-customize">
             <div class="financial-report  mb-100"> 
                 <div class="financial-report_left">
+                    <div class="loading d-none">
+                        <img src="{{Theme::asset()->url('images/media/loading.gif')}}" alt="Loading">
+                    </div>
                     @if($category)
                     <h2 class="title-mobile text-uppercase mb-4 font30"> {!! $category->name !!} </h2>
                     @endif
                     @includeIf('theme.main::views.components.filter-qhcd')
-                    <div class="list-report">  
+                    <div class="list-info">  
                         @forelse($data as $item)
                         <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50"
                             class="aos-init aos-animate">
@@ -37,6 +42,8 @@
                             {!! __('Đang được cập nhật') !!}
                         </p>
                         @endforelse
+
+                        
                     </div>
 
                     @if(!empty($data))

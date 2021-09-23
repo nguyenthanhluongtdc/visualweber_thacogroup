@@ -1,5 +1,7 @@
 @includeIf('theme.main::views.components.banner-qhcd')
-
+<script>
+    const getShareholderUrl = '{{route('public.ajax.getShareholder')}}'
+</script>
 <!--breadcrumb-->
 @includeIf("theme.main::views.components.breadcrumb")
 <!---end breadcrumb---->
@@ -9,10 +11,13 @@
         <div class="container-customize"> 
             <div class="shareholder-infomation mb-100">
                 <div class="shareholder-infomation_left">
+                    <div class="loading d-none">
+                        <img src="{{Theme::asset()->url('images/media/loading.gif')}}" alt="Loading">
+                    </div>
                     <div class="list-info">
-                        @if($category)
+                        {{-- @if($category)
                         <h2 class="title-mobile text-uppercase mb-4 font30"> {!! $category->name !!} </h2>
-                        @endif
+                        @endif --}}
     
                         @includeIf('theme.main::views.components.filter-qhcd')
                         @forelse($data as $item)
