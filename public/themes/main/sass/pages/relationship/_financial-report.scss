@@ -25,7 +25,6 @@
         .list-info {
             display: flex;
             flex-wrap: wrap;
-            padding-top: 20px;
             @media only screen and (max-width: 1080px) {
                 flex-wrap: unset;
                 display: unset;
@@ -164,8 +163,8 @@
                     }
                 }
             }
-            .report-item:nth-child(4),
-            .report-item:nth-child(7) {
+            .report-item:nth-child(3),
+            .report-item:nth-child(6) {
                 margin-right: 0;
             }
         }

@@ -3,11 +3,12 @@
 <div class="loading d-none">
     <img src="{{Theme::asset()->url('images/media/loading.gif')}}" alt="Loading">
 </div>
+@includeIf('theme.main::views.components.filter-qhcd')
 <div class="list-info">
     @if($category)
     <h2 class="title-mobile text-uppercase mb-4 font30"> {!! $category->name !!} </h2>
     @endif
-    @includeIf('theme.main::views.components.filter-qhcd')
+
     @forelse($data as $item)
         <div class="info-item">
             <div class="info-left">
