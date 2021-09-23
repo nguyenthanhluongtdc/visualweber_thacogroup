@@ -498,6 +498,7 @@ if ($('.icon-sort').length > 0) {
     });
 
 }
+
 // filter click
 if ($('.filter__title').length > 0) {
     $('.filter__title').click(function() {
@@ -508,7 +509,12 @@ if ($('.filter__title').length > 0) {
 }
 $(document).ready(function() {
     $('.js-example-basic-single').select2();
+    
+
 });
+
+
+
 
 if ($('.itemdown-show').length > 0) {
     $('.itemdown-show').click(function() {

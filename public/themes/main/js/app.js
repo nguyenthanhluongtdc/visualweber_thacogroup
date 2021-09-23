@@ -2688,6 +2688,83 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //custom-scrollbar
 
  //pagination
@@ -37001,7 +37078,7 @@ var render = function() {
                             staticClass: " form-control form-control-sm ",
                             attrs: {
                               type: "text",
-                              placeholder: "Nhập nội dung cần tìm....",
+                              placeholder: "Nhập nội dung cần tìm",
                               value: "",
                               name: "keyword",
                               autocomplete: "off"
@@ -37050,7 +37127,79 @@ var render = function() {
                         _vm._v(" "),
                         _vm._m(14),
                         _vm._v(" "),
-                        _vm._m(15)
+                        _vm._m(15),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "dropdown-filter-mobile" }, [
+                          _c("div", { staticClass: "dropdown" }, [
+                            _vm._m(16),
+                            _vm._v(" "),
+                            _c(
+                              "ul",
+                              {
+                                staticClass:
+                                  "dropdown-menu dropdown-menu-lg-end"
+                              },
+                              [
+                                _c("li", { staticClass: "dropdown-submenu " }, [
+                                  _vm._m(17),
+                                  _vm._v(" "),
+                                  _c(
+                                    "ul",
+                                    {
+                                      staticClass:
+                                        "dropdown-menu datepicker-mobile"
+                                    },
+                                    [
+                                      _c("li", [
+                                        _c(
+                                          "a",
+                                          {
+                                            attrs: { tabindex: "-1", href: "#" }
+                                          },
+                                          [
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass:
+                                                  "md-form md-outline input-with-post-icon datepicker",
+                                                attrs: {
+                                                  id: "date-picker-example"
+                                                }
+                                              },
+                                              [
+                                                _c("input", {
+                                                  staticClass: "font15",
+                                                  attrs: {
+                                                    type: "date",
+                                                    id: "datepicker",
+                                                    name: "calendars"
+                                                  },
+                                                  on: {
+                                                    change: function($event) {
+                                                      return _vm.changeDateAndLoadDataVideo(
+                                                        $event
+                                                      )
+                                                    }
+                                                  }
+                                                })
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ])
+                                    ]
+                                  )
+                                ]),
+                                _vm._v(" "),
+                                _vm._m(18),
+                                _vm._v(" "),
+                                _vm._m(19)
+                              ]
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _vm._m(20)
                       ])
                     ])
                   ])
@@ -37149,7 +37298,7 @@ var render = function() {
                                         ]
                                       ),
                                       _vm._v(" "),
-                                      _vm._m(16, true)
+                                      _vm._m(21, true)
                                     ]
                                   )
                                 : _vm._e()
@@ -37838,7 +37987,10 @@ var staticRenderFns = [
     return _c(
       "a",
       { staticClass: "test", attrs: { tabindex: "-1", href: "#" } },
-      [_vm._v("Thời gian  "), _c("i", { staticClass: "fal fa-angle-down" })]
+      [
+        _vm._v("Thời gian  "),
+        _c("i", { staticClass: "fal fa-angle-down date-mobile" })
+      ]
     )
   },
   function() {
@@ -37848,10 +38000,10 @@ var staticRenderFns = [
     return _c("li", { staticClass: "dropdown-submenu " }, [
       _c("a", { staticClass: "test", attrs: { tabindex: "-1", href: "#" } }, [
         _vm._v("Ngành nghề "),
-        _c("i", { staticClass: "fal fa-angle-down" })
+        _c("i", { staticClass: "fal fa-angle-down filter-mobile" })
       ]),
       _vm._v(" "),
-      _c("ul", { staticClass: "dropdown-menu filter-menu" }, [
+      _c("ul", { staticClass: "dropdown-menu filter-menu " }, [
         _c("li", [
           _c("a", { attrs: { tabindex: "-1", href: "#" } }, [
             _c("div", { staticClass: "pretty p-default p-smooth" }, [
@@ -38130,7 +38282,7 @@ var staticRenderFns = [
           [
             _c("option", { attrs: { value: "", selected: "", disabled: "" } }, [
               _vm._v(
-                "\n                                                        Sắp xếp\n                                                    "
+                "\n                                                        Sắp xếppppp\n                                                    "
               )
             ]),
             _vm._v(" "),
@@ -38148,6 +38300,138 @@ var staticRenderFns = [
           ]
         )
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "btn btn-default dropdown-toggle",
+        attrs: { type: "button", "data-toggle": "dropdown" }
+      },
+      [
+        _vm._v("Lọc\n                             "),
+        _c("i", { staticClass: "fal fa-angle-down" })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "test", attrs: { tabindex: "-1", href: "#" } },
+      [_vm._v("Thời gian  "), _c("i", { staticClass: "fal fa-angle-down" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "dropdown-submenu" }, [
+      _c("a", { staticClass: "test", attrs: { tabindex: "-1", href: "#" } }, [
+        _vm._v("Ngành nghề "),
+        _c("i", { staticClass: "fal fa-angle-down" })
+      ]),
+      _vm._v(" "),
+      _c("ul", { staticClass: "dropdown-menu filter-menu " }, [
+        _c("li", [
+          _c("a", { attrs: { tabindex: "-1", href: "#" } }, [
+            _c("div", { staticClass: "pretty p-default p-smooth" }, [
+              _c("input", { attrs: { type: "checkbox" } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "state p-primary" }, [
+                _c("label", [_vm._v("THACO")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "pretty p-default p-smooth" }, [
+              _c("input", { attrs: { type: "checkbox" } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "state p-primary" }, [
+                _c("label", [_vm._v("Ô tô & Cơ khí")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "pretty p-default p-smooth" }, [
+              _c("input", { attrs: { type: "checkbox" } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "state p-primary" }, [
+                _c("label", [_vm._v("Nông Lâm Nghiệp")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "pretty p-default p-smooth" }, [
+              _c("input", { attrs: { type: "checkbox" } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "state p-primary" }, [
+                _c("label", [_vm._v("Đầu tư - Xây Dựng")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "pretty p-default p-smooth" }, [
+              _c("input", { attrs: { type: "checkbox" } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "state p-primary" }, [
+                _c("label", [_vm._v("Thương mại - Dịch vụ")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "pretty p-default p-smooth" }, [
+              _c("input", { attrs: { type: "checkbox" } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "state p-primary" }, [
+                _c("label", [_vm._v("Logistics")])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "dropdown-submenu sort-mobile" }, [
+      _c("div", { staticClass: "sort-list" }, [
+        _c(
+          "select",
+          {
+            staticClass: "font18 js-example-basic-single",
+            attrs: { name: "sort", placeholder: "Sắp xếp" }
+          },
+          [
+            _c("option", { attrs: { value: "new" } }, [
+              _vm._v("Thời gian mới nhất")
+            ]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "old" } }, [
+              _vm._v("Thời gian cũ nhất")
+            ]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "a-z" } }, [_vm._v("Từ A-Z")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "z-a" } }, [_vm._v("Từ Z-A")])
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "search-btn" }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-primary", attrs: { type: "button" } },
+        [_vm._v("Tìm kiếm")]
+      )
     ])
   },
   function() {

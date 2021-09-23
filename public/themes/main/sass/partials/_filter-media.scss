@@ -132,6 +132,10 @@
                         height: 40px;
                     }
                 }
+                .select2-selection__rendered{
+                    width: 157px;
+                    padding-left: 0;
+                }
             }
         }
         .dropdown-filter-mobile{
@@ -141,11 +145,13 @@
                 margin-right: 5px;
                 cursor: pointer;
                 width: 15%;
+                
                 .datepicker-mobile{
                     margin: -2px -97px;
                     border: none;
                     li{
                     height: 50px;
+                    
                         a{
                         
                             .datepicker{
@@ -163,6 +169,19 @@
                     top: 2px !important;
                     left: -103px !important;
                     border: none;
+                    .date-mobile{
+                        font-size: 20px;
+                        position: absolute;
+                        right: 25px;
+                        top: 17px;
+                    }
+                    .filter-mobile{
+                        font-size: 20px;
+                        position: absolute;
+                        right: 25px;
+                        top: 57px;
+                    }
+                   
                 }
                 .filter-menu{
                     top: 0 !important;
@@ -253,6 +272,12 @@
                     height: 40px;
                     background-color: #f1f1f1 !important;
                     margin-left: 0;
+                    i{
+                        font-size: 20px;
+                        position: absolute;
+                        right: 15px;
+                        top: 10px;
+                    }
                
                 }
                 .dropdown-toggle::after{
@@ -278,6 +303,9 @@
 } 
 
 .select2-dropdown{
-    border: none !important;
-    margin: -133px -186px;
+    @media only screen and (max-width: 1080px){
+        border: none !important;
+        margin: -133px -186px;
+    }
+   
 }
