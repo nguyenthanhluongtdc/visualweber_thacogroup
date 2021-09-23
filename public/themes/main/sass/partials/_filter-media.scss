@@ -167,6 +167,20 @@
         .dropdown-filter-mobile{
 
             display: none;
+            @media only screen and (max-width: 600px){
+                width: 60% !important;
+                margin-left: 16px;
+                margin-top: 5px;
+            }
+            @media only screen and (max-width: 420px){
+                width: 64% !important;
+            }
+            @media only screen and (max-width: 360px){
+                width: 58% !important;
+            }
+            @media only screen and (max-width: 320px){
+                width: 52% !important;
+            }
             @media only screen and (max-width: 1080px){
                 display: block;
                 margin-right: 5px;
@@ -177,17 +191,7 @@
                 opacity: 1 !important;
                 -moz-appearance: none !important;
 
-                @media only screen and (max-width: 600px){
-                    width: 60%;
-                    margin-left: 16px;
-                    margin-top: 5px;
-                }
-                @media only screen and (max-width: 400px){
-                    width: 57%;
-                }
-                @media only screen and (max-width: 350px){
-                    width: 52%;
-                }
+               
     
    
             .datepicker-mobile{
