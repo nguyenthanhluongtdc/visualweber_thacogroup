@@ -1,5 +1,4 @@
 .filter-search-media.non-field {
-    margin-bottom: 20px;
     width: 100%;
     .form-search {
         display: flex;
@@ -37,7 +36,7 @@
         .select-year {
             width: 12%;
             outline: 0;
-            box-shadow: none; 
+            box-shadow: none;
             padding: 3px 8px;
             margin-left: 2%;
             font-weight: bold;
@@ -49,7 +48,7 @@
             -webkit-appearance: none;
             opacity: 1 !important;
             -moz-appearance: none;
-            @media only screen and (max-width: 992px){
+            @media only screen and (max-width: 992px) {
                 width: 32%;
             }
         }

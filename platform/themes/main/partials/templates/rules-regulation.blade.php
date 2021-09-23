@@ -4,9 +4,9 @@
     <img src="{{Theme::asset()->url('images/media/loading.gif')}}" alt="Loading">
 </div>
 <div class="list-info">
-    {{-- @if($category)
+    @if($category)
     <h2 class="title-mobile text-uppercase mb-4 font30"> {!! $category->name !!} </h2>
-    @endif --}}
+    @endif
 
     @includeIf('theme.main::views.components.filter-qhcd')
     @forelse($data as $item)

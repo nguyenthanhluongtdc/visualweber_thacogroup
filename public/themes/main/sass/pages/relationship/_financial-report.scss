@@ -25,6 +25,7 @@
         .list-info {
             display: flex;
             flex-wrap: wrap;
+            padding-top: 20px;
             @media only screen and (max-width: 1080px) {
                 flex-wrap: unset;
                 display: unset;

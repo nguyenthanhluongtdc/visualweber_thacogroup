@@ -32,6 +32,7 @@
                 display: flex;
                 padding: 15px 0;
                 border-bottom: 1px solid #d7d7d7;
+                width: 100%;
                 &:last-child {
                     border: unset;
                 }
@@ -153,12 +154,16 @@
             }
         }
     }
+    &_left.render-html .container-customize {
+        padding: 0;
+    }
     .relationship-sibar {
         height: max-content;
         max-width: 29.1%;
         position: sticky;
         flex: 1;
         top: 0px;
+        padding-top: 92px;
         @media only screen and (max-width: 1080px) {
             max-width: 100%;
             height: auto;
