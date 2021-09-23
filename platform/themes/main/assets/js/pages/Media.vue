@@ -343,7 +343,7 @@
                                             <div class="sort-list">
                                                 <select name="sort" class="sort-time font18 js-example-basic-single">
                                                     <option value="" selected disabled>
-                                                        Sắp xếppppp
+                                                        Sắp xếp
                                                     </option>
                                                     <option value="new">Thời gian mới nhất</option>
                                                     <option value="old">Thời gian cũ nhất</option>

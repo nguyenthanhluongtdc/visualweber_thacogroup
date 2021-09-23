@@ -165,12 +165,18 @@
             }
         }
         .dropdown-filter-mobile{
+
             display: none;
             @media only screen and (max-width: 1080px){
                 display: block;
                 margin-right: 5px;
                 cursor: pointer;
                 width: 15%;
+                -webkit-appearance: none !important;
+                appearance: none !important;
+                opacity: 1 !important;
+                -moz-appearance: none !important;
+
                 @media only screen and (max-width: 600px){
                     width: 60%;
                     margin-left: 16px;
@@ -350,6 +356,10 @@
             display: none;
             @media only screen and (max-width: 1080px){
                 display: block;
+                -webkit-appearance: none !important;
+                appearance: none !important;
+                opacity: 1 !important;
+                -moz-appearance: none !important;
                 button{
                     height: 40px;
                     background: $main_color !important;

@@ -38295,7 +38295,7 @@ var staticRenderFns = [
           [
             _c("option", { attrs: { value: "", selected: "", disabled: "" } }, [
               _vm._v(
-                "\n                                                        Sắp xếppppp\n                                                    "
+                "\n                                                        Sắp xếp\n                                                    "
               )
             ]),
             _vm._v(" "),
