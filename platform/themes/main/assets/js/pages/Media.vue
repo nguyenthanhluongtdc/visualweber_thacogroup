@@ -27,10 +27,10 @@
                             </ul>
 
                             <div class="filter-media ">
-                                <form action="">
+                                <form action="" @submit.prevent="onEnterGallery">
                                     <div class="list-tool">
                                         <div class="search">
-                                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="keyword" autocomplete="off" v-model="keyword">
+                                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="keyword" autocomplete="off" v-model="keyword" v-on:keydown.enter.prevent="onEnterGallery">
                                             <button class="btn btn-secondary" type="submit">
                                                 <i class="fas fa-search"></i>
                                             </button>
@@ -199,10 +199,10 @@
                             </ul>
 
                             <div class="filter-media">
-                                <form action="">
+                                <form action="#" @submit.prevent="onEnterVideo">
                                     <div class="list-tool">
                                         <div class="search">
-                                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm...." value="" name="keyword" autocomplete="off" v-model="keywordVideo">
+                                            <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm...." value="" name="keyword" autocomplete="off" v-model="keywordVideo" v-on:keydown.enter.prevent="onEnterVideo">
                                             <button class="btn btn-secondary" type="submit">
                                                 <i class="fas fa-search"></i>
                                             </button>
@@ -601,6 +601,7 @@ export default {
                 sort: "",
                 format_type: 'video',
                 categoryId: this.categoryId,
+
             },
             keywordVideo: '',
             itemVideoDetail: [],
@@ -611,19 +612,19 @@ export default {
     //event watch
     watch: {
         keyword(after, before) {
-            this.loadAlbumImage()
+            this.filterAlbumImage.keyword = this.keyword
         },
         keywordVideo(after, before) {
-            this.loadAlbumVideo();
+            this.filterAlbumVideo.keyword = this.keywordVideo
         },
         changeFilterPhoto() {
+            this.filterAlbumImage.type = this.changeFilterPhoto
              this.loadAlbumImage()
         },
     },
 
     //init method
     methods: { 
-
         //gallery
         loadGallery: async function(id, album="") {
             if(this.indexItem != id) {
@@ -646,8 +647,6 @@ export default {
         },
 
         loadAlbumImage: function(page=1) {
-            this.filterAlbumImage.keyword = this.keyword
-            this.filterAlbumImage.type = this.changeFilterPhoto
 
             this.loadAlbumCommon(page, this.filterAlbumImage)
             // await this.$http.post('api/get/album/image?page='+page, {data: this.filterAlbumImage} )
@@ -756,10 +755,12 @@ export default {
                     console.log(error)
                 })
         },
+        onEnterGallery: function() {
+            this.loadAlbumImage()
+        },
 
         //video
         loadAlbumVideo: function(page=1) {
-            this.filterAlbumVideo.keyword = this.keywordVideo
             this.loadAlbumCommon(page, this.filterAlbumVideo)
         },
         loadGalleryVideo: async function(id, album="") {
@@ -795,6 +796,9 @@ export default {
         //pagination
         albumVideoOnPageChange(page) {
             this.loadAlbumVideo(page);
+        },
+        onEnterVideo: function() {
+            this.loadAlbumVideo()
         },
 
     },
