@@ -11,6 +11,10 @@
     display: none;
 }
 
+.page-content {
+    padding-top: 96px;
+}
+
 .header {
     background-color: white !important;
     box-shadow: 0 5px 8px -5px #555;
