@@ -12,6 +12,9 @@
             align-items: baseline;
             background-color: #f1f1f1;
             margin-right: 1%;
+            @media only screen and (max-width: 1080px){
+                width: 66.5%;
+            }
             input {
                 border: none;
                 outline: none;
@@ -30,12 +33,20 @@
                 color: #707070;
                 border: none;
                 outline: none;
+
                 &:focus {
                     border: none;
                     outline: none;
                     box-shadow: unset;
                 }
+                &:focus{
+                    outline: none !important;
+                }
             }
+            
+        }
+        .calender, .arrange, .filter{
+            @media only screen and (max-width: 1080px){display: none;}
         }
         .calender {
             margin-left: 1%;
@@ -51,7 +62,7 @@
         }
         .filter {
             margin-right: 1%;
-            width: 16%;
+            width: 10%;
             cursor: pointer;
             &__title {
                 background: #f1f1f1;
@@ -123,5 +134,150 @@
                 }
             }
         }
+        .dropdown-filter-mobile{
+            display: none;
+            @media only screen and (max-width: 1080px){
+                display: block;
+                margin-right: 5px;
+                cursor: pointer;
+                width: 15%;
+                .datepicker-mobile{
+                    margin: -2px -97px;
+                    border: none;
+                    li{
+                    height: 50px;
+                        a{
+                        
+                            .datepicker{
+                                input{
+                                    border-color: #f1f1f100 !important;
+                                    background-color: #f1f1f1;
+                                   
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                .dropdown-menu{
+                    top: 2px !important;
+                    left: -103px !important;
+                    border: none;
+                }
+                .filter-menu{
+                    top: 0 !important;
+                    left: -377px !important;
+                    border: none;
+                    transform: translateX(-197px);
+                }
+                ul{
+                    background-color: #f1f1f1;
+                    padding: 7px 16px 0;
+                   
+                    a{
+                       
+                        color: unset;
+                        // padding-left: 8px;
+                        padding-right: 20px;
+                        color: #444;
+                         line-height: 40px;
+                    }
+                    
+                    li{
+                        &:nth-child(2){
+                            border-top: 1px solid rgba(54, 54, 54, 0.507);
+                            border-bottom: 1px solid rgba(54, 54, 54, 0.507);
+                          
+                            
+                        }
+                        // padding: 0 10px;
+                        a{
+                          
+                            color: unset;
+                      
+                        }
+                        
+                        .sort-mobile{
+                            margin: -107px -72px !important;
+                        }
+                        
+                        .sort-list {
+                            select{
+                                border: none !important;
+                            }
+                            
+                            .select2-container--open .select2-dropdown--below{
+                                margin: -106px -158px !important;
+                                border: none !important;
+                            }
+                           
+                            .select2-search.select2-search--dropdown .select2-search__field{
+                                display: none !important;
+                            }
+                            .select2-search--dropdown{
+                                display: none !important;
+                            }
+                            .select2-container--default .select2-selection--single .select2-selection__arrow b{
+                                display: none !important;
+                            }
+                            .select2-container--default .select2-selection--single {
+                                background-color: #f1f1f1;
+                                border-radius: unset;
+                                border: unset;
+                                height: 40px;
+                                display: flex;
+                                margin-left: 1%;
+                                align-items: center;
+                                width: 100px;
+                                width: max-content;
+                                .select2-selection__arrow {
+                                    height: 40px;
+                                  
+                                }
+                                .select2-selection__rendered{
+                                    width: 157px;
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                       
+                        
+                    }
+                   
+                }
+              
+
+                button{
+                    width: 100%;
+                    border-radius: unset;
+                    height: 40px;
+                    background-color: #f1f1f1 !important;
+                    margin-left: 0;
+               
+                }
+                .dropdown-toggle::after{
+                    display: none !important;
+                }
+            }
+        }
+        .search-btn{
+            display: none;
+            @media only screen and (max-width: 1080px){
+                display: block;
+                button{
+                    height: 40px;
+                    background: $main_color !important;
+                    border-radius: unset !important;
+                    border: unset !important;
+                }
+                
+
+            }
+        }
     }
 } 
+
+.select2-dropdown{
+    border: none !important;
+    margin: -133px -186px;
+}

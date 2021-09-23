@@ -514,7 +514,7 @@ if ($('.itemdown-show').length > 0) {
     $('.itemdown-show').click(function() {
         $(this).parents('.info-right').find('.downcontent').slideToggle();
         return false;
-    });
+    }); 
 }
 $('#support-tab>div').click(function(event) {
     $('.contact-fo').parent().css('display', '');

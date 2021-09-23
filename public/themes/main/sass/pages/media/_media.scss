@@ -819,6 +819,7 @@
         .select2-search.select2-search--dropdown {
             .select2-search__field {
                 height: 40px;
+                display: none;
                 &:focus {
                     outline: unset;
                     box-shadow: unset;
