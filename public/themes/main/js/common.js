@@ -655,7 +655,7 @@ if ($('#button-activity').length > 0) {
 
 
 
- 
+
 (function($) {
     $(function() {
         $('.menu-mobile .nav-list .nav-item a:not(:only-child)').click(function(e) {
@@ -681,7 +681,7 @@ var Ajax = {
         // const shareholderResult = $('.shareholder-infomation_left')
         // if (!shareholderResult) return
         $(document).on('click', '.item_link_shareholder', function() {
-            // $(this).addClass('active').parent().siblings().children().removeClass('active')
+            $(this).addClass('active').siblings().removeClass('active')
             $.ajax({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
