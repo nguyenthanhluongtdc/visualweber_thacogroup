@@ -479,8 +479,13 @@
                                         margin-bottom: 0;
                                         font-family: $MyriadPro-Bold;
                                         @include split_str(2);
+                                        @media only screen and (max-width: 1080px){
+                                            margin: 5px 0;
+                                            line-height: 1.1;
+                                        }
                                         @media only screen and (max-width: 600px){
                                             font-size: 12px;
+                                            
                                             line-height: 1;
                                         }
                                     }
@@ -1130,7 +1135,7 @@ iframe {
         height: 350px !important;
     }
     @media only screen and (max-width: 600px){
-        height: 250px !important;
+        height: 220px !important;
     }
     @media only screen and (max-width: 350px){
         height: 200px !important;
