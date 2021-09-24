@@ -173,7 +173,7 @@
             }
         }
         .dropdown-filter-mobile{
-
+            
             display: none;
             @media only screen and (max-width: 720px){
                width: 20% !important;
@@ -239,8 +239,10 @@
                     }
                 }
                 .dropdown-menu{
-                    top: 2px !important;
-                    left: -103px !important;
+                    &.click-show {
+                        top: 0 !important;
+                        left: -102% !important;
+                    }
                     border: none;
                     @media only screen and (max-width: 600px){
                         left: 0 !important;
@@ -255,7 +257,8 @@
                         font-size: 20px;
                         position: absolute;
                         right: 25px;
-                        top: 57px;
+                        top: 50%;
+                        transform: translateY(-50%);
                     }
                    
                 }
@@ -264,6 +267,14 @@
                     left: -250px !important;
                     border: none;
                     transform: translateX(-192px);
+
+                    @media(max-width: 1080px) {
+                        &.mobile {
+                            top: 0 !important;
+                            left: -102% !important;
+                        }
+                    }
+
                     @media only screen and (max-width: 768px){
                         left: -153px !important;
                     }
@@ -284,12 +295,13 @@
                        
                         color: unset;
                         // padding-left: 8px;
-                        padding-right: 20px;
+                        position: relative;
                         color: #444;
                          line-height: 40px;
                     }
                     
                     li{
+                        position: relative;
                         &:nth-child(2){
                             border-top: 1px solid rgba(54, 54, 54, 0.507);
                             border-bottom: 1px solid rgba(54, 54, 54, 0.507);
