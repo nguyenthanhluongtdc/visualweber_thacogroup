@@ -184,6 +184,9 @@
             @media only screen and (max-width: 320px){
                 width: 52% !important;
             }
+            @media only screen and (max-width: 300px){
+                width: 40% !important;
+            }
             @media only screen and (max-width: 1080px){
                 display: block;
                 margin-right: 5px;
@@ -200,6 +203,10 @@
             .datepicker-mobile{
                     margin: -2px -97px;
                     border: none;
+                    -webkit-appearance: none !important;
+                    appearance: none !important;
+                    opacity: 1 !important;
+                    -moz-appearance: none !important;
                     @media only screen and (max-width: 600px){
                         margin: 129px 1px;
                     }
@@ -284,9 +291,9 @@
                       
                         }
                         
-                        .sort-mobile{
-                            margin: -107px -72px !important;
-                        }
+                        // .sort-mobile{
+                        //     margin: -107px -72px !important;
+                        // }
                         
                         .sort-list {
                             select{
@@ -294,7 +301,7 @@
                             }
                             
                             .select2-container--open .select2-dropdown--below{
-                                margin: -106px -158px !important;
+                                // margin: -106px -158px !important;
                                 border: none !important;
                                
                             }
@@ -351,6 +358,9 @@
                         position: absolute;
                         right: 15px;
                         top: 10px;
+                        @media only screen and (max-width: 300px){
+                           right: 9px;
+                        }
                     }
                
                 }
@@ -386,10 +396,10 @@
 .select2-dropdown{
     @media only screen and (max-width: 1080px){
         border: none !important;
-        margin: -133px -186px;
+        // margin: -133px -186px;
     }
     @media only screen and (max-width: 600px){
-        margin: -225px -128px;
-        width: 109px !important;
+        // margin: -225px -128px;
+        // width: 109px !important;
     }
 }

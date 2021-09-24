@@ -102,7 +102,7 @@
 
 
                     
-                    <div class="dropdown-filter-mobile ">
+                    <div class="dropdown-filter-mobile">
                          <div class="dropdown">
                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Lọc
                              <i class="fal fa-angle-down"></i></button>
@@ -620,7 +620,10 @@
                         {{galleryImage.name}}
                     </h2>
                 </div>
-                
+                <!-- keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    }, -->
                 <div class="modal-body-custom">
                     <template>
                         <div class="swiper-galleryImage h-100">
@@ -679,7 +682,7 @@ import "vue-custom-scrollbar/dist/vueScrollbar.css"
 import Paginationn from 'laravel-vue-pagination';
 
 //swiper use gallery
-import { Swiper as SwiperClass, Pagination, Navigation } from 'swiper/js/swiper.esm'
+import { Swiper as SwiperClass, Pagination, Navigation, Keyboard, Mousewheel, } from 'swiper/js/swiper.esm'
 import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
 const { Swiper, SwiperSlide } = getAwesomeSwiper(SwiperClass)
 
@@ -699,7 +702,9 @@ export default {
         vueCustomScrollbar,
         Swiper,
         SwiperSlide,
-        Paginationn
+        Paginationn,
+        Keyboard,
+        Mousewheel,
     },
 
     //init data
@@ -707,20 +712,17 @@ export default {
         return {
             //gallery
             swiperOptions: {
-                keyboard: {
-                    enabled: true,
-                    onlyInViewport: false,
-                },
+               
                 slidesPerView: 1,
                 spaceBetween: 30,
                 pagination: {
                     el: '.swiper-pagination',
                     type: 'progressbar'
                 },
-                 keyboard: {
-                    enabled: true,
-                    onlyInViewport: false,
-                },
+                 keyboard: { 
+                     enabled: true ,
+                     onlyInViewport: false,
+                     },
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev' 

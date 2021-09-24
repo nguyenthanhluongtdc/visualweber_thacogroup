@@ -2092,8 +2092,9 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+//
+//
+//
 //
 //
 //
@@ -2790,32 +2791,30 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Swiper.use([swiper_js_swiper_e
     vueCustomScrollbar: (vue_custom_scrollbar__WEBPACK_IMPORTED_MODULE_1___default()),
     Swiper: Swiper,
     SwiperSlide: SwiperSlide,
-    Paginationn: (laravel_vue_pagination__WEBPACK_IMPORTED_MODULE_3___default())
+    Paginationn: (laravel_vue_pagination__WEBPACK_IMPORTED_MODULE_3___default()),
+    Keyboard: swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Keyboard,
+    Mousewheel: swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_4__.Mousewheel
   },
   //init data
   data: function data() {
-    var _swiperOptions;
-
     return {
       //gallery
-      swiperOptions: (_swiperOptions = {
-        keyboard: {
-          enabled: true,
-          onlyInViewport: false
-        },
+      swiperOptions: {
         slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
           el: '.swiper-pagination',
           type: 'progressbar'
+        },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
         }
-      }, _defineProperty(_swiperOptions, "keyboard", {
-        enabled: true,
-        onlyInViewport: false
-      }), _defineProperty(_swiperOptions, "navigation", {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      }), _swiperOptions),
+      },
       indexItem: -1,
       dataImage: [],
       galleryImage: [],
@@ -36734,7 +36733,7 @@ var render = function() {
                         _vm._v(" "),
                         _vm._m(4),
                         _vm._v(" "),
-                        _c("div", { staticClass: "dropdown-filter-mobile " }, [
+                        _c("div", { staticClass: "dropdown-filter-mobile" }, [
                           _c("div", { staticClass: "dropdown" }, [
                             _vm._m(5),
                             _vm._v(" "),
