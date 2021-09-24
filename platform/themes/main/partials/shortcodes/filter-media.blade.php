@@ -11,10 +11,10 @@
                     <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
                          <input type="date" id="datepicker" name="calendars" autocomplete="off" class="font15">
                     </div>
-                </div> 
+                </div>
                 <div class="filter" id="filter">
                     <div class="filter__title">
-                        <label for="">Filter</label>    
+                        <label for="">Filterrrrr </label>    
                         <i class="fas fa-angle-down"></i>
                     </div>
                     <div class="filler-list">

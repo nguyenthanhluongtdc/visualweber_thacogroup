@@ -69,7 +69,7 @@ class HookServiceProvider extends ServiceProvider
             Theme::breadcrumb()->add($category->name, $category->url);
             
             return [
-                'view'         => $category->template??'default',
+                'view'         => 'shareholder-relations'??'default',
                 'default_view' => 'plugins/blog::themes.category',
                 'data'         => compact('category', 'data'),
                 'slug'         => $category->slug,

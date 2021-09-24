@@ -1,25 +1,10 @@
 .filter-media {
     flex: 1 66.1667%;
     max-width: 66.1667%;
-    @media only screen and (max-width: 600px){
-        flex-wrap: wrap;
-        flex: 1 100%;
-        max-width: 100%;
-    }
     .list-tool {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
-        @media only screen and (max-width: 600px){
-            flex-wrap: wrap;
-            
-        }
-        .search.video{
-            @media only screen and (max-width: 600px){
-                width: 100%;
-                margin-left: 0;
-            }
-        }
         .search {
             width: 49%;
             height: 40px;
@@ -27,13 +12,6 @@
             align-items: baseline;
             background-color: #f1f1f1;
             margin-right: 1%;
-            @media only screen and (max-width: 1080px){
-                width: 66.5%;
-            }
-            @media only screen and (max-width: 600px){
-                width: 100%;
-                margin-left: 16px;
-            }
             input {
                 border: none;
                 outline: none;
@@ -52,20 +30,12 @@
                 color: #707070;
                 border: none;
                 outline: none;
-
                 &:focus {
                     border: none;
                     outline: none;
                     box-shadow: unset;
                 }
-                &:focus{
-                    outline: none !important;
-                }
             }
-            
-        }
-        .calender, .arrange, .filter{
-            @media only screen and (max-width: 1080px){display: none;}
         }
         .calender {
             margin-left: 1%;
@@ -81,7 +51,7 @@
         }
         .filter {
             margin-right: 1%;
-            width: 10%;
+            width: 16%;
             cursor: pointer;
             &__title {
                 background: #f1f1f1;
@@ -402,4 +372,4 @@
         // margin: -225px -128px;
         // width: 109px !important;
     }
-}
+} 

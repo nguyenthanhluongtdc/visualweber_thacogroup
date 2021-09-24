@@ -23,6 +23,10 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
             Route::post('/get/album/image', 'ApiController@getAlbumImage');
             Route::post('/get/menu/', 'ApiController@getMenuByLocation');
         });
+        Route::group(['prefix' => 'ajax'],function(){
+            Route::get('sharehoder','MainController@getShareholder')->name('public.ajax.getShareholder');
+           
+            });
 
     });
 });

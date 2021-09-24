@@ -42,7 +42,7 @@ $page = app(PageInterface::class)->findById($homepageId);
            
             </div>
             <div class="swiper-pagination"></div>
-            <a href="{{route('public.index').has_field($page,'link_readmore')}}" class="read-more" title="xem thêm">{{__('Xem thêm')}}</a>
+            <a href="" class="read-more" title="xem thêm">Xem thêm</a>
         </div>
     </div>
 </div>

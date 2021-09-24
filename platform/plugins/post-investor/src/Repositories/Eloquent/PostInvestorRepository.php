@@ -24,12 +24,4 @@ class PostInvestorRepository extends RepositoriesAbstract implements PostInvesto
 
         return $this->applyBeforeExecuteQuery($data)->limit($limit)->get();
     }
-    public function getAll($paginate = 6){
-        $data = $this->getModel()
-        ->whereStatus(BaseStatusEnum::PUBLISHED)
-        ->orderBy('is_featured', 'desc')
-        ->orderBy('created_at', 'desc')
-        ->orderBy('id', 'desc');
-        return $this->applyBeforeExecuteQuery($data)->paginate($paginate);
-    }
 }

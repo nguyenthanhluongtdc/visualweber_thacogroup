@@ -4,8 +4,8 @@
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
         <div class="container-customize">
-             <div class="financial-report mb-100">
-                        <div class="financial-report_left">
+             <div class="shareholder-infomation mb-100">
+                        <div class="shareholder-infomation_left">
                             <div class="filter-search-media mb-40 field">
                                 <form action="" class="form-search ">
                                     <div class="search">
@@ -33,7 +33,7 @@
                                 $posts = get_posts_by_category($category->id ?? 16, 6);
                             @endphp
                             
-                            <div class="list-report">
+                            <div class="list-info">
                                 @if (!empty($posts))
                                 @foreach ($posts as $post) 
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50" class="aos-init aos-animate">
