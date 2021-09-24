@@ -38325,7 +38325,7 @@ var staticRenderFns = [
         attrs: { type: "button", "data-toggle": "dropdown" }
       },
       [
-        _vm._v("Lọc\n                             "),
+        _vm._v("Lọc\n                                                "),
         _c("i", { staticClass: "fal fa-angle-down" })
       ]
     )
