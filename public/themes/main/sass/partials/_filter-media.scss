@@ -30,6 +30,14 @@
             @media only screen and (max-width: 1080px){
                 width: 66.5%;
             }
+            @media only screen and (max-width: 992px){
+                width: 60%;
+                margin-left: 16px;
+            }
+            @media only screen and (max-width: 720px){
+                width: 52%;
+                margin-left: 16px;
+            }
             @media only screen and (max-width: 600px){
                 width: 100%;
                 margin-left: 16px;
@@ -167,6 +175,9 @@
         .dropdown-filter-mobile{
 
             display: none;
+            @media only screen and (max-width: 720px){
+               width: 20% !important;
+            }
             @media only screen and (max-width: 600px){
                 width: 60% !important;
                 margin-left: 16px;
@@ -176,7 +187,8 @@
                 width: 64% !important;
             }
             @media only screen and (max-width: 400px){
-                width: 60% !important;
+                width: 62% !important;
+                margin-right: 0 !important;
             }
             @media only screen and (max-width: 360px){
                 width: 58% !important;
@@ -248,12 +260,12 @@
                    
                 }
                 .filter-menu{
-                    top: 0 !important;
-                    left: -377px !important;
+                    top: 57px !important;
+                    left: -250px !important;
                     border: none;
-                    transform: translateX(-197px);
+                    transform: translateX(-192px);
                     @media only screen and (max-width: 768px){
-                        left: -253px !important;
+                        left: -153px !important;
                     }
                     @media only screen and (max-width: 600px){
                         left: -48px !important;
@@ -306,6 +318,8 @@
                                
                             }
                            
+
+                            
                             .select2-search.select2-search--dropdown .select2-search__field{
                                 display: none !important;
                             }
@@ -358,6 +372,10 @@
                         position: absolute;
                         right: 15px;
                         top: 10px;
+                        @media only screen and (max-width: 992px){
+                            right: 9px;
+                            top: 9px;
+                         }
                         @media only screen and (max-width: 300px){
                            right: 9px;
                         }
@@ -392,7 +410,9 @@
         }
     }
 } 
-
+.select2-search--dropdown{
+    display: none !important;
+}
 .select2-dropdown{
     @media only screen and (max-width: 1080px){
         border: none !important;
