@@ -267,6 +267,9 @@
                         top: 0 !important;
                         left: -94% !important;
                         @media only screen and (max-width: 600px){
+                            left: -15% !important;
+                        }
+                        @media only screen and (max-width: 300px){
                             left: -44% !important;
                         }
                     }
