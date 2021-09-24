@@ -295,6 +295,7 @@
                         .list-video {
                             display: flex;
                             flex-wrap: wrap;
+                           
                             .video-item {
                                 width: 32.3333%;
                                 margin-right: 1.5%;
@@ -351,11 +352,23 @@
                                     .quantity {
                                         margin-bottom: -5px;
                                         margin-left: 10px;
+                                        @media only screen and (max-width: 600px){
+                                            margin-bottom: 0px;
+                                            margin-left: 8px;
+                                            font-size: 12px !important;
+                                        }
+                                       
                                     }
                                     i {
                                         width: 18px;
                                         height: 18px;
                                         font-size: 18px;
+                                        @media only screen and (max-width: 600px){
+                                            width: 10px;
+                                            height: 14px;
+                                            font-size: 13px;            
+                                        }
+                                        
                                     }
                                 }
                                 &__count.album {
@@ -382,12 +395,34 @@
                     margin-top: 20px;
                     .media-video {
                         max-height: 32vw;
+                        @media only screen and (max-width: 1080px){
+                            max-height: 40vw;
+                        }
+                        @media only screen and (max-width: 600px){
+                            max-height: 60vw;
+                        }
+                        .mCSB_scrollTools .mCSB_draggerRail{
+                            width: 4px !important;
+                            background: rgba(63, 63, 62, 0.596) !important;
+                            opacity: 1;
+                            @media only screen and (max-width: 1080px){
+                                width: 15px !important;
+                               
+                            }
+
+                        }
                         .mCSB_scrollTools .mCSB_draggerContainer {
+                            border-radius: 5px;
                             width: 4px;
-                            background: gray;
+                            background: rgba(238, 238, 238, 0.76);
                             right: 0;
                             margin-right: 0;
+                            @media only screen and (max-width: 1080px){
+                                width: 15px;
+                                left: -11px !important;
+                            }
                         }
+                        
                         .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
                             background: #fff;
                         }
@@ -397,9 +432,16 @@
                         }
                         .list-video {
                             display: flex;
+                            @media only screen and (max-width: 600px){
+                                display: unset;
+                            }
                             .left {
                                 flex: 0 0 68%;
                                 margin-right: 2%;
+                                @media only screen and (max-width: 600px){
+                                    flex: 0 0 100%;
+                                    margin-right: 0;
+                                }
                                 .name {
                                     font-family: $MyriadPro-Bold;
                                     margin-top: 20px;
@@ -411,6 +453,10 @@
                             }
                             .right {
                                 flex: 0 0 29%;
+                                @media only screen and (max-width: 600px){
+                                    flex: 0 0 100%;
+                                    
+                                }
                                 .video-item {
                                     margin-bottom: 6%;
                                     .img-button {
@@ -424,12 +470,19 @@
                                             transition: 0.2s;
                                             font-size: 50px;
                                             color: #fff;
+                                            @media only screen and (max-width: 600px){
+                                                font-size: 20px;
+                                            }
                                         }
                                     }
                                     .name {
                                         margin-bottom: 0;
                                         font-family: $MyriadPro-Bold;
                                         @include split_str(2);
+                                        @media only screen and (max-width: 600px){
+                                            font-size: 12px;
+                                            line-height: 1;
+                                        }
                                     }
                                 }
                                 img {
@@ -654,6 +707,7 @@
 
 #video_modal-detail {
     .video-wrapper {
+
         position: relative;
         .video-download {
             position: absolute;
@@ -664,9 +718,32 @@
             z-index: 2;
             right: 20px;
         }
+        #player{
+            width: 50% !important;
+        }
+       
+    }
+    
+}
+.ytp-cued-thumbnail-overlay{
+    @media only screen and (max-width: 600px){
+        height: 35% !important;
+    }
+}
+.ytp-cued-thumbnail-overlay-image{
+    @media only screen and (max-width: 600px){
+        height: 35% !important;
     }
 }
 
+.ytp-title-text {
+    a{
+        @media only screen and (max-width: 600px){
+            font-size: 12px !important;
+        }
+    }
+    
+}
 // #video_modal .modal-dialog {
 //   max-width: 100%;
 //   margin: 0;
@@ -1039,6 +1116,37 @@
         font-size: 50px;
         @media only screen and (max-width: 600px){  font-size: 30px;}
     }
+}
+
+
+ 
+iframe {
+    width: 100% !important;
+    height: 350px !important;
+    @media only screen and (max-width: 1080px){
+        height: 400px !important;
+    }
+    @media only screen and (max-width: 768px){
+        height: 350px !important;
+    }
+    @media only screen and (max-width: 600px){
+        height: 250px !important;
+    }
+    @media only screen and (max-width: 350px){
+        height: 200px !important;
+    }
+    @media only screen and (max-width: 300px){
+        height: 150px !important;
+    }
+    // button{
+    //     @media only screen and (max-width: 600px){
+    //         width: 37px !important;
+    //         margin-left: -17px !important;
+    //     }
+      
+    // }
+    
+ 
 }
 
 

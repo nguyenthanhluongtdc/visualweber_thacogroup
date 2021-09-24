@@ -474,7 +474,7 @@
                                                             <source src="themes/main/images/video/chuc-mung-nam-moi.mp4" type="video/mp4">
                                                         </video>  -->
 
-                                                        <iframe style="width: 100%; height: 350px;" class="youtube-player" id="player" type="text/html" :src="'https://www.youtube.com/embed/'+videoPlay.youtube_code+'?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1'" frameborder="0" muted="muted"></iframe>
+                                                        <iframe  class="youtube-player" id="player" type="text/html" :src="'https://www.youtube.com/embed/'+videoPlay.youtube_code+'?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1'" frameborder="0" muted="muted"></iframe>
 
                                                     </div>
                                                     <p class="name font30">
@@ -1001,4 +1001,6 @@ $(document).ready(function(){
     justify-content: center;
     margin: 40px 0;
 }
+
+
 </style>
