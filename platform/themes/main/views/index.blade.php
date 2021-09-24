@@ -3,7 +3,7 @@
         @if(has_field($page, 'main_slide_home'))
         @foreach (get_field($page, 'main_slide_home') as $item)
         <div class="swiper-slide">
-            <img src="{{ has_sub_field($item , 'image') ? get_object_image(get_sub_field($item , 'image')) :''}}" alt="slide" class="img-slider h-100vh h-auto w-100">
+            <img src="{{ has_sub_field($item , 'image') ? get_object_image(get_sub_field($item , 'image')) :''}}" alt="slide" class="img-slider h-auto w-100">
             @if(has_field($page, 'show_hide')) 
             <div class="bg-post">
                @if ($post = get_featured_posts(1,[]))
