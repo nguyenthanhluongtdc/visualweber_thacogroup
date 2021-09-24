@@ -187,17 +187,17 @@
                 width: 64% !important;
             }
             @media only screen and (max-width: 400px){
-                width: 62% !important;
-                margin-right: 0 !important;
+                width: 59.5% !important;
+                margin-right: 5px !important;
             }
             @media only screen and (max-width: 360px){
                 width: 58% !important;
             }
             @media only screen and (max-width: 320px){
-                width: 52% !important;
+                width: 49% !important;
             }
             @media only screen and (max-width: 300px){
-                width: 40% !important;
+                width: 45% !important;
             }
             @media only screen and (max-width: 1080px){
                 display: block;
@@ -462,6 +462,11 @@
                 }
                 
 
+            }
+            @media only screen and (max-width: 300px){
+                button{
+                    padding: 0 5px;
+                }
             }
             @media only screen and (max-width: 600px){
                 margin-top: 5px;
