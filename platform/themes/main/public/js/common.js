@@ -504,7 +504,7 @@ if ($('.filter__title').length > 0) {
 
         $('.filler-list').toggleClass('d-block');
     });
-
+ 
 }
 $(document).ready(function() {
     $('.js-example-basic-single').select2();
@@ -581,3 +581,6 @@ $('#mask').click(function() {
     $('.window').hide();
 });
 //end popup
+
+
+
