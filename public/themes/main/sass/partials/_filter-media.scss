@@ -210,7 +210,27 @@
                 -moz-appearance: none !important;
 
                
-    
+            .sort-mobile{
+                .sort-list-mobile.click-show{
+                    @media only screen and (max-width: 1080px){
+                        top: -7px !important;
+                        left: -139% !important;
+                        background: #f1f1f1;
+                        
+                    }
+                    @media only screen and (max-width: 768px){
+                       left: -144% !important;
+                        
+                    }
+                    @media only screen and (max-width: 600px){
+                        left: -13% !important;
+                        top: 41px !important;
+                         
+                     }
+                }
+
+               
+            }
    
             .datepicker-mobile{
                     margin: -2px -97px;
@@ -239,9 +259,16 @@
                     }
                 }
                 .dropdown-menu{
+                    @media only screen and (max-width: 768px){
+                        top: 5px !important;
+                        left: -75px !important;
+                    }
                     &.click-show {
                         top: 0 !important;
-                        left: -102% !important;
+                        left: -94% !important;
+                        @media only screen and (max-width: 600px){
+                            left: -44% !important;
+                        }
                     }
                     border: none;
                     @media only screen and (max-width: 600px){
@@ -252,6 +279,9 @@
                         position: absolute;
                         right: 25px;
                         top: 17px;
+                        @media only screen and (max-width: 600px){
+                            top: 9px;
+                        }
                     }
                     .filter-mobile{
                         font-size: 20px;
@@ -271,12 +301,28 @@
                     @media(max-width: 1080px) {
                         &.mobile {
                             top: 0 !important;
-                            left: -102% !important;
+                            left: -33% !important;
                         }
                     }
-
+                    
                     @media only screen and (max-width: 768px){
                         left: -153px !important;
+                        &.mobile {
+                            
+                            left: -26% !important;
+                        }
+                    }
+                    @media(max-width: 600px) {
+                        &.mobile {
+                            top: 83px !important;
+                            left: -14% !important;
+                        }
+                    }
+                    @media(max-width: 300px) {
+                        &.mobile {
+                            
+                            left: -61% !important;
+                        }
                     }
                     @media only screen and (max-width: 600px){
                         left: -48px !important;
@@ -342,9 +388,7 @@
                                 display: none !important;
                             }
                             .select2-container--default .select2-selection--single {
-                                background-color: #f1f1f1;
-                                border-radius: unset;
-                                border: unset;
+                               
                                 height: 40px;
                                 display: flex;
                                 margin-left: 1%;
@@ -430,8 +474,27 @@
         border: none !important;
         // margin: -133px -186px;
     }
-    @media only screen and (max-width: 600px){
-        // margin: -225px -128px;
-        // width: 109px !important;
+  
+}
+
+.select2-container--default .select2-results>.select2-results__options{
+    @media only screen and (max-width: 1080px){
+        transform: translateX(130px) !important;
+    margin: -119px -47px !important;
+        
     }
+    @media only screen and (max-width: 768px){
+        transform: translateX(185px) !important;
+    }
+    @media only screen and (max-width: 600px){
+        transform: translateX(93px) !important;
+        margin: -172px -50px !important;
+    }
+   
+}
+
+.select2-container--default .select2-selection--single{
+    background-color: #f1f1f1;
+    border-radius: unset !important;
+    border: unset !important;
 }

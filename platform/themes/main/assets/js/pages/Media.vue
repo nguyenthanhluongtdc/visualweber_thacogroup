@@ -166,7 +166,7 @@
                                 <li class="dropdown-submenu sort-mobile">
                                     <a class="test d-inline-block w-100" tabindex="-1" href="#">Sắp xếp  
                                     <i class="fal fa-angle-down filter-mobile"></i></a>
-                                    <div class="sort-list dropdown-menu click-show">
+                                    <div class="sort-list-mobile dropdown-menu click-show">
                                         <select name="sort" class="font18 js-example-basic-single" placeholder="Sắp xếp">
                                             <option value="new">Thời gian mới nhất</option>
                                             <option value="old">Thời gian cũ nhất</option>
