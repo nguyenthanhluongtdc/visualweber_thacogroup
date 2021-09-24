@@ -2768,6 +2768,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 //custom-scrollbar
 
  //pagination
@@ -37155,7 +37157,7 @@ var render = function() {
                                         "ul",
                                         {
                                           staticClass:
-                                            "dropdown-menu datepicker-mobile"
+                                            "dropdown-menu datepicker-mobile click-show"
                                         },
                                         [
                                           _c("li", [
@@ -37189,7 +37191,7 @@ var render = function() {
                                                         change: function(
                                                           $event
                                                         ) {
-                                                          return _vm.changeDateAndLoadDataVideo(
+                                                          return _vm.changeDateAndLoadDataImage(
                                                             $event
                                                           )
                                                         }
@@ -38350,7 +38352,7 @@ var staticRenderFns = [
         attrs: { type: "button", "data-toggle": "dropdown" }
       },
       [
-        _vm._v("Lọc\n                                                "),
+        _vm._v("Lọc\n                             "),
         _c("i", { staticClass: "fal fa-angle-down" })
       ]
     )
@@ -38361,8 +38363,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "a",
-      { staticClass: "test", attrs: { tabindex: "-1", href: "#" } },
-      [_vm._v("Thời gian  "), _c("i", { staticClass: "fal fa-angle-down" })]
+      {
+        staticClass: "test d-inline-block w-100",
+        attrs: { tabindex: "-1", href: "#" }
+      },
+      [
+        _vm._v("Thời gian  "),
+        _c("i", { staticClass: "fal fa-angle-down date-mobile" })
+      ]
     )
   },
   function() {
@@ -38370,12 +38378,19 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", { staticClass: "dropdown-submenu" }, [
-      _c("a", { staticClass: "test", attrs: { tabindex: "-1", href: "#" } }, [
-        _vm._v("Ngành nghề "),
-        _c("i", { staticClass: "fal fa-angle-down" })
-      ]),
+      _c(
+        "a",
+        {
+          staticClass: "test d-inline-block w-100",
+          attrs: { tabindex: "-1", href: "#" }
+        },
+        [
+          _vm._v("Ngành nghề "),
+          _c("i", { staticClass: "fal fa-angle-down filter-mobile" })
+        ]
+      ),
       _vm._v(" "),
-      _c("ul", { staticClass: "dropdown-menu filter-menu " }, [
+      _c("ul", { staticClass: "dropdown-menu filter-menu mobile click-show" }, [
         _c("li", [
           _c("a", { attrs: { tabindex: "-1", href: "#" } }, [
             _c("div", { staticClass: "pretty p-default p-smooth" }, [
@@ -38435,7 +38450,19 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", { staticClass: "dropdown-submenu sort-mobile" }, [
-      _c("div", { staticClass: "sort-list dropdown-menu" }, [
+      _c(
+        "a",
+        {
+          staticClass: "test d-inline-block w-100",
+          attrs: { tabindex: "-1", href: "#" }
+        },
+        [
+          _vm._v("Sắp xếp  \n                                    "),
+          _c("i", { staticClass: "fal fa-angle-down filter-mobile" })
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "sort-list-mobile dropdown-menu click-show" }, [
         _c(
           "select",
           {

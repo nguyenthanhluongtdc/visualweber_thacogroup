@@ -354,83 +354,85 @@
                                                 </select>
                                             </div>
                                         </div>
-                                         <div class="dropdown-filter-mobile video">
-                                            <div class="dropdown">
-                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Lọc
-                                                <i class="fal fa-angle-down"></i></button>
-                                                <ul class="dropdown-menu dropdown-menu-lg-end">
-                                            
-                                                <li class="dropdown-submenu ">
-                                                    <a class="test" tabindex="-1" href="#">Thời gian  <i class="fal fa-angle-down"></i></a>
-                                                    <ul class="dropdown-menu datepicker-mobile">
-                                                    <li><a tabindex="-1" href="#">
-                                                        <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
-                                                            <input type="date"  @change="changeDateAndLoadDataVideo($event)" id="datepicker" name="calendars" class="font15">
-                                                        </div>    
-                                                    </a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu">
-                                                    <a class="test" tabindex="-1" href="#">Ngành nghề <i class="fal fa-angle-down"></i></a>
-                                                    <ul class="dropdown-menu filter-menu ">
-                                                    <li><a tabindex="-1" href="#">
-                                                        <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>THACO</label>
-                                                        </div>
+                                        <div class="dropdown-filter-mobile video">
+                         <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Lọc
+                             <i class="fal fa-angle-down"></i></button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                           
+                                <li class="dropdown-submenu ">
+                                    <a class="test d-inline-block w-100" tabindex="-1" href="#">Thời gian  <i class="fal fa-angle-down date-mobile"></i></a>
+                                    <ul class="dropdown-menu datepicker-mobile click-show">
+                                    <li><a tabindex="-1" href="#">
+                                        <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
+                                            <input type="date" @change="changeDateAndLoadDataImage($event)" id="datepicker" name="calendars" class="font15">
+                                        </div>    
+                                    </a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="test d-inline-block w-100" tabindex="-1" href="#">Ngành nghề <i class="fal fa-angle-down filter-mobile"></i></a>
+                                    <ul class="dropdown-menu filter-menu mobile click-show">
+                                        <li>
+                                            <a tabindex="-1" href="#">
+                                                <div class="pretty p-default p-smooth">
+                                                <input type="checkbox" />
+                                                <div class="state p-primary">
+                                                    <label>THACO</label>
+                                                </div>
+                                                </div>
+                                                <div class="pretty p-default p-smooth">
+                                                    <input type="checkbox" />
+                                                    <div class="state p-primary">
+                                                        <label>Ô tô & Cơ khí</label>
                                                     </div>
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Ô tô & Cơ khí</label>
-                                                        </div>
-                                                    </div>  
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Nông Lâm Nghiệp</label>
-                                                        </div>
-                                                    </div> 
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Đầu tư - Xây Dựng</label>
-                                                        </div>
-                                                    </div> 
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Thương mại - Dịch vụ</label>
-                                                        </div>
-                                                    </div> 
-                                                    <div class="pretty p-default p-smooth">
-                                                        <input type="checkbox" />
-                                                        <div class="state p-primary">
-                                                            <label>Logistics</label>
-                                                        </div>
-                                                    </div>     
-                                                        
-                                                    </a></li>
-                                                    
-                                                    </ul>
-                                                </li>
-                                                <li class="dropdown-submenu sort-mobile">
-                                                <div class="sort-list dropdown-menu">
-                                                            <select name="sort" class="font18 js-example-basic-single" placeholder="Sắp xếp">
-                                                                <option value="new">Thời gian mới nhất</option>
-                                                                <option value="old">Thời gian cũ nhất</option>
-                                                                <option value="a-z">Từ A-Z</option>
-                                                                <option value="z-a">Từ Z-A</option>
-                                                            </select>
+                                                </div>  
+                                                <div class="pretty p-default p-smooth">
+                                                    <input type="checkbox" />
+                                                    <div class="state p-primary">
+                                                        <label>Nông Lâm Nghiệp</label>
                                                     </div>
-                                                </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="search-btn">
-                                            <button type="button" class="btn btn-primary">Tìm kiếm</button>
-                                        </div>
+                                                </div> 
+                                                <div class="pretty p-default p-smooth">
+                                                    <input type="checkbox" />
+                                                    <div class="state p-primary">
+                                                        <label>Đầu tư - Xây Dựng</label>
+                                                    </div>
+                                                </div> 
+                                                <div class="pretty p-default p-smooth">
+                                                    <input type="checkbox" />
+                                                    <div class="state p-primary">
+                                                        <label>Thương mại - Dịch vụ</label>
+                                                    </div>
+                                                </div> 
+                                                <div class="pretty p-default p-smooth">
+                                                    <input type="checkbox" />
+                                                    <div class="state p-primary">
+                                                        <label>Logistics</label>
+                                                    </div>
+                                                </div>  
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu sort-mobile">
+                                    <a class="test d-inline-block w-100" tabindex="-1" href="#">Sắp xếp  
+                                    <i class="fal fa-angle-down filter-mobile"></i></a>
+                                    <div class="sort-list-mobile dropdown-menu click-show">
+                                        <select name="sort" class="font18 js-example-basic-single" placeholder="Sắp xếp">
+                                            <option value="new">Thời gian mới nhất</option>
+                                            <option value="old">Thời gian cũ nhất</option>
+                                            <option value="a-z">Từ A-Z</option>
+                                            <option value="z-a">Từ Z-A</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search-btn">
+                        <button type="button" class="btn btn-primary">Tìm kiếm</button>
+                    </div>
                                     </div>
                                 </form>
                             </div>
