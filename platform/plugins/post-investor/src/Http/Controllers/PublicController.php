@@ -10,6 +10,7 @@ use ZipArchive;
 use File;
 use Carbon\Carbon;
 use Theme;
+use Illuminate\Support\Str;
 
 class PublicController extends BaseController {
 
@@ -116,12 +117,6 @@ class PublicController extends BaseController {
 
     function zipDownload(Request $request) {
 
-        $zip = new ZipArchive;
-        
-        $currentTime = Carbon::now();
-
-        $fileName = 'doc_'.$currentTime->format('d_m_Y').'_'.$currentTime->toArray()['timestamp'].'.zip';
-
         $id = $request->id;
 
         $post = app(PostInvestorInterface::class)->getFirstBy(
@@ -131,6 +126,12 @@ class PublicController extends BaseController {
             ],
             ['*'],
         );
+
+        $zip = new ZipArchive;
+        
+        $currentTime = Carbon::now();
+
+        $fileName = Str::slug($post->name??'undefined', '-').'_'.$currentTime->format('d_m_Y').'_'.$currentTime->toArray()['timestamp'].'.zip';
 
         if(!$post) {
             return [];

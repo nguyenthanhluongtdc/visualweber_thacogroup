@@ -9,8 +9,10 @@
     @forelse($data as $item)
     <div class="report-item">
         <div class="thumb-img report-item-left">
-            <img src="{{ Storage::disk('public')->exists($item->image) ? get_object_image($item->image): RvMedia::getDefaultImage() }}"
+            <a href="{{get_object_image(has_sub_field(has_field($item, 'repeater_file_post_investor')[0], 'file'))}}" target="_blank"><p class="name-file font18">
+                <img src="{{ Storage::disk('public')->exists($item->image) ? get_object_image($item->image): RvMedia::getDefaultImage() }}"
                 alt="report">
+            </a>
         </div>
         <div class="report-item-right">
             <span class="date">{{$item->created_at->format('d-m-Y')}}</span>
