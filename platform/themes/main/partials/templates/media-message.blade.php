@@ -5,6 +5,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
 @endphp --}}
 @includeIf("theme.main::views.breadcrumb")
 <div class="media__content_left">
+    <div class="news__content">
     @if (!empty($postSlider))
     @foreach ($postSlider as $post) 
     <div class="news__top">
@@ -23,6 +24,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
     </div>
     @endforeach
     @endif
+    </div>
     <div class="list-media_wrapper" id="scroll-list-news">
         <div class="list-media mt-60">
          @if (!empty($posts))
