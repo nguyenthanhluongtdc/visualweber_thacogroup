@@ -694,7 +694,6 @@ var Ajax = {
                 beforeSend: function() {
                     $('.render-html').hide()
                     $('.loading').removeClass('d-none')
-                    
                 },
                 success: function(data) {
 

@@ -80,14 +80,9 @@ class PublicController extends BaseController {
             }
 
             //get category by id
-            $category = app(InvestorRelationsInterface::class)->getFirstBy(
-                [
-                    'id' => $categoryId,
-                    'status' => BaseStatusEnum::PUBLISHED
-                ],
-                ['*'],
-                ['slugable']
-            );
+            
+            $category = app(InvestorRelationsInterface::class)
+            ->getFirstBy(['id' => $categoryId], ['*'], ['slugable']);
 
             if(!$category->slug) {
                 abort(404);

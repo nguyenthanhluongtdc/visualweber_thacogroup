@@ -17,17 +17,19 @@ Route::group(['namespace' => 'Platform\PostInvestor\Http\Controllers', 'middlewa
     Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
         Route::get('{slug}/search', 'PublicController@getSearch')
         ->name('public.search-post-investor');
-    });
 
-    Route::group(['prefix'=>'api', 'as'=> 'api-investor.'], function() {
-        Route::get('investor/download', [
-            'as'    => 'download',
-            'uses'  => 'PublicController@zipDownload',
-        ]);
+        
+        Route::group(['prefix'=>'api', 'as'=> 'api-investor.'], function() {
+            Route::get('investor/download', [
+                'as'    => 'download',
+                'uses'  => 'PublicController@zipDownload',
+            ]);
+    
+            Route::get('sharehoder',[
+                'as'    => 'sharehoder',
+                'uses'  => 'PublicController@getShareholder'
+            ]);
+        });
 
-        Route::get('sharehoder',[
-            'as'    => 'sharehoder',
-            'uses'  => 'PublicController@getShareholder'
-        ]);
     });
 });
