@@ -73,12 +73,12 @@ class ApiController extends Controller {
         $post = app(PostInterfaceCustom::class)->getFirstBy(
             ['id'=> $id],
             ['*'],
-            ['slugable']
+            ['slugable'] 
         );
 
         //get gallery by post
         $gallery = gallery_meta_data($post);
-
+ 
         $zip = new ZipArchive;
         
         $currentTime = Carbon::now();

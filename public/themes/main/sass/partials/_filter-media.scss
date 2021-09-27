@@ -163,13 +163,22 @@
                     width: 157px;
                     padding-left: 0;
                 }
-            }
+            } 
         }
         .dropdown-filter-mobile.video{
             @media only screen and (max-width: 600px){
               
                 margin-left: 0px;
                
+            }
+            @media only screen and (max-width: 420px){
+                width: 61% !important;
+            }
+            @media only screen and (max-width: 350px){
+                width: 52% !important;
+            }
+            @media only screen and (max-width: 300px){
+                margin-right: 0 !important;
             }
         }
         .dropdown-filter-mobile{
