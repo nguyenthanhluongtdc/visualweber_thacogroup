@@ -720,8 +720,10 @@ var Ajax = {
         const url = window.urlDownload;
 
         if(url!=undefined) {
+
             $(document).on('click', '.post.download', function(e) {
                 e.preventDefault();
+               
 
                 $.ajax({
                     headers: {
@@ -733,9 +735,10 @@ var Ajax = {
                     },
                     method: "GET",
                     success: function(response) {
-
                         if(response.data) {
                             window.location = response.data
+                        }else {
+                            alert('Có lỗi vui lòng thử lại sau!')
                         }
 
                     },
