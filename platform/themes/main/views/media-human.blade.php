@@ -68,9 +68,9 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 6);
                                           
                                        </div>
                                     </div>
-                               </div>
+                               </div> 
 
-                               <div class="news-content-mobile" style="display: none">
+                               <div class="news-content-mobile human" style="display: none">
                                 <div class="swiper-container new-post-slide-mb " id="js-swiper-news" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                                     <div class="swiper-wrapper">
                                         @if (!empty($postSlider))

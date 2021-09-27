@@ -14,7 +14,7 @@
                 <ul class="" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                     @php
                    $postsLatest = get_recent_posts(3);
-                    @endphp
+                    @endphp 
                     @if (!empty( $postsLatest))
                     @foreach ( $postsLatest as $post) 
                     <div class="post-new-item">
@@ -23,7 +23,7 @@
                                 <a href="{{$post->url}}"><img src="{{ Storage::disk('public')->exists($post->image) ? get_object_image($post->image, 'post-large') : RvMedia::getDefaultImage()}}" alt="{{$post->name}}" alt=""></a>
                             </div>
                         </div>
-                        <div class="title font18">
+                        <div class="title font18 ">
                             <a href="{{$post->url}}">{{$post->name}}</a>
                             <p class="time">{{date_format($post->created_at,"d-m-Y")}}</p>
                         </div>

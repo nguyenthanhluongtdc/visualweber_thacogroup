@@ -5,7 +5,7 @@
     <div class="{{ $row->css_class }} @if ($row->url == Request::url()) current @endif">
     <a href="{{ $row->url }}" target="{{ $row->target }}" class="item_link list-group-item  font18 font-myria-bold {{ $row->active ? "active" : ""}}">
         <i class='{{ trim($row->icon_font) }}'></i> <span>{{ $row->name }}</span>
-    </a>
+    </a> 
     @if ($row->has_child)
     {!! Menu::generateMenu([
         'slug' => $menu->slug,
