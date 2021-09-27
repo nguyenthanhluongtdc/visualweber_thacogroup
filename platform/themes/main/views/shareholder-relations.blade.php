@@ -1,6 +1,6 @@
 @includeIf('theme.main::views.components.banner-qhcd')
 <script>
-    const getShareholderUrl = '{{route('public.ajax.getShareholder')}}'
+    const getShareholderUrl = "{{route('api-investor.sharehoder')}}";
 </script>
 <!--breadcrumb-->
 <!---end breadcrumb---->

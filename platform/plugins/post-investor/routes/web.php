@@ -24,5 +24,10 @@ Route::group(['namespace' => 'Platform\PostInvestor\Http\Controllers', 'middlewa
             'as'    => 'download',
             'uses'  => 'PublicController@zipDownload',
         ]);
+
+        Route::get('sharehoder',[
+            'as'    => 'sharehoder',
+            'uses'  => 'PublicController@getShareholder'
+        ]);
     });
 });

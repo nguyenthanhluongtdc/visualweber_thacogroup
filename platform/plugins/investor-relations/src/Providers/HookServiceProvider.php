@@ -57,7 +57,7 @@ class HookServiceProvider extends ServiceProvider
             $category = app(InvestorRelationsInterface::class)
             ->getFirstBy($condition, ['*'], ['slugable']);
 
-            $data = app(PostInvestorInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
+            $data = app(PostInvestorInterface::class)->getByCategory($category->id, theme_option('number_post_qhcd'));
 
             Theme::breadcrumb()
             ->add(__('Home'), route('public.index'));

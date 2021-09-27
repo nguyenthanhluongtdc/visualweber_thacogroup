@@ -623,6 +623,19 @@ app()->booted(function () {
                     'id' => 'opt-text-subsection-social-mb',
                     'subsection' => true,
                     'icon' => 'fa fa-home',
+                ])
+                ->setField([
+                    'id' => 'number_post_qhcd',
+                    'section_id' => 'opt-text-subsection-blog',
+                    'type' => 'number',
+                    'label' => __('Số bài viết hiển thị trong quan hệ cổ đông'),
+                    'attributes' => [
+                        'name' => 'number_post_qhcd',
+                        'value' => 1,
+                        'options' => [
+                            'class' => 'form-control'
+                        ], // Optional
+                    ],
                 ]);
     
 });

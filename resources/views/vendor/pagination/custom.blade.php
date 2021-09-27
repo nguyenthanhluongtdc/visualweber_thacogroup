@@ -66,7 +66,7 @@
             @foreach ($elements as $element)
                 {{-- "Three Dots" Separator --}}
                 @if (is_string($element))
-                    <li class="disabled" aria-disabled="true"><span>{{ $element }}</span></li>
+                    <li class="disabled page-item" aria-disabled="true"><span class="font25 bg-white text-danger border-0 page-link">{{ $element }}</span></li>
                 @endif
 
                 {{-- Array Of Links --}}
@@ -104,7 +104,8 @@
             @if($paginator->lastPage() == $paginator->currentPage())
                 <li class="page-item"> <span class="page-link">>></span> </li>
             @else
-                <li class="page-item"> <a class="page-link" href="{{$elements[0][$paginator->lastPage()]}}"> >> </a> </li>
+                <li class="page-item"> <a class="page-link" href="{{$elements[array_key_last($elements)][$paginator->lastPage()]}}"> >> </a> </li>
+                
             @endif
         </ul>
     </nav>

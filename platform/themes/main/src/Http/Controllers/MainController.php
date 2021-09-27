@@ -135,54 +135,6 @@ class MainController extends PublicController
 
         return Theme::scope('search', compact('posts' ,'count'))->render();
     }
-
-    public function getShareholder(Request $request){
-       
-        try {
-            $categoryId = $request->categoryId;
-
-            $allRequest = $request->toArray();
-
-            //remove all url params
-            foreach($allRequest as $key => $value) {
-                $request->request->remove($key);
-            }
-
-            //get category by id
-            $category = app(InvestorRelationsInterface::class)->getFirstBy(
-                [
-                    'id' => $categoryId,
-                    'status' => BaseStatusEnum::PUBLISHED
-                ],
-                ['*'],
-                ['slugable']
-            );
-
-            if(!$category->slug) {
-                abort(404);
-            }
-
-            $data = app(PostInvestorInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
-
-            $data->withPath($category->url);
-
-            Theme::breadcrumb()
-            ->add(__('Home'), route('public.index'));
-
-            if($category->parent->id) {
-                Theme::breadcrumb()->add($category->parent->name, $category->parent->url);
-            }
-
-            Theme::breadcrumb()->add($category->name, $category->url);
-
-
-            $view = 'templates/'.$category->template;
-            return Theme::partial($view, compact('data','category'));
-
-        } catch (\Throwable $th) {
-         
-        }
-    }
     
 }
 
