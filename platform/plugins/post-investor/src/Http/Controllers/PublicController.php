@@ -5,6 +5,10 @@ use SlugHelper;
 use Platform\PostInvestor\Repositories\Interfaces\PostInvestorInterface;
 use Platform\InvestorRelations\Repositories\Interfaces\InvestorRelationsInterface;
 use Illuminate\Http\Request;
+use Platform\Base\Enums\BaseStatusEnum;
+use ZipArchive;
+use File;
+use Carbon\Carbon;
 use Theme;
 
 class PublicController extends BaseController {
@@ -58,5 +62,46 @@ class PublicController extends BaseController {
         }
 
         abort(404);
+    }
+
+    function zipDownload(Request $request) {
+
+        $zip = new ZipArchive;
+        
+        $currentTime = Carbon::now();
+
+        $fileName = 'doc_'.$currentTime->format('d_m_Y').'_'.$currentTime->toArray()['timestamp'].'.zip';
+
+        $id = $request->id;
+
+        $post = app(PostInvestorInterface::class)->getFirstBy(
+            [
+                'id' => $id,
+                'status' => BaseStatusEnum::PUBLISHED
+            ],
+            ['*'],
+        );
+
+        if(!$post) {
+            return [];
+        }
+        
+        if($zip->open(public_path($fileName), ZipArchive::CREATE)==TRUE) {
+            foreach(has_field($post, 'repeater_file_post_investor') as $file) {
+                $relativeName = basename(has_sub_field($file, 'file'));
+
+                $zip->addFile(public_path('storage/'.has_sub_field($file, 'file')), $relativeName);
+            }
+
+            $zip->close();
+        }
+
+        if(File::exists($fileName)) {
+            return response()->json(
+                ['data'=>$fileName], 200
+            );
+        }
+
+        return [];
     }
 }

@@ -17,6 +17,8 @@ class PostInvestorRepository extends RepositoriesAbstract implements PostInvesto
             ->whereHas('categories', function ($query) use ($categoryId) {
                 $query->whereIn('app_investor_relations.id', $categoryId);
             });
+        
+        $data->orderBy('created_at','desc');
 
         if ($paginate != 0) {
             return $this->applyBeforeExecuteQuery($data)->paginate($paginate);

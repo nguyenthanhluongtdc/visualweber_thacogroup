@@ -714,7 +714,40 @@ var Ajax = {
             })
         })
     },
+
+    zipDownload: function() {
+
+        const url = window.urlDownload;
+
+        if(url!=undefined) {
+            $(document).on('click', '.post.download', function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: url,
+                    data: {
+                        id: $(this).data('id')
+                    },
+                    method: "GET",
+                    success: function(response) {
+
+                        if(response.data) {
+                            window.location = response.data
+                        }
+
+                    },
+                    error: function(xhr, thrownError) {
+                        console.log(thrownError)
+                    },
+                })
+            })
+        }
+    }
 }
 $(document).ready(function() {
     Ajax.getShareholder();
+    Ajax.zipDownload();
 })

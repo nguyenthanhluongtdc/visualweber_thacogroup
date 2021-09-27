@@ -19,4 +19,10 @@ Route::group(['namespace' => 'Platform\PostInvestor\Http\Controllers', 'middlewa
         ->name('public.search-post-investor');
     });
 
+    Route::group(['prefix'=>'api', 'as'=> 'api-investor.'], function() {
+        Route::get('investor/download', [
+            'as'    => 'download',
+            'uses'  => 'PublicController@zipDownload',
+        ]);
+    });
 });
