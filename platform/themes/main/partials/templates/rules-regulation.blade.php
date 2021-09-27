@@ -34,8 +34,8 @@
                 <p class="count">
                     {!! count(has_field($item, 'repeater_file_post_investor')).' '.__('Files') !!}
                 </p>
-                <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}"
-                    class="download" \>
+                <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" data-id="{{$item->id}}"
+                    class="post download" \>
                     <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
                     <img src="{{ Theme::asset()->url('images/relationship/down.png') }}" alt="" class="img-mobile">
                 </a>  
@@ -67,3 +67,7 @@
 @if(!empty($data))
     {{ $data->withQueryString()->links('vendor.pagination.custom') }}
 @endif
+
+<script>
+    window.urlDownload = "{{route('api-investor.download')}}";
+</script>
