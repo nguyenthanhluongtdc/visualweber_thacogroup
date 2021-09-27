@@ -8,8 +8,9 @@
         transform: scale(1);
     }
 }
+
 .media-content {
-    .media-wrapper { 
+    .media-wrapper {
         .image__title {
             display: flex;
             align-items: center;
@@ -18,12 +19,11 @@
             font-family: $MyriadPro-Bold;
             text-transform: uppercase;
             color: $big-title;
-            img{
-                
-                @media only screen and (max-width: 1080px){
+            img {
+                @media only screen and (max-width: 1080px) {
                     width: 30px;
                 }
-                @media only screen and (max-width: 600px){
+                @media only screen and (max-width: 600px) {
                     width: 20px;
                 }
             }
@@ -35,12 +35,9 @@
         .tab-image {
             margin-top: 25px;
             .media__tabs {
-                
                 display: flex;
                 position: relative;
-               
                 .nav-tabs {
-                   
                     margin-bottom: 30px;
                     border: unset;
                     flex: 1 33.833%;
@@ -56,18 +53,15 @@
                         border: none;
                         border-top-left-radius: 0;
                         border-top-right-radius: 0;
-                        @media only screen and (max-width: 600px){
+                        @media only screen and (max-width: 600px) {
                             padding: 9px 5px !important;
                             width: 90px;
                         }
-                        
-                       
                     }
                     .nav-link.active {
                         border: 1px solid $main_color;
-                        @media only screen and (max-width: 600px){
+                        @media only screen and (max-width: 600px) {
                             padding: 9px 5px !important;
-                            
                         }
                     }
                 }
@@ -83,7 +77,7 @@
                             margin-bottom: 1.5%;
                             position: relative;
                             background: #f1f1f1;
-                            @media only screen and (max-width: 1080px){
+                            @media only screen and (max-width: 1080px) {
                                 width: 48.5%;
                                 background: #fff;
                             }
@@ -122,7 +116,7 @@
                                 display: flex;
                                 left: 20px;
                                 align-items: center;
-                                @media only screen and (max-width: 600px){
+                                @media only screen and (max-width: 600px) {
                                     top: 6px;
                                     left: 6px;
                                     padding: 2px 3px;
@@ -130,7 +124,7 @@
                                 .quantity {
                                     margin-bottom: -5px;
                                     margin-left: 10px;
-                                    @media only screen and (max-width: 600px){
+                                    @media only screen and (max-width: 600px) {
                                         margin-bottom: -2px;
                                         font-size: 12px !important;
                                         margin-left: -2px;
@@ -140,7 +134,7 @@
                                     width: 18px;
                                     height: 18px;
                                     font-size: 18px;
-                                    @media only screen and (max-width: 600px){
+                                    @media only screen and (max-width: 600px) {
                                         font-size: 12px;
                                         margin-top: 4px;
                                     }
@@ -157,12 +151,12 @@
                                 top: 20px;
                                 z-index: 2;
                                 right: 20px;
-                                @media only screen and (max-width: 600px){
+                                @media only screen and (max-width: 600px) {
                                     top: 4px;
                                     right: 4px;
                                 }
-                                i{
-                                    @media only screen and (max-width: 600px){
+                                i {
+                                    @media only screen and (max-width: 600px) {
                                         font-size: 12px;
                                         margin-top: 4px;
                                     }
@@ -172,16 +166,19 @@
                                 max-width: 100%;
                                 width: 100%;
                                 height: 300px;
-                                @media only screen and (max-width: 1080px){
+                                @media only screen and (max-width: 1680px) {
+                                    height: 240px;
+                                }
+                                @media only screen and (max-width: 1080px) {
                                     height: 250px;
                                 }
-                                @media only screen and (max-width: 768px){
+                                @media only screen and (max-width: 768px) {
                                     height: 250px;
                                 }
-                                @media only screen and (max-width: 600px){
+                                @media only screen and (max-width: 600px) {
                                     height: 120px;
                                 }
-                                @media only screen and (max-width: 360px){
+                                @media only screen and (max-width: 360px) {
                                     height: 90px;
                                 }
                             }
@@ -189,11 +186,9 @@
                         .album-item:last-child,
                         .album-item:nth-child(3) {
                             margin-right: 0;
-                            
-                           
                         }
-                        .album-item:nth-child(n+1){
-                            @media only screen and (max-width: 1080px){
+                        .album-item:nth-child(n+1) {
+                            @media only screen and (max-width: 1080px) {
                                 margin-left: 1%;
                                 margin-right: 0;
                             }
@@ -209,7 +204,7 @@
                             margin-right: 1.5%;
                             margin-bottom: 1.5%;
                             position: relative;
-                            @media only screen and (max-width: 1080px){
+                            @media only screen and (max-width: 1080px) {
                                 width: 48.5%;
                                 background: #fff;
                             }
@@ -224,7 +219,7 @@
                                 left: 20px;
                                 align-items: center;
                                 cursor: pointer;
-                                @media only screen and (max-width: 600px){
+                                @media only screen and (max-width: 600px) {
                                     top: 6px;
                                     left: 6px;
                                     padding: 2px 3px;
@@ -247,8 +242,8 @@
                         .image-item:nth-child(3) {
                             margin-right: 0;
                         }
-                        .image-item:nth-child(n+1){
-                            @media only screen and (max-width: 1080px){
+                        .image-item:nth-child(n+1) {
+                            @media only screen and (max-width: 1080px) {
                                 margin-left: 1%;
                                 margin-right: 0;
                             }
@@ -290,17 +285,15 @@
                         border: none;
                         border-top-left-radius: 0;
                         border-top-right-radius: 0;
-                        @media only screen and (max-width: 600px){
+                        @media only screen and (max-width: 600px) {
                             padding: 8px 5px !important;
                             width: 90px;
                         }
                     }
                     .nav-link.active {
                         border: 1px solid $main_color;
-                        @media only screen and (max-width: 600px){
+                        @media only screen and (max-width: 600px) {
                             padding: 8px 5px !important;
-                            
-                           
                         }
                     }
                 }
@@ -312,14 +305,13 @@
                         .list-video {
                             display: flex;
                             flex-wrap: wrap;
-                           
                             .video-item {
                                 width: 32.3333%;
                                 margin-right: 1.5%;
                                 margin-bottom: 1.5%;
                                 position: relative;
                                 background: #f1f1f1;
-                                @media only screen and (max-width: 1080px){
+                                @media only screen and (max-width: 1080px) {
                                     width: 48.5%;
                                     background: #fff;
                                 }
@@ -361,7 +353,7 @@
                                     display: flex;
                                     left: 20px;
                                     align-items: center;
-                                    @media only screen and (max-width: 600px){
+                                    @media only screen and (max-width: 600px) {
                                         top: 6px;
                                         left: 6px;
                                         padding: 2px 3px;
@@ -369,23 +361,21 @@
                                     .quantity {
                                         margin-bottom: -5px;
                                         margin-left: 10px;
-                                        @media only screen and (max-width: 600px){
+                                        @media only screen and (max-width: 600px) {
                                             margin-bottom: 0px;
                                             margin-left: 8px;
                                             font-size: 12px !important;
                                         }
-                                       
                                     }
                                     i {
                                         width: 18px;
                                         height: 18px;
                                         font-size: 18px;
-                                        @media only screen and (max-width: 600px){
+                                        @media only screen and (max-width: 600px) {
                                             width: 10px;
                                             height: 14px;
-                                            font-size: 13px;            
+                                            font-size: 13px;
                                         }
-                                        
                                     }
                                 }
                                 &__count.album {
@@ -399,8 +389,8 @@
                             .video-item:nth-child(6) {
                                 margin-right: 0;
                             }
-                            .video-item:nth-child(n+1){
-                                @media only screen and (max-width: 1080px){
+                            .video-item:nth-child(n+1) {
+                                @media only screen and (max-width: 1080px) {
                                     margin-left: 1%;
                                     margin-right: 0;
                                 }
@@ -412,21 +402,19 @@
                     margin-top: 20px;
                     .media-video {
                         max-height: 32vw;
-                        @media only screen and (max-width: 1080px){
+                        @media only screen and (max-width: 1080px) {
                             max-height: 40vw;
                         }
-                        @media only screen and (max-width: 600px){
+                        @media only screen and (max-width: 600px) {
                             max-height: 60vw;
                         }
-                        .mCSB_scrollTools .mCSB_draggerRail{
+                        .mCSB_scrollTools .mCSB_draggerRail {
                             width: 4px !important;
                             background: rgba(63, 63, 62, 0.596) !important;
                             opacity: 1;
-                            @media only screen and (max-width: 1080px){
+                            @media only screen and (max-width: 1080px) {
                                 width: 15px !important;
-                               
                             }
-
                         }
                         .mCSB_scrollTools .mCSB_draggerContainer {
                             border-radius: 5px;
@@ -434,12 +422,11 @@
                             background: rgba(238, 238, 238, 0.76);
                             right: 0;
                             margin-right: 0;
-                            @media only screen and (max-width: 1080px){
+                            @media only screen and (max-width: 1080px) {
                                 width: 15px;
                                 left: -11px !important;
                             }
                         }
-                        
                         .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
                             background: #fff;
                         }
@@ -449,13 +436,13 @@
                         }
                         .list-video {
                             display: flex;
-                            @media only screen and (max-width: 600px){
+                            @media only screen and (max-width: 600px) {
                                 display: unset;
                             }
                             .left {
                                 flex: 0 0 68%;
                                 margin-right: 2%;
-                                @media only screen and (max-width: 600px){
+                                @media only screen and (max-width: 600px) {
                                     flex: 0 0 100%;
                                     margin-right: 0;
                                 }
@@ -470,9 +457,8 @@
                             }
                             .right {
                                 flex: 0 0 29%;
-                                @media only screen and (max-width: 600px){
+                                @media only screen and (max-width: 600px) {
                                     flex: 0 0 100%;
-                                    
                                 }
                                 .video-item {
                                     margin-bottom: 6%;
@@ -487,7 +473,7 @@
                                             transition: 0.2s;
                                             font-size: 50px;
                                             color: #fff;
-                                            @media only screen and (max-width: 600px){
+                                            @media only screen and (max-width: 600px) {
                                                 font-size: 20px;
                                             }
                                         }
@@ -496,13 +482,12 @@
                                         margin-bottom: 0;
                                         font-family: $MyriadPro-Bold;
                                         @include split_str(2);
-                                        @media only screen and (max-width: 1080px){
+                                        @media only screen and (max-width: 1080px) {
                                             margin: 5px 0;
                                             line-height: 1.1;
                                         }
-                                        @media only screen and (max-width: 600px){
+                                        @media only screen and (max-width: 600px) {
                                             font-size: 12px;
-                                            
                                             line-height: 1;
                                         }
                                     }
@@ -518,6 +503,7 @@
         }
     }
 }
+
 #album_modal,
 #video_modal {
     padding: 3% 5% 3% 7%;
@@ -691,7 +677,6 @@
             }
             img {
                 width: 83.4%;
-                
                 object-fit: contain;
                 object-position: center;
                 @media screen and (max-width: 1680px) {
@@ -729,7 +714,6 @@
 
 #video_modal-detail {
     .video-wrapper {
-
         position: relative;
         .video-download {
             position: absolute;
@@ -740,32 +724,32 @@
             z-index: 2;
             right: 20px;
         }
-        #player{
+        #player {
             width: 50% !important;
         }
-       
     }
-    
 }
-.ytp-cued-thumbnail-overlay{
-    @media only screen and (max-width: 600px){
+
+.ytp-cued-thumbnail-overlay {
+    @media only screen and (max-width: 600px) {
         height: 35% !important;
     }
 }
-.ytp-cued-thumbnail-overlay-image{
-    @media only screen and (max-width: 600px){
+
+.ytp-cued-thumbnail-overlay-image {
+    @media only screen and (max-width: 600px) {
         height: 35% !important;
     }
 }
 
 .ytp-title-text {
-    a{
-        @media only screen and (max-width: 600px){
+    a {
+        @media only screen and (max-width: 600px) {
             font-size: 12px !important;
         }
     }
-    
 }
+
 // #video_modal .modal-dialog {
 //   max-width: 100%;
 //   margin: 0;
@@ -955,7 +939,6 @@
     }
     .select2-results__option--selectable {
         height: 40px;
-       
         background: #e9e9e9;
         font-size: 16px;
         font-family: $MyriadPro-Regular;
@@ -963,7 +946,7 @@
         align-items: center;
         padding: 0 15px;
         line-height: 1.2;
-        @media only screen and (max-width: 600px){
+        @media only screen and (max-width: 600px) {
             width: 119px;
         }
     }
@@ -976,17 +959,25 @@
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%);
-    
-    @media  (max-width: 1080px){ height: 46vh !important; width: 80% !important;}
-    @media (max-width: 768px){ height: 47vh !important; padding: 15px 0 0 0;}
-    @media  (max-width: 600px){ width: 95% !important;}
-    
+    @media (max-width: 1080px) {
+        height: 46vh !important;
+        width: 80% !important;
+    }
+    @media (max-width: 768px) {
+        height: 47vh !important;
+        padding: 15px 0 0 0;
+    }
+    @media (max-width: 600px) {
+        width: 95% !important;
+    }
     .modal-main {
         padding: 4%;
         height: 100%;
         .modal-header-custom {
             height: 3vw;
-            @media (max-width: 600px){ height: 12vw;}
+            @media (max-width: 600px) {
+                height: 12vw;
+            }
             p {
                 position: absolute;
                 top: 10px;
@@ -1000,12 +991,12 @@
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 1;
             }
-            .text-right{
-                button{
-                    @media only screen and (max-width: 600px){
-                       margin-right: -10px;
-                       margin-top: -20px;
-                       padding: 1px 3px !important;
+            .text-right {
+                button {
+                    @media only screen and (max-width: 600px) {
+                        margin-right: -10px;
+                        margin-top: -20px;
+                        padding: 1px 3px !important;
                         font-size: 15px;
                     }
                 }
@@ -1028,7 +1019,7 @@
                 @media screen and (max-width: 1440px) {
                     gap: 15px
                 }
-                @media only screen and (max-width: 600px){
+                @media only screen and (max-width: 600px) {
                     -webkit-grid-template-columns: 1fr 1fr;
                     grid-template-columns: 1fr 1fr;
                     gap: 10px;
@@ -1036,12 +1027,18 @@
                     padding-top: 15px;
                 }
                 padding-right: 30px;
-                @media only screen and (max-width: 1080px){padding-right: 0;}
+                @media only screen and (max-width: 1080px) {
+                    padding-right: 0;
+                }
                 .item {
                     position: relative;
                     .box-img {
                         img {
                             width: 100%;
+                            height: 180px;
+                            @media only screen and (max-width: 1440px) {
+                                height: 150px;
+                            }
                         }
                     }
                 }
@@ -1058,13 +1055,13 @@
     top: 15px;
     z-index: 2;
     right: 15px;
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 600px) {
         top: 4px;
         right: 4px;
     }
-    i{
-        @media only screen and (max-width: 600px){
-           font-size: 12px;
+    i {
+        @media only screen and (max-width: 600px) {
+            font-size: 12px;
         }
     }
 }
@@ -1091,16 +1088,15 @@
 .swiper-galleryImage .swiper-container {
     height: 100%;
     padding-bottom: 15px;
-    .swiper-slide{
-        img{
+    .swiper-slide {
+        img {
             width: 80% !important;
             height: 100%;
             object-fit: contain;
             position: relative;
             align-self: center;
             margin: 0 10%;
-            
-            @media only screen and (max-width: 1080px){
+            @media only screen and (max-width: 1080px) {
                 object-fit: unset !important;
                 padding: 15px 0;
             }
@@ -1118,46 +1114,48 @@
 }
 
 .swiper-galleryImage {
-    .swiper-button-prev{
-        @media only screen and (max-width: 600px){ 
+    .swiper-button-prev {
+        @media only screen and (max-width: 600px) {
             margin-left: -10px;
         }
     }
-    .swiper-button-next{
-        @media only screen and (max-width: 600px){ 
+    .swiper-button-next {
+        @media only screen and (max-width: 600px) {
             margin-right: -10px;
         }
     }
     .swiper-button-prev::after {
         color: #464646b2;
         font-size: 50px;
-        @media only screen and (max-width: 600px){  font-size: 30px;}
+        @media only screen and (max-width: 600px) {
+            font-size: 30px;
+        }
     }
     .swiper-button-next::after {
         color: #464646b2;
         font-size: 50px;
-        @media only screen and (max-width: 600px){  font-size: 30px;}
+        @media only screen and (max-width: 600px) {
+            font-size: 30px;
+        }
     }
 }
 
-
- 
 iframe {
     width: 100% !important;
     height: 350px !important;
-    @media only screen and (max-width: 1080px){
+    @media only screen and (max-width: 1080px) {
         height: 400px !important;
     }
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 768px) {
         height: 350px !important;
     }
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 600px) {
         height: 220px !important;
     }
-    @media only screen and (max-width: 350px){
+    @media only screen and (max-width: 350px) {
         height: 200px !important;
     }
-    @media only screen and (max-width: 300px){
+    @media only screen and (max-width: 300px) {
         height: 150px !important;
     }
     // button{
@@ -1165,10 +1163,5 @@ iframe {
     //         width: 37px !important;
     //         margin-left: -17px !important;
     //     }
-      
     // }
-    
- 
 }
-
-
