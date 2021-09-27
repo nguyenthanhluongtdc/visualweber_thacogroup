@@ -22,7 +22,7 @@
                         @forelse($data as $item)
                         <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50"
                             class="aos-init aos-animate">
-                            <div class="thumb-img report-item-left">
+                            <div class="thumb-img report-item-left"> 
                                 <img src="{{ Storage::disk('public')->exists($item->image) ? get_object_image($item->image): RvMedia::getDefaultImage() }}"
                                     alt="report">
                             </div>

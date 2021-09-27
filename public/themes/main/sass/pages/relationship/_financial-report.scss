@@ -21,7 +21,7 @@
                 display: block;
                 font-family: $MyriadPro-Bold;
             }
-        }
+        } 
         .list-info {
             display: flex;
             flex-wrap: wrap;
@@ -60,12 +60,12 @@
                         width: 100%;
                         transition: transform .3s, visibility .3s ease-in;
                         height: 250px;
-                        @media only screen and (max-width: 1080px) {
-                            height: 200px;
-                        }
-                        @media only screen and (max-width: 768px) {
-                            height: 150px;
-                        }
+                        // @media only screen and (max-width: 1080px) {
+                        //     height: 200px;
+                        // }
+                        // @media only screen and (max-width: 768px) {
+                        //     height: 200px;
+                        // }
                         @media only screen and (max-width: 480px) {
                             height: 120px;
                         }

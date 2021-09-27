@@ -52,7 +52,7 @@
                                         <h3 >
                                             <a href="" class="font25 itemdown-show text-justify">
                                                 {{$post->name}}
-                                            </a> 
+                                            </a>  
                                         </h3>
                                         <p class="count">
                                             1 files  
