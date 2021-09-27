@@ -9,6 +9,9 @@
     <div class="media-newspapers-wrapper">
         <div class="container-customize"> 
             <div class="shareholder-infomation mb-100">
+                <div class="loading d-none">
+                    <img src="{{Theme::asset()->url('images/media/loading.gif')}}" alt="Loading">
+                </div>
                 <div class="shareholder-infomation_left render-html">
                     @includeIf("theme.main::partials.templates.".$category->template)
                 </div>

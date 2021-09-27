@@ -692,11 +692,14 @@ var Ajax = {
                 },
                 method: "GET",
                 beforeSend: function() {
+                    $('.render-html').hide()
                     $('.loading').removeClass('d-none')
+                    
                 },
                 success: function(data) {
 
                     if ($('.render-html').length) {
+                        $('.render-html').show()
                         $("#breadcrum").load(" #breadcrum1");
                         $('.render-html').html(data)
                     }

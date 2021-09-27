@@ -1,8 +1,5 @@
 
 @includeIf("theme.main::views.components.breadcrumb")
-<div class="loading d-none">
-    <img src="{{Theme::asset()->url('images/media/loading.gif')}}" alt="Loading">
-</div>
 @if($category)
 <h2 class="title-mobile text-uppercase mb-4 font30"> {!! $category->name !!} </h2>
 @endif

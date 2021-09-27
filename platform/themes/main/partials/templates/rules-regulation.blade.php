@@ -1,8 +1,5 @@
 
 @includeIf("theme.main::views.components.breadcrumb")
-<div class="loading d-none">
-    <img src="{{Theme::asset()->url('images/media/loading.gif')}}" alt="Loading">
-</div>
 @includeIf('theme.main::views.components.filter-qhcd')
 <div class="list-info">
     @if($category)
