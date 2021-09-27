@@ -14,7 +14,7 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
 
         //video
 
-        Route::prefix('api')->group(function () {
+        Route::prefix('api')->group(function () { 
             Route::get('/filter/album/image', 'ApiController@getFilterImage');
             Route::post('/download/album/image', 'ApiController@zipDownload');
 

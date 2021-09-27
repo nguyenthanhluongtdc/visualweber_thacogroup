@@ -36874,7 +36874,7 @@ var render = function() {
                                       _vm._v(" "),
                                       _c(
                                         "div",
-                                        { staticClass: "album-item__name " },
+                                        { staticClass: "album-item__name" },
                                         [
                                           _c(
                                             "p",

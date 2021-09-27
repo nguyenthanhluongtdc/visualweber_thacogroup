@@ -26,7 +26,7 @@
             </li>
         </ul>
 
-        <div class="filter-media ">
+        <div class="filter-media "> 
             <form action="">
                 <div class="list-tool">
                     <div class="search">
@@ -195,14 +195,14 @@
                                             <div class="album-item__img" @click="loadGallery(item.id, 'album')">
                                                 <img :src="'storage/'+item.image" alt="">
                                             </div>
-                                            <div class="album-item__name ">
+                                            <div class="album-item__name">
                                                 <p class="name font20">
                                                 {{item.name}}                                         
-                                                </p>
+                                                </p> 
                                             </div>
                                             <span class="album-item__date">{{item.created_at | formatDate('DD-MM-YYYY')}}</span>
                                             <div class="album-item__count">
-                                                <i class="far fa-image"></i>
+                                                <i class="far fa-image"></i> 
                                                 <p class="quantity font18">100 </p>
                                             </div>
                                             <div title="Tải xuống album" class="album-item__download" @click="zipDownload(item.id)">
@@ -210,7 +210,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
 
                             <p v-if="!dataImage.data">
