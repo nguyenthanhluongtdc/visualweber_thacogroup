@@ -683,12 +683,12 @@ import "vue-custom-scrollbar/dist/vueScrollbar.css"
 import Paginationn from 'laravel-vue-pagination';
 
 //swiper use gallery
-import { Swiper as SwiperClass, Pagination, Navigation, Keyboard, Mousewheel,  HashNavigation, A11y} from 'swiper/js/swiper.esm'
+import { Swiper as SwiperClass, Pagination, Navigation, Keyboard, Mousewheel} from 'swiper/js/swiper.esm'
 import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
 const { Swiper, SwiperSlide } = getAwesomeSwiper(SwiperClass)
 
 // Swiper modules
-SwiperClass.use([Pagination, Navigation, Keyboard, Mousewheel. A11y, HashNavigation]);
+SwiperClass.use([Pagination, Navigation, Keyboard, Mousewheel]);
 
 export default {
 
@@ -720,11 +720,9 @@ export default {
                     el: '.swiper-pagination',
                     type: 'progressbar'
                 },
-                slidesPerView: 1,
-                    spaceBetween: 30,
-                    keyboard: {
-                        enabled: true,
-                    },
+                keyboard: {
+                    enabled: true,
+                },
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev' 
