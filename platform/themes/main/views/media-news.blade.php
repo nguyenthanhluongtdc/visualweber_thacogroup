@@ -65,3 +65,5 @@
         </div>
     </div>
 </section>
+
+@includeIf("theme.main::views.pages.post.post-sidebar-mb")
