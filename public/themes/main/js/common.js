@@ -691,6 +691,7 @@ var Ajax = {
                     categoryId: $(this).data('category')
                 },
                 method: "GET",
+                dataType: 'json',
                 beforeSend: function() {
                     $('.render-html').hide()
                     $('.loading').removeClass('d-none')
@@ -700,7 +701,9 @@ var Ajax = {
                     if ($('.render-html').length) {
                         $('.render-html').show()
                         $("#breadcrum").load(" #breadcrum1");
-                        $('.render-html').html(data)
+                        $('.render-html').html(data.html)
+
+                        window.history.pushState({}, '', data.url)
                     }
 
                 },
@@ -726,7 +729,6 @@ var Ajax = {
             $(document).on('click', '.post.download', function(e) {
                 e.preventDefault();
                
-
                 $.ajax({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

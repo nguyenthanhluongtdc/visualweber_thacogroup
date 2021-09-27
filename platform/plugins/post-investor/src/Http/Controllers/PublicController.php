@@ -103,7 +103,16 @@ class PublicController extends BaseController {
 
 
             $view = 'templates/'.$category->template;
-            return Theme::partial($view, compact('data','category'));
+
+            $html = Theme::partial($view, compact('data','category'));
+
+            return response()->json(
+                [
+                    'html' => $html,
+                    'url'  => $category->url,
+                ],
+                200
+            );
 
         } catch (\Throwable $th) {
          
