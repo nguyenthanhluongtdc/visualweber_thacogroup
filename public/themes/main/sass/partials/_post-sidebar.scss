@@ -120,14 +120,16 @@
             box-shadow: unset;
             .list-media-menu {
                 padding: unset;
+                padding: 0 10px !important;
                 h3 {
                     font-size: 35px;
                 }
-                .item_link {
-                    font-size: 25px;
-                }
+                // .item_link {
+                //     font-size: 25px;
+                // }
             }
             .list-post-new {
+                padding: 0 10px !important;
                 .wrap {
                     padding: 0;
                     h2 {
@@ -140,7 +142,7 @@
                         }
                         .title {
                             width: 76%;
-                            font-size: 25px;
+                            // font-size: 25px;
                         }
                         .time {
                             font-size: 17px;
@@ -166,9 +168,9 @@
                 h3 {
                     font-size: 25px;
                 }
-                .item_link {
-                    font-size: 20px;
-                }
+                // .item_link {
+                //     font-size: 20px;
+                // }
             }
             .list-post-new {
                 .wrap {
@@ -177,7 +179,7 @@
                     }
                     .post-new-item {
                         .title {
-                            font-size: 20px;
+                            // font-size: 20px;
                         }
                         .time {
                             font-size: 15px;
@@ -193,15 +195,15 @@
     .post-sidebar-content {
         .media__content_right {
             .list-media-menu {
-                .item_link {
-                    font-size: 18px;
-                }
+                // .item_link {
+                //     font-size: 18px;
+                // }
             }
             .list-post-new {
                 .wrap {
                     .post-new-item {
                         .title {
-                            font-size: 17px;
+                            // font-size: 17px;
                         }
                         .post-thumbnail-wrap {
                             width: 30%;
