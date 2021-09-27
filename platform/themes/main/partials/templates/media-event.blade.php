@@ -37,8 +37,8 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
             <div class="post-slider">
                 <div class="swiper-container post-slide-bottom">
                     <div class="swiper-wrapper">
-                        @if (!empty($postSlider))
-                            @foreach ($postSlider as $post)
+                        @if (!empty($postSlider_bottom))
+                            @foreach ($postSlider_bottom as $post)
                                 <div class="swiper-slide d-flex justify-content-center">
                                     <div class="post_content_bottom h-100">
                                         <a class="post-wrapper" href=" {{ $post->url }}">

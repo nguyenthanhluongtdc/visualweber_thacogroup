@@ -128,6 +128,7 @@ class BlogService
                 }
                 $posts = app(PostInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
                 $postSlider = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,1);
+                $postSlider_bottom = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,3);
 
                 // $allRelatedCategoryIds = array_unique(array_merge(
                 //     app(CategoryInterface::class)->getAllRelatedChildrenIds($category),
@@ -156,7 +157,7 @@ class BlogService
                 return [
                     'view'         => $category->template == 'media' ? 'Media': 'media-category',
                     'default_view' => 'plugins/blog::themes.category',
-                    'data'         => compact('category', 'slug','posts','postSlider'),
+                    'data'         => compact('category', 'slug','posts','postSlider','postSlider_bottom'),
                     'slug'         => $slug,
                 ];
             case Tag::class:

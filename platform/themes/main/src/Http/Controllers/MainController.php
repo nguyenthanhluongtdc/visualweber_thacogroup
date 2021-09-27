@@ -163,6 +163,7 @@ class MainController extends PublicController
 
             $posts = app(PostInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
             $postSlider = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,1); 
+            $postSlider_bottom = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,3);
             $posts->withPath($category->url);   
             Theme::breadcrumb()
             ->add(__('Home'), route('public.index'));
@@ -174,7 +175,7 @@ class MainController extends PublicController
             Theme::breadcrumb()->add($category->name, $category->url);
            
             $view = 'templates/'.$category->template;
-            $html = Theme::partial($view, compact('posts','postSlider','category'));
+            $html = Theme::partial($view, compact('posts','postSlider','category','postSlider_bottom'));
             return response()->json(
                 [
                     'html' => $html,
