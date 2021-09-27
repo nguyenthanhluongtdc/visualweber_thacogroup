@@ -38,17 +38,20 @@
                                 @foreach ($posts as $post) 
                                 <div class="report-item" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50" class="aos-init aos-animate">
                                     
-                                    <div class="thumb-img">
+                                    <div class="thumb-img report-item-left">
                                         <img src="{{ get_object_image($post->image) }}" alt="report">
                                     </div>
-                                    <span class="date"> {{date_format($post->created_at,"d-m-Y")}}</span>
-                                    <a href="{{$post->url}}" class="text-dark">
-                                        <p class="name-file font18 ">{{$post->name}}</p>
-                                    </a>
-                                   
-                                    <div class="download">
-                                        <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}" title="download">DOWNLOAD</a>
-                                    </div>                                   
+                                    <div class="report-item-right">
+                                        <span class="date"> {{date_format($post->created_at,"d-m-Y")}}</span>
+                                        <a href="{{$post->url}}" class="text-dark">
+                                            <p class="name-file font18 ">{{$post->name}}</p>
+                                        </a>
+                                        <span class="date-mobile">{{date_format($post->created_at,"d-m-Y")}}</span>
+                                        <div class="download">
+                                            <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}" title="download">DOWNLOAD</a>
+                                        </div>      
+                                    </div>
+                                                                
                                 </div>
                                 @endforeach
                                 @endif
