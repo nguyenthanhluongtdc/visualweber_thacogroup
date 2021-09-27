@@ -21,7 +21,7 @@ class PostInvestorRepository extends RepositoriesAbstract implements PostInvesto
         $data->orderBy('created_at','desc');
 
         if ($paginate != 0) {
-            return $this->applyBeforeExecuteQuery($data)->paginate($paginate);
+            return $this->applyBeforeExecuteQuery($data)->paginate($paginate)->onEachSide(1);
         }
 
         return $this->applyBeforeExecuteQuery($data)->limit($limit)->get();
