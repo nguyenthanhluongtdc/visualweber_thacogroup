@@ -140,6 +140,15 @@ class MainController extends PublicController
        
         try {
             $categoryId = $request->categoryId;
+
+            $allRequest = $request->toArray();
+
+            //remove all url params
+            foreach($allRequest as $key => $value) {
+                $request->request->remove($key);
+            }
+
+            //get category by id
             $category = app(InvestorRelationsInterface::class)->getFirstBy(
                 [
                     'id' => $categoryId,
@@ -149,7 +158,13 @@ class MainController extends PublicController
                 ['slugable']
             );
 
+            if(!$category->slug) {
+                abort(404);
+            }
+
             $data = app(PostInvestorInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
+
+            $data->withPath($category->url);
 
             Theme::breadcrumb()
             ->add(__('Home'), route('public.index'));
