@@ -24,6 +24,8 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
             Route::post('/get/menu/', 'ApiController@getMenuByLocation');
         });
 
+        Route::get('media','MainController@getMedia')->name('getMedia');
+
     });
 });
 

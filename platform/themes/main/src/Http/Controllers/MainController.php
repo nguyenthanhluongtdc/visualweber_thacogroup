@@ -23,8 +23,10 @@ use Platform\Blog\Supports\FilterPost;
 use Platform\Blog\Repositories\Interfaces\PostInterface;
 use Platform\InvestorRelations\Repositories\Interfaces\InvestorRelationsInterface;
 use Platform\PostInvestor\Repositories\Interfaces\PostInvestorInterface;
+use Platform\Kernel\Repositories\Interfaces\PostInterface as PostInterfaceCustom;
 use Illuminate\Support\Facades\Log;
 use Platform\Base\Enums\BaseStatusEnum;
+use Platform\Blog\Repositories\Interfaces\CategoryInterface;
 
 class MainController extends PublicController
 {
@@ -135,6 +137,58 @@ class MainController extends PublicController
 
         return Theme::scope('search', compact('posts' ,'count'))->render();
     }
+    public function getMedia(Request $request){
+        // try {
+            $categoryId =  $request->categoryId;
+            $allRequest = $request->toArray();
+
+            //remove all url params
+            foreach($allRequest as $key => $value) {
+                $request->request->remove($key);
+            }
+
+            $category = app(CategoryInterface::class)->getFirstBy(
+                [
+                    'id' => $categoryId,
+                    'status' => BaseStatusEnum::PUBLISHED
+                ],
+                
+                ['*'],
+                ['slugable']
+
+            );    
+            if(!$category->slug) {
+                abort(404);
+            }
+
+            $posts = app(PostInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
+            $postSlider = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,1); 
+            $posts->withPath($category->url);   
+            Theme::breadcrumb()
+            ->add(__('Home'), route('public.index'));
+
+            if($category->parent->id) {
+                Theme::breadcrumb()->add($category->parent->name, $category->parent->url);
+            }
+
+            Theme::breadcrumb()->add($category->name, $category->url);
+           
+            $view = 'templates/'.$category->template;
+            $html = Theme::partial($view, compact('posts','postSlider','category'));
+            return response()->json(
+                [
+                    'html' => $html,
+                    'url'  => $category->url,
+                ],
+                200
+            );
+        // } catch (\Throwable $th) {
+           
+        // }
+    }
+
     
 }
+
+
 

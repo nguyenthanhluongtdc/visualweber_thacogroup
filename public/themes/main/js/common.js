@@ -719,16 +719,57 @@ var Ajax = {
             })
         })
     },
+    getMedia: () => {
+        $(document).on('click', '.item_link_media', function() {
+            $(this).addClass('active').siblings().removeClass('active')
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: getMediaUrl,
+                data: {
+                    categoryId: $(this).data('category')
+                },
+                method: "GET",
+                dataType: 'json',
+                beforeSend: function() {
+                    $('.loading').removeClass('d-none')
+                    $('.render-media').hide()
+                },
+                success: function(data) {
+                    // console.log(data)
+                    if ($('.render-media').length) {
+                        $('.render-media').show()
+                        $("#breadcrum").load(" #breadcrum1");
+                        $('.render-media').html(data.html)
+
+                        window.history.pushState({}, '', data.url)
+                    }
+
+                },
+                error: function(xhr, thrownError) {
+                    console.log('error')
+                    console.log(xhr.responseText);
+                    console.log(thrownError)
+                    $('.loading').addClass('d-none')
+                },
+                complete: function(xhr, status) {
+                    $('.loading').addClass('d-none')
+                }
+            })
+        })
+    },
+
 
     zipDownload: function() {
 
         const url = window.urlDownload;
 
-        if(url!=undefined) {
+        if (url != undefined) {
 
             $(document).on('click', '.post.download', function(e) {
                 e.preventDefault();
-               
+
                 $.ajax({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -739,9 +780,9 @@ var Ajax = {
                     },
                     method: "GET",
                     success: function(response) {
-                        if(response.data) {
+                        if (response.data) {
                             window.location = response.data
-                        }else {
+                        } else {
                             alert('Có lỗi vui lòng thử lại sau!')
                         }
 
@@ -753,8 +794,11 @@ var Ajax = {
             })
         }
     }
+
 }
 $(document).ready(function() {
     Ajax.getShareholder();
     Ajax.zipDownload();
+    Ajax.getMedia();
+
 })

@@ -1,11 +1,10 @@
 @includeIf("theme.main::views.pages.post.slide")
 @includeIf("theme.main::views.breadcrumb")
-@php
+{{-- @php
 $posts = get_posts_by_category($category->id ?? 16, 3);
 $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
-@endphp
+@endphp --}}
 <section>
-
        <div class="media_content-wrapper mb-100">
            <div class="container-customize">
                <div class="media-content"> 

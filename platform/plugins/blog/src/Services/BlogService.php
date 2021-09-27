@@ -11,6 +11,7 @@ use Platform\Blog\Repositories\Interfaces\CategoryInterface;
 use Platform\Blog\Repositories\Interfaces\PostInterface;
 use Platform\Blog\Repositories\Interfaces\TagInterface;
 use Platform\SeoHelper\SeoOpenGraph;
+use Platform\Kernel\Repositories\Interfaces\PostInterface as PostInterfaceCustom;
 use Eloquent;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
@@ -125,6 +126,8 @@ class BlogService
                         route('categories.edit', $category->id)
                     );
                 }
+                $posts = app(PostInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
+                $postSlider = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,1);
 
                 // $allRelatedCategoryIds = array_unique(array_merge(
                 //     app(CategoryInterface::class)->getAllRelatedChildrenIds($category),
@@ -149,11 +152,11 @@ class BlogService
                     ->add(SeoHelper::getTitle(), $category->url);
 
                 $slug = $category->slug;
-
+            
                 return [
-                    'view'         => $category->template ?: 'category',
+                    'view'         => $category->template == 'media' ? 'Media': 'media-category',
                     'default_view' => 'plugins/blog::themes.category',
-                    'data'         => compact('category', 'slug'),
+                    'data'         => compact('category', 'slug','posts','postSlider'),
                     'slug'         => $slug,
                 ];
             case Tag::class:
