@@ -624,14 +624,11 @@
                         {{galleryImage.name}}
                     </h2>
                 </div>
-                <!-- keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-    }, -->
+               
                 <div class="modal-body-custom">
                     <template>
                         <div class="swiper-galleryImage h-100">
-                            <swiper ref="galleryImage" :options="swiperOptions">
+                            <swiper ref="galleryImage" class="swiper" :options="swiperOptions">
                                 <swiper-slide v-if="galleryImage" v-for="(item, i) in galleryImage.data" :key="i">
                                     <img :src="'storage/'+item.img" alt="" class="w-100 h-100 fit-cover">
                                     <!-- <div class="icon--download">
@@ -686,12 +683,12 @@ import "vue-custom-scrollbar/dist/vueScrollbar.css"
 import Paginationn from 'laravel-vue-pagination';
 
 //swiper use gallery
-import { Swiper as SwiperClass, Pagination, Navigation, Keyboard, Mousewheel, } from 'swiper/js/swiper.esm'
+import { Swiper as SwiperClass, Pagination, Navigation, Keyboard, Mousewheel,  HashNavigation, A11y} from 'swiper/js/swiper.esm'
 import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
 const { Swiper, SwiperSlide } = getAwesomeSwiper(SwiperClass)
 
 // Swiper modules
-SwiperClass.use([Pagination, Navigation])
+SwiperClass.use([Pagination, Navigation, Keyboard, Mousewheel. A11y, HashNavigation]);
 
 export default {
 
@@ -706,7 +703,7 @@ export default {
         vueCustomScrollbar,
         Swiper,
         SwiperSlide,
-        Paginationn,
+        Pagination,
         Keyboard,
         Mousewheel,
     },
@@ -723,10 +720,11 @@ export default {
                     el: '.swiper-pagination',
                     type: 'progressbar'
                 },
-                 keyboard: { 
-                     enabled: true ,
-                     onlyInViewport: false,
-                     },
+                slidesPerView: 1,
+                    spaceBetween: 30,
+                    keyboard: {
+                        enabled: true,
+                    },
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev' 

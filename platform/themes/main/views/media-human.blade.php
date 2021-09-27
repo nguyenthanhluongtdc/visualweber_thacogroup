@@ -69,6 +69,36 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 6);
                                        </div>
                                     </div>
                                </div>
+
+                               <div class="news-content-mobile" style="display: none">
+                                <div class="swiper-container new-post-slide-mb " id="js-swiper-news" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
+                                    <div class="swiper-wrapper">
+                                        @if (!empty($postSlider))
+                                        @foreach ($postSlider as $post) 
+                                        <div class="swiper-slide">
+                                            <div class="news-content">
+                                                <div class="img-post">
+                                                    <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="{{$post->name}}">
+                                                </div>
+                                                <div class="name ">
+                                                    <h3 class="font40">
+                                                        {{$post->name}}
+                                                    </h3>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        @endforeach
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="control-slide-news">
+                                    <div class="swiper-pagination pagination-news"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div> 
+                               
+                                
+                            </div>
                         <div class="filter-search-media field mt-40 human">
                                     <form action="" class="form-search">
                                         <div class="search">
@@ -126,3 +156,4 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 6);
            </div>
        </div>
    </section>
+   @includeIf("theme.main::views.pages.post.post-sidebar-mb")

@@ -73,8 +73,8 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                     <div class="news-content-mobile" style="display: none">
                         <div class="swiper-container new-post-slide-mb " id="js-swiper-news" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                             <div class="swiper-wrapper">
-                             @if (!empty($posts))
-                             @foreach ($posts as $post) 
+                                @if (!empty($postSlider))
+                                @foreach ($postSlider as $post) 
                                 <div class="swiper-slide">
                                     <div class="news-content">
                                         <div class="img-post">
