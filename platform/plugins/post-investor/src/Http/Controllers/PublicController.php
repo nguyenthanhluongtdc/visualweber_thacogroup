@@ -50,9 +50,9 @@ class PublicController extends BaseController {
         if($request->input('year') && filter_var($request->input('year'), FILTER_VALIDATE_INT)) {
             $data->whereYear('app_post_investors.created_at', intval($request->input('year')));
         } 
-        $data = $this->postInvestorRepository->applyBeforeExecuteQuery($data)->paginate(2);
+        $data = $this->postInvestorRepository->applyBeforeExecuteQuery($data)->paginate(theme_option('number_of_posts_in_a_category'));
 
-        $view = $category->template;
+        $view = 'shareholder-relations';
         if($view) {
             return Theme::scope($view, compact('data','category'))->render();
         }
