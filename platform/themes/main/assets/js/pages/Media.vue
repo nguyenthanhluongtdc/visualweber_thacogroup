@@ -11,7 +11,7 @@
             data-aos-delay="50"
           >
             <img src="themes/main/images/introduce/arrow.png" alt="" />
-            <h1 class="font50 big-title">Hình ảnh</h1>
+            <h1 class="font50 big-title"> {{__('Hình ảnh')}} </h1>
           </div>
 
           <div class="tab-image">
@@ -26,10 +26,10 @@
                     aria-controls="media-image"
                     aria-selected="true"
                     href="#media-album"
-                    title="Tất Cả"
+                    :title="__('Tất Cả')"
                   >
                     <i class="far fa-images"></i>
-                    Albums
+                    {{__('Albums')}}
                   </a>
                 </li>
                 <li class="__tabs__item" role="media">
@@ -41,10 +41,10 @@
                     aria-controls="media-video"
                     aria-selected="true"
                     href="#media-single-image"
-                    title="Tất Cả"
+                    :title="__('Tất Cả')"
                   >
                     <i class="fas fa-image"></i>
-                    Hình ảnh
+                    {{__('Hình ảnh')}}
                   </a>
                 </li>
               </ul>
@@ -88,7 +88,7 @@
                         <p class="quantity font18"> {{item.album_total}} </p>
                       </div>
                       <div
-                        title="Tải xuống album"
+                        :title="__('Tải xuống album')"
                         class="album-item__download"
                         @click="zipDownload(item.id)"
                       >
@@ -121,10 +121,10 @@
                         @click="loadAlbumGallery(item.id, 'album')"
                       >
                         <i class="far fa-image"></i>
-                        <p class="text font18">Album</p>
+                        <p class="text font18">{{__('Album')}}</p>
                       </div>
                       <div class="icon--download">
-                        <a download :href="'storage/' + item.image" title="Tải xuống">
+                        <a download :href="'storage/' + item.image" :title="__('Tải xuống')">
                           <i class="fas fa-download text-white"></i>
                         </a>
                       </div>
@@ -350,7 +350,7 @@
                   <img :src="'storage/' + item.img" class="fit-cover" />
                 </div>
                 <div class="icon--download">
-                  <a download :href="'storage/' + item.img" title="Tải xuống">
+                  <a download :href="'storage/' + item.img" :title="__('Tải xuống')">
                     <i class="fas fa-download text-white"></i>
                   </a>
                 </div>

@@ -1,4 +1,8 @@
 
+<script>
+    window.trans = {};
+</script>
+
 @if(!blank($category) && isset($category))
     <div id="app">
         @includeIf("theme.main::views.breadcrumb")
@@ -6,10 +10,6 @@
     </div>
     <script src="themes/main/js/app.js"></script>
 @endif
-
-<script>
-    window.trans = {};
-</script>
 
 <style>
     .ps__thumb-y {
