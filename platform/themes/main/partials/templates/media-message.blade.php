@@ -7,22 +7,22 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
 <div class="media__content_left">
     <div class="news__content">
     @if (!empty($postSlider))
-    @foreach ($postSlider as $post) 
+    {{-- @foreach ($postSlider as $post)  --}}
     <div class="news__top">
         <div class="img-post">
-            <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
+            <img class="img-mw-100" src="{{ get_object_image($postSlider[0]->image) }}" alt="{{$postSlider[0]->name}}">
         </div>
         <div class="news-post h-100">
             <h3 class=" title font18 text-uppercase">{!!__ ('THÔNG ĐIỆP NĂM') !!}</h3>
-            <a href="{{$post->url}}">  
-                <h4 class="name font18 text-justify">{{$post->name}}</h4>
+            <a href="{{$postSlider[0]->url}}">  
+                <h4 class="name font18 text-justify">{{$postSlider[0]->name}}</h4>
             </a>
-            <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span> 
-            <p class="description font18  text-justify">{{$post->description}}</p>
-            <a href="{{$post->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
+            <span class="time">{{date_format($postSlider[0]->created_at,"d-m-Y")}}</span> 
+            <p class="description font18  text-justify">{{$postSlider[0]->description}}</p>
+            <a href="{{$postSlider[0]->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
         </div>
     </div>
-    @endforeach
+    {{-- @endforeach --}}
     @endif
     </div>
     <div class="list-media_wrapper" id="scroll-list-news">

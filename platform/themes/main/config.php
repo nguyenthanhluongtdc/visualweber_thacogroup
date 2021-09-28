@@ -65,7 +65,7 @@ return [
            
            
            
-            $theme->asset()->add('swiper', '//cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css');
+            $theme->asset()->add('swiper', '//cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css');
             $theme->asset()->add('slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
             $theme->asset()->add('Scroll_custom', '//cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css');
             $theme->asset()->add('carousel_thumb', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css');

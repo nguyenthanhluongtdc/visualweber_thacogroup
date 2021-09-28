@@ -14,14 +14,4 @@
     @endforeach
 </div>
 
-<script>
-  
-
-        let position = $('.post-sidebar-content').position();
-        $('html, body').animate({
-            scrollTop: position.top-100
-        }, 1500);
-    
-</script>
-
 

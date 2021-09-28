@@ -636,6 +636,20 @@ app()->booted(function () {
                             'class' => 'form-control'
                         ], // Optional
                     ],
+                ])
+                ->setField([
+                    'id' => 'number_post_media',
+                    'section_id' => 'opt-text-subsection-blog',
+                    'type' => 'number',
+                    'label' => __('Số bài viết hiển thị trong các trang truyền thông'),
+                    'attributes' => [
+                        'name' => 'number_post_media',
+                        'value' => 1,
+                        'options' => [
+                            'class' => 'form-control'
+                        ], // Optional
+                    ],
                 ]);
+    
     
 });

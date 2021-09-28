@@ -743,6 +743,84 @@ var Ajax = {
                         $('.render-media').html(data.html)
 
                         window.history.pushState({}, '', data.url)
+                            // init slide after load ajax
+                        let newPostSlide = new Swiper('.new-post-slide', {
+                            spaceBetween: 30,
+                            effect: "fade",
+                            speed: 1500,
+                            loop: true,
+                            autoplay: {
+                                delay: 6000,
+                                disableOnInteraction: false,
+                            },
+                            pagination: {
+                                el: '.new-post-slide .swiper-pagination',
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: '.new-post-slide .swiper-button-next',
+                                prevEl: '.new-post-slide .swiper-button-prev',
+                            },
+                            breakpoints: {
+                                1024: {
+                                    slidesPerView: 1,
+                                    // centeredSlides: true,
+                                    spaceBetween: 30,
+                                    navigation: {
+                                        nextEl: '.new-post-slide .swiper-button-next',
+                                        prevEl: '.new-post-slide .swiper-button-prev',
+                                    },
+                                },
+                                480: {
+                                    slidesPerView: 2,
+                                    centeredSlides: false,
+                                    spaceBetween: 40,
+                                    navigation: {
+                                        nextEl: '.new-post-slide .swiper-button-next',
+                                        prevEl: '.new-post-slide .swiper-button-prev',
+                                    },
+                                },
+                                320: {
+                                    slidesPerView: 1,
+                                    centeredSlides: false,
+                                    spaceBetween: 40,
+                                    navigation: {
+                                        nextEl: '.new-post-slide .swiper-button-next',
+                                        prevEl: '.new-post-slide .swiper-button-prev',
+                                    },
+                                },
+                            },
+                        })
+                        let news_post_mobile = new Swiper('.new-post-slide-mb ', {
+                            speed: 1500,
+                            pagination: {
+                                el: ".news-content-mobile .pagination-news",
+                                type: "fraction",
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: '.news-content-mobile .swiper-button-next',
+                                prevEl: '.news-content-mobile .swiper-button-prev',
+                            },
+                        });
+                        let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
+                            keyboard: {
+                                enabled: true,
+                                onlyInViewport: false,
+                            },
+                            speed: 800,
+                            loop: true,
+                            slidesPerView: 3,
+                            spaceBetween: 25,
+                            pagination: {
+                                el: '.post-slide-bottom .swiper-pagination',
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: '.post-slide-bottom .swiper-button-next',
+                                prevEl: '.post-slide-bottom .swiper-button-prev',
+                            },
+                        })
                     }
 
                 },

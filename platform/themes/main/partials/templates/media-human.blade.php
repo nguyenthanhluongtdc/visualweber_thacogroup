@@ -1,8 +1,4 @@
 
-{{-- @php
-$posts = get_posts_by_category($category->id ?? 16, 3);
-$postSlider = get_featured_posts_by_category($category->id ?? 19, 6);
-@endphp --}}
 @includeIf("theme.main::views.breadcrumb")
     <div class="media__content_left">
         <div class="news__content">
@@ -154,4 +150,3 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 6);
             </div>
         </div>
     </div>
-

@@ -1,8 +1,4 @@
 
-{{-- @php
-$posts = get_posts_by_category($category->id ?? 16, 3);
-$postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
-@endphp --}}
 @includeIf("theme.main::views.breadcrumb")
     <div class="media__content_left">
         <div class="news__content">
@@ -38,16 +34,16 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                 <div class="swiper-container post-slide-bottom">
                     <div class="swiper-wrapper">
                         @if (!empty($postSlider_bottom))
-                            @foreach ($postSlider_bottom as $post)
+                            @foreach ($postSlider_bottom as $post_bottom)
                                 <div class="swiper-slide d-flex justify-content-center">
                                     <div class="post_content_bottom h-100">
-                                        <a class="post-wrapper" href=" {{ $post->url }}">
+                                        <a class="post-wrapper" href=" {{ $post_bottom->url }}">
                                             <div class="post-thumbnail">
-                                                <img src="{{ get_object_image($post->image) }}" alt="">
+                                                <img src="{{ get_object_image($post_bottom->image) }}" alt="">
                                             </div>
 
-                                            <h4 class="post_name font18 text-justify">{{ $post->name }}</h4>
-                                            <p class="post_description font18">{{ $post->description }}
+                                            <h4 class="post_name font18 text-justify">{{ $post_bottom->name }}</h4>
+                                            <p class="post_description font18">{{$post_bottom->description }}
                                             </p>
                                             <span
                                                 class="time">{{ date_format($post->created_at, 'd-m-Y') }}</span>
@@ -149,4 +145,3 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
             {{ $posts->links('vendor.pagination.custom') }}
         </div>
     </div>
-

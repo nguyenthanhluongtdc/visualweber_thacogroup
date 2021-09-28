@@ -1,3 +1,6 @@
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+
 @includeIf("theme.main::views.pages.post.slide")
 
 <script>
@@ -25,3 +28,6 @@
            </div>
        </div>
    </section>
+
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css"></script> --}}
+

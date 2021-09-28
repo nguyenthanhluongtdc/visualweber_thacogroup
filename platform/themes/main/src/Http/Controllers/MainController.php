@@ -161,8 +161,8 @@ class MainController extends PublicController
                 abort(404);
             }
 
-            $posts = app(PostInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
-            $postSlider = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,1); 
+            $posts = app(PostInterface::class)->getByCategory($category->id, theme_option('number_post_media'));
+            $postSlider = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,3); 
             $postSlider_bottom = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,3);
             $posts->withPath($category->url);   
             Theme::breadcrumb()
