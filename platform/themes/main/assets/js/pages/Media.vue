@@ -787,14 +787,14 @@
     },
   };
 
-//   $(document).ready(function () {
-//     $(".dropdown-submenu a.test").on("click", function (e) {
-//       $(".click-show").hide();
-//       $(this).next(".click-show").toggle();
-//       e.stopPropagation();
-//       e.preventDefault();
-//     });
-//   });
+  $(document).ready(function () {
+    $(".dropdown-submenu a.test").on("click", function (e) {
+      $(".click-show").hide();
+      $(this).next(".click-show").toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
 
 </script>
 

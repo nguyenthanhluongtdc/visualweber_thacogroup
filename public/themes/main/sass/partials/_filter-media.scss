@@ -295,22 +295,15 @@
                     @media only screen and (max-width: 600px){
                         left: 0 !important;
                     }
-                    .date-mobile{
-                        font-size: 20px;
+                   
+                    .date-mobile,
+                    .filter-mobile,
+                    .sort-mobile-down{
                         position: absolute;
-                        right: 25px;
+                        right: 0px;
                         top: 9px;
-                        @media only screen and (max-width: 600px){
-                            top: 9px;
-                        }
                     }
-                    .filter-mobile{
-                        font-size: 20px;
-                        position: absolute;
-                        right: 25px;
-                        top: 46%;
-                        transform: translateY(-50%);
-                    }
+                    
                    
                 }
                 .filter-menu{

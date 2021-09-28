@@ -3200,14 +3200,15 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
 
     this.loadMenuFilter("photo-gallery-menu");
   }
-}); //   $(document).ready(function () {
-//     $(".dropdown-submenu a.test").on("click", function (e) {
-//       $(".click-show").hide();
-//       $(this).next(".click-show").toggle();
-//       e.stopPropagation();
-//       e.preventDefault();
-//     });
-//   });
+});
+$(document).ready(function () {
+  $(".dropdown-submenu a.test").on("click", function (e) {
+    $(".click-show").hide();
+    $(this).next(".click-show").toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
 
 /***/ }),
 
@@ -37088,7 +37089,7 @@ var staticRenderFns = [
         },
         [
           _vm._v("Sắp xếp "),
-          _c("i", { staticClass: "fal fa-angle-down filter-mobile" })
+          _c("i", { staticClass: "fal fa-angle-down sort-mobile-down" })
         ]
       ),
       _vm._v(" "),
