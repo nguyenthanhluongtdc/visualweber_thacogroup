@@ -3200,15 +3200,14 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
 
     this.loadMenuFilter("photo-gallery-menu");
   }
-});
-$(document).ready(function () {
-  $(".dropdown-submenu a.test").on("click", function (e) {
-    $(".click-show").hide();
-    $(this).next(".click-show").toggle();
-    e.stopPropagation();
-    e.preventDefault();
-  });
-});
+}); //   $(document).ready(function () {
+//     $(".dropdown-submenu a.test").on("click", function (e) {
+//       $(".click-show").hide();
+//       $(this).next(".click-show").toggle();
+//       e.stopPropagation();
+//       e.preventDefault();
+//     });
+//   });
 
 /***/ }),
 

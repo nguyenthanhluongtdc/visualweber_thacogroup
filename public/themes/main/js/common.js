@@ -658,7 +658,10 @@ if ($('#button-activity').length > 0) {
 
 (function($) {
     $(function() {
-       
+        $('.menu-mobile .nav-list .nav-item a:not(:only-child)').click(function(e) {
+            $(this).siblings('.nav-dropdown').toggle();
+            e.stopPropagation();
+        });
         $('html').click(function() {
             $('.nav-dropdown').hide();
         });
