@@ -154,18 +154,18 @@ class BlogService
 
                 $slug = $category->slug;
 
-                $template = $category->template;
+                // $template = $category->template;
 
-                $templates = [
-                    'media',
-                    'posts'
-                ];
+                // $templates = [
+                //     'media',
+                //     'posts'
+                // ];
 
-                if(in_array($template, $templates)) $view = $template;
-                else $view = 'media-category'; 
+                // if(in_array($template, $templates)) $view = $template;
+                // else $view = 'media-category'; 
             
                 return [
-                    'view'         => $view,
+                    'view'         =>  $category->template == 'media' ? 'media' :'media-category',
                     'default_view' => 'plugins/blog::themes.category',
                     'data'         => compact('category', 'slug','posts','postSlider','postSlider_bottom'),
                     'slug'         => $slug,
