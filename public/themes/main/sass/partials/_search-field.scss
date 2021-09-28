@@ -34,6 +34,7 @@
                 }
             }
         }
+        
         .select-year {
             width: 12%;
             outline: 0;
@@ -45,10 +46,7 @@
             background-color: #f1f1f1;
             border: unset;
             color: #2E2E2E;
-            appearance: none;
-            -webkit-appearance: none;
-            opacity: 1 !important;
-            -moz-appearance: none;         
+                  
         }
         .select-by-field {
             width: 18%;
@@ -60,10 +58,7 @@
             cursor: pointer;
             background-color: #f1f1f1;
             color: #2E2E2E;
-            appearance: none;
-            -webkit-appearance: none;
-            opacity: 1 !important;
-            -moz-appearance: none;
+            
         }
     }
 }
