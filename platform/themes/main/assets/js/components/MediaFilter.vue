@@ -105,7 +105,7 @@
                 <ul class="dropdown-menu datepicker-mobile click-show">
                   <li>
                     <a tabindex="-1" href="#">
-                      <div
+                      <!-- <div
                         id="date-picker-example"
                         class="md-form md-outline input-with-post-icon datepicker"
                       >
@@ -116,7 +116,13 @@
                           name="calendars"
                           class="font15"
                         />
-                      </div>
+                      </div> -->
+                  
+                      <div class="datepicker">
+                       
+                        <input type="date" id="datepicker" name="calendars" class="font15">
+           
+                    </div>
                     </a>
                   </li>
                 </ul>
