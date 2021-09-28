@@ -25,22 +25,20 @@
             style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
             <div class="swiper-wrapper">
                 @if (!empty($postSlider))
-                    @foreach ($postSlider as $post)
                         <div class="swiper-slide">
                             <div class="news-content">
                                 <div class="img-post">
-                                    <img class="img-mw-100" src="{{ get_object_image($post->image) }}"
-                                        alt="{{ $post->name }}">
+                                    <img class="img-mw-100" src="{{ get_object_image($postSlider[0]->image) }}"
+                                    alt="{{$postSlider[0]->name}}">
                                 </div>
                                 <div class="name ">
                                     <h3 class="font40">
-                                        {{ $post->name }}
+                                        {{$postSlider[0]->name}}
                                     </h3>
                                 </div>
                             </div>
                         </div>
-                    @endforeach
-                @endif
+                        @endif
             </div>
         </div>
        
