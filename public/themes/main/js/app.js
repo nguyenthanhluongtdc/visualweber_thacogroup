@@ -493,7 +493,7 @@ Axios.prototype.request = function request(config) {
     var chain = [dispatchRequest, undefined];
 
     Array.prototype.unshift.apply(chain, requestInterceptorChain);
-    chain.concat(responseInterceptorChain);
+    chain = chain.concat(responseInterceptorChain);
 
     promise = Promise.resolve(config);
     while (chain.length) {
@@ -1036,6 +1036,21 @@ function getDefaultAdapter() {
   return adapter;
 }
 
+function stringifySafely(rawValue, parser, encoder) {
+  if (utils.isString(rawValue)) {
+    try {
+      (parser || JSON.parse)(rawValue);
+      return utils.trim(rawValue);
+    } catch (e) {
+      if (e.name !== 'SyntaxError') {
+        throw e;
+      }
+    }
+  }
+
+  return (encoder || JSON.stringify)(rawValue);
+}
+
 var defaults = {
 
   transitional: {
@@ -1068,7 +1083,7 @@ var defaults = {
     }
     if (utils.isObject(data) || (headers && headers['Content-Type'] === 'application/json')) {
       setContentTypeIfUnset(headers, 'application/json');
-      return JSON.stringify(data);
+      return stringifySafely(data);
     }
     return data;
   }],
@@ -2337,6 +2352,177 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -37133,1106 +37319,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("div", { staticClass: "media-content" }, [
-        _c("div", { staticClass: "media-wrapper" }, [
-          _c(
-            "div",
-            { staticClass: "container-customize" },
-            [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("div", { staticClass: "tab-image" }, [
-                _c(
-                  "div",
-                  { staticClass: "media__tabs" },
-                  [
-                    _vm._m(1),
-                    _vm._v(" "),
-                    _c("media-filter", {
-                      attrs: {
-                        "on-filter": _vm.galleryFilter,
-                        "media-type": "gallery"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: !_vm.loadingImage,
-                        expression: "!loadingImage"
-                      }
-                    ],
-                    staticClass: "tab-content",
-                    attrs: { id: "nav-tabContent3 tab-content2" }
-                  },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "tab-pane fade active show",
-                        attrs: {
-                          id: "media-album",
-                          role: "tabpanel",
-                          "aria-labelledby": "field-1-tab"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "media-banner" }, [
-                          _c(
-                            "div",
-                            { staticClass: "list-album" },
-                            _vm._l(_vm.dataImage.data, function(item) {
-                              return _vm.dataImage
-                                ? _c(
-                                    "div",
-                                    {
-                                      key: item.id,
-                                      staticClass: "album-item",
-                                      attrs: {
-                                        "data-target": "#album_modal",
-                                        "data-toggle": "modal"
-                                      }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "album-item__img",
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.loadAlbumGallery(
-                                                item.id,
-                                                "album"
-                                              )
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("img", {
-                                            attrs: {
-                                              src: "storage/" + item.image,
-                                              alt: ""
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "album-item__name" },
-                                        [
-                                          _c(
-                                            "p",
-                                            { staticClass: "name font20" },
-                                            [
-                                              _vm._v(
-                                                "\n                        " +
-                                                  _vm._s(item.name) +
-                                                  "\n                      "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        { staticClass: "album-item__date" },
-                                        [
-                                          _vm._v(
-                                            _vm._s(
-                                              _vm._f("formatDate")(
-                                                item.created_at,
-                                                "DD-MM-YYYY"
-                                              )
-                                            )
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _vm._m(2, true),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "album-item__download",
-                                          attrs: { title: "Tải xuống album" },
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.zipDownload(item.id)
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("i", {
-                                            staticClass: "fas fa-download"
-                                          })
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                : _vm._e()
-                            }),
-                            0
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "tab-pane fade",
-                        attrs: {
-                          id: "media-single-image",
-                          role: "tabpanel",
-                          "aria-labelledby": "field-2-tab"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "media-banner" }, [
-                          _c(
-                            "div",
-                            { staticClass: "list-image" },
-                            _vm._l(_vm.dataImage.data, function(item) {
-                              return _vm.dataImage
-                                ? _c(
-                                    "div",
-                                    { key: item.id, staticClass: "image-item" },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "image-item__img",
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.loadAlbumGallery(
-                                                item.id
-                                              )
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("img", {
-                                            attrs: {
-                                              src: "storage/" + item.image,
-                                              alt: ""
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "image-item__back",
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.loadAlbumGallery(
-                                                item.id,
-                                                "album"
-                                              )
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("i", {
-                                            staticClass: "far fa-image"
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "p",
-                                            { staticClass: "text font18" },
-                                            [_vm._v("Album")]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "icon--download" },
-                                        [
-                                          _c(
-                                            "a",
-                                            {
-                                              attrs: {
-                                                download: "",
-                                                href: "storage/" + item.image,
-                                                title: "Tải xuống"
-                                              }
-                                            },
-                                            [
-                                              _c("i", {
-                                                staticClass:
-                                                  "fas fa-download text-white"
-                                              })
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                : _vm._e()
-                            }),
-                            0
-                          )
-                        ])
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.loadingImage,
-                        expression: "loadingImage"
-                      }
-                    ],
-                    staticClass: "loading"
-                  },
-                  [
-                    _c("img", {
-                      attrs: {
-                        src: "themes/main/images/media/loading.gif",
-                        alt: "Loading"
-                      }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _vm.dataImage.data
-                ? _c("paginationn", {
-                    attrs: { data: _vm.dataImage },
-                    on: { "pagination-change-page": _vm.onChangePageImage }
-                  })
-                : _vm._e()
-            ],
-            1
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "media-wrapper mt-5" }, [
-          _c(
-            "div",
-            { staticClass: "container-customize" },
-            [
-              _vm._m(3),
-              _vm._v(" "),
-              _c("div", { staticClass: "tab-video" }, [
-                _c(
-                  "div",
-                  { staticClass: "media__tabs" },
-                  [
-                    _vm._m(4),
-                    _vm._v(" "),
-                    _c("media-filter", {
-                      attrs: {
-                        "on-filter": _vm.videoFilter,
-                        "media-type": "video"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: !_vm.loadingVideo,
-                        expression: "!loadingVideo"
-                      }
-                    ],
-                    staticClass: "tab-content",
-                    attrs: { id: "nav-tabContent3 tab-content2" }
-                  },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "tab-pane fade active show",
-                        attrs: {
-                          id: "media-video",
-                          role: "tabpanel",
-                          "aria-labelledby": "field-1-tab"
-                        }
-                      },
-                      [
-                        _c("div", { staticClass: "list-video-wrapper" }, [
-                          _c(
-                            "div",
-                            { staticClass: "list-video" },
-                            _vm._l(_vm.dataVideo.data, function(item) {
-                              return _vm.dataVideo
-                                ? _c(
-                                    "div",
-                                    {
-                                      key: item.id,
-                                      staticClass: "video-item",
-                                      attrs: {
-                                        "data-target": "#album_modal",
-                                        "data-toggle": "modal"
-                                      }
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "video-thumbnail",
-                                          on: {
-                                            click: function($event) {
-                                              return _vm.loadGalleryVideo(
-                                                item.id,
-                                                "album"
-                                              )
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("img", {
-                                            attrs: {
-                                              src: "storage/" + item.image,
-                                              alt: ""
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass: "video-item__name font20"
-                                        },
-                                        [
-                                          _c(
-                                            "p",
-                                            { staticClass: "name font20" },
-                                            [
-                                              _vm._v(
-                                                "\n                        " +
-                                                  _vm._s(item.name) +
-                                                  "\n                      "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        { staticClass: "video-item__date" },
-                                        [
-                                          _vm._v(
-                                            _vm._s(
-                                              _vm._f("formatDate")(
-                                                item.created_at,
-                                                "DD-MM-YYYY"
-                                              )
-                                            )
-                                          )
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _vm._m(5, true)
-                                    ]
-                                  )
-                                : _vm._e()
-                            }),
-                            0
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass: "tab-pane fade",
-                        attrs: {
-                          id: "media-single-video",
-                          role: "tabpanel",
-                          "aria-labelledby": "field-2-tab"
-                        }
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "media-video mCustomScrollbar",
-                            attrs: { "data-mcs-theme": "dark" }
-                          },
-                          [
-                            _c("div", { staticClass: "list-video" }, [
-                              _c("div", { staticClass: "left" }, [
-                                _vm.videoPlay
-                                  ? _c("div", { staticClass: "video-main" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "video-wrapper" },
-                                        [
-                                          _c("iframe", {
-                                            staticClass: "youtube-player",
-                                            attrs: {
-                                              id: "player",
-                                              type: "text/html",
-                                              src:
-                                                "https://www.youtube.com/embed/" +
-                                                _vm.videoPlay.youtube_code +
-                                                "?wmode=opaque&autohide=1&enablejsapi=1",
-                                              frameborder: "0",
-                                              muted: "muted"
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("p", { staticClass: "name font30" }, [
-                                        _vm._v(
-                                          "\n                        " +
-                                            _vm._s(_vm.dataVideo.name) +
-                                            "\n                      "
-                                        )
-                                      ])
-                                    ])
-                                  : _vm._e()
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "right" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "list-video-left" },
-                                  _vm._l(_vm.dataVideo.data, function(item) {
-                                    return _vm.dataVideo
-                                      ? _c(
-                                          "div",
-                                          {
-                                            key: item.id,
-                                            staticClass: "video-item"
-                                          },
-                                          [
-                                            _c(
-                                              "div",
-                                              {
-                                                staticClass: "img-button",
-                                                on: {
-                                                  click: function($event) {
-                                                    return _vm.changeVideoPlay(
-                                                      item
-                                                    )
-                                                  }
-                                                }
-                                              },
-                                              [
-                                                _c("img", {
-                                                  attrs: {
-                                                    src:
-                                                      "storage/" + item.image,
-                                                    alt: ""
-                                                  }
-                                                }),
-                                                _vm._v(" "),
-                                                _c("i", {
-                                                  staticClass:
-                                                    "far fa-play-circle button-video"
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "p",
-                                              { staticClass: "name font20" },
-                                              [
-                                                _vm._v(
-                                                  "\n                          " +
-                                                    _vm._s(item.name) +
-                                                    "\n                        "
-                                                )
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      : _vm._e()
-                                  }),
-                                  0
-                                )
-                              ])
-                            ])
-                          ]
-                        )
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    directives: [
-                      {
-                        name: "show",
-                        rawName: "v-show",
-                        value: _vm.loadingVideo,
-                        expression: "loadingVideo"
-                      }
-                    ],
-                    staticClass: "loading"
-                  },
-                  [
-                    _c("img", {
-                      attrs: {
-                        src: "themes/main/images/media/loading.gif",
-                        alt: "Loading"
-                      }
-                    })
-                  ]
-                )
-              ]),
-              _vm._v(" "),
-              _vm.dataVideo.data
-                ? _c("paginationn", {
-                    attrs: { data: _vm.dataVideo },
-                    on: { "pagination-change-page": _vm.onChangePageVideo }
-                  })
-                : _vm._e()
-            ],
-            1
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("modal", { attrs: { name: "albumImage-modal" } }, [
-        _c("div", { staticClass: "modal-main" }, [
-          _c(
-            "div",
-            { staticClass: "modal-header-custom" },
-            [
-              _c("p", { staticClass: "text-right mb-0" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass:
-                      "btn-close border-0 font30 font-weight-normal bg-white",
-                    on: { click: _vm.hideModalAlbumImage }
-                  },
-                  [_c("i", { staticClass: "fas fa-times" })]
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "PuSkeleton",
-                { attrs: { circle: "", height: "50px", count: 5 } },
-                [
-                  _c(
-                    "h2",
-                    {
-                      staticClass:
-                        "name font28 text-center mb-4 font-weight-bold"
-                    },
-                    [
-                      _vm._v(
-                        "\n            " +
-                          _vm._s(_vm.galleryImage.name) +
-                          "\n          "
-                      )
-                    ]
-                  )
-                ]
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "modal-body-custom" },
-            [
-              _c(
-                "vue-custom-scrollbar",
-                {
-                  staticClass: "scroll-area",
-                  attrs: { settings: _vm.settingsScrollbar }
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "list-item" },
-                    _vm._l(_vm.galleryImage.data, function(item, i) {
-                      return _vm.galleryImage
-                        ? _c("div", { key: i, staticClass: "item" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass: "box-img",
-                                on: { click: _vm.showModalSliderImage }
-                              },
-                              [
-                                _c("img", {
-                                  staticClass: "fit-cover",
-                                  attrs: { src: "storage/" + item.img }
-                                })
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "icon--download" }, [
-                              _c(
-                                "a",
-                                {
-                                  attrs: {
-                                    download: "",
-                                    href: "storage/" + item.img,
-                                    title: "Tải xuống"
-                                  }
-                                },
-                                [
-                                  _c("i", {
-                                    staticClass: "fas fa-download text-white"
-                                  })
-                                ]
-                              )
-                            ])
-                          ])
-                        : _vm._e()
-                    }),
-                    0
-                  )
-                ]
-              )
-            ],
-            1
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("modal", { attrs: { name: "albumVideo-modal" } }, [
-        _c("div", { staticClass: "modal-main" }, [
-          _c(
-            "div",
-            { staticClass: "modal-header-custom" },
-            [
-              _c("p", { staticClass: "text-right mb-0" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass:
-                      "btn-close border-0 font30 font-weight-normal bg-white",
-                    on: { click: _vm.hideModalAlbumVideo }
-                  },
-                  [_c("i", { staticClass: "fas fa-times" })]
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "PuSkeleton",
-                { attrs: { circle: "", height: "50px", count: 5 } },
-                [
-                  _c(
-                    "h2",
-                    {
-                      staticClass:
-                        "name font28 text-center mb-4 font-weight-bold"
-                    },
-                    [
-                      _vm._v(
-                        "\n            " +
-                          _vm._s(_vm.galleryVideo.name) +
-                          "\n          "
-                      )
-                    ]
-                  )
-                ]
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "modal-body-custom" },
-            [
-              _c(
-                "vue-custom-scrollbar",
-                {
-                  staticClass: "scroll-area",
-                  attrs: { settings: _vm.settingsScrollbar }
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "list-item" },
-                    _vm._l(_vm.galleryVideo.data, function(item, i) {
-                      return _vm.galleryVideo
-                        ? _c("div", { key: i, staticClass: "item" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass: "box-img",
-                                on: {
-                                  click: function($event) {
-                                    return _vm.showModalSliderVideo(item)
-                                  }
-                                }
-                              },
-                              [
-                                _c("img", {
-                                  staticClass: "fit-cover",
-                                  attrs: {
-                                    src:
-                                      "http://img.youtube.com/vi/" +
-                                      item.youtube_code +
-                                      "/mqdefault.jpg"
-                                  }
-                                })
-                              ]
-                            )
-                          ])
-                        : _vm._e()
-                    }),
-                    0
-                  )
-                ]
-              )
-            ],
-            1
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("modal", { attrs: { name: "sliderImage-modal" } }, [
-        _c("div", { staticClass: "modal-main" }, [
-          _c("div", { staticClass: "modal-header-custom" }, [
-            _c("p", { staticClass: "text-right mb-0" }, [
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "btn-close border-0 font30 font-weight-normal bg-white",
-                  on: { click: _vm.hideModalSliderImage }
-                },
-                [_c("i", { staticClass: "fas fa-times" })]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "h2",
-              { staticClass: "name font28 text-center font-weight-bold" },
-              [
-                _vm._v(
-                  "\n          " + _vm._s(_vm.galleryImage.name) + "\n        "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "modal-body-custom" },
-            [
-              [
-                _c(
-                  "div",
-                  { staticClass: "swiper-galleryImage h-100" },
-                  [
-                    _c(
-                      "swiper",
-                      {
-                        ref: "galleryImage",
-                        staticClass: "swiper",
-                        attrs: { options: _vm.swiperOptions }
-                      },
-                      [
-                        _vm._l(_vm.galleryImage.data, function(item, i) {
-                          return _vm.galleryImage
-                            ? _c("swiper-slide", { key: i }, [
-                                _c("img", {
-                                  staticClass: "w-100 h-100 fit-cover",
-                                  attrs: { src: "storage/" + item.img, alt: "" }
-                                })
-                              ])
-                            : _vm._e()
-                        }),
-                        _vm._v(" "),
-                        _c("div", {
-                          staticClass: "swiper-pagination",
-                          attrs: { slot: "pagination" },
-                          slot: "pagination"
-                        }),
-                        _vm._v(" "),
-                        _c("div", {
-                          staticClass: "swiper-button-prev",
-                          attrs: { slot: "button-prev" },
-                          slot: "button-prev"
-                        }),
-                        _vm._v(" "),
-                        _c("div", {
-                          staticClass: "swiper-button-next",
-                          attrs: { slot: "button-next" },
-                          slot: "button-next"
-                        })
-                      ],
-                      2
-                    )
-                  ],
-                  1
-                )
-              ]
-            ],
-            2
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("modal", { attrs: { name: "sliderVideo-modal" } }, [
-        _c("div", { staticClass: "modal-main" }, [
-          _c("div", { staticClass: "modal-header-custom" }, [
-            _c("p", { staticClass: "text-right mb-0" }, [
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "btn-close border-0 font30 font-weight-normal bg-white",
-                  on: { click: _vm.hideModalSliderVideo }
-                },
-                [_c("i", { staticClass: "fas fa-times" })]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "h2",
-              { staticClass: "name font28 text-center font-weight-bold" },
-              [
-                _vm._v(
-                  "\n          " +
-                    _vm._s(_vm.itemVideoDetail.description) +
-                    "\n        "
-                )
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "modal-body-custom" }, [
-            _c("iframe", {
-              staticClass: "w-100",
-              attrs: {
-                width: "420",
-                height: "345",
-                src:
-                  "https://www.youtube.com/embed/" +
-                  _vm.itemVideoDetail.youtube_code
-              }
-            })
-          ])
-        ])
-      ])
-    ],
-    1
-  )
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "image__title",
-        attrs: {
-          "data-aos": "fade-right",
-          "data-aos-duration": "700",
-          "data-aos-delay": "50"
-        }
-      },
-      [
-        _c("img", {
-          attrs: { src: "themes/main/images/introduce/arrow.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("h1", { staticClass: "font50 big-title" }, [_vm._v("Hình ảnh")])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "ul",
-      {
-        staticClass: "nav nav-tabs",
-        attrs: { id: "tab-media", role: "tablist" }
-      },
-      [
-        _c("li", { staticClass: "__tabs__item", attrs: { role: "media" } }, [
-          _c(
-            "a",
-            {
-              staticClass: "__tabs__link nav-link active",
-              attrs: {
-                id: "media-album-tab",
-                "data-toggle": "tab",
-                role: "tab",
-                "aria-controls": "media-image",
-                "aria-selected": "true",
-                href: "#media-album",
-                title: "Tất Cả"
-              }
-            },
-            [
-              _c("i", { staticClass: "far fa-images" }),
-              _vm._v("\n                  Albums\n                ")
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "__tabs__item", attrs: { role: "media" } }, [
-          _c(
-            "a",
-            {
-              staticClass: "__tabs__link nav-link",
-              attrs: {
-                id: "media-single-image-tab",
-                "data-toggle": "tab",
-                role: "tab",
-                "aria-controls": "media-video",
-                "aria-selected": "true",
-                href: "#media-single-image",
-                title: "Tất Cả"
-              }
-            },
-            [
-              _c("i", { staticClass: "fas fa-image" }),
-              _vm._v("\n                  Hình ảnh\n                ")
-            ]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "album-item__count" }, [
-      _c("i", { staticClass: "far fa-image" }),
-      _vm._v(" "),
-      _c("p", { staticClass: "quantity font18" }, [_vm._v("100")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "image__title",
-        attrs: {
-          "data-aos": "fade-right",
-          "data-aos-duration": "700",
-          "data-aos-delay": "50"
-        }
-      },
-      [
-        _c("img", {
-          attrs: { src: "themes/main/images/introduce/arrow.png", alt: "" }
-        }),
-        _vm._v(" "),
-        _c("h1", { staticClass: "font50 big-title" }, [_vm._v("Video")])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "ul",
-      {
-        staticClass: "nav nav-tabs",
-        attrs: { id: "tab-media", role: "tablist" }
-      },
-      [
-        _c("li", { staticClass: "__tabs__item", attrs: { role: "media" } }, [
-          _c(
-            "a",
-            {
-              staticClass: "__tabs__link nav-link active",
-              attrs: {
-                id: "media-video-tab",
-                "data-toggle": "tab",
-                role: "tab",
-                "aria-controls": "media-video",
-                "aria-selected": "true",
-                href: "#media-video",
-                title: "Tất Cả"
-              }
-            },
-            [
-              _c("i", { staticClass: "far fa-images" }),
-              _vm._v("\n                  Albums\n                ")
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "__tabs__item", attrs: { role: "media" } }, [
-          _c(
-            "a",
-            {
-              staticClass: "__tabs__link nav-link",
-              attrs: {
-                id: "media-single-video-tab",
-                "data-toggle": "tab",
-                role: "tab",
-                "aria-controls": "media-single-video",
-                "aria-selected": "true",
-                href: "#media-single-video",
-                title: "Tất Cả"
-              }
-            },
-            [
-              _c("i", { staticClass: "fas fa-image" }),
-              _vm._v("\n                  Video\n                ")
-            ]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "video-item__count" }, [
-      _c("i", { staticClass: "fas fa-photo-video" }),
-      _vm._v(" "),
-      _c("p", { staticClass: "quantity font18" }, [_vm._v("100")])
-    ])
-  }
-]
-render._withStripped = true
+var render = function () {}
+var staticRenderFns = []
 
 
 
@@ -50877,7 +49965,7 @@ Vue.compile = compileToFunctions;
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"_args":[["axios@0.21.2","/home/thanh-luong/Documents/thacogroup_try_vuejs"]],"_development":true,"_from":"axios@0.21.2","_id":"axios@0.21.2","_inBundle":false,"_integrity":"sha512-87otirqUw3e8CzHTMO+/9kh/FSgXt/eVDvipijwDtEuwbkySWZ9SBm6VEubmJ/kLKEoLQV/POhxXFb66bfekfg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.2","name":"axios","escapedName":"axios","rawSpec":"0.21.2","saveSpec":null,"fetchSpec":"0.21.2"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.2.tgz","_spec":"0.21.2","_where":"/home/thanh-luong/Documents/thacogroup_try_vuejs","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.2"}');
+module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"Promise based HTTP client for the browser and node.js","main":"index.js","scripts":{"test":"grunt test","start":"node ./sandbox/server.js","build":"NODE_ENV=production grunt build","preversion":"npm test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json","postversion":"git push && git push --tags","examples":"node ./examples/server.js","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","fix":"eslint --fix lib/**/*.js"},"repository":{"type":"git","url":"https://github.com/axios/axios.git"},"keywords":["xhr","http","ajax","promise","node"],"author":"Matt Zabriskie","license":"MIT","bugs":{"url":"https://github.com/axios/axios/issues"},"homepage":"https://axios-http.com","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"jsdelivr":"dist/axios.min.js","unpkg":"dist/axios.min.js","typings":"./index.d.ts","dependencies":{"follow-redirects":"^1.14.0"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}]}');
 
 /***/ })
 
