@@ -36831,7 +36831,11 @@ var render = function() {
                       _c("a", { attrs: { tabindex: "-1", href: "#" } }, [
                         _c(
                           "div",
-                          { staticClass: "datepicker" },
+                          {
+                            staticClass:
+                              "md-form md-outline input-with-post-icon datepicker",
+                            attrs: { id: "date-picker-example" }
+                          },
                           [
                             _c("input", {
                               staticClass: "font15",
@@ -36839,19 +36843,14 @@ var render = function() {
                                 type: "date",
                                 id: "datepicker",
                                 name: "calendars"
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("ion-icon", {
-                              staticClass: "font15 calendar md hydrated",
-                              attrs: {
-                                name: "calendar-outline",
-                                role: "img",
-                                "aria-label": "calendar outline"
+                              },
+                              on: {
+                                change: function($event) {
+                                  return _vm.changeDate($event)
+                                }
                               }
                             })
-                          ],
-                          1
+                          ]
                         )
                       ])
                     ])

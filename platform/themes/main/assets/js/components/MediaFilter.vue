@@ -105,7 +105,7 @@
                 <ul class="dropdown-menu datepicker-mobile click-show">
                   <li>
                     <a tabindex="-1" href="#">
-                      <!-- <div
+                      <div
                         id="date-picker-example"
                         class="md-form md-outline input-with-post-icon datepicker"
                       >
@@ -116,13 +116,13 @@
                           name="calendars"
                           class="font15"
                         />
-                      </div> -->
+                      </div>
                   
-                      <div class="datepicker">
+                      <!-- <div class="datepicker">
                          
                         <input type="date" id="datepicker" name="calendars" class="font15">
-                        <ion-icon name="calendar-outline" class="font15 calendar md hydrated" role="img" aria-label="calendar outline"></ion-icon>
-                    </div>
+                        <ion-icon name="calendar-outline" @change="changeDate($event)"  class="font15 md hydrated" role="img" aria-label="outline"></ion-icon>
+                    </div> -->
                     </a>
                   </li>
                 </ul>
