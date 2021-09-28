@@ -140,4 +140,32 @@ class ApiController extends Controller {
     public function FilterTime(){
         
     }
+
+    public function getFilterGallery(Request $request) {
+
+        $filter = $request->input();
+
+        if(!$filter['categoryId']) {
+            return response()->json([
+                'data'  => [],
+            ], 200);
+        }
+
+        $paginate = theme_option('number_of_posts_in_a_category');
+
+        $data = app(PostInterfaceCustom::class)->getFilterPostByCategory($filter, $paginate);
+        
+        foreach($data as $da) {
+            $da['youtube_code'] = "";
+            if(has_field($da, 'youtube_code')) {
+                $da['youtube_code'] = has_field($da, 'youtube_code');
+            }
+        }
+
+        return $data;
+
+        return response()->json([
+            'data'  => $data,
+        ], 200);
+    }
 }
