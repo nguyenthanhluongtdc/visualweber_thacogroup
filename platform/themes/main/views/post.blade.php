@@ -229,8 +229,9 @@
                     <div class="right"> 
                         {{-- <p class="share  text-dark">Chia sẻ</p>
                          --}}
-                       
-                         
+                         <div class="fb-share-button" data-href="{{$post->url}}" data-layout="button_count" data-size="small">
+                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">{{__('Share')}}</a>
+                       </div>
                         <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{urlencode($post->url)}}">
                            
                             <img src="{{Theme::asset()->url('images/media/face.png')}}" alt="icon-fb">
@@ -258,7 +259,6 @@
                     @endforeach
                    
                 </div>
-                <div class="fb-like" data-href="{{ $post->url }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
             </div>
 
             @php $relatedPosts = get_related_posts($post->id, 7); @endphp
@@ -288,10 +288,4 @@
 @endif
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=180539309049634';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=546580082863102&autoLogAppEvents=1" nonce="9aDmkjZa"></script>
