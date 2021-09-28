@@ -229,9 +229,6 @@
                     <div class="right"> 
                         {{-- <p class="share  text-dark">Chia sẻ</p>
                          --}}
-                         <div class="fb-share-button" data-href="{{$post->url}}" data-layout="button_count" data-size="small">
-                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">{{__('Share')}}</a>
-                       </div>
                         <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{urlencode($post->url)}}">
                            
                             <img src="{{Theme::asset()->url('images/media/face.png')}}" alt="icon-fb">
@@ -287,5 +284,3 @@
 </div>
 @endif
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0&appId=546580082863102&autoLogAppEvents=1" nonce="9aDmkjZa"></script>
