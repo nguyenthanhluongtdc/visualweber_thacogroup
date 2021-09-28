@@ -229,6 +229,8 @@
                     <div class="right"> 
                         {{-- <p class="share  text-dark">Chia sẻ</p>
                          --}}
+                       
+                         
                         <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{urlencode($post->url)}}">
                            
                             <img src="{{Theme::asset()->url('images/media/face.png')}}" alt="icon-fb">
@@ -256,6 +258,7 @@
                     @endforeach
                    
                 </div>
+                <div class="fb-like" data-href="{{ $post->url }}" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
             </div>
 
             @php $relatedPosts = get_related_posts($post->id, 7); @endphp
@@ -284,3 +287,11 @@
 </div>
 @endif
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=180539309049634';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
