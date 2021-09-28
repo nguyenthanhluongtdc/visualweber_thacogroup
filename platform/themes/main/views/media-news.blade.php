@@ -48,7 +48,7 @@
                                         </a>
                                         <span class="date-mobile">{{date_format($post->created_at,"d-m-Y")}}</span>
                                         <div class="download">
-                                            <a href="{{ get_object_image(get_field($post, 'newspapper_files')) }}" title="download">DOWNLOAD</a>
+                                            <a href="{{ get_object_url(get_field($post, 'newspapper_files')) }}" download  title="download" >DOWNLOAD</a>
                                         </div>      
                                     </div>
                                                                 
