@@ -36810,7 +36810,7 @@ var render = function() {
         _vm._m(2),
         _vm._v(" "),
         _c("div", { staticClass: "dropdown-filter-mobile" }, [
-          _c("div", { staticClass: "dropdown" }, [
+          _c("div", { staticClass: "dropdownn" }, [
             _vm._m(3),
             _vm._v(" "),
             _c("ul", { staticClass: "dropdown-menu dropdown-menu-lg-end" }, [

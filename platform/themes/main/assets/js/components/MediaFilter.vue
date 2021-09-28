@@ -89,7 +89,7 @@
         </div>
 
         <div class="dropdown-filter-mobile">
-          <div class="dropdown">
+          <div class="dropdownn">
             <button
               class="btn btn-default dropdown-toggle"
               type="button"
