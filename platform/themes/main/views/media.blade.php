@@ -1,39 +1,28 @@
 
 @if(!blank($category) && isset($category))
-
-
-    @php
-        // $menu = app(Platform\Menu\Repositories\Interfaces\MenuLocationInterface::class)->getByMenuId(6);
-
-        // dd($menu);
-
-        //dd(Menu::getDataMenu('main-menu'));
-    @endphp
-    {{-- @php
-        $albumImage = get_posts_type_by_category($category->id, 4, 'gallery');
-        $albumVideo = get_posts_type_by_category($category->id, 3, 'video');
-    @endphp --}}
-
     <div id="app">
         @includeIf("theme.main::views.breadcrumb")
         <page-media category-id="{{$category->id}}"> </page-media>
     </div>
-
     <script src="themes/main/js/app.js"></script>
 @endif
 
+<script>
+    window.trans = {};
+</script>
+
 <style>
+    .ps__thumb-y {
+        background-color: #fff !important;
+        width: 2px;
+        border-radius:unset; 
+    }
 
-.ps__thumb-y {
-    background-color: #fff !important;
-    width: 2px;
-    border-radius:unset; 
-}
+    .ps__rail-y {
+        background-color: gray !important;
+        width: 4px;
+    }
 
-.ps__rail-y {
-    background-color: gray !important;
-    width: 4px;
-}
     .list-social-sidebar {
         display: none;
     }
@@ -69,7 +58,6 @@
     .logo_link-blue {
         display: block!important;
     }
-
 </style>
 
 

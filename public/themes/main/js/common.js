@@ -736,8 +736,7 @@ var Ajax = {
                     $('.render-media').hide()
                 },
                 success: function(data) {
-                    // console.log(data)
-                    if ($('.render-media').length) {
+                    if ($('.render-media').length && !data.reload) {
                         $('.render-media').show()
                         $("#breadcrum").load(" #breadcrum1");
                         $('.render-media').html(data.html)
@@ -821,6 +820,8 @@ var Ajax = {
                                 prevEl: '.post-slide-bottom .swiper-button-prev',
                             },
                         })
+                    }else {
+                        window.location = data.url
                     }
 
                 },

@@ -139,6 +139,7 @@ class MainController extends PublicController
     }
     public function getMedia(Request $request){
         // try {
+
             $categoryId =  $request->categoryId;
             $allRequest = $request->toArray();
 
@@ -157,8 +158,23 @@ class MainController extends PublicController
                 ['slugable']
 
             );    
+
             if(!$category->slug) {
                 abort(404);
+            }
+
+            $data = [
+                'reload' => false,
+                'url'  => $category->url,
+                'html' => ''
+            ];
+
+            if($category->template=='media') {
+                $data['reload'] = true;
+                return response()->json(
+                    $data,
+                    200
+                );
             }
 
             $posts = app(PostInterface::class)->getByCategory($category->id, theme_option('number_post_media'));
@@ -176,11 +192,11 @@ class MainController extends PublicController
            
             $view = 'templates/'.$category->template;
             $html = Theme::partial($view, compact('posts','postSlider','category','postSlider_bottom'));
+            
+            $data['html'] = $html;
+            
             return response()->json(
-                [
-                    'html' => $html,
-                    'url'  => $category->url,
-                ],
+               $data,
                 200
             );
         // } catch (\Throwable $th) {

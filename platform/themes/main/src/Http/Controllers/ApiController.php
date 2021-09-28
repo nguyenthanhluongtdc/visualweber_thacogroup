@@ -155,10 +155,14 @@ class ApiController extends Controller {
 
         $data = app(PostInterfaceCustom::class)->getFilterPostByCategory($filter, $paginate);
         
-        foreach($data as $da) {
-            $da['youtube_code'] = "";
-            if(has_field($da, 'youtube_code')) {
-                $da['youtube_code'] = has_field($da, 'youtube_code');
+        if($filter['format_type'] == 'gallery') {
+
+        }else {
+            foreach($data as $da) {
+                $da['youtube_code'] = "";
+                if(has_field($da, 'youtube_code')) {
+                    $da['youtube_code'] = has_field($da, 'youtube_code');
+                }
             }
         }
 
