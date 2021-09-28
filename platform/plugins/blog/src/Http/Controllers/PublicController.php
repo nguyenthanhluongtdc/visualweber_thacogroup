@@ -14,6 +14,12 @@ use Response;
 use SeoHelper;
 use SlugHelper;
 use Theme;
+use Platform\Base\Enums\BaseStatusEnum;
+use ZipArchive;
+use File;
+use Carbon\Carbon;
+use Illuminate\Support\Str;
+
 
 class PublicController extends Controller
 {
@@ -107,5 +113,45 @@ class PublicController extends Controller
 
         return Theme::scope($data['view'], $data['data'], $data['default_view'])
             ->render();
+    }
+    function zipDownload(Request $request) {
+
+        $id = $request->id;
+
+        $post = app(PostInterface::class)->getFirstBy(
+            [
+                'id' => $id,
+                'status' => BaseStatusEnum::PUBLISHED
+            ],
+            ['*'],
+        );
+
+        $zip = new ZipArchive;
+        
+        $currentTime = Carbon::now();
+
+        $fileName = Str::slug($post->name??'undefined', '-').'_'.$currentTime->format('d_m_Y').'_'.$currentTime->toArray()['timestamp'].'.zip';
+
+        if(!$post) {
+            return [];
+        }
+        
+        if($zip->open(public_path($fileName), ZipArchive::CREATE)==TRUE) {
+            foreach(has_field($post, 'repeater_file_media') as $file) {
+                $relativeName = basename(has_sub_field($file, 'file'));
+
+                $zip->addFile(public_path('storage/'.has_sub_field($file, 'file')), $relativeName);
+            }
+
+            $zip->close();
+        }
+
+        if(File::exists($fileName)) {
+            return response()->json(
+                ['data'=>$fileName], 200
+            );
+        }
+
+        return [];
     }
 }
