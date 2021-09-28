@@ -127,7 +127,7 @@ class BlogService
                     );
                 }
                 $posts = app(PostInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
-                $postSlider = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,1);
+                $postSlider = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,3);
                 $postSlider_bottom = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,3);
 
                 // $allRelatedCategoryIds = array_unique(array_merge(

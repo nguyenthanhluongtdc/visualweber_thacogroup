@@ -36,6 +36,7 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
 
 
         Route::get('media','MainController@getMedia')->name('getMedia');
+      
 
     });
 });

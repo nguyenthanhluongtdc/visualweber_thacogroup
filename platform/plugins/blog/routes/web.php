@@ -79,4 +79,10 @@ Route::group(['namespace' => 'Platform\Blog\Http\Controllers', 'middleware' => [
             }
         });
     }
+    Route::group(['prefix'=>'api', 'as'=> 'api-media-newspaper.'], function() {
+        Route::get('newspaper/download', [
+            'as'    => 'download',
+            'uses'  => 'PublicController@zipDownload',
+        ]);
+    });
 });
