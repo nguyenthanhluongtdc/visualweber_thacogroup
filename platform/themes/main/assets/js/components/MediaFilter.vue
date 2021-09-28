@@ -119,9 +119,9 @@
                       </div> -->
                   
                       <div class="datepicker">
-                       
+                         
                         <input type="date" id="datepicker" name="calendars" class="font15">
-           
+                        <ion-icon name="calendar-outline" class="font15 calendar md hydrated" role="img" aria-label="calendar outline"></ion-icon>
                     </div>
                     </a>
                   </li>
