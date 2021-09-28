@@ -227,15 +227,15 @@
                         <span class="">{{date_format($post->created_at,"d-m-Y")}} </span>
                     </div>
                     <div class="right"> 
-                        {{-- <p class="share  text-dark">Chia sẻ</p>
-                         --}}
-                         {{-- <a href="https://www.facebook.com/sharer/sharer.php?u={{urlencode(route('public.posts', @$post->id))}}" target="_blank">
+  
+
+                         <a href="https://www.facebook.com/sharer/sharer.php?u={{ $post->url }}" target="_blank">
                            
                             <img src="{{Theme::asset()->url('images/media/face.png')}}" alt="icon-fb">
-                        </a> --}}
-                        {{-- <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{urlencode(route('public.news.detail', @$post->slug))}}&source=LinkedIn">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ $post->url }}&title={{ $post->name }}">
                             <img src="{{Theme::asset()->url('images/media/linkedin.png')}}" alt="icon-linkdin">
-                        </a> --}}
+                        </a>
                         <button class="print-button" onclick="window.print();">
                             <i class="fas fa-print text-dark"></i>
                        </button>
@@ -284,3 +284,5 @@
 </div>
 @endif
 
+<script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+<script type="IN/Share" data-url="{{$post->url}}"></script>

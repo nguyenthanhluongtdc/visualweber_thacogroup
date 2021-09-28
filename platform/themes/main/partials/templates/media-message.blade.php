@@ -1,6 +1,6 @@
 
 @includeIf("theme.main::views.breadcrumb")
-<div class="media__content_left">
+<div class="media__content_left message">
     <div class="news__content">
     @if (!empty($postSlider))
     <div class="news__top">
@@ -16,8 +16,35 @@
             <p class="description font18  text-justify">{{$postSlider[0]->description}}</p>
             <a href="{{$postSlider[0]->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
         </div>
-    </div>
+    </div> 
     @endif
+    </div>
+
+    <div class="news-content-mobile human" style="display: none">
+        <div class="swiper-container new-post-slide-mb " id="js-swiper-news"
+            style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
+            <div class="swiper-wrapper">
+                @if (!empty($postSlider))
+                    @foreach ($postSlider as $post)
+                        <div class="swiper-slide">
+                            <div class="news-content">
+                                <div class="img-post">
+                                    <img class="img-mw-100" src="{{ get_object_image($post->image) }}"
+                                        alt="{{ $post->name }}">
+                                </div>
+                                <div class="name ">
+                                    <h3 class="font40">
+                                        {{ $post->name }}
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
+            </div>
+        </div>
+       
+
     </div>
     <div class="list-media_wrapper" id="scroll-list-news">
         <div class="list-media mt-60">

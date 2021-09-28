@@ -97,7 +97,7 @@ class MainController extends PublicController
         $result = apply_filters(BASE_FILTER_PUBLIC_SINGLE_DATA, $slug);
 
         if (isset($result['slug']) && $result['slug'] !== $key) {
-            return redirect()->route('public.single', $result['slug']);
+            return redirect()->route('public.single', $result['slug']); 
         }
 
         event(new RenderingSingleEvent($slug));

@@ -11,7 +11,7 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
 
         Route::get('/search', 'MainController@getSearch')
                 ->name('public.search');
-
+ 
         //video
 
         Route::prefix('api')->group(function () { 
@@ -31,6 +31,9 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
                 'uses' => 'ApiController@getFilterGallery'
             ]);
         });
+
+        
+
 
         Route::get('media','MainController@getMedia')->name('getMedia');
 

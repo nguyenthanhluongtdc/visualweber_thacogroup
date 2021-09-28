@@ -16,7 +16,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                                     <div class="img-post">
                                         <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
                                     </div>
-                                    <div class="news-post h-100">
+                                    <div class="news-post h-100"> 
                                         <h3 class=" title font18 text-uppercase">{!!__ ('THÔNG ĐIỆP NĂM') !!}</h3>
                                         <a href="{{$post->url}}">  
                                             <h4 class="name font18 text-justify">{{$post->name}}</h4>
@@ -27,8 +27,9 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                                     </div>
                                 </div>
                                 @endforeach
-                                @endif
+                                @endif 
                             </div>
+                            
                             <div class="list-media_wrapper" id="scroll-list-news">
                                 <div class="list-media mt-60">
                                  @if (!empty($posts))
