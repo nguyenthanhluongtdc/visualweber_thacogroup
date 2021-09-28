@@ -117,7 +117,6 @@ class ApiController extends Controller {
             $data[] = [
                 'description'   => $description,
                 'youtube_code'  => $youtube_code,
-
             ];
         }
 
@@ -156,17 +155,19 @@ class ApiController extends Controller {
         $data = app(PostInterfaceCustom::class)->getFilterPostByCategory($filter, $paginate);
         
         if($filter['format_type'] == 'gallery') {
-
+            foreach($data as $da) {
+                $da['album_total'] = count(gallery_meta_data($da));
+            }
         }else {
             foreach($data as $da) {
                 $da['youtube_code'] = "";
                 if(has_field($da, 'youtube_code')) {
                     $da['youtube_code'] = has_field($da, 'youtube_code');
                 }
+
+                $da['album_total'] = count(has_field($da, 'repeater_video'));
             }
         }
-
-        return $data;
 
         return response()->json([
             'data'  => $data,

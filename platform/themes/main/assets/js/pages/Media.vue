@@ -85,7 +85,7 @@
                       }}</span>
                       <div class="album-item__count">
                         <i class="far fa-image"></i>
-                        <p class="quantity font18">100</p>
+                        <p class="quantity font18"> {{item.album_total}} </p>
                       </div>
                       <div
                         title="Tải xuống album"
@@ -236,7 +236,7 @@
                       }}</span>
                       <div class="video-item__count">
                         <i class="fas fa-photo-video"></i>
-                        <p class="quantity font18">100</p>
+                        <p class="quantity font18">{{item.album_total}}</p>
                       </div>
                       <!-- <div title="Tải xuống album" class="video-item__download" @click="zipDownload(item.id)">
                         <i class="fas fa-download"></i>
@@ -695,6 +695,9 @@
             }
           })
           .then(({data}) => {
+            return data
+          })
+          .then(({data})=> {
             cb(data)
           })
           .catch((error) => {
