@@ -11,6 +11,10 @@ Vue.prototype.$http = Axios;
 Vue.component('page-media', Media);
 Vue.mixin(common)
 
+Vue.prototype.__ = key => {
+    return window.trans[key] !== undefined ? window.trans[key] : key;
+};
+
 const app = new Vue({
     el: "#app",
 });

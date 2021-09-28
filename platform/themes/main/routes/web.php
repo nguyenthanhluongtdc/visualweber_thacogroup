@@ -22,6 +22,14 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
             Route::get('/get/gallery/post/{id}', 'ApiController@getGalleryPost');
             Route::post('/get/album/image', 'ApiController@getAlbumImage');
             Route::post('/get/menu/', 'ApiController@getMenuByLocation');
+
+        });
+
+        Route::group(['prefix' => 'api', 'as' => 'api.media.'], function() {
+            Route::get('media/gallery',[
+                'as' => 'gallery',
+                'uses' => 'ApiController@getFilterGallery'
+            ]);
         });
 
         Route::get('media','MainController@getMedia')->name('getMedia');

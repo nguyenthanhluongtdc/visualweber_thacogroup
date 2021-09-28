@@ -155,7 +155,7 @@ class BlogService
                 $slug = $category->slug;
             
                 return [
-                    'view'         => $category->template == 'media' ? 'Media': 'media-category',
+                    'view'         => $category->template == 'media' ? 'media': 'media-category',
                     'default_view' => 'plugins/blog::themes.category',
                     'data'         => compact('category', 'slug','posts','postSlider','postSlider_bottom'),
                     'slug'         => $slug,
