@@ -273,12 +273,12 @@
                         }
                     }
                 }
-                .datepick-mobile{
-                    input[type=date]{
-                        border-color:  transparent!important;
-                                    background-color: transparent;
-                    }
-                }
+                // .datepick-mobile{
+                //     input[type=date]{
+                //         border-color:  transparent!important;
+                //                     background-color: transparent;
+                //     }
+                // }
                 .dropdown-menu{
                     @media only screen and (max-width: 768px){
                         top: 5px !important;

@@ -2265,6 +2265,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'MediaFilter',
   data: function data() {
@@ -36805,40 +36830,52 @@ var render = function() {
             _vm._m(3),
             _vm._v(" "),
             _c("ul", { staticClass: "dropdown-menu dropdown-menu-lg-end" }, [
-              _c("li", { staticClass: "dropdown-submenu datepick-mobile" }, [
+              _c("li", { staticClass: "dropdown-submenu" }, [
+                _vm._m(4),
+                _vm._v(" "),
                 _c(
-                  "div",
-                  {
-                    staticClass:
-                      "md-form md-outline input-with-post-icon datepicker",
-                    attrs: { id: "date-picker-example" }
-                  },
+                  "ul",
+                  { staticClass: "dropdown-menu datepicker-mobile click-show" },
                   [
-                    _c("input", {
-                      staticClass: "font15",
-                      attrs: {
-                        type: "date",
-                        id: "datepicker",
-                        name: "calendars"
-                      },
-                      on: {
-                        change: function($event) {
-                          return _vm.changeDate($event)
-                        }
-                      }
-                    })
+                    _c("li", [
+                      _c("a", { attrs: { tabindex: "-1", href: "#" } }, [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "md-form md-outline input-with-post-icon datepicker",
+                            attrs: { id: "date-picker-example" }
+                          },
+                          [
+                            _c("input", {
+                              staticClass: "font15",
+                              attrs: {
+                                type: "date",
+                                id: "datepicker",
+                                name: "calendars"
+                              },
+                              on: {
+                                change: function($event) {
+                                  return _vm.changeDate($event)
+                                }
+                              }
+                            })
+                          ]
+                        )
+                      ])
+                    ])
                   ]
                 )
               ]),
               _vm._v(" "),
-              _vm._m(4),
+              _vm._m(5),
               _vm._v(" "),
-              _vm._m(5)
+              _vm._m(6)
             ])
           ])
         ]),
         _vm._v(" "),
-        _vm._m(6)
+        _vm._m(7)
       ])
     ])
   ])
@@ -36964,6 +37001,22 @@ var staticRenderFns = [
       [
         _vm._v("\n            Lọc "),
         _c("i", { staticClass: "fal fa-angle-down" })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "test d-inline-block w-100",
+        attrs: { tabindex: "-1", href: "#" }
+      },
+      [
+        _vm._v("Thời gian "),
+        _c("i", { staticClass: "fal fa-angle-down date-mobile" })
       ]
     )
   },
