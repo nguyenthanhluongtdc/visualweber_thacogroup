@@ -96,7 +96,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 6);
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
                                 </div> 
-                               
+                                
                                 
                             </div>
                         <div class="filter-search-media field mt-40 human">
