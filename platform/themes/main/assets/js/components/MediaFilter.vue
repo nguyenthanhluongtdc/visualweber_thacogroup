@@ -98,13 +98,7 @@
               Lọc <i class="fal fa-angle-down"></i>
             </button>
             <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li class="dropdown-submenu">
-                <a class="test d-inline-block w-100" tabindex="-1" href="#"
-                  >Thời gian <i class="fal fa-angle-down date-mobile"></i
-                ></a>
-                <ul class="dropdown-menu datepicker-mobile click-show">
-                  <li>
-                    <a tabindex="-1" href="#">
+              <li  class="dropdown-submenu datepick-mobile">
                       <div
                         id="date-picker-example"
                         class="md-form md-outline input-with-post-icon datepicker"
@@ -117,15 +111,6 @@
                           class="font15"
                         />
                       </div>
-                  
-                      <!-- <div class="datepicker">
-                         
-                        <input type="date" id="datepicker" name="calendars" class="font15">
-                        <ion-icon name="calendar-outline" @change="changeDate($event)"  class="font15 md hydrated" role="img" aria-label="outline"></ion-icon>
-                    </div> -->
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="dropdown-submenu">
                 <a class="test d-inline-block w-100" tabindex="-1" href="#"
