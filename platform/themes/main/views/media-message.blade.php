@@ -9,26 +9,26 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
         <div class="container-customize"> 
              <div class="media-message-content mt-40 mb-100">
                         <div class="media__content_left">
-                            @if (!empty($postSlider))
-                            @foreach ($postSlider as $post) 
-                            <div class="news__top" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
-                                <div class="img-post">
-                                    <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
+                            <div class="news__content">
+                                @if (!empty($postSlider))
+                                @foreach ($postSlider as $post) 
+                                <div class="news__top" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
+                                    <div class="img-post">
+                                        <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
+                                    </div>
+                                    <div class="news-post h-100">
+                                        <h3 class=" title font18 text-uppercase">{!!__ ('THÔNG ĐIỆP NĂM') !!}</h3>
+                                        <a href="{{$post->url}}">  
+                                            <h4 class="name font18 text-justify">{{$post->name}}</h4>
+                                        </a>
+                                        <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span> 
+                                        <p class="description font18  text-justify">{{$post->description}}</p>
+                                        <a href="{{$post->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
+                                    </div>
                                 </div>
-                                <div class="news-post h-100">
-                                    <h3 class=" title font18 text-uppercase">{!!__ ('THÔNG ĐIỆP NĂM') !!}</h3>
-                                    <a href="{{$post->url}}">  
-                                        <h4 class="name font18 text-justify">{{$post->name}}</h4>
-                                    </a>
-                                    <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span> 
-                                    <p class="description font18  text-justify">{{$post->description}}</p>
-                                    <a href="{{$post->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
-                                </div>
+                                @endforeach
+                                @endif
                             </div>
-                            @endforeach
-                            @endif
-                           
-                            
                             <div class="list-media_wrapper" id="scroll-list-news">
                                 <div class="list-media mt-60">
                                  @if (!empty($posts))

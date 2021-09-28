@@ -432,7 +432,7 @@
                 margin-right: 20px;
                 overflow: hidden;
                 @media only screen and (max-width: 1080px) {
-                    width: 25vw;
+                    width: auto;
                     display: table;
                     margin: 0 auto;
                     text-align: center;
@@ -445,7 +445,7 @@
             .__tabs__item:last-child {
                 margin: 0;
                 @media only screen and (max-width: 1080px) {
-                    width: 25vw;
+                    width: auto;
                     display: table;
                     margin: 0 auto;
                     text-align: center;
