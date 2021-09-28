@@ -290,7 +290,7 @@
                         font-size: 20px;
                         position: absolute;
                         right: 25px;
-                        top: 17px;
+                        top: 9px;
                         @media only screen and (max-width: 600px){
                             top: 9px;
                         }
@@ -299,7 +299,7 @@
                         font-size: 20px;
                         position: absolute;
                         right: 25px;
-                        top: 50%;
+                        top: 46%;
                         transform: translateY(-50%);
                     }
                    
@@ -330,7 +330,7 @@
                             left: -14% !important;
                         }
                     }
-                    @media(max-width: 300px) {
+                    @media(max-width: 350px) {
                         &.mobile {
                             
                             left: -61% !important;

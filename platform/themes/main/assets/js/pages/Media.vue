@@ -103,7 +103,7 @@
 
                     
                     <div class="dropdown-filter-mobile">
-                         <div class="dropdown">
+                         <div class="dropdownn">
                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Lọc
                              <i class="fal fa-angle-down"></i></button>
                             <ul class="dropdown-menu dropdown-menu-lg-end">
@@ -116,7 +116,7 @@
                                             <input type="date" @change="changeDateAndLoadDataImage($event)" id="datepicker" name="calendars" class="font15">
                                         </div>    
                                     </a></li>
-                                    </ul>
+                                    </ul> 
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a class="test d-inline-block w-100" tabindex="-1" href="#">Ngành nghề <i class="fal fa-angle-down filter-mobile"></i></a>
@@ -355,7 +355,7 @@
                                             </div>
                                         </div>
                                         <div class="dropdown-filter-mobile video">
-                         <div class="dropdown">
+                         <div class="dropdownn">
                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Lọc
                              <i class="fal fa-angle-down"></i></button>
                             <ul class="dropdown-menu dropdown-menu-lg-end">
