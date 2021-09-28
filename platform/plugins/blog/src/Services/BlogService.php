@@ -153,9 +153,19 @@ class BlogService
                     ->add(SeoHelper::getTitle(), $category->url);
 
                 $slug = $category->slug;
+
+                $template = $category->template;
+
+                $templates = [
+                    'media',
+                    'posts'
+                ];
+
+                if(in_array($template, $templates)) $view = $template;
+                else $view = 'media-category'; 
             
                 return [
-                    'view'         => $category->template == 'media' ? 'media': 'media-category',
+                    'view'         => $view,
                     'default_view' => 'plugins/blog::themes.category',
                     'data'         => compact('category', 'slug','posts','postSlider','postSlider_bottom'),
                     'slug'         => $slug,
