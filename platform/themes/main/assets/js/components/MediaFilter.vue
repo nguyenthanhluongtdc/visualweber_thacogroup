@@ -89,7 +89,7 @@
         </div>
 
         <div class="dropdown-filter-mobile">
-          <div class="dropdownn">
+          <div class="dropdown">
             <button
               class="btn btn-default dropdown-toggle"
               type="button"
@@ -97,7 +97,7 @@
             >
               Lọc <i class="fal fa-angle-down"></i>
             </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end"> 
+            <ul class="dropdown-menu dropdown-menu-lg-end">
               <li class="dropdown-submenu">
                 <a class="test d-inline-block w-100" tabindex="-1" href="#"
                   >Thời gian <i class="fal fa-angle-down date-mobile"></i
