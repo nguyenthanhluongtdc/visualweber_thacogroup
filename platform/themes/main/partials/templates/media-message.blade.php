@@ -1,13 +1,8 @@
 
-{{-- @php
-$posts = get_posts_by_category($category->id ?? 16, 3);
-$postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
-@endphp --}}
 @includeIf("theme.main::views.breadcrumb")
 <div class="media__content_left">
     <div class="news__content">
     @if (!empty($postSlider))
-    {{-- @foreach ($postSlider as $post)  --}}
     <div class="news__top">
         <div class="img-post">
             <img class="img-mw-100" src="{{ get_object_image($postSlider[0]->image) }}" alt="{{$postSlider[0]->name}}">
@@ -22,7 +17,6 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
             <a href="{{$postSlider[0]->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
         </div>
     </div>
-    {{-- @endforeach --}}
     @endif
     </div>
     <div class="list-media_wrapper" id="scroll-list-news">

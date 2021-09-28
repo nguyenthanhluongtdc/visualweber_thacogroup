@@ -1,10 +1,10 @@
-
-  @includeIf("theme.main::views.breadcrumb")
+@includeIf("theme.main::views.breadcrumb")
 <div class="shareholder-infomation_left">
     <div class="filter-search-media field">
         <form action="" class="form-search ">
             <div class="search">
-                <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
+                <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value=""
+                    name="q">
                 <button class="btn btn-secondary" type="submit">
                     <i class="fas fa-search"></i>
                 </button>
@@ -23,58 +23,58 @@
                 <option value="">Logistics</option>
             </select>
         </form>
-     </div>
-    <div class="list-info"> 
-        {{-- @php
-        $posts = get_posts_by_category($category->id ?? 18, 5);
-         @endphp --}}
-          @if (!empty($posts))
-          @foreach ($posts as $post)
-        <div class="info-item">
-            <div class="info-left">
-                <div class="date">
-                    @php
-                    $month = $post->created_at->format('m')
-                     @endphp
-                    <p> 
-                       
-                        <span class="date-day">{{ $post->created_at->format('d') }}</span>
-                        <sup class="">-{{ $post->created_at->format('m') }}</sup>
-                    </p> 
-                    <p class="date-year fon16 text-center">{{ $post->created_at->format('Y') }}</p>
-                </div>
-            </div> 
-            <div class="info-right"> 
-                <h3 >
-                    <a href="" class="font25 itemdown-show text-justify">
-                        {{$post->name}}
-                    </a>  
-                </h3>
-                <p class="count">
-                    1 files  
-                </p>
-                <a href="{{ get_image_url(get_field($post, 'newspapper_files')) }}" class="download" target="_blank" download>
+    </div>
+    <div class="list-info">
+        @if (!empty($posts))
+            @foreach ($posts as $post)
+                <div class="info-item">
+                    <div class="info-left">
+                        <div class="date">
+                            @php
+                                $month = $post->created_at->format('m');
+                            @endphp
+                            <p>
 
-                    <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="" >
-                    <img src="{{ Theme::asset()->url('images/relationship/down.png') }}" alt="" class="img-mobile">
-                </a>
-                <div class="downcontent">
-                    <ul class="list-file">
-                        <a href="{{ get_image_url(get_field($post, 'newspapper_files')) }}" target="_blank" download>
-                            <div class="text-dark">
-                                {{@get_file_name(get_field($post, 'newspapper_files'))}}
-                                
-                            </div>
+                                <span class="date-day">{{ $post->created_at->format('d') }}</span>
+                                <sup class="">-{{ $post->created_at->format('m') }}</sup>
+                    </p> 
+                    <p class="
+                                    date-year fon16 text-center">{{ $post->created_at->format('Y') }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-right">
+                        <h3>
+                            <a href="" class="font25 itemdown-show text-justify">
+                                {{ $post->name }}
+                            </a>
+                        </h3>
+                        <p class="count">
+                            1 files
+                        </p>
+                        <a href="{{ get_image_url(get_field($post, 'newspapper_files')) }}" class="download"
+                            target="_blank" download>
+
+                            <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
+                            <img src="{{ Theme::asset()->url('images/relationship/down.png') }}" alt=""
+                                class="img-mobile">
                         </a>
-                        
-                       
-                    </ul>
+                        <div class="downcontent">
+                            <ul class="list-file">
+                                <a href="{{ get_image_url(get_field($post, 'newspapper_files')) }}" target="_blank"
+                                    download>
+                                    <div class="text-dark">
+                                        {{ @get_file_name(get_field($post, 'newspapper_files')) }}
+
+                                    </div>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        @endforeach
+            @endforeach
         @endif
-      
+
     </div>
     {{ $posts->links('vendor.pagination.custom') }}
 </div>

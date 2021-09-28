@@ -377,10 +377,12 @@
         .media-content {
             display: unset;
             .content-left {
-                max-width: unset;
+                width: 100%;
                 margin-right: unset;
                 .media__content_left {
-                    display: none;
+                    .news__content {
+                        display: none;
+                    }
                 }
                 .news-content-mobile {
                     display: block!important;

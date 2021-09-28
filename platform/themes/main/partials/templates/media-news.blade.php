@@ -1,9 +1,4 @@
 
-{{-- @includeIf("theme.main::views.breadcrumb") --}}
-{{-- @php
-$posts = get_posts_by_category($category->id ?? 16, 6);
-@endphp --}}
-
 @includeIf("theme.main::views.breadcrumb")
 <div class="filter-search-media mb-40 field">
     <form action="" class="form-search ">
@@ -28,7 +23,6 @@ $posts = get_posts_by_category($category->id ?? 16, 6);
         </select>
     </form> 
 </div>
-{{-- @dd($posts) --}}
 <div class="shareholder-infomation_left">
     <div class="list-info">
         @if (!empty($posts))
@@ -53,4 +47,5 @@ $posts = get_posts_by_category($category->id ?? 16, 6);
     </div>
     
 </div>
+
 

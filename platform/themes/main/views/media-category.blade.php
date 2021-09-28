@@ -21,6 +21,9 @@
                     @includeIf("theme.main::partials.templates.".$category->template)
                 </div>
                 @includeIf("theme.main::views.pages.post.post-sidebar")
+                @if ($category->template != 'posts')
+                    @includeIf("theme.main::views.pages.post.post-sidebar-mb")
+                @endif
             </div>
 
         </div>
