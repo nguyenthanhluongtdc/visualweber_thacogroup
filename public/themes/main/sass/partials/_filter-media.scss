@@ -445,18 +445,14 @@
                     //     width: 346%;
                     // }
                     i{
+                        display: inline-block;
                         font-size: 20px;
-                        position: absolute;
-                        right: 15px;
-                        top: 10px;
-                        @media only screen and (max-width: 992px){
-                            right: 9px;
-                            top: 9px;
-                         }
-                        @media only screen and (max-width: 300px){
-                           right: 9px;
-                        }
+                       transform: translateY(2.5px);
+                       @media only screen and (max-width: 400px){
+                        font-size: 18px;
+                       }
                     }
+                   
                
                 }
                 .dropdown-toggle::after{

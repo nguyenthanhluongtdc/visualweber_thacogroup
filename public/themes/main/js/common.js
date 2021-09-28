@@ -660,7 +660,6 @@ if ($('#button-activity').length > 0) {
     $(function() {
         $('.menu-mobile .nav-list .nav-item a:not(:only-child)').click(function(e) {
             $(this).siblings('.nav-dropdown').toggle();
-            $('.dropdown').not($(this).siblings()).hide();
             e.stopPropagation();
         });
         $('html').click(function() {
