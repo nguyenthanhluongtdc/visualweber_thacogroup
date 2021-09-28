@@ -3101,6 +3101,9 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
         params: _objectSpread({}, filter)
       }).then(function (_ref) {
         var data = _ref.data;
+        return data;
+      }).then(function (_ref2) {
+        var data = _ref2.data;
         cb(data);
       })["catch"](function (error) {});
     },
@@ -37177,14 +37180,109 @@ var render = function() {
             "div",
             { staticClass: "container-customize" },
             [
-              _vm._m(0),
+              _c(
+                "div",
+                {
+                  staticClass: "image__title",
+                  attrs: {
+                    "data-aos": "fade-right",
+                    "data-aos-duration": "700",
+                    "data-aos-delay": "50"
+                  }
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "themes/main/images/introduce/arrow.png",
+                      alt: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("h1", { staticClass: "font50 big-title" }, [
+                    _vm._v(" " + _vm._s(_vm.__("Hình ảnh")) + " ")
+                  ])
+                ]
+              ),
               _vm._v(" "),
               _c("div", { staticClass: "tab-image" }, [
                 _c(
                   "div",
                   { staticClass: "media__tabs" },
                   [
-                    _vm._m(1),
+                    _c(
+                      "ul",
+                      {
+                        staticClass: "nav nav-tabs",
+                        attrs: { id: "tab-media", role: "tablist" }
+                      },
+                      [
+                        _c(
+                          "li",
+                          {
+                            staticClass: "__tabs__item",
+                            attrs: { role: "media" }
+                          },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "__tabs__link nav-link active",
+                                attrs: {
+                                  id: "media-album-tab",
+                                  "data-toggle": "tab",
+                                  role: "tab",
+                                  "aria-controls": "media-image",
+                                  "aria-selected": "true",
+                                  href: "#media-album",
+                                  title: _vm.__("Tất Cả")
+                                }
+                              },
+                              [
+                                _c("i", { staticClass: "far fa-images" }),
+                                _vm._v(
+                                  "\n                  " +
+                                    _vm._s(_vm.__("Albums")) +
+                                    "\n                "
+                                )
+                              ]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass: "__tabs__item",
+                            attrs: { role: "media" }
+                          },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "__tabs__link nav-link",
+                                attrs: {
+                                  id: "media-single-image-tab",
+                                  "data-toggle": "tab",
+                                  role: "tab",
+                                  "aria-controls": "media-video",
+                                  "aria-selected": "true",
+                                  href: "#media-single-image",
+                                  title: _vm.__("Tất Cả")
+                                }
+                              },
+                              [
+                                _c("i", { staticClass: "fas fa-image" }),
+                                _vm._v(
+                                  "\n                  " +
+                                    _vm._s(_vm.__("Hình ảnh")) +
+                                    "\n                "
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    ),
                     _vm._v(" "),
                     _c("media-filter", {
                       attrs: {
@@ -37295,13 +37393,35 @@ var render = function() {
                                         ]
                                       ),
                                       _vm._v(" "),
-                                      _vm._m(2, true),
+                                      _c(
+                                        "div",
+                                        { staticClass: "album-item__count" },
+                                        [
+                                          _c("i", {
+                                            staticClass: "far fa-image"
+                                          }),
+                                          _vm._v(" "),
+                                          _c(
+                                            "p",
+                                            { staticClass: "quantity font18" },
+                                            [
+                                              _vm._v(
+                                                " " +
+                                                  _vm._s(item.album_total) +
+                                                  " "
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      ),
                                       _vm._v(" "),
                                       _c(
                                         "div",
                                         {
                                           staticClass: "album-item__download",
-                                          attrs: { title: "Tải xuống album" },
+                                          attrs: {
+                                            title: _vm.__("Tải xuống album")
+                                          },
                                           on: {
                                             click: function($event) {
                                               return _vm.zipDownload(item.id)
@@ -37388,7 +37508,7 @@ var render = function() {
                                           _c(
                                             "p",
                                             { staticClass: "text font18" },
-                                            [_vm._v("Album")]
+                                            [_vm._v(_vm._s(_vm.__("Album")))]
                                           )
                                         ]
                                       ),
@@ -37403,7 +37523,7 @@ var render = function() {
                                               attrs: {
                                                 download: "",
                                                 href: "storage/" + item.image,
-                                                title: "Tải xuống"
+                                                title: _vm.__("Tải xuống")
                                               }
                                             },
                                             [
@@ -37467,14 +37587,14 @@ var render = function() {
             "div",
             { staticClass: "container-customize" },
             [
-              _vm._m(3),
+              _vm._m(0),
               _vm._v(" "),
               _c("div", { staticClass: "tab-video" }, [
                 _c(
                   "div",
                   { staticClass: "media__tabs" },
                   [
-                    _vm._m(4),
+                    _vm._m(1),
                     _vm._v(" "),
                     _c("media-filter", {
                       attrs: {
@@ -37587,7 +37707,21 @@ var render = function() {
                                         ]
                                       ),
                                       _vm._v(" "),
-                                      _vm._m(5, true)
+                                      _c(
+                                        "div",
+                                        { staticClass: "video-item__count" },
+                                        [
+                                          _c("i", {
+                                            staticClass: "fas fa-photo-video"
+                                          }),
+                                          _vm._v(" "),
+                                          _c(
+                                            "p",
+                                            { staticClass: "quantity font18" },
+                                            [_vm._v(_vm._s(item.album_total))]
+                                          )
+                                        ]
+                                      )
                                     ]
                                   )
                                 : _vm._e()
@@ -37834,7 +37968,7 @@ var render = function() {
                                   attrs: {
                                     download: "",
                                     href: "storage/" + item.img,
-                                    title: "Tải xuống"
+                                    title: _vm.__("Tải xuống")
                                   }
                                 },
                                 [
@@ -38101,96 +38235,6 @@ var staticRenderFns = [
           attrs: { src: "themes/main/images/introduce/arrow.png", alt: "" }
         }),
         _vm._v(" "),
-        _c("h1", { staticClass: "font50 big-title" }, [_vm._v("Hình ảnh")])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "ul",
-      {
-        staticClass: "nav nav-tabs",
-        attrs: { id: "tab-media", role: "tablist" }
-      },
-      [
-        _c("li", { staticClass: "__tabs__item", attrs: { role: "media" } }, [
-          _c(
-            "a",
-            {
-              staticClass: "__tabs__link nav-link active",
-              attrs: {
-                id: "media-album-tab",
-                "data-toggle": "tab",
-                role: "tab",
-                "aria-controls": "media-image",
-                "aria-selected": "true",
-                href: "#media-album",
-                title: "Tất Cả"
-              }
-            },
-            [
-              _c("i", { staticClass: "far fa-images" }),
-              _vm._v("\n                  Albums\n                ")
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", { staticClass: "__tabs__item", attrs: { role: "media" } }, [
-          _c(
-            "a",
-            {
-              staticClass: "__tabs__link nav-link",
-              attrs: {
-                id: "media-single-image-tab",
-                "data-toggle": "tab",
-                role: "tab",
-                "aria-controls": "media-video",
-                "aria-selected": "true",
-                href: "#media-single-image",
-                title: "Tất Cả"
-              }
-            },
-            [
-              _c("i", { staticClass: "fas fa-image" }),
-              _vm._v("\n                  Hình ảnh\n                ")
-            ]
-          )
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "album-item__count" }, [
-      _c("i", { staticClass: "far fa-image" }),
-      _vm._v(" "),
-      _c("p", { staticClass: "quantity font18" }, [_vm._v("100")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "image__title",
-        attrs: {
-          "data-aos": "fade-right",
-          "data-aos-duration": "700",
-          "data-aos-delay": "50"
-        }
-      },
-      [
-        _c("img", {
-          attrs: { src: "themes/main/images/introduce/arrow.png", alt: "" }
-        }),
-        _vm._v(" "),
         _c("h1", { staticClass: "font50 big-title" }, [_vm._v("Video")])
       ]
     )
@@ -38251,16 +38295,6 @@ var staticRenderFns = [
         ])
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "video-item__count" }, [
-      _c("i", { staticClass: "fas fa-photo-video" }),
-      _vm._v(" "),
-      _c("p", { staticClass: "quantity font18" }, [_vm._v("100")])
-    ])
   }
 ]
 render._withStripped = true
