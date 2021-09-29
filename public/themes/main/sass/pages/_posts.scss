@@ -144,6 +144,7 @@
                                 text-decoration: none;
                                 display: block;
                                 background-color: $bg-post;
+                                
                                 .post_name {
                                     margin-top: 15px;
                                     font-family: $MyriadPro-Bold;
@@ -151,8 +152,10 @@
                                     margin-right: 20px;
                                     text-transform: uppercase;
                                     height: 3.5vw;
+                                    @include split_str(3);
                                     @media only screen and (max-width: 1440px){
                                         height: 5.5vw;
+                                        
                                     }
                                     @media only screen and (max-width: 1300px){
                                         height: 6vw;

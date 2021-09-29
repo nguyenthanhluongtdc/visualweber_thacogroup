@@ -34,7 +34,12 @@
                 }
             }
         }
-        
+        // select{
+        //     border-top-left-radius: unset !important;
+        //     border-bottom-left-radius: unset !important;
+        //     border-top-right-radius: unset !important;
+        //     border-bottom-right-radius: unset !important;        
+        // }
         .select-year {
             width: 12%;
             outline: 0;
@@ -46,11 +51,26 @@
             background-color: #f1f1f1;
             border: unset;
             color: #2E2E2E;
-            @media only screen and (max-width: 1080px){
-                border-radius: unset !important;
+            border-radius: unset;
+            -webkit-border-radius: none; 
+            -moz-border-radius: none;
+            @media screen and(max-width:1080px) {
+                -webkit-appearance: none;
+                appearance: none;
+                -moz-appearance: none;
             }
+            
                   
         }
+        // select::after{
+        //     font-family: "Font Awesome 5 Free";
+        //     content: "\f107";
+        //     display: inline-block;
+        //     padding-right: 3px;
+        //     vertical-align: middle;
+        //     font-weight: 900;
+
+        // }
         .select-by-field {
             width: 18%;
             outline: 0;
@@ -61,6 +81,13 @@
             cursor: pointer;
             background-color: #f1f1f1;
             color: #2E2E2E;
+            border-radius: unset;
+            
+            @media screen and(max-width:1080px) {
+                -webkit-appearance: none;
+                appearance: none;
+                -moz-appearance: none;
+            }
             
         }
     }
@@ -76,11 +103,11 @@
             }
             .select-year {
                 margin-left: 0;
-                width: unset;
+                width: 48%;
                 padding: 11.5px 8px;
             }
             .select-by-field {
-                width: unset;
+                width: 48%;
                 padding: 11.5px 8px;
             }
         }
