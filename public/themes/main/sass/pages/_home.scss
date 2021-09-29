@@ -161,7 +161,7 @@
                                         object-position: center center;
                                     }
                                 }
-                                 &:nth-child(3) {
+                                &:nth-child(3) {
                                     box-shadow: 0 5px 8px -5px #555;
                                     width: 32%;
                                     height: calc((100vh - 98px - 2vw)/2);
@@ -400,7 +400,7 @@
                                 margin-bottom: 20px;
                                 box-shadow: 0 5px 8px -5px #555;
                                 height: 23vw;
-                                min-height: 470px; 
+                                min-height: 470px;
                                 display: flex;
                                 &:hover .name {
                                     color: $main_color;
@@ -486,7 +486,7 @@
                                                 transition: transform .3s, visibility .3s ease-in;
                                             }
                                         }
-                                        color: $gray_text; 
+                                        color: $gray_text;
                                         text-decoration: none;
                                         display: block;
                                         background-color: $white;
@@ -495,13 +495,13 @@
                                             font-family: $MyriadPro-Bold;
                                             margin-left: 20px;
                                             margin-right: 20px;
-                                            @include split_str(2);
+                                            // @include split_str(2);
                                             text-transform: uppercase;
                                             height: 3.7vw;
-                                            @media only screen and (max-width: 1440px){
+                                            @media only screen and (max-width: 1440px) {
                                                 height: 5.5vw;
                                             }
-                                            @media only screen and (max-width: 1300px){
+                                            @media only screen and (max-width: 1300px) {
                                                 height: 6vw;
                                             }
                                         }
