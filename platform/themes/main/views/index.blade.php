@@ -40,27 +40,6 @@
         <h3 class="title__company font40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate"> {{has_field($page, 'tieu_de') ? get_field($page, 'tieu_de') : ''}}</h3>
         <div class="partner-banner parallax-window" data-parallax="scroll">
             <div class="container-customize logo-partner"> 
-                {{-- <div class="swiper-container logo-company" style="display:none">
-                    <div class="swiper-wrapper">   
-                        <div class="swiper-slide" >
-                            <img src="{{Theme::asset()->url('images/home/thilogi-logo.png')}}" alt="">
-                        </div>
-                        <div class="swiper-slide" >
-                            <img src="{{Theme::asset()->url('images/home/thadico-logo.png')}}" alt="">
-                        </div>
-                        <div class="swiper-slide" >
-                            <img src="{{Theme::asset()->url('images/home/thacoauto-logo.png')}}" alt="">
-                        </div>
-                        <div class="swiper-slide" >
-                            <img src="{{Theme::asset()->url('images/home/thagrico-logo.png')}}" alt="">
-                        </div>
-                        <div class="swiper-slide" >
-                            <img src="{{Theme::asset()->url('images/home/thiso-logo.png')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"><img src="{{Theme::asset()->url("images/home/right-arrow.png")}}" alt="{{_('Next icon')}}"></div>
-                    <div class="swiper-button-prev"><img src="{{Theme::asset()->url("images/home/left-arrow.png")}}" alt="{{_('Prevous icon')}}"></div>
-                </div> --}}
                 <div class="logo-desktop">
                 
                     @if(has_field($page,'logo_company'))
