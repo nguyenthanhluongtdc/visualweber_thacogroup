@@ -486,7 +486,7 @@
                                                 transition: transform .3s, visibility .3s ease-in;
                                             }
                                         }
-                                        color: $gray_text;
+                                        color: $gray_text; 
                                         text-decoration: none;
                                         display: block;
                                         background-color: $white;
@@ -497,6 +497,13 @@
                                             margin-right: 20px;
                                             @include split_str(2);
                                             text-transform: uppercase;
+                                            height: 3.7vw;
+                                            @media only screen and (max-width: 1440px){
+                                                height: 5.5vw;
+                                            }
+                                            @media only screen and (max-width: 1300px){
+                                                height: 6vw;
+                                            }
                                         }
                                         .post_description {
                                             margin: 15px 20px;
