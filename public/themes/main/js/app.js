@@ -2290,6 +2290,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'MediaFilter',
   data: function data() {
@@ -2368,6 +2373,79 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3255,6 +3333,36 @@ $(document).ready(function () {
     $(this).next(".click-show").toggle();
     e.stopPropagation();
     e.preventDefault();
+  });
+  var dropdowns = $(".dropdown"); // Onclick on a dropdown, toggle visibility
+
+  dropdowns.find(".dt").click(function () {
+    dropdowns.find(".dd ul").hide();
+    $(this).next().children().toggle();
+  }); // Clic handler for dropdown
+
+  dropdowns.find(".dd ul li a").click(function () {
+    var leSpan = $(this).parents(".dropdown").find(".dt span"); // Remove selected class
+
+    $(this).parents(".dropdown").find('.dd a').each(function () {
+      $(this).removeClass('selected');
+    }); // Update selected value
+
+    leSpan.html($(this).html()); // If back to default, remove selected class else addclass on right element
+
+    if ($(this).hasClass('default')) {
+      leSpan.removeClass('selected');
+    } else {
+      leSpan.addClass('selected');
+      $(this).addClass('selected');
+    } // Close dropdown
+
+
+    $(this).parents("ul").hide();
+  }); // Close all dropdown onclick on another element
+
+  $(document).bind('click', function (e) {
+    if (!$(e.target).parents().hasClass("dropdown")) $(".dropdown .dd ul").hide();
   });
 });
 
@@ -36874,24 +36982,27 @@ var render = function() {
                         _c(
                           "div",
                           {
-                            staticClass:
-                              "md-form md-outline input-with-post-icon datepicker",
-                            attrs: { id: "date-picker-example" }
+                            staticClass: "input-group date datepicker",
+                            attrs: {
+                              id: "datepicker",
+                              "data-date-format": "dd-mm-yyyy"
+                            }
                           },
                           [
                             _c("input", {
-                              staticClass: "font15",
+                              staticClass: "form-control",
                               attrs: {
                                 type: "date",
-                                id: "datepicker",
-                                name: "calendars"
+                                placeholder: "dd/mm/yyyy"
                               },
                               on: {
                                 change: function($event) {
                                   return _vm.changeDate($event)
                                 }
                               }
-                            })
+                            }),
+                            _vm._v(" "),
+                            _vm._m(5)
                           ]
                         )
                       ])
@@ -36900,14 +37011,14 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _vm._m(5),
+              _vm._m(6),
               _vm._v(" "),
-              _vm._m(6)
+              _vm._m(7)
             ])
           ])
         ]),
         _vm._v(" "),
-        _vm._m(7)
+        _vm._m(8)
       ])
     ])
   ])
@@ -37056,6 +37167,14 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "input-group-addon" }, [
+      _c("i", { staticClass: "glyphicon glyphicon-calendar" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("li", { staticClass: "dropdown-submenu" }, [
       _c(
         "a",
@@ -37170,11 +37289,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "search-btn" }, [
-      _c(
-        "button",
-        { staticClass: "btn btn-primary", attrs: { type: "button" } },
-        [_vm._v("Tìm kiếm")]
-      )
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Tìm kiếm")])
     ])
   }
 ]
@@ -37241,7 +37356,7 @@ var render = function() {
                     _c(
                       "ul",
                       {
-                        staticClass: "nav nav-tabs",
+                        staticClass: "nav nav-tabs dropdown dr-pc",
                         attrs: { id: "tab-media", role: "tablist" }
                       },
                       [
@@ -37263,7 +37378,7 @@ var render = function() {
                                   "aria-controls": "media-image",
                                   "aria-selected": "true",
                                   href: "#media-album",
-                                  title: _vm.__("Tất Cả")
+                                  title: _vm.__("Albums")
                                 }
                               },
                               [
@@ -37296,7 +37411,7 @@ var render = function() {
                                   "aria-controls": "media-video",
                                   "aria-selected": "true",
                                   href: "#media-single-image",
-                                  title: _vm.__("Tất Cả")
+                                  title: _vm.__("Hình ảnh")
                                 }
                               },
                               [
@@ -37312,6 +37427,77 @@ var render = function() {
                         )
                       ]
                     ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "dropdown dr-mb dl" }, [
+                      _c("div", { staticClass: "dt" }, [
+                        _c("span", [_vm._v(_vm._s(_vm.__("Albums")))]),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fal fa-angle-down" })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dd" }, [
+                        _c(
+                          "ul",
+                          {
+                            staticClass: "nav nav-tabs",
+                            staticStyle: { display: "none" },
+                            attrs: { id: "tab-media", role: "tablist" }
+                          },
+                          [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "default __tabs__link nav-link active",
+                                  attrs: {
+                                    id: "media-album-tab",
+                                    "data-toggle": "tab",
+                                    role: "tab",
+                                    "aria-controls": "media-image",
+                                    "aria-selected": "true",
+                                    href: "#media-album",
+                                    title: _vm.__("Albums")
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                        " +
+                                      _vm._s(_vm.__("Albums")) +
+                                      "\n                      "
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "__tabs__link nav-link",
+                                  attrs: {
+                                    id: "media-single-image-tab",
+                                    "data-toggle": "tab",
+                                    role: "tab",
+                                    "aria-controls": "media-video",
+                                    "aria-selected": "true",
+                                    href: "#media-single-image",
+                                    title: _vm.__("Hình ảnh")
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                        " +
+                                      _vm._s(_vm.__("Hình ảnh")) +
+                                      "\n                      "
+                                  )
+                                ]
+                              )
+                            ])
+                          ]
+                        )
+                      ])
+                    ]),
                     _vm._v(" "),
                     _c("media-filter", {
                       attrs: {
@@ -37618,12 +37804,79 @@ var render = function() {
             [
               _vm._m(0),
               _vm._v(" "),
-              _c("div", { staticClass: "tab-video" }, [
+              _c("div", { staticClass: "tab-image tab-video" }, [
                 _c(
                   "div",
                   { staticClass: "media__tabs" },
                   [
                     _vm._m(1),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "dropdown dr-mb dl" }, [
+                      _c("div", { staticClass: "dt" }, [
+                        _c("span", [_vm._v(_vm._s(_vm.__("Albums")))]),
+                        _vm._v(" "),
+                        _c("i", { staticClass: "fal fa-angle-down" })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dd" }, [
+                        _c(
+                          "ul",
+                          {
+                            staticClass: "nav nav-tabs",
+                            staticStyle: { display: "none" },
+                            attrs: { id: "tab-media", role: "tablist" }
+                          },
+                          [
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass:
+                                    "default __tabs__link nav-link active",
+                                  attrs: {
+                                    id: "media-video-tab",
+                                    "data-toggle": "tab",
+                                    role: "tab",
+                                    "aria-controls": "media-video",
+                                    "aria-selected": "true",
+                                    href: "#media-video",
+                                    title: _vm.__("Albums")
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                        Albums\n                      "
+                                  )
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("li", [
+                              _c(
+                                "a",
+                                {
+                                  staticClass: "__tabs__link nav-link",
+                                  attrs: {
+                                    id: "media-single-video-tab",
+                                    "data-toggle": "tab",
+                                    role: "tab",
+                                    "aria-controls": "media-single-video",
+                                    "aria-selected": "true",
+                                    href: "#media-single-video",
+                                    title: _vm.__("Video")
+                                  }
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                        Video\n                      "
+                                  )
+                                ]
+                              )
+                            ])
+                          ]
+                        )
+                      ])
+                    ]),
                     _vm._v(" "),
                     _c("media-filter", {
                       attrs: {
@@ -38275,7 +38528,7 @@ var staticRenderFns = [
     return _c(
       "ul",
       {
-        staticClass: "nav nav-tabs",
+        staticClass: "nav nav-tabs dropdown dr-pc",
         attrs: { id: "tab-media", role: "tablist" }
       },
       [

@@ -106,7 +106,12 @@
                 <ul class="dropdown-menu datepicker-mobile click-show">
                   <li>
                     <a tabindex="-1" href="#">
-                      <div
+                      <div id="datepicker" class="input-group date datepicker" data-date-format="dd-mm-yyyy">
+                          <input class="form-control" type="date"  @change="changeDate($event)" placeholder="dd/mm/yyyy" />
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                      </div> 
+
+                      <!-- <div
                         id="date-picker-example"
                         class="md-form md-outline input-with-post-icon datepicker"
                       >
@@ -117,7 +122,7 @@
                           name="calendars"
                           class="font15"
                         />
-                      </div>
+                      </div> -->
                     </a>
                   </li>
 
@@ -205,7 +210,7 @@
           </div>
         </div>
         <div class="search-btn">
-          <button type="button" class="btn btn-primary">Tìm kiếm</button>
+          <a href="#">Tìm kiếm</a>
         </div>
       </div>
     </form>
@@ -255,4 +260,6 @@ export default {
     }
   }
 };
+
+
 </script>
