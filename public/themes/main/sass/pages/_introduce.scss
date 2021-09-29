@@ -176,7 +176,9 @@
             margin-top: 20px;
             text-align: center;
             padding-right: 10px;
-            @media only screen and (max-width: 600px){padding-right: 5px;}
+            @media only screen and (max-width: 600px) {
+                padding-right: 5px;
+            }
             .admin-item {
                 width: 38.4%;
                 float: right;
@@ -402,7 +404,6 @@
         }
         .nav-tabs {
             // border: unset;
-              
             .nav-link {
                 padding: 0;
                 margin: 0;
@@ -411,10 +412,8 @@
                 font-family: $MyriadPro-Bold;
                 font-size: 20px;
                 text-transform: uppercase;
-               
                 @media only screen and (max-width: 1080px) {
                     width: 40vw;
-
                 }
                 @media only screen and (max-width: 420px) {
                     font-size: 16px;
@@ -428,7 +427,6 @@
                 }
             }
             .__tabs__item {
-               
                 margin-right: 20px;
                 overflow: hidden;
                 @media only screen and (max-width: 1080px) {
@@ -436,7 +434,6 @@
                     display: table;
                     margin: 0 auto;
                     text-align: center;
-                   
                 }
                 // @media only screen and (max-width: 380px) {
                 //     width: 20vw;
@@ -449,7 +446,6 @@
                     display: table;
                     margin: 0 auto;
                     text-align: center;
-                   
                 }
                 // @media only screen and (max-width: 380px) {
                 //     width: 20vw;
@@ -574,7 +570,7 @@
         }
         @media only screen and (max-width: 768px) {
             padding-top: 53vw;
-            min-height: 420px;
+            min-height: 440px;
         }
         .develop-content-wrapper {
             position: absolute;
@@ -802,12 +798,8 @@
                     }
                 }
                 .carousel-controls {
-                    @media only screen and (max-width: 1080px) {
-                        display: none;
-                    }
                     position: absolute;
-                    bottom: 30px;
-                    left: 30px;
+                    bottom: 5px;
                     margin-right: 30px;
                     button:focus {
                         outline: none;
@@ -840,15 +832,20 @@
 
 .modal_admin {
     display: none;
-   
     .modal-dialog {
         max-width: 900px;
-        @media only screen and (max-width: 992px){ max-width: 700px;}
-        @media only screen and (max-width: 768px){max-width: 500px;}
-        @media only screen and (max-width: 600px){max-width: 400px; margin: 50px 10px;}
+        @media only screen and (max-width: 992px) {
+            max-width: 700px;
+        }
+        @media only screen and (max-width: 768px) {
+            max-width: 500px;
+        }
+        @media only screen and (max-width: 600px) {
+            max-width: 400px;
+            margin: 50px 10px;
+        }
         .modal-content {
             padding: 30px;
-            
             .modal-body {
                 .mCSB_scrollTools .mCSB_draggerContainer {
                     width: 4px;
@@ -864,20 +861,18 @@
                 overflow-y: hidden;
                 overflow-x: hidden;
                 height: 500px;
-                @media only screen and (max-width: 600px){
+                @media only screen and (max-width: 600px) {
                     height: 400px;
-                  
                 }
-                .modal-content-top{
-                    @media only screen and (max-width: 600px){
+                .modal-content-top {
+                    @media only screen and (max-width: 600px) {
                         margin-right: -5px;
                         margin-left: -10px;
                         margin-bottom: -20px;
                     }
-                   
                 }
-                .mCS_img_loaded{
-                    @media only screen and (max-width: 600px){
+                .mCS_img_loaded {
+                    @media only screen and (max-width: 600px) {
                         padding: 10px;
                     }
                 }
@@ -887,21 +882,19 @@
                 //             transform: translateY(-65vw);
                 //         }
                 //     }
-                   
                 // }
                 .info-admin {
                     margin-left: 40px;
                     margin-top: 40px;
-                    @media only screen and (max-width: 600px){
+                    @media only screen and (max-width: 600px) {
                         margin: 15px 0;
-                      
                     }
                     .name {
                         color: $gray_text;
                     }
                     p {
                         margin-bottom: 10px;
-                        @media only screen and (max-width: 600px){
+                        @media only screen and (max-width: 600px) {
                             margin: 0;
                         }
                     }
@@ -960,7 +953,7 @@
         }
     }
 }
- 
+
 @media screen and(max-width:768px) {
     .future-goal-banner {
         min-height: 500px;
