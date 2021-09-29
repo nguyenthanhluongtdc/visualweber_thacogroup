@@ -51,11 +51,22 @@
             background-color: #f1f1f1;
             border: unset;
             color: #2E2E2E;
-            @media only screen and (max-width: 1080px){
-                border-radius: unset !important;
-            }
+            border-radius: unset;
+            -webkit-border-radius: none; 
+            -moz-border-radius: none;
+
+            
                   
         }
+        // select::after{
+        //     font-family: "Font Awesome 5 Free";
+        //     content: "\f107";
+        //     display: inline-block;
+        //     padding-right: 3px;
+        //     vertical-align: middle;
+        //     font-weight: 900;
+
+        // }
         .select-by-field {
             width: 18%;
             outline: 0;
@@ -66,6 +77,10 @@
             cursor: pointer;
             background-color: #f1f1f1;
             color: #2E2E2E;
+            border-radius: unset;
+            // -webkit-appearance: none;
+            // appearance: none;
+            // -moz-appearance: none;
             
         }
     }
