@@ -1,18 +1,7 @@
 <template>
   <div>
     <div class="media-content">
-       <div
-          id="date-picker-example"
-          class="md-form md-outline input-with-post-icon datepicker"
-        >
-          <input
-            type="date"
-            @change="changeDate($event)"
-            id="datepicker"
-            name="calendars"
-            class="font15"
-          />
-        </div>
+      
       <!---gallery--->
       <div class="media-wrapper">
         <div class="container-customize">

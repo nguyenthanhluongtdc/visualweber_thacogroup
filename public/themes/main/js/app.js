@@ -2293,6 +2293,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'MediaFilter',
   data: function data() {
@@ -2371,17 +2382,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -36894,7 +36894,26 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _vm._m(7)
+        _vm._m(7),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "md-form md-outline input-with-post-icon datepicker",
+            attrs: { id: "date-picker-example" }
+          },
+          [
+            _c("input", {
+              staticClass: "font15",
+              attrs: { type: "date", id: "datepicker", name: "calendars" },
+              on: {
+                change: function($event) {
+                  return _vm.changeDate($event)
+                }
+              }
+            })
+          ]
+        )
       ])
     ])
   ])
@@ -37191,25 +37210,6 @@ var render = function() {
     "div",
     [
       _c("div", { staticClass: "media-content" }, [
-        _c(
-          "div",
-          {
-            staticClass: "md-form md-outline input-with-post-icon datepicker",
-            attrs: { id: "date-picker-example" }
-          },
-          [
-            _c("input", {
-              staticClass: "font15",
-              attrs: { type: "date", id: "datepicker", name: "calendars" },
-              on: {
-                change: function($event) {
-                  return _vm.changeDate($event)
-                }
-              }
-            })
-          ]
-        ),
-        _vm._v(" "),
         _c("div", { staticClass: "media-wrapper" }, [
           _c(
             "div",
