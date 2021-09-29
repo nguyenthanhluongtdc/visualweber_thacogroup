@@ -145,8 +145,11 @@
                         </div>
                     @endforeach
                 @endif
-                {{ $posts->links('vendor.pagination.custom') }}
+              
 
             </div>
         </div>
     </div>
+    @if(!empty($posts))
+    {{ $posts->withQueryString()->links('vendor.pagination.custom') }}
+    @endif

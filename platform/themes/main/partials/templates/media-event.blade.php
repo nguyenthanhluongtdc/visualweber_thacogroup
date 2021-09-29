@@ -145,3 +145,4 @@
             {{ $posts->links('vendor.pagination.custom') }}
         </div>
     </div>
+   
