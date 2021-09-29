@@ -4,7 +4,10 @@ ol.breadcrumb {
     color: $gray_text;
     padding: 25px 0;
     margin: 0;
-    @media only screen and (max-width: 600px){font-size: 11px; }
+    @media only screen and (max-width: 600px) {
+        font-size: 11px;
+        padding: 35px 0 25px 0;
+    }
     .breadcrumb-item {
         a {
             color: $gray_text;
