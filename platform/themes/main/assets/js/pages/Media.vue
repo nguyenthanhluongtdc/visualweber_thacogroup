@@ -530,7 +530,8 @@
       Pagination,
       Keyboard,
       Mousewheel,
-      MediaFilter
+      MediaFilter,
+      Paginationn
     },
 
     //init data
