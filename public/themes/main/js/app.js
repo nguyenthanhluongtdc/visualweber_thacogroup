@@ -2993,10 +2993,13 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
 
                 this.indexItem = id;
                 _context.next = 5;
-                return this.$http.get("api/get/gallery/post/" + id).then(function (response) {
-                  return response.data;
-                }).then(function (response) {
-                  _this2.galleryImage = response;
+                return this.$http.get("api/album/image/", {
+                  params: {
+                    id: id
+                  }
+                }).then(function (_ref) {
+                  var data = _ref.data;
+                  _this2.galleryImage = data;
 
                   _this2.showGallery(album);
                 })["catch"](function (error) {
@@ -3067,14 +3070,15 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
 
                 this.indexItem = id;
                 _context2.next = 5;
-                return this.$http.get("api/get/video/post/" + id).then(function (response) {
-                  return response.data;
-                }).then(function (response) {
-                  _this4.galleryVideo = response;
+                return this.$http.get("api/album/video", {
+                  params: {
+                    id: id
+                  }
+                }).then(function (_ref2) {
+                  var data = _ref2.data;
+                  _this4.galleryVideo = data;
 
                   _this4.showGalleryVideo(album);
-
-                  console.log(_this4.galleryVideo);
                 })["catch"](function (error) {
                   console.log(error);
                 });
@@ -3103,11 +3107,11 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
     apiLoadMedia: function apiLoadMedia(filter, cb) {
       this.$http.get("api/media/gallery", {
         params: _objectSpread({}, filter)
-      }).then(function (_ref) {
-        var data = _ref.data;
+      }).then(function (_ref3) {
+        var data = _ref3.data;
         return data;
-      }).then(function (_ref2) {
-        var data = _ref2.data;
+      }).then(function (_ref4) {
+        var data = _ref4.data;
         cb(data);
       })["catch"](function (error) {});
     },
@@ -3158,8 +3162,10 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
             switch (_context3.prev = _context3.next) {
               case 0:
                 _context3.next = 2;
-                return this.$http.post("api/download/album/image/", {
-                  id: id
+                return this.$http.get("api/download/album/image/", {
+                  params: {
+                    id: id
+                  }
                 }).then(function (response) {
                   window.location = response.data;
                 })["catch"](function (error) {
@@ -4757,7 +4763,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.pagination {\n  width: 100%;\n  justify-content: center;\n  margin: 40px 0;\n}\n.loading {\n  height: 100px;\n  text-align: center;\n}\n.loading img {\n  max-height: 100%;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.pagination {\n  width: 100%;\n  justify-content: center;\n  margin: 40px 0;\n}\n.loading {\n  height: 100px;\n  text-align: center;\n}\n.loading img {\n  max-height: 100%;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

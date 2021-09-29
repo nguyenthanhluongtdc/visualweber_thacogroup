@@ -21,7 +21,7 @@
             <option value="">Đầu tư xây dựng</option>
             <option value="">Logistics</option>
         </select>
-        <div
+        {{-- <div
         id="date-picker-example"
         class="md-form md-outline input-with-post-icon datepicker"
       >
@@ -31,7 +31,7 @@
           name="calendars"
           class="font15"
         />
-      </div>
+      </div> --}}
     </form> 
 </div>
 <div class="shareholder-infomation_left">
