@@ -170,6 +170,7 @@ let newPostSlide = new Swiper('.new-post-slide', {
     },
 })
 let news_post_mobile = new Swiper('.new-post-slide-mb ', {
+    effect: "fade",
     speed: 1500,
     pagination: {
         el: ".news-content-mobile .pagination-news",
@@ -791,6 +792,7 @@ var Ajax = {
                             },
                         })
                         let news_post_mobile = new Swiper('.new-post-slide-mb ', {
+                            effect: "fade",
                             speed: 1500,
                             pagination: {
                                 el: ".news-content-mobile .pagination-news",
