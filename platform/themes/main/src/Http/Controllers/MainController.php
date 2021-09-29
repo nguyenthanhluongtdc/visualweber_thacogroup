@@ -139,7 +139,6 @@ class MainController extends PublicController
     }
     public function getMedia(Request $request){
         // try {
-
             $categoryId =  $request->categoryId;
             $allRequest = $request->toArray();
 

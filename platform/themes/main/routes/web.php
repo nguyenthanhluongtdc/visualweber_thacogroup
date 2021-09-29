@@ -39,10 +39,14 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
                 'as'    => 'download.album.image',
                 'uses'  => 'ApiController@zipDownload'
             ]);
-        });
 
-        Route::get('media','MainController@getMedia')->name('getMedia');
-      
+
+            //jquery
+            Route::get('load/category',[
+                'as'    => 'load.category',
+                'uses'  => 'MainController@getMedia'
+            ]);
+        });
 
     });
 });

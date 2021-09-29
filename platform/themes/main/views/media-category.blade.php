@@ -4,7 +4,7 @@
 @includeIf("theme.main::views.pages.post.slide")
 
 <script>
-    const getMediaUrl = '{{ route('getMedia') }}'
+    const getMediaUrl = "{{ route('api.media.load.category') }}";
 </script>
 @php
 // $posts = get_posts_by_category($category->id ?? 16, 3);
