@@ -126,7 +126,7 @@ class BlogService
                         route('categories.edit', $category->id)
                     );
                 }
-                $posts = app(PostInterface::class)->getByCategory($category->id, theme_option('number_of_posts_in_a_category'));
+                $posts = app(PostInterface::class)->getByCategory($category->id, theme_option('number_posts_media'));
                 $postSlider = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,3);
                 $postSlider_bottom = app(PostInterfaceCustom::class)->getFeaturedByCategory($category->id,3);
 
