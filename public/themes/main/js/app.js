@@ -2290,6 +2290,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'MediaFilter',
   data: function data() {
@@ -2861,6 +2863,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 //custom-scrollbar
 
  //pagination
@@ -2890,7 +2893,8 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
     Pagination: swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Pagination,
     Keyboard: swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Keyboard,
     Mousewheel: swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Mousewheel,
-    MediaFilter: _components_MediaFilter__WEBPACK_IMPORTED_MODULE_4__["default"]
+    MediaFilter: _components_MediaFilter__WEBPACK_IMPORTED_MODULE_4__["default"],
+    Paginationn: (laravel_vue_pagination__WEBPACK_IMPORTED_MODULE_3___default())
   },
   //init data
   data: function data() {

@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="media-content">
+      
       <!---gallery--->
       <div class="media-wrapper">
         <div class="container-customize">
