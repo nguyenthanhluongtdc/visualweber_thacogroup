@@ -68,10 +68,9 @@ class ApiController extends Controller {
     }
 
     public function zipDownload(Request $request) {
-        $id = $request->id;
-
+        
         $post = app(PostInterfaceCustom::class)->getFirstBy(
-            ['id'=> $id],
+            ['id'=> $request->id],
             ['*'],
             ['slugable'] 
         );

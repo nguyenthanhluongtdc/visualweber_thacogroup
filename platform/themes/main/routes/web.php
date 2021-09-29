@@ -15,12 +15,8 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
         //video
 
         Route::prefix('api')->group(function () { 
-            Route::get('/filter/album/image', 'ApiController@getFilterImage');
-            Route::post('/download/album/image', 'ApiController@zipDownload');
-
             // Route::post('/get/album/image', 'ApiController@getAlbumImage');
             Route::post('/get/menu/', 'ApiController@getMenuByLocation');
-
         });
 
         Route::group(['prefix' => 'api', 'as' => 'api.media.'], function() {
@@ -38,10 +34,12 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
                 'as'    => 'album.video',
                 'uses'  => 'ApiController@getAlbumVideo'
             ]);
+
+            Route::get('/download/album/image', [
+                'as'    => 'download.album.image',
+                'uses'  => 'ApiController@zipDownload'
+            ]);
         });
-
-        
-
 
         Route::get('media','MainController@getMedia')->name('getMedia');
       

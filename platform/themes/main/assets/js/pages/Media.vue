@@ -755,7 +755,11 @@
 
       zipDownload: async function (id) {
         await this.$http
-          .post("api/download/album/image/", { id: id })
+          .get("api/download/album/image/", {
+            params: {
+              id: id
+            }
+          })
           .then((response) => {
             window.location = response.data;
           })
@@ -819,4 +823,5 @@
   .loading img {
     max-height: 100%;
   }
+
 </style>

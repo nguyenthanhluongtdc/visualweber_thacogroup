@@ -12,14 +12,17 @@
 
 <style>
     .ps__thumb-y {
-        background-color: #fff !important;
-        width: 2px;
+        background-color: rgb(136 136 135) !important;
+        width: 60% !important;
+        left: 50%;
+        transform: translateX(-50%);
         border-radius:unset; 
     }
 
     .ps__rail-y {
-        background-color: gray !important;
-        width: 4px;
+        background-color: #f0f0f0 !important;
+        width: 6px;
+        opacity: 1 !important;
     }
 
     .list-social-sidebar {
