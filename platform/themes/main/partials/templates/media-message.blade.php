@@ -14,7 +14,7 @@
             </a>
             <span class="time">{{date_format($postSlider[0]->created_at,"d-m-Y")}}</span> 
             <p class="description font18  text-justify">{{$postSlider[0]->description}}</p>
-            <a href="{{$postSlider[0]->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
+            <a href="{{$postSlider[0]->url}}" class="read-more message">{!!__('Xem thêm')!!}</a>
         </div>
     </div> 
     @endif
