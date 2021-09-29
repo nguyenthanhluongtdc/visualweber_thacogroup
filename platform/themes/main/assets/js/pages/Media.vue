@@ -17,7 +17,7 @@
 
           <div class="tab-image">
             <div class="media__tabs">
-              <ul class="nav nav-tabs" id="tab-media" role="tablist">
+              <ul class="nav nav-tabs dropdown dr-pc" id="tab-media" role="tablist">
                 <li class="__tabs__item" role="media">
                   <a
                     class="__tabs__link nav-link active"
@@ -27,7 +27,7 @@
                     aria-controls="media-image"
                     aria-selected="true"
                     href="#media-album"
-                    :title="__('Tất Cả')"
+                    :title="__('Albums')"
                   >
                     <i class="far fa-images"></i>
                     {{__('Albums')}}
@@ -42,13 +42,50 @@
                     aria-controls="media-video"
                     aria-selected="true"
                     href="#media-single-image"
-                    :title="__('Tất Cả')"
+                    :title="__('Hình ảnh')"
                   >
                     <i class="fas fa-image"></i>
                     {{__('Hình ảnh')}}
                   </a>
                 </li>
               </ul>
+
+              <div class="dropdown dr-mb dl">
+                <div class="dt"><span>{{__('Albums')}}</span> <i class="fal fa-angle-down"></i></div>
+                  <div class="dd">
+                    <ul style="display: none;" class="nav nav-tabs" id="tab-media" role="tablist">
+                      <li>
+                        <a
+                          class="default __tabs__link nav-link active"
+                          id="media-album-tab"
+                          data-toggle="tab"
+                          role="tab"
+                          aria-controls="media-image"
+                          aria-selected="true"
+                          href="#media-album"
+                          :title="__('Albums')"
+                        >
+                          {{__('Albums')}}
+                        </a>
+
+                      </li>
+                      <li>
+                        <a
+                          class="__tabs__link nav-link"
+                          id="media-single-image-tab"
+                          data-toggle="tab"
+                          role="tab"
+                          aria-controls="media-video"
+                          aria-selected="true"
+                          href="#media-single-image"
+                          :title="__('Hình ảnh')"
+                        >
+                          {{__('Hình ảnh')}}
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
 
                 <media-filter 
                     :on-filter="galleryFilter" 
@@ -163,9 +200,9 @@
             <h1 class="font50 big-title">Video</h1>
           </div>
 
-          <div class="tab-video">
+          <div class="tab-image tab-video">
             <div class="media__tabs">
-              <ul class="nav nav-tabs" id="tab-media" role="tablist">
+              <ul class="nav nav-tabs dropdown dr-pc" id="tab-media" role="tablist">
                 <li class="__tabs__item" role="media">
                   <a
                     class="__tabs__link nav-link active"
@@ -197,6 +234,42 @@
                   </a>
                 </li>
               </ul>
+
+              <div class="dropdown dr-mb dl">
+                <div class="dt"><span>{{__('Albums')}}</span> <i class="fal fa-angle-down"></i></div>
+                  <div class="dd">
+                    <ul style="display: none;" class="nav nav-tabs" id="tab-media" role="tablist">
+                      <li>
+                        <a
+                          class="default __tabs__link nav-link active"
+                          id="media-video-tab"
+                          data-toggle="tab"
+                          role="tab"
+                          aria-controls="media-video"
+                          aria-selected="true"
+                          href="#media-video"
+                          :title="__('Albums')"
+                        >
+                          Albums
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="__tabs__link nav-link"
+                          id="media-single-video-tab"
+                          data-toggle="tab"
+                          role="tab"
+                          aria-controls="media-single-video"
+                          aria-selected="true"
+                          href="#media-single-video"
+                          :title="__('Video')"
+                        >
+                          Video
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
 
               <media-filter 
                 :on-filter="videoFilter" 
@@ -825,6 +898,45 @@
       e.stopPropagation();
       e.preventDefault();
     });
+
+    var dropdowns = $(".dropdown");
+
+    // Onclick on a dropdown, toggle visibility
+    dropdowns.find(".dt").click(function(){
+      dropdowns.find(".dd ul").hide();
+      $(this).next().children().toggle();
+    });
+
+    // Clic handler for dropdown
+    dropdowns.find(".dd ul li a").click(function(){
+      var leSpan = $(this).parents(".dropdown").find(".dt span");
+      
+      // Remove selected class
+      $(this).parents(".dropdown").find('.dd a').each(function(){
+        $(this).removeClass('selected');
+      });
+      
+      // Update selected value
+      leSpan.html($(this).html());
+      
+      // If back to default, remove selected class else addclass on right element
+      if($(this).hasClass('default')){
+        leSpan.removeClass('selected')
+      }
+      else{
+        leSpan.addClass('selected');
+        $(this).addClass('selected');
+      }
+      
+      // Close dropdown
+      $(this).parents("ul").hide();
+    });
+
+    // Close all dropdown onclick on another element
+    $(document).bind('click', function(e){
+      if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown .dd ul").hide();
+    });
+
   });
 
 </script>
