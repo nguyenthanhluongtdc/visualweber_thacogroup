@@ -2882,7 +2882,28 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
   //export component
   name: "Media",
   //get props
-  props: ["categoryId", "perPage", "totalPages"],
+  props: {
+    categoryId: {
+      type: Number,
+      "default": null
+    },
+    filterUrl: {
+      type: String,
+      "default": ""
+    },
+    albumImageUrl: {
+      type: String,
+      "default": ""
+    },
+    albumVideoUrl: {
+      type: String,
+      "default": ""
+    },
+    downloadUrl: {
+      type: String,
+      "default": ""
+    }
+  },
   //import component
   components: {
     vueCustomScrollbar: (vue_custom_scrollbar__WEBPACK_IMPORTED_MODULE_1___default()),
@@ -2941,7 +2962,7 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
       filterParamsVideo: {
         keyword: '',
         date: '',
-        categoryId: 15,
+        categoryId: this.categoryId,
         sort: '',
         format_type: 'video',
         page: 1
@@ -2991,7 +3012,7 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
 
                 this.indexItem = id;
                 _context.next = 5;
-                return this.$http.get("api/album/image/", {
+                return this.$http.get(this.albumImageUrl, {
                   params: {
                     id: id
                   }
@@ -3068,7 +3089,7 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
 
                 this.indexItem = id;
                 _context2.next = 5;
-                return this.$http.get("api/album/video", {
+                return this.$http.get(this.albumVideoUrl, {
                   params: {
                     id: id
                   }
@@ -3103,7 +3124,7 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
       return loadGalleryVideo;
     }(),
     apiLoadMedia: function apiLoadMedia(filter, cb) {
-      this.$http.get("api/media/gallery", {
+      this.$http.get(this.filterUrl, {
         params: _objectSpread({}, filter)
       }).then(function (_ref3) {
         var data = _ref3.data;
@@ -3160,7 +3181,7 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
             switch (_context3.prev = _context3.next) {
               case 0:
                 _context3.next = 2;
-                return this.$http.get("api/download/album/image/", {
+                return this.$http.get(this.downloadUrl, {
                   params: {
                     id: id
                   }
@@ -4761,7 +4782,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.pagination {\n  width: 100%;\n  justify-content: center;\n  margin: 40px 0;\n}\n.loading {\n  height: 100px;\n  text-align: center;\n}\n.loading img {\n  max-height: 100%;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.pagination {\n  width: 100%;\n  justify-content: center;\n  margin: 40px 0;\n}\n.loading {\n  height: 100px;\n  text-align: center;\n}\n.loading img {\n  max-height: 100%;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

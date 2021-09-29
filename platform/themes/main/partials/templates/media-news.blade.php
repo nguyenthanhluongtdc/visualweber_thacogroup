@@ -21,10 +21,10 @@
             <option value="">Đầu tư xây dựng</option>
             <option value="">Logistics</option>
         </select>
-        <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+        {{-- <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
             <input class="form-control" type="text" placeholder="dd/mm/yyyy" />
             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-        </div>
+        </div> --}}
     </form> 
 </div>
 <div class="shareholder-infomation_left">
@@ -67,7 +67,7 @@
     
 </div>
 
-
+{{-- 
 <script>
     $(function () {
   $("#datepicker").datepicker({
@@ -75,4 +75,4 @@
     todayHighlight: true
   });
 });
-</script>
+</script> --}}
