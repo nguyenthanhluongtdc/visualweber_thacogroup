@@ -18,36 +18,36 @@ class ApiController extends Controller {
 
     }
 
+    // public function getAlbumImage(Request $request) {
+
+    //     $filter = $request->data;
+
+    //     if(!$filter['categoryId']) {
+    //         return response()->json([
+    //             'data'  => [],
+    //         ], 200);
+    //     }
+
+    //     $paginate = theme_option('number_of_posts_in_a_category');
+
+    //     $data = app(PostInterfaceCustom::class)->getFilterPostByCategory($filter, $paginate);
+    //     foreach($data as $da) {
+    //         $da['youtube_code'] = "";
+    //         if(has_field($da, 'youtube_code')) {
+    //             $da['youtube_code'] = has_field($da, 'youtube_code');
+    //         }
+    //     }
+
+    //     return response()->json([
+    //         'data'  => $data,
+    //     ], 200);
+    // }
+
     public function getAlbumImage(Request $request) {
-
-        $filter = $request->data;
-
-        if(!$filter['categoryId']) {
-            return response()->json([
-                'data'  => [],
-            ], 200);
-        }
-
-        $paginate = theme_option('number_of_posts_in_a_category');
-
-        $data = app(PostInterfaceCustom::class)->getFilterPostByCategory($filter, $paginate);
-        foreach($data as $da) {
-            $da['youtube_code'] = "";
-            if(has_field($da, 'youtube_code')) {
-                $da['youtube_code'] = has_field($da, 'youtube_code');
-            }
-        }
-
-        return response()->json([
-            'data'  => $data,
-        ], 200);
-    }
-
-    public function getGalleryPost($id) {
         
         //get post by id
         $post = app(PostInterfaceCustom::class)->getFirstBy(
-            ['id'=> $id],
+            ['id'=> $request->id],
             ['*'],
             ['slugable']
         );
@@ -100,9 +100,9 @@ class ApiController extends Controller {
     }
 
     //video
-    public function getGalleryVideoPost($id) {
+    public function getAlbumVideo(Request $request) {
         $post = app(PostInterfaceCustom::class)->getFirstBy(
-            ['id'=> $id],
+            ['id'=> $request->id],
             ['*'],
             ['slugable']
         );

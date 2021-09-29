@@ -626,12 +626,13 @@
           this.indexItem = id;
 
           await this.$http
-            .get("api/get/gallery/post/" + id)
-            .then((response) => {
-              return response.data;
+            .get("api/album/image/", {
+              params: {
+                id: id
+              }
             })
-            .then((response) => {
-              this.galleryImage = response;
+            .then(({data}) => {
+              this.galleryImage = data;
               this.showGallery(album);
             })
             .catch((error) => {
@@ -671,14 +672,14 @@
           this.indexItem = id;
 
           await this.$http
-            .get("api/get/video/post/" + id)
-            .then((response) => {
-              return response.data;
+            .get("api/album/video", {
+              params: {
+                id: id
+              }
             })
-            .then((response) => {
-              this.galleryVideo = response;
+            .then(({data}) => {
+              this.galleryVideo = data;
               this.showGalleryVideo(album);
-              console.log(this.galleryVideo);
             })
             .catch((error) => {
               console.log(error);
