@@ -2,6 +2,7 @@
 ################################################
 public/themes/main/css/common.css
 public/themes/main/css/common.css.map
+public/themes/main/js/app.js
 
 logs/
 public/phpMyAdmin
@@ -13,7 +14,7 @@ bin/*
 !bin/*.sh
 !bin/*.sh
 
-############# Laravel #############
+############# Laravel #############q
 storage/*
 #public/storage/
 
@@ -567,4 +568,3 @@ public/vendor
 platform/themes/main/public/css/common.css
 platform/themes/main/public/css/common.css.map
 platform/themes/main/public/css/style.css.map
-public/themes/main/js/app.js
