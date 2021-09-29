@@ -195,7 +195,7 @@
             data-aos="fade-right"
             data-aos-duration="700"
             data-aos-delay="50"
-          >
+          > 
             <img src="themes/main/images/introduce/arrow.png" alt="" />
             <h1 class="font50 big-title">Video</h1>
           </div>
