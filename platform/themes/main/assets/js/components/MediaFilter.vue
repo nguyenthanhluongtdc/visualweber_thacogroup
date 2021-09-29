@@ -124,20 +124,7 @@
 
                 </ul>
               </li>
-              <!-- <li  class="dropdown-submenu datepick-mobile">
-                      <div
-                        id="date-picker-example"
-                        class="md-form md-outline input-with-post-icon datepicker"
-                      >
-                        <input
-                          type="date"
-                          @change="changeDate($event)"
-                          id="datepicker"
-                          name="calendars"
-                          class="font15"
-                        />
-                      </div>
-              </li> -->
+              
               <li class="dropdown-submenu">
                 <a class="test d-inline-block w-100" tabindex="-1" href="#"
                   >Ngành nghề <i class="fal fa-angle-down filter-mobile"></i
