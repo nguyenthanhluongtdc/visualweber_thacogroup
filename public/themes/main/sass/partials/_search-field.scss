@@ -46,6 +46,9 @@
             background-color: #f1f1f1;
             border: unset;
             color: #2E2E2E;
+            @media only screen and (max-width: 1080px){
+                border-radius: unset !important;
+            }
                   
         }
         .select-by-field {
