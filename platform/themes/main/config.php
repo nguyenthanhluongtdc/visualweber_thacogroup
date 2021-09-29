@@ -64,7 +64,7 @@ return [
             $theme->asset()->add('carousel', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
            
            
-           
+            $theme->asset()->add('datepicker', '//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css');
             $theme->asset()->add('swiper', '//cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css');
             $theme->asset()->add('slick', '//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
             $theme->asset()->add('Scroll_custom', '//cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css');
@@ -75,6 +75,7 @@ return [
                
             $theme->asset()->container('header')->add('jquery', '//code.jquery.com/jquery-3.5.1.min.js');
             $theme->asset()->container('footer')->add('Swiper', '//cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js');
+            $theme->asset()->container('footer')->add('datepicker', '//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js');
             // $theme->asset()->container('footer')->add('semantic', '//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js');
             $theme->asset()->container('footer')->add('popper', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js');
             $theme->asset()->container('footer')->add('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js');
