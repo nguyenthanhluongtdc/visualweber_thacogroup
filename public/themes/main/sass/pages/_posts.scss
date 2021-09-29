@@ -149,8 +149,14 @@
                                     font-family: $MyriadPro-Bold;
                                     margin-left: 20px;
                                     margin-right: 20px;
-                                    @include split_str(2);
                                     text-transform: uppercase;
+                                    height: 3.5vw;
+                                    @media only screen and (max-width: 1440px){
+                                        height: 5.5vw;
+                                    }
+                                    @media only screen and (max-width: 1300px){
+                                        height: 6vw;
+                                    }
                                 }
                                 .post_description {
                                     margin: 5px 20px;
