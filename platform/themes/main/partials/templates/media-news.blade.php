@@ -21,6 +21,17 @@
             <option value="">Đầu tư xây dựng</option>
             <option value="">Logistics</option>
         </select>
+        <div
+        id="date-picker-example"
+        class="md-form md-outline input-with-post-icon datepicker"
+      >
+        <input
+          type="date"
+          id="datepicker"
+          name="calendars"
+          class="font15"
+        />
+      </div>
     </form> 
 </div>
 <div class="shareholder-infomation_left">
