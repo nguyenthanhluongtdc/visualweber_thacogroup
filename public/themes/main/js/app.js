@@ -2291,10 +2291,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'MediaFilter',
   data: function data() {
@@ -36982,27 +36978,24 @@ var render = function() {
                         _c(
                           "div",
                           {
-                            staticClass: "input-group date datepicker",
-                            attrs: {
-                              id: "datepicker",
-                              "data-date-format": "dd-mm-yyyy"
-                            }
+                            staticClass:
+                              "md-form md-outline input-with-post-icon datepicker",
+                            attrs: { id: "date-picker-example" }
                           },
                           [
                             _c("input", {
-                              staticClass: "form-control",
+                              staticClass: "font15",
                               attrs: {
                                 type: "date",
-                                placeholder: "dd/mm/yyyy"
+                                id: "datepicker",
+                                name: "calendars"
                               },
                               on: {
                                 change: function($event) {
                                   return _vm.changeDate($event)
                                 }
                               }
-                            }),
-                            _vm._v(" "),
-                            _vm._m(5)
+                            })
                           ]
                         )
                       ])
@@ -37011,14 +37004,14 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _vm._m(6),
+              _vm._m(5),
               _vm._v(" "),
-              _vm._m(7)
+              _vm._m(6)
             ])
           ])
         ]),
         _vm._v(" "),
-        _vm._m(8)
+        _vm._m(7)
       ])
     ])
   ])
@@ -37162,14 +37155,6 @@ var staticRenderFns = [
         _c("i", { staticClass: "fal fa-angle-down date-mobile" })
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("span", { staticClass: "input-group-addon" }, [
-      _c("i", { staticClass: "glyphicon glyphicon-calendar" })
-    ])
   },
   function() {
     var _vm = this

@@ -106,12 +106,8 @@
                 <ul class="dropdown-menu datepicker-mobile click-show">
                   <li>
                     <a tabindex="-1" href="#">
-                      <div id="datepicker" class="input-group date datepicker" data-date-format="dd-mm-yyyy">
-                          <input class="form-control" type="date"  @change="changeDate($event)" placeholder="dd/mm/yyyy" />
-                          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                      </div> 
-
-                      <!-- <div
+                     
+                      <div
                         id="date-picker-example"
                         class="md-form md-outline input-with-post-icon datepicker"
                       >
@@ -122,7 +118,7 @@
                           name="calendars"
                           class="font15"
                         />
-                      </div> -->
+                      </div>
                     </a>
                   </li>
 
