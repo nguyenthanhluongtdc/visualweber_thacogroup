@@ -521,7 +521,28 @@
     name: "Media",
 
     //get props
-    props: ["categoryId", "perPage", "totalPages"],
+    props: {
+      categoryId: {
+        type: Number,
+        default: null,
+      },
+      filterUrl: {
+        type: String,
+        default: "",
+      },
+      albumImageUrl: {
+        type: String,
+        default: "",
+      },
+      albumVideoUrl: {
+        type: String,
+        default: "",
+      },
+      downloadUrl: {
+        type: String,
+        default: ""
+      }
+    },
 
     //import component
     components: {
@@ -586,7 +607,7 @@
         filterParamsVideo: {
           keyword: '',
           date: '',
-          categoryId: 15,
+          categoryId: this.categoryId,
           sort: '',
           format_type: 'video',
           page: 1
@@ -627,7 +648,7 @@
           this.indexItem = id;
 
           await this.$http
-            .get("api/album/image/", {
+            .get(this.albumImageUrl, {
               params: {
                 id: id
               }
@@ -673,7 +694,7 @@
           this.indexItem = id;
 
           await this.$http
-            .get("api/album/video", {
+            .get(this.albumVideoUrl, {
               params: {
                 id: id
               }
@@ -692,7 +713,7 @@
 
       apiLoadMedia(filter, cb) {
           this.$http
-          .get("api/media/gallery", {
+          .get(this.filterUrl, {
             params: {
               ...filter
             }
@@ -755,7 +776,7 @@
 
       zipDownload: async function (id) {
         await this.$http
-          .get("api/download/album/image/", {
+          .get(this.downloadUrl, {
             params: {
               id: id
             }
@@ -823,5 +844,4 @@
   .loading img {
     max-height: 100%;
   }
-
 </style>

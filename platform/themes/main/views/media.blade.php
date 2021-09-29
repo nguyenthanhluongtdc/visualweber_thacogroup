@@ -5,7 +5,13 @@
 @if(!blank($category) && isset($category))
     <div id="app">
         @includeIf("theme.main::views.breadcrumb")
-        <page-media category-id="{{$category->id}}"> </page-media>
+        <page-media 
+            category-id="{{$category->id}}" 
+            filter-url="{{route('api.media.gallery')}}"
+            album-image-url="{{route('api.media.album.image')}}"
+            album-video-url="{{route('api.media.album.video')}}"
+            download-url="{{route('api.media.download.album.image')}}"     
+        /> 
     </div>
     <script src="themes/main/js/app.js"></script>
 @endif
