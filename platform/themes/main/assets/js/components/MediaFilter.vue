@@ -208,19 +208,7 @@
         <div class="search-btn">
           <button type="button" class="btn btn-primary">Tìm kiếm</button>
         </div>
-
-         <div
-          id="date-picker-example"
-          class="md-form md-outline input-with-post-icon datepicker"
-        >
-          <input
-            type="date"
-            @change="changeDate($event)"
-            id="datepicker"
-            name="calendars"
-            class="font15"
-          />
-        </div>
+        
       </div>
     </form>
   </div>

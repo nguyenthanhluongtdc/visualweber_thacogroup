@@ -2292,18 +2292,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'MediaFilter',
   data: function data() {
@@ -36894,26 +36882,7 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _vm._m(7),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "md-form md-outline input-with-post-icon datepicker",
-            attrs: { id: "date-picker-example" }
-          },
-          [
-            _c("input", {
-              staticClass: "font15",
-              attrs: { type: "date", id: "datepicker", name: "calendars" },
-              on: {
-                change: function($event) {
-                  return _vm.changeDate($event)
-                }
-              }
-            })
-          ]
-        )
+        _vm._m(7)
       ])
     ])
   ])
