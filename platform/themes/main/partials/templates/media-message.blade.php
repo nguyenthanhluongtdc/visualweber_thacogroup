@@ -70,5 +70,9 @@
         </div>
     </div>
 </div>
-    
+<script>
+    if($('.media__content_left.message').length>0){
+        $('.media-tab').css('display','none');
+    }
+ </script>
 

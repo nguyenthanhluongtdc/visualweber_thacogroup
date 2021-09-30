@@ -1,6 +1,6 @@
 
 @includeIf("theme.main::views.breadcrumb")
-    <div class="media__content_left">
+    <div class="media__content_left events">
         <div class="news__content">
             <div class="swiper-container new-post-slide "
                 style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
@@ -145,4 +145,9 @@
             {{ $posts->links('vendor.pagination.custom') }}
         </div>
     </div>
+    <script>
+        if($('.media__content_left.events').length>0){
+            $('.media-tab').css('display','none');
+        }
+     </script>
    

@@ -63,4 +63,9 @@
     @endif
     
 </div>
+<script>
+    if($('.shareholder-infomation_left').length>0){
+        $('.media-tab').css('display','none');
+    }
+ </script>
 

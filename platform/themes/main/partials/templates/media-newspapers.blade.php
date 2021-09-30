@@ -140,3 +140,8 @@
 <script>
     window.urlDownload = "{{route('api-media-newspaper.download')}}";
 </script>
+<script>
+    if($('.shareholder-infomation_left').length>0){
+        $('.media-tab').css('display','none');
+    }
+ </script>

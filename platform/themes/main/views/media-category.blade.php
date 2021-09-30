@@ -71,14 +71,11 @@
 
                 </div>
             </div>
-
-
         </div>
         <div class="media-wrapper mt-40">
             <div class="tab-content" id="nav-tabContent tab-content2">
                 <div class="tab-pane fade active show" id="media-image" role="tabpanel" aria-labelledby="field-1-tab">
                     <div class="media-banner">
-
                         <div class="swiper-container media-slider"
                             style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
                             <div class="swiper-wrapper">
@@ -133,4 +130,6 @@
     </section>
     @includeIf("theme.main::views.pages.post.post-sidebar-mb")
 @endif
+
+
 
