@@ -7,7 +7,7 @@
     @includeIf("theme.main::views.breadcrumb")
 </div>
 
-<section class="about-us mt-40">
+<section class="about-us ">
     <div class="container-customize">
         <div class="about-us__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50"
             class="aos-init aos-animate">
