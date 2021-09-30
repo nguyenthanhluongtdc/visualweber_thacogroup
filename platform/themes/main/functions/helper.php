@@ -59,6 +59,17 @@ if (!function_exists('get_latest_posts')) {
         return app(PostInterface::class)->getListPostNonInList($excepts, $limit, $with);
     }
 }
+if (!function_exists('get_latest_posts_noncategory')) {
+    /**
+     * @param int $limit
+     * @param array $excepts
+     * @return \Illuminate\Support\Collection
+     */
+    function get_latest_posts_noncategory($categoryId, $limit = 3, array $with = [])
+    {
+        return app(PostInterface::class)-> getPostNonInCategory($categoryId, $limit, $with);
+    }
+}
 
 if (!function_exists('get_related_posts')) {
     /**

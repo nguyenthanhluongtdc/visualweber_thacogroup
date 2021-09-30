@@ -13,8 +13,11 @@
                 <h2 class="font-mi-bold font30" data-aos="fade-left" data-aos-duration="400" data-aos-delay="50" class="aos-init aos-animate">{!! __('Latest News') !!}</h2>
                 <ul class="" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                     @php
-                $postsLatest =get_featured_posts_by_category(22, 3);
-                
+                    // dd($category->id);
+                     $postsLatest = get_latest_posts_noncategory([
+                    theme_option('default_category_news'),
+                    theme_option('default_category_newspaper')],3)
+            
                     @endphp
                     @if (!empty( $postsLatest))
                     @foreach ( $postsLatest as $post) 

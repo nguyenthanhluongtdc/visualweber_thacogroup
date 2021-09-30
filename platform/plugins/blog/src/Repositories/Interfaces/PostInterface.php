@@ -27,6 +27,7 @@ interface PostInterface extends RepositoryInterface
      * @return mixed
      */
     public function getListPostNonInList(array $selected = [], $limit = 7, array $with = []);
+    public function getPostNonInCategory($categoryId, $limit = 3, array $with = []);
 
     /**
      * @param int|array $categoryId

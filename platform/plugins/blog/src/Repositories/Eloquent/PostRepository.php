@@ -36,13 +36,35 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
     {
         $data = $this->model
             ->where('status', BaseStatusEnum::PUBLISHED)
-            ->whereNotIn('id', $selected)
+            ->whereIn('id', $selected)
             ->limit($limit)
             ->with($with)
             ->orderBy('created_at', 'desc');
 
         return $this->applyBeforeExecuteQuery($data)->get();
     }
+    public function getPostNonInCategory($categoryId, $limit = 3, array $with = [])
+    {
+        if (!is_array($categoryId)) {
+            $categoryId = [$categoryId];
+        }
+
+        $data = $this->model
+            ->whereStatus(BaseStatusEnum::PUBLISHED)
+            ->whereHas('categories', function ($q) use ($categoryId) {
+                $q->whereNotIn('categories.id', $categoryId);
+            })
+            ->select('posts.*')
+            ->limit($limit)
+            ->with(array_merge(['slugable'], $with))
+            ->orderBy('posts.is_featured', 'desc')
+           
+            ->orderBy('posts.created_at', 'desc');
+
+        return $this->applyBeforeExecuteQuery($data)->get();
+    }
+    
+
 
     /**
      * {@inheritDoc}
