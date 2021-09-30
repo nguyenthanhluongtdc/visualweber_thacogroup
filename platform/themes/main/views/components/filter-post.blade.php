@@ -1,4 +1,4 @@
-<div class="filter-search-media field mt-40">
+<div class="filter-search-media field">
     <form action="{{$category->url}}/search/media" class="form-search">
         <div class="search">
             <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="{{Request::get('keyword')}}" name="keyword">

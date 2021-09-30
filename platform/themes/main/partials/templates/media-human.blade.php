@@ -121,7 +121,9 @@
             </form>
 
         </div> --}}
-        @includeIf("theme.main::views.components.filter-post")
+        <div class="human-filter mt-40">
+            @includeIf("theme.main::views.components.filter-post")
+        </div>  
         <div class="list-media_wrapper" id="scroll-list-news">
             <div class="list-media mt-40">
                 @if (!empty($posts))
