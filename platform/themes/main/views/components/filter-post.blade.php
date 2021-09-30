@@ -15,12 +15,12 @@
             <option value="2017">2017</option>
             <option value="2016">2016</option>
         </select>
-        {{-- <select class="select-by-field font18" id="" name="field-activity">
+        <select class="select-by-field font18" id="" name="field-activity">
             <option value="">Ô tô - Cơ Khí</option>
             <option value="">Nông nghiệp</option>
             <option value="">Thương mại - dịch vụ</option>
             <option value="">Đầu tư xây dựng</option>
             <option value="">Logistics</option>
-        </select> --}}
+        </select>
     </form>
 </div>
