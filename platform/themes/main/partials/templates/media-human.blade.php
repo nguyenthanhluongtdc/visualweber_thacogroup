@@ -96,7 +96,7 @@
 
 
         </div>
-        <div class="filter-search-media field mt-40 human">
+        {{-- <div class="filter-search-media field mt-40 human">
             <form action="" class="form-search">
                 <div class="search">
                     <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm"
@@ -120,7 +120,8 @@
                 </select>
             </form>
 
-        </div>
+        </div> --}}
+        @includeIf("theme.main::views.components.filter-post")
         <div class="list-media_wrapper" id="scroll-list-news">
             <div class="list-media mt-40">
                 @if (!empty($posts))

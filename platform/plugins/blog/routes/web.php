@@ -85,4 +85,10 @@ Route::group(['namespace' => 'Platform\Blog\Http\Controllers', 'middleware' => [
             'uses'  => 'PublicController@zipDownload',
         ]);
     });
+    Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
+        Route::get('{slug}/search/media', 'PublicController@getSearchMedia')
+        ->name('public.search-post-media');
+
+    });
+
 });

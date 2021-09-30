@@ -93,30 +93,7 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
-        <div class="filter-search-media field mt-40">
-            <form action="" class="form-search">
-                <div class="search">
-                    <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value=""
-                        name="q">
-                    <button class="btn btn-secondary" type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-                <select class="select-year font18" id="">
-                    <option value="">2019</option>
-                    <option value="">2018</option>
-                    <option value="">2017</option>
-                    <option value="">2016</option>
-                </select>
-                <select class="select-by-field font18" id="">
-                    <option value="">Ô tô - Cơ Khí</option>
-                    <option value="">Nông nghiệp</option>
-                    <option value="">Thương mại - dịch vụ</option>
-                    <option value="">Đầu tư xây dựng</option>
-                    <option value="">Logistics</option>
-                </select>
-            </form>
-        </div>
+        @includeIf("theme.main::views.components.filter-post")
         <div class="list-media_wrapper" id="scroll-list-news">
             <div class="list-media mt-40">
                 @if (!empty($posts))

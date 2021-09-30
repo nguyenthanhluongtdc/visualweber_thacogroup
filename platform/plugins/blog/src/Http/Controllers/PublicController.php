@@ -6,6 +6,7 @@ use Platform\Blog\Models\Category;
 use Platform\Blog\Models\Post;
 use Platform\Blog\Models\Tag;
 use Platform\Blog\Repositories\Interfaces\PostInterface;
+use Platform\Blog\Repositories\Interfaces\CategoryInterface;
 use Platform\Blog\Services\BlogService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -27,23 +28,74 @@ class PublicController extends Controller
      * @param Request $request
      * @param PostInterface $postRepository
      * @return Response
+     * 
      */
-    public function getSearch(Request $request, PostInterface $postRepository)
-    {
-        $query = $request->input('q');
+    protected $postRepository;
+    public function __construct(
+        PostInterface $postRepository
 
-        $title = __('Search result for: ":query"', compact('query'));
-        SeoHelper::setTitle($title)
-            ->setDescription($title);
+    ) {
+        $this->postRepository = $postRepository;
+    }
+    // public function getSearch(Request $request, PostInterface $postRepository)
+    // {
+    //     $query = $request->input('q');
 
-        $posts = $postRepository->getSearch($query, 0, 12);
+    //     $title = __('Search result for: ":query"', compact('query'));
+    //     SeoHelper::setTitle($title)
+    //         ->setDescription($title);
 
-        Theme::breadcrumb()
-            ->add(__('Home'), route('public.index'))
-            ->add($title, route('public.search'));
+    //     $posts = $postRepository->getSearch($query, 0, 12);
 
-        return Theme::scope('search', compact('posts'))
-            ->render();
+    //     Theme::breadcrumb()
+    //         ->add(__('Home'), route('public.index'))
+    //         ->add($title, route('public.search'));
+
+    //     return Theme::scope('search', compact('posts'))
+    //         ->render();
+    // }
+    public function getSearchMedia($key, Request $request) {
+        $keyword = $request->input('keyword');
+     
+        $slug = SlugHelper::getSlug($key);
+        if(!$slug) {
+            abort(404);
+        }
+        $categoryId = $slug->reference_id;
+
+        $category = app(CategoryInterface::class)
+        ->getFirstBy(['id'=>$categoryId], ['*'], ['slugable']);
+        if ($category->slug!=null && $category->slug !== $slug->key) {
+            $params = [];
+            foreach($request->query() as $key => $value) {
+                $params[] = $key.'='.$value;
+            }
+
+            $params = !empty($params)?'/search?'.implode('&', $params):'';
+
+            return redirect()->to(route('public.single', $category->slug . $params));
+        }
+
+        $posts = $this->postRepository->getModel()
+        ->whereHas('categories', function ($model) use ($categoryId, $keyword) {
+            $model
+                ->where('categories.id', $categoryId)
+                ->where('posts.name','like', '%'. $keyword .'%');
+        });
+
+        if($request->input('year') && filter_var($request->input('year'), FILTER_VALIDATE_INT)) {
+            $posts
+            ->whereYear('posts.created_at', intval($request->input('year')))
+            ->orderBy('created_at', 'desc');
+        } 
+        $posts = $this->postRepository->applyBeforeExecuteQuery($posts)->paginate(theme_option('number_post_media'));
+
+        $view = 'media-category';
+        if($view) {
+            return Theme::scope($view, compact('posts','category'))->render();
+        }
+
+        abort(404);
     }
 
     /**

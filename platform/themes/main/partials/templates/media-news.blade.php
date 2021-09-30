@@ -1,6 +1,6 @@
 
 @includeIf("theme.main::views.breadcrumb")
-<div class="filter-search-media mb-40 field">
+{{-- <div class="filter-search-media mb-40 field">
     <form action="" class="form-search ">
         <div class="search">
             <input type="text" class=" form-control form-control-sm " placeholder="Nhập nội dung cần tìm" value="" name="q">
@@ -23,7 +23,8 @@
         </select>
         
     </form> 
-</div>
+</div> --}}
+@includeIf("theme.main::views.components.filter-post")
 <div class="shareholder-infomation_left">
     <div class="list-info">  
     
