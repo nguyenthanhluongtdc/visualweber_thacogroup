@@ -28,7 +28,7 @@
                     @if (has_field($page, 'vision_block'))
                         @forelse (has_field($page, 'vision_block') as $key => $item)
                             <div class="col-sm-4 pl-0 pr-0" >
-                                <div class="future-goal p-lr-90 {{$loop->last ? 'last' :''}}" data-aos="fade-up" data-aos-duration="700"
+                                <div class="future-goal p-lr-90  {{$loop->last ? 'last' :''}}" data-aos="fade-up" data-aos-duration="700"
                                     data-aos-delay="{{ 50 + $key * 100 }}" class="aos-init aos-animate">
                                     <img src="{{ get_image_url(has_sub_field($item, 'logo')) }}"
                                         alt="{{ has_sub_field($item, 'title') }}">
@@ -52,7 +52,7 @@
 
     <div class="container-customize">
         <div class="field-activity-intro-wrapper">
-            <div class="desc-field pt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50"
+            <div class="desc-field mt-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50"
                 class="aos-init aos-animate">
                 <p class="desc-cotent font18 text-justify">
                     {!! has_field($page, 'about_us_field_description') !!}

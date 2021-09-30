@@ -187,8 +187,13 @@
                     }
                 }
             }
+            
             .list-media {
-                border-top: 1px solid #707070;
+                
+                .media-item:last-child{
+                    border: unset;
+                }
+               
                 .media-item {
                     padding: 30px 0;
                     border-bottom: 1px solid #707070;
@@ -216,6 +221,7 @@
                                 }
                             }
                         }
+                        
                         .content {
                             margin-left: 7%;
                             width: 56%;

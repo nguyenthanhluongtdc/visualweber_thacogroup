@@ -1,7 +1,7 @@
 
 @includeIf("theme.main::views.components.breadcrumb")
 @if($category)
-<h2 class="title-mobile text-uppercase mb-4 font30"> {!! $category->name !!} </h2>
+<h2 class="title-mobile text-uppercase mb-3 font50"> {!! $category->name !!} </h2>
 @endif
 @includeIf('theme.main::views.components.filter-qhcd')
 <div class="list-info">  

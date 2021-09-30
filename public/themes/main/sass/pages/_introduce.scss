@@ -78,6 +78,9 @@
 .field-activity-intro-wrapper {
     .desc-field {
         padding-bottom: 40px;
+        @media only screen and (max-width: 420px) {
+            padding-bottom: 0;
+        }
         .desc-cotent {
             margin: 0;
             text-align: center;
@@ -849,10 +852,17 @@
             .modal-body {
                 .mCSB_scrollTools .mCSB_draggerContainer {
                     width: 4px;
-                    background: gray;
+                    background: rgba(184, 184, 184, 0.438); 
+                    border-radius: 5px;
+                    @media only screen and (max-width: 600px) {
+                        width: 10px;
+                    }
                 }
                 .mCS-dark.mCSB_scrollTools .mCSB_draggerRail {
-                    background: #fff;
+                    background: rgba(107, 107, 107, 0.521);
+                    @media only screen and (max-width: 600px) {
+                        width: 10px;
+                    }
                 }
                 .mCS-dark.mCSB_scrollTools .mCSB_dragger_bar {
                     background: #fff;

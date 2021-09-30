@@ -5,9 +5,9 @@
 </section>
 <section class="contact-content">
     <div class="contact-wrapper">
-        <div class="contact-title  mt-60 mb-60" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
+        <div class="contact-title  mt-40 mb-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             @if(has_field($page, 'banner_contact'))
-            <h1 class="font40 title text-uppercase"> {!! has_field($page,'contact_title') !!}  </h1> 
+            <h1 class="font50 title text-uppercase"> {!! has_field($page,'contact_title') !!}  </h1> 
             @endif
         </div>
         <div class="contact-box  mt-60 mb-60" id="support-tab">

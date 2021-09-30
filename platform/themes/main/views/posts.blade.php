@@ -126,7 +126,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                                 </form>
                     </div>
                     <div class="list-media_wrapper" id="#scroll-list-news">
-                        <div class="list-media mt-60">
+                        <div class="list-media mt-40">
                             @if (!empty($posts))
                             @foreach ($posts as $post) 
                                <div class="media-item ">

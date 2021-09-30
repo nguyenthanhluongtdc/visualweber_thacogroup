@@ -36,7 +36,7 @@
     </div>
 </div>
 @if(has_field($page , 'show_hide_company'))
-    <div class="partner-wrapper {{get_field($page, 'show_hide_company') == 'hide_company' ? 'd-none':''}}"  style="background-image:url({{ has_field($page , 'image_bg_company') ? get_object_image(get_field($page , 'image_bg_company')) :''}})">
+    <div class="partner-wrapper mt-40 {{get_field($page, 'show_hide_company') == 'hide_company' ? 'd-none':''}}"  style="background-image:url({{ has_field($page , 'image_bg_company') ? get_object_image(get_field($page , 'image_bg_company')) :''}})">
         <h3 class="title__company font40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate"> {{has_field($page, 'tieu_de') ? get_field($page, 'tieu_de') : ''}}</h3>
         <div class="partner-banner parallax-window" data-parallax="scroll">
             <div class="container-customize logo-partner"> 

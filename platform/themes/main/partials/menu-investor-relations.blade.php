@@ -21,15 +21,15 @@
 
 <script>
    
-   if (screen.width > 1080) {
-    let scroll = "{{$check}}";
-    if (scroll) {
-        let position = $('.relationship-sibar').position();
-        $('html, body').animate({
-            scrollTop: position.top - 100
-        }, 1000);
+//    if (screen.width > 1080) {
+//     let scroll = "{{$check}}";
+//     if (scroll) {
+//         let position = $('.relationship-sibar').position();
+//         $('html, body').animate({
+//             scrollTop: position.top - 100
+//         }, 1000);
 
-    }
-    }
+//     }
+//     }
    
 </script>

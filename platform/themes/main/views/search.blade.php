@@ -33,7 +33,7 @@
                         @endif
                     </p>
                 </div>
-                <div class="search-range pb-4 mt-5">
+                <div class="search-range pb-4 mt-3">
                    <div class="form-search">
                     {{-- <div class="search-cate">
                         <div class="box">
@@ -118,7 +118,7 @@
             </div>
             @if(!empty($posts))
                 @forelse($posts as $item)
-                    <div class="search-result row mb-md-4 mb-5" data-aos="fade-up" data-aos-duration="1000"
+                    <div class="search-result row mb-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000"
                         data-aos-easing="ease-in-out">
                         <div class="col-lg-3 col-md-5 result-img">
                             <a class="image h-100" href="{{$item->url}}" title="">

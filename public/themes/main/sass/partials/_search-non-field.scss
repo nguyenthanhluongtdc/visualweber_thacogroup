@@ -1,7 +1,10 @@
 .filter-search-media.non-field {
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    // margin-bottom: 20px;
+    // margin-top: 20px;
+    @media only screen and (max-width: 600px) {
+        margin-top: 0;
+    }
     .form-search {
         display: flex;
         .search {

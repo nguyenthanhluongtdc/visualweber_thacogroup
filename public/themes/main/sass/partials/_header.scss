@@ -298,9 +298,13 @@
     @media only screen and (max-width: 768px) {
         height: 11.5vw !important;
     }
-    @media only screen and (max-width: 600px) {
-        height: 11vw !important;
+    @media only screen and (max-width: 420px) {
+        height: 16vw !important;
     }
+    @media only screen and (max-width: 300px) {
+        height: 23vw !important;
+    }
+    
     @media only screen and (max-width: 1080px) {
         display: block;
         height: 8vw;
