@@ -67,8 +67,8 @@ class MainController extends PublicController
     }
     public function getView($key = null)
     {
-        SeoHelper::setTitle(theme_option('seo_title', 'ThacoAuto'))
-            ->setDescription(theme_option('seo_description', 'ThacoAuto'))
+        SeoHelper::setTitle(theme_option('seo_title', 'ThacoGroup'))
+            ->setDescription(theme_option('seo_description', 'ThacoGroup'))
             ->openGraph()
             ->setTitle(@theme_option('seo_title'))
             ->setSiteName(@theme_option('site_title'))
@@ -105,15 +105,6 @@ class MainController extends PublicController
 
         if (!empty($result) && is_array($result)) {
             $view = Arr::get($result, 'data.page')->template??Arr::get($result, 'view', '');
-            // if ($view == 'post' || $view == 'page') {
-            //     Theme::asset()->usePath()->add('reset_css', 'css/non-reset.css');
-            // }
-            // if (request('select_category') && Arr::get($result, 'default_view', '') == 'plugins/blog::themes.category') {
-            //     return redirect()->route('public.single', array_merge(
-            //         request()->except('select_category'),
-            //         ['slug' => request('select_category')]
-            //     ));
-            // }
             return Theme::scope($view, $result['data'], Arr::get($result, 'default_view'))->render();
         }
         abort(404);
@@ -138,7 +129,6 @@ class MainController extends PublicController
         return Theme::scope('search', compact('posts' ,'count'))->render();
     }
     public function getMedia(Request $request){
-        // try {
             $categoryId =  $request->categoryId;
             $allRequest = $request->toArray();
 
@@ -198,9 +188,6 @@ class MainController extends PublicController
                $data,
                 200
             );
-        // } catch (\Throwable $th) {
-           
-        // }
     }
 
     
