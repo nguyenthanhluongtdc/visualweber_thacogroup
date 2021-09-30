@@ -1,178 +1,4 @@
-@if(in_array($post->format_type, ['gallery', 'video']))
-{{-- {!!render_media_gallery($post)!!} --}}
-<div id="album_modal">
-    <div class="custom-fancybox-dialog">
-        <div class="custom-fancybox-content">
-            <div class="custom-fancybox-header">
-                <div class="title_modal">
-                    <h3 class="name font28">
-                        {!! $post->name !!}
-                    </h3>
-                </div>
-            </div>
 
-            <div class="custom-fancybox-body mCustomScrollbar p-0" data-mcs-theme="dark">
-                <div class="list-album">
-                    @if (!empty($galleries = gallery_meta_data($post)))
-                        @foreach($galleries as $item)
-                            <div class="album-item">
-                                <a data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#album_modal-detail">
-                                    <img src="{{ get_image_url(Arr::get($item, 'img')) }}" alt="image">
-                                    <div class="album-item__download">
-                                        <a download href="{{ get_image_url(Arr::get($item, 'img')) }}">
-                                            <i class="fas fa-download text-white"></i>
-                                        </a>
-                                    </div>
-                                </a>
-                            </div>
-                        @endforeach
-                    @endif
-                    {{-- <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
-                        <img src="{{ Theme::asset()->url('images/media/2-detail.jpg') }}" alt="">
-
-                        <div class="album-item__download">
-                            <i class="fas fa-download"></i>
-                        </div>
-                    </div>--}}
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        $(".custom-fancybox-body").mCustomScrollbar({
-           theme:"dark",
-       });
-   </script>
-</div>
-
-<div id="album_modal-detail">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content-custom">
-            <div class="slide-content">
-                <div class="swiper-container gallery-top">
-                    <div class="title_modal">
-                        <h3 class="name font28">
-                            {!! $post->name !!}
-                        </h3>
-                    </div>
-                    <div class="swiper-wrapper">
-                        @if (!empty($galleries = gallery_meta_data($post)))
-                            @foreach($galleries as $item)
-                                <div class="swiper-slide">
-                                    <div class="img-wrapper">
-                                        <img src="{{ get_image_url(Arr::get($item, 'img')) }}" alt="{{Arr::get($item, 'description')}}">
-                                        <div class="album-item__download">
-                                            <a download href="{{ get_image_url(Arr::get($item, 'img')) }}">
-                                                <i class="fas fa-download text-white"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <p class="">{{Arr::get($item, 'description')}}</p>
-                                </div>
-                            @endforeach
-                        @endif
-                    </div>
-                    <div class="swiper-scrollbar"></div>
-                    <div class="swiper-button-next">  </div>
-                    <div class="swiper-button-prev"> </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        var gallery_top = new Swiper(".gallery-top", {
-        slidesPerView: 1,
-        speed: 400,
-        scrollbar: {
-            el: ".swiper-scrollbar",
-
-        },
-        navigation: {
-            nextEl: '.gallery-top .swiper-button-next',
-            prevEl: '.gallery-top .swiper-button-prev',
-        },
-
-        });
-    </script>
-</div>
-
-<div id="video_modal">
-    <div class="custom-fancybox-dialog">
-        <div class="custom-fancybox-content">
-            <div class="custom-fancybox-header">
-                <div class="title_modal">
-                    <h3 class="name font28">
-                        {!! $post->name !!}
-                    </h3>
-                </div>
-            </div>
-
-            <div class="custom-fancybox-body mCustomScrollbar p-0" data-mcs-theme="dark">
-                <div class="list-album">
-                    @if (!empty($galleries = gallery_meta_data($post)))
-                        @foreach($galleries as $item)
-                            <div class="album-item">
-                                <a data-fancybox data-type="ajax" data-src="{{$post->url}}" data-filter="#video_modal-detail">
-                                    <img src="{{ get_image_url(Arr::get($item, 'img')) }}" alt="image">
-                                    <div class="album-item__download">
-                                        <i class="fas fa-download"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        @endforeach
-                    @endif
-                    {{-- <div class="album-item" data-target="#album_modal-detail" data-toggle="modal">
-                        <img src="{{ Theme::asset()->url('images/media/2-detail.jpg') }}" alt="">
-
-                        <div class="album-item__download">
-                            <i class="fas fa-download"></i>
-                        </div>
-                    </div>--}}
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        $(".custom-fancybox-body").mCustomScrollbar({
-           theme:"dark",
-       });
-   </script>
-</div>
-
-
-
-<div id="video_modal-detail" tabindex="-1" role="dialog" aria-labelledby="info_admin_modallLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        
-        <div class="modal-content-custom">
-            <div class="slide-content">
-                <div class="swiper-container gallery-top">
-                    {{-- <div class="title_modal">
-                        <h3 class="name font28">
-                            {!! $post->name !!}
-                        </h3>
-                    </div> --}}
-                    <div class="slide-content">
-                        <div class="title_modal">
-                            <h3 class="name font28">{!! $post->name !!}
-                            </h3>
-                        </div>
-                        <div class="video-wrapper">
-                            <video muted loop  autoplay class="__video w-100">
-                                <source src="{{ Theme::asset()->url('images/video/chuc-mung-nam-moi.mp4') }}" type="video/mp4">
-                            </video> 
-                            <div class="video-download">
-                                <i class="fas fa-download"></i>
-                            </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-@else
 <section class="banner-post-detail">
     @if(theme_option('image_banner'))
     <img class=" h-auto img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
@@ -180,7 +6,6 @@
 </section>
 <div class="bg-gray">
     <div class="container-customize">
-
         <ol class="breadcrumb">
             @foreach ($crumbs = Theme::breadcrumb()->getCrumbs() as $i => $crumb)
                 @if ($i != (count($crumbs) - 1))
@@ -198,9 +23,6 @@
         </ol>
     </div>
 </div>
-
-
-  
 </div>
 
 <div class="post-detail-wrapper">
@@ -282,7 +104,6 @@
         </div>
     </div>
 </div>
-@endif
 
 <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
 <script type="IN/Share" data-url="{{$post->url}}"></script>
