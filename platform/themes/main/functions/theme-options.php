@@ -649,7 +649,29 @@ app()->booted(function () {
                             'class' => 'form-control'
                         ], // Optional
                     ],
+                ])
+                ->setSection([ // Set section with no field
+                    'title' => __('Config default'),
+                    'desc' => __('Config defaults'),
+                    'id' => 'opt-text-subsection-config',
+                    'subsection' => true,
+                    'icon' => 'fa fa-wrench',
+                ])
+                ->setField([
+                    'id' => 'default_category_image_video',
+                    'section_id' => 'opt-text-subsection-config',
+                    'type' => 'select', // select or customSelect
+                    'label' => __('Loại video hình ảnh mặc định'),
+                    'attributes' => [
+                        'name' => 'default_category_image_video',
+                        'data' => ["" => "Chọn loại"] + (is_plugin_active('blog') ? get_all_categories()->pluck('name', 'id')->toArray() ?? [] : []),
+                        'value' => null, // default value
+                        'options' => [
+                            'class' => 'form-control select-full-search',
+                        ],
+                    ],
                 ]);
+
     
     
 });

@@ -822,7 +822,14 @@ var Ajax = {
                                 prevEl: '.post-slide-bottom .swiper-button-prev',
                             },
                         })
-                    }else {
+                        if (screen.width < 1080) {
+                            // let position = $('.media_content-wrapper').position();
+                            // $('html, body').animate({
+                            //     scrollTop: position.top - 100
+                            // }, 1000);
+                            location.reload()
+                        }
+                    } else {
                         window.location = data.url
                     }
 
