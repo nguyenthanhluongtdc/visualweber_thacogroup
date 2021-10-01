@@ -498,6 +498,8 @@
                                             // @include split_str(2);
                                             text-transform: uppercase;
                                             height: 3.7vw;
+                                            @include split_str(2);
+                                            line-height: 1.1;
                                             @media only screen and (max-width: 1440px) {
                                                 height: 5.5vw;
                                             }
@@ -508,6 +510,7 @@
                                         .post_description {
                                             margin: 15px 20px;
                                             @include split_str(3);
+                                            line-height: 1.1;
                                         }
                                         .time {
                                             font-size: 15px;

@@ -28,7 +28,7 @@
                        
                     </div>
                     <p class=" mt-2">
-                        @if(isset($count))
+                        @if(isset($count)) 
                         {!!$count!!}
                         @endif
                     </p>
