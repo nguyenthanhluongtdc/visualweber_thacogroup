@@ -571,6 +571,46 @@ app()->booted(function () {
                     ],
                     'helper' => __('Enable popup in home page'),
                 ])
+
+                ->setField([
+                    'id'         => 'facebook_chat_enabled',
+                    'section_id' => 'opt-text-subsection-general',
+                    'type'       => 'select',
+                    'label'      => __('Enable Facebook chat?'),
+                    'attributes' => [
+                        'name'    => 'facebook_chat_enabled',
+                        'list'    => [
+                            'no'  => trans('core/base::base.no'),
+                            'yes' => trans('core/base::base.yes'),
+                        ],
+                        'value'   => 'no',
+                        'options' => [
+                            'class' => 'form-control',
+                        ],
+                    ],
+                    'helper'     => __(
+                        'To show chat box on that website, please go to :link and add :domain to whitelist domains!',
+                        [
+                            'domain' => Html::link(url('')),
+                            'link'   => Html::link('https://www.facebook.com/' . theme_option('facebook_page_id') . '/settings/?tab=messenger_platform'),
+                        ]
+                    ),
+
+                ])
+                ->setField([
+                    'id'         => 'facebook_page_id',
+                    'section_id' => 'opt-text-subsection-general',
+                    'type'       => 'text',
+                    'label'      => __('Facebook page ID'),
+                    'attributes' => [
+                        'name'    => 'facebook_page_id',
+                        'value'   => null,
+                        'options' => [
+                            'class' => 'form-control',
+                        ],
+                    ],
+                    'helper'     => __('You can get fan page ID using this site :link', ['link' => Html::link('https://findmyfbid.com')]),
+                ])
                 ->setSection([ // Set section with no field
                     'title' => __('Media-image'),
                     'desc' => __('Media-image'),
