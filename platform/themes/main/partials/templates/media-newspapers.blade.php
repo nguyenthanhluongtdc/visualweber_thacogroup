@@ -41,9 +41,11 @@
                 </div>
                 <div class="info-right">
                     <h3>
+                       @if(has_field($item, 'repeater_file_media'))
                         <a href="{{ count(has_field($item, 'repeater_file_media'))==1 ? get_object_image(has_sub_field(has_field($item, 'repeater_file_media')[0], 'file')) :''}}" class="font25 text-justify {{count(has_field($item, 'repeater_file_media'))>1 ? 'itemdown-show' : ''}} " target="_blank">
                             {!! $item->name !!}
                         </a>
+                        @endif
                       
                     </h3>
     
