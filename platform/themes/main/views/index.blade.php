@@ -14,17 +14,19 @@
                     </h1>
                     
                     <div class="description text-justify">
-                    <p class=" font18">
+                    <p class=" font18"> 
                        {{$post[0]->description}}
                     </p>
-                    
-                    </div> 
                     <div class="date">
                         <span class="text-light">{{$post[0]->created_at->format('d/m/Y')}}</span>
                     </div>
+                    </div> 
+                    
                    
 
-                    <a href="{{$post[0]->url}}" class="read-more" title="Xem thêm">{!!__('Xem thêm')!!}</a>
+                     <a href=" {{$post[0]->url}}" class="link">
+                        Xem thêm <span><i class="fas fa-arrow-right"></i></span>
+                    </a>
                 </div>
                 @endif 
                 

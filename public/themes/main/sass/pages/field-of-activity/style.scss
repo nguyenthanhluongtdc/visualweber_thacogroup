@@ -3,13 +3,25 @@
         position: relative;
         .post-banner{
             position: absolute;
-            bottom: 20%;
-            right: 10%;
-            width: 400px;
-            height: 400px;
-            background: rgba(161 , 161, 161 , 0.8); 
+            top: calc(20% + 98px);
+            left: 68%;
+            max-width: 420px;
+            height: 420px;
+            background-color: #0f4a7db8;
             padding: 40px;
             color: #fff;
+            @media screen and (max-width: 1680px) {
+                left: 65%;
+                height: 380px;
+            }
+            @media screen and (max-width: 1440px) {
+                left: 63%;
+                height: 350px;
+            }
+            @media screen and (max-width: 1280px) {
+                left: 57%;
+                max-width: 430px;
+            }
             h2{
                 font-size: 25px;
                 font-family: $MyriadPro-Bold;
@@ -203,10 +215,10 @@
                     @media only screen and (max-width: 1680px){ height: 23.5vw;}
                     @media only screen and (max-width: 1229px){height: 24vw;}
                     .content{
-                       
+                        
                         justify-content: center;
-                        padding: 50px 18%;
-                        @media only screen and (max-width: 1680px){padding:  40px 18%;}
+                        padding: 25% 18%;
+                        // @media only screen and (max-width: 1680px){padding:  40px 18%;}
                      
                         .symbol, .title, .text{
                             display: table;
@@ -288,6 +300,7 @@
                         width: 100%;
                         height: 100%;
                         padding: 50px 18%;
+                        
                         @media only screen and (max-width: 1680px){padding:  40px 18%;}
                         
                         .text{
@@ -360,10 +373,11 @@
                 text-align: center;
                 align-self: center;
                 letter-spacing: .1em;
-                background: rgba(rgb(0, 0, 0),.4);
+                background: rgba(0, 0, 0, 0.76);
                 color: white;
                 font-weight: bold;
                 font-family: $MyriadPro-Bold;
+                font-size: 12px;
                 @media only screen and (max-width: 1707px){padding-top: 30px;}
                 
                 @media only screen and (max-width: 1440px){padding-top: 26px;}
@@ -428,11 +442,12 @@
                 height: 23vw;
                 @media only screen and (max-width: 1680px){ height: 23.5vw;}
                 @media only screen and (max-width: 1229px){height: 24vw; }
+                
                 .content{
-               
+                    display: table;
                     justify-content: center;
-                    padding: 50px 18%;
-                        @media only screen and (max-width: 1680px){padding:  40px 18%;}
+                    padding: 25% 18%;
+                      
                     .symbol, .title, .text{
                         display: table;
                         margin: 0 auto;
@@ -714,7 +729,7 @@
     
     .box-node-right {
         position: fixed;
-        top: 45%;
+        top: 35%;
         right: 10px;
         z-index: 999;
     

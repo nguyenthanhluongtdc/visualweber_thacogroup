@@ -101,15 +101,20 @@
                                 .description {
                                     color: $white;
                                     margin-bottom: 30px;
-                                    @include split_str(5);
+                                   
+                                    p{
+                                        @include split_str(5);
+                                    }
+                                    
                                 }
                                 a {
                                     padding: 7px 21px;
                                     color: $white;
-                                    border: 1px solid #fff;
+                                    // border: 1px solid #fff;
                                     text-decoration: none;
                                     position: absolute;
                                     bottom: 5%;
+                                    right: 7%;
                                 }
                             }
                         }
@@ -507,7 +512,7 @@
                                             // }
                                         }
                                         .post_description {
-                                            margin: 15px 20px;
+                                            margin: 15px 20px; 
                                             @include split_str(3);
                                             line-height: 1.1;
                                         }

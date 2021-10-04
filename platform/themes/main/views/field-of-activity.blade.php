@@ -8,10 +8,15 @@
                     <h2 class="font24">
                         THILOGI thay đổi nhận diện thương hiệu trên các phương tiện vận chuyển
                     </h2>
-                    <p class="desc font18">
+                    <p class="desc font18 text-justify">
                         Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 
                         05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
                     </p>
+                    <div class="date">
+                        <span>
+                            10/04/2021
+                        </span>
+                    </div>
                     <a href="#" class="link">
                         Xem thêm <span><i class="fas fa-arrow-right"></i></span>
                     </a>
@@ -20,10 +25,10 @@
             <div class="swiper-slide item-slider-top">
                 <img src="{{Theme::asset()->url('images/lvhd/slider2.jpg') }}" alt="slide" class="img-slider  h-auto w-100">
                 <div class="post-banner">
-                    <h2 class="font24">
+                    <h2 class="font24 text-justify">
                         THILOGI thay đổi nhận diện thương hiệu trên các phương tiện vận chuyển
                     </h2>
-                    <p class="desc font18">
+                    <p class="desc font18 text-justify">
                         Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 
                         05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
                     </p>
@@ -41,7 +46,7 @@
       
             <div class="commercial-field__left">
                 <div class="left-top d-flex justify-content-center" >
-                    <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}">
+                    {{-- <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}"> --}}
                     <h3 class="text-uppercase ">LĨNH VỰC THƯƠNG MẠI & DỊCH VỤ</h3>
                 </div>
                 <p class="content mt-25 ">
@@ -126,12 +131,12 @@
             
         </div> --}}
         <div class="activity-content-detail-slide__detail-content">
-            <div class="swiper-container swiper-content-detail mb-40">
+            <div class="swiper-container swiper-content-detail mb-40" id="section_one">
                 
                 <div class="main-content">
                     <div class="content">
-                        <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
-                        <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                        {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
+                        <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
                         <h2 class="text-uppercase title mb-3 font40">
                             bán lẻ tiêu dùng
                         </h2>
@@ -206,7 +211,7 @@
 
 
     <div class="activity-detail-wrapper">
-        <div class="activity-detail mb-40 mt-40">
+        <div class="activity-detail mb-40 mt-40" id="section_two">
             <div class="activity-detail__left">
                 <div class="row item">
                     <div class="col content">
@@ -243,8 +248,8 @@
             </div>
             <div class="activity-detail__right">
                 <div class="content">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso2.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso2.png') }}" alt="slide" class="symbol">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
                     <h2 class="text-uppercase title mb-3 font40">
                         vui chơi giải trí
                     </h2>
@@ -255,7 +260,7 @@
             </div>
         </div>
 
-        <div class="activity-detail mb-40 mt-40">
+        <div class="activity-detail mb-40 mt-40" id="section_three">
             <div class="activity-detail__left">
                 <div class="row item">
                     <div class="col content">
@@ -292,8 +297,8 @@
             </div>
             <div class="activity-detail__right">
                 <div class="content">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso3.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso3.png') }}" alt="slide" class="symbol">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
                     <h2 class="text-uppercase title mb-3 font40">
                         ẩm thực
                     </h2>
@@ -304,7 +309,7 @@
             </div>
         </div>
 
-        <div class="activity-detail mb-40 mt-40">
+        <div class="activity-detail mb-40 mt-40" id="section_four">
             <div class="activity-detail__left">
                 <div class="row item">
                     <div class="col content">
@@ -332,8 +337,8 @@
             </div>
             <div class="activity-detail__right">
                 <div class="content">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso4.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso4.png') }}" alt="slide" class="symbol">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
                     <h2 class="text-uppercase title mb-3 font40">
                         trung tâm hội nghị - tiệc cưới
                     </h2>
@@ -346,7 +351,7 @@
 
 
 
-        <div class="activity-detail mb-40 mt-40">
+        <div class="activity-detail mb-40 mt-40" id="section_five">
             <div class="activity-detail__left">
                 <div class="row item">
                     <div class="col content">
@@ -364,8 +369,8 @@
             </div>
             <div class="activity-detail__right">
                 <div class="content">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso5.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
+                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso5.png') }}" alt="slide" class="symbol">
+                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
                     <h2 class="text-uppercase title mb-3 font40">
                         department store
                     </h2>
@@ -390,12 +395,12 @@
     <div class="activity-news mt-60 mb-60">
         <div class="activity-news__top container-customize mt-40 mb-40">
             <div class="title ">
-                <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}">
+                {{-- <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}"> --}}
                 <h2 class="text-uppercase font40">Tin tức</h2>
             </div>
     
-            <div class="readmore">
-                <a href="#">Xem thêm <Span>>></Span> </a>
+            <div class="readmore text-uppercase font-weight-bold">
+                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i> </a>
             </div>
         </div>
         
@@ -542,9 +547,9 @@
 <div class="field-of-activity-box" id="button-activity">
     <div class="box-node-right">
         <ul class="pagination-customize" >
-            <li class="pagi-item" >
-                <span class="text text-uppercase"> thiso </span>
-                <a href="#" title="" class="number click_scroll">
+            <li class="pagi-item " >
+                <span class="text text-uppercase"> bán lẻ tiêu dùng </span>
+                <a href="#section_one" title="" class="number click_scroll">
                     <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thilogi-logo.png') }}" alt="" class="icon">
 
                 </a>
@@ -552,33 +557,33 @@
 
             </li>
 
-            <li class="pagi-item" >
-                <span class="text text-uppercase"> thadico </span>
-                <a href="#" title="" class="number click_scroll">
+            <li class="pagi-item " >
+                <span class="text text-uppercase"> vui chơi giải trí </span>
+                <a href="#section_two" title="" class="number click_scroll">
                     <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thadico-logo.png') }}" alt="" class="icon">
                 </a>
                 
             </li>
 
-            <li class="pagi-item">
-                <span class="text text-uppercase"> thacoauto </span>
-                <a href="#" title="" class="number click_scroll">
+            <li class="pagi-item ">
+                <span class="text text-uppercase"> ẩm thực </span>
+                <a href="#section_three" title="" class="number click_scroll">
                     <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thacoauto-logo.png') }}" alt="" class="icon">
                 </a>
                 
             </li>
 
-            <li class="pagi-item">
-                <span class="text text-uppercase"> thagrico </span>
-                <a href="#" title="" class="number click_scroll">
+            <li class="pagi-item ">
+                <span class="text text-uppercase"> trung tâm hội nghị - tiệc cưới </span>
+                <a href="#section_four" title="" class="number click_scroll">
                     <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thagrico-logo.png') }}" alt="" class="icon">
                 </a>
                
             </li>
 
-            <li class="pagi-item">
-                <span class="text text-uppercase"> thiso </span>
-                <a href="#" title="" class="number click_scroll">
+            <li class="pagi-item ">
+                <span class="text text-uppercase"> department store </span>
+                <a href="#section_five" title="" class="number click_scroll">
                     <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thiso-logo.png') }}" alt="" class="icon">
                 </a>
               
@@ -587,3 +592,4 @@
         </ul>
     </div>
 </div>
+
