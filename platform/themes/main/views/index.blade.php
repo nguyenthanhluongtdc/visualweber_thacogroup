@@ -22,7 +22,7 @@
                         </div>
                     
 
-                        <a href="{{$post->url}}" class="read-more" title="Xem thêm">{!!__('Xem thêm')!!}</a>
+                        <a href="{{$post->url}}" class="read-more" title="Xem thêm">{!!__('Xem thêm')!!} <span><i class="fas fa-arrow-right"></i></span></a>
                     </div>
             </div> 
             @endif
