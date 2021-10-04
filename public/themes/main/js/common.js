@@ -346,7 +346,7 @@ if ($('#header').length > 0) {
         if (window.scrollY > 0) {
             header.addClass('add-bg-color')
             headerTop.addClass('add-bg-top')
-            headerTop.addClass('color-active')
+            
 
             logoblue.css('display', 'block')
             logowhite.css('display', 'none')
@@ -356,7 +356,7 @@ if ($('#header').length > 0) {
         } else {
             header.removeClass('add-bg-color')
             headerTop.removeClass('add-bg-top')
-            headerTop.removeClass('color-active')
+            
 
             logoblue.css('display', 'none')
             logowhite.css('display', 'block')

@@ -345,25 +345,29 @@ if ($('#header').length > 0) {
     var logowhite = $('.logo_link-white')
     var colorText = $('.nav-item .item__link,.item-top__link')
     var icontongger = $('.navbar-toggler')
+    var colorActive = $('.color-active')
 
     $(window).scroll(function() {
         if (window.scrollY > 0) {
             header.addClass('add-bg-color')
-
             headerTop.addClass('add-bg-top')
+           
 
             logoblue.css('display', 'block')
             logowhite.css('display', 'none')
             colorText.css('color', '#262626')
             icontongger.css('color', '#000')
+            colorActive.css('color', '#0F4685')
         } else {
             header.removeClass('add-bg-color')
             headerTop.removeClass('add-bg-top')
+           
 
             logoblue.css('display', 'none')
             logowhite.css('display', 'block')
             colorText.css('color', '#fff')
             icontongger.css('color', '#fff')
+            colorActive.css('color', '#fff')
         }
     })
 }
