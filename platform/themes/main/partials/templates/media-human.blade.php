@@ -8,7 +8,7 @@
                     @if (!empty($postSlider))
                         @foreach ($postSlider as $post)
                             <div class="swiper-slide">
-                                <div class="news__top">
+                                <div class="news__top"> 
                                     <div class="img-post">
                                         <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
                                     </div>
