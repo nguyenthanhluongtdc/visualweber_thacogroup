@@ -24,7 +24,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                                                                  
                                                                    <h3 class=" title font18">{!!__ ('BẢN TIN NỘI BỘ') !!}</h3>
                                                                    <a href="{{$post->url}}">  <h4 class="name font18 text-justify">{{$post->name}}</h4></a>
-                                                                   <span class="time"> {{date_format($post->created_at,"d-m-Y")}}</span>
+                                                                   <span class="time"> {{date_format($post->created_at,"d/m/Y")}}</span>
                                                                    <p class="description font18  text-justify">{{$post->description}}</p>
                                                                    <a href="{{$post->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
                                                                </div>
@@ -51,7 +51,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                                                                    <h4 class="post_name font18 text-justify">{{$post->name}}</h4>
                                                                    <p class="post_description font18">{{$post->description}}
                                                                    </p>
-                                                                   <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span>
+                                                                   <span class="time">{{date_format($post->created_at,"d/m/Y")}}</span>
                                                                </a>   
                                                            </div> 
                                                         </div>
@@ -137,7 +137,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                                            <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                <a href="{{$post->url}}"><h3 class="name font18">{{$post->name}}</h3></a>
                                              
-                                               <p class="time">{{date_format($post->created_at,"d-m-Y")}}</p>
+                                               <p class="time">{{date_format($post->created_at,"d/m/Y")}}</p>
                                                <p class="desc font18">{{$post->description}}</p>
                                            </div>
                                        </div>

@@ -136,7 +136,7 @@
                                 <p class=" desc my-3 font15">
                                     {!! $item->description??$item->name !!}
                                 </p>
-                                <p class=" date font15"> {{$item->created_at->format('d-m-Y')}} </p>
+                                <p class=" date font15"> {{$item->created_at->format('d/m/Y')}} </p>
                             </div>
                         </div>
                     </div>

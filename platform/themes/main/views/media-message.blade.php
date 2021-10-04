@@ -21,7 +21,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                                         <a href="{{$post->url}}">  
                                             <h4 class="name font18 text-justify">{{$post->name}}</h4>
                                         </a>
-                                        <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span> 
+                                        <span class="time">{{date_format($post->created_at,"d/m/Y")}}</span> 
                                         <p class="description font18  text-justify">{{$post->description}}</p>
                                         <a href="{{$post->url}}" class="read-more">{!!__('Xem thêm')!!}</a>
                                     </div>
@@ -44,7 +44,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                                             <div class="content"  data-aos="fade-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                                                 <a href="{{$post->url}}"><h3 class="name font18">{{$post->name}}</h3></a>
                                               
-                                                <p class="time">{{date_format($post->created_at,"d-m-Y")}}</p>
+                                                <p class="time">{{date_format($post->created_at,"d/m/Y")}}</p>
                                                 <p class="desc font18">{{$post->description}}</p>
                                             </div>
                                         </div>

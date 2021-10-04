@@ -20,7 +20,7 @@
                                         </a>
 
                                         <span
-                                            class="time">{{ date_format($item_post->created_at, 'd-m-Y') }}</span>
+                                            class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
                                         <p class="description font18 text-justify">{{ $item_post->description }}</p>
                                         <a href="{{ $item_post->url }}" class="read-more"
                                             title="{!! __('Xem thêm') !!}">{!! __('Xem thêm') !!}</a>
@@ -51,7 +51,7 @@
                                             <p class="post_description font18">{{ $post_bottom->description }}…
                                             </p>
                                             <span
-                                                class="time">{{ date_format($item_post->created_at, 'd-m-Y') }}</span>
+                                                class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
                                         </a>
                                     </div>
 

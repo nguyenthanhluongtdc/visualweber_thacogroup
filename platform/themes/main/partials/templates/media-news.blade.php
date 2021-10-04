@@ -39,9 +39,9 @@
                
             </div>
             <div class="report-item-right">
-                <span class="date">{{$item->created_at->format('d-m-Y')}}</span>
+                <span class="date">{{$item->created_at->format('d/m/Y')}}</span>
                 <a href="{{ has_field($item, 'repeater_file_media') ? get_object_image(has_sub_field(has_field($item, 'repeater_file_media')[0], 'file')) : '#'}}" target="_blank"><p class="name-file font18"> {!! $item->name !!} </p></a>
-                <span class="date-mobile">{{$item->created_at->format('d-m-Y')}}</span>
+                <span class="date-mobile">{{$item->created_at->format('d/m/Y')}}</span>
                 <div class="download">
                     <a download href="{{ has_field($item, 'repeater_file_media') ? get_object_image(has_sub_field(has_field($item, 'repeater_file_media')[0], 'file')) : '#'}}"
                         title="download">{!! __('DOWNLOAD') !!}</a>

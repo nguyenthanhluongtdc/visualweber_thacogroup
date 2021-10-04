@@ -29,7 +29,7 @@
                         </div>
                         <div class="title font18">
                             <a href="{{$post->url}}" class="text-justify">{{$post->name}}</a>
-                            <p class="time">{{date_format($post->created_at,"d-m-Y")}}</p>
+                            <p class="time">{{date_format($post->created_at,"d/m/Y")}}</p>
                         </div>
                     </div>
                     @endforeach

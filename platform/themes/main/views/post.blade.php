@@ -46,7 +46,7 @@
                 </div>
                 <div class="post-time-share">
                     <div class="left">
-                        <span class="">{{date_format($post->created_at,"d-m-Y")}} </span>
+                        <span class="">{{date_format($post->created_at,"d/m/Y")}} </span>
                     </div>
                     <div class="right"> 
   
@@ -94,7 +94,7 @@
                         <a href="{{ $relatedItem->url }}">
                             {{ $relatedItem->name }}
                         </a>
-                        <span class="time">{{date_format($post->created_at,"d-m-Y")}}</span>
+                        <span class="time">{{date_format($post->created_at,"d/m/Y")}}</span>
                     </li>
                     @endforeach
                    

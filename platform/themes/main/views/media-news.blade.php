@@ -42,11 +42,11 @@
                                         <img src="{{ get_object_image($post->image) }}" alt="report">
                                     </div>
                                     <div class="report-item-right">
-                                        <span class="date"> {{date_format($post->created_at,"d-m-Y")}}</span>
+                                        <span class="date"> {{date_format($post->created_at,"d/m/Y")}}</span>
                                         <a href="{{$post->url}}" class="text-dark">
                                             <p class="name-file font18 ">{{$post->name}}</p>
                                         </a>
-                                        <span class="date-mobile">{{date_format($post->created_at,"d-m-Y")}}</span>
+                                        <span class="date-mobile">{{date_format($post->created_at,"d/m/Y")}}</span>
                                         <div class="download">
                                             <a href="{{ get_object_url(get_field($post, 'newspapper_files')) }}" download  title="download" >DOWNLOAD</a>
                                         </div>      
