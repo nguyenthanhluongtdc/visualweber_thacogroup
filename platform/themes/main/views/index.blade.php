@@ -12,14 +12,22 @@
                     <h1 class="font24 title-post">
                     {{$post[0]->name}}
                     </h1>
+                    
                     <div class="description text-justify">
                     <p class=" font18">
                        {{$post[0]->description}}
-                        </p>
+                    </p>
+                    
                     </div> 
+                    <div class="date">
+                        <span class="text-light">{{$post[0]->created_at->format('d/m/Y')}}</span>
+                    </div>
+                   
+
                     <a href="{{$post[0]->url}}" class="read-more" title="Xem thêm">{!!__('Xem thêm')!!}</a>
                 </div>
-                @endif
+                @endif 
+                
             </div> 
             @endif
         </div>
