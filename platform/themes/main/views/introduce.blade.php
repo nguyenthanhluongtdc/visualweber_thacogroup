@@ -33,7 +33,7 @@
                                     <img src="{{ get_image_url(has_sub_field($item, 'logo')) }}"
                                         alt="{{ has_sub_field($item, 'title') }}">
                                     <h3 class="title font40">{{ has_sub_field($item, 'title') }}</h3>
-                                    <div class="desc font18">
+                                    <div class="desc font18 text-justify">
                                         {!! has_sub_field($item, 'description') !!}
                                     </div>
                                 </div>

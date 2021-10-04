@@ -11,13 +11,13 @@ $currentLanguage = Language::getCurrentLocale();
             {{$row->name}}
         </a>
     </li>
-    @endforeach
+    @endforeach 
     <li class="item-top ">
         <ul class="language">
             @foreach($supportedLocales as $name => $language)
             <li class="lang lang-vi text-uppercase ">
                 <a class="item-top__link" rel="alternate" hreflang="{{$name}}" href="{{$showRelated ? Language::getLocalizedURL($name) : url($name)}}">
-                    <span class="{{$name==$currentLanguage?'active':''}}"> {!! $name !!}</span>
+                    <span class="{{$name==$currentLanguage?'color-active':''}}"> {!! $name !!}</span>
                 </a>
             </li>
             @endforeach

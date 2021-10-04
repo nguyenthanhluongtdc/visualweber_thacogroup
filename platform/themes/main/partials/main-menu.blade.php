@@ -10,7 +10,7 @@
         @if (theme_option('logo'))
             <img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}">
         @endif
-    </a>
+    </a> 
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
@@ -27,7 +27,7 @@
                         <a href="{{ $child->url }}" title="{{$child->name}}" class="dropdown-item">
                             {!!$child->name!!}
                         </a>
-                    </div>
+                    </div> 
                     @endforeach
                 </div>
             </li>

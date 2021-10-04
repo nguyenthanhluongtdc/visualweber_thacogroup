@@ -72,6 +72,7 @@
                   </div>
                 @foreach($supportedLocales as $name => $language)
                 <li class="text-uppercase">
+                   
                     <a rel="alternate" hreflang="{{$name}}" href="{{$showRelated ? Language::getLocalizedURL($name) : url($name)}}">
                         <span class="{{$name==$currentLanguage?'active':''}}" >{{$name}}</span>
                     </a>

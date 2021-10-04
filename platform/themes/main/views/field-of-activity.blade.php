@@ -91,7 +91,7 @@
                     <div class="future-goal p-lr-90 {{$loop->last ? 'last' :''}}" data-aos="fade-up" data-aos-duration="700" data-aos-delay="{{50 + $key*100}}" class="aos-init aos-animate">
                         <img src="{{ get_image_url(has_sub_field($item, 'logo')) }}" alt="{{has_sub_field($item, 'title')}}">
                         <h3 class="title font40 text-light">{{has_sub_field($item, 'title')}}</h3>
-                        <div class="desc font18">
+                        <div class="desc font18  text-justify">
                             {!!has_sub_field($item, 'description')!!}
                         </div>
                     </div>

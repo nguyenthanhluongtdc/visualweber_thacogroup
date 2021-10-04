@@ -14,13 +14,14 @@
                                             alt="{{ $item_post->name }}">
                                     </div>
                                     <div class="news-post h-100">
-                                        <h3 class="font20 title">{!! __('BẢN TIN NỘI BỘ') !!}</h3>
+                                        @foreach ($item_post->tags as $tag)
+                                        <h3 class=" title font18">{{$tag->name}}</h3>
+                                        @endforeach
                                         <a href="{{ $item_post->url }}" title="{{ $item_post->name }}">
                                             <h4 class="name font20">{{ $item_post->name }}</h4>
                                         </a>
 
-                                        <span
-                                            class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
+                                        <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
                                         <p class="description font18 text-justify">{{ $item_post->description }}</p>
                                         <a href="{{ $item_post->url }}" class="read-more"
                                             title="{!! __('Xem thêm') !!}">{!! __('Xem thêm') !!}</a>
@@ -50,8 +51,7 @@
                                             <h4 class="post_name font20">{{ $post_bottom->name }}</h4>
                                             <p class="post_description font18">{{ $post_bottom->description }}…
                                             </p>
-                                            <span
-                                                class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
+                                            <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
                                         </a>
                                     </div>
 
