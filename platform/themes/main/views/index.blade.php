@@ -10,18 +10,15 @@
                         <h1 class="font24 title-post">
                         {{$post->name}}
                         </h1>
-                        
+                        <div class="date">
+                            <span class="text-light">{{$post->created_at->format('d/m/Y')}}</span>
+                        </div>
                         <div class="description text-justify">
                         <p class=" font18">
                         {{$post->description}}
                         </p>
                         
                         </div> 
-                        <div class="date">
-                            <span class="text-light">{{$post->created_at->format('d/m/Y')}}</span>
-                        </div>
-                    
-
                         <a href="{{$post->url}}" class="read-more" title="Xem thêm">{!!__('Xem thêm')!!} <span><i class="fas fa-arrow-right"></i></span></a>
                     </div>
             </div> 

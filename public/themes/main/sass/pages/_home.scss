@@ -82,7 +82,8 @@
                                 }
                                 .title-post {
                                     position: relative;
-                                    padding: 15px 0;
+                                    padding-top: 15px;
+                                    margin: 0;
                                     line-height: 1.5;
                                     text-transform: uppercase;
                                     &::before {
@@ -101,11 +102,9 @@
                                 .description {
                                     color: $white;
                                     margin-bottom: 30px;
-                                   
-                                    p{
+                                    p {
                                         @include split_str(5);
                                     }
-                                    
                                 }
                                 a {
                                     padding: 7px 21px;
@@ -512,13 +511,17 @@
                                             // }
                                         }
                                         .post_description {
-                                            margin: 15px 20px; 
+                                            margin: 10px 20px 20px 20px;
                                             @include split_str(3);
+                                            height: 58px;
                                             line-height: 1.1;
+                                            @media only screen and (max-width: 1680px) {
+                                                height: 52px;
+                                            }
                                         }
                                         .time {
                                             font-size: 15px;
-                                            padding-bottom: 20px;
+                                            padding-bottom: 0;
                                             margin-left: 20px;
                                             display: block;
                                         }

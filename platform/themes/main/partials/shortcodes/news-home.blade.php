@@ -40,8 +40,8 @@
                         @if ($post_home_bottom = get_featured_posts(6))
                             @foreach ($post_home_bottom as $post_bottom)
                                 <div class="swiper-slide d-flex justify-content-center">
-                                    <div class="post_content_bottom h-100">
-                                        <a class="post-wrapper" href="{{ $post_bottom->url }}"
+                                    <div class="post_content_bottom">
+                                        <a class="post-wrapper  h-100" href="{{ $post_bottom->url }}"
                                             title="{{ $post_bottom->name }}">
                                             <div class="post-thumbnail">
                                                 <img src="{{ RvMedia::getImageUrl($post_bottom->image, '', false, RvMedia::getDefaultImage()) }}"
@@ -49,9 +49,10 @@
                                             </div>
 
                                             <h4 class="post_name font20">{{ $post_bottom->name }}</h4>
+                                            <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
                                             <p class="post_description font18">{{ $post_bottom->description }}…
                                             </p>
-                                            <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
+                                        
                                         </a>
                                     </div>
 
@@ -100,8 +101,6 @@
                                     </div>
                                 </div>
                             </a>
-
-
                         </div>
                     @endforeach
                 @endif
