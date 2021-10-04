@@ -99,6 +99,10 @@ class PostForm extends FormAbstract
                 'label'      => trans('core/base::forms.image'),
                 'label_attr' => ['class' => 'control-label'],
             ])
+            ->add('image_banner', 'mediaImage', [
+                'label'      => trans('Ảnh banner slide - Trang chủ'),
+                'label_attr' => ['class' => 'control-label'],
+            ])
             ->add('tag', 'tags', [
                 'label'      => trans('plugins/blog::posts.form.tags'),
                 'label_attr' => ['class' => 'control-label'],

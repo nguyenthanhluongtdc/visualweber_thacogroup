@@ -1,40 +1,34 @@
 <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
     <div class="swiper-wrapper">
-        @if(has_field($page, 'main_slide_home'))
-        @foreach (get_field($page, 'main_slide_home') as $item)
+        @if ($posts = get_featured_posts(theme_option('number_post_banner'),[]))
+        @foreach ($posts as $post)
         <div class="swiper-slide">
-            <img src="{{ has_sub_field($item , 'image') ? get_object_image(get_sub_field($item , 'image')) :''}}" alt="slide" class="img-slider h-auto w-100">
+            <img src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}}" class="img-slider h-auto w-100">
             @if(has_field($page, 'show_hide')) 
             <div class="bg-post">
-               @if ($post = get_featured_posts(1,[]))
-              
-                <div class="content {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}} " data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
-                    <h1 class="font24 title-post">
-                    {{$post[0]->name}}
-                    </h1>
+                    <div class="content {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}} " data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
+                        <h1 class="font24 title-post">
+                        {{$post->name}}
+                        </h1>
+                        
+                        <div class="description text-justify">
+                        <p class=" font18">
+                        {{$post->description}}
+                        </p>
+                        
+                        </div> 
+                        <div class="date">
+                            <span class="text-light">{{$post->created_at->format('d/m/Y')}}</span>
+                        </div>
                     
-                    <div class="description text-justify">
-                    <p class=" font18"> 
-                       {{$post[0]->description}}
-                    </p>
-                    <div class="date">
-                        <span class="text-light">{{$post[0]->created_at->format('d/m/Y')}}</span>
-                    </div>
-                    </div> 
-                    
-                   
 
-                     <a href=" {{$post[0]->url}}" class="link">
-                        Xem thêm <span><i class="fas fa-arrow-right"></i></span>
-                    </a>
-                </div>
-                @endif 
-                
+                        <a href="{{$post->url}}" class="read-more" title="Xem thêm">{!!__('Xem thêm')!!}</a>
+                    </div>
             </div> 
             @endif
         </div>
         @endforeach
-        @endif   
+        @endif 
     </div>
     <div class="swiper-pagination"></div>
   

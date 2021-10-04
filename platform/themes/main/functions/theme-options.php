@@ -665,6 +665,19 @@ app()->booted(function () {
                     'icon' => 'fa fa-home',
                 ])
                 ->setField([
+                    'id' => 'number_post_banner',
+                    'section_id' => 'opt-text-subsection-blog',
+                    'type' => 'number',
+                    'label' => __('Số bài viết trên banner ở trang chủ'),
+                    'attributes' => [
+                        'name' => 'number_post_banner',
+                        'value' => 1,
+                        'options' => [
+                            'class' => 'form-control'
+                        ], // Optional
+                    ],
+                ])
+                ->setField([
                     'id' => 'number_post_qhcd',
                     'section_id' => 'opt-text-subsection-blog',
                     'type' => 'number',
