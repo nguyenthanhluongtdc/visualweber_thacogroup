@@ -45,9 +45,12 @@
     <div class="commercial-field container-customize mt-60 mb-60">
       
             <div class="commercial-field__left">
-                <div class="left-top d-flex justify-content-center" >
+                <div class="left-top d-flex justify-content-left" >
                     {{-- <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}"> --}}
-                    <h3 class="text-uppercase ">LĨNH VỰC THƯƠNG MẠI & DỊCH VỤ</h3>
+                    <h3 class="text-uppercase font20">LĨNH VỰC <br> <span class="text font40">THƯƠNG MẠI & DỊCH VỤ</span> </h3>
+                    
+                </div>
+                <div class="line">
                 </div>
                 <p class="content mt-25 ">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
