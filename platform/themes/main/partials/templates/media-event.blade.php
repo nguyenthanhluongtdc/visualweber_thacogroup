@@ -17,7 +17,7 @@
                                         <h3 class=" title font18">{{$tag->name}}</h3>
                                         @endforeach
                                         <a href="{{ $post->url }}">
-                                            <h4 class="name font18 text-justify">{{ $post->name }}</h4>
+                                            <h4 class="name font18 ">{{ $post->name }}</h4>
                                         </a>
                                         <span class="time">
                                             {{ date_format($post->created_at, 'd/m/Y') }}</span>
@@ -44,7 +44,7 @@
                                                 <img src="{{ get_object_image($post_bottom->image) }}" alt="">
                                             </div>
 
-                                            <h4 class="post_name font18 text-justify">{{ $post_bottom->name }}</h4>
+                                            <h4 class="post_name font18">{{ $post_bottom->name }}</h4>
                                             <p class="post_description font18">{{$post_bottom->description }}
                                             </p>
                                             <span

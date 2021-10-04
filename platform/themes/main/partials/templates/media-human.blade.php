@@ -18,11 +18,16 @@
                                         <h3 class=" title font18">{{$tag->name}}</h3>
                                         @endforeach
                                         <a href="{{ $post->url }}">
-                                            <h4 class="name font18 text-justify">{{ $post->name }}</h4>
+                                            <h4 class="name font18">{{ $post->name }}</h4>
                                         </a>
                                         <span class="time">
+<<<<<<< HEAD
                                             {{ date_format($post->created_at, 'd/m/Y') }}</span>
                                         <p class="description font18  text-justify">{{ $post->description }}</p>
+=======
+                                            {{ date_format($post->created_at, 'd-m-Y') }}</span>
+                                        <p class="description font18 text-justify">{{ $post->description }}</p>
+>>>>>>> f02a30e1e607ef175827721342360a2e41894804
                                         <a href="{{ $post->url }}" class="read-more">{!! __('Xem thêm') !!}</a>
                                     </div>
                                 </div>
@@ -45,7 +50,7 @@
                                                 <img src="{{ get_object_image($post->image) }}" alt="">
                                             </div>
 
-                                            <h4 class="post_name font18 text-justify">{{ $post->name }}</h4>
+                                            <h4 class="post_name font18">{{ $post->name }}</h4>
                                             <p class="post_description font18">{{ $post->description }}
                                             </p>
                                             <span
