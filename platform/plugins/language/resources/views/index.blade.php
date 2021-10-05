@@ -10,7 +10,7 @@
             </li>
             {!! apply_filters(BASE_FILTER_REGISTER_CONTENT_TABS, null, new \Platform\Language\Models\Language) !!}
         </ul>
-        <div class="tab-content">
+        <div class="tab-content"> 
             <div class="tab-pane active" id="tab_detail">
                 <div class="row">
                     <div class="col-md-5">

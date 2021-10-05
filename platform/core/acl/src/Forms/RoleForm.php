@@ -44,7 +44,7 @@ class RoleForm extends FormAbstract
                 'label'      => trans('core/base::forms.description'),
                 'label_attr' => ['class' => 'control-label required'],
                 'attr'       => [
-                    'rows'         => 4,
+                    'rows'         => 2,
                     'placeholder'  => trans('core/base::forms.description_placeholder'),
                     'data-counter' => 400,
                 ],
