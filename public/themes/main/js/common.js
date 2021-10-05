@@ -346,7 +346,7 @@ if ($('#header').length > 0) {
         if (window.scrollY > 0) {
             header.addClass('add-bg-color')
             headerTop.addClass('add-bg-top')
-            
+
 
             logoblue.css('display', 'block')
             logowhite.css('display', 'none')
@@ -356,7 +356,7 @@ if ($('#header').length > 0) {
         } else {
             header.removeClass('add-bg-color')
             headerTop.removeClass('add-bg-top')
-            
+
 
             logoblue.css('display', 'none')
             logowhite.css('display', 'block')
@@ -612,10 +612,10 @@ $(document).ready(function() {
         roundLengths: true,
         loop: true,
         loopAdditionalSlides: 30,
-        autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 1500,
+        //     disableOnInteraction: false,
+        // },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"
@@ -649,20 +649,31 @@ $(function() {
 
 //btn scroll activity
 if ($('#button-activity').length > 0) {
-    var btnTop = $('#button-activity')
+    var btnTop = $('#button-activity');
+    var element = $('.activity-news');
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
-            btnTop.addClass('show-button-activity')
-        } else {
-            btnTop.removeClass('show-button-activity')
+        // if ($(window).scrollTop() > 300) {
+        //     btnTop.addClass('show-button-activity')
+        // } else {
+        //     btnTop.removeClass('show-button-activity')
+        // }
+        if (element.length > 0) {
+            if ($(document).scrollTop() >= element.position().top) {
+                btnTop.addClass('d-none')
+
+            } else {
+                btnTop.removeClass('d-none')
+
+            };
         }
+
     })
 
 }
 
 $(document).ready(function() {
     var docEl = $(document),
-       
+
         linkScroll = $('.click_scroll');
 
     linkScroll.click(function(e) {
@@ -672,7 +683,7 @@ $(document).ready(function() {
             scrollTop: $top
         }, 700);
     });
-   
+
 });
 
 
