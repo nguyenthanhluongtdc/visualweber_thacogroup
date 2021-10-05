@@ -117,38 +117,27 @@
 
 
     <div class="activity-content-detail-slide mt-40 mb-40">
-        {{-- <div class="activity-content-detail-slide__main-content">
-            <div class="content">
-                <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
-                <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2">
-                <h2 class="text-uppercase title mb-3 ">
-                    bán lẻ tiêu dùng
-                </h2>
-                <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
-                </p>
-               
-            </div>
-            
-        </div> --}}
+        
         <div class="activity-content-detail-slide__detail-content">
             <div class="swiper-container swiper-content-detail mb-40" id="section_one">
                 
-                <div class="main-content">
+                <div class="main-content-left">
                     <div class="content">
                         {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
                         <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
                         <h2 class="text-uppercase title mb-3 font40">
                             bán lẻ tiêu dùng
+                           
                         </h2>
                         <p class="text font18">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab Lorem ipsum dolor sit amet.
                         </p>
-                       
+                        <span class="mouse"></span>
+                        <p class="text-pagi font18 text-uppercase">Trượt để khám phá</p>
                     </div>
                     
                 </div>
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper main-content-right">
                    
                     <div class="swiper-slide">
                         <div class="bg"></div>
@@ -193,7 +182,7 @@
                     </div>
                     
                 </div>
-                <div class="swiper-pagination"></div>
+                {{-- <div class="swiper-pagination"></div> --}}
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                
@@ -207,183 +196,6 @@
 
         
         
-    </div>
-
-
-
-    <div class="activity-detail-wrapper">
-        <div class="activity-detail mb-40 mt-40" id="section_two">
-            <div class="activity-detail__left">
-                <div class="row item">
-                    <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{Theme::asset()->url('images/lvhd/lv4.jpg') }}" alt="slide" class="">
-                        <h2 class="title text-uppercase text-light font40">rạp chiếu phim</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">rạp chiếu phim</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{Theme::asset()->url('images/lvhd/lv5.jpg') }}" alt="slide" class="">
-                        <h2 class="title text-uppercase text-light font40">kid theme park</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">kid theme park</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{Theme::asset()->url('images/lvhd/lv6.jpg') }}" alt="slide" class="">
-                        <h2 class="title text-uppercase text-light font40">kid cafe</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">kid cafe</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="activity-detail__right">
-                <div class="content">
-                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso2.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
-                    <h2 class="text-uppercase title mb-3 font40">
-                        vui chơi giải trí
-                    </h2>
-                    <p class="text font18">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="activity-detail mb-40 mt-40" id="section_three">
-            <div class="activity-detail__left">
-                <div class="row item">
-                    <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{Theme::asset()->url('images/lvhd/lv7.jpg') }}" alt="slide" class="">
-                        <h2 class="title text-uppercase text-light font40">ăn uống</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">ăn uống</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{Theme::asset()->url('images/lvhd/lv8.jpg') }}" alt="slide" class="">
-                        <h2 class="title text-uppercase text-light font40">nhà hàng</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">nhà hàng</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{Theme::asset()->url('images/lvhd/lv9.jpg') }}" alt="slide" class="">
-                        <h2 class="title text-uppercase text-light font40">cafe</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">cafe</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="activity-detail__right">
-                <div class="content">
-                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso3.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
-                    <h2 class="text-uppercase title mb-3 font40">
-                        ẩm thực
-                    </h2>
-                    <p class="text font18">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="activity-detail mb-40 mt-40" id="section_four">
-            <div class="activity-detail__left">
-                <div class="row item">
-                    <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{Theme::asset()->url('images/lvhd/lv10.jpg') }}" alt="slide" class="">
-                        <h2 class="title text-uppercase text-light font40">trung tâm hội nghị - tiệc cưới cao cấp</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">trung tâm hội nghị - tiệc cưới cao cấp</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{Theme::asset()->url('images/lvhd/lv11.jpg') }}" alt="slide" class="">
-                        <h2 class="title text-uppercase text-light font40">trung tâm hội nghị - tiệc cưới trung cấp</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">trung tâm hội nghị - tiệc cưới trung cấp</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-            <div class="activity-detail__right">
-                <div class="content">
-                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso4.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
-                    <h2 class="text-uppercase title mb-3 font40">
-                        trung tâm hội nghị - tiệc cưới
-                    </h2>
-                    <p class="text font18">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="activity-detail mb-40 mt-40" id="section_five">
-            <div class="activity-detail__left">
-                <div class="row item">
-                    <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{Theme::asset()->url('images/lvhd/lv12.jpg') }}" alt="slide" class="">
-                        <h2 class="title text-uppercase text-light font40">thời trang - mỹ phẩm cao cấp</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">thời trang - mỹ phẩm cao cấp</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus tenetur facilis vel voluptates, possimus nemo dolores architecto numquam non.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
-            <div class="activity-detail__right">
-                <div class="content">
-                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso5.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
-                    <h2 class="text-uppercase title mb-3 font40">
-                        department store
-                    </h2>
-                    <p class="text font18">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-
     </div>
 
 
@@ -554,7 +366,7 @@
 <div class="field-of-activity-box" id="button-activity">
     <div class="box-node-right">
         <ul class="pagination-customize" >
-            <li class="pagi-item " >
+            <li class="pagi-item one" >
                 <span class="text text-uppercase"> bán lẻ tiêu dùng </span>
                 <a href="#section_one" title="" class="number click_scroll">
                     <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thilogi-logo.png') }}" alt="" class="icon">
@@ -564,7 +376,7 @@
 
             </li>
 
-            <li class="pagi-item " >
+            <li class="pagi-item two" >
                 <span class="text text-uppercase"> vui chơi giải trí </span>
                 <a href="#section_two" title="" class="number click_scroll">
                     <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thadico-logo.png') }}" alt="" class="icon">
@@ -572,7 +384,7 @@
                 
             </li>
 
-            <li class="pagi-item ">
+            <li class="pagi-item three">
                 <span class="text text-uppercase"> ẩm thực </span>
                 <a href="#section_three" title="" class="number click_scroll">
                     <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thacoauto-logo.png') }}" alt="" class="icon">
@@ -580,7 +392,7 @@
                 
             </li>
 
-            <li class="pagi-item ">
+            <li class="pagi-item four">
                 <span class="text text-uppercase"> trung tâm hội nghị - tiệc cưới </span>
                 <a href="#section_four" title="" class="number click_scroll">
                     <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thagrico-logo.png') }}" alt="" class="icon">
@@ -588,7 +400,7 @@
                
             </li>
 
-            <li class="pagi-item ">
+            <li class="pagi-item five">
                 <span class="text text-uppercase"> department store </span>
                 <a href="#section_five" title="" class="number click_scroll">
                     <img loading="lazy" src="{{Theme::asset()->url('images/lvhd/thiso-logo.png') }}" alt="" class="icon">

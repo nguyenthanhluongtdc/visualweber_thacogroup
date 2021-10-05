@@ -58,7 +58,7 @@ return [
             $theme->asset()->add('fancybox', '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');
             $theme->asset()->add('select2', '//cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css');
             $theme->asset()->add('aos_style', '//unpkg.com/aos@2.3.1/dist/aos.css');
-            $theme->asset()->add('font-awesome-pro', '//pro.fontawesome.com/releases/v5.10.0/css/all.css');
+            $theme->asset()->add('font-awesome-pro', '//pro.fontawesome.com/releases/v5.11.0/css/all.css');
             $theme->asset()->add('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
             $theme->asset()->add('checkbox-custom', '//cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css');
             $theme->asset()->add('carousel', '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
