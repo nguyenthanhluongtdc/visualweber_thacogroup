@@ -12,7 +12,7 @@
                         Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO Tải thuộc THACO Chu Lai. 
                         05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng. 
                     </p>
-                    <div class="date">
+                    <div class="date mt-2">
                         <span>
                             10/04/2021
                         </span>
@@ -88,8 +88,6 @@
             </div>
 
     </div>
-
-
     <div class="future-goal-banner-activity mt-60 mb-60" style="background-image:url('{{ get_field($page, 'background_vision_block') ? get_image_url(get_field($page, 'background_vision_block')) : Theme::asset()->url('images/lvhd/banner.jpg') }}')">
         <div class="future-goal-wrapper container-customize">
             <div class="row mr-0 ml-0">
@@ -419,12 +417,13 @@
                             <div class="title text-uppercase font20">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </div>
+                            <div class="date mt-2">
+                                10/12/2021
+                            </div>
                             <div class="desc text-justify mt-2 font18">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
-                            <div class="date">
-                                10/12/2021
-                            </div>
+                            
                         </div>
                     </a>
                     
@@ -438,12 +437,13 @@
                             <div class="title text-uppercase">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </div>
+                            <div class="date mt-2">
+                                10/12/2021
+                            </div>
                             <div class="desc text-justify mt-2">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
-                            <div class="date">
-                                10/12/2021
-                            </div>
+                           
                         </div>
                     </a>
                     
@@ -457,12 +457,13 @@
                             <div class="title text-uppercase">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </div>
+                            <div class="date mt-2">
+                                10/12/2021
+                            </div>
                             <div class="desc text-justify mt-2">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
-                            <div class="date">
-                                10/12/2021
-                            </div>
+                            
                         </div>
                     </a>
                     
@@ -476,12 +477,13 @@
                             <div class="title text-uppercase">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </div>
+                            <div class="date mt-2">
+                                10/12/2021
+                            </div>
                             <div class="desc text-justify mt-2">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
-                            <div class="date">
-                                10/12/2021
-                            </div>
+                           
                         </div>
                     </a>
                     
@@ -495,12 +497,13 @@
                             <div class="title text-uppercase">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </div>
+                            <div class="date mt-2">
+                                10/12/2021
+                            </div>
                             <div class="desc text-justify mt-2">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
-                            <div class="date">
-                                10/12/2021
-                            </div>
+                           
                         </div>
                     </a>
                     
@@ -514,12 +517,13 @@
                             <div class="title text-uppercase font20">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </div>
+                            <div class="date mt-2">
+                                10/12/2021
+                            </div>  
                             <div class="desc text-justify mt-2 font18">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus cumque rerum deleniti assumenda quo est sapiente.
                             </div>
-                            <div class="date">
-                                10/12/2021
-                            </div>
+                           
                         </div>
                     </a>
                     
