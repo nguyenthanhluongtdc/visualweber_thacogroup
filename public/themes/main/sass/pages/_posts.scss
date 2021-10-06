@@ -124,6 +124,7 @@
                             margin-bottom: 8px;
                             overflow: hidden;
                             .post-wrapper {
+                                padding-bottom: 10px;
                                 &:hover {
                                     .post_name {
                                         color: $main_color;
@@ -168,7 +169,6 @@
                                 }
                                 .time {
                                     font-size: 15px;
-                                    padding-bottom: 10px;
                                     margin-left: 20px;
                                     display: block;
                                 }

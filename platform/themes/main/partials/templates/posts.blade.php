@@ -39,17 +39,16 @@
                     @if (!empty($postSlider))
                         @foreach ($postSlider as $post)
                             <div class="swiper-slide d-flex justify-content-center">
-                                <div class="post_content_bottom h-100">
-                                    <a class="post-wrapper" href=" {{ $post->url }}">
+                                <div class="post_content_bottom ">
+                                    <a class="post-wrapper h-100" href=" {{ $post->url }}">
                                         <div class="post-thumbnail">
                                             <img src="{{ get_object_image($post->image) }}" alt="{{ $post->name }}">
                                         </div>
 
                                         <h4 class="post_name font18">{{ $post->name }}</h4>
+                                        <span class="time">{{ date_format($post->created_at, 'd/m/Y') }}</span>
                                         <p class="post_description font18">{{ $post->description }}
                                         </p>
-                                        <span
-                                            class="time">{{ date_format($post->created_at, 'd/m/Y') }}</span>
                                     </a>
                                 </div>
                             </div>
