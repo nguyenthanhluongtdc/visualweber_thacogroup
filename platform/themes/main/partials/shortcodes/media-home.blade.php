@@ -16,7 +16,7 @@
                             @if (get_sub_field($value, 'type') == 'video')
 
                                 @if (has_sub_field($value, 'image'))
-
+ 
                                     <div class="video-wrapper">
                                         <video muted
                                             class="__video w-100 {{ has_sub_field($value, 'hien_thi_2_video') == '1_video' ? 'd-none' : '' }}">

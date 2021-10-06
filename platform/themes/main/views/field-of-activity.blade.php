@@ -9,17 +9,18 @@
                     <h2 class="font24">
                         THILOGI thay đổi nhận diện thương hiệu trên các phương tiện vận chuyển
                     </h2>
+                    <div class="date mt-2">
+                        <span>
+                            10/04/2021
+                        </span>
+                    </div>
                     <p class="desc font18 text-justify">
                         Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO
                         Tải thuộc THACO Chu Lai.
                         05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc
                         chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng.
                     </p>
-                    <div class="date mt-2">
-                        <span>
-                            10/04/2021
-                        </span>
-                    </div>
+                    
                     <a href="#" class="link">
                         Xem thêm <span><i class="fas fa-arrow-right"></i></span>
                     </a>
@@ -150,7 +151,7 @@
                         </h2>
                         <p class="text font18">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                            labore et dolore magna aliqua. 
                         </p>
                         <div class="control">
 

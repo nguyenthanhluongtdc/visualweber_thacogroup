@@ -7,7 +7,7 @@
             left: 68%;
             max-width: 420px;
             height: 420px;
-            background-color: #0f4a7db8;
+            background-color: #8d8c8cb8;
             padding: 40px;
             color: #fff;
             @media screen and (max-width: 1680px) {
@@ -23,7 +23,7 @@
                 max-width: 430px;
             }
             h2 {
-                font-size: 25px;
+                // font-size: 25px;
                 font-family: $MyriadPro-Bold;
                 text-transform: uppercase;
                 line-height: 1;
@@ -42,7 +42,7 @@
             }
             p {
                 font-family: $MyriadPro-Regular;
-                font-size: 16px;
+                // font-size: 16px;
                 @include split_str(5);
                 padding-top: 10px;
             }
