@@ -232,7 +232,7 @@
                         }
                         .text {
                             text-align: justify;
-                            line-height: 1.1;
+                            line-height: 22px;
                             height: 60%;
                             @media only screen and (max-width: 1365px) {
                                 font-size: 14px;
@@ -340,7 +340,7 @@
                         padding: 50px 10%;
                         .text {
                             text-align: justify;
-                            line-height: 1.1;
+                            line-height: 22px;
                             overflow-y: hidden;
                             overflow-x: hidden;
                             height: 60%;
@@ -505,7 +505,7 @@
                     }
                     .text {
                         text-align: justify;
-                        line-height: 1.1;
+                        line-height: 22px;
                         height: 40%;
                         @media only screen and (max-width: 1380px) {
                             font-size: 14px;
@@ -585,7 +585,7 @@
                             // }
                             .text {
                                 text-align: justify;
-                                line-height: 1.1;
+                                line-height: 22px;
                                 height: 40%;
                                
                                 @media only screen and (max-width: 1330px) {
@@ -599,7 +599,7 @@
                                 padding-top: 5%;
                                 font-weight: bolder;
                                 font-family: $MyriadPro-Bold;
-                                line-height: 1;
+                                line-height: 1.1;
                                 @media only screen and (max-width: 1380px) {
                                     font-size: 25px;
                                 }
