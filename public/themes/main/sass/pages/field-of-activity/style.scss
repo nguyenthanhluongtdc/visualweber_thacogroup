@@ -18,15 +18,18 @@
                 left: 63%;
                 height: 350px;
             }
-            @media screen and (max-width: 1280px) {
+            @media screen and (max-width: 1370px) {
                 left: 57%;
                 max-width: 430px;
+            }
+            @media screen and (max-width: 1220px) {
+                left: 52%;
             }
             h2 {
                 // font-size: 25px;
                 font-family: $MyriadPro-Bold;
                 text-transform: uppercase;
-                line-height: 1;
+                line-height: 22px;
                 padding-top: 20px;
                 position: relative;
                 @include split_str(4);
@@ -89,7 +92,7 @@
             .content {
                 padding: 0 12%;
                 text-align: justify;
-                line-height: 1.2;
+                line-height: 22px;
                 font-size: 18px;
                 @media only screen and (max-width: 1680px) {
                     font-size: 15px;
@@ -173,6 +176,7 @@
                 }
                 .desc {
                     font-family: $MyriadPro-Bold;
+                    line-height: 22px;
                     @media only screen and (max-width: 1320px) {
                         font-size: 12px !important;
                     }
@@ -227,7 +231,7 @@
                         }
                         .text {
                             text-align: justify;
-                            line-height: 1;
+                            line-height: 22px;
                             @media only screen and (max-width: 1365px) {
                                 font-size: 14px;
                             }
@@ -250,21 +254,18 @@
                                 content: "\f8cd";
                                 font-weight: lighter;
                                 font-family: "Font Awesome 5 Pro";
-                               
                             }
                             .mouse {
                                 font-size: 30px;
                                 color: #999999;
-                                
                             }
                             .text-pagi {
                                 margin: 0;
                                 color: #999999;
                                 font-weight: bold;
                                 line-height: 100%;
-                            }   
+                            }
                         }
-                        
                         .symbol-thiso {
                             width: 2.5vw;
                             display: table;
@@ -330,7 +331,7 @@
                         padding: 20% 10% 0 10%;
                         .text {
                             text-align: justify;
-                            line-height: 1.2;
+                            line-height: 22px;
                             @media only screen and (max-width: 1365px) {
                                 font-size: 14px;
                             }
@@ -349,6 +350,9 @@
                             bottom: 12%;
                             font-weight: bold;
                             font-family: $MyriadPro-Bold;
+                            span {
+                                margin-left: 10px;
+                            }
                         }
                     }
                     &:hover .title {
@@ -410,7 +414,7 @@
                     // @media only screen and (max-width: 1100px) {
                     //     left: 20%;
                     // }
-                    &:hover{
+                    &:hover {
                         transition: .5s ease-in-out;
                         transform: translateX(-20%);
                     }
@@ -426,7 +430,7 @@
                     // @media only screen and (max-width: 1320px) {
                     //     left: 27.2%;
                     // }
-                    &:hover{
+                    &:hover {
                         transition: .5s ease-in-out;
                         transform: translateX(20%);
                     }
@@ -489,7 +493,7 @@
                     }
                     .text {
                         text-align: justify;
-                        line-height: 1;
+                        line-height: 22px;
                         @media only screen and (max-width: 1380px) {
                             font-size: 14px;
                         }
@@ -563,11 +567,11 @@
                             }
                             // padding: 20% 10% 0;
                             @media only screen and (max-width: 1365px) {
-                                padding: 10% 10% 0;
+                                padding: 40px 10% 0;
                             }
                             .text {
                                 text-align: justify;
-                                line-height: 1.2;
+                                line-height: 22px;
                                 @media only screen and (max-width: 1330px) {
                                     font-size: 14px;
                                 }
@@ -589,6 +593,9 @@
                                 right: 20%;
                                 font-weight: bold;
                                 font-family: $MyriadPro-Bold;
+                                span {
+                                    margin-left: 10px;
+                                }
                             }
                         }
                         &:hover .title {
@@ -629,9 +636,7 @@
                     width: 100px;
                     background-color: #949090;
                 }
-               
             }
-            
             .readmore {
                 position: absolute;
                 right: 5%;
@@ -792,30 +797,21 @@
                 text-align: right;
                 display: flex;
                 justify-content: flex-end;
-                span{
-                   width: 0;
-                   transition: width 2s;
+                span {
+                    width: 0;
+                    transition: width 2s;
                 }
-               
                 &:hover {
-                    .text{
+                    .text {
                         transition: all 400ms;
-                        
                     }
-                    
-                    span{
-                        
-                       width: auto;
-                        
-                        
+                    span {
+                        width: auto;
                     }
-                   
                     border-radius: 30px;
-                    
                 }
                 .number {
                     // display: none;
-                   
                     width: 3.4vw;
                     height: 3.4vw;
                     background-color: #fff;
@@ -839,7 +835,6 @@
                             margin: 8px 10px 5px 4.5px;
                         }
                     }
-                   
                 }
                 .icon {
                     img {
@@ -868,7 +863,6 @@
                     text-transform: uppercase;
                     border-radius: 30px 0 0 30px;
                     opacity: 0;
-                    
                     background-color: transparent;
                 }
                 .icon {
