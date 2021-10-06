@@ -141,7 +141,7 @@
         <div class="activity-content-detail-slide__detail-content">
             <div class="swiper-container swiper-content-detail mb-40" >
 
-                <div class="main-content-left">
+                <div class="main-content-left ">
                     <div class="content">
                         {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
                         <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
@@ -151,8 +151,7 @@
                         </h2>
                         <p class="text font18">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. 
-                        </p>
+                            labore et dolore magna aliqua. </p>
                         <div class="control">
 
 
@@ -177,9 +176,11 @@
                         <h2 class="title text-uppercase text-light font40">đại siêu thị</h2>
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">đại siêu thị</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                                suspendisse ultrices gravida. </p>
+                                suspendisse ultrices gravida
+                                
+                                </p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
                                         class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -192,7 +193,7 @@
                         <h2 class="title text-uppercase text-light font40">siêu thị</h2>
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">siêu thị</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus
                                 et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
@@ -206,7 +207,7 @@
                         <h2 class="title text-uppercase text-light font40">cửa hàng tiện lợi</h2>
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">cửa hàng tiện lợi</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus
                                 et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
@@ -220,7 +221,7 @@
                         <h2 class="title text-uppercase text-light font40">đại siêu thị</h2>
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">đại siêu thị</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                 Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus
                                 et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
@@ -252,9 +253,10 @@
                             font40">rạp chiếu phim</h2>
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">rạp chiếu phim</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
-                                voluptatibus et.</p>
+                                voluptatibus et. 
+                               </p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
                                         class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -267,7 +269,7 @@
                             font40">kid theme park</h2>
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">kid theme park</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
                                 voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
@@ -282,7 +284,7 @@
                             font40">kid cafe</h2>
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">kid cafe</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
                                 voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
@@ -291,16 +293,18 @@
                     </div>
                 </div>
             </div>
-            <div class="activity-detail__right">
+            <div class="activity-detail__right mCustomScrollbar">
                 <div class="content">
                     {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso2.png') }}" alt="slide" class="symbol">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
                     <h2 class="text-uppercase title mb-3 font40">
                         vui chơi giải trí
                     </h2>
-                    <p class="text font18">
+                    <p class="text font18 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam
                         eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
+                        
+                       
                     </p>
                 </div>
             </div>
@@ -316,7 +320,7 @@
                             font40">ăn uống</h2>
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">ăn uống</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
                                 voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
@@ -331,7 +335,7 @@
                             font40">nhà hàng</h2>
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">nhà hàng</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
                                 voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
@@ -346,7 +350,7 @@
                             font40">cafe</h2>
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">cafe</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
                                 voluptatibus et.</p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
@@ -355,14 +359,14 @@
                     </div>
                 </div>
             </div>
-            <div class="activity-detail__right">
+            <div class="activity-detail__right mCustomScrollbar">
                 <div class="content">
                     {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso3.png') }}" alt="slide" class="symbol">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
                     <h2 class="text-uppercase title mb-3 font40">
                         ẩm thực
                     </h2>
-                    <p class="text font18">
+                    <p class="text font18 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam
                         eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
                     </p>
@@ -382,9 +386,10 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">trung tâm hội nghị - <br> tiệc cưới cao
                                 cấp</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
-                                voluptatibus et.</p>
+                                voluptatibus et.
+                            </p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
                                         class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -398,9 +403,9 @@
                         <div class="detail">
                             <h2 class="titlee text-uppercase text-light font40">trung tâm hội nghị - <br> tiệc cưới
                                 trung cấp</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
-                                voluptatibus et.</p>
+                                voluptatibus et. </p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
                                         class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -408,14 +413,14 @@
 
                 </div>
             </div>
-            <div class="activity-detail__right">
+            <div class="activity-detail__right mCustomScrollbar">
                 <div class="content">
                     {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso4.png') }}" alt="slide" class="symbol">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
                     <h2 class="text-uppercase title mb-3 font40">
                         trung tâm  <br> hội nghị - tiệc cưới
                     </h2>
-                    <p class="text font18">
+                    <p class="text font18 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam
                         eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
                     </p>
@@ -431,12 +436,11 @@
                             class="">
                         <h2 class=" title text-uppercase text-light
                             font40">thời trang - mỹ phẩm cao cấp</h2>
-                        <div class="detail">
+                        <div class="detail ">
                             <h2 class="titlee text-uppercase text-light font40">thời trang - mỹ phẩm cao cấp</h2>
-                            <p class="text text-light font18">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
                                 elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
-                                voluptatibus et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-                                tenetur facilis vel voluptates, possimus nemo dolores architecto numquam non.</p>
+                                voluptatibus et. </p>
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
                                         class="fas fa-arrow-right"></i></span></a>
                         </div>
@@ -444,14 +448,14 @@
 
                 </div>
             </div>
-            <div class="activity-detail__right">
+            <div class="activity-detail__right mCustomScrollbar">
                 <div class="content">
                     {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso5.png') }}" alt="slide" class="symbol">
                     <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
                     <h2 class="text-uppercase title mb-3 font40">
                         department store
                     </h2>
-                    <p class="text font18">
+                    <p class="text font18 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam
                         eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
                     </p>
