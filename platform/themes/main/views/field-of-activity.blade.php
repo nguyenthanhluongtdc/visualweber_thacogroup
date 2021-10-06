@@ -464,10 +464,13 @@
             <div class="title ">
                 {{-- <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}"> --}}
                 <h2 class="text-uppercase font40">Tin tức</h2>
+                <div class="line">
+                </div>
+
             </div>
 
             <div class="readmore text-uppercase font-weight-bold">
-                <a href="#">Xem thêm <i class="fas fa-arrow-right"></i> </a>
+                <a href="#">Xem tất cả</a>
             </div>
         </div>
 
@@ -641,7 +644,7 @@
     <div class="box-node-right">
         <ul class="pagination-customize">
             <li class="pagi-item one">
-                <span class="text text-uppercase"> bán lẻ tiêu dùng </span>
+                <span class="text text-uppercase"> logistics </span>
                 <a href="#section_one" title="" class="number click_scroll">
                     <img loading="lazy" src="{{ Theme::asset()->url('images/lvhd/thilogi-logo.png') }}" alt=""
                         class="icon">
@@ -652,7 +655,7 @@
             </li>
 
             <li class="pagi-item two">
-                <span class="text text-uppercase"> vui chơi giải trí </span>
+                <span class="text text-uppercase"> đầu tư và xây dựng </span>
                 <a href="#section_two" title="" class="number click_scroll">
                     <img loading="lazy" src="{{ Theme::asset()->url('images/lvhd/thadico-logo.png') }}" alt=""
                         class="icon">
@@ -661,7 +664,7 @@
             </li>
 
             <li class="pagi-item three">
-                <span class="text text-uppercase"> ẩm thực </span>
+                <span class="text text-uppercase"> ô tô & cơ khí </span>
                 <a href="#section_three" title="" class="number click_scroll">
                     <img loading="lazy" src="{{ Theme::asset()->url('images/lvhd/thacoauto-logo.png') }}" alt=""
                         class="icon">
@@ -670,7 +673,7 @@
             </li>
 
             <li class="pagi-item four">
-                <span class="text text-uppercase"> trung tâm <br> hội nghị - tiệc cưới </span>
+                <span class="text text-uppercase"> nông nghiệp </span>
                 <a href="#section_four" title="" class="number click_scroll">
                     <img loading="lazy" src="{{ Theme::asset()->url('images/lvhd/thagrico-logo.png') }}" alt=""
                         class="icon">
@@ -679,7 +682,7 @@
             </li>
 
             <li class="pagi-item five">
-                <span class="text text-uppercase"> department store </span>
+                <span class="text text-uppercase"> thương mại và dịch vụ </span>
                 <a href="#section_five" title="" class="number click_scroll">
                     <img loading="lazy" src="{{ Theme::asset()->url('images/lvhd/thiso-logo.png') }}" alt=""
                         class="icon">

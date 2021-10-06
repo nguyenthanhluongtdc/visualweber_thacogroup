@@ -587,7 +587,7 @@
                             display: block;
                         }
                         &:hover .bg {
-                            background-color: #c2c0c0;
+                            background-color: #999999;
                         }
                     }
                 }
@@ -598,20 +598,29 @@
         &__top {
             display: flex;
             .title {
-                display: flex;
-                img {
-                    width: 30px;
-                    height: 40px;
-                    align-self: center;
-                }
+                // display: flex;
+                // img {
+                //     width: 30px;
+                //     height: 40px;
+                //     align-self: center;
+                // }
                 h2 {
                     align-self: center;
                     margin: 7px 0 7px 5px;
                     font-weight: bolder;
                     color: #949090;
                     font-family: $MyriadPro-Bold;
+                    // border-bottom: 5px solid #949090;
                 }
+                .line {
+                    margin: -5px 0 0px 5px;
+                    height: 5px;
+                    width: 100px;
+                    background-color: #949090;
+                }
+               
             }
+            
             .readmore {
                 position: absolute;
                 right: 5%;
@@ -738,33 +747,33 @@
 .field-of-activity-box {
     .box-node-right {
         position: fixed;
-        top: 35%;
+        top: 33%;
         right: 10px;
         z-index: 999;
         .pagination-customize {
             .pagi-item.one {
                 &:hover {
-                    background-color: #fb5a2498;
+                    background-color: #b81d22;
                 }
             }
             .pagi-item.two {
                 &:hover {
-                    background-color: #ffcb0e93;
+                    background-color: #bd8e40;
                 }
             }
             .pagi-item.three {
                 &:hover {
-                    background-color: #3e79ad9f;
+                    background-color: #3e79ad;
                 }
             }
             .pagi-item.four {
                 &:hover {
-                    background-color: #39844196;
+                    background-color: #398440;
                 }
             }
             .pagi-item.five {
                 &:hover {
-                    background-color: #919191c9;
+                    background-color: #b3b3b4;
                 }
             }
             .pagi-item {
@@ -772,10 +781,20 @@
                 text-align: right;
                 display: flex;
                 justify-content: flex-end;
+                span{
+                    display: none;
+                }
                 &:hover {
+                    span{
+                        display: block;
+                        transform: translateX(100%);
+                    }
                     border-radius: 30px;
+                    transition: all 500ms;
+                   
                 }
                 .number {
+                    // display: none;
                     width: 3.4vw;
                     height: 3.4vw;
                     background-color: #fff;
@@ -799,6 +818,7 @@
                             margin: 8px 10px 5px 4.5px;
                         }
                     }
+                   
                 }
                 .icon {
                     img {
