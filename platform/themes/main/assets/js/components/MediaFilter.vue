@@ -1,7 +1,7 @@
 <template>
 
   <div class="filter-media">
-   
+   <input type="text" id="datepicker" placeholder="dd/mm/yyyy" />
     <form action="" @submit="submitForm">
       <div class="list-tool">
         <div class="search">
@@ -246,5 +246,11 @@ export default {
   }
 };
 
+
+ $(function() {
+    $("#datepicker").datepicker();
+
+    
+  });
 
 </script>

@@ -2321,6 +2321,9 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
+$(function () {
+  $("#datepicker").datepicker();
+});
 
 /***/ }),
 
@@ -36891,6 +36894,10 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "filter-media" }, [
+    _c("input", {
+      attrs: { type: "text", id: "datepicker", placeholder: "dd/mm/yyyy" }
+    }),
+    _vm._v(" "),
     _c("form", { attrs: { action: "" }, on: { submit: _vm.submitForm } }, [
       _c("div", { staticClass: "list-tool" }, [
         _c("div", { staticClass: "search" }, [
