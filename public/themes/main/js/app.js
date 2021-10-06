@@ -2322,7 +2322,7 @@ __webpack_require__.r(__webpack_exports__);
   }
 });
 $(function () {
-  $("#datepicker").datepicker();
+  $("#datepickermobile").datepicker();
 });
 
 /***/ }),
@@ -36894,10 +36894,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "filter-media" }, [
-    _c("input", {
-      attrs: { type: "text", id: "datepicker", placeholder: "dd/mm/yyyy" }
-    }),
-    _vm._v(" "),
     _c("form", { attrs: { action: "" }, on: { submit: _vm.submitForm } }, [
       _c("div", { staticClass: "list-tool" }, [
         _c("div", { staticClass: "search" }, [
@@ -36971,29 +36967,18 @@ var render = function() {
                   [
                     _c("li", [
                       _c("a", { attrs: { tabindex: "-1", href: "#" } }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "md-form md-outline input-with-post-icon datepicker",
-                            attrs: { id: "date-picker-example" }
+                        _c("input", {
+                          attrs: {
+                            type: "text",
+                            id: "datepickermobile",
+                            placeholder: "dd/mm/yyyy"
                           },
-                          [
-                            _c("input", {
-                              staticClass: "font15",
-                              attrs: {
-                                type: "date",
-                                id: "datepicker",
-                                name: "calendars"
-                              },
-                              on: {
-                                change: function($event) {
-                                  return _vm.changeDate($event)
-                                }
-                              }
-                            })
-                          ]
-                        )
+                          on: {
+                            change: function($event) {
+                              return _vm.changeDate($event)
+                            }
+                          }
+                        })
                       ])
                     ])
                   ]

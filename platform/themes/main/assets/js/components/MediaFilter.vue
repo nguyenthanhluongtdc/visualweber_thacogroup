@@ -1,7 +1,7 @@
 <template>
 
   <div class="filter-media">
-   <input type="text" id="datepicker" placeholder="dd/mm/yyyy" />
+   
     <form action="" @submit="submitForm">
       <div class="list-tool">
         <div class="search">
@@ -108,8 +108,8 @@
                 <ul class="dropdown-menu datepicker-mobile click-show">
                   <li>
                     <a tabindex="-1" href="#">
-                     
-                      <div
+                     <input type="text" id="datepickermobile"  @change="changeDate($event)" placeholder="dd/mm/yyyy" />
+                      <!-- <div
                         id="date-picker-example"
                         class="md-form md-outline input-with-post-icon datepicker"
                       >
@@ -120,7 +120,7 @@
                           name="calendars"
                           class="font15"
                         />
-                      </div>
+                      </div> -->
                     </a>
                   </li>
 
@@ -248,7 +248,7 @@ export default {
 
 
  $(function() {
-    $("#datepicker").datepicker();
+    $("#datepickermobile").datepicker();
 
     
   });
