@@ -658,7 +658,7 @@ if ($('#button-activity').length > 0) {
         //     btnTop.removeClass('show-button-activity')
         // }
         if (element.length > 0) {
-            if ($(document).scrollTop() >= element.position().top) {
+            if ($(document).scrollTop() >= element.position().top - 250) {
                 btnTop.addClass('d-none')
 
             } else {

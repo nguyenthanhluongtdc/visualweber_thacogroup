@@ -105,8 +105,13 @@
                                 .description {
                                     color: $white;
                                     margin-bottom: 30px;
+                                    max-height: 165px;
+                                    overflow: hidden;
+                                    @media screen and (max-width: 1680px) {
+                                        max-height: 120px;
+                                    }
                                     p {
-                                        @include split_str(5);
+                                        // @include split_str(5);
                                     }
                                 }
                                 a {
