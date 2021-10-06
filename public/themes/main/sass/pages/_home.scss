@@ -108,13 +108,14 @@
             .description {
                 color: $white;
                 margin-bottom: 30px;
-                max-height: 165px;
+                max-height: 154px;
+                line-height: 22px;
                 overflow: hidden;
-                @media screen and (max-width: 1680px) {
-                    max-height: 120px;
-                }
+                // @media screen and (max-width: 1680px) {
+                //     max-height: 120px;
+                // }
                 p {
-                    // @include split_str(5);
+                    // @include split_str(7);
                 }
             }
             a {
@@ -125,6 +126,8 @@
                 position: absolute;
                 bottom: 5%;
                 right: 7%;
+                font-family: $MyriadPro-Bold;
+                text-transform: uppercase;
             }
         }
     }

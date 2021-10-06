@@ -16,7 +16,6 @@
                         <div class="description text-justify">
                         <p class=" font18">
                         {{$post->description}}
-                        
                         </p>
                         
                         </div> 
