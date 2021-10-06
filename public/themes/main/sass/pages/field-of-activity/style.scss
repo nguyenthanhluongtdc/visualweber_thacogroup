@@ -250,18 +250,21 @@
                                 content: "\f8cd";
                                 font-weight: lighter;
                                 font-family: "Font Awesome 5 Pro";
+                               
                             }
                             .mouse {
                                 font-size: 30px;
                                 color: #999999;
+                                
                             }
+                            .text-pagi {
+                                margin: 0;
+                                color: #999999;
+                                font-weight: bold;
+                                line-height: 100%;
+                            }   
                         }
-                        .text-pagi {
-                            margin: 0;
-                            color: #999999;
-                            font-weight: bold;
-                            line-height: 100%;
-                        }
+                        
                         .symbol-thiso {
                             width: 2.5vw;
                             display: table;
@@ -392,10 +395,10 @@
                         padding-top: 15px;
                     }
                 }
-                .swiper-container {}
-                *+.swiper-container {
-                    border-top: 1px solid rgba(red, .4);
-                }
+                // .swiper-container {}
+                // *+.swiper-container {
+                //     border-top: 1px solid rgba(red, .4);
+                // }
                 .swiper-button-prev {
                     position: absolute;
                     left: -20%;
@@ -407,6 +410,10 @@
                     // @media only screen and (max-width: 1100px) {
                     //     left: 20%;
                     // }
+                    &:hover{
+                        transition: .5s ease-in-out;
+                        transform: translateX(-20%);
+                    }
                 }
                 .swiper-button-next {
                     position: absolute;
@@ -419,6 +426,10 @@
                     // @media only screen and (max-width: 1320px) {
                     //     left: 27.2%;
                     // }
+                    &:hover{
+                        transition: .5s ease-in-out;
+                        transform: translateX(20%);
+                    }
                 }
                 .swiper-button-prev::after {
                     content: "\f177";
