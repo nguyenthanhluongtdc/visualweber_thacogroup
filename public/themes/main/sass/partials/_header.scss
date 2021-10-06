@@ -622,13 +622,13 @@
                 margin-top: 5px;
             }
         }
-        @media screen and (min-width: 1080px) {
-            .nav-list {
-                display: block !important;
-                position: fixed;
-                z-index: 997;
-            }
-        }
+        // @media screen and (min-width: 1080px) {
+        //     .nav-list {
+        //         // display: block !important;
+        //         position: fixed;
+        //         z-index: 997;
+        //     }
+        // }
         #nav-toggle {
             position: absolute;
             left: 50%;
