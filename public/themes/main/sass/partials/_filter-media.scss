@@ -285,6 +285,9 @@
                         //     left: -44% !important;
                         // }
                     }
+                    &.click-show.datepicker-mobile{
+                        left: -64% !important;
+                    }
                     border: none;
                     @media only screen and (max-width: 600px){
                         left: 0 !important;

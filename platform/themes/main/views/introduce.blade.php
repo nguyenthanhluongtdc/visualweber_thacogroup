@@ -221,7 +221,7 @@
                                                         alt="{{ has_sub_field($item_develop_content, 'title') }}" />
                                                 </div>
                                                 <div class="content-slider">
-                                                    <h3 class="title font30">
+                                                    <h3 class="title font24">
                                                         {{ has_sub_field($item_develop_content, 'title') }}</h3>
                                                     <div class="desc__wrapper">
                                                         <div class="desc font18 text-justify  ">
