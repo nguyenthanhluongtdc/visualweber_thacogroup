@@ -254,7 +254,7 @@
                         </a>
                       </li>
                       <li>
-                        <a
+                        <a 
                           class="__tabs__link nav-link"
                           id="media-single-video-tab"
                           data-toggle="tab"

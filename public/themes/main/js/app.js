@@ -2280,6 +2280,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'MediaFilter',
   data: function data() {
@@ -2323,6 +2325,19 @@ __webpack_require__.r(__webpack_exports__);
 });
 $(function () {
   $("#datepickermobile").datepicker();
+});
+$(document).ready(function () {
+  var date_input = $('input[name="date"]'); //our date input has the name "date"
+
+  var container = "body";
+  var options = {
+    format: 'dd/mm/yyyy',
+    container: container,
+    todayHighlight: true,
+    autoclose: true,
+    language: 'el'
+  };
+  date_input.datepicker(options);
 });
 
 /***/ }),
@@ -36966,12 +36981,14 @@ var render = function() {
                   { staticClass: "dropdown-menu datepicker-mobile click-show" },
                   [
                     _c("li", [
-                      _c("a", { attrs: { tabindex: "-1", href: "#" } }, [
+                      _c("a", { attrs: { tabindex: "-1" } }, [
                         _c("input", {
+                          staticClass: "form-control",
                           attrs: {
-                            type: "text",
-                            id: "datepickermobile",
-                            placeholder: "dd/mm/yyyy"
+                            id: "date",
+                            name: "date",
+                            placeholder: "DD/MM/YYY",
+                            type: "text"
                           },
                           on: {
                             change: function($event) {

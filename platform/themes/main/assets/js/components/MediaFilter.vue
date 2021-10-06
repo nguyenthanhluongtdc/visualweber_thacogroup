@@ -107,8 +107,10 @@
                 ></a>
                 <ul class="dropdown-menu datepicker-mobile click-show">
                   <li>
-                    <a tabindex="-1" href="#">
-                     <input type="text" id="datepickermobile"  @change="changeDate($event)" placeholder="dd/mm/yyyy" />
+                    <a tabindex="-1" >
+                      <input class="form-control" id="date" name="date" @change="changeDate($event)" placeholder="DD/MM/YYY" type="text"/>
+                     <!-- <input type="text" id="datepickermobile" @change="changeDate($event)" placeholder="dd/mm/yyyy" /> -->
+                     
                       <!-- <div
                         id="date-picker-example"
                         class="md-form md-outline input-with-post-icon datepicker"
@@ -253,4 +255,17 @@ export default {
     
   });
 
+
+$(document).ready(function(){
+	var date_input = $('input[name="date"]'); //our date input has the name "date"
+	var container = "body";
+	var options = {
+		format: 'dd/mm/yyyy',
+		container: container,
+		todayHighlight: true,
+		autoclose: true,
+		language: 'el'
+	};
+	date_input.datepicker(options);
+})
 </script>
