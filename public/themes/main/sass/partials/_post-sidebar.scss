@@ -79,7 +79,10 @@
                         width: 68%;
                         margin-bottom: 10px;
                         a {
-                            @include split_str(2);
+                            height: 35px;
+                            display: block;
+                            overflow: hidden;
+                            // @include split_str(2);
                             color: #000;
                             font-family: $MyriadPro-Bold;
                             line-height: 1.1;
