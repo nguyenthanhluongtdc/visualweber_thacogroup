@@ -15,7 +15,7 @@
             </a>
         </div>
         <div class="report-item-right">
-            <span class="date">{{$item->created_at->format('dd/mm/YYYY')}}</span>
+            <span class="date">{{$item->created_at->format('d/m/Y')}}</span>
             <a href="{{get_object_image(has_sub_field(has_field($item, 'repeater_file_post_investor')[0], 'file'))}}" target="_blank"><p class="name-file font18"> {!! $item->name !!} </p></a>
             <span class="date-mobile">{{$item->created_at->format('d/m/Y')}}</span>
             <div class="download">
