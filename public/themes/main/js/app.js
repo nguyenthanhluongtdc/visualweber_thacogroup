@@ -2323,12 +2323,8 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
-$(function () {
-  $("#datepickermobile").datepicker();
-});
 $(document).ready(function () {
-  var date_input = $('input[name="date"]'); //our date input has the name "date"
-
+  var date_input = $('input[name="date"]');
   var container = "body";
   var options = {
     format: 'dd/mm/yyyy',
