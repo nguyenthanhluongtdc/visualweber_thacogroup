@@ -119,7 +119,7 @@
                         </p>
                       </div>
                       <span class="album-item__date">{{
-                        item.created_at | formatDate("DD-MM-YYYY")
+                        item.created_at | formatDate("DD/MM/YYYY")
                       }}</span>
                       <div class="album-item__count">
                         <i class="far fa-image"></i>
@@ -306,7 +306,7 @@
                         </p>
                       </div>
                       <span class="video-item__date">{{
-                        item.created_at | formatDate("DD-MM-YYYY")
+                        item.created_at | formatDate("DD/MM/YYYY")
                       }}</span>
                       <div class="video-item__count">
                         <i class="fas fa-photo-video"></i>

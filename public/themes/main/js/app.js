@@ -37575,7 +37575,7 @@ var render = function() {
                                             _vm._s(
                                               _vm._f("formatDate")(
                                                 item.created_at,
-                                                "DD-MM-YYYY"
+                                                "DD/MM/YYYY"
                                               )
                                             )
                                           )
@@ -37956,7 +37956,7 @@ var render = function() {
                                             _vm._s(
                                               _vm._f("formatDate")(
                                                 item.created_at,
-                                                "DD-MM-YYYY"
+                                                "DD/MM/YYYY"
                                               )
                                             )
                                           )
