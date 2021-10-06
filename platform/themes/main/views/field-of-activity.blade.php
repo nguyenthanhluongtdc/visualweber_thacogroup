@@ -138,7 +138,7 @@
     <div class="activity-content-detail-slide mt-40 mb-40">
 
         <div class="activity-content-detail-slide__detail-content">
-            <div class="swiper-container swiper-content-detail mb-40" id="section_one">
+            <div class="swiper-container swiper-content-detail mb-40" >
 
                 <div class="main-content-left">
                     <div class="content">
@@ -240,7 +240,7 @@
         
     </div>
     <div class="activity-detail-wrapper">
-        <div class="activity-detail mb-40 mt-40" id="section_two">
+        <div class="activity-detail mb-40 mt-40" >
             <div class="activity-detail__left">
                 <div class="row item">
                     <div class="col content">
@@ -304,7 +304,7 @@
                 </div>
             </div>
         </div>
-        <div class="activity-detail mb-40 mt-40" id="section_three">
+        <div class="activity-detail mb-40 mt-40" >
             <div class="activity-detail__left">
                 <div class="row item">
                     <div class="col content">
@@ -369,7 +369,7 @@
             </div>
         </div>
 
-        <div class="activity-detail mb-40 mt-40" id="section_four">
+        <div class="activity-detail mb-40 mt-40" >
             <div class="activity-detail__left">
                 <div class="row item">
                     <div class="col content">
@@ -421,7 +421,7 @@
                 </div>
             </div>
         </div>
-        <div class="activity-detail mb-40 mt-40" id="section_five">
+        <div class="activity-detail mb-40 mt-40" >
             <div class="activity-detail__left">
                 <div class="row item">
                     <div class="col content">
@@ -681,14 +681,14 @@
 
             </li>
 
-            <li class="pagi-item five">
+            {{-- <li class="pagi-item five">
                 <span class="text text-uppercase"> thương mại và dịch vụ </span>
                 <a href="#section_five" title="" class="number click_scroll">
                     <img loading="lazy" src="{{ Theme::asset()->url('images/lvhd/thiso-logo.png') }}" alt=""
                         class="icon">
                 </a>
 
-            </li>
+            </li> --}}
 
         </ul>
     </div>
