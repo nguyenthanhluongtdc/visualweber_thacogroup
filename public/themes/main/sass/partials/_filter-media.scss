@@ -240,12 +240,7 @@
                     border: none; 
                    
 
-                    // input[type="date"]::-webkit-calendar-picker-indicator{
-                    //      background: none;
-                    //     position: absolute;
-                    //     width: 100%;
-                    //     height: 100%;
-                    // }
+                    
                     @media only screen and (max-width: 600px){
                         margin: 129px 1px;
                     }
@@ -264,12 +259,7 @@
                         }
                     }
             }
-                // .datepick-mobile{
-                //     input[type=date]{
-                //         border-color:  transparent!important;
-                //                     background-color: transparent;
-                //     }
-                // }
+                
                 .dropdown-menu{
                     @media only screen and (max-width: 768px){
                         top: 5px !important;
