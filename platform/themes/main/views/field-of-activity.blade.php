@@ -30,7 +30,7 @@
                 <img src="{{ Theme::asset()->url('images/lvhd/slider2.jpg') }}" alt="slide"
                     class="img-slider  h-auto w-100">
                 <div class="post-banner">
-                    <h2 class="font24 text-justify">
+                    <h2 class="font24">
                         THILOGI thay đổi nhận diện thương hiệu trên các phương tiện vận chuyển
                     </h2>
                     <p class="desc font18 text-justify">
