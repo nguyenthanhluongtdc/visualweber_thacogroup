@@ -8,14 +8,14 @@
             <img class="img-mw-100" src="{{ get_object_image($postSlider[0]->image) }}" alt="{{$postSlider[0]->name}}">
         </div>
         <div class="news-post h-100">
-            @foreach ($postSlider[0]->tags as $tag)
+            @foreach ($postSlider[0]->tags as $tag) 
             <h3 class=" title font18">{{$tag->name}}</h3>
             @endforeach
             <a href="{{$postSlider[0]->url}}">  
                 <h4 class="name font18 text-justify">{{$postSlider[0]->name}}</h4>
             </a>
             <span class="time">{{date_format($postSlider[0]->created_at,"d/m/Y")}}</span> 
-            <p class="description font18  text-justify">{{$postSlider[0]->description}}</p>
+            <p class="description font18  text-justify">{{str::words($postSlider[0]->description,30)}}</p>
             <a href="{{$postSlider[0]->url}}" class="read-more message">{!!__('Xem thêm')!!}</a>
         </div>
     </div> 
@@ -58,10 +58,10 @@
                         </div>
                     </div>
                     <div class="content">
-                        <a href="{{$post->url}}"><h3 class="name font18">{{$post->name}}</h3></a>
+                        <a href="{{$post->url}}"><h3 class="name font18">{{str::words($post->name,18)}}</h3></a>
                       
                         <p class="time">{{date_format($post->created_at,"d/m/Y")}}</p>
-                        <p class="desc font18">{{$post->description}}</p>
+                        <p class="desc font18">{{str::words($post->description,45)}}</p>
                     </div>
                 </div>
             </div>

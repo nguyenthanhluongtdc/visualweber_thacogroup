@@ -14,7 +14,7 @@
                                             alt="{{ $item_post->name }}">
                                     </div>
                                     <div class="news-post h-100">
-                                        @foreach ($item_post->tags as $tag)
+                                        @foreach ($item_post->tags as $tag) 
                                         <h3 class=" title font18">{{$tag->name}}</h3>
                                         @endforeach
                                         <a href="{{ $item_post->url }}" title="{{ $item_post->name }}">
@@ -55,7 +55,7 @@
                                         
                                         </a>
                                     </div>
-
+ 
                                 </div>
                             @endforeach
                         @endif

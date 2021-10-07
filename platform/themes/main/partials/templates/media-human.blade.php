@@ -22,7 +22,7 @@
                                         </a>
                                         <span class="time">
                                             {{ date_format($post->created_at, 'd/m/Y') }}</span>
-                                        <p class="description font18  text-justify">{{ $post->description }}</p>
+                                        <p class="description font18  text-justify">{{str::words($post->description,30)}}</p>
                                         <a href="{{ $post->url }}" class="read-more">{!! __('Xem thêm') !!}</a>
                                     </div>
                                 </div>
@@ -45,8 +45,8 @@
                                                 <img src="{{ get_object_image($post->image) }}" alt="">
                                             </div>
 
-                                            <h4 class="post_name font18">{{ $post->name }}</h4>
-                                            <p class="post_description font18">{{ $post->description }}
+                                            <h4 class="post_name font18">{{str::words($post->name,15)}}</h4>
+                                            <p class="post_description font18">{{str::words($post->description,15)}}
                                             </p>
                                             <span
                                                 class="time">{{ date_format($post->created_at, 'd/m/Y') }}</span>
@@ -115,11 +115,11 @@
                                 </div>
                                 <div class="content">
                                     <a href="{{ $post->url }}">
-                                        <h3 class="name font18">{{ $post->name }}</h3>
+                                        <h3 class="name font18">{{str::words($post->name,18)}}</h3>
                                     </a>
 
                                     <p class="time">{{ date_format($post->created_at, 'd/m/Y') }}</p>
-                                    <p class="desc font18">{{ $post->description }}</p>
+                                    <p class="desc font18">{{str::words($post->description,45)}}</p>
                                 </div>
                             </div>
                         </div>
