@@ -1,6 +1,6 @@
 
 <section class="banner-post-detail">
-    <img class=" h-auto img-mw-100" src="{{rvMedia::getImageUrl($post->image_banner)}}" alt="banner">
+    <img class=" h-auto img-mw-100" src="{{$post->image_banner ? rvMedia::getImageUrl($post->image_banner): Theme::asset()->url('images/introduce/banner-introduce.jpg')  }}" alt="banner">
 </section>
 <div class="bg-gray">
     <div class="container-customize">
