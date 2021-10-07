@@ -15,13 +15,13 @@
                                 <div class="news-post h-100">
 
                                     @foreach ($post->tags as $tag)
-                                    <h3 class=" title font18">{{$tag->name}}</h3>
+                                        <h3 class=" title font18">{{ $tag->name }}</h3>
                                     @endforeach
                                     <a href="{{ $post->url }}">
                                         <h4 class="name font18 ">{{ $post->name }}</h4>
                                     </a>
                                     <span class="time"> {{ date_format($post->created_at, 'd/m/Y') }}</span>
-                                    <p class="description font18  text-justify">{{ $post->description }}</p>
+                                    <p class="description font18  text-justify">{{str::words($post->description,30)}}</p>
                                     <a href="{{ $post->url }}" class="read-more">{!! __('Xem thêm') !!}</a>
                                 </div>
                             </div>
@@ -35,19 +35,20 @@
         <div class="post-slider">
             <div class="swiper-container post-slide-bottom">
                 <div class="swiper-wrapper">
-
                     @if (!empty($postSlider))
                         @foreach ($postSlider as $post)
                             <div class="swiper-slide d-flex justify-content-center">
                                 <div class="post_content_bottom ">
                                     <a class="post-wrapper h-100" href=" {{ $post->url }}">
                                         <div class="post-thumbnail">
-                                            <img src="{{ get_object_image($post->image) }}" alt="{{ $post->name }}">
+                                            <img src="{{ get_object_image($post->image) }}"
+                                                alt="{{ $post->name }}">
                                         </div>
 
                                         <h4 class="post_name font18">{{ $post->name }}</h4>
-                                        <span class="time">{{ date_format($post->created_at, 'd/m/Y') }}</span>
-                                        <p class="post_description font18">{{ $post->description }}
+                                        <span
+                                            class="time">{{ date_format($post->created_at, 'd/m/Y') }}</span>
+                                        <p class="post_description font18">{{str::words($post->description,20)}}
                                         </p>
                                     </a>
                                 </div>
@@ -151,5 +152,3 @@
         @includeIf("theme.main::views.pages.post.post")
     </div>
 </div>
-
-

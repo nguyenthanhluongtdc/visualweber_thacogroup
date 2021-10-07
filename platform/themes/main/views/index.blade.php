@@ -15,7 +15,9 @@
                         </div>
                         <div class="description text-justify">
                         <p class=" font18">
-                        {{$post->description}}
+                        {{-- {{$post->description}} --}}
+                      
+                        {{str::words($post->description,60)}}                       
                         </p>
                         
                         </div> 

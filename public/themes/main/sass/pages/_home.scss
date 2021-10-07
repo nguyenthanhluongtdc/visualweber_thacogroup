@@ -455,7 +455,7 @@
                         overflow: hidden;
                         height: 44px;
                         line-height: 22px;
-                        text-align: justify;
+                        // text-align: justify;
                     }
                 }
                 .time {
@@ -533,8 +533,8 @@
                     }
                     .post_description {
                         margin: 10px 20px 20px 20px;
-                        height: 66px;
-                        overflow: hidden;
+                        min-height: 66px;
+                        // overflow: hidden;
                         line-height: 22px;
                         text-align: justify;
                     }
