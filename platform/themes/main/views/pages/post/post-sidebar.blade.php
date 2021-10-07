@@ -5,7 +5,7 @@
                 'options' => [],
                 'theme' => true,
                 'view' => 'media-menu',
-            ])
+            ]) 
         !!}
 
         <div class="list-post-new">
@@ -28,7 +28,7 @@
                             </div>
                         </div>
                         <div class="title font18">
-                            <a href="{{$post->url}}">{{str::words($post->name,15)}}</a>
+                            <a href="{{$post->url}}">{{str::words($post->name,12)}}</a>
                             <p class="time">{{date_format($post->created_at,"d/m/Y")}}</p>
                         </div>
                     </div>
