@@ -55,7 +55,10 @@ Theme::routes();
 
 Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
-
+        Route::get(\SlugHelper::getPrefix(ListFieldActivity::class, 'linh-vuc-hoat-dong') . '/{slug}', [
+            'as' => 'field-of-activity',
+            'uses' => 'MainController@getFieldActivity',
+        ]);
         Route::get('/', 'MainController@getIndex')
             ->name('public.index');
 

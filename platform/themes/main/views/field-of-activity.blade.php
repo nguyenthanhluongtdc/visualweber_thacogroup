@@ -1,3 +1,8 @@
+@php
+use Platform\Page\Repositories\Interfaces\PageInterface;
+// $homepageId = BaseHelper::getHomepageId();
+$page = app(PageInterface::class)->findById(28);
+@endphp
 <div class="field-of-activity">
     <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
         <div class="swiper-wrapper">

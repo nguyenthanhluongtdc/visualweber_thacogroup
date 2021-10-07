@@ -27,6 +27,7 @@ use Platform\Kernel\Repositories\Interfaces\PostInterface as PostInterfaceCustom
 use Illuminate\Support\Facades\Log;
 use Platform\Base\Enums\BaseStatusEnum;
 use Platform\Blog\Repositories\Interfaces\CategoryInterface;
+use MetaBox;
 
 class MainController extends PublicController
 {
@@ -189,6 +190,33 @@ class MainController extends PublicController
                 200
             );
     }
+
+    public function getFieldActivity(Request $request, $slug)
+    {
+        $slug = SlugHelper::getSlug($slug, SlugHelper::getPrefix(ListFieldActivity::class, 'linh-vuc-hoat-dong'));
+
+        if (!$slug) {
+            abort(404);
+        }
+
+        $data['data'] = $slug->reference;
+
+        if (blank($data)) {
+            abort(404);
+        }
+        
+        $meta = MetaBox::getMetaData($data['data'], 'seo_meta', true);
+            SeoHelper::setTitle($meta['seo_title'] ?? $data['data']->name)
+                ->setDescription($meta['seo_description'] ?? (!blank($data['data']->description) ? $data['data']->description : theme_option('site_description')))
+                ->openGraph()
+                ->setUrl($request->url())
+                ->setImage(RvMedia::getImageUrl(@$data['data']->image, 'og', false, RvMedia::getImageUrl(theme_option('seo_og_image'), 'og')))
+                ->addProperty('image:width', '1200')
+                ->addProperty('image:height', '630');
+
+        return Theme::scope('field-of-activity', $data)->render();
+    }
+
 
     
 }
