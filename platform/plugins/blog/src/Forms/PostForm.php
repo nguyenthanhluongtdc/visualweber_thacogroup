@@ -100,7 +100,7 @@ class PostForm extends FormAbstract
                 'label_attr' => ['class' => 'control-label'],
             ])
             ->add('image_banner', 'mediaImage', [
-                'label'      => trans('Ảnh banner slide - Trang chủ'),
+                'label'      => trans('Ảnh banner'),
                 'label_attr' => ['class' => 'control-label'],
             ])
             ->add('tag', 'tags', [

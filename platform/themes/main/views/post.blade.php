@@ -1,8 +1,6 @@
 
 <section class="banner-post-detail">
-    @if(theme_option('image_banner'))
-    <img class=" h-auto img-mw-100" src="{{rvMedia::getImageUrl(theme_option('image_banner'))}}" alt="">
-    @endif
+    <img class=" h-auto img-mw-100" src="{{rvMedia::getImageUrl($post->image_banner)}}" alt="banner">
 </section>
 <div class="bg-gray">
     <div class="container-customize">
