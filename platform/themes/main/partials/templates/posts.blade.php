@@ -32,7 +32,7 @@
 
             <div class="swiper-pagination"></div>
         </div>
-        <div class="post-slider">
+        <div class="post-slider"> 
             <div class="swiper-container post-slide-bottom">
                 <div class="swiper-wrapper">
                     @if (!empty($postSlider))
@@ -137,11 +137,11 @@
                             </div>
                             <div class="content">
                                 <a href="{{ $post->url }}">
-                                    <h3 class="name font18">{{ $post->name }}</h3>
+                                    <h3 class="name font18">{{str::words($post->name,18)}}</h3>
                                 </a>
 
                                 <p class="time">{{ date_format($post->created_at, 'd/m/Y') }}</p>
-                                <p class="desc font18">{{ $post->description }}</p>
+                                <p class="desc font18">{{str::words($post->description,45)}}</p>
                             </div>
                         </div>
                     </div>
