@@ -70,7 +70,7 @@ class InvestorRelationsController extends BaseController
             ->setNextUrl(route('investor-relations.edit', $investorRelations->id))
             ->setMessage(trans('core/base::notices.create_success_message'));
     }
-
+ 
     /**
      * @param int $id
      * @param Request $request

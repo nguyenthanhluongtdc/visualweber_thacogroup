@@ -63,7 +63,7 @@ class InvestorRelationsServiceProvider extends ServiceProvider
         $this->app->register(HookServiceProvider::class);
          
         \SlugHelper::registerModule(InvestorRelations::class);
-        
+         
         $this->app->booted(function () {
             if (defined('CUSTOM_FIELD_MODULE_SCREEN_NAME')) {
                 \CustomField::registerModule(InvestorRelations::class)

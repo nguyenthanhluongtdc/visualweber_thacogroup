@@ -10,9 +10,9 @@ use Platform\InvestorRelations\Models\InvestorRelations;
 class InvestorRelationsForm extends FormAbstract
 {
 
-    /**
+    /** 
      * {@inheritDoc}
-     */
+     */ 
     public function buildForm()
     {
         $list = sort_item_with_children(get_all_investor_categories());

@@ -33,18 +33,27 @@ class ListFieldActivityServiceProvider extends ServiceProvider
             ->loadAndPublishTranslations()
             ->loadAndPublishViews()
             ->loadRoutes(['web']);
-
+ 
         Event::listen(RouteMatched::class, function () {
             // if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
             //    \Language::registerModule([ListFieldActivity::class]);
             // }
 
-            dashboard_menu()->registerItem([
+            dashboard_menu()
+            ->registerItem([ 
+                'id'          => 'cms-field-activities',
+                'priority'    => 5, 
+                'parent_id'   => null,
+                'name'        => 'Lĩnh vực hoạt động',
+                'icon'        => 'fas fa-chart-line',
+                'url'         => route('investor-relations.index'),
+                'permissions' => ['investor-relations.index'],
+            ])
+            ->registerItem([
                 'id'          => 'cms-plugins-list-field-activity',
                 'priority'    => 5,
                 'parent_id'   => 'cms-field-activities',
                 'name'        => 'Danh sách các lĩnh vực',
-                'icon'        => 'fa fa-list',
                 'url'         => route('list-field-activity.index'),
                 'permissions' => ['list-field-activity.index'],
             ]);
