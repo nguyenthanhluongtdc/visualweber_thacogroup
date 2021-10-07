@@ -33,7 +33,7 @@ class InvestorRelationsForm extends FormAbstract
             'rules-regulation' => __('Giao diện 1'),
             'annual-report' => __('Giao diện 2'),
         ];
-
+ 
         $this
             ->setupModel(new InvestorRelations)
             ->setValidatorClass(InvestorRelationsRequest::class)

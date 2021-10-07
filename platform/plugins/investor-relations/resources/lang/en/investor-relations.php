@@ -6,3 +6,4 @@ return [
     'create' => 'New investor relations',
     'edit'   => 'Edit investor relations',
 ];
+ 

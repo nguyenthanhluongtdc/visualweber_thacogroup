@@ -35,7 +35,7 @@ class InvestorRelationsController extends BaseController
      * @param InvestorRelationsTable $table
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      * @throws \Throwable
-     */
+     */ 
     public function index(InvestorRelationsTable $table)
     {
         page_title()->setTitle(trans('plugins/investor-relations::investor-relations.name'));

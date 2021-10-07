@@ -39,7 +39,8 @@ class PostInvestorServiceProvider extends ServiceProvider
                \Language::registerModule([PostInvestor::class]);
             }
 
-            dashboard_menu()->registerItem([
+            dashboard_menu()
+            ->registerItem([ 
                 'id'          => 'cms-plugins-post-investor',
                 'priority'    => 5,
                 'parent_id'   => 'cms-plugins-investor-relations',
@@ -64,6 +65,6 @@ class PostInvestorServiceProvider extends ServiceProvider
                     });
             }
         });
-        
+         
     }
 }

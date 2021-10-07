@@ -5,3 +5,4 @@ return [
     'create' => 'New post investor',
     'edit'   => 'Edit post investor',
 ];
+ 

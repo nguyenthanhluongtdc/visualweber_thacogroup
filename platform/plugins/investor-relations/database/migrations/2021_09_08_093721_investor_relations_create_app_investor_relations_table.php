@@ -9,7 +9,7 @@ class InvestorRelationsCreateAppInvestorRelationsTable extends Migration
      * Run the migrations.
      *
      * @return void
-     */
+     */ 
     public function up()
     {
         Schema::create('app_investor_relations', function (Blueprint $table) {

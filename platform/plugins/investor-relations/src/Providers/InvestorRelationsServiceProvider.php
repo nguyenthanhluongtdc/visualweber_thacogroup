@@ -25,7 +25,7 @@ class InvestorRelationsServiceProvider extends ServiceProvider
         Helper::autoload(__DIR__ . '/../../helpers');
     }
 
-    public function boot()
+    public function boot() 
     {
         $this->setNamespace('plugins/investor-relations')
             ->loadAndPublishConfigurations(['permissions'])
@@ -38,7 +38,7 @@ class InvestorRelationsServiceProvider extends ServiceProvider
             if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
                \Language::registerModule([InvestorRelations::class]);
             }
-
+ 
             dashboard_menu()
             ->registerItem([
                 'id'          => 'cms-plugins-investor-relations',
@@ -49,7 +49,7 @@ class InvestorRelationsServiceProvider extends ServiceProvider
                 'url'         => route('investor-relations.index'),
                 'permissions' => ['investor-relations.index'],
             ])
-            ->registerItem([
+            ->registerItem([ 
                 'id'          => 'cms-plugins-category-investor-relations',
                 'priority'    => 5,
                 'parent_id'   => 'cms-plugins-investor-relations',
@@ -75,7 +75,7 @@ class InvestorRelationsServiceProvider extends ServiceProvider
                             InvestorRelations::class => __('Danh mục quan hệ cổ đông'),
                         ];
                     });
-            }
-        });
+            } 
+        }); 
     }
 }

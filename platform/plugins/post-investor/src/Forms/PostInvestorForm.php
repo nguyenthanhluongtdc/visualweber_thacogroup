@@ -37,7 +37,7 @@ class PostInvestorForm extends FormAbstract
                     'data-counter' => 120,
                 ],
             ])
-            ->add('status', 'customSelect', [
+            ->add('status', 'customSelect', [ 
                 'label'      => trans('core/base::tables.status'),
                 'label_attr' => ['class' => 'control-label required'],
                 'attr'       => [
