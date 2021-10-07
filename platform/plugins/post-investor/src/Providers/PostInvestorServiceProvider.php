@@ -28,7 +28,7 @@ class PostInvestorServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->setNamespace('plugins/post-investor')
-            ->loadAndPublishConfigurations(['permissions'])
+            ->loadAndPublishConfigurations(['permissions']) 
             ->loadMigrations()
             ->loadAndPublishTranslations()
             ->loadAndPublishViews()

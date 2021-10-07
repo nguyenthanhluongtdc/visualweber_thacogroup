@@ -16,7 +16,7 @@ class TradeAndServicesCreateAppTradeAndServicesTable extends Migration
             $table->id();
             $table->string('name', 255);
             $table->string('status', 60)->default('published');
-            // $table->string('description', 400)->nullable();
+            $table->string('description', 400)->nullable();
             $table->timestamps();
         });
     }

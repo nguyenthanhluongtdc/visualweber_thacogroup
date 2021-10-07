@@ -20,7 +20,7 @@ class InvestorRelationsController extends BaseController
 {
     /**
      * @var InvestorRelationsInterface
-     */
+     */ 
     protected $investorRelationsRepository;
 
     /**

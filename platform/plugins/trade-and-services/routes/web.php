@@ -15,3 +15,4 @@ Route::group(['namespace' => 'Platform\TradeAndServices\Http\Controllers', 'midd
     });
 
 });
+ 

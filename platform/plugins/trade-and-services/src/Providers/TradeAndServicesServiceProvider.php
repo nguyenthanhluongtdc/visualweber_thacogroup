@@ -28,7 +28,7 @@ class TradeAndServicesServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->setNamespace('plugins/trade-and-services')
-            ->loadAndPublishConfigurations(['permissions'])
+            ->loadAndPublishConfigurations(['permissions']) 
             ->loadMigrations()
             ->loadAndPublishTranslations()
             ->loadAndPublishViews()
@@ -56,13 +56,16 @@ class TradeAndServicesServiceProvider extends ServiceProvider
                 'permissions' => ['trade-and-services.index'],
             ]);
         });
+        \SlugHelper::registerModule(TradeAndServices::class);
+        \SlugHelper::setPrefix(TradeAndServices::class, 'TradeAndServices');
+        \SeoHelper::registerModule(TradeAndServices::class);
 
         $this->app->booted(function () {
             if (defined('CUSTOM_FIELD_MODULE_SCREEN_NAME')) {
                 \CustomField::registerModule(TradeAndServices::class)
-                    ->registerRule('basic', __('Thương mại và dịch vụ'), TradeAndServices::class, function () {
-                        return $this->app->make(TradeAndServicesInterface::class)->pluck('name', 'id');
-                    })
+                    // ->registerRule('basic', __('Thương mại và dịch vụ'), TradeAndServices::class, function () {
+                    //     return $this->app->make(TradeAndServicesInterface::class)->pluck('name', 'id');
+                    // })
                     ->expandRule('other', 'Model', 'model_name', function () {
                         return [
                             TradeAndServices::class => __('Thương mại và dịch vụ'),

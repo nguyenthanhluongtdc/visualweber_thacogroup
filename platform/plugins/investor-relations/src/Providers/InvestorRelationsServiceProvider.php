@@ -42,7 +42,7 @@ class InvestorRelationsServiceProvider extends ServiceProvider
             dashboard_menu()
             ->registerItem([
                 'id'          => 'cms-plugins-investor-relations',
-                'priority'    => 5,
+                'priority'    => 5, 
                 'parent_id'   => null,
                 'name'        => 'plugins/investor-relations::investor-relations.name',
                 'icon'        => 'fa fa-handshake',
@@ -61,7 +61,7 @@ class InvestorRelationsServiceProvider extends ServiceProvider
         });
         
         $this->app->register(HookServiceProvider::class);
-        
+         
         \SlugHelper::registerModule(InvestorRelations::class);
         
         $this->app->booted(function () {

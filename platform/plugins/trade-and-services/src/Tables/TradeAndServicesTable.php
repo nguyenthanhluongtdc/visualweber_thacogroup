@@ -92,7 +92,7 @@ class TradeAndServicesTable extends TableAbstract
      */
     public function columns()
     {
-        return [
+        return [ 
             'id' => [
                 'title' => trans('core/base::tables.id'),
                 'width' => '20px',
