@@ -78,4 +78,4 @@ class InvestorRelationsServiceProvider extends ServiceProvider
             } 
         }); 
     }
-}
+} 

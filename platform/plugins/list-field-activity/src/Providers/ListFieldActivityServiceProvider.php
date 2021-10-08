@@ -57,7 +57,7 @@ class ListFieldActivityServiceProvider extends ServiceProvider
                 'url'         => route('list-field-activity.index'),
                 'permissions' => ['list-field-activity.index'],
             ]);
-        });
+        }); 
         // $this->app->register(HookServiceProvider::class);
          
        
