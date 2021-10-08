@@ -35,7 +35,7 @@ class HookServiceProvider extends ServiceProvider
     public function registerMenuOptions()
     {
         if (Auth::user()->hasPermission('categories.index')) {
-            Menu::registerMenuOptions(InvestorRelations::class, trans('plugins/blog::categories.menu')."Custom");
+            Menu::registerMenuOptions(InvestorRelations::class, trans('plugins/blog::categories.menu')." Quan hệ cổ đông");
         }
     }
 

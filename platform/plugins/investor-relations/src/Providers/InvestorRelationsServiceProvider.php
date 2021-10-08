@@ -53,12 +53,12 @@ class InvestorRelationsServiceProvider extends ServiceProvider
                 'id'          => 'cms-plugins-category-investor-relations',
                 'priority'    => 5,
                 'parent_id'   => 'cms-plugins-investor-relations',
-                'name'        => 'plugins/investor-relations::investor-relations.category',
+                'name'        => 'Danh mục Quan hệ cổ đông',
                 'icon'        => null,
                 'url'         => route('investor-relations.index'),
                 'permissions' => ['investor-relations.index'],
             ]);
-        });
+        }); 
         
         $this->app->register(HookServiceProvider::class);
          

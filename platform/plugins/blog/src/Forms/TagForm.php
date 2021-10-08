@@ -34,7 +34,7 @@ class TagForm extends FormAbstract
                     'rows'         => 4,
                     'placeholder'  => trans('core/base::forms.description_placeholder'),
                     'data-counter' => 400,
-                ],
+                ], 
             ])
             ->add('status', 'customSelect', [
                 'label'      => trans('core/base::tables.status'),

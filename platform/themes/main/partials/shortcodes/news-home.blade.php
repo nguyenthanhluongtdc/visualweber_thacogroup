@@ -1,5 +1,5 @@
 <div class="news-home-wrapper">
-    <div class="container-customize"> 
+    <div class="container-customize">
         <div class="news-home__content">
             <div class="swiper-container new-post-slide"
                 style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">

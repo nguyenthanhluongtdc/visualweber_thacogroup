@@ -142,19 +142,29 @@ $page = app(PageInterface::class)->findById(28);
     <div class="activity-content-detail-slide mt-40 mb-40">
 
         <div class="activity-content-detail-slide__detail-content">
+            @if(has_field($data, 'repeater_activity_slide'))
+	        @foreach(has_field($data, 'repeater_activity_slide') as $item)
             <div class="swiper-container swiper-content-detail mb-40" >
 
                 <div class="main-content-left ">
                     <div class="content">
+                      
+          
+  
                         {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
                         <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
+
+                        @if(has_sub_field($item, 'content_left_activity_title'))
                         <h2 class="text-uppercase title mb-3 font40">
-                            bán lẻ, tiêu dùng
+                            {!! has_sub_field($item,'content_left_activity_title') !!}  
 
                         </h2>
+                        @endif
+                        @if(has_sub_field($item, 'content_left_activity_desc'))
                         <p class="text font18">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. </p>
+                            {!! has_sub_field($item,'content_left_activity_desc') !!}  
+                        </p>
+                        @endif
                         <div class="control">
 
 
@@ -171,66 +181,37 @@ $page = app(PageInterface::class)->findById(28);
 
                 </div>
                 <div class="swiper-wrapper main-content-right">
-
+                    @foreach(has_sub_field($item, 'repeater_right_content_activity') as $sub_item)
                     <div class="swiper-slide">
                         <div class="bg"></div>
-                        <img src="{{ Theme::asset()->url('images/lvhd/lv1.jpg') }}" alt="slide"
+                        <img src="{{ Storage::disk('public')->exists(has_sub_field($sub_item,'image')) ? get_image_url(has_sub_field($sub_item,'image')) : RvMedia::getDefaultImage()}}" alt="slide"
                             class="bg-img">
-                        <h2 class="title text-uppercase text-light font40">đại siêu thị</h2>
+                        @if(has_sub_field($sub_item, 'title'))
+                        <h2 class="title text-uppercase text-light font40">
+                            {!! has_sub_field($sub_item,'title') !!}  
+                        </h2>
+                        @endif
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">đại siêu thị</h2>
-                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                                suspendisse ultrices gravida
-                                
-                                </p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
-                                        class="fas fa-arrow-right"></i></span></a>
+                            @if(has_sub_field($sub_item, 'title'))
+                            <h2 class="titlee text-uppercase text-light font40">
+                                {!! has_sub_field($sub_item,'title') !!}  
+                            </h2>
+                            @endif
+                            @if(has_sub_field($sub_item, 'desc'))
+                            <p class="text text-light font18 mCustomScrollbar">
+                                {!! has_sub_field($sub_item,'desc') !!}  
+                            </p>
+                            @endif
+                            @if(has_sub_field($sub_item, 'link'))
+                            <a href=" {!! has_sub_field($sub_item, 'link') ? has_sub_field($sub_item, 'link') : '' !!}" class="readmore text-uppercase text-light">Xem Thêm <span><i class="fas fa-arrow-right"></i>
+                            </span>
+                            </a>
+                            @endif
                         </div>
 
                     </div>
-                    <div class="swiper-slide">
-                        <div class="bg"></div>
-                        <img src="{{ Theme::asset()->url('images/lvhd/lv2.jpg') }}" alt="slide"
-                            class="bg-img">
-                        <h2 class="title text-uppercase text-light font40">siêu thị</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">siêu thị</h2>
-                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus
-                                et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
-                                        class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="bg"></div>
-                        <img src="{{ Theme::asset()->url('images/lvhd/lv1.jpg') }}" alt="slide"
-                            class="bg-img">
-                        <h2 class="title text-uppercase text-light font40">cửa hàng tiện lợi</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">cửa hàng tiện lợi</h2>
-                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus
-                                et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
-                                        class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="bg"></div>
-                        <img src="{{ Theme::asset()->url('images/lvhd/lv2.jpg') }}" alt="slide"
-                            class="bg-img">
-                        <h2 class="title text-uppercase text-light font40">đại siêu thị</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">đại siêu thị</h2>
-                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque voluptatibus
-                                et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
-                                        class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
+                    @endforeach
+                    
 
                 </div>
                 {{-- <div class="swiper-pagination"></div> --}}
@@ -238,33 +219,52 @@ $page = app(PageInterface::class)->findById(28);
 
 
             </div>
-
+            @endforeach
+            @endif
 
 
         </div>
         
     </div>
     <div class="activity-detail-wrapper">
+        @if(has_field($data, 'repeater_activity_nonslide'))
+        @foreach(has_field($data, 'repeater_activity_nonslide') as $item)
         <div class="activity-detail mb-40 mt-40" >
             <div class="activity-detail__left">
                 <div class="row item">
+                    @foreach(has_sub_field($item, 'repeater_right_content_activity') as $sub_item)
                     <div class="col content">
                         <div class="bg"></div>
-                        <img src="{{ Theme::asset()->url('images/lvhd/lv4.jpg') }}" alt="slide"
+                        <img src="{{ Storage::disk('public')->exists(has_sub_field($sub_item,'image')) ? get_image_url(has_sub_field($sub_item,'image')) : RvMedia::getDefaultImage()}}" alt="slide"
                             class="">
+
+                            @if(has_sub_field($sub_item, 'title'))
                         <h2 class=" title text-uppercase text-light
-                            font40">rạp chiếu phim</h2>
+                            font40">
+                            {!! has_sub_field($sub_item,'title') !!}  
+                        </h2>
+                            @endif
+
                         <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">rạp chiếu phim</h2>
-                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
-                                voluptatibus et. 
+                            @if(has_sub_field($sub_item, 'title'))
+                            <h2 class="titlee text-uppercase text-light font40">
+                                {!! has_sub_field($sub_item,'title') !!}  
+                            </h2>
+                            @endif
+                            @if(has_sub_field($sub_item, 'desc'))
+                            <p class="text text-light font18 mCustomScrollbar">
+                                {!! has_sub_field($sub_item,'desc') !!}  
                                </p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
-                                        class="fas fa-arrow-right"></i></span></a>
+                               @endif
+
+                               @if(has_sub_field($sub_item, 'link'))
+                            <a href="{!! has_sub_field($sub_item, 'link') ? has_sub_field($sub_item, 'link') : '' !!}" class="readmore text-uppercase text-light">Xem Thêm <span><i
+                                        class="fas fa-arrow-right"></i></span></a> 
+                                @endif
                         </div>
                     </div>
-                    <div class="col content">
+                    @endforeach
+                    {{-- <div class="col content">
                         <div class="bg"></div>
                         <img src="{{ Theme::asset()->url('images/lvhd/lv5.jpg') }}" alt="slide"
                             class="">
@@ -293,26 +293,29 @@ $page = app(PageInterface::class)->findById(28);
                             <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
                                         class="fas fa-arrow-right"></i></span></a>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="activity-detail__right mCustomScrollbar">
                 <div class="content">
-                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso2.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
+                  
+                    @if(has_sub_field($item, 'content_left_activity_title'))
                     <h2 class="text-uppercase title mb-3 font40">
-                        vui chơi giải trí
+                        {!! has_sub_field($item,'content_left_activity_title') !!}  
+
                     </h2>
-                    <p class="text font18 ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatem, dolores ab nam
-                        eligendi tempore quos autem omnis voluptates! Dolor odio veritatis minus vero doloremque!
-                        
-                       
-                    </p>
+                    @endif
+                    @if(has_sub_field($item, 'content_left_activity_desc'))
+                        <p class="text font18">
+                            {!! has_sub_field($item,'content_left_activity_desc') !!}  
+                        </p>
+                        @endif
                 </div>
             </div>
         </div>
-        <div class="activity-detail mb-40 mt-40" >
+        @endforeach
+        @endif
+        {{-- <div class="activity-detail mb-40 mt-40" >
             <div class="activity-detail__left">
                 <div class="row item">
                     <div class="col content">
@@ -364,8 +367,7 @@ $page = app(PageInterface::class)->findById(28);
             </div>
             <div class="activity-detail__right mCustomScrollbar">
                 <div class="content">
-                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso3.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
+                   
                     <h2 class="text-uppercase title mb-3 font40">
                         ẩm thực
                     </h2>
@@ -418,8 +420,7 @@ $page = app(PageInterface::class)->findById(28);
             </div>
             <div class="activity-detail__right mCustomScrollbar">
                 <div class="content">
-                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso4.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
+                   
                     <h2 class="text-uppercase title mb-3 font40">
                         trung tâm  <br> hội nghị - tiệc cưới
                     </h2>
@@ -453,8 +454,7 @@ $page = app(PageInterface::class)->findById(28);
             </div>
             <div class="activity-detail__right mCustomScrollbar">
                 <div class="content">
-                    {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso5.png') }}" alt="slide" class="symbol">
-                    <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
+                   
                     <h2 class="text-uppercase title mb-3 font40">
                         department store
                     </h2>
@@ -464,13 +464,13 @@ $page = app(PageInterface::class)->findById(28);
                     </p>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
     </div>
     <div class="activity-news mt-60 mb-60">
         <div class="activity-news__top container-customize mt-40 mb-40">
             <div class="title ">
-                {{-- <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}"> --}}
+               
                 <h2 class="text-uppercase font40">Tin tức</h2>
                 <div class="line">
                 </div>
@@ -484,7 +484,7 @@ $page = app(PageInterface::class)->findById(28);
 
         <div class="swiper-container slide-news">
             <div class="swiper-wrapper">
-                <!-- Slides -->
+               
                 @if (!empty($posts))
                 @foreach ($posts as $post)
                 <div class="swiper-slide">

@@ -24,9 +24,21 @@ class ListFieldActivityServiceProvider extends ServiceProvider
 
         Helper::autoload(__DIR__ . '/../../helpers');
     }
-
+    /**
+     * Register sidebar options in menu
+     * @throws Throwable
+     */
+    public function registerMenuOptions()
+    {
+        if (\Auth::user()->hasPermission('field-activities.index')) {
+            \Menu::registerMenuOptions(ListFieldActivity::class, trans('Lĩnh vực hoạt động'));
+        }
+    }
     public function boot()
     {
+         
+    
+
         $this->setNamespace('plugins/list-field-activity')
             ->loadAndPublishConfigurations(['permissions'])
             ->loadMigrations()
@@ -38,11 +50,15 @@ class ListFieldActivityServiceProvider extends ServiceProvider
             // if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
             //    \Language::registerModule([ListFieldActivity::class]);
             // }
-
+            if (defined('MENU_ACTION_SIDEBAR_OPTIONS')) {
+                \Menu::addMenuOptionModel(ListFieldActivity::class);
+                add_action(MENU_ACTION_SIDEBAR_OPTIONS, [$this, 'registerMenuOptions'], 10);
+            }
+            \Menu::addMenuLocation('field-activities', 'field-activities');
             dashboard_menu()
             ->registerItem([ 
                 'id'          => 'cms-field-activities',
-                'priority'    => 5, 
+                'priority'    => 5,  
                 'parent_id'   => null,
                 'name'        => 'Lĩnh vực hoạt động',
                 'icon'        => 'fas fa-chart-line',
