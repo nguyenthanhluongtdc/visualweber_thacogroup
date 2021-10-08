@@ -31,24 +31,7 @@ $page = app(PageInterface::class)->findById(28);
             </div>
             @endforeach
             @endif
-            {{-- <div class="swiper-slide item-slider-top">
-                <img src="{{ Theme::asset()->url('images/lvhd/slider2.jpg') }}" alt="slide"
-                    class="img-slider  h-auto w-100">
-                <div class="post-banner">
-                    <h2 class="font24">
-                        THILOGI thay đổi nhận diện thương hiệu trên các phương tiện vận chuyển
-                    </h2>
-                    <p class="desc font18 text-justify">
-                        Tháng 6/2021, THILOGI đã đưa vào hoạt động xe đầu kéo mới vừa được sản xuất tại nhà máy THACO
-                        Tải thuộc THACO Chu Lai.
-                        05 xe mới này được thiết kế và thực hiện theo nhận diện thương hiệu mới với tông đỏ là màu sắc
-                        chủ đạo của THILOGI thể hiện sự linh hoạt, mạnh mẽ và nhanh chóng.
-                    </p>
-                    <a href="#" class="link">
-                        Xem thêm <span><i class="fas fa-arrow-right"></i></span>
-                    </a>
-                </div>
-            </div> --}}
+            
         </div>
         <div class="swiper-pagination"></div>
 
@@ -88,22 +71,7 @@ $page = app(PageInterface::class)->findById(28);
                     </div>
                     @endforeach
                     @endif
-                    {{-- <div class="swiper-slide">
-                        <img src="{{ Theme::asset()->url('images/lvhd/thiso.jpg') }}" alt="slide"
-                            class="img-slider img-mw-100">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ Theme::asset()->url('images/lvhd/thiso.jpg') }}" alt="slide"
-                            class="img-slider  img-mw-100">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ Theme::asset()->url('images/lvhd/thiso.jpg') }}" alt="slide"
-                            class="img-slider  img-mw-100">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ Theme::asset()->url('images/lvhd/thiso.jpg') }}" alt="slide"
-                            class="img-slider  img-mw-100">
-                    </div> --}}
+                   
                 </div>
 
                 <div class="swiper-pagination"></div>
@@ -148,9 +116,6 @@ $page = app(PageInterface::class)->findById(28);
 
                 <div class="main-content-left ">
                     <div class="content">
-                      
-          
-  
                         {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
                         <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
 
@@ -166,8 +131,6 @@ $page = app(PageInterface::class)->findById(28);
                         </p>
                         @endif
                         <div class="control">
-
-
                             <div class="swiper-button-prev"></div>
                             <div class="mouse-control">
                                 <span class="mouse"></span>
@@ -264,36 +227,7 @@ $page = app(PageInterface::class)->findById(28);
                         </div>
                     </div>
                     @endforeach
-                    {{-- <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{ Theme::asset()->url('images/lvhd/lv5.jpg') }}" alt="slide"
-                            class="">
-                        <h2 class=" title text-uppercase text-light
-                            font40">kid theme park</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">kid theme park</h2>
-                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
-                                voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
-                                        class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                    <div class="col content">
-                        <div class="bg"></div>
-                        <img src="{{ Theme::asset()->url('images/lvhd/lv6.jpg') }}" alt="slide"
-                            class="">
-                        <h2 class=" title text-uppercase text-light
-                            font40">kid cafe</h2>
-                        <div class="detail">
-                            <h2 class="titlee text-uppercase text-light font40">kid cafe</h2>
-                            <p class="text text-light font18 mCustomScrollbar">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                elit. Veniam, neque deserunt earum similique cum eveniet ducimus velit doloremque
-                                voluptatibus et.</p>
-                            <a href="#" class="readmore text-uppercase text-light">Xem Thêm <span><i
-                                        class="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div> --}}
+                  
                 </div>
             </div>
             <div class="activity-detail__right mCustomScrollbar">
@@ -511,126 +445,7 @@ $page = app(PageInterface::class)->findById(28);
                 </div>
                 @endforeach
                 @endif
-                {{-- <div class="swiper-slide">
-                    <a href="#">
-                        <div class="news-top">
-                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
-                        </div>
-                        <div class="news-bottom">
-                            <div class="title text-uppercase">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </div>
-                            <div class="date mt-2">
-                                10/12/2021
-                            </div>
-                            <div class="desc text-justify mt-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
-                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
-                                cumque rerum deleniti assumenda quo est sapiente.
-                            </div>
-
-                        </div>
-                    </a>
-
-                </div> --}}
-                {{-- <div class="swiper-slide">
-                    <a href="#">
-                        <div class="news-top">
-                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
-                        </div>
-                        <div class="news-bottom">
-                            <div class="title text-uppercase">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </div>
-                            <div class="date mt-2">
-                                10/12/2021
-                            </div>
-                            <div class="desc text-justify mt-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
-                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
-                                cumque rerum deleniti assumenda quo est sapiente.
-                            </div>
-
-                        </div>
-                    </a>
-
-                </div> --}}
-                {{-- <div class="swiper-slide">
-                    <a href="#">
-                        <div class="news-top">
-                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
-                        </div>
-                        <div class="news-bottom">
-                            <div class="title text-uppercase">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </div>
-                            <div class="date mt-2">
-                                10/12/2021
-                            </div>
-                            <div class="desc text-justify mt-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
-                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
-                                cumque rerum deleniti assumenda quo est sapiente.
-                            </div>
-
-                        </div>
-                    </a>
-
-                </div> --}}
-                {{-- <div class="swiper-slide">
-                    <a href="#">
-                        <div class="news-top">
-                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
-                        </div>
-                        <div class="news-bottom">
-                            <div class="title text-uppercase">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </div>
-                            <div class="date mt-2">
-                                10/12/2021
-                            </div>
-                            <div class="desc text-justify mt-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
-                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
-                                cumque rerum deleniti assumenda quo est sapiente.
-                            </div>
-
-                        </div>
-                    </a>
-
-                </div> --}}
-                {{-- <div class="swiper-slide">
-                    <a href="#">
-                        <div class="news-top">
-                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
-                        </div>
-                        <div class="news-bottom">
-                            <div class="title text-uppercase font20">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </div>
-                            <div class="date mt-2">
-                                10/12/2021
-                            </div>
-                            <div class="desc text-justify mt-2 font18">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
-                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
-                                cumque rerum deleniti assumenda quo est sapiente.
-                            </div>
-
-                        </div>
-                    </a>
-
-                </div> --}}
+             
             </div>
 
             <div class="swiper-button-prev"></div>

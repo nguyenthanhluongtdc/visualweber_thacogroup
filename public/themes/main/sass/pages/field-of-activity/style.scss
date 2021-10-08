@@ -210,7 +210,7 @@
                 }
                 .main-content-left {
                     height: 20.5vw;
-                    width: 25vw;
+                    width: 25.5vw;
                     z-index: 2!important;
                     position: absolute;
                     background-color: $bg-post;
@@ -255,6 +255,56 @@
                             }
                             @media only screen and (max-width: 1100px) {
                                 left: 23%;
+                            }
+                            .swiper-button-prev {
+                                position: absolute;
+                                left: -20%;
+                                z-index: 99;
+                                top: 85%;
+                                // @media only screen and (max-width: 1680px) {
+                                //     top: 50%;
+                                // }
+                                // @media only screen and (max-width: 1100px) {
+                                //     left: 20%;
+                                // }
+                                &:hover {
+                                    transition: .5s ease-in-out;
+                                    transform: translateX(-20%);
+                                }
+                            }
+                            .swiper-button-next {
+                                position: absolute;
+                                right: -20%;
+                                z-index: 99;
+                                top: 85%;
+                                // @media only screen and (max-width: 1680px) {
+                                //     top: 50%;
+                                // }
+                                // @media only screen and (max-width: 1320px) {
+                                //     left: 27.2%;
+                                // }
+                                &:hover {
+                                    transition: .5s ease-in-out;
+                                    transform: translateX(20%);
+                                }
+                            }
+                            .swiper-button-prev::after {
+                                content: "\f177";
+                                font-weight: lighter;
+                                font-family: "Font Awesome 5 Pro";
+                            }
+                            .swiper-button-next::after {
+                                content: "\f178";
+                                font-weight: lighter;
+                                font-family: "Font Awesome 5 Pro";
+                            }
+                            .swiper-button-prev:after,
+                            .swiper-button-next:after {
+                                color: #999999 !important;
+                                font-size: 30px;
+                                @media only screen and (max-width: 1680px) {
+                                    font-size: 25px;
+                                }
                             }
                             .mouse::after {
                                 content: "\f8cd";
@@ -418,56 +468,7 @@
                 // *+.swiper-container {
                 //     border-top: 1px solid rgba(red, .4);
                 // }
-                .swiper-button-prev {
-                    position: absolute;
-                    left: -20%;
-                    z-index: 99;
-                    top: 85%;
-                    // @media only screen and (max-width: 1680px) {
-                    //     top: 50%;
-                    // }
-                    // @media only screen and (max-width: 1100px) {
-                    //     left: 20%;
-                    // }
-                    &:hover {
-                        transition: .5s ease-in-out;
-                        transform: translateX(-20%);
-                    }
-                }
-                .swiper-button-next {
-                    position: absolute;
-                    right: -20%;
-                    z-index: 99;
-                    top: 85%;
-                    // @media only screen and (max-width: 1680px) {
-                    //     top: 50%;
-                    // }
-                    // @media only screen and (max-width: 1320px) {
-                    //     left: 27.2%;
-                    // }
-                    &:hover {
-                        transition: .5s ease-in-out;
-                        transform: translateX(20%);
-                    }
-                }
-                .swiper-button-prev::after {
-                    content: "\f177";
-                    font-weight: lighter;
-                    font-family: "Font Awesome 5 Pro";
-                }
-                .swiper-button-next::after {
-                    content: "\f178";
-                    font-weight: lighter;
-                    font-family: "Font Awesome 5 Pro";
-                }
-                .swiper-button-prev:after,
-                .swiper-button-next:after {
-                    color: #999999 !important;
-                    font-size: 30px;
-                    @media only screen and (max-width: 1680px) {
-                        font-size: 25px;
-                    }
-                }
+                
             }
         }
     }
@@ -788,6 +789,7 @@
         top: 33%;
         right: 10px;
         z-index: 999;
+        
         .pagination-customize {
             .pagi-item.one {
                 &:hover {
