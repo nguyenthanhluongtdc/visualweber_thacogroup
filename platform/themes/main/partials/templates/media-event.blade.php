@@ -13,9 +13,9 @@
                                         <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
                                     </div>
                                     <div class="news-post h-100">
-                                        @foreach ($post->tags as $tag)
-                                        <h3 class=" title font18">{{$tag->name}}</h3>
-                                        @endforeach
+                                        @if(has_field($post, 'post_category'))
+                                        <h3 class=" title font18">{!! has_field($post,'post_category') !!}  </h3>
+                                        @endif
                                         <a href="{{ $post->url }}">
                                             <h4 class="name font18 ">{{ $post->name }}</h4>
                                         </a>

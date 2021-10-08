@@ -8,9 +8,10 @@
             <img class="img-mw-100" src="{{ get_object_image($postSlider[0]->image) }}" alt="{{$postSlider[0]->name}}">
         </div>
         <div class="news-post h-100">
-            @foreach ($postSlider[0]->tags as $tag) 
-            <h3 class=" title font18">{{$tag->name}}</h3>
-            @endforeach
+            @if(has_field($postSlider[0], 'post_category'))
+                <h3 class=" title font18">{!! has_field($postSlider[0],'post_category') !!}  </h3>
+            @endif
+            
             <a href="{{$postSlider[0]->url}}">  
                 <h4 class="name font18 text-justify">{{$postSlider[0]->name}}</h4>
             </a>

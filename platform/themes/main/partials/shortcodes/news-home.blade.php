@@ -14,9 +14,9 @@
                                             alt="{{ $item_post->name }}">
                                     </div>
                                     <div class="news-post h-100">
-                                        @foreach ($item_post->tags as $tag) 
-                                        <h3 class=" title font18">{{$tag->name}}</h3>
-                                        @endforeach
+                                        @if(has_field($item_post, 'post_category'))
+                                        <h3 class=" title font18">{!! has_field($item_post,'post_category') !!}  </h3>
+                                        @endif
                                         <a href="{{ $item_post->url }}" title="{{ $item_post->name }}">
                                             <h4 class="name font20">{{ $item_post->name }}</h4>
                                         </a>
