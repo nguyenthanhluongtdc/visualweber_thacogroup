@@ -16,7 +16,7 @@
                     // dd($category->id);
                      $postsLatest = get_latest_posts_noncategory([
                     theme_option('default_category_news'), 
-                    theme_option('default_category_newspaper')],3)
+                    theme_option('default_category_newspaper')],4)
             
                     @endphp
                     @if (!empty( $postsLatest))

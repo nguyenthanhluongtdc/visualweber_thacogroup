@@ -748,10 +748,10 @@ var Ajax = {
                 }
             })
         })
-    },
+    }, 
     getMedia: () => {
         $(document).on('click', '.item_link_media', function() {
-            $(this).addClass('active').siblings().removeClass('active')
+            $(this).addClass('active-row').siblings().removeClass('active-row')
             $.ajax({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

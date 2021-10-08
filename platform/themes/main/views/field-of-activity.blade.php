@@ -13,7 +13,8 @@ $page = app(PageInterface::class)->findById(28);
                     class="img-slider  h-auto w-100">
                 <div class="post-banner  {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}}">
                     <h2 class="font24">
-                        {{$post->name}}
+                        {{str::words($post->name,20)}}  
+                       
                     </h2>
                     <div class="date mt-2">
                         <span>
@@ -21,7 +22,7 @@ $page = app(PageInterface::class)->findById(28);
                         </span>
                     </div>
                     <p class="desc font18 text-justify">
-                        {{str::words($post->description,60)}}  
+                        {{str::words($post->description,80)}}  
                     </p>
                     
                     <a href="{{$post->url}}" class="link">
@@ -436,7 +437,7 @@ $page = app(PageInterface::class)->findById(28);
                                 {{ date_format($post->created_at, 'd/m/Y') }}
                             </div>
                             <div class="desc text-justify mt-2 font18">
-                                {{str::words($post->description,45)}}
+                                {{str::words($post->description,40)}}
                             </div>
                         </a>
                         </div>
