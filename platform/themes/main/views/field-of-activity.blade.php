@@ -478,22 +478,143 @@ $page = app(PageInterface::class)->findById(28);
             </div>
 
             <div class="readmore text-uppercase font-weight-bold">
-                <a href="#">Xem tất cả</a>
+                <a href="{!! has_field($data, 'field_link') !!}">Xem tất cả</a>
             </div>
         </div>
 
         <div class="swiper-container slide-news">
             <div class="swiper-wrapper">
                 <!-- Slides -->
+                @if (!empty($posts))
+                @foreach ($posts as $post)
                 <div class="swiper-slide">
+                   
+                        <div class="news-top">
+                            <a href="{{ $post->url }}"><img src="{{ get_object_image($post->image) }}"
+                                alt="{{ $post->name }}"></a>
+                        </div>
+                        <div class="news-bottom">
+                            <a href="{{ $post->url }}" class="text-dark">
+                            <div class="title text-uppercase font20">
+                                {{str::words($post->name,18)}}
+                            </div>
+                            <div class="date mt-2">
+                                {{ date_format($post->created_at, 'd/m/Y') }}
+                            </div>
+                            <div class="desc text-justify mt-2 font18">
+                                {{str::words($post->description,45)}}
+                            </div>
+                        </a>
+                        </div>
+                  
+
+                </div>
+                @endforeach
+                @endif
+                {{-- <div class="swiper-slide">
+                    <a href="#">
+                        <div class="news-top">
+                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
+                        </div>
+                        <div class="news-bottom">
+                            <div class="title text-uppercase">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </div>
+                            <div class="date mt-2">
+                                10/12/2021
+                            </div>
+                            <div class="desc text-justify mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
+                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
+                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
+                                cumque rerum deleniti assumenda quo est sapiente.
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div> --}}
+                {{-- <div class="swiper-slide">
+                    <a href="#">
+                        <div class="news-top">
+                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
+                        </div>
+                        <div class="news-bottom">
+                            <div class="title text-uppercase">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </div>
+                            <div class="date mt-2">
+                                10/12/2021
+                            </div>
+                            <div class="desc text-justify mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
+                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
+                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
+                                cumque rerum deleniti assumenda quo est sapiente.
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div> --}}
+                {{-- <div class="swiper-slide">
+                    <a href="#">
+                        <div class="news-top">
+                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
+                        </div>
+                        <div class="news-bottom">
+                            <div class="title text-uppercase">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </div>
+                            <div class="date mt-2">
+                                10/12/2021
+                            </div>
+                            <div class="desc text-justify mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
+                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
+                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
+                                cumque rerum deleniti assumenda quo est sapiente.
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div> --}}
+                {{-- <div class="swiper-slide">
+                    <a href="#">
+                        <div class="news-top">
+                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
+                        </div>
+                        <div class="news-bottom">
+                            <div class="title text-uppercase">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            </div>
+                            <div class="date mt-2">
+                                10/12/2021
+                            </div>
+                            <div class="desc text-justify mt-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
+                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
+                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
+                                cumque rerum deleniti assumenda quo est sapiente.
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div> --}}
+                {{-- <div class="swiper-slide">
                     <a href="#">
                         <div class="news-top">
                             <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
                         </div>
                         <div class="news-bottom">
                             <div class="title text-uppercase font20">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit
                             </div>
                             <div class="date mt-2">
                                 10/12/2021
@@ -509,127 +630,7 @@ $page = app(PageInterface::class)->findById(28);
                         </div>
                     </a>
 
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="news-top">
-                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
-                        </div>
-                        <div class="news-bottom">
-                            <div class="title text-uppercase">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </div>
-                            <div class="date mt-2">
-                                10/12/2021
-                            </div>
-                            <div class="desc text-justify mt-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
-                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
-                                cumque rerum deleniti assumenda quo est sapiente.
-                            </div>
-
-                        </div>
-                    </a>
-
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="news-top">
-                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
-                        </div>
-                        <div class="news-bottom">
-                            <div class="title text-uppercase">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </div>
-                            <div class="date mt-2">
-                                10/12/2021
-                            </div>
-                            <div class="desc text-justify mt-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
-                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
-                                cumque rerum deleniti assumenda quo est sapiente.
-                            </div>
-
-                        </div>
-                    </a>
-
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="news-top">
-                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
-                        </div>
-                        <div class="news-bottom">
-                            <div class="title text-uppercase">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </div>
-                            <div class="date mt-2">
-                                10/12/2021
-                            </div>
-                            <div class="desc text-justify mt-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
-                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
-                                cumque rerum deleniti assumenda quo est sapiente.
-                            </div>
-
-                        </div>
-                    </a>
-
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="news-top">
-                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
-                        </div>
-                        <div class="news-bottom">
-                            <div class="title text-uppercase">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </div>
-                            <div class="date mt-2">
-                                10/12/2021
-                            </div>
-                            <div class="desc text-justify mt-2">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
-                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
-                                cumque rerum deleniti assumenda quo est sapiente.
-                            </div>
-
-                        </div>
-                    </a>
-
-                </div>
-                <div class="swiper-slide">
-                    <a href="#">
-                        <div class="news-top">
-                            <img src="{{ Theme::asset()->url('images/lvhd/news1.jpg') }}">
-                        </div>
-                        <div class="news-bottom">
-                            <div class="title text-uppercase font20">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit
-                            </div>
-                            <div class="date mt-2">
-                                10/12/2021
-                            </div>
-                            <div class="desc text-justify mt-2 font18">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rem quia
-                                reprehenderit iure praesentium? Sit quia magnam beatae! Dolorum, suscipit! Lorem ipsum
-                                dolor sit amet consectetur adipisicing elit. Tempore, facere! Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit. Distinctio natus accusamus, accusantium voluptatibus
-                                cumque rerum deleniti assumenda quo est sapiente.
-                            </div>
-
-                        </div>
-                    </a>
-
-                </div>
+                </div> --}}
             </div>
 
             <div class="swiper-button-prev"></div>
