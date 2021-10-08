@@ -116,8 +116,8 @@ $page = app(PageInterface::class)->findById(28);
         style="background-image:url('{{ get_field($page, 'background_vision_block') ? get_image_url(get_field($page, 'background_vision_block')) : Theme::asset()->url('images/lvhd/banner.jpg') }}')">
         <div class="future-goal-wrapper container-customize">
             <div class="row mr-0 ml-0">
-                @if (has_field($page, 'repeater_vision_block'))
-                    @foreach (has_field($page, 'repeater_vision_block') as $key => $item)
+                @if (has_field($data, 'repeater_vision_block'))
+                    @foreach (has_field($data, 'repeater_vision_block') as $key => $item)
                         <div class="col-sm-4 pl-0 pr-0">
                             <div class="future-goal p-lr-90 {{ $loop->last ? 'last' : '' }}" data-aos="fade-up"
                                 data-aos-duration="700" data-aos-delay="{{ 50 + $key * 100 }}"
