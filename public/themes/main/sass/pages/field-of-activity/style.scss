@@ -143,6 +143,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 34.2%;
+       
         .future-goal-wrapper {
             position: absolute;
             color: $white;
@@ -155,6 +156,8 @@
             align-items: center;
             justify-content: space-between;
             text-align: center;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.397);
             .future-goal {
                 img {
                     height: 95px;

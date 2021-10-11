@@ -82,7 +82,8 @@ $page = app(PageInterface::class)->findById(28);
 
     </div>
     <div class="future-goal-banner-activity mt-60 mb-60"
-        style="background-image:url('{{ get_field($page, 'background_vision_block') ? get_image_url(get_field($page, 'background_vision_block')) : Theme::asset()->url('images/lvhd/banner.jpg') }}')">
+        style="background-image:url('{{ get_field($data, 'background_vision_block') ? get_image_url(get_field($data, 'background_vision_block')) : Theme::asset()->url('images/lvhd/banner.jpg') }}')">
+       
         <div class="future-goal-wrapper container-customize">
             <div class="row mr-0 ml-0">
                 @if (has_field($data, 'repeater_vision_block'))
