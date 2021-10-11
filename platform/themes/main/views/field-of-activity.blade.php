@@ -76,7 +76,7 @@ $page = app(PageInterface::class)->findById(28);
                 </div>
 
                 <div class="swiper-pagination"></div>
-            </div>
+            </div> 
 
         </div>
 
@@ -95,7 +95,7 @@ $page = app(PageInterface::class)->findById(28);
                                 <img src="{{ get_image_url(has_sub_field($item, 'logo')) }}"
                                     alt="{{ has_sub_field($item, 'title') }}">
                                 <h3 class="title font40 text-light">{{ has_sub_field($item, 'title') }}</h3>
-                                <div class="desc font18  text-justify">
+                                <div class="desc font18  text-justify mCustomScrollbar">
                                     {!! has_sub_field($item, 'description') !!}
                                 </div>
                             </div>

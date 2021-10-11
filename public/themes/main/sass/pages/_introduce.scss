@@ -37,7 +37,7 @@
         display: none;
     }
 }
-
+ 
 .future-goal-banner {
     position: relative;
     background-repeat: no-repeat;
@@ -72,6 +72,7 @@
             }
             .desc {
                 font-family: $MyriadPro-Bold;
+                height: 10vw;
             }
             border-right: 2px solid $white;
             height: 100%;

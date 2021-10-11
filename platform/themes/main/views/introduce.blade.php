@@ -19,7 +19,7 @@
             {!! has_field($page, 'about_us_content') !!}
         </div>
     </div>
-    <div class="container-customize-mobile ">
+    <div class="container-customize-mobile ">  
         <div class="future-goal-banner mt-40"
             style="background-image:url('{{ get_field($page, 'vision_block_background') ? get_image_url(get_field($page, 'vision_block_background')) : Theme::asset()->url('images/introduce/tam-nhin-chien-luoc.jpg') }}')">
             <div class="future-goal-wrapper">
@@ -33,7 +33,7 @@
                                     <img src="{{ get_image_url(has_sub_field($item, 'logo')) }}"
                                         alt="{{ has_sub_field($item, 'title') }}">
                                     <h3 class="title font40">{{ has_sub_field($item, 'title') }}</h3>
-                                    <div class="desc font18 text-justify">
+                                    <div class="desc font18 text-justify mCustomScrollbar">
                                         {!! has_sub_field($item, 'description') !!}
                                     </div>
                                 </div>
