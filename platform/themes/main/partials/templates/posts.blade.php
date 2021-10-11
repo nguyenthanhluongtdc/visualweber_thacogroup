@@ -21,7 +21,7 @@
                                         <h4 class="name font18 ">{{ $post->name }}</h4>
                                     </a>
                                     <span class="time"> {{ date_format($post->created_at, 'd/m/Y') }}</span>
-                                    <p class="description font18  text-justify">{{str::words($post->description,30)}}</p>
+                                    <p class="description font18  text-justify">{{str::words($post->description,35)}}</p>
                                     <a href="{{ $post->url }}" class="read-more">{!! __('Xem thêm') !!}</a>
                                 </div>
                             </div>

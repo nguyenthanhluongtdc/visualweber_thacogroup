@@ -108,12 +108,12 @@
             .description {
                 color: $white;
                 margin-bottom: 15px;
-                max-height: 170px;
+                max-height: 200px;
                 line-height: 22px;
                 overflow: hidden;
-                // @media screen and (max-width: 1680px) {
-                //     max-height: 120px;
-                // }
+                @media screen and (max-width: 1480px) {
+                    @include split_str(5);
+                }
                 p {
                     // @include split_str(7);
                 }
