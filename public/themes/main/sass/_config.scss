@@ -52,7 +52,7 @@ body {
     right: 0;
 }
 
-.img-mw-100 {
+.img-mw-100 { 
     // max-width: 100%;
     width: 100%;
 }
@@ -139,6 +139,10 @@ body {
 //         padding-top: 86px;
 //     }
 // }
+.w-auto{
+    width: auto !important;
+    object-fit: cover;
+}
 .h-45vw {
     height: 45vw !important;
     object-fit: cover !important;
