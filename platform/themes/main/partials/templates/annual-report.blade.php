@@ -24,7 +24,7 @@
             </div>  
         </div>
         
-    </div>
+    </div> 
     @empty
     <p class="text-center text-danger">
         {!! __('Đang được cập nhật') !!}

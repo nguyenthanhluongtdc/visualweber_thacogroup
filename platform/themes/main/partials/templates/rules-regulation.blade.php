@@ -10,13 +10,11 @@
     @forelse($data as $item)
         <div class="info-item">
             <div class="info-left">
-                <div class="date">
+                <div class="date"> 
                     <p>
-                        <span class="date-day">
-                            {{$item->created_at->format('d')}}</span>
-                        <sup class="">-{{$item->created_at->format('m')}}</sup>
+                        <span class="date-day">{{$item->created_at->format('m')}}</span><sup class="">/{{$item->created_at->format('Y')}}</sup>
                     </p>
-                    <p class="date-year fon16 text-center">{{$item->created_at->format('Y')}}</p>
+                    <p class="date-year fon16 text-center">{{$item->created_at->format('d')}}</p>
                 </div>
             </div>
             <div class="info-right">

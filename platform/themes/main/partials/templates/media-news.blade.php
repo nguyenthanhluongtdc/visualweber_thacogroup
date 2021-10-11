@@ -45,7 +45,7 @@
                 <div class="download">
                     <a download href="{{ has_field($item, 'repeater_file_media') ? get_object_image(has_sub_field(has_field($item, 'repeater_file_media')[0], 'file')) : '#'}}"
                         title="download">{!! __('DOWNLOAD') !!}</a>
-                </div> 
+                </div>  
                 
             </div> 
             
