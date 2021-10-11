@@ -18,7 +18,7 @@
                                         <h3 class=" title font18">{!! has_field($post,'post_category') !!}  </h3>
                                         @endif
                                         <a href="{{ $post->url }}">
-                                            <h4 class="name font18">{{ $post->name }}</h4>
+                                            <h4 class="name font18">{{str::words($post->name,15)}}</h4>
                                         </a>
                                         <span class="time">
                                             {{ date_format($post->created_at, 'd/m/Y') }}</span>
@@ -45,8 +45,8 @@
                                                 <img src="{{ get_object_image($post->image) }}" alt="">
                                             </div>
 
-                                            <h4 class="post_name font18">{{str::words($post->name,15)}}</h4>
-                                            <p class="post_description font18">{{str::words($post->description,15)}}
+                                            <h4 class="post_name font18">{{str::words($post->name,10)}}</h4>
+                                            <p class="post_description font18">{{str::words($post->description,18)}}
                                             </p>
                                             <span
                                                 class="time">{{ date_format($post->created_at, 'd/m/Y') }}</span>

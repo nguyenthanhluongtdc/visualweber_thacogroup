@@ -13,10 +13,10 @@
             @endif
             
             <a href="{{$postSlider[0]->url}}">  
-                <h4 class="name font18 text-justify">{{$postSlider[0]->name}}</h4>
+                <h4 class="name font18 text-justify">{{str::words($postSlider[0]->name ,15)}}</h4>
             </a>
             <span class="time">{{date_format($postSlider[0]->created_at,"d/m/Y")}}</span> 
-            <p class="description font18  text-justify">{{str::words($postSlider[0]->description,30)}}</p>
+            <p class="description font18  text-justify">{{str::words($postSlider[0]->description,20)}}</p>
             <a href="{{$postSlider[0]->url}}" class="read-more message">{!!__('Xem thêm')!!}</a>
         </div>
     </div> 
