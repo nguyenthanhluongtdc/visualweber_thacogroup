@@ -10,7 +10,7 @@
                             <div class="swiper-slide">
                                 <div class="news__top">  
                                     <div class="img-post">
-                                        <img class="img-mw-100" src="{{ Storage::disk('public')->exists(get_object_image($post->image)) ? get_image_url(get_object_image($post->image)) : RvMedia::getDefaultImage()}}" alt="">
+                                        <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
                                     </div>
                                     <div class="news-post h-100">
 
@@ -42,7 +42,7 @@
                                     <div class="post_content_bottom h-100">
                                         <a class="post-wrapper" href=" {{ $post->url }}">
                                             <div class="post-thumbnail">
-                                                <img src="{{ Storage::disk('public')->exists(get_object_image($post->image)) ? get_image_url(get_object_image($post->image)) : RvMedia::getDefaultImage()}}" alt="">
+                                                <img src="{{ get_object_image($post->image) }}" alt="">
                                             </div>
 
                                             <h4 class="post_name font18">{{str::words($post->name,10)}}</h4>
@@ -76,7 +76,7 @@
                             <div class="swiper-slide">
                                 <div class="news-content">
                                     <div class="img-post">
-                                        <img class="img-mw-100" src="{{ Storage::disk('public')->exists(get_object_image($post->image)) ? get_image_url(get_object_image($post->image)) : RvMedia::getDefaultImage()}}"
+                                        <img class="img-mw-100" src="{{ get_object_image($post->image) }}"
                                             alt="{{ $post->name }}">
                                     </div>
                                     <div class="name ">
@@ -110,7 +110,7 @@
                                 <div class="image">
                                     <div class="post-thumbnail">
                                         <a href="{{ $post->url }}"><img
-                                                src="{{ Storage::disk('public')->exists(get_object_image($post->image)) ? get_image_url(get_object_image($post->image)) : RvMedia::getDefaultImage()}}" alt=""></a>
+                                                src="{{ get_object_image($post->image) }}" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="content">

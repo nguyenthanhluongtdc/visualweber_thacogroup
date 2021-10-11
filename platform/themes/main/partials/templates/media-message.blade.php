@@ -55,7 +55,7 @@
                 <div class="img-content">
                     <div class="image">
                         <div class="post-thumbnail">
-                            <a href="{{$post->url}}"><img src="{{ Storage::disk('public')->exists(get_object_image($post->image)) ? get_image_url(get_object_image($post->image)) : RvMedia::getDefaultImage()}}" alt=""></a>
+                            <a href="{{$post->url}}"><img src="{{ get_object_image($post->image) }}" alt=""></a>
                         </div>
                     </div>
                     <div class="content">

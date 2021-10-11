@@ -9,7 +9,7 @@
                         <div class="swiper-slide">
                             <div class="news__top">
                                 <div class="img-post">
-                                    <img class="img-mw-100" src="{{ Storage::disk('public')->exists(get_object_image($post->image)) ? get_image_url(get_object_image($post->image)) : RvMedia::getDefaultImage()}}"
+                                    <img class="img-mw-100" src="{{ get_object_image($post->image) }}"
                                         alt="{{ $post->name }}">
                                 </div>
                                 <div class="news-post h-100">
@@ -31,7 +31,7 @@
             </div>
 
             <div class="swiper-pagination"></div>
-        </div> 
+        </div>
         <div class="post-slider"> 
             <div class="swiper-container post-slide-bottom">
                 <div class="swiper-wrapper">
@@ -41,7 +41,7 @@
                                 <div class="post_content_bottom ">
                                     <a class="post-wrapper h-100" href=" {{ $post->url }}">
                                         <div class="post-thumbnail">
-                                            <img src="{{ Storage::disk('public')->exists(get_object_image($post->image)) ? get_image_url(get_object_image($post->image)) : RvMedia::getDefaultImage()}}"
+                                            <img src="{{ get_object_image($post->image) }}"
                                                 alt="{{ $post->name }}">
                                         </div>
 
