@@ -1,6 +1,7 @@
 .drop-shadow {
     -webkit-filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .5));
     filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, .5));
+    border-radius: 50%;
 }
 
 .list-social-sidebar {
@@ -20,7 +21,7 @@
         margin-bottom: 20px;
         width: 45px;
         height: 45px;
-        img {
+        img { 
             width: 100%;
             object-fit: cover;
         }
