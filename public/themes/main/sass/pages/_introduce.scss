@@ -152,6 +152,15 @@
     .admin-content.top {
         display: flex;
         flex-wrap: wrap;
+        .item-member{
+            img{
+                height: 20vw;
+                object-fit: cover;
+                @media only screen and (max-width: 1080px) {height: 30vw;}
+                @media only screen and (max-width: 768px) {height: 35vw;}
+                @media only screen and (max-width: 420px) {height: 50vw;}
+            }
+        }
         .item-member:nth-child(1) {
             margin-top: 20px;
             width: 100%;

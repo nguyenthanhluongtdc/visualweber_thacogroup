@@ -167,7 +167,7 @@
                                                     {{ has_sub_field($item_achivement_year, 'year') }}
                                                 </div>
                                             </div>
-                                            <div class="desc font18">
+                                            <div class="desc font18 text-justify">
                                                 {!! has_sub_field($item_achivement_year, 'achivement_name') !!}
                                             </div>
                                         </div>
