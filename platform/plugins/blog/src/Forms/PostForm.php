@@ -83,6 +83,7 @@ class PostForm extends FormAbstract
                     'rows'            => 4,
                     'placeholder'     => trans('core/base::forms.description_placeholder'),
                     'with-short-code' => true,
+                    
                 ],
             ])
             ->add('status', 'customSelect', [

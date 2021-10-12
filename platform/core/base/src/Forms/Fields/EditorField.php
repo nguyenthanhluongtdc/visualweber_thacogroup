@@ -18,7 +18,7 @@ class EditorField extends FormField
 
         return 'core/base::forms.fields.editor';
     }
-
+  
     /**
      *{@inheritDoc}
      */
