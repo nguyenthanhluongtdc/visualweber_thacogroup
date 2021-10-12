@@ -53,13 +53,13 @@ class PostForm extends FormAbstract
             ->setValidatorClass(PostRequest::class)
             ->withCustomFields()
             ->addCustomField('tags', TagField::class)
-            ->add('name', 'editor', [
+            ->add('name', 'text', [
                 'label'      => trans('core/base::forms.name'),
                 'label_attr' => ['class' => 'control-label required'],
                 'attr'       => [
-                    'rows'            => 2,
+                    
                     'placeholder'  => trans('core/base::forms.name_placeholder'),
-                    'with-short-code' => true,
+                    'data-counter' => 120,
                 ],
             ])
             ->add('description', 'textarea', [
