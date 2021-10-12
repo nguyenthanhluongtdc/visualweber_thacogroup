@@ -40,8 +40,8 @@ $page = app(PageInterface::class)->findById(28);
 
     <div class="commercial-field container-customize mt-60 mb-60">
 
-        <div class="commercial-field__left">
-            <div class="left-top d-flex justify-content-left">
+        <div class="commercial-field__left" >
+            <div class="left-top d-flex justify-content-left" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 {{-- <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}"> --}}
                 <h3 class="text-uppercase font20">LĨNH VỰC <br> 
                     @if(has_field($data, 'field_name'))
@@ -54,7 +54,7 @@ $page = app(PageInterface::class)->findById(28);
             <div class="line">
             </div>
             @if(has_field($data, 'field_desc'))       
-            <p class="content mt-25 ">
+            <p class="content mt-25 " data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                 {!! has_field($data,'field_desc') !!} 
             </p>
             @endif

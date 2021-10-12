@@ -22,7 +22,7 @@
                                     </a>
                                     <span class="time"> {{ date_format($post->created_at, 'd/m/Y') }}</span>
                                     <p class="description font18  text-justify">{{str::words($post->description,35)}}</p>
-                                    <a href="{{ $post->url }}" class="read-more">{!! __('Xem thêm') !!}</a>
+                                    <a href="{{ $post->url }}" class="read-more text-uppercase">{!! __('Xem thêm') !!} <i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                                     </a>
                                 </div> 
                             </div>
-                        @endforeach
+                        @endforeach 
                     @endif
 
 

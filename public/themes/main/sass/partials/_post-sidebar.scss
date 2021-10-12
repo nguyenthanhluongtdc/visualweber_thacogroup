@@ -28,8 +28,9 @@
             //     border: none;
             // }
             .list-group-item.active-row {
-                background: none;
-                color: $main_color;
+                // background: none;
+                // color: $main_color;
+                display: none;
             }
         }
         .list-post-new {

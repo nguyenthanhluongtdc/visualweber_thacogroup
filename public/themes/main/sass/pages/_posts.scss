@@ -45,7 +45,7 @@
                                 object-position: bottom;
                             }
                         }
-                        .news-post {
+                        .news-post { 
                             flex: 0 0 35%;
                             background-color: $bg-post;
                             padding: 40px 30px;
@@ -99,15 +99,23 @@
                                 // }
                             }
                             .read-more {
-                                padding: 7px 22px;
-                                color: $white;
-                                border: 1px solid #fff;
+                                // padding: 7px 22px;
+                                color:  $main_color;
+                                font-weight: bolder;
+                                // border: 1px solid #fff;
                                 text-decoration: none;
-                                font-size: 15px;
-                                background-color: $main_color;
+                                font-size: 16px;
+                                // background-color: $main_color;
                                 position: absolute;
                                 bottom: 60px;
-                                right: 15px;
+                                right: 30px;
+                                
+                                &:hover{
+                                    i{
+                                        transform: translateX(8px);
+                                        transition: .5s ease-in;
+                                    }
+                                }
                                 
                             }
                             .read-more.message {
