@@ -40,8 +40,9 @@
                 border: none;
             }
             .list-group-item.active {
-                color: $main_color;
-                background: none;
+                // color: $main_color;
+                // background: none;
+                display: none;
             }
         }
     }

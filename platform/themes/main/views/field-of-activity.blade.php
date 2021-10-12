@@ -12,8 +12,8 @@ $page = app(PageInterface::class)->findById(28);
                 <img src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}}" alt="slide"
                     class="img-slider  h-auto w-100">
                 <div class="post-banner  {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}}">
-                    <h2 class="font24">
-                        {{str::words($post->name,20)}}  
+                    <h2 class="font24 font-weight-bold">
+                        {!!str::words($post->name,20)!!}  
                        
                     </h2>
                     <div class="date mt-2"> 
@@ -457,7 +457,7 @@ $page = app(PageInterface::class)->findById(28);
         </div>
 
         <div class="opt">
-            <a href="#">
+            <a href="{!! has_field($data, 'bottom_field_link') !!}" target="_blank">
                 <img src="{{ Theme::asset()->url('images/lvhd/opt2.png') }}">
             </a>
 

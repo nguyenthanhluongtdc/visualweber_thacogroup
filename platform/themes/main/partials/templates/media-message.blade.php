@@ -16,7 +16,7 @@
                 <h4 class="name font18 text-justify">{!!str::words($postSlider[0]->name ,15)!!}</h4>
             </a>
             <span class="time">{{date_format($postSlider[0]->created_at,"d/m/Y")}}</span> 
-            <p class="description font18  text-justify">{{str::words($postSlider[0]->description,20)}}</p>
+            <p class="description font18  text-justify">{{str::words($postSlider[0]->description,40)}}</p>
             <a href="{{$postSlider[0]->url}}" class="read-more message text-uppercase">{!!__('Xem thêm')!!}  <i class="fas fa-arrow-right"></i></a>
         </div>
     </div> 

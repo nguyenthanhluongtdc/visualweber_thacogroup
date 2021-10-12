@@ -45,10 +45,10 @@
                                             </div>
 
                                             <h4 class="post_name font18">{!!str::words($post_bottom->name,10)!!}</h4>
-                                            <p class="post_description font18">{{str::words($post_bottom->description,15)}}
+                                            <span class="time">{{ date_format($post->created_at, 'd/m/Y') }}</span>
+                                            <p class="post_description font18">{{str::words($post_bottom->description,25)}}
                                             </p>
-                                            <span
-                                                class="time">{{ date_format($post->created_at, 'd/m/Y') }}</span>
+                                           
                                         </a>
                                     </div>
                                 </div>

@@ -97,7 +97,7 @@
                         flex: 1 50%;
                         max-width: 50%;
                         padding: 0 2%;
-                    }
+                    } 
                 } 
                 .report-item-right {
                     @media only screen and (max-width: 1080px) {
@@ -105,6 +105,7 @@
                         max-width: 50%;
                         padding: 0 2%;
                     }
+                   
                 }
                 .date {
                     display: block;
@@ -132,10 +133,10 @@
                         margin: 5px 0 10px 0;
                         text-transform: uppercase;
                         line-height: 21px;
-                        @include split_str(3);
-                        @include height(60);
+                      
+                        @include height(40);
                         @media screen and (max-width: 1680px) {
-                            @include height(70);
+                            @include height(50);
                             line-height: 19px;
                         }
                         @media screen and (max-width: 1330px) {
@@ -162,6 +163,7 @@
                         }
                     }
                 }
+                
                 .download a {
                     background: $main_color;
                     color: #fff;
@@ -171,6 +173,7 @@
                     font-family: $MyriadPro-Bold;
                     display: block;
                     width: max-content;
+                    float: right;
                     @media only screen and (max-width: 1080px) {
                         font-family: $MyriadPro-Regular;
                     }

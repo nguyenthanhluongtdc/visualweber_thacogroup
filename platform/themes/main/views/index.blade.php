@@ -9,7 +9,7 @@
                     <div class="content {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}} " data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
                         <h1 class="font24 title-post">
                        
-                        {{str::words($post->name,20)}}      
+                        {!!str::words($post->name,20)!!}      
                         </h1>
                         <div class="date"> 
                             <span class="text-light">{{$post->created_at->format('d/m/Y')}}</span>

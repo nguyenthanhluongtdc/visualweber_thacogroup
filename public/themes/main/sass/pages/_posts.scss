@@ -16,7 +16,7 @@
                 width: 100%;
                 margin-right: 0;
             }
-            .media__content_left {
+            .media__content_left { 
                 .news__content {
                     .new-post-slide {
                         padding-left: 8px;
@@ -106,9 +106,10 @@
                                 text-decoration: none;
                                 font-size: 16px;
                                 // background-color: $main_color;
-                                position: absolute;
-                                bottom: 60px;
-                                right: 30px;
+                                // position: absolute;
+                                // bottom: 60px;
+                                // right: 30px;
+                                float: right;
                                 
                                 &:hover{
                                     i{
@@ -118,9 +119,9 @@
                                 }
                                 
                             }
-                            .read-more.message {
-                                position: unset;
-                            }
+                            // .read-more.message {
+                            //     position: unset;
+                            // }
                         }
                     }
                     .post-slider {

@@ -12,7 +12,7 @@
                     @php 
                         if( $options==$row->reference_id) {
                             $check = true;
-                        }
+                        } 
                     @endphp
                 @endforeach
         </div>

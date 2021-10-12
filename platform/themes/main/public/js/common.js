@@ -542,14 +542,14 @@ $(document).ready(function() {
 
     if (info_contact && email_us && chat_online) {
         $('#support-tab').find('.contact-box__item:nth-child(1)').click(function() {
-            info_contact.css('display', 'block');
-            email_us.css('display', 'none');
-            chat_online.css('display', 'none');
-
-        });
-        $('#support-tab').find('.contact-box__item:nth-child(2)').click(function() {
+           
             info_contact.css('display', 'none');
             email_us.css('display', 'block');
+            chat_online.css('display', 'none');
+        });
+        $('#support-tab').find('.contact-box__item:nth-child(2)').click(function() {
+            info_contact.css('display', 'block');
+            email_us.css('display', 'none');
             chat_online.css('display', 'none');
 
         });
