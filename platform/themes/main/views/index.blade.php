@@ -11,11 +11,11 @@
                        
                         {{str::words($post->name,20)}}      
                         </h1>
-                        <div class="date">
+                        <div class="date"> 
                             <span class="text-light">{{$post->created_at->format('d/m/Y')}}</span>
                         </div>
                         <div class="description text-justify">
-                        <p class=" font18">
+                        <p class=" font18"> 
                         {{-- {{$post->description}} --}}
                       
                         {{str::words($post->description,80)}}                       

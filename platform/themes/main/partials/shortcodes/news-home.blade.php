@@ -18,7 +18,7 @@
                                         <h3 class=" title font18">{!! has_field($item_post,'post_category') !!}  </h3>
                                         @endif
                                         <a href="{{ $item_post->url }}" title="{{ $item_post->name }}">
-                                            <h4 class="name font20">{{ $item_post->name }}</h4>
+                                            <h4 class="name font20">{!! $item_post->name !!}</h4>
                                         </a>
 
                                         <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
@@ -47,8 +47,8 @@
                                                 <img src="{{ RvMedia::getImageUrl($post_bottom->image, '', false, RvMedia::getDefaultImage()) }}"
                                                     alt="{{ $item_post->name }}" alt="{{ $post_bottom->name }}">
                                             </div>
-
-                                            <h4 class="post_name font20">{{ $post_bottom->name }}</h4>
+                                            
+                                            <h4 class="post_name font20">{!! $post_bottom->name !!}</h4>
                                             <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
                                             <p class="post_description font18">{{str::words($post_bottom->description,25)}}
                                             </p>

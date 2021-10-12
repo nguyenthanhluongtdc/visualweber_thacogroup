@@ -41,7 +41,7 @@ class ListFieldActivityController extends BaseController
         page_title()->setTitle(trans('plugins/list-field-activity::list-field-activity.name'));
 
         return $table->renderTable();
-    }
+    } 
 
     /**
      * @param FormBuilder $formBuilder

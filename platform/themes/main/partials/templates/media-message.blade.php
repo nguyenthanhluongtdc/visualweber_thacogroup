@@ -13,7 +13,7 @@
             @endif
             
             <a href="{{$postSlider[0]->url}}">  
-                <h4 class="name font18 text-justify">{{str::words($postSlider[0]->name ,15)}}</h4>
+                <h4 class="name font18 text-justify">{!!str::words($postSlider[0]->name ,15)!!}</h4>
             </a>
             <span class="time">{{date_format($postSlider[0]->created_at,"d/m/Y")}}</span> 
             <p class="description font18  text-justify">{{str::words($postSlider[0]->description,20)}}</p>
@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="name ">
                                     <h3 class="font40">
-                                        {{$postSlider[0]->name}}
+                                        {!!$postSlider[0]->name!!}
                                     </h3>
                                 </div>
                             </div>

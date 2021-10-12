@@ -17,7 +17,7 @@
                                         <h3 class=" title font18">{!! has_field($post,'post_category') !!}  </h3>
                                         @endif
                                         <a href="{{ $post->url }}">
-                                            <h4 class="name font18 ">{{str::words( $post->name ,15)}}</h4>
+                                            <h4 class="name font18 ">{!!str::words( $post->name ,15)!!}</h4>
                                         </a>
                                         <span class="time">
                                             {{ date_format($post->created_at, 'd/m/Y') }}</span>
@@ -44,7 +44,7 @@
                                                 <img src="{{ get_object_image($post_bottom->image) }}" alt="">
                                             </div>
 
-                                            <h4 class="post_name font18">{{str::words($post_bottom->name,10)}}</h4>
+                                            <h4 class="post_name font18">{!!str::words($post_bottom->name,10)!!}</h4>
                                             <p class="post_description font18">{{str::words($post_bottom->description,15)}}
                                             </p>
                                             <span
@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="name ">
                                         <h3 class="font40">
-                                            {{ $post->name }}
+                                            {!! $post->name !!}
                                         </h3>
                                     </div>
                                 </div>
@@ -113,7 +113,7 @@
                                 </div>
                                 <div class="content">
                                     <a href="{{ $post->url }}">
-                                        <h3 class="name font18">{{str::words($post->name,18)}}</h3>
+                                        <h3 class="name font18">{!!str::words($post->name,18)!!}</h3>
                                     </a>
     
                                     <p class="time">{{ date_format($post->created_at, 'd/m/Y') }}</p>

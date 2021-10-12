@@ -453,8 +453,9 @@
                         font-family: $MyriadPro-Bold;
                         text-transform: uppercase;
                         overflow: hidden;
-                        height: 44px;
+                        height: auto;
                         line-height: 22px;
+                      
                         // text-align: justify;
                     }
                 }
@@ -527,9 +528,10 @@
                         margin-left: 20px;
                         margin-right: 20px;
                         text-transform: uppercase;
-                        height: 44px;
+                      
                         overflow: hidden;
                         line-height: 22px;
+                        @include split_str(2);
                     }
                     .post_description {
                         margin: 10px 20px 20px 20px;

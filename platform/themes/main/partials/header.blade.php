@@ -56,9 +56,11 @@
     <div class="nav-bar-mobile">
         <div class="nav-container">
             <div class="brand">
-                <a href="{{ route('public.single') }}" class="logo">@if (theme_option('logo'))
+                <a href="{{ route('public.single') }}" class="logo">
+                    @if (theme_option('logo'))
                     <img src="{{ RvMedia::getImageUrl(theme_option('logo')) }}" alt="{{ theme_option('site_title') }}">
-                @endif</a>
+                     @endif
+                </a>
                
             </div>
 

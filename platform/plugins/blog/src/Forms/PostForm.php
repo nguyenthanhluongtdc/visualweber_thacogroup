@@ -77,7 +77,7 @@ class PostForm extends FormAbstract
                 'default_value' => false,
             ])
             ->add('content', 'editor', [
-                'label'      => trans('core/base::forms.content'),
+                'label'      => trans('core/base::forms.content'), 
                 'label_attr' => ['class' => 'control-label'],
                 'attr'       => [
                     'rows'            => 4,
