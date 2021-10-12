@@ -82,6 +82,7 @@
                     text-align: justify;
                     .text-content {
                         text-align: justify !important;
+                        font-size: 12px !important;
                         
                     }
                     img {
@@ -145,7 +146,7 @@
                     color: $big-title;
                     .big-title {
                         margin-bottom: 0;
-                        margin-left: 10px;
+                        margin-left: 10px; 
                     }
                 }
                 .list-post-related {
@@ -158,6 +159,9 @@
                         padding: 5px 0;
                         a {
                             color: #616161;
+                            p{
+                                margin-bottom: 0 !important;
+                            }
                         }
                         .time {
                             color: #bcbcbc;

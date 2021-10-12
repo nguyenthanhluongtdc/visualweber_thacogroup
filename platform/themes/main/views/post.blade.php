@@ -38,7 +38,7 @@
         <div class="content-middle order-2">
             <div class="content-main">
                 <div class="post-name">
-                    <h1 class=" name font-myria-bold"> {{ $post->name }}
+                    <h1 class=" name font-myria-bold"> {!! $post->name !!}
                     </h1>
 
                 </div>
@@ -90,7 +90,7 @@
                     @foreach ($relatedPosts as $relatedItem)
                     <li class="font18">
                         <a href="{{ $relatedItem->url }}">
-                            {{ $relatedItem->name }}
+                            {!! $relatedItem->name !!}
                         </a>
                         <span class="time">{{date_format($post->created_at,"d/m/Y")}}</span>
                     </li>

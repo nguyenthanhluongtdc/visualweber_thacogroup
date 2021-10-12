@@ -457,6 +457,9 @@
                         line-height: 22px;
                       
                         // text-align: justify;
+                        p{
+                            margin-bottom: 0 !important;
+                        }
                     }
                 }
                 .time {
@@ -532,6 +535,9 @@
                         overflow: hidden;
                         line-height: 22px;
                         @include split_str(2);
+                        p{
+                            margin-bottom: 0 !important;
+                        }
                     }
                     .post_description {
                         margin: 10px 20px 20px 20px;

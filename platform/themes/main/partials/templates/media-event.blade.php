@@ -17,7 +17,9 @@
                                         <h3 class=" title font18">{!! has_field($post,'post_category') !!}  </h3>
                                         @endif
                                         <a href="{{ $post->url }}">
-                                            <h4 class="name font18 ">{!!str::words( $post->name ,15)!!}</h4>
+                                            <h4 class="name font18 ">
+                                                {!!str::words( $post->name ,15)!!}
+                                            </h4>
                                         </a>
                                         <span class="time">
                                             {{ date_format($post->created_at, 'd/m/Y') }}</span>

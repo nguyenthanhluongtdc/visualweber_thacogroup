@@ -71,6 +71,9 @@
                                     overflow: hidden;
                                     line-height: 22px;
                                     // text-align: justify;
+                                    p{
+                                        margin-bottom: 0 !important;
+                                    }
                                     @media screen and (max-width: 1440px) {
                                         margin: 10px 0;
                                     }
@@ -172,6 +175,9 @@
                                     line-height: 22px;
                                     height: 44px;
                                     overflow: hidden;
+                                    p{
+                                        margin-bottom: 0 !important;
+                                    }
                                 }
                                 .post_description {
                                     margin: 5px 20px;
@@ -247,6 +253,9 @@
                                 text-transform: uppercase;
                                 line-height: 22px;
                                 max-height: 44px;
+                                p{
+                                    margin-bottom: 0 !important;
+                                }
                                 @media screen and (max-width: 1080px) {
                                     text-align: left;
                                 }
