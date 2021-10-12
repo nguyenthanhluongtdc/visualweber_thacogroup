@@ -800,27 +800,32 @@
         z-index: 999;
         
         .pagination-customize {
-            .pagi-item.one {
+            .pagi-item.active-row {
+                // background: none;
+                // color: $main_color;
+                display: none;
+            }
+            .pagi-item:nth-child(1) {
                 &:hover {
                     background-color: #b81d22;
                 }
             }
-            .pagi-item.two {
+            .pagi-item:nth-child(2) {
                 &:hover {
                     background-color: #bd8e40;
                 }
             }
-            .pagi-item.three {
+            .pagi-item:nth-child(3) {
                 &:hover {
                     background-color: #3e79ad;
                 }
             }
-            .pagi-item.four {
+            .pagi-item:nth-child(4) {
                 &:hover {
                     background-color: #398440;
                 }
             }
-            .pagi-item.five {
+            .pagi-item:nth-child(5) {
                 &:hover {
                     background-color: #b3b3b4;
                 }

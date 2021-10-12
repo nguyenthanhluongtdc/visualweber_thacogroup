@@ -7,6 +7,7 @@ return [
         'main-menu-mobile'   => 'Main Menu Mobile Navigation',
         'footer-menu' => 'Footer Navigation',
         'sidebar-media' => 'Side-bar Media Navigation',
+        'field-of-activity-box' => 'Field Of Activity Box',
         
     ],
     'cache'     => [
