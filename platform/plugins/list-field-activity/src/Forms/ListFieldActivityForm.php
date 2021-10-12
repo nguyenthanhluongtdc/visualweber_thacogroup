@@ -53,8 +53,9 @@ class ListFieldActivityForm extends FormAbstract
                 'label_attr' => ['class' => 'control-label required'],
                 'choices'    => $templates,
             ])
-            ->add('image_logo', 'mediaImage', [
-                'label'      => trans('Ảnh Logo'),
+            
+            ->add('color', 'color', [
+                'label'      => __('Màu Logo'),
                 'label_attr' => ['class' => 'control-label'],
             ])
             ->setBreakFieldPoint('status');

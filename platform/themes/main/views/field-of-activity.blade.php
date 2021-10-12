@@ -16,7 +16,7 @@ $page = app(PageInterface::class)->findById(28);
                         {{str::words($post->name,20)}}  
                        
                     </h2>
-                    <div class="date mt-2">
+                    <div class="date mt-2"> 
                         <span> 
                             {{$post->created_at->format('d/m/Y')}}
                         </span>

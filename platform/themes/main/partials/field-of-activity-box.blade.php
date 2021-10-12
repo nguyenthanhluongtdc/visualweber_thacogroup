@@ -1,13 +1,9 @@
-@php
-use Platform\Page\Repositories\Interfaces\PageInterface;
-use Platform\ListFieldActivity\Forms\ListFieldActivityForm;
-$data = app(PageInterface::class)->findById(28); 
-@endphp
+
 
 <ul class="pagination-customize" {!! clean($options) !!}>
     @foreach ($menu_nodes as $key => $row)
-    <li class="pagi-item {{ $row->active ? "active-row" : ""}}">
-        <span class="text text-uppercase  {{ trim($row->icon_font) }}"> {{ $row->name }} </span>
+    <li class="pagi-item {{ $row->active ? "active-row" : ""}}"  onmouseover="this.style.background='{{get_field($row->reference, 'color_code')}}'" onmouseout="this.style.background='transparent'">
+        <span class="text text-uppercase  {{ trim($row->icon_font) }}" > {{ $row->name }} </span>
        
         <a href="{{ $row->url }}" title="" class="number click_scroll">
             

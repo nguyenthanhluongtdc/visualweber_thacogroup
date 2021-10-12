@@ -18,7 +18,7 @@
                         <p class=" font18"> 
                         {{-- {{$post->description}} --}}
                       
-                        {{str::words($post->description,80)}}                       
+                        {{str::words($post->description,80)}}                        
                         </p>
                         
                         </div> 
