@@ -71,22 +71,29 @@
                     max-width: 100%;
                     margin-bottom: 15px;
                     overflow: hidden;
+                    @media only screen and (max-width: 1080px) {
+                        margin-bottom: 0;
+                        margin-top: 15px;
+                    }
                     img {
                         width: 100%;
                         transition: transform .3s, visibility .3s ease-in;
-                        height: 250px;
-                        // @media only screen and (max-width: 1080px) {
-                        //     height: 200px;
-                        // }
-                        // @media only screen and (max-width: 768px) {
-                        //     height: 200px;
-                        // }
+                        height: 320px;
+                        @media only screen and (max-width: 1440px) {
+                            height: 280px;
+                        }
+                        @media only screen and (max-width: 1080px) {
+                            height: 40vw;
+                        }
+                        @media only screen and (max-width: 992px) {
+                            height: 50vw;
+                        }
                         @media only screen and (max-width: 480px) {
-                            height: 120px;
+                            height: 55vw;
                         }
-                        @media only screen and (max-width: 350px) {
-                            height: 100px;
-                        }
+                        // @media only screen and (max-width: 350px) {
+                        //     height: 100px;
+                        // }
                         &:hover {
                             transform: scale(1.1);
                         }
@@ -103,7 +110,7 @@
                     @media only screen and (max-width: 1080px) {
                         flex: 1 50%;
                         max-width: 50%;
-                        padding: 0 2%;
+                        padding: 2%;
                     }
                    
                 }
@@ -176,6 +183,7 @@
                     float: right;
                     @media only screen and (max-width: 1080px) {
                         font-family: $MyriadPro-Regular;
+                        float: unset;
                     }
                     @media only screen and (max-width: 992px) {
                         padding: 5px 7px 3px;
