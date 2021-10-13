@@ -6,7 +6,13 @@
             <img src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}}" class="img-slider h-auto w-100">
             @if(has_field($page, 'show_hide')) 
             <div class="bg-post">
-                    <div class="content {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}} " data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50" class="aos-init aos-animate">
+                    <div 
+                    class="content {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}} " 
+                    data-aos="zoom-in-up" 
+                    data-aos-duration="1000" 
+                    data-aos-delay="50" 
+                    class="aos-init aos-animate"  
+                    style=" background-color:  {{has_field($page, 'background_color')}};">
                         <h1 class="font24 title-post">
                        
                         {!!str::words($post->name,20)!!}      
@@ -17,7 +23,7 @@
                         <div class="description text-justify">
                         <p class=" font18"> 
                         {{-- {{$post->description}} --}}
-                      
+                        
                         {{str::words($post->description,80)}}                        
                         </p>
                         
