@@ -15,7 +15,7 @@
                     @php
                  $postsLatest = get_latest_posts_noncategory([
                     theme_option('default_category_news'),
-                    theme_option('default_category_newspaper')],3)
+                    theme_option('default_category_newspaper')],3) 
                     @endphp 
                     @if (!empty( $postsLatest))
                     @foreach ( $postsLatest as $post) 
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         <div class="title font18 ">
-                            <a href="{{$post->url}}">{{$post->name}}</a>
+                            <a href="{{$post->url}}">{!!str::words($post->name,12)!!}</a>
                             <p class="time">{{date_format($post->created_at,"d/m/Y")}}</p>
                         </div>
                     </div>

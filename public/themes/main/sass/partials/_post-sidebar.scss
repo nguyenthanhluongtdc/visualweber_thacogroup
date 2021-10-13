@@ -81,8 +81,8 @@
                         width: 68%;
                         margin-bottom: 10px;
                         a {
-                            height: 40px;
-                            display: block;
+                            height: auto;
+                            display: block; 
                             overflow: hidden;
                             // @include split_str(2);
                             color: #000;
