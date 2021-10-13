@@ -289,7 +289,7 @@
                   <div class="list-video">
                     <div
                       class="video-item"
-                      data-target="#album_modal"
+                      data-target="#album_modal" 
                       data-toggle="modal"
                       v-if="dataVideo"
                       v-for="item in dataVideo.data"
@@ -327,7 +327,7 @@
                 role="tabpanel"
                 aria-labelledby="field-2-tab"
               >
-                <div class="media-video mCustomScrollbar" data-mcs-theme="dark">
+                <div class="media-video " >
                   <div class="list-video">
                     <div class="left">
                       <div class="video-main" v-if="videoPlay">
@@ -354,8 +354,8 @@
                         </p>
                       </div>
                     </div>
-                    <div class="right">
-                      <div class="list-video-left">
+                    <div class="right mCustomScrollbar" data-mcs-theme="dark">
+                      <div class="list-video-left"> 
                         <div
                           class="video-item"
                           v-if="dataVideo"
@@ -463,8 +463,7 @@
                 class="item"
                 v-if="galleryVideo"
                 v-for="(item, i) in galleryVideo.data"
-                :key="i"
-              >
+                :key="i" >
                 <div class="box-img" @click="showModalSliderVideo(item)">
                   <img
                     :src="

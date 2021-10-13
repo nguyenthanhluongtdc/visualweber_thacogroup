@@ -2939,7 +2939,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
 //custom-scrollbar
 
  //pagination
@@ -37963,49 +37962,49 @@ var render = function() {
                         }
                       },
                       [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "media-video mCustomScrollbar",
-                            attrs: { "data-mcs-theme": "dark" }
-                          },
-                          [
-                            _c("div", { staticClass: "list-video" }, [
-                              _c("div", { staticClass: "left" }, [
-                                _vm.videoPlay
-                                  ? _c("div", { staticClass: "video-main" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "video-wrapper" },
-                                        [
-                                          _c("iframe", {
-                                            staticClass: "youtube-player",
-                                            attrs: {
-                                              id: "player",
-                                              type: "text/html",
-                                              src:
-                                                "https://www.youtube.com/embed/" +
-                                                _vm.videoPlay.youtube_code +
-                                                "?wmode=opaque&autohide=1&enablejsapi=1",
-                                              frameborder: "0",
-                                              muted: "muted"
-                                            }
-                                          })
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c("p", { staticClass: "name font30" }, [
-                                        _vm._v(
-                                          "\n                        " +
-                                            _vm._s(_vm.dataVideo.name) +
-                                            "\n                      "
-                                        )
-                                      ])
+                        _c("div", { staticClass: "media-video " }, [
+                          _c("div", { staticClass: "list-video" }, [
+                            _c("div", { staticClass: "left" }, [
+                              _vm.videoPlay
+                                ? _c("div", { staticClass: "video-main" }, [
+                                    _c(
+                                      "div",
+                                      { staticClass: "video-wrapper" },
+                                      [
+                                        _c("iframe", {
+                                          staticClass: "youtube-player",
+                                          attrs: {
+                                            id: "player",
+                                            type: "text/html",
+                                            src:
+                                              "https://www.youtube.com/embed/" +
+                                              _vm.videoPlay.youtube_code +
+                                              "?wmode=opaque&autohide=1&enablejsapi=1",
+                                            frameborder: "0",
+                                            muted: "muted"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("p", { staticClass: "name font30" }, [
+                                      _vm._v(
+                                        "\n                        " +
+                                          _vm._s(_vm.dataVideo.name) +
+                                          "\n                      "
+                                      )
                                     ])
-                                  : _vm._e()
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "right" }, [
+                                  ])
+                                : _vm._e()
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "right mCustomScrollbar",
+                                attrs: { "data-mcs-theme": "dark" }
+                              },
+                              [
                                 _c(
                                   "div",
                                   { staticClass: "list-video-left" },
@@ -38063,10 +38062,10 @@ var render = function() {
                                   }),
                                   0
                                 )
-                              ])
-                            ])
-                          ]
-                        )
+                              ]
+                            )
+                          ])
+                        ])
                       ]
                     )
                   ]

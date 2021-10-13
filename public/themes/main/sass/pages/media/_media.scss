@@ -533,6 +533,7 @@
                             .left {
                                 flex: 0 0 68%;
                                 margin-right: 2%;
+                                
                                 @media only screen and (max-width: 600px) {
                                     flex: 0 0 100%;
                                     margin-right: 0;
@@ -547,9 +548,15 @@
                                 }
                                 iframe {
                                     width: 100% !important;
-                                    height: 500px;
+                                    height: 26vw;
                                     @media only screen and (max-width: 1680px) {
-                                        height: 400px;
+                                        height: 24vw;
+                                    }
+                                    @media only screen and (max-width: 1440px) {
+                                        height: 28vw;
+                                    }
+                                    @media only screen and (max-width: 1300px) {
+                                        height: 31vw;
                                     }
                                     @media only screen and (max-width: 1080px) {
                                         height: 400px !important;
@@ -570,6 +577,31 @@
                             }
                             .right {
                                 flex: 0 0 29%;
+                                height: 26vw;
+                                @media only screen and (max-width: 1680px) {
+                                    height: 24vw;
+                                }
+                                @media only screen and (max-width: 1440px) {
+                                    height: 28vw;
+                                }
+                                @media only screen and (max-width: 1300px) {
+                                    height: 31vw;
+                                }
+                                @media only screen and (max-width: 1080px) {
+                                    height: 400px !important;
+                                }
+                                @media only screen and (max-width: 768px) {
+                                    height: 350px !important;
+                                }
+                                @media only screen and (max-width: 600px) {
+                                    height: 220px !important;
+                                }
+                                @media only screen and (max-width: 350px) {
+                                    height: 200px !important;
+                                }
+                                @media only screen and (max-width: 300px) {
+                                    height: 150px !important;
+                                }
                                 @media only screen and (max-width: 600px) {
                                     flex: 0 0 100%;
                                 }
