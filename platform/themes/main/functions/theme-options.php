@@ -64,7 +64,7 @@ app()->booted(function () {
                 'type' => 'mediaImage',
                 'label' => __('Logo'),
                 'attributes' => [
-                    'name' => 'logo-footer',
+                    'name' => 'logo-footer', 
                     'value' => '',
                     
                 ],
@@ -127,7 +127,7 @@ app()->booted(function () {
             [
                 'id' => 'office-address',
                 'section_id' => 'opt-text-subsection-footer',
-                'type' => 'text',
+                'type' => 'editor',
                 'label' => __('Địa chỉ văn phòng 1'),
                 'attributes' => [
                     'name' => 'office-address',
@@ -196,7 +196,7 @@ app()->booted(function () {
             [
                 'id' => 'office-address-two',
                 'section_id' => 'opt-text-subsection-footer',
-                'type' => 'text',
+                'type' => 'editor',
                 'label' => __('Địa chỉ văn phòng 2'),
                 'attributes' => [
                     'name' => 'office-address-two',
@@ -265,7 +265,7 @@ app()->booted(function () {
             [
                 'id' => 'office-address-three',
                 'section_id' => 'opt-text-subsection-footer',
-                'type' => 'text',
+                'type' => 'editor',
                 'label' => __('Địa chỉ văn phòng 3'),
                 'attributes' => [
                     'name' => 'office-address-three',

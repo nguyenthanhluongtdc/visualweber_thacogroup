@@ -11,9 +11,9 @@
 
                         <div class="office">
                             <h2 class="font18 text-white title">{!! theme_option('office-name') !!}</h2>
-                            <div class="address">
-                                <p class="font18 text-white"> {!! theme_option('office-address') !!} </p>
-                            </div>
+                            <div class="address text-white">
+                                <p class="font18 "> {!! theme_option('office-address') !!} </p>
+                            </div> 
                             <div class="phone">
                                 <a class="text-white" href="tel: {!! theme_option('office-phone') !!} "> {!! theme_option('office-phone') !!}
                                 </a>
@@ -24,8 +24,8 @@
                         </div>
                         <div class="office">
                             <h2 class="font18 text-white title">{!! theme_option('office-name-two') !!}</h2>
-                            <div class="address">
-                                <p class="font18 text-white">
+                            <div class="address  text-white">
+                                <p class="font18">
                                     {!! theme_option('office-address-two') !!}
                                 </p>
                             </div>
@@ -38,9 +38,9 @@
                         </div>
                         <div class="office">
                             <h2 class="font18 text-white title">{!! theme_option('office-name-three') !!}</h2>
-                            <div class="address">
+                            <div class="address text-white">
 
-                                <p class="font18 text-white">
+                                <p class="font18 ">
                                     {!! theme_option('office-address-three') !!}
                                 </p>
 
