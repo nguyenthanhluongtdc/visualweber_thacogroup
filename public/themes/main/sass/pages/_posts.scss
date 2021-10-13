@@ -136,7 +136,7 @@
                         margin-right: -8px;
                         .post_content_bottom {
                             box-shadow: 0 5px 8px -5px #555;
-                            margin-top: 8px;
+                            // margin-top: 8px;
                             margin-bottom: 8px;
                             overflow: hidden;
                             .post-wrapper {
@@ -158,7 +158,7 @@
                                     }
                                     img {
                                         width: 100%;
-                                        height: 175px;
+                                        height: 160px;
                                         transition: transform .3s, visibility .3s ease-in;
                                     }
                                 }
@@ -167,7 +167,7 @@
                                 display: block;
                                 background-color: $bg-post;
                                 .post_name {
-                                    margin-top: 15px;
+                                    margin-top: 10px;
                                     font-family: $MyriadPro-Bold;
                                     margin-left: 20px;
                                     margin-right: 20px;
