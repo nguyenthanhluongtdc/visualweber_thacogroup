@@ -80,9 +80,13 @@
                 .post-content {
                     margin-top: 10px;
                     text-align: justify;
+                    
+                    a{
+                        color: unset;
+                    }
                     .text-content {
                         text-align: justify !important;
-                        font-size: 12px !important;
+                        // font-size: 12px !important;
                         
                     }
                     img {

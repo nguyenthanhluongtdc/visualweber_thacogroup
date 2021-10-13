@@ -62,11 +62,18 @@
                     </div>
 
                 </div>
-                <div class="post-content">
+                <div class="gallery post-content">
+                    <a href="fullsize.png">
+                        {!! $post->content !!}
+                    </a>
+                   
+                </div>
+                {{-- <div class="post-content">
                     <div class="text-content">
+                       
                             {!! $post->content !!}
                     </div>
-                </div>
+                </div> --}}
                 <div class="post-tag">
                     <h4 class="title">{!!__('Từ khóa:')!!}</h4>
                     @foreach ($post->tags as $tag)
@@ -103,3 +110,9 @@
     </div>
 </div>
 
+
+<script>
+    $(document).ready(function() {
+      $(".gallery a").fancybox();
+    });
+</script>
