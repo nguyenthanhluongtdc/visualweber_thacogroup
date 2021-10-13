@@ -2939,6 +2939,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 //custom-scrollbar
 
  //pagination
@@ -36907,38 +36908,6 @@ var render = function() {
   return _c("div", { staticClass: "filter-media" }, [
     _c("form", { attrs: { action: "" }, on: { submit: _vm.submitForm } }, [
       _c("div", { staticClass: "list-tool" }, [
-        _c("div", { staticClass: "search" }, [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.keyword,
-                expression: "keyword"
-              }
-            ],
-            staticClass: "form-control form-control-sm",
-            attrs: {
-              type: "text",
-              placeholder: "Nhập nội dung cần tìm",
-              value: "",
-              name: "keyword",
-              autocomplete: "off"
-            },
-            domProps: { value: _vm.keyword },
-            on: {
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.keyword = $event.target.value
-              }
-            }
-          }),
-          _vm._v(" "),
-          _vm._m(0)
-        ]),
-        _vm._v(" "),
         _c("div", { staticClass: "calender" }, [
           _c(
             "div",
@@ -36960,17 +36929,17 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _vm._m(1),
+        _vm._m(0),
         _vm._v(" "),
-        _vm._m(2),
+        _vm._m(1),
         _vm._v(" "),
         _c("div", { staticClass: "dropdown-filter-mobile" }, [
           _c("div", { staticClass: "dropdownn" }, [
-            _vm._m(3),
+            _vm._m(2),
             _vm._v(" "),
             _c("ul", { staticClass: "dropdown-menu dropdown-menu-lg-end" }, [
               _c("li", { staticClass: "dropdown-submenu" }, [
-                _vm._m(4),
+                _vm._m(3),
                 _vm._v(" "),
                 _c(
                   "ul",
@@ -36998,14 +36967,14 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _vm._m(5),
+              _vm._m(4),
               _vm._v(" "),
-              _vm._m(6)
+              _vm._m(5)
             ])
           ])
         ]),
         _vm._v(" "),
-        _vm._m(7)
+        _vm._m(6)
       ])
     ])
   ])
@@ -37015,19 +36984,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      { staticClass: "btn btn-secondary", attrs: { type: "submit" } },
-      [_c("i", { staticClass: "fas fa-search" })]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "filter", attrs: { id: "filter" } }, [
       _c("div", { staticClass: "filter__title" }, [
-        _c("label", { attrs: { for: "" } }, [_vm._v("Filter")]),
+        _c("label", { attrs: { for: "" } }, [_vm._v("Lọc")]),
         _vm._v(" "),
         _c("i", { staticClass: "fas fa-angle-down" })
       ]),
@@ -37098,10 +37057,6 @@ var staticRenderFns = [
             attrs: { name: "sort" }
           },
           [
-            _c("option", { attrs: { value: "", selected: "", disabled: "" } }, [
-              _vm._v("Sắp xếp")
-            ]),
-            _vm._v(" "),
             _c("option", { attrs: { value: "new" } }, [
               _vm._v("Thời gian mới nhất")
             ]),
@@ -37364,7 +37319,7 @@ var render = function() {
                                 _c("i", { staticClass: "far fa-images" }),
                                 _vm._v(
                                   "\n                  " +
-                                    _vm._s(_vm.__("Albums")) +
+                                    _vm._s(_vm.__("Thư viện ảnh")) +
                                     "\n                "
                                 )
                               ]
@@ -37409,7 +37364,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "dropdown dr-mb dl" }, [
                       _c("div", { staticClass: "dt" }, [
-                        _c("span", [_vm._v(_vm._s(_vm.__("Albums")))]),
+                        _c("span", [_vm._v(_vm._s(_vm.__("Thư viện ảnh")))]),
                         _vm._v(" "),
                         _c("i", { staticClass: "fal fa-angle-down" })
                       ]),
@@ -37442,8 +37397,8 @@ var render = function() {
                                 [
                                   _vm._v(
                                     "\n                        " +
-                                      _vm._s(_vm.__("Albums")) +
-                                      "\n                      "
+                                      _vm._s(_vm.__("Thư viện ảnh")) +
+                                      "\n                        \n                      "
                                   )
                                 ]
                               )
@@ -37702,7 +37657,11 @@ var render = function() {
                                           _c(
                                             "p",
                                             { staticClass: "text font18" },
-                                            [_vm._v(_vm._s(_vm.__("Album")))]
+                                            [
+                                              _vm._v(
+                                                _vm._s(_vm.__("Thư viện ảnh"))
+                                              )
+                                            ]
                                           )
                                         ]
                                       ),
@@ -37792,7 +37751,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "dropdown dr-mb dl" }, [
                       _c("div", { staticClass: "dt" }, [
-                        _c("span", [_vm._v(_vm._s(_vm.__("Albums")))]),
+                        _c("span", [_vm._v(_vm._s(_vm.__("Thư viện ảnh")))]),
                         _vm._v(" "),
                         _c("i", { staticClass: "fal fa-angle-down" })
                       ]),
@@ -37824,7 +37783,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                        Albums\n                      "
+                                    "\n                       Thư viện ảnh\n                      "
                                   )
                                 ]
                               )
@@ -38528,7 +38487,7 @@ var staticRenderFns = [
             },
             [
               _c("i", { staticClass: "far fa-images" }),
-              _vm._v("\n                  Albums\n                ")
+              _vm._v("\n                  Thư viện video\n                ")
             ]
           )
         ]),

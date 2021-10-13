@@ -4,7 +4,7 @@
    
     <form action="" @submit="submitForm">
       <div class="list-tool">
-        <div class="search">
+        <!-- <div class="search">
           <input
             type="text"
             class="form-control form-control-sm"
@@ -17,7 +17,7 @@
           <button class="btn btn-secondary" type="submit">
             <i class="fas fa-search"></i>
           </button>
-        </div>
+        </div> -->
         <div class="calender">
           <div
             id="date-picker-example"
@@ -34,7 +34,7 @@
         </div>
         <div class="filter" id="filter">
           <div class="filter__title">
-            <label for="">Filter</label>
+            <label for="">Lọc</label>
             <i class="fas fa-angle-down"></i>
           </div>
           <div class="filler-list">
@@ -81,7 +81,7 @@
         <div class="arrange">
           <div class="sort-list">
             <select name="sort" class="sort-time font18 js-example-basic-single">
-              <option value="" selected disabled>Sắp xếp</option>
+              <!-- <option value="" selected disabled>Sắp xếp</option> -->
               <option value="new">Thời gian mới nhất</option>
               <option value="old">Thời gian cũ nhất</option>
               <option value="a-z">Từ A-Z</option>

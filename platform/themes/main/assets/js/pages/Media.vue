@@ -30,7 +30,7 @@
                     :title="__('Albums')"
                   >
                     <i class="far fa-images"></i>
-                    {{__('Albums')}}
+                    {{__('Thư viện ảnh')}}
                   </a>
                 </li>
                 <li class="__tabs__item" role="media">
@@ -51,7 +51,7 @@
               </ul>
 
               <div class="dropdown dr-mb dl">
-                <div class="dt"><span>{{__('Albums')}}</span> <i class="fal fa-angle-down"></i></div>
+                <div class="dt"><span>{{__('Thư viện ảnh')}}</span> <i class="fal fa-angle-down"></i></div>
                   <div class="dd">
                     <ul style="display: none;" class="nav nav-tabs" id="tab-media" role="tablist">
                       <li>
@@ -65,7 +65,8 @@
                           href="#media-album"
                           :title="__('Albums')"
                         >
-                          {{__('Albums')}}
+                          {{__('Thư viện ảnh')}}
+                          
                         </a>
 
                       </li>
@@ -159,7 +160,7 @@
                         @click="loadAlbumGallery(item.id, 'album')"
                       >
                         <i class="far fa-image"></i>
-                        <p class="text font18">{{__('Album')}}</p>
+                        <p class="text font18">{{__('Thư viện ảnh')}}</p>
                       </div>
                       <div class="icon--download">
                         <a download :href="'storage/' + item.image" :title="__('Tải xuống')">
@@ -215,7 +216,7 @@
                     title="Tất Cả"
                   >
                     <i class="far fa-images"></i>
-                    Albums
+                    Thư viện video
                   </a>
                 </li>
                 <li class="__tabs__item" role="media">
@@ -236,7 +237,7 @@
               </ul>
 
               <div class="dropdown dr-mb dl">
-                <div class="dt"><span>{{__('Albums')}}</span> <i class="fal fa-angle-down"></i></div>
+                <div class="dt"><span>{{__('Thư viện ảnh')}}</span> <i class="fal fa-angle-down"></i></div>
                   <div class="dd">
                     <ul style="display: none;" class="nav nav-tabs" id="tab-media" role="tablist">
                       <li>
@@ -250,7 +251,7 @@
                           href="#media-video"
                           :title="__('Albums')"
                         >
-                          Albums
+                         Thư viện ảnh
                         </a>
                       </li>
                       <li>
