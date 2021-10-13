@@ -7,7 +7,7 @@
     .media__content_right {
         box-shadow: 0 7px 10px 1px #3333;
         .list-media-menu { 
-            padding: 20px 20px 0 20px;
+            padding: 30px 20px 0px 20px;
             background: #fff;
             border-radius: 2px;
             h3 {
@@ -19,7 +19,7 @@
                 border-left: unset;
                 border-right: unset;
                 color: #1D1D1D;
-                padding: 5px 0;
+                padding: 8px 0;
                 &:hover { 
                     color: $main_color;
                 }
@@ -40,7 +40,7 @@
                 ul {
                     padding: 0;
                 }
-                padding: 0 20px;
+                padding: 10px 20px 10px 20px;
                 background: #fff;
                 width: 100%;
                 h2 {
@@ -54,8 +54,7 @@
                 .post-new-item {
                     display: flex;
                     justify-content: space-between;
-                    padding-top: 24px;
-                    padding-bottom: 24px;
+                    padding-top: 15px;
                     align-items: center;
                     border-bottom: 1px solid #707070;
                     &:hover .title a {
@@ -80,9 +79,9 @@
                     }
                     .title {
                         width: 68%;
-                        margin-bottom: 15px;
+                        margin-bottom: 10px;
                         a {
-                            height: 70px;
+                            height: auto;
                             display: block; 
                             overflow: hidden;
                             // @include split_str(2);
