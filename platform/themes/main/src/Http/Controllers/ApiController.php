@@ -59,6 +59,7 @@ class ApiController extends Controller {
         return response()->json([
             'data'      => $gallery,
             'name'      => $post->name,
+            'description' => $post->description,
             'message'   => 'success'
         ], 200);
     }
@@ -91,7 +92,7 @@ class ApiController extends Controller {
             }
 
             $zip->close();
-        }
+        } 
 
         //$delete = response()->download(public_path($fileName))->deleteFileAfterSend(true);
 

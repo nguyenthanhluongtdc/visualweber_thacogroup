@@ -119,9 +119,17 @@
                           {{ item.name }}
                         </p>
                       </div>
-                      <span class="album-item__date">{{
-                        item.created_at | formatDate("DD/MM/YYYY")
-                      }}</span>
+                      <div class="album-item__bottom">
+                          <span class="date">
+                            {{
+                            item.created_at | formatDate("DD/MM/YYYY")
+                          }}
+                          </span>
+                          <span class="size">
+                           300 KB
+                          </span>
+                      </div>
+                      
                       <div class="album-item__count">
                         <i class="far fa-image"></i>
                         <p class="quantity font18"> {{item.album_total}} </p>
@@ -130,7 +138,7 @@
                         :title="__('Tải xuống album')"
                         class="album-item__download"
                         @click="zipDownload(item.id)"
-                      >
+                      > 
                         <i class="fas fa-download"></i>
                       </div>
                     </div>
@@ -335,7 +343,7 @@
                           <!-- <video muted loop  autoplay class="__video w-100">
                                 <source src="themes/main/images/video/chuc-mung-nam-moi.mp4" type="video/mp4">
                             </video>  -->
-
+ 
                           <iframe
                             class="youtube-player"
                             id="player"
@@ -409,6 +417,7 @@
             <h2 class="name font28 text-center mb-4 font-weight-bold">
               {{ galleryImage.name }}
             </h2>
+            
           </PuSkeleton>
         </div>
 
@@ -433,6 +442,7 @@
             </div>
           </vue-custom-scrollbar>
         </div>
+        
       </div>
     </modal>
     <!---end modal-album--->
@@ -500,6 +510,7 @@
           <h2 class="name font28 text-center font-weight-bold">
             {{ galleryImage.name }}
           </h2>
+          
         </div>
 
         <div class="modal-body-custom">
@@ -530,6 +541,9 @@
             </div>
           </template>
         </div>
+         <p class="name font18 text-center mt-3">
+            {{ galleryImage.description }}
+          </p>
       </div>
     </modal>
     <!---end modal-detail--->

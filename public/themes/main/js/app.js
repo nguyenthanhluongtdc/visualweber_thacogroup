@@ -2939,6 +2939,20 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //custom-scrollbar
 
  //pagination
@@ -37527,17 +37541,27 @@ var render = function() {
                                       ),
                                       _vm._v(" "),
                                       _c(
-                                        "span",
-                                        { staticClass: "album-item__date" },
+                                        "div",
+                                        { staticClass: "album-item__bottom" },
                                         [
-                                          _vm._v(
-                                            _vm._s(
-                                              _vm._f("formatDate")(
-                                                item.created_at,
-                                                "DD/MM/YYYY"
-                                              )
+                                          _c("span", { staticClass: "date" }, [
+                                            _vm._v(
+                                              "\n                          " +
+                                                _vm._s(
+                                                  _vm._f("formatDate")(
+                                                    item.created_at,
+                                                    "DD/MM/YYYY"
+                                                  )
+                                                ) +
+                                                "\n                        "
                                             )
-                                          )
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("span", { staticClass: "size" }, [
+                                            _vm._v(
+                                              "\n                         300 KB\n                        "
+                                            )
+                                          ])
                                         ]
                                       ),
                                       _vm._v(" "),
@@ -38384,7 +38408,15 @@ var render = function() {
               ]
             ],
             2
-          )
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "name font18 text-center mt-3" }, [
+            _vm._v(
+              "\n          " +
+                _vm._s(_vm.galleryImage.description) +
+                "\n        "
+            )
+          ])
         ])
       ]),
       _vm._v(" "),

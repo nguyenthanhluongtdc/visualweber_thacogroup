@@ -169,7 +169,7 @@
                                 width: 48.5%;
                                 background: #fff;
                             }
-                            &:hover {
+                            &:hover { 
                                 .album-item__name {
                                     color: $main_color;
                                 }
@@ -188,11 +188,20 @@
                                     margin-bottom: 0;
                                 }
                             }
-                            &__date {
-                                color: #bcbcbc;
-                                margin-left: 15px;
-                                display: block;
-                                margin-bottom: 15px;
+                            
+                            &__bottom{
+                                display: flex;
+                                .date{
+                                    color: #bcbcbc;
+                                    margin-left: 15px;
+                                    display: block;
+                                    margin-bottom: 15px;
+                                }
+                                .size{
+                                    position: absolute;
+                                    right: 15px;
+                                    color: #bcbcbc;
+                                }
                             }
                             &__count {
                                 position: absolute;
