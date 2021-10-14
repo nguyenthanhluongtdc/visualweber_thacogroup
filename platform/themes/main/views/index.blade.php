@@ -2,17 +2,18 @@
     <div class="swiper-wrapper">
         @if ($posts = get_featured_posts(theme_option('number_post_banner'),[]))
         @foreach ($posts as $post)
+        {{-- {{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}} --}}
         <div class="swiper-slide">
-            <img src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}}" class="img-slider h-auto w-100">
+            <img src="{{ Theme::asset()->url('images/home/banner-1.jpg') }}" class="img-slider h-auto w-100">
             @if(has_field($page, 'show_hide')) 
             <div class="bg-post">
                     <div 
-                    class="content {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}} " 
+                    class="content {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}} {{has_field($page, 'position_news_box') == 'box-left' ? 'box-left' : 'box-right'}}" 
                     data-aos="zoom-in-up" 
                     data-aos-duration="1000" 
-                    data-aos-delay="50" 
+                    data-aos-delay="50"  
                     class="aos-init aos-animate"  
-                    style=" background-color:  {{has_field($page, 'background_color')}};">
+                    style=" background-color:  {{has_field($page, 'background_color')}}; ">
                         <h1 class="font24 title-post">
                        
                         {!!str::words($post->name,20)!!}      
