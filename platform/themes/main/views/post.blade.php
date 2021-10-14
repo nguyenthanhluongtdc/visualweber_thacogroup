@@ -62,18 +62,13 @@
                     </div>
 
                 </div>
-                <div class="gallery post-content">
-                    <a href="fullsize.png">
-                        {!! $post->content !!}
-                    </a>
-                   
-                </div>
-                {{-- <div class="post-content">
-                    <div class="text-content">
+               
+                <div class="post-content">
+                    <div class="text-content" data-fancybox>
                        
                             {!! $post->content !!}
                     </div>
-                </div> --}}
+                </div>
                 <div class="file">
                     <ul class="list-file">
                        
@@ -174,9 +169,3 @@
     </div>
 </div>
 
-
-<script>
-    $(document).ready(function() {
-      $(".gallery a").fancybox();
-    });
-</script>
