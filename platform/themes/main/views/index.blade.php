@@ -3,11 +3,18 @@
         @if ($posts = get_featured_posts(theme_option('number_post_banner'),[]))
         @foreach ($posts as $post)
         <div class="swiper-slide">
-            <img src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}}" class="img-slider h-auto w-100">
+            <img 
+            src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" 
+            alt="{{$post->name}}" 
+            class="img-slider h-auto w-100"
+            >
+
             @if(has_field($page, 'show_hide')) 
             <div class="bg-post">
                     <div 
-                    class="content {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}} {{has_field($page, 'position_news_box') == 'box-left' ? 'box-left' : 'box-right'}}" 
+                    class="content 
+                    {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}} 
+                    {{has_field($page, 'position_news_box') == 'box-left' ? 'box-left' : 'box-right'}}" 
                     data-aos="zoom-in-up" 
                     data-aos-duration="1000" 
                     data-aos-delay="50"  
@@ -46,8 +53,20 @@
     </div>
 </div>
 @if(has_field($page , 'show_hide_company'))
-    <div class="partner-wrapper mt-40 {{get_field($page, 'show_hide_company') == 'hide_company' ? 'd-none':''}}"  style="background-image:url({{ has_field($page , 'image_bg_company') ? get_object_image(get_field($page , 'image_bg_company')) :''}})">
-        <h3 class="title__company font40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate"> {{has_field($page, 'tieu_de') ? get_field($page, 'tieu_de') : ''}}</h3>
+    <div 
+    class="partner-wrapper mt-40 
+    {{get_field($page, 'show_hide_company') == 'hide_company' ? 'd-none':''}}"  
+    style="background-image:url({{ has_field($page , 'image_bg_company') ? 
+    get_object_image(get_field($page , 'image_bg_company')) :''}})"
+    >
+        <h3 
+        class="title__company font40" 
+        data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" 
+        class="aos-init aos-animate"
+        > 
+        {{has_field($page, 'tieu_de') ? get_field($page, 'tieu_de') : ''}}
+        </h3>
+        
         <div class="partner-banner parallax-window" data-parallax="scroll">
             <div class="container-customize logo-partner"> 
                 <div class="logo-desktop">

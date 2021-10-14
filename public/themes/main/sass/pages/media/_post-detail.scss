@@ -33,7 +33,7 @@
         .content-middle {
             flex: 0 0 62.6%;
             // margin: 0 2.5%;
-            max-width: 62, 6%;
+            max-width: 62.6%;
             .content-main {
                 padding: 3% 5%;
                 background: $white;
@@ -175,12 +175,12 @@
             }
             .post-related {
                 margin-bottom: 60px;
-                width: 63vw;
+                // width: 63vw;
                 .post-related__title {
                     display: flex;
                     align-items: center;
                     margin: 0;
-                    line-height: 43px;
+                    line-height: 22px;
                     font-family: $MyriadPro-Bold;
                     text-transform: uppercase;
                     color: $big-title;
@@ -192,7 +192,7 @@
                 &__list{
                   
                     .swiper-wrapper {
-                        width: 100%;
+                        width: 100% ;
                         height: auto;
                     }
                     .post_relate_content{

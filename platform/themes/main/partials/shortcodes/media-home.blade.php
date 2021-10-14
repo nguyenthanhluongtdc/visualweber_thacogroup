@@ -6,7 +6,7 @@
 @endphp
 <div class="media-home-wrapper ">
     <div class="media-home-banner">
-        <div class="swiper-container field-activity-slide-top"
+        <div class="swiper-container field-activity-slide-top" 
             style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
             <div class="swiper-wrapper">
                 @if (has_field($page, 'hinh_anh'))
@@ -19,13 +19,17 @@
  
                                     <div class="video-wrapper">
                                         <video muted
-                                            class="__video w-100 {{ has_sub_field($value, 'hien_thi_2_video') == '1_video' ? 'd-none' : '' }}">
-                                            <source src="{{ RvMedia::getImageUrl(get_sub_field($value, 'image')) }}"
+                                                class="__video w-100 
+                                                {{ has_sub_field($value, 'hien_thi_2_video') == '1_video' ? 'd-none' : '' }}">
+                                            <source 
+                                                src="{{ RvMedia::getImageUrl(get_sub_field($value, 'image')) }}"
                                                 type="video/mp4">
                                         </video>
                                         <video muted
-                                            class="__video   {{ has_sub_field($value, 'hien_thi_2_video') == '2_video' ? 'bg-gray' : '' }}  w-100 video-full">
-                                            <source src="{{ RvMedia::getImageUrl(get_sub_field($value, 'image')) }}"
+                                                class="__video   
+                                                {{ has_sub_field($value, 'hien_thi_2_video') == '2_video' ? 'bg-gray' : '' }}  w-100 video-full">
+                                            <source 
+                                                src="{{ RvMedia::getImageUrl(get_sub_field($value, 'image')) }}"
                                                 type="video/mp4">
                                         </video>
 

@@ -126,7 +126,7 @@ class PostForm extends FormAbstract
             ])
             ->setBreakFieldPoint('status');
 
-        $postFormats = get_post_formats(true);
+        $postFormats = get_post_formats(true); 
 
         if (count($postFormats) > 1) {
             $this->addAfter('status', 'format_type', 'customRadio', [
