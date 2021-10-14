@@ -10,7 +10,7 @@ return [
     'operations' => 'Tác vụ',
     'url' => 'URL',
     'author' => 'Người tạo',
-    'column' => 'Cột',
+    'column' => 'Cột', 
     'origin' => 'Bản cũ',
     'after_change' => 'Sau khi thay đổi',
     'notes' => 'Ghi chú',

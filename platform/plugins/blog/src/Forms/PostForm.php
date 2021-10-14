@@ -60,7 +60,7 @@ class PostForm extends FormAbstract
                     
                     'placeholder'  => trans('core/base::forms.name_placeholder'),
                     'data-counter' => 120,
-                ],
+                ], 
             ])
             ->add('description', 'textarea', [
                 'label'      => trans('core/base::forms.description'),
@@ -137,3 +137,6 @@ class PostForm extends FormAbstract
         }
     }
 }
+
+
+// trans('core/base::forms.is_featured'),

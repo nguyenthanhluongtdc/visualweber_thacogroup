@@ -133,7 +133,7 @@ class CategoryTable extends TableAbstract
                 'name' => 'created_at',
                 'title' => 'Ngày tạo',
                 'width' => '100px',
-            ],
+            ], 
             'status' => [
                 'name' => 'status',
                 'title' => 'Trạng thái',
