@@ -2,9 +2,8 @@
     <div class="swiper-wrapper">
         @if ($posts = get_featured_posts(theme_option('number_post_banner'),[]))
         @foreach ($posts as $post)
-        {{-- {{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}} --}}
         <div class="swiper-slide">
-            <img src="{{ Theme::asset()->url('images/home/banner-1.jpg') }}" class="img-slider h-auto w-100">
+            <img src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}}" class="img-slider h-auto w-100">
             @if(has_field($page, 'show_hide')) 
             <div class="bg-post">
                     <div 
