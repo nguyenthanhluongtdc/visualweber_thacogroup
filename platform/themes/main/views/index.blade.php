@@ -3,11 +3,20 @@
         @if ($posts = get_featured_posts(theme_option('number_post_banner'),[]))
         @foreach ($posts as $post)
         <div class="swiper-slide">
-            <img 
+            {{-- <img 
             src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" 
             alt="{{$post->name}}" 
             class="img-slider h-auto w-100"
-            >
+            > --}}
+            @if(has_field($post, 'image_banner'))
+            <img class="img-slider h-auto w-100"
+                src="{{get_image_url(has_field($post,'image_banner'))}}"
+                alt="" >
+            @else
+            <video controls autoplay>
+                <source src=""{{ RvMedia::getImageUrl(has_field($post,'video_banner')) }}" type="video/mp4" class="video-slider h-auto w-100">
+            </video>
+            @endif
 
             @if(has_field($page, 'show_hide')) 
             <div class="bg-post">

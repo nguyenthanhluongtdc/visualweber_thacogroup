@@ -17,7 +17,7 @@
                         <meta itemprop="name" content="{{ $crumb['label'] }}" />
                         <meta itemprop="position" content="{{ $i + 1}}" /></li>
                 @endif
-            @endforeach
+            @endforeach 
         </ol>
     </div>
 </div>
@@ -45,7 +45,9 @@
                 </div>
                 <div class="post-time-share">
                     <div class="left">
+                        <span class="author">{{ $post->author->name }} </span>
                         <span class="">{{date_format($post->created_at,"d/m/Y")}} </span>
+                        
                     </div>
                     <div class="right"> 
   

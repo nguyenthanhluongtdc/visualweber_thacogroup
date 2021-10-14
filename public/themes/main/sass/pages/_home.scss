@@ -45,9 +45,17 @@
         right: 0px;
     }
 } 
-
+ 
 .main-slider {
     .swiper-slide {
+        video{
+            width: 100vw;
+            height: auto;
+        }
+        .video-slider{
+            width: 100vw;
+            height: auto;
+        }
         .img-slider {
             animation: 40s ease 0s normal none infinite running zoomEffect;
             -webkit-animation: 40s ease 0s normal none infinite running zoomEffect;
