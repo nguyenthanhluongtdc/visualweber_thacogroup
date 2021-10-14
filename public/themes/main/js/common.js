@@ -286,7 +286,7 @@ if ($('.field-activity-slide-top').length > 0) {
 
     function myHandler(e) {
         Homebanner.slideNext()
-    }
+    } 
     const autoplay = 2000
     if ($('.field-activity-slide-top .swiper-slide-active .__video').length && $('.field-activity-slide-top .swiper-slide-active .__video.video-full').length) {
         $('.field-activity-slide-top .swiper-slide-active .__video')[0].play()

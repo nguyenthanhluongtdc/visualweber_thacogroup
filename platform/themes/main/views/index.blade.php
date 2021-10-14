@@ -14,7 +14,7 @@
                 alt="" >
             @else
             <video  autoplay muted>
-                <source src="{{ RvMedia::getImageUrl(get_field($post,'video_banner')) }}"  class="video-slider h-auto w-100">
+                <source src="{{ RvMedia::getImageUrl(get_field($post,'video_banner')) }}"  class="video-slider  w-100">
             </video>
             @endif
 

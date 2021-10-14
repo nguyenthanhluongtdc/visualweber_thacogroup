@@ -14,10 +14,10 @@
                         <div class="swiper-slide">
 
                             @if (get_sub_field($value, 'type') == 'video')
-
-                                @if (has_sub_field($value, 'image'))
  
-                                    <div class="video-wrapper">
+                                @if (has_sub_field($value, 'image'))
+  
+                                    <div class="video-wrapper"> 
                                         <video muted
                                                 class="__video w-100 
                                                 {{ has_sub_field($value, 'hien_thi_2_video') == '1_video' ? 'd-none' : '' }}">
@@ -25,8 +25,7 @@
                                                 src="{{ RvMedia::getImageUrl(get_sub_field($value, 'image')) }}"
                                                 type="video/mp4">
                                         </video>
-                                        <video muted
-                                                class="__video   
+                                        <video muted class="__video   
                                                 {{ has_sub_field($value, 'hien_thi_2_video') == '2_video' ? 'bg-gray' : '' }}  w-100 video-full">
                                             <source 
                                                 src="{{ RvMedia::getImageUrl(get_sub_field($value, 'image')) }}"

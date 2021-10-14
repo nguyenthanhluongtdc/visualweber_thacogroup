@@ -48,13 +48,10 @@
  
 .main-slider {
     .swiper-slide {
-        video{
-            width: 100vw;
-            height: auto;
-        }
+        
         .video-slider{
-            width: 100vw;
             height: auto;
+            object-fit: cover;
         }
         .img-slider {
             animation: 40s ease 0s normal none infinite running zoomEffect;
@@ -611,7 +608,7 @@
                         position: absolute;
                         z-index: 2;
                     }
-                    .__video.video-full {
+                    .__video.video-full { 
                         height: 37vw;
                         object-fit: cover;
                         position: absolute;
