@@ -9,12 +9,12 @@
             class="img-slider h-auto w-100"
             > --}}
             @if(has_field($post, 'image_banner'))
-            <img class="img-slider h-auto w-100"
+            <img class="h-auto w-100"
                 src="{{get_image_url(has_field($post,'image_banner'))}}"
                 alt="" >
             @else
-            <video  autoplay muted>
-                <source src="{{ RvMedia::getImageUrl(get_field($post,'video_banner')) }}"  class="video-slider  w-100">
+            <video  autoplay muted class="video-slider w-100">
+                <source src="{{ RvMedia::getImageUrl(get_field($post,'video_banner')) }}"  class="">
             </video>
             @endif
 
