@@ -200,6 +200,21 @@ let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
         prevEl: '.post-slide-bottom .swiper-button-prev',
     },
 })
+var newPostSlide_relate = new Swiper('.post-slide-relate', {
+	spaceBetween: 10,
+	slidesPerView: 3,
+  initialSlide: 11,
+  loop: true,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true
+	}
+});
 let field_slider = new Swiper('.field-slider', {
         speed: 800,
         loop: true,
@@ -530,8 +545,8 @@ $(document).ready(function() {
     const info_contact = $('.office-contact-wrapper');
     const email_us = $('.contact-fo-container');
     const chat_online = $('.chat-online');
-    info_contact.css('display', 'none');
-    // email_us.css('display', 'none');
+    // info_contact.css('display', 'none');
+    email_us.css('display', 'none');
     chat_online.css('display', 'none');
 
 

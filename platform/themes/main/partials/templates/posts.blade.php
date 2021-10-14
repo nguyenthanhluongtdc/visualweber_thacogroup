@@ -35,16 +35,16 @@
         <div class="post-slider"> 
             <div class="swiper-container post-slide-bottom">
                 <div class="swiper-wrapper">
-                    @if (!empty($postSlider))
+                    @if (!empty($postSlider))  
                         @foreach ($postSlider as $post)
                             <div class="swiper-slide d-flex justify-content-center">
                                 <div class="post_content_bottom ">
                                     <a class="post-wrapper h-100" href=" {{ $post->url }}">
-                                        <div class="post-thumbnail">
+                                        <div class="post-thumbnail" >
                                             <img src="{{ get_object_image($post->image) }}"
                                                 alt="{!! $post->name !!}">
                                         </div>
-
+ 
                                         <h4 class="post_name font18">{!!str::words( $post->name ,10 )!!}</h4>
                                         <span
                                             class="time">{{ date_format($post->created_at, 'd/m/Y') }}</span>

@@ -280,6 +280,68 @@
         // .office-item:last-child {
         //     margin-bottom: 150px;
         // }
+
+        .office-tabs{
+            ul{
+                border: unset;
+            }
+            .office-title{
+                width: 33.33%;
+                text-align: center;
+                
+                a{
+                    color: unset;
+                    font-family: $MyriadPro-Bold;
+                    &:hover{
+                        color: $big-title;
+                    }
+                }
+                
+                &:hover{
+                    border-bottom: 2px solid $big-title;
+                    color: $big-title;
+                    
+                }
+            }
+            .office-title.active{
+                border-bottom: 2px solid $big-title;
+                width: 32%;
+                color: $big-title;
+            }
+
+            .office-content{
+                margin: 2% 0;
+                .tab-pane{
+                    .office-address, .office-phone, .office-email, .office-desc{
+                        display: flex;
+                        p{
+                            color: #777777;
+                        }
+                        i{
+                            margin-right: 5px;
+                            color: #777777;
+                            margin-top: 4px;
+                        }
+                    }
+                    .office-desc{
+                        border-top: 1px solid #777777;
+                        padding-top: 20px;
+                    }
+                    .map-location{
+                        margin-bottom: 20px;
+                        iframe{
+                            width: 100% !important;
+                            height: 300px !important;
+                            @media only screen and (max-width: 1300px){
+                                
+                            }
+                        }
+                    }
+                }
+                
+            }
+            
+        }
     }
     .contact-fo { 
         display: flex;

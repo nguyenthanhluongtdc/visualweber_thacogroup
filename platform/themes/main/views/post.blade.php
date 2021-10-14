@@ -74,6 +74,42 @@
                             {!! $post->content !!}
                     </div>
                 </div> --}}
+                <div class="file">
+                    <ul class="list-file">
+                       
+                        <li>
+                            <a href="images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf" target="_blank">
+                               
+                                <i class="fal fa-file-invoice"></i>
+                                <p class="text">
+                                    Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf
+                                </p>
+                                <i class="fal fa-arrow-to-bottom"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf" target="_blank">
+                               
+                                <i class="fal fa-file-invoice"></i>
+                                <p class="text">
+                                    Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf
+                                </p>
+                                <i class="fal fa-arrow-to-bottom"></i>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf" target="_blank">
+                               
+                                <i class="fal fa-file-invoice"></i>
+                                <p class="text">
+                                    Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf
+                                </p>
+                                <i class="fal fa-arrow-to-bottom"></i>
+                            </a>
+                        </li>  
+                      
+                    </ul>
+                </div>
                 <div class="post-tag">
                     <h4 class="title">{!!__('Từ khóa:')!!}</h4>
                     @foreach ($post->tags as $tag)
@@ -88,12 +124,38 @@
             @php $relatedPosts = get_related_posts($post->id, 7); @endphp
             @if ($relatedPosts->count())
             <div class="post-related mt-40 mb-60">
-                <div class="post-related__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50"
-                    class="aos-init aos-animate">
+                <div class="post-related__title" >
                     <img src="{{ Theme::asset()->url('images/media/icon-title.png') }}" alt="">
                     <h2 class="font30 big-title">{!! __('CÁC BÀI VIẾT LIÊN QUAN') !!}</h2>
                 </div>
-                <ul class="list-post-related">
+                <div class="post-related__list mt-40 mb-40">
+                    <div class="swiper-container post-slide-relate">
+                       
+                        <div class="swiper-wrapper">
+                            @foreach ($relatedPosts as $relatedItem)
+                            <div class="swiper-slide post_relate_content">
+                                <a href=""{{ $relatedItem->url }}" class="text-dark">
+                                    <div class="post-thumbnail">
+                                        <img src="{{ get_object_image( $relatedItem->image) }}" alt="">
+                                    </div>
+                                    <div class="post-content-bottom">
+                                        <h4 class="name font20 text-uppercase">{{str::words( $relatedItem->name ,12)}}</h4>
+                                            <span class="time text-dark">{{ date_format($relatedItem->created_at, 'd/m/Y') }}</span>
+                                            <p class="desc font18">
+                                                {{str::words($relatedItem->description,20)}}
+                                            </p>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            
+                            @endforeach
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+                {{-- <ul class="list-post-related">
                     @foreach ($relatedPosts as $relatedItem)
                     <li class="font18">
                         <a href="{{ $relatedItem->url }}">
@@ -102,8 +164,10 @@
                         <span class="time">{{date_format($post->created_at,"d/m/Y")}}</span>
                     </li>
                     @endforeach
-                   
-                </ul>
+                   data-aos="fade-right" data-aos-duration="700" data-aos-delay="50"
+                    class="aos-init aos-animate"
+                </ul> --}}
+
             </div>
             @endif
         </div>

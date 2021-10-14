@@ -8,8 +8,8 @@
         <div class="contact-title  mt-40 mb-40" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
             @if(has_field($page, 'banner_contact'))
             <h1 class="font50 title text-uppercase"> {!! has_field($page,'contact_title') !!}  </h1> 
-            @endif
-        </div>
+            @endif 
+        </div> 
         <div class="contact-box  mt-60 mb-60" id="support-tab">
             @if(has_field($page, 'repeater_info_block'))
             @foreach(has_field($page, 'repeater_info_block') as $item)
@@ -29,9 +29,106 @@
             @endif
         
         </div>
-        <div class="office-contact-wrapper mt-100 data-filter-01">
+        <div class="office-contact-wrapper mt-60 data-filter-01">
             
-            @if(has_field($page, 'repeater_contact_info'))
+            <div class="office-tabs">
+                <ul class="nav nav-tabs">
+                    <li class="active font18 office-title ">
+                        <a href="#firsttab" data-toggle="tab">Văn phòng TP. Hồ Chí Minh</a>  
+                    </li>
+                    <li class="font18 office-title">
+                        <a href="#secondtab" data-toggle="tab">Văn phòng THACO CHU LAI</a>
+                    </li>
+                    <li class="font18 office-title">
+                        <a href="#thirdtab" data-toggle="tab">Văn phòng Hà Nội</a>
+                    </li>
+                </ul>
+
+                {{-- <div class="map-location">
+                    <iframe src="{{has_field($page,'link_map') ? get_field($page,'link_map'):''}}" width="1920" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div> --}}
+                <div class="tab-content  office-content">
+                        <div class="tab-pane active" id="firsttab">
+                            <div class="map-location">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5080290085093!2d106.72027741474892!3d10.772347792324274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fcdd2041771%3A0xa46e9842e044baf4!2sSOFIC%20Tower!5e0!3m2!1svi!2s!4v1634137150175!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            <div class="office-address font20">
+                                <i class="fas fa-map-marker-alt location"></i>
+                                <p class="address">Địa chỉ : Tầng 18, Tòa nhà Sofic, Số 10 Mai Chí Thọ, P.Thủ Thiêm, Quận 2, TP.Hồ Chí Minh</p>
+                            </div>
+                            <div class="office-phone font20">
+                                <i class="fas fa-phone-alt"></i>
+                                <p class="phone">SĐT: +84-(0)8.39977.161</p>
+                            </div>
+                            <div class="office-email font20">
+                                <i class="fas fa-envelope"></i>
+                                <p class="email">Email:vanhoatruyenthong@thaco.com.vn </p>
+                            </div>
+                            <div class="office-desc">
+                                <p class="desc font20">
+                                    Văn phòng tại thành phố Hồ Chí Minh cũng là văn phòng chính của tổng công ty ô tô Trường Hải (THACO). Tại đây có các phòng ban quản lý của các ngành nghề lĩnh vực hoạt động của tổng công ty.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="secondtab">
+                            <div class="map-location">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5080290085093!2d106.72027741474892!3d10.772347792324274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fcdd2041771%3A0xa46e9842e044baf4!2sSOFIC%20Tower!5e0!3m2!1svi!2s!4v1634137150175!5m2!1svi!2s"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            <div class="office-address font20">
+                                <i class="fas fa-map-marker-alt location"></i>
+                                <p class="address">Địa chỉ : Thôn 4, Xã Tam Hiệp, Huyện Núi Thành, Tỉnh Quảng Nam</p>
+                            </div>
+                            <div class="office-phone font20">
+                                <i class="fas fa-phone-alt"></i>
+                                <p class="phone">SĐT: +84-(0)510.3567.161</p>
+                            </div>
+                            <div class="office-email font20">
+                                <i class="fas fa-envelope"></i>
+                                <p class="email">Email:vanhoatruyenthong@thaco.com.vn</p>
+                            </div>
+                            <div class="office-desc">
+                                <p class="desc font20">
+                                   Đây là Khu Kinh tế mở Chu Lai - tỉnh Quảng Nam và đến nay THACO CHU LAI có tổng diện tích hơn 1.200 ha gồm: KCN Cơ khí & Ô tô; KCN Nông - Lâm nghiệp; Khu Cảng & hậu cần Cảng; Khu Đô thị Chu Lai.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="thirdtab">
+                            <div class="map-location">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5080290085093!2d106.72027741474892!3d10.772347792324274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fcdd2041771%3A0xa46e9842e044baf4!2sSOFIC%20Tower!5e0!3m2!1svi!2s!4v1634137150175!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                            <div class="office-address font20">
+                                <i class="fas fa-map-marker-alt location"></i>
+                                <p class="address">Địa chỉ : Lô D6, KCN Hà Nội Đài Tư, Sài Đồng, Long Biên, Hà Nội</p>
+                            </div>
+                            <div class="office-phone font20">
+                                <i class="fas fa-phone-alt"></i>
+                                <p class="phone">SĐT: +84-(0)43.3567.161</p>
+                            </div>
+                            <div class="office-email font20">
+                                <i class="fas fa-envelope"></i>
+                                <p class="email">Email:vanhoatruyenthong@thaco.com.vn</p>
+                            </div>
+                            <div class="office-desc">
+                                <p class="desc font20">
+                                    Văn phòng đại diện tại thành phố Hà Nội là nơi đại diện ở khu vực miền Bắc của tổng công ty ô tô Trường Hải (THACO).
+                                </p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            {{-- @if(has_field($page, 'repeater_contact_info'))
             @foreach(has_field($page, 'repeater_contact_info') as $item)
             <div class="office-item mb-100 " data-aos="fade-up" data-aos-duration="700" data-aos-delay="150" class="aos-init aos-animate">
                 <div class="row">
@@ -73,7 +170,7 @@
             </div>
             </div>
             @endforeach
-            @endif
+            @endif --}}
          
 
         </div>
