@@ -70,7 +70,7 @@
                 </div>
                
                 <div class="post-content">
-                    <div class="text-content" data-fancybox>
+                    <div class="text-content">
                        
                             {!! $post->content !!}
                     </div>

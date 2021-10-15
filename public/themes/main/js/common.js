@@ -974,8 +974,30 @@ $(document).ready(function() {
 //tab active contact
 
 var selector = '.active-tabs li';
-    
-$(selector).on('click', function(){
+
+$(selector).on('click', function() {
     $(selector).removeClass('active');
     $(this).addClass('active');
 });
+
+// open fancy box
+
+function function_open_fancy(e) {
+    $(e).fancybox({
+        'autoScale': true,
+        'transitionIn': 'elastic',
+        'transitionOut': 'elastic',
+        'speedIn': 500,
+        'speedOut': 300,
+        'autoDimensions': true,
+        'centerOnScroll': true // remove the trailing comma!!
+    }).click();
+    // fire the click event after initializing fancybox on this element
+    // this should open the fancybox
+}
+
+var element_fancy = '.post-content img';
+$(element_fancy).one('click', function() {
+    function_open_fancy(this);
+    return false;
+})
