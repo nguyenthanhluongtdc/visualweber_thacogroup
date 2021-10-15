@@ -176,7 +176,7 @@ let newPostSlide = new Swiper('.new-post-slide', {
         el: '.new-post-slide .swiper-pagination',
         clickable: true,
     },
-    navigation: { 
+    navigation: {
         nextEl: '.new-post-slide .swiper-button-next',
         prevEl: '.new-post-slide .swiper-button-prev',
     },
@@ -238,7 +238,7 @@ let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
     },
     navigation: {
         nextEl: '.post-slide-bottom .swiper-button-next',
-        prevEl: '.post-slide-bottom .swiper-button-prev', 
+        prevEl: '.post-slide-bottom .swiper-button-prev',
     },
 })
 var newPostSlide_relate = new Swiper('.post-slide-relate', {
@@ -264,19 +264,19 @@ var newPostSlide_relate = new Swiper('.post-slide-relate', {
             slidesPerView: 3,
             // centeredSlides: true,
             spaceBetween: 20,
-           
+
         },
         768: {
             slidesPerView: 2.5,
-           
+
             spaceBetween: 10,
-           
+
         },
         320: {
             slidesPerView: 1.5,
-           
+
             spaceBetween: 10,
-           
+
         },
     },
 });
@@ -1006,22 +1006,25 @@ $(selector).on('click', function() {
 
 // open fancy box
 
-function function_open_fancy(e) {
-    $(e).fancybox({
-        'autoScale': true,
-        'transitionIn': 'elastic',
-        'transitionOut': 'elastic',
-        'speedIn': 500,
-        'speedOut': 300,
-        'autoDimensions': true,
-        'centerOnScroll': true // remove the trailing comma!!
-    }).click();
-    // fire the click event after initializing fancybox on this element
-    // this should open the fancybox
-}
+// function function_open_fancy(e) {
+//     $(e).fancybox({
+//         'autoScale': true,
+//         'transitionIn': 'elastic',
+//         'transitionOut': 'elastic',
+//         'speedIn': 500,
+//         'speedOut': 300,
+//         'autoDimensions': true,
+//         'centerOnScroll': true // remove the trailing comma!!
+//     }).click();
+//     // fire the click event after initializing fancybox on this element
+//     // this should open the fancybox
+// }
 
 var element_fancy = '.post-content img';
-$(element_fancy).one('click', function() {
-    function_open_fancy(this);
-    return false;
+$(element_fancy).on('click', function() {
+    $().fancybox({
+        selector: '.post-content img',
+        hash: false
+    });
+
 })
