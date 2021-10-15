@@ -263,19 +263,19 @@ var newPostSlide_relate = new Swiper('.post-slide-relate', {
         1024: {
             slidesPerView: 3,
             // centeredSlides: true,
-            spaceBetween: 30,
+            spaceBetween: 20,
            
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 2.5,
            
-            spaceBetween: 40,
+            spaceBetween: 10,
            
         },
         320: {
-            slidesPerView: 1,
+            slidesPerView: 1.5,
            
-            spaceBetween: 40,
+            spaceBetween: 10,
            
         },
     },
