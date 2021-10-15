@@ -197,10 +197,14 @@
                     }
                 }
                 &__list{
-                  
+                    
                     .swiper-wrapper {
                         width: 100% ;
                         height: auto;
+                    }
+                    .post-slide-relate{
+                        height: max-content;
+                        padding: 2% 0;
                     }
                     .post_relate_content{
                         box-shadow: 0 5px 8px -5px #555; 
@@ -215,13 +219,25 @@
                         }
                         .post-content-bottom{
                             padding: 5% 5% 0 5%;
+                            
                             .name{
+                              height: 44px;
                                font-weight: bold;
                                 font-family: $MyriadPro-Bold;
                                 text-transform: uppercase;
                                 line-height: 22px;
                                
                                 overflow: hidden;
+                            }
+                            .desc{
+                                height: 80px;
+                                @media screen and(max-width:1300px) {
+                                    height: 100px;
+                                }
+                                @media screen and(max-width:768px) {
+                                    height: 130px;
+                                }
+                              
                             }
                         }
                     }

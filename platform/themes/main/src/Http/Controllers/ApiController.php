@@ -72,12 +72,12 @@ class ApiController extends Controller {
         
         $post = app(PostInterfaceCustom::class)->getFirstBy(
             ['id'=> $request->id],
-            ['*'],
+            ['*'], 
             ['slugable'] 
         );
 
         //get gallery by post
-        $gallery = gallery_meta_data($post);
+        $gallery = gallery_meta_data($post); 
  
         $zip = new ZipArchive;
         
@@ -158,7 +158,7 @@ class ApiController extends Controller {
             foreach($data as $da) {
                 $da['album_total'] = count(gallery_meta_data($da));
             }
-        }else {
+        }else { 
             foreach($data as $da) {
                 $da['youtube_code'] = "";
                 if(has_field($da, 'youtube_code')) {

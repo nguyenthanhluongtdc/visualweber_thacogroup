@@ -17,7 +17,7 @@
                         <meta itemprop="name" content="{{ $crumb['label'] }}" />
                         <meta itemprop="position" content="{{ $i + 1}}" /></li>
                 @endif
-            @endforeach 
+            @endforeach  
         </ol>
     </div>
 </div>
@@ -124,7 +124,7 @@
                    
                 </div>
             </div>
-
+ 
             @php $relatedPosts = get_related_posts($post->id, 7); @endphp
             @if ($relatedPosts->count())
             <div class="post-related mt-40 mb-60">
@@ -182,13 +182,13 @@
 
 <script>
     function printDiv(elementId) {
-  var a = document.getElementById("printing-css").value;
-  var b = document.getElementById(elementId).innerHTML;
-  window.frames["print_frame"].document.title = document.title;
-  window.frames["print_frame"].document.body.innerHTML =
-    "<style>" + a + "</style>" + b;
-  window.frames["print_frame"].window.focus();
-  window.frames["print_frame"].window.print();
-}
+    var a = document.getElementById("printing-css").value;
+    var b = document.getElementById(elementId).innerHTML;
+    window.frames["print_frame"].document.title = document.title;
+    window.frames["print_frame"].document.body.innerHTML =
+        "<style>" + a + "</style>" + b;
+    window.frames["print_frame"].window.focus();
+    window.frames["print_frame"].window.print();
+    }
 
 </script>

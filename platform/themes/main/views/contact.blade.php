@@ -262,12 +262,3 @@
     </div>
   
 </section>
-
-<script>
-    var selector = '.active-tabs li';
-    
-    $(selector).on('click', function(){
-        $(selector).removeClass('active');
-        $(this).addClass('active');
-    });
-</script>

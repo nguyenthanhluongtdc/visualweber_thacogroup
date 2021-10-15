@@ -22,7 +22,7 @@
                  
                     <a href="{{ count(has_field($item, 'repeater_file_post_investor'))==1 ? get_object_image(has_sub_field(has_field($item, 'repeater_file_post_investor')[0], 'file')) :''}}" class="font25 text-justify {{count(has_field($item, 'repeater_file_post_investor'))>1 ? 'itemdown-show' : ''}} " target="_blank">
                         {!! $item->name !!}
-                    </a>
+                    </a> 
                   
                 </h3>
 

@@ -969,3 +969,13 @@ $(document).ready(function() {
     Ajax.getMedia();
 
 })
+
+
+//tab active contact
+
+var selector = '.active-tabs li';
+    
+$(selector).on('click', function(){
+    $(selector).removeClass('active');
+    $(this).addClass('active');
+});
