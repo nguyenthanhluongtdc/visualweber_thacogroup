@@ -37,7 +37,7 @@
         display: none;
     }
 }
- 
+
 .future-goal-banner {
     position: relative;
     background-repeat: no-repeat;
@@ -73,9 +73,16 @@
             .desc {
                 font-family: $MyriadPro-Bold;
                 height: 10vw;
-                @media only screen and (max-width: 600px) {height: 20vw;}
-                @media only screen and (max-width: 420px) {height: 25vw;}
-                @media only screen and (max-width: 300px) {height: 30vw; margin: 15px 0;}
+                @media only screen and (max-width: 600px) {
+                    height: 20vw;
+                }
+                @media only screen and (max-width: 420px) {
+                    height: 25vw;
+                }
+                @media only screen and (max-width: 300px) {
+                    height: 30vw;
+                    margin: 15px 0;
+                }
             }
             border-right: 2px solid $white;
             height: 100%;
@@ -156,13 +163,19 @@
     .admin-content.top {
         display: flex;
         flex-wrap: wrap;
-        .item-member{
-            img{
+        .item-member {
+            img {
                 height: 20vw;
                 object-fit: cover;
-                @media only screen and (max-width: 1080px) {height: 30vw;}
-                @media only screen and (max-width: 768px) {height: 35vw;}
-                @media only screen and (max-width: 420px) {height: 50vw;}
+                @media only screen and (max-width: 1080px) {
+                    height: 30vw;
+                }
+                @media only screen and (max-width: 768px) {
+                    height: 35vw;
+                }
+                @media only screen and (max-width: 420px) {
+                    height: 50vw;
+                }
             }
         }
         .item-member:nth-child(1) {
@@ -522,6 +535,8 @@
                 .img-content {
                     img {
                         max-height: 80px;
+                        height: 80px;
+                        object-fit: cover;
                         @media only screen and (max-width: 420px) {
                             height: 40px;
                         }
@@ -685,20 +700,24 @@
                                         @media only screen and (max-width: 380px) {
                                             font-size: 16px;
                                         }
-                                        -webkit-user-select: text;  
-                                            -moz-user-select: text;;    
-                                            -ms-user-select: text;;      
-                                            user-select: text;   
+                                        -webkit-user-select: text;
+                                        -moz-user-select: text;
+                                        ;
+                                        -ms-user-select: text;
+                                        ;
+                                        user-select: text;
                                     }
                                     .desc__wrapper {
                                         .desc {
                                             max-width: 100%;
                                             text-align: justify;
                                             // cursor: pointer;
-                                            -webkit-user-select: text;  
-                                            -moz-user-select: text;;    
-                                            -ms-user-select: text;;      
-                                            user-select: text;         
+                                            -webkit-user-select: text;
+                                            -moz-user-select: text;
+                                            ;
+                                            -ms-user-select: text;
+                                            ;
+                                            user-select: text;
                                             @media only screen and (max-width: 380px) {
                                                 font-size: 12px;
                                             }
@@ -880,7 +899,7 @@
             .modal-body {
                 .mCSB_scrollTools .mCSB_draggerContainer {
                     width: 4px;
-                    background: rgba(184, 184, 184, 0.438); 
+                    background: rgba(184, 184, 184, 0.438);
                     border-radius: 5px;
                     @media only screen and (max-width: 600px) {
                         width: 10px;
@@ -895,7 +914,7 @@
                 .mCS-dark.mCSB_scrollTools .mCSB_dragger_bar {
                     background: #fff;
                     display: none
-                } 
+                }
                 overflow-y: hidden;
                 overflow-x: hidden;
                 height: 500px;
