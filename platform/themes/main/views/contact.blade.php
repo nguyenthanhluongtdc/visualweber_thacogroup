@@ -32,8 +32,8 @@
         <div class="office-contact-wrapper mt-60 data-filter-01">
             
             <div class="office-tabs">
-                <ul class="nav nav-tabs">
-                    <li class="active font18 office-title ">
+                <ul class="nav nav-tabs active-tabs">
+                    <li class="font18 office-title active">
                         <a href="#firsttab" data-toggle="tab">Văn phòng TP. Hồ Chí Minh</a>  
                     </li>
                     <li class="font18 office-title">
@@ -48,7 +48,7 @@
                     <iframe src="{{has_field($page,'link_map') ? get_field($page,'link_map'):''}}" width="1920" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div> --}}
                 <div class="tab-content  office-content">
-                        <div class="tab-pane active" id="firsttab">
+                        <div class="tab-pane active" id="firsttab"> 
                             <div class="map-location">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5080290085093!2d106.72027741474892!3d10.772347792324274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fcdd2041771%3A0xa46e9842e044baf4!2sSOFIC%20Tower!5e0!3m2!1svi!2s!4v1634137150175!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
@@ -263,3 +263,11 @@
   
 </section>
 
+<script>
+    var selector = '.active-tabs li';
+    
+    $(selector).on('click', function(){
+        $(selector).removeClass('active');
+        $(this).addClass('active');
+    });
+</script>

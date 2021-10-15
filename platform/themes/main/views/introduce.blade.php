@@ -128,7 +128,7 @@
             </div>
             <div class="achievement-tabs-mobile">
 
-                <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
+                <ul class="nav nav-tabs mb-0" id="tab-achievement" role="tablist">
                     @if (has_field($page, 'achivement'))
                         @foreach (has_field($page, 'achivement') as $key => $item_tab)
                             <li class="__tabs__item " role="achievement">
