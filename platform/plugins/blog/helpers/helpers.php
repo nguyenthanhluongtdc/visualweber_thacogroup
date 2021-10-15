@@ -18,7 +18,7 @@ if (!function_exists('get_featured_posts')) {
     {
         return app(PostInterface::class)->getFeatured($limit, $with);
     }
-}
+} 
 
 if (!function_exists('get_latest_posts')) {
     /**
@@ -41,6 +41,29 @@ if (!function_exists('get_related_posts')) {
     function get_related_posts($id, $limit)
     {
         return app(PostInterface::class)->getRelated($id, $limit);
+    }
+}
+
+if (!function_exists('get_post_home_slider')) {
+    /**
+     * @param int $limit
+     * @param array $with 
+     * @return \Illuminate\Support\Collection 
+     */ 
+    function get_post_home_slider($limit, array $with = [])
+    {
+        return app(PostInterface::class)->getPostSlider($limit, $with);
+    }
+} 
+if (!function_exists('get_post_home_news')) {
+    /**
+     * @param int $limit 
+     * @param array $with
+     * @return \Illuminate\Support\Collection 
+     */
+    function get_post_home_news($limit, array $with = [])
+    {
+        return app(PostInterface::class)->getHomeNews($limit, $with);
     }
 }
 

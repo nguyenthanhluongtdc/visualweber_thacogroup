@@ -1,6 +1,6 @@
 <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
     <div class="swiper-wrapper">
-        @if ($posts = get_featured_posts(theme_option('number_post_banner'),[]))
+        @if ($posts = get_post_home_slider(theme_option('number_post_banner')))
         @foreach ($posts as $post)
         <div class="swiper-slide">
             {{-- <img 
@@ -8,7 +8,7 @@
             alt="{{$post->name}}" 
             class="img-slider h-auto w-100"
             > --}}
-            @if(has_field($post, 'image_banner'))
+            @if(has_field($post, 'image_banner')) 
             <img class="h-auto w-100"
                 src="{{get_image_url(has_field($post,'image_banner'))}}"
                 alt="" >

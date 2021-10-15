@@ -30,7 +30,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritDoc} 
      */
     public function getListPostNonInList(array $selected = [], $limit = 7, array $with = [])
     {
@@ -101,6 +101,41 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
             return [];
         }
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPostSlider(int $limit = 5, array $with = [])
+    {
+        $data = $this->model
+            ->where([
+                'status'      => BaseStatusEnum::PUBLISHED,
+                'show_slider_news' => 1,
+            ])
+            ->limit($limit)
+            ->with(array_merge(['slugable'], $with))
+            ->orderBy('created_at', 'desc');
+
+        return $this->applyBeforeExecuteQuery($data)->get();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getHomeNews(int $limit = 5, array $with = [])
+    {
+        $data = $this->model
+            ->where([ 
+                'status'      => BaseStatusEnum::PUBLISHED,
+                'show_home_news' => 1,
+            ]) 
+            ->limit($limit)
+            ->with(array_merge(['slugable'], $with))
+            ->orderBy('created_at', 'desc');
+
+        return $this->applyBeforeExecuteQuery($data)->get();
+    }
+
 
     /**
      * {@inheritDoc}
@@ -240,7 +275,7 @@ class PostRepository extends RepositoriesAbstract implements PostInterface
      * {@inheritDoc}
      */
     public function getPopularPosts($limit, array $args = [])
-    {
+    { 
         $data = $this->model
             ->with('slugable')
             ->orderBy('views', 'desc')

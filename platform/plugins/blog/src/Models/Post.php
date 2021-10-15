@@ -71,7 +71,9 @@ class Post extends BaseModel
         'status',
         'author_id',
         'author_type',
-        'image_banner',
+        'image_banner', 
+        'show_slider_news',
+        'show_home_news',
     ];
 
     /**

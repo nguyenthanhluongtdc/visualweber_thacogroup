@@ -21,7 +21,7 @@ interface PostInterface extends RepositoryInterface
     public function getFilters(array $filters);
 
     /**
-     * @param array $selected
+     * @param array $selected 
      * @param int $limit
      * @param array $with
      * @return mixed
@@ -29,6 +29,20 @@ interface PostInterface extends RepositoryInterface
     public function getListPostNonInList(array $selected = [], $limit = 7, array $with = []);
     public function getPostNonInCategory($categoryId, $limit = 3, array $with = []);
 
+    /**
+     * @param int $limit
+     * @param array $with
+     * @return mixed 
+     */ 
+    public function getPostSlider(int $limit = 5, array $with = []);
+
+
+     /**
+     * @param int $limit
+     * @param array $with
+     * @return mixed
+     */
+    public function getHomeNews(int $limit = 5, array $with = []);
     /**
      * @param int|array $categoryId
      * @param int $paginate
