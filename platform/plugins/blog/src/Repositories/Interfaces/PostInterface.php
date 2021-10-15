@@ -74,7 +74,7 @@ interface PostInterface extends RepositoryInterface
      * @param int $id
      * @param int $limit
      * @return mixed
-     */
+     */ 
     public function getRelated($id, $limit = 3);
 
     /**

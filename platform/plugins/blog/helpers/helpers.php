@@ -80,6 +80,7 @@ if (!function_exists('get_posts_by_category')) {
     }
 }
 
+
 if (!function_exists('get_posts_by_tag')) {
     /**
      * @param string $slug
@@ -134,7 +135,7 @@ if (!function_exists('get_recent_posts')) {
 if (!function_exists('get_featured_categories')) {
     /**
      * @param int $limit
-     * @param array $with
+     * @param array $with 
      * @return \Illuminate\Support\Collection
      */
     function get_featured_categories($limit, array $with = [])

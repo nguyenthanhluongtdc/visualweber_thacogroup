@@ -33,7 +33,7 @@ if (!function_exists('get_posts_type_by_category')) {
     function get_posts_type_by_category($categoryId, $paginate = 12, $format_type)
     {
         return app(PostInterfaceCustom::class)->getPostsTypeByCategory($categoryId, $paginate, $format_type);
-    }
+    } 
 }
 
 if (!function_exists('get_featured_posts')) {
@@ -73,13 +73,13 @@ if (!function_exists('get_latest_posts_noncategory')) {
 
 if (!function_exists('get_related_posts')) {
     /**
-     * @param int $id
+     * @param int $categoryId
      * @param int $limit
      * @return \Illuminate\Support\Collection
      */
-    function get_related_posts($id, $limit)
+    function get_related_posts($categoryId, $limit = 3)
     {
-        return app(PostInterface::class)->getRelated($id, $limit);
+        return app(PostInterface::class)->getRelated($categoryId, $limit);
     }
 }
 

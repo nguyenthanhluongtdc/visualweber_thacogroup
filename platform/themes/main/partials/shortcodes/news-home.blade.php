@@ -19,12 +19,12 @@
                                         @endif
                                         <a href="{{ $item_post->url }}" title="{{ $item_post->name }}">
                                             <h4 class="name font20">{!! $item_post->name !!}</h4>
-                                        </a>
+                                        </a> 
 
                                         <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
                                         <p class="description font18 text-justify">{{str::words($item_post->description,70)}}</p>
                                         <a href="{{ $item_post->url }}" class="read-more"
-                                            title="{!! __('Xem thêm') !!}">{!! __('Xem thêm') !!}</a>
+                                            title="{!! __('Xem thêm') !!}">{!! __('Xem thêm') !!} <i class="fas fa-arrow-right"></i> </a>
                                     </div>
                                 </div>
                             </div>
