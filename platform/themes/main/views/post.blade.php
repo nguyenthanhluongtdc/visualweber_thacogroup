@@ -120,7 +120,7 @@
                     <div class="tag-item active">
                         <a href="">{{$tag->name}}</a>
                     </div>
-                    @endforeach
+                    @endforeach 
                    
                 </div>
             </div>

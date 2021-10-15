@@ -176,7 +176,7 @@ let newPostSlide = new Swiper('.new-post-slide', {
         el: '.new-post-slide .swiper-pagination',
         clickable: true,
     },
-    navigation: {
+    navigation: { 
         nextEl: '.new-post-slide .swiper-button-next',
         prevEl: '.new-post-slide .swiper-button-prev',
     },
@@ -238,14 +238,18 @@ let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
     },
     navigation: {
         nextEl: '.post-slide-bottom .swiper-button-next',
-        prevEl: '.post-slide-bottom .swiper-button-prev',
+        prevEl: '.post-slide-bottom .swiper-button-prev', 
     },
 })
 var newPostSlide_relate = new Swiper('.post-slide-relate', {
-    spaceBetween: 10,
+    spaceBetween: 20,
     slidesPerView: 3,
-    initialSlide: 11,
     loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    speed: 1000,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -254,7 +258,27 @@ var newPostSlide_relate = new Swiper('.post-slide-relate', {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true
-    }
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 3,
+            // centeredSlides: true,
+            spaceBetween: 30,
+           
+        },
+        768: {
+            slidesPerView: 2,
+           
+            spaceBetween: 40,
+           
+        },
+        320: {
+            slidesPerView: 1,
+           
+            spaceBetween: 40,
+           
+        },
+    },
 });
 let field_slider = new Swiper('.field-slider', {
         speed: 800,
