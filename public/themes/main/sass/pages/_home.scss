@@ -602,6 +602,9 @@
         position: relative;
         .field-activity-slide-top {
             height: 37vw;
+            @include maxWidth(480) {
+                height: 40vh;
+            }
             .swiper-slide {
                 .read-more {
                     padding: 4px 14px;
@@ -617,12 +620,18 @@
                     position: relative;
                     .__video {
                         height: 37vw;
+                        @include maxWidth(480) {
+                            height: 40vh;
+                        }
                         object-fit: contain;
                         position: absolute;
                         z-index: 2;
                     }
                     .__video.video-full {
                         height: 37vw;
+                        @include maxWidth(480) {
+                            height: 40vh;
+                        }
                         object-fit: cover;
                         position: absolute;
                         z-index: 1;
@@ -635,6 +644,9 @@
                 img {
                     width: 100%;
                     height: 37vw;
+                    @include maxWidth(480) {
+                        height: 40vh;
+                    }
                 }
             }
             .read-more {
