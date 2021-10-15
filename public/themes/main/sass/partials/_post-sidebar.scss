@@ -6,7 +6,7 @@
     margin-top: 80px;
     .media__content_right {
         box-shadow: 0 7px 10px 1px #3333;
-        .list-media-menu { 
+        .list-media-menu {
             padding: 30px 20px 0px 20px;
             background: #fff;
             border-radius: 2px;
@@ -20,10 +20,9 @@
                 border-right: unset;
                 color: #1D1D1D;
                 padding: 8px 0;
-                &:hover { 
+                &:hover {
                     color: $main_color;
                 }
-                
             }
             .list-group-item:last-child {
                 border: none;
@@ -83,7 +82,7 @@
                         margin-bottom: 10px;
                         a {
                             height: auto;
-                            display: block; 
+                            display: block;
                             overflow: hidden;
                             // @include split_str(2);
                             color: #000;

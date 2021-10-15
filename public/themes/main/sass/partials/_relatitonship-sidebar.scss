@@ -4,18 +4,18 @@
     position: sticky;
     flex: 1;
     top: 0px;
+    box-shadow: 0 7px 10px 1px #3333;
     @media only screen and (max-width: 1080px) {
         width: 100%;
         position: relative;
         overflow: hidden;
     }
     .relationship__content {
-        box-shadow: 0 7px 10px 1px #3333;
         @media only screen and (max-width: 1080px) {
             box-shadow: unset;
         }
         .list-relationship-menu {
-            padding: 20px 20px 15px 20px;
+            padding: 20px 20px 0px 20px;
             background: #fff;
             border-radius: 2px;
             @media only screen and (max-width: 1080px) {
@@ -43,6 +43,143 @@
                 // color: $main_color;
                 // background: none;
                 display: none;
+            }
+        }
+    }
+    .list-post-new {
+        // width: 33%;
+        .wrap {
+            ul {
+                padding: 0;
+            }
+            padding: 10px 20px 0px 20px;
+            background: #fff;
+            width: 100%;
+            h2 {
+                padding: 14px 0 14px 0;
+                text-transform: uppercase;
+                font-family: $MyriadPro-Bold;
+                border-bottom: 1px solid #707070;
+                color: #000;
+                margin: 0;
+            }
+            .post-new-item {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 15px;
+                align-items: center;
+                border-bottom: 1px solid #707070;
+                &:hover .title a {
+                    color: $main_color;
+                }
+                .post-thumbnail-wrap {
+                    margin-right: 5px;
+                    width: 30%;
+                    .post-thumbnail {
+                        margin-bottom: 15px;
+                        width: 100%;
+                        height: 100%;
+                        overflow: hidden;
+                        img {
+                            max-width: 100%;
+                            height: 90px;
+                            transition: transform .3s, visibility .3s ease-in;
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+                .title {
+                    width: 68%;
+                    margin-bottom: 10px;
+                    a {
+                        height: auto;
+                        display: block;
+                        overflow: hidden;
+                        // @include split_str(2);
+                        color: #000;
+                        font-family: $MyriadPro-Bold;
+                        line-height: 1.1;
+                        color: #1D1D1D;
+                    }
+                }
+                .time {
+                    font-size: 15px;
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                }
+            }
+            .post-new-item:last-child {
+                border: none;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .relationship-sibar {
+        .list-post-new {
+            padding: 0 10px !important;
+            .wrap {
+                padding: 0;
+                h2 {
+                    font-size: 35px;
+                }
+                .post-new-item {
+                    padding-top: 20px;
+                    .post-thumbnail-wrap {
+                        width: 22%;
+                    }
+                    .title {
+                        width: 76%;
+                        // font-size: 25px;
+                    }
+                    .time {
+                        font-size: 17px;
+                    }
+                }
+                .post-new-item:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .relationship-sibar {
+        .list-post-new {
+            .wrap {
+                h2 {
+                    font-size: 20px;
+                }
+                .post-new-item {
+                    .title {
+                        // font-size: 20px;
+                    }
+                    .time {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .relationship-sibar {
+        .list-post-new {
+            .wrap {
+                .post-new-item {
+                    .title {
+                        // font-size: 17px;
+                    }
+                    .post-thumbnail-wrap {
+                        width: 30%;
+                    }
+                }
             }
         }
     }

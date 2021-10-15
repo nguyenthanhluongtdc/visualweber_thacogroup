@@ -21,7 +21,7 @@
                 }
             }
             .info-item {
-                display: flex; 
+                display: flex;
                 padding: 15px 0;
                 border-bottom: 1px solid #d7d7d7;
                 width: 100%;
@@ -45,12 +45,10 @@
                             margin: 0 4px;
                             .date-day {
                                 font-size: 19px;
-                               
                             }
                             sup {
                                 font-size: 19px;
                                 vertical-align: -10px;
-                               
                             }
                         }
                         .date-year {
@@ -59,7 +57,6 @@
                             font-size: 35px;
                             padding: 10px 0;
                             border-top: 1px solid rgba(255, 255, 255, 0.5);
-                           
                         }
                     }
                 }
@@ -149,7 +146,7 @@
         max-width: 29.1%;
         position: sticky;
         flex: 1;
-        margin-top: 92px;
+        margin-top: 73px;
         // padding-top: 92px;
         @media only screen and (max-width: 1080px) {
             max-width: 100%;
