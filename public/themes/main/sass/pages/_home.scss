@@ -181,6 +181,9 @@
                     height: 100%;
                     object-fit: cover;
                     object-position: center center;
+                    @media screen and(max-width: 576px) {
+                        height: 40vh;
+                    }
                 }
             }
             &:nth-child(2) {
