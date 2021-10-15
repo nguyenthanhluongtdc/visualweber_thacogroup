@@ -23,7 +23,7 @@
 
                                         <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
                                         <p class="description font18 text-justify">{{str::words($item_post->description,70)}}</p>
-                                        <a href="{{ $item_post->url }}" class="read-more"
+                                        <a href="{{ $item_post->url }}" class="read-more text-uppercase"
                                             title="{!! __('Xem thêm') !!}">{!! __('Xem thêm') !!} <i class="fas fa-arrow-right"></i> </a>
                                     </div>
                                 </div>
