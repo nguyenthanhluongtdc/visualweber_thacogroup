@@ -11,7 +11,7 @@
 }
 
 @keyframes mymove {
-    from { 
+    from {
         margin-bottom: -200px;
     }
     to {
@@ -44,12 +44,11 @@
     to {
         right: 0px;
     }
-} 
- 
+}
+
 .main-slider {
     .swiper-slide {
-        
-        .video-slider{
+        .video-slider {
             height: 100vh;
             object-fit: cover;
         }
@@ -62,15 +61,14 @@
                 width: 100%;
                 display: block;
             }
-        } 
-        .box-left{
+        }
+        .box-left {
             left: 68%;
         }
-        .box-right{
+        .box-right {
             left: 10%;
         }
         .content {
-           
             position: absolute;
             top: 40%;
             z-index: 2;
@@ -100,7 +98,7 @@
                 margin: 0;
                 line-height: 22px;
                 text-transform: uppercase;
-                p{
+                p {
                     margin-bottom: 0 !important;
                 }
                 &::before {
@@ -353,7 +351,8 @@
 
 .partner-wrapper {
     .title__company {
-        margin: 10px 0;
+        // margin: 10px 0;
+        padding: 20px 0 10px 0;
         font-family: $MyriadPro-Bold;
         text-align: center;
     }
@@ -469,9 +468,8 @@
                         overflow: hidden;
                         height: auto;
                         line-height: 22px;
-                      
                         // text-align: justify;
-                        p{
+                        p {
                             margin-bottom: 0 !important;
                         }
                     }
@@ -549,7 +547,7 @@
                         overflow: hidden;
                         line-height: 22px;
                         @include split_str(2);
-                        p{
+                        p {
                             margin-bottom: 0 !important;
                         }
                     }
@@ -608,7 +606,7 @@
                         position: absolute;
                         z-index: 2;
                     }
-                    .__video.video-full { 
+                    .__video.video-full {
                         height: 37vw;
                         object-fit: cover;
                         position: absolute;
@@ -872,7 +870,7 @@
         display: block!important;
         .post-wrapper {
             .post-item {
-                a { 
+                a {
                     color: $white;
                     display: block;
                     text-transform: uppercase;
@@ -997,7 +995,7 @@
                 }
             }
         }
-    } 
+    }
     .news-home-mobile {
         .post-wrapper {
             .post-item {
