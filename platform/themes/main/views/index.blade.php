@@ -13,7 +13,7 @@
                 src="{{get_image_url(has_field($post,'image_banner'))}}"
                 alt="" >
             @else
-            <video  autoplay muted class="video-slider w-100">
+            <video  autoplay muted class="video-slider w-100 __video">
                 <source src="{{ RvMedia::getImageUrl(get_field($post,'video_banner')) }}"  class="">
             </video>
             @endif

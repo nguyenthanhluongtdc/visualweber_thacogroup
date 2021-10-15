@@ -1,3 +1,4 @@
+// slide develop introduce page
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -43,15 +44,15 @@ const pause = $('.pause').on('click', function() {
 })
 
 const play = $('.play').on('click', function() {
-    $(this).toggleClass('active')
-    const play1 = $('.pause.active')
-    if (play1) {
-        play1.toggleClass('active')
-    }
-    $('.slider').slick('slickPlay').slick('slickSetOption', 'pauseOnDotsHover', true)
-})
-
-//sroll top
+        $(this).toggleClass('active')
+        const play1 = $('.pause.active')
+        if (play1) {
+            play1.toggleClass('active')
+        }
+        $('.slider').slick('slickPlay').slick('slickSetOption', 'pauseOnDotsHover', true)
+    })
+    // end slide develop introduce page
+    //sroll top
 if ($('#button-top').length > 0) {
     var btnTop = $('#button-top')
     $(window).scroll(function() {
@@ -67,23 +68,63 @@ if ($('#button-top').length > 0) {
     })
 }
 // main slider
-let main_slider = new Swiper('.main-slider', {
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    effect: 'fade',
-    loop: true,
-    speed: 2000,
-    pagination: {
-        el: '.main-slider .swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.main-slider .swiper-button-next',
-        prevEl: '.main-slider .swiper-button-prev',
-    },
-})
+
+if ($('.main-slider').length > 0) {
+    let main_slider = new Swiper('.main-slider', {
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
+        // effect: 'fade',
+        loop: true,
+        speed: 1000,
+        pagination: {
+            el: '.main-slider .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.main-slider .swiper-button-next',
+            prevEl: '.main-slider .swiper-button-prev',
+        },
+    })
+
+    // handle playvideo
+    function myHandler(e) {
+        main_slider.slideNext()
+    }
+    const autoplay = 3000
+    if ($('.main-slider .swiper-slide-active .__video').length) {
+        $('.main-slider .swiper-slide-active .__video')[0].play()
+        $('.main-slider .swiper-slide-active .__video')[0].addEventListener('ended', myHandler, false)
+
+    } else {
+        setTimeout(() => {
+            myHandler()
+        }, autoplay)
+    }
+    /**
+     * https://stackoverflow.com/questions/2741493/detect-when-an-html5-video-finishes
+     */
+    main_slider.on('slideChange', function() {
+        if ($('.main-slider .swiper-slide-active .__video').length) {
+            $('.main-slider .swiper-slide-active .__video')[0].paused
+
+        }
+    })
+    main_slider.on('slideChangeTransitionEnd', function() {
+        if ($('.main-slider .swiper-slide-active .__video').length) {
+            $('.main-slider .swiper-slide-active .__video')[0].play()
+            $('.main-slider .swiper-slide-active .__video')[0].addEventListener('ended', myHandler, false)
+
+        } else {
+            setTimeout(() => {
+                myHandler()
+            }, autoplay)
+        }
+    })
+
+}
+
 let logo_company = new Swiper('.logo-company', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -201,19 +242,19 @@ let newPostSlide_bottom = new Swiper('.post-slide-bottom', {
     },
 })
 var newPostSlide_relate = new Swiper('.post-slide-relate', {
-	spaceBetween: 10,
-	slidesPerView: 3,
-  initialSlide: 11,
-  loop: true,
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev'
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		type: 'bullets',
-		clickable: true
-	}
+    spaceBetween: 10,
+    slidesPerView: 3,
+    initialSlide: 11,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+    }
 });
 let field_slider = new Swiper('.field-slider', {
         speed: 800,
@@ -271,7 +312,7 @@ var media_sider = new Swiper('.media-slider', {
 
 
 if ($('.field-activity-slide-top').length > 0) {
-    var Homebanner = new Swiper('.field-activity-slide-top', {
+    var Media_home = new Swiper('.field-activity-slide-top', {
         slidesPerView: 1,
         pagination: {
             el: '.swiper-pagination',
@@ -285,7 +326,7 @@ if ($('.field-activity-slide-top').length > 0) {
     })
 
     function myHandler(e) {
-        Homebanner.slideNext()
+        Media_home.slideNext()
     }
     const autoplay = 2000
     if ($('.field-activity-slide-top .swiper-slide-active .__video').length && $('.field-activity-slide-top .swiper-slide-active .__video.video-full').length) {
@@ -301,13 +342,13 @@ if ($('.field-activity-slide-top').length > 0) {
     /**
      * https://stackoverflow.com/questions/2741493/detect-when-an-html5-video-finishes
      */
-    Homebanner.on('slideChange', function() {
+    Media_home.on('slideChange', function() {
         if ($('.field-activity-slide-top .swiper-slide-active .__video').length && $('.field-activity-slide-top .swiper-slide-active .__video.video-full').length) {
             $('.field-activity-slide-top .swiper-slide-active .__video')[0].paused
             $('.field-activity-slide-top .swiper-slide-active .__video.video-full')[0].paused
         }
     })
-    Homebanner.on('slideChangeTransitionEnd', function() {
+    Media_home.on('slideChangeTransitionEnd', function() {
         if ($('.field-activity-slide-top .swiper-slide-active .__video').length && $('.field-activity-slide-top .swiper-slide-active .__video.video-full').length) {
             $('.field-activity-slide-top .swiper-slide-active .__video')[0].play()
             $('.field-activity-slide-top .swiper-slide-active .__video.video-full')[0].play()
@@ -481,13 +522,7 @@ var gallery_top = new Swiper(".gallery-top", {
     },
 
 });
-// if ($('.album-item.image').length > 0) {
-//     $('.album-item.image').click(function() {
 
-//         $('#album_modal-detail').modal('show');
-//     });
-
-// }
 if ($('.image-item__back').length > 0) {
     $('.image-item__back').click(function(e) {
         $('#album_modal-detail').css('display', 'none');
@@ -552,7 +587,7 @@ $(document).ready(function() {
 
     if (info_contact && email_us && chat_online) {
         $('#support-tab').find('.contact-box__item:nth-child(1)').click(function() {
-           
+
             info_contact.css('display', 'none');
             email_us.css('display', 'block');
             chat_online.css('display', 'none');
@@ -763,7 +798,7 @@ var Ajax = {
                 }
             })
         })
-    }, 
+    },
     getMedia: () => {
         $(document).on('click', '.item_link_media', function() {
             $(this).addClass('active-row').siblings().removeClass('active-row')
