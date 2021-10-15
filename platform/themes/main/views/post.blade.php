@@ -138,7 +138,7 @@
                         <div class="swiper-wrapper">
                             @foreach ($relatedPosts as $relatedItem)
                             <div class="swiper-slide post_relate_content">
-                                <a href=""{{ $relatedItem->url }}" class="text-dark">
+                                <a href="{{ $relatedItem->url }}" class="text-dark">
                                     <div class="post-thumbnail">
                                         <img src="{{ get_object_image( $relatedItem->image) }}" alt="">
                                     </div>

@@ -75,7 +75,7 @@ if ($('.main-slider').length > 0) {
         //     delay: 5000,
         //     disableOnInteraction: false,
         // },
-        // effect: 'fade',
+        effect: 'fade',
         loop: true,
         speed: 1000,
         pagination: {
