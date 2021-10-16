@@ -75,7 +75,7 @@ if ($('.main-slider').length > 0) {
         //     delay: 5000,
         //     disableOnInteraction: false,
         // },
-        effect: 'fade',
+        // effect: 'fade',
         loop: true,
         speed: 1000,
         pagination: {
@@ -1024,7 +1024,7 @@ var element_fancy = '.post-content img';
 $(element_fancy).on('click', function() {
     $().fancybox({
         selector: '.post-content img',
-        hash: false
+        // hash: false
     });
 
 })
