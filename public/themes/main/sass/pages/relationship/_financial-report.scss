@@ -137,7 +137,7 @@
                         line-height: 21px;
                         @include height(63);
                         @media screen and (max-width: 1680px) {
-                            @include height(50);
+                            @include height(56);
                             line-height: 19px;
                         }
                         @media screen and (max-width: 1330px) {
