@@ -6,21 +6,17 @@
 
 .shareholder-infomation {
     display: flex;
-
-
     .loading {
         width: 68.2%;
         margin-right: 2.7%;
         display: flex;
         align-items: center;
         justify-content: center;
-
         img {
             width: 100px;
             height: 100px;
         }
     }
-
     @media only screen and (max-width: 1080px) {
         display: unset;
     }
@@ -36,7 +32,7 @@
                 display: block;
                 font-family: $MyriadPro-Bold;
             }
-        } 
+        }
         .list-info {
             display: flex;
             flex-wrap: wrap;
@@ -104,15 +100,14 @@
                         flex: 1 50%;
                         max-width: 50%;
                         padding: 0 2%;
-                    } 
-                } 
+                    }
+                }
                 .report-item-right {
                     @media only screen and (max-width: 1080px) {
                         flex: 1 50%;
                         max-width: 50%;
                         padding: 2%;
                     }
-                   
                 }
                 .date {
                     display: block;
@@ -140,8 +135,7 @@
                         margin: 5px 0 10px 0;
                         text-transform: uppercase;
                         line-height: 21px;
-                      
-                        @include height(40);
+                        @include height(63);
                         @media screen and (max-width: 1680px) {
                             @include height(50);
                             line-height: 19px;
@@ -170,7 +164,6 @@
                         }
                     }
                 }
-                
                 .download a {
                     background: $main_color;
                     color: #fff;
