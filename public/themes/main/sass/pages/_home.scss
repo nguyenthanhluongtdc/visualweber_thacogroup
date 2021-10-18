@@ -17,7 +17,7 @@
     to {
         margin-bottom: 0;
     }
-} 
+}
 
 @keyframes mymovetop {
     from {
@@ -70,7 +70,7 @@
         }
         .content {
             position: absolute;
-            top: 36.5%;
+            top: 40%;
             z-index: 2;
             // transform: translateY(-50%);
             // transform: translate(-250%, -50%);
@@ -455,7 +455,7 @@
                 color: $main_color;
             }
             .img-post {
-                flex: 0 0 66%;
+                flex: 0 0 65%;
                 img {
                     width: 100%;
                     height: 100%;
@@ -629,7 +629,7 @@
                 .video-wrapper {
                     position: relative;
                     .__video {
-                        height: 38vw;
+                        height: 37vw;
                         @include maxWidth(480) {
                             height: 40vh;
                         }
@@ -638,7 +638,7 @@
                         z-index: 2;
                     }
                     .__video.video-full {
-                        height: 38vw;
+                        height: 37vw;
                         @include maxWidth(480) {
                             height: 40vh;
                         }

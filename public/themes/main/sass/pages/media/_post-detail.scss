@@ -102,10 +102,10 @@
                         text-align: justify !important;
                         // font-size: 12px !important;
                         iframe {
-                            width: 100%;
-                            max-height: 400px;
+                            width: 100%!important;
+                            max-height: 400px!important;
                             @include maxWidth(480) {
-                                height: 35vh;
+                                height: 35vh!important;
                             }
                         }
                     }
