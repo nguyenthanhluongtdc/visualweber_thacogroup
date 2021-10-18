@@ -13,7 +13,7 @@ $page = app(PageInterface::class)->findById(28);
                     class="img-slider  h-auto w-100"> --}}
 
                 @if(has_field($post, 'image_banner')) 
-                <a href="{{$post->url}}">
+                <a href="{{$post->url}}"> 
                     <img class="h-auto w-100"
                     src="{{get_image_url(has_field($post,'image_banner'))}}"
                     alt="" >
@@ -27,7 +27,11 @@ $page = app(PageInterface::class)->findById(28);
                 </a>
                 
                 @endif
-                <div class="post-banner  {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}}">
+                <div 
+                class="post-banner  
+                {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}}" 
+                style="background-color: {{get_field($data, 'color_code')}}"
+                >
                     <h2 class="font24 font-weight-bold">
                         {!!str::words($post->name,20)!!}  
                        
