@@ -13,7 +13,7 @@
                 <p class="description font24 text-justify">
                     {{ has_field($page, 'desc_short') ? get_field($page, 'desc_short') : '' }}
                 </p>
-                <a href="{{ has_field($page, 'link_apply') ? get_field($page, 'link_apply') : '' }}"
+                <a target="_blank" href="{{ has_field($page, 'link_apply') ? get_field($page, 'link_apply') : '' }}"
                     class="btn-apply font24" title="{{ has_field($page, 'link_apply') }}">{!! __('Ứng tuyển ngay') !!}</a>
             </div>
             <div class="bottom_slider_wrapper">
@@ -28,8 +28,7 @@
                             @foreach (get_field($page, 'position') as $position)
                                 <div class="swiper-slide">
                                     <div class="swiper-content-bottom">
-                                        <a href="{{ has_sub_field($position, 'link') ? get_sub_field($position, 'link') : '' }}"
-                                            target="_self"
+                                        <a target="_blank" href="{{ has_sub_field($position, 'link') ? get_sub_field($position, 'link') : '' }}"
                                             title="{{ has_sub_field($position, 'link') ? get_sub_field($position, 'link') : '' }}">
                                             <p class="postion-apply font28">
                                                 {{ has_sub_field($position, 'position_name') ? get_sub_field($position, 'position_name') : '' }}
