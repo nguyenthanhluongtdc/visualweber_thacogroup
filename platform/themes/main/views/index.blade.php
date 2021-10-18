@@ -37,7 +37,7 @@
                     style=" background-color:  {{has_field($page, 'background_color')}}; ">
                         <h1 class="font24 title-post">
                        
-                        {!!str::words($post->name,20)!!}      
+                        {{$post->name}}      
                         </h1>
                         <div class="date"> 
                             <span class="text-light">{{$post->created_at->format('d/m/Y')}}</span>
@@ -46,7 +46,7 @@
                         <p class=" font18"> 
                         {{-- {{$post->description}} --}}
                         
-                        {{str::words($post->description,80)}}                        
+                        {{$post->description}}                        
                         </p>
                         
                         </div> 

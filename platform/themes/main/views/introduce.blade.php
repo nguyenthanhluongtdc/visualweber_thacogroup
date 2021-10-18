@@ -14,7 +14,7 @@
             <img src="{{ Theme::asset()->url('images/introduce/arrow.png') }}" alt="icon">
             <h1 class="font50 big-title">{{ has_field($page, 'about_us_title') }}</h1>
         </div>
-        <div class="about-us__content mt-40 text-justify" data-aos="fade-right" data-aos-duration="700"
+        <div class="about-us__content mt-40 text-justify font18" data-aos="fade-right" data-aos-duration="700"
             data-aos-delay="50" class="aos-init aos-animate">
             {!! has_field($page, 'about_us_content') !!}
         </div>
@@ -265,26 +265,36 @@
 
                         <div class="modal-body mCustomScrollbar p-0" data-mcs-theme="dark">
                             <div class="row mr-md-0 modal-content-top">
-                                <div class="col-md-4 p-0 col-4 col-right pl-md-4">
+                                <div class="col-md-5 p-0 col-5 col-right pl-md-4">
                                     <img class="w-100"
                                         src="{{ get_image_url(has_sub_field($item_member, 'image')) }}"
                                         alt="{!! has_sub_field($item_member, 'name') !!}">
 
                                 </div>
-                                <div class="col-md-8 col-8">
+                                <div class="col-md-7 col-7">
                                     <button type="button" class="close" data-dismiss="modal"
                                         aria-label="Close">
                                         <i class="fal fa-times"></i>
                                     </button>
-
+                                    
                                     <div class="info-admin">
-                                        {!! has_sub_field($item_member, 'info_work_detail') !!}
+                                        <div class="info-admin__name">
+                                            {!!has_sub_field($item_member, 'name')!!}
+                                        </div>
+                                        <div class="info-admin__position">
+                                            {!! has_sub_field($item_member, 'position') !!}
+                                        </div>
+                                      <div class="info-admin__desc">
+                                        {!! has_sub_field($item_member, 'info_desc_detail') !!}
+                                      </div>
+                                     
+                                       
                                     </div>
 
                                 </div>
                             </div>
 
-                            <div class="work-progress">
+                            {{-- <div class="work-progress">
                                 <h3 class="title font20">{!! __('QUÁ TRÌNH LÀM VIỆC TẠI THACO') !!}</h3>
                                 <div class="work-progress-table">
                                     <table class="table">
@@ -307,7 +317,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

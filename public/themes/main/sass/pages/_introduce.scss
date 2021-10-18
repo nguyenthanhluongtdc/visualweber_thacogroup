@@ -917,7 +917,7 @@
                 }
                 overflow-y: hidden;
                 overflow-x: hidden;
-                height: 500px;
+                height: 470px;
                 @media only screen and (max-width: 600px) {
                     height: 400px;
                 }
@@ -941,51 +941,62 @@
                 //     }
                 // }
                 .info-admin {
-                    margin-left: 40px;
+                    margin-left: 20px;
                     margin-top: 40px;
                     @media only screen and (max-width: 600px) {
                         margin: 15px 0;
                     }
-                    .name {
+                    &__name {
                         color: $gray_text;
                     }
+                    &__position {
+                        padding-bottom: 20px;
+                        border-bottom: 2px solid #ddd;
+                    }
+                    &__desc {
+                        padding-top: 20px;
+                    }
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
                     p {
-                        margin-bottom: 10px;
+                        margin-bottom: 0px;
                         @media only screen and (max-width: 600px) {
                             margin: 0;
                         }
                     }
                 }
-                .work-progress {
-                    .title {
-                        font-family: $MyriadPro-Bold;
-                        color: #1F5595;
-                        padding: 5px 0;
-                        margin-bottom: 0;
-                        margin-right: 0;
-                        margin-left: 0;
-                        margin-top: 20px;
-                        border-top: 1px solid #ccc;
-                        border-bottom: 1px solid #ccc;
-                    }
-                    .work-progress-table {
-                        .table {
-                            td {
-                                padding: 10px;
-                                border: unset;
-                                p {
-                                    margin: 0;
-                                }
-                            }
-                            th {
-                                padding: 10px;
-                                border: unset;
-                                color: $gray_text;
-                                font-weight: bold;
-                            }
-                        }
-                    }
-                }
+                // .work-progress {
+                //     .title {
+                //         font-family: $MyriadPro-Bold;
+                //         color: #1F5595;
+                //         padding: 5px 0;
+                //         margin-bottom: 0;
+                //         margin-right: 0;
+                //         margin-left: 0;
+                //         margin-top: 20px;
+                //         border-top: 1px solid #ccc;
+                //         border-bottom: 1px solid #ccc;
+                //     }
+                //     .work-progress-table {
+                //         .table {
+                //             td {
+                //                 padding: 10px;
+                //                 border: unset;
+                //                 p {
+                //                     margin: 0;
+                //                 }
+                //             }
+                //             th {
+                //                 padding: 10px;
+                //                 border: unset;
+                //                 color: $gray_text;
+                //                 font-weight: bold;
+                //             }
+                //         }
+                //     }
+                // }
             }
         }
     }
