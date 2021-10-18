@@ -32,6 +32,10 @@ $page = app(PageInterface::class)->findById(28);
                 {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}}" 
                 style="background-color: {{get_field($data, 'color_code')}}"
                 >
+                
+                   
+                </div>
+                <div class="content">
                     <h2 class="font24 font-weight-bold">
                         {!!str::words($post->name,20)!!}  
                        
@@ -77,7 +81,7 @@ $page = app(PageInterface::class)->findById(28);
             <p class="content mt-25 " data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
                 {!! has_field($data,'field_desc') !!} 
             </p>
-            @endif
+            @endif 
         </div>
         <div class="commercial-field__right">
             <div class="swiper-container commercial-field-slider"

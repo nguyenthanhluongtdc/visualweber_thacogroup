@@ -118,7 +118,7 @@ class PostForm extends FormAbstract
             ])
             ->add('image', 'mediaImage', [
                 'label'      => trans('core/base::forms.image'),
-                'label_attr' => ['class' => 'control-label'],
+                'label_attr' => ['class' => 'control-label'], 
             ])
             // ->add('image_banner', 'mediaImage', [
             //     'label'      => trans('Ảnh banner'),
