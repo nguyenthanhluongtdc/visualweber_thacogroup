@@ -627,7 +627,7 @@
                 .video-wrapper {
                     position: relative;
                     .__video {
-                        height: 37vw;
+                        height: 38vw;
                         @include maxWidth(480) {
                             height: 40vh;
                         }
