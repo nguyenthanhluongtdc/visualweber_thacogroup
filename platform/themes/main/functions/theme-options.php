@@ -678,6 +678,19 @@ app()->booted(function () {
                     ],
                 ])
                 ->setField([
+                    'id' => 'number_post_home_news',
+                    'section_id' => 'opt-text-subsection-blog',
+                    'type' => 'number',
+                    'label' => __('Số bài viết hiển thị ở tin nổi bật Trang chủ'),
+                    'attributes' => [
+                        'name' => 'number_post_home_news',
+                        'value' => 1,
+                        'options' => [
+                            'class' => 'form-control'
+                        ], // Optional
+                    ],
+                ])
+                ->setField([
                     'id' => 'number_post_qhcd',
                     'section_id' => 'opt-text-subsection-blog',
                     'type' => 'number',

@@ -4,7 +4,7 @@
             @if(has_field($category, 'repeater_banner'))
                 @foreach(has_field($category, 'repeater_banner') as $img)
                     <div class="swiper-slide" >
-                        <img src="{{ Storage::disk('public')->exists(get_sub_field($img, 'image')) ? get_object_image(get_sub_field($img, 'image')) : RvMedia::getDefaultImage() }}" alt="" class="h-45vw w-100">
+                        <img src="{{ Storage::disk('public')->exists(get_sub_field($img, 'image')) ? get_object_image(get_sub_field($img, 'image')) : RvMedia::getDefaultImage() }}" alt="" class="h-100vh w-100">
                     </div>
                 @endforeach
 

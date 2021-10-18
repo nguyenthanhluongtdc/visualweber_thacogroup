@@ -9,14 +9,30 @@ $page = app(PageInterface::class)->findById(28);
             @if ($posts = get_featured_posts(theme_option('number_post_banner'),[]))
             @foreach ($posts as $post)
             <div class="swiper-slide item-slider-top">
-                <img src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}}" alt="slide"
-                    class="img-slider  h-auto w-100">
+                {{-- <img src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}}" alt="slide"
+                    class="img-slider  h-auto w-100"> --}}
+
+                @if(has_field($post, 'image_banner')) 
+                <a href="{{$post->url}}">
+                    <img class="h-auto w-100"
+                    src="{{get_image_url(has_field($post,'image_banner'))}}"
+                    alt="" >
+                </a>
+                
+                @else
+                <a href="{{$post->url}}">
+                    <video  autoplay muted class="video-slider h-auto w-100 __video">
+                        <source src="{{ RvMedia::getImageUrl(get_field($post,'video_banner')) }}"  class="">
+                    </video>
+                </a>
+                
+                @endif
                 <div class="post-banner  {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}}">
                     <h2 class="font24 font-weight-bold">
                         {!!str::words($post->name,20)!!}  
                        
                     </h2>
-                    <div class="date mt-2"> 
+                    <div class="date mt-2">  
                         <span> 
                             {{$post->created_at->format('d/m/Y')}}
                         </span>

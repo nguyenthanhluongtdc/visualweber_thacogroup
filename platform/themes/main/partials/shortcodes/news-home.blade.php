@@ -4,14 +4,17 @@
             <div class="swiper-container new-post-slide"
                 style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                 <div class="swiper-wrapper">
-                    @if ($post_home_top = get_post_home_news(3))
+                    @if ($post_home_top = get_post_home_news(theme_option('number_post_home_news')))
                         @foreach ($post_home_top as $item_post)
                             <div class="swiper-slide">
                                 <div class="news-home__top"> 
                                     <div class="img-post">
-                                        <img class="img-mw-100"
+                                        <a href="{{$item_post->url}}">
+                                            <img class="img-mw-100"
                                             src="{{ RvMedia::getImageUrl($item_post->image, 'featured', false, RvMedia::getDefaultImage()) }}"
                                             alt="{{ $item_post->name }}">
+                                        </a>
+                                       
                                     </div>
                                     <div class="news-post h-100">
                                         @if(has_field($item_post, 'post_category'))
@@ -37,7 +40,7 @@
             <div class="post-slider">
                 <div class="swiper-container post-slide-bottom">
                     <div class="swiper-wrapper">
-                        @if ($post_home_bottom = get_post_home_news(6))
+                        @if ($post_home_bottom = get_post_home_news(theme_option('number_post_home_news')))
                             @foreach ($post_home_bottom as $post_bottom)
                                 <div class="swiper-slide d-flex justify-content-center">
                                     <div class="post_content_bottom">
@@ -73,7 +76,7 @@
         </div>
         <div class="news-home-mobile" style="display: none">
             <div class="post-wrapper">
-                @if ($post_home_mobile = get_post_home_news(3, []))
+                @if ($post_home_mobile = get_post_home_news(theme_option('number_post_home_news'), []))
                     @foreach ($post_home_mobile as $item_post)
                         <div class="post-item mb-4">
                             <a class="" href=" {{ $item_post->url }}" title="{{ $item_post->name }}">

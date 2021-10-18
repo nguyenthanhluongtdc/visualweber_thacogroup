@@ -62,6 +62,15 @@ class PostForm extends FormAbstract
                     'data-counter' => 120,
                 ], 
             ])
+            ->add('author_name', 'text', [
+                'label'         => __('Tên người viết'),
+                'label_attr' => ['class' => 'control-label required'],
+                'attr'       => [
+                    
+                    'placeholder'  => trans('core/base::forms.name_placeholder'),
+                    'data-counter' => 120,
+                ], 
+            ])
             ->add('description', 'textarea', [
                 'label'      => trans('core/base::forms.description'),
                 'label_attr' => ['class' => 'control-label'],
@@ -77,7 +86,7 @@ class PostForm extends FormAbstract
                 'default_value' => false,
             ])
             ->add('show_slider_news', 'onOff', [
-                'label'         => __('Tin nổi bật Slider trang chủ'),
+                'label'         => __('Tin nổi bật Banner trang chủ'),
                 'label_attr'    => ['class' => 'control-label'],
                 'default_value' => false,
             ])
@@ -111,10 +120,10 @@ class PostForm extends FormAbstract
                 'label'      => trans('core/base::forms.image'),
                 'label_attr' => ['class' => 'control-label'],
             ])
-            ->add('image_banner', 'mediaImage', [
-                'label'      => trans('Ảnh banner'),
-                'label_attr' => ['class' => 'control-label'],
-            ])
+            // ->add('image_banner', 'mediaImage', [
+            //     'label'      => trans('Ảnh banner'),
+            //     'label_attr' => ['class' => 'control-label'],
+            // ])
             ->add('tag', 'tags', [
                 'label'      => trans('plugins/blog::posts.form.tags'),
                 'label_attr' => ['class' => 'control-label'],

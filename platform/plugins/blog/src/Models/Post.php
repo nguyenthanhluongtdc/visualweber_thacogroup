@@ -63,6 +63,7 @@ class Post extends BaseModel
      */
     protected $fillable = [
         'name',
+        'author_name',
         'description',
         'content',
         'image',
@@ -72,7 +73,7 @@ class Post extends BaseModel
         'author_id',
         'author_type',
         'image_banner', 
-        'show_slider_news',
+        'show_slider_news', 
         'show_home_news',
     ];
 

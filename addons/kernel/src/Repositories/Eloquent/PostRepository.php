@@ -97,7 +97,7 @@ class PostRepository extends BlogPostRepository
             ->orderBy('is_featured', 'desc')
             ->orderBy('created_at', 'desc')
             ->orderBy('id', 'desc');
-
+ 
         return $this->applyBeforeExecuteQuery($data)->paginate($limit);
     }
 

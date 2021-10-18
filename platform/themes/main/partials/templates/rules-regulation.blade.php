@@ -32,8 +32,10 @@
                 </p>
                 <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" data-id="{{$item->id}}"
                     class="post download" \>
-                    <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                    <img src="{{ Theme::asset()->url('images/relationship/down.png') }}" alt="" class="img-mobile">
+                    {{-- <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
+                    <img src="{{ Theme::asset()->url('images/relationship/down.png') }}" alt="" class="img-mobile"> --}}
+
+                    <i class="fal fa-arrow-to-bottom text-dark font28"></i>
                 </a>  
                 <div class="downcontent">
                     <ul class="list-file">

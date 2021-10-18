@@ -10,7 +10,9 @@
                             <div class="swiper-slide">
                                 <div class="news__top">
                                     <div class="img-post">
+                                        <a href="{{ $post->url }}">
                                         <img class="img-mw-100" src="{{ get_object_image($post->image) }}" alt="">
+                                        </a>
                                     </div>
                                     <div class="news-post h-100">
                                         @if(has_field($post, 'post_category'))
@@ -20,10 +22,11 @@
                                             <h4 class="name font18 ">
                                                 {!!str::words( $post->name ,15)!!}
                                             </h4>
+                                            <span class="time">
+                                                {{ date_format($post->created_at, 'd/m/Y') }}</span>
+                                            <p class="description font18  text-justify">{{str::words($post->description,30)}}</p>
                                         </a>
-                                        <span class="time">
-                                            {{ date_format($post->created_at, 'd/m/Y') }}</span>
-                                        <p class="description font18  text-justify">{{str::words($post->description,30)}}</p>
+                                        
                                         <a href="{{ $post->url }}" class="read-more text-uppercase">{!! __('Xem thêm') !!}  <i class="fas fa-arrow-right"></i></a>
                                     </div>
 

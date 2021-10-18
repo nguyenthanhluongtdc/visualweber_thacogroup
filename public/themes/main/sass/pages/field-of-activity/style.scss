@@ -25,7 +25,10 @@
             @media screen and (max-width: 1220px) {
                 left: 52%;
             }
-            h2 {
+            @media screen and (max-width: 1080px) {
+                display: none;
+            }
+            h2 { 
                 // font-size: 25px;
                 font-family: $MyriadPro-Bold;
                 text-transform: uppercase;

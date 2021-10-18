@@ -39,7 +39,7 @@ class PageForm extends FormAbstract
                     'rows'         => 4,
                     'placeholder'  => trans('core/base::forms.description_placeholder'),
                     'data-counter' => 400,
-                ],
+                ], 
             ])
             ->add('is_featured', 'onOff', [
                 'label'         => trans('core/base::forms.is_featured'),

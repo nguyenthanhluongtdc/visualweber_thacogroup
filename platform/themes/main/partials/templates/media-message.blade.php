@@ -5,7 +5,9 @@
     @if (!empty($postSlider))
     <div class="news__top">
         <div class="img-post">
+            <a href="{{$postSlider[0]->url}}">  
             <img class="img-mw-100" src="{{ get_object_image($postSlider[0]->image) }}" alt="{{$postSlider[0]->name}}">
+        </a>
         </div>
         <div class="news-post h-100">
             @if(has_field($postSlider[0], 'post_category'))
@@ -14,10 +16,11 @@
             
             <a href="{{$postSlider[0]->url}}">  
                 <h4 class="name font18 text-justify">{!!str::words($postSlider[0]->name ,15)!!}</h4>
+                <span class="time">{{date_format($postSlider[0]->created_at,"d/m/Y")}}</span> 
+                <p class="description font18  text-justify">{{str::words($postSlider[0]->description,40)}}</p>
+                <a href="{{$postSlider[0]->url}}" class="read-more message text-uppercase">{!!__('Xem thêm')!!}  <i class="fas fa-arrow-right"></i></a>
             </a>
-            <span class="time">{{date_format($postSlider[0]->created_at,"d/m/Y")}}</span> 
-            <p class="description font18  text-justify">{{str::words($postSlider[0]->description,40)}}</p>
-            <a href="{{$postSlider[0]->url}}" class="read-more message text-uppercase">{!!__('Xem thêm')!!}  <i class="fas fa-arrow-right"></i></a>
+            
         </div>
     </div> 
     @endif
@@ -30,15 +33,17 @@
                 @if (!empty($postSlider))
                         <div class="swiper-slide">
                             <div class="news-content">
+                                <a href="{{$postSlider[0]->url}}">  
                                 <div class="img-post">
                                     <img class="img-mw-100" src="{{ get_object_image($postSlider[0]->image) }}"
                                     alt="{{$postSlider[0]->name}}">
                                 </div>
-                                <div class="name ">
+                                <div class="name text-dark">
                                     <h3 class="font40">
                                         {!!$postSlider[0]->name!!}
                                     </h3>
                                 </div>
+                                </a>
                             </div>
                         </div>
                         @endif

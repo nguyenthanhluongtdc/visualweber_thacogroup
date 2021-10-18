@@ -68,7 +68,7 @@ class Page extends BaseModel
         'content',
         'image',
         'template',
-        'description',
+        'description', 
         'is_featured',
         'status',
         'user_id',

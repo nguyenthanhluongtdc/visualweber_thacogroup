@@ -205,7 +205,12 @@ class PostTable extends TableAbstract
     {
         return [
             'name'       => [
-                'title'    => trans('core/base::tables.name'),
+                'title'    => __('Tên bài viết'),
+                'type'     => 'text',
+                'validate' => 'required|max:120',
+            ],
+            'author_name'  => [
+                'title'    => __('Tên người viết'),
                 'type'     => 'text',
                 'validate' => 'required|max:120',
             ],
@@ -216,13 +221,29 @@ class PostTable extends TableAbstract
                 'validate' => 'required|in:' . implode(',', BaseStatusEnum::values()),
             ],
             'is_featured'     => [
-                'title'    => trans('core/base::tables.is_featured'),
+                'title'    => __('Tin nổi bật các trang truyền thông'),
                 'type'     => 'select',
                 'choices'  => [
                     '1' => 'Có',
                     '0' => 'Không'
-                ], 
+                ],  
                 // 'validate' => 'required|in:' . implode(',', BaseStatusEnum::values()),
+            ],
+            'show_slider_news'     => [
+                'title'    => __('Tin nổi bật Banner trang chủ'),
+                'type'     => 'select',
+                'choices'  => [
+                    '1' => 'Có',
+                    '0' => 'Không'
+                ],  
+            ],
+            'show_home_news'     => [
+                'title'    => __('Tin nổi bật trang chủ'),
+                'type'     => 'select',
+                'choices'  => [
+                    '1' => 'Có',
+                    '0' => 'Không'
+                ],  
             ],
             'category'         => [
                 'title'    => trans('plugins/blog::posts.category'),

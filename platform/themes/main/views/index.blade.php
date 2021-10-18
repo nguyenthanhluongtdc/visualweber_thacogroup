@@ -9,18 +9,24 @@
             class="img-slider h-auto w-100"
             > --}}
             @if(has_field($post, 'image_banner')) 
-            <img class="h-auto w-100"
+            <a href="{{$post->url}}">
+                <img class="h-auto w-100"
                 src="{{get_image_url(has_field($post,'image_banner'))}}"
                 alt="" >
+            </a>
+           
             @else
-            <video  autoplay muted class="video-slider h-auto w-100 __video">
-                <source src="{{ RvMedia::getImageUrl(get_field($post,'video_banner')) }}"  class="">
-            </video>
+            <a href="{{$post->url}}">
+                <video  autoplay muted class="video-slider h-auto w-100 __video">
+                    <source src="{{ RvMedia::getImageUrl(get_field($post,'video_banner')) }}"  class="">
+                </video>
+            </a>
+           
             @endif
 
             @if(has_field($page, 'show_hide')) 
             <div class="bg-post">
-                    <div 
+                    <div  
                     class="content 
                     {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}} 
                     {{has_field($page, 'position_news_box') == 'box-left' ? 'box-left' : 'box-right'}}" 

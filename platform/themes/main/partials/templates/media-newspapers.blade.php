@@ -52,8 +52,9 @@
                     </p>
                     <a href="{{ Theme::asset()->url('images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf') }}" data-id="{{$item->id}}"
                         class="post download">
-                        <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
-                        <img src="{{ Theme::asset()->url('images/relationship/down.png') }}" alt="" class="img-mobile">
+                        {{-- <img src="{{ Theme::asset()->url('images/relationship/download.png') }}" alt="">
+                        <img src="{{ Theme::asset()->url('images/relationship/down.png') }}" alt="" class="img-mobile"> --}}
+                        <i class="fal fa-arrow-to-bottom text-dark font28"></i>
                     </a>  
                     <div class="downcontent">
                         <ul class="list-file">
@@ -62,7 +63,7 @@
                                 <a href="{{ get_image_url(has_sub_field($sub, 'file')) }}" target="_blank">
                                     {{has_sub_field($sub, 'file')}}
                                    
-                                </a>
+                                </a> 
                                 <span
                                     class="left font-cond color-gray ml-2">{{@get_file_size(has_sub_field($sub, 'file'))}}</span>
                             </li>

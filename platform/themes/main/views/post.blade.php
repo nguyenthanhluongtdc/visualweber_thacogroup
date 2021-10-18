@@ -1,7 +1,23 @@
 
 <section class="banner-post-detail">
-    <img class=" h-auto img-mw-100" src="{{$post->image_banner ? rvMedia::getImageUrl($post->image_banner): Theme::asset()->url('images/introduce/banner-introduce.jpg')  }}" alt="banner">
-</section>
+    {{-- <img class=" h-auto img-mw-100" src="{{$post->image_banner ? rvMedia::getImageUrl($post->image_banner): Theme::asset()->url('images/introduce/banner-introduce.jpg')  }}" alt="banner"> --}}
+
+    @if(has_field($post, 'image_banner')) 
+            <a href="{{$post->url}}">
+                <img class="h-auto w-100"
+                src="{{get_image_url(has_field($post,'image_banner'))}}"
+                alt="" >
+            </a>
+           
+            @else
+            <a href="{{$post->url}}">
+                <video  autoplay muted class="video-slider h-auto w-100 __video">
+                    <source src="{{ RvMedia::getImageUrl(get_field($post,'video_banner')) }}"  class="">
+                </video>
+            </a>
+           
+    @endif
+</section> 
 <div class="bg-gray">
     <div class="container-customize">
         <ol class="breadcrumb">
@@ -45,9 +61,10 @@
                 </div>
                 <div class="post-time-share">
                     <div class="left">
-                        <span class="author">{{ $post->author->name }} </span>
-                        <span class="">{{date_format($post->created_at,"d/m/Y")}} </span>
                         
+                        <span class="author">{{ $post->author_name }} </span>
+                        <span class="">{{date_format($post->created_at,"d/m/Y")}} </span>
+                         
                     </div>
                     <div class="right"> 
   
@@ -80,37 +97,29 @@
                 </div>
                 <div class="file">
                     <ul class="list-file">
-                       
+                        @if(has_field($post, 'repeater_file_media'))
+                        @foreach(has_field($post, 'repeater_file_media') as $sub)
                         <li>
-                            <a href="images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf" target="_blank">
+                            <a href="{{ get_image_url(has_sub_field($sub, 'file')) }}" target="_blank">
                                
                                 <i class="fal fa-file-invoice"></i>
                                 <p class="text">
-                                    Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf
+                                    {{has_sub_field($sub, 'file')}}
                                 </p>
                                 <i class="fal fa-arrow-to-bottom"></i>
                             </a>
                         </li>
-                        <li>
-                            <a href="images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf" target="_blank">
-                               
-                                <i class="fal fa-file-invoice"></i>
-                                <p class="text">
-                                    Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf
-                                </p>
-                                <i class="fal fa-arrow-to-bottom"></i>
-                            </a>
-                        </li> 
-                        <li>
-                            <a href="images/file/Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf" target="_blank">
-                               
-                                <i class="fal fa-file-invoice"></i>
-                                <p class="text">
-                                    Thông điệp năm 2018 của Chủ tịch HĐQT THACO Trần Bá Dương.pdf
-                                </p>
-                                <i class="fal fa-arrow-to-bottom"></i>
-                            </a>
-                        </li>  
+                        @endforeach
+                        @endif
+                            {{-- <li>
+                                <a href="{{ get_image_url(has_sub_field($sub, 'file')) }}" target="_blank">
+                                    {{has_sub_field($sub, 'file')}}
+                                   
+                                </a> 
+                                <span
+                                    class="left font-cond color-gray ml-2">{{@get_file_size(has_sub_field($sub, 'file'))}}</span>
+                            </li> --}}
+                          
                       
                     </ul>
                 </div>
