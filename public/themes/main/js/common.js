@@ -77,7 +77,7 @@ if ($('.main-slider').length > 0) {
         // },
         effect: 'fade',
         loop: true,
-        speed: 1000,
+        speed: 3000,
         pagination: {
             el: '.main-slider .swiper-pagination',
             clickable: true,

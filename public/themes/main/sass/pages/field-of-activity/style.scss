@@ -8,7 +8,7 @@
             max-width: 420px;
             height: 420px;
             // background-color: #8d8c8cb8;  
-            opacity: 50%;
+            
             padding: 40px; 
             color: #fff;
             @media screen and (max-width: 1680px) {
@@ -30,6 +30,7 @@
                 display: none;
             }
             h2 { 
+                
                 // font-size: 25px;
                 font-family: $MyriadPro-Bold;
                 text-transform: uppercase;
