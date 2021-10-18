@@ -36,14 +36,14 @@ $page = app(PageInterface::class)->findById(28);
         </div>
         <div class="swiper-pagination"></div>
 
-    </div>
+    </div> 
 
     <div class="commercial-field container-customize mt-60 mb-60">
 
         <div class="commercial-field__left" >
             <div class="left-top d-flex justify-content-left" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" class="aos-init aos-animate">
                 {{-- <img src="{{Theme::asset()->url('images/lvhd/icon1.png') }}"> --}}
-                <h3 class="text-uppercase font20">LĨNH VỰC <br> 
+                <h3 class="text-uppercase font20" style="color: {{get_field($data, 'color_code')}}">LĨNH VỰC <br> 
                     @if(has_field($data, 'field_name'))
                     
                     <span class="text font40"> {!! has_field($data,'field_name') !!} </span>
@@ -51,7 +51,7 @@ $page = app(PageInterface::class)->findById(28);
                 </h3>
 
             </div>
-            <div class="line">
+            <div class="line" style="background-color: {{get_field($data, 'color_code')}}">
             </div>
             @if(has_field($data, 'field_desc'))       
             <p class="content mt-25 " data-aos="flip-left" data-aos-duration="500" data-aos-delay="50" class="aos-init aos-animate">
@@ -147,8 +147,8 @@ $page = app(PageInterface::class)->findById(28);
                 </div>
                 <div class="swiper-wrapper main-content-right">
                     @foreach(has_sub_field($item, 'repeater_right_content_activity') as $sub_item)
-                    <div class="swiper-slide">
-                        <div class="bg"></div>
+                    <div class="swiper-slide" >
+                        <div class="bg" ></div>
                         <img src="{{ Storage::disk('public')->exists(has_sub_field($sub_item,'image')) ? get_image_url(has_sub_field($sub_item,'image')) : RvMedia::getDefaultImage()}}" alt="slide"
                             class="bg-img">
                         @if(has_sub_field($sub_item, 'title'))
@@ -156,7 +156,7 @@ $page = app(PageInterface::class)->findById(28);
                             {!! has_sub_field($sub_item,'title') !!}  
                         </h2>
                         @endif
-                        <div class="detail">
+                        <div class="detail" onmouseover="this.style.background='{{get_field($data, 'color_code')}}'">
                             @if(has_sub_field($sub_item, 'title'))
                             <h2 class="titlee text-uppercase text-light font40">
                                 {!! has_sub_field($sub_item,'title') !!}  
@@ -210,7 +210,7 @@ $page = app(PageInterface::class)->findById(28);
                         </h2>
                             @endif
 
-                        <div class="detail">
+                        <div class="detail" onmouseover="this.style.background='{{get_field($data, 'color_code')}}'">
                             @if(has_sub_field($sub_item, 'title'))
                             <h2 class="titlee text-uppercase text-light font40">
                                 {!! has_sub_field($sub_item,'title') !!}  
@@ -407,14 +407,14 @@ $page = app(PageInterface::class)->findById(28);
         <div class="activity-news__top container-customize mt-40 mb-40">
             <div class="title ">
                
-                <h2 class="text-uppercase font40">Tin tức</h2>
-                <div class="line">
+                <h2 class="text-uppercase font40" style="color: {{get_field($data, 'color_code')}}">Tin tức</h2>
+                <div class="line" style="background-color: {{get_field($data, 'color_code')}}">
                 </div>
 
             </div>
 
             <div class="readmore text-uppercase font-weight-bold">
-                <a href="{!! has_field($data, 'field_link') !!}">Xem tất cả</a>
+                <a href="{!! has_field($data, 'field_link') !!}" style="color: {{get_field($data, 'color_code')}}">Xem tất cả</a>
             </div>
         </div>
 
@@ -450,15 +450,16 @@ $page = app(PageInterface::class)->findById(28);
              
             </div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev" style="background-color: {{get_field($data, 'color_code')}}"></div>
+            <div class="swiper-button-next" style="background-color: {{get_field($data, 'color_code')}}"></div>
 
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination" ></div>
         </div>
 
         <div class="opt">
             <a href="{!! has_field($data, 'bottom_field_link') !!}" target="_blank">
-                <img src="{{ Theme::asset()->url('images/lvhd/opt2.png') }}">
+                {{-- <img src="{{ Theme::asset()->url('images/lvhd/opt2.png') }}"> --}}
+                <i class="fad fa-chevron-double-down" style="color: {{get_field($data, 'color_code')}}"></i>
             </a>
 
         </div>

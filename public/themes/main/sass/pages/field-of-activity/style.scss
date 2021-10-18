@@ -7,7 +7,7 @@
             left: 68%;
             max-width: 420px;
             height: 420px;
-            background-color: #8d8c8cb8;
+            background-color: #8d8c8cb8;  
             padding: 40px;
             color: #fff;
             @media screen and (max-width: 1680px) {
@@ -79,7 +79,7 @@
                 // }
                 h3 {
                     padding: 0 12%;
-                    color: #949090;
+                    // color: #949090; 
                     font-family: $MyriadPro-Bold;
                     .text {
                         //   font-size: 50px;
@@ -91,7 +91,7 @@
                 margin: 0 12%;
                 height: 5px;
                 width: 150px;
-                background-color: #949090;
+                // background-color: #949090;
             }
             .content {
                 padding: 0 12%;
@@ -382,7 +382,7 @@
                             
                         }
                     }
-                    .bg {
+                    .bg { 
                         width: 100%;
                         background-color: rgba(0, 0, 0, 0.322);
                         height: 100%;
@@ -390,8 +390,8 @@
                         z-index: 2;
                     }
                     .detail {
-                        animation: mymovetop .5s ease-in;
-                        transition: transform .5s, visibility .5s ease-in;
+                        // animation: mymovetop .5s ease-in;
+                        // transition: transform .5s, visibility .5s ease-in;
                         display: none;
                         position: absolute;
                         z-index: 2;
@@ -410,6 +410,8 @@
                             }
                         }
                         .titlee {
+                            animation: mymovetop .7s ease-in;
+                            transition: transform .7s, visibility .7s ease-in;
                             text-align: center;
                             font-weight: bolder;
                             font-family: $MyriadPro-Bold;
@@ -419,7 +421,7 @@
                         }
                         .readmore {
                             position: absolute;
-                            right: 20%;
+                            right: 10%;
                             bottom: 12%;
                             font-weight: bold;
                             font-family: $MyriadPro-Bold;
@@ -434,8 +436,8 @@
                     &:hover .detail {
                         display: block;
                     }
-                    &:hover .bg {
-                        background-color: #999999;
+                    &:hover .bg { 
+                        // background-color: #999999;
                     }
                 }
                 .swiper-pagination {
@@ -580,8 +582,7 @@
                             }
                         }
                         .detail {
-                            animation: mymovetop .5s ease-in;
-                            transition: transform .5s, visibility .5s ease-in;
+                           
                             display: none;
                             position: absolute;
                             z-index: 3;
@@ -607,6 +608,8 @@
                                 // @media only screen and (max-width: 1100px){font-size: 12px;}
                             }
                             .titlee {
+                                animation: mymovetop .7s ease-in;
+                                transition: transform .7s, visibility .7s ease-in;
                                 text-align: center;
                                 padding-bottom: 3%;
                                 padding-top: 5%;
@@ -618,8 +621,9 @@
                                 }
                             }
                             .readmore {
+                               
                                 position: absolute;
-                                right: 20%;
+                                right: 10%;
                                 bottom: 12%;
                                 margin-top: 15px;
                                 font-weight: bold;
@@ -636,7 +640,7 @@
                             display: block;
                         }
                         &:hover .bg {
-                            background-color: #999999;
+                            // background-color: #999999;
                         }
                     }
                 }
@@ -657,7 +661,7 @@
                     align-self: center;
                     margin: 7px 0 7px 5px;
                     font-weight: bolder;
-                    color: #949090;
+                    // color: #949090;
                     font-family: $MyriadPro-Bold;
                     // border-bottom: 5px solid #949090;
                 }
@@ -665,7 +669,7 @@
                     margin: -5px 0 0px 5px;
                     height: 5px;
                     width: 100px;
-                    background-color: #949090;
+                    // background-color: #949090;
                 }
             }
             .readmore {
@@ -674,7 +678,7 @@
                 align-self: center;
             }
             a {
-                color: #949090;
+                // color: #949090;
                 &:hover {
                     color: #313131;
                 }
@@ -692,9 +696,9 @@
                 color: #fff;
                 width: 2.5vw;
                 border-radius: 50%;
-                opacity: 40%;
+                opacity: 60%;
                 height: 2.5vw;
-                background-color: black;
+                // background-color: black;
             }
             .swiper-button-prev:after,
             .swiper-button-next:after {
@@ -774,6 +778,10 @@
             transition: .5s ease-in-out;
             img {
                 width: 2.5vw;
+            }
+            i{
+                font-size: 60px;
+              
             }
             &:hover {
                 transform: translateY(40%);
