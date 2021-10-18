@@ -82,10 +82,15 @@
             @media screen and (max-width: 1440px) {
                 left: 63%;
                 height: 350px;
+                top: 35.5%;
             }
             @media screen and (max-width: 1370px) {
                 left: 57%;
+                top: 33%;
                 max-width: 430px;
+            }
+            @media screen and (max-width: 1280px) {
+                top: 32%;
             }
             @media screen and (max-width: 1220px) {
                 left: 52%;
@@ -502,24 +507,23 @@
                     // @include split_str(6);
                 }
                 .read-more {
-                   // padding: 7px 22px;
-                   color:  $main_color;
-                   font-weight: bolder;
-                   // border: 1px solid #fff;
-                   text-decoration: none;
-                   font-size: 16px;
-                   // background-color: $main_color;
-                   // position: absolute;
-                   // bottom: 60px;
-                   // right: 30px;
-                   float: right;
-                   
-                   &:hover{
-                       i{
-                           transform: translateX(8px);
-                           transition: .5s ease-in;
-                       }
-                   }
+                    // padding: 7px 22px;
+                    color: $main_color;
+                    font-weight: bolder;
+                    // border: 1px solid #fff;
+                    text-decoration: none;
+                    font-size: 16px;
+                    // background-color: $main_color;
+                    // position: absolute;
+                    // bottom: 60px;
+                    // right: 30px;
+                    float: right;
+                    &:hover {
+                        i {
+                            transform: translateX(8px);
+                            transition: .5s ease-in;
+                        }
+                    }
                 }
             }
         }
@@ -636,7 +640,7 @@
                         z-index: 2;
                     }
                     .__video.video-full {
-                        height: 38vw; 
+                        height: 38vw;
                         @include maxWidth(480) {
                             height: 40vh;
                         }
