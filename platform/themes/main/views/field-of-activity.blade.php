@@ -117,12 +117,12 @@ $page = app(PageInterface::class)->findById(28);
             <div class="swiper-container swiper-content-detail mb-40" >
 
                 <div class="main-content-left ">
-                    <div class="content">
+                    <div class="content" >
                         {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
                         <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
 
                         @if(has_sub_field($item, 'content_left_activity_title'))
-                        <h2 class="text-uppercase title mb-3 font40">
+                        <h2 class="text-uppercase title mb-3 font40" style="color: {{get_field($data, 'color_code')}}">
                             {!! has_sub_field($item,'content_left_activity_title') !!}  
 
                         </h2>
@@ -236,7 +236,7 @@ $page = app(PageInterface::class)->findById(28);
                 <div class="content">
                   
                     @if(has_sub_field($item, 'content_left_activity_title'))
-                    <h2 class="text-uppercase title mb-3 font40">
+                    <h2 class="text-uppercase title mb-3 font40" style="color: {{get_field($data, 'color_code')}}">
                         {!! has_sub_field($item,'content_left_activity_title') !!}  
 
                     </h2>
