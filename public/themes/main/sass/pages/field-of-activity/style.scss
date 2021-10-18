@@ -4,12 +4,11 @@
         .post-banner {
             position: absolute;
             top: 38%;
-            left: 68%; 
+            left: 68%;
             max-width: 420px;
             height: 420px;
             // background-color: #8d8c8cb8;  
-            
-            padding: 40px; 
+            padding: 40px;
             color: #fff;
             @media screen and (max-width: 1680px) {
                 left: 65%;
@@ -18,10 +17,15 @@
             @media screen and (max-width: 1440px) {
                 left: 63%;
                 height: 350px;
-            } 
+                top: 35.5%;
+            }
             @media screen and (max-width: 1370px) {
                 left: 57%;
+                top: 33%;
                 max-width: 430px;
+            }
+            @media screen and (max-width: 1280px) {
+                top: 32%;
             }
             @media screen and (max-width: 1220px) {
                 left: 52%;
@@ -29,8 +33,7 @@
             @media screen and (max-width: 1080px) {
                 display: none;
             }
-            h2 { 
-                
+            h2 {
                 // font-size: 25px;
                 font-family: $MyriadPro-Bold;
                 text-transform: uppercase;
@@ -142,13 +145,12 @@
             //     border: 1px solid black !important;
             //  }
         }
-    } 
+    }
     .future-goal-banner-activity {
         position: relative;
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 34.2%;
-       
         .future-goal-wrapper {
             position: absolute;
             color: $white;
@@ -190,9 +192,16 @@
                     font-family: $MyriadPro-Bold;
                     line-height: 22px;
                     height: 10vw;
-                    @media only screen and (max-width: 600px) {height: 20vw;}
-                    @media only screen and (max-width: 420px) {height: 25vw;}
-                    @media only screen and (max-width: 300px) {height: 30vw; margin: 15px 0;}
+                    @media only screen and (max-width: 600px) {
+                        height: 20vw;
+                    }
+                    @media only screen and (max-width: 420px) {
+                        height: 25vw;
+                    }
+                    @media only screen and (max-width: 300px) {
+                        height: 30vw;
+                        margin: 15px 0;
+                    }
                     @media only screen and (max-width: 1320px) {
                         font-size: 12px !important;
                     }
@@ -228,7 +237,6 @@
                     background-color: $bg-post;
                     .content {
                         padding: 50px 10%;
-                       
                         .symbol,
                         .title,
                         .text {
@@ -244,13 +252,11 @@
                             }
                         }
                         .text {
-                            
                             text-align: justify;
                             line-height: 22px;
                             height: 60%;
                             @media only screen and (max-width: 1365px) {
                                 font-size: 14px;
-                               
                             }
                         }
                         .control {
@@ -258,7 +264,6 @@
                             bottom: 11%;
                             left: 31.5%;
                             text-align: center;
-                            
                             @media only screen and (max-width: 1500px) {
                                 left: 29%;
                             }
@@ -326,7 +331,7 @@
                             .mouse {
                                 font-size: 30px;
                                 color: #999999;
-                                @media only screen and (max-width: 1300px){
+                                @media only screen and (max-width: 1300px) {
                                     font-size: 25px;
                                 }
                             }
@@ -384,10 +389,9 @@
                         padding: 5%;
                         @media screen and (max-width: 1380px) {
                             font-size: 25px;
-                            
                         }
                     }
-                    .bg { 
+                    .bg {
                         width: 100%;
                         background-color: rgba(0, 0, 0, 0.322);
                         height: 100%;
@@ -441,7 +445,7 @@
                     &:hover .detail {
                         display: block;
                     }
-                    &:hover .bg { 
+                    &:hover .bg {
                         // background-color: #999999;
                     }
                 }
@@ -483,7 +487,6 @@
                 // *+.swiper-container {
                 //     border-top: 1px solid rgba(red, .4);
                 // }
-                
             }
         }
     }
@@ -507,7 +510,6 @@
                     display: table;
                     justify-content: center;
                     padding: 50px 10%;
-                    
                     .symbol,
                     .title,
                     .text {
@@ -555,7 +557,6 @@
                         justify-content: center;
                         align-items: center;
                         height: 20.5vw;
-                       
                         // @media only screen and (max-width: 1680px) {
                         //     height: 23.5vw;
                         // }
@@ -587,14 +588,12 @@
                             }
                         }
                         .detail {
-                           
                             display: none;
                             position: absolute;
                             z-index: 3;
                             width: 100%;
                             height: 100%;
                             padding: 40px 10%;
-                           
                             // @media only screen and (max-width: 1680px) {
                             //     padding: 40px 18%;
                             // }
@@ -606,7 +605,6 @@
                                 text-align: justify;
                                 line-height: 22px;
                                 height: 40%;
-                               
                                 @media only screen and (max-width: 1330px) {
                                     font-size: 14px;
                                 }
@@ -626,7 +624,6 @@
                                 }
                             }
                             .readmore {
-                               
                                 position: absolute;
                                 right: 10%;
                                 bottom: 12%;
@@ -724,7 +721,9 @@
             transition: all 200ms linear;
             transform: scale(0.8);
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            @media only screen and (max-width: 1440px){height: 460px;}
+            @media only screen and (max-width: 1440px) {
+                height: 460px;
+            }
             &.swiper-slide-active {
                 transform: scale(1);
                 background: $bg-post
@@ -784,9 +783,8 @@
             img {
                 width: 2.5vw;
             }
-            i{
+            i {
                 font-size: 60px;
-              
             }
             &:hover {
                 transform: translateY(40%);
@@ -811,7 +809,6 @@
         top: 33%;
         right: 10px;
         z-index: 999;
-        
         .pagination-customize {
             .pagi-item.active-row {
                 // background: none;
