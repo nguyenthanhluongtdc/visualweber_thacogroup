@@ -27,32 +27,32 @@ $page = app(PageInterface::class)->findById(28);
                 </a>
                 
                 @endif
-                <div 
-                class="post-banner  
-                {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}}" 
-                style="background-color: {{get_field($data, 'color_code')}}"
-                >
-                
-                   
-                </div>
-                <div class="content">
-                    <h2 class="font24 font-weight-bold">
-                        {!!str::words($post->name,20)!!}  
-                       
-                    </h2>
-                    <div class="date mt-2">  
-                        <span> 
-                            {{$post->created_at->format('d/m/Y')}}
-                        </span>
+                <div class="box-banner-wrapper {{has_field($page, 'show_hide') == 'hide' ? 'd-none' : ''}}">
+                    <div 
+                    class="post-banner" 
+                    style="background-color: {{get_field($data, 'color_code')}}"
+                    >  
                     </div>
-                    <p class="desc font18 text-justify">
-                        {{str::words($post->description,80)}}  
-                    </p>
-                    
-                    <a href="{{$post->url}}" class="link">
-                        {!!__('Xem thêm')!!} <span><i class="fas fa-arrow-right"></i></span>
-                    </a>
+                    <div class="content">
+                        <h2 class="font24 font-weight-bold">
+                            {!!str::words($post->name,20)!!}  
+                           
+                        </h2>
+                        <div class="date mt-2">  
+                            <span> 
+                                {{$post->created_at->format('d/m/Y')}}
+                            </span>
+                        </div>
+                        <p class="desc font18 text-justify">
+                            {{str::words($post->description,80)}}  
+                        </p>
+                        
+                        <a href="{{$post->url}}" class="link">
+                            {!!__('Xem thêm')!!} <span><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                    </div>
                 </div>
+                
             </div>
             @endforeach
             @endif
