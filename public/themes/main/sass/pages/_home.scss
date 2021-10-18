@@ -636,11 +636,7 @@
                         z-index: 2;
                     }
                     .__video.video-full {
-<<<<<<< HEAD
                         height: 38vw; 
-=======
-                        height: 37vw;
->>>>>>> cf9d9288c4a8955b9f6df842cc84872b43b7dcc9
                         @include maxWidth(480) {
                             height: 40vh;
                         }
