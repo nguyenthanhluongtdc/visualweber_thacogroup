@@ -36,7 +36,7 @@ class ListFieldActivityServiceProvider extends ServiceProvider
     }
     public function boot()
     {
-         
+          
     
 
         $this->setNamespace('plugins/list-field-activity')
@@ -47,9 +47,9 @@ class ListFieldActivityServiceProvider extends ServiceProvider
             ->loadRoutes(['web']);
  
         Event::listen(RouteMatched::class, function () {
-            // if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
-            //    \Language::registerModule([ListFieldActivity::class]);
-            // }
+            if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
+               \Language::registerModule([ListFieldActivity::class]);
+            }
             if (defined('MENU_ACTION_SIDEBAR_OPTIONS')) {
                 \Menu::addMenuOptionModel(ListFieldActivity::class);
                 add_action(MENU_ACTION_SIDEBAR_OPTIONS, [$this, 'registerMenuOptions'], 10);

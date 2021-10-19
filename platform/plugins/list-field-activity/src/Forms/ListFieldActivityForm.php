@@ -10,7 +10,7 @@ use Platform\ListFieldActivity\Models\ListFieldActivity;
 class ListFieldActivityForm extends FormAbstract
 {
 
-    /**
+    /** 
      * {@inheritDoc} 
      */
     public function buildForm()

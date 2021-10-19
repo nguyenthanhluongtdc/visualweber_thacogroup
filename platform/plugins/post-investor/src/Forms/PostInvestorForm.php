@@ -14,7 +14,7 @@ class PostInvestorForm extends FormAbstract
     /**
      * {@inheritDoc}
      */
-    public function buildForm()
+    public function buildForm() 
     {
         $selectedCategories = []; 
         if ($this->getModel()) {

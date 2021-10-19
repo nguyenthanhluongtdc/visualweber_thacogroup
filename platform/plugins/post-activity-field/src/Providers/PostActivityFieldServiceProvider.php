@@ -35,10 +35,10 @@ class PostActivityFieldServiceProvider extends ServiceProvider
             ->loadRoutes(['web']); 
 
         Event::listen(RouteMatched::class, function () {
-            // if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
-            //    \Language::registerModule([PostActivityField::class]);
-            // }
-
+            if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
+               \Language::registerModule([PostActivityField::class]);
+            }
+ 
             dashboard_menu()->registerItem([
                 'id'          => 'cms-plugins-post-activity-field',
                 'priority'    => 5,
@@ -47,6 +47,17 @@ class PostActivityFieldServiceProvider extends ServiceProvider
                 'url'         => route('post-activity-field.index'),
                 'permissions' => ['post-activity-field.index'],
             ]);
+        });
+
+        $this->app->booted(function () {
+            if (defined('CUSTOM_FIELD_MODULE_SCREEN_NAME')) {
+                \CustomField::registerModule(PostActivityField::class)
+                    ->expandRule('other', 'Model', 'model_name', function () {
+                        return [
+                            PostActivityField::class => __('Danh sách các lĩnh vực'),
+                        ];
+                    });
+            }
         });
     }
 }
