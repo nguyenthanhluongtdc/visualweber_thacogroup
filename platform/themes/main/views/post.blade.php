@@ -66,21 +66,26 @@
                         <span class="">{{date_format($post->created_at,"d/m/Y")}} </span>
                          
                     </div>
-                    <div class="right"> 
+                    <div class="right">  
   
 
                          <a href="https://www.facebook.com/sharer/sharer.php?u={{ $post->url }}" target="_blank">
-                           
-                            <img src="{{Theme::asset()->url('images/media/face.png')}}" alt="icon-fb">
+                            <i class="fab fa-facebook-f"></i>
+                            {{-- <img src="{{Theme::asset()->url('images/media/face.png')}}" alt="icon-fb"> --}}
                         </a>
                         <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ $post->url }}&title={{ $post->name }}">
-                            <img src="{{Theme::asset()->url('images/media/linkedin.png')}}" alt="icon-linkdin">
+                            {{-- <img src="{{Theme::asset()->url('images/media/linkedin.png')}}" alt="icon-linkdin"> --}}
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
                         {{-- <button class="print-button" onclick="window.print();">
                             <i class="fas fa-print text-dark"></i>
                        </button> --}}
+                       <a href="">
+                        <i class="fal fa-link"></i>
+                       </a>
+
                        <a href="javascript:printDiv('print-area-1');" class="print-button">
-                        <i class="fas fa-print text-dark"></i>
+                       <i class="fas fa-print"></i>
                        </a>
                     </div>
 
