@@ -1022,9 +1022,25 @@ $(selector).on('click', function() {
 
 var element_fancy = '.post-content img';
 $(element_fancy).on('click', function() {
-    $().fancybox({
-        selector: '.post-content img',
-        // hash: false
+    var tarGet; // initialize var at top of script
+    $(element_fancy).fancybox({
+        // selector: '.post-content     div',
+        // hash: false,
+        beforeShow: function() {
+            tarGet = element_fancy;
+        },
+        afterClose: function() {
+            $(tarGet).show();
+        },
+        // maxWidth: 880,
+        // maxHeight: 600,
+        // fitToView: false,
+        // width: '70%',
+        // height: '70%',
+        // autoSize: false,
+        // closeClick: false,
+        // openEffect: 'none',
+        // closeEffect: 'none'
     });
 
 })
