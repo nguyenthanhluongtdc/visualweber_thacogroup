@@ -25,7 +25,16 @@ return [
         'flag'        => 'posts.destroy',
         'parent_flag' => 'posts.index',
     ],
-
+    [
+        'name'        => 'Current list',
+        'flag'        => 'posts.current',
+        'parent_flag' => 'posts.index',
+    ],
+    [
+        'name'        => 'Approve',
+        'flag'        => 'posts.approve',
+        'parent_flag' => 'posts.index',
+    ],
     [
         'name'        => 'Categories',
         'flag'        => 'categories.index',
