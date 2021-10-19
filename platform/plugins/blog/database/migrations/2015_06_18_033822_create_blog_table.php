@@ -8,7 +8,7 @@ class CreateBlogTable extends Migration
 {
 
     /**
-     * Run the migrations.
+     * Run the migrations. 
      *
      * @return void
      */

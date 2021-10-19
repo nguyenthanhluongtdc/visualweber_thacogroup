@@ -25,7 +25,7 @@ class PostInvestorServiceProvider extends ServiceProvider
         Helper::autoload(__DIR__ . '/../../helpers');
     }
 
-    public function boot()
+    public function boot() 
     {
         $this->setNamespace('plugins/post-investor')
             ->loadAndPublishConfigurations(['permissions']) 
@@ -51,7 +51,7 @@ class PostInvestorServiceProvider extends ServiceProvider
             ]);
         });
 
-
+ 
         $this->app->booted(function () {
             if (defined('CUSTOM_FIELD_MODULE_SCREEN_NAME')) {
                 \CustomField::registerModule(PostInvestor::class)

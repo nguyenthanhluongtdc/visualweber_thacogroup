@@ -6,6 +6,7 @@ use Platform\Base\Traits\EnumCastable;
 use Platform\Base\Enums\BaseStatusEnum;
 use Platform\Base\Models\BaseModel;
 use Platform\Slug\Traits\SlugTrait;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class ListFieldActivity extends BaseModel
 {
@@ -23,13 +24,22 @@ class ListFieldActivity extends BaseModel
      */
     protected $fillable = [
         'name',
-        'status',
+        'parent_id', 
+        'status', 
+        'author_name',
+        'description',
+        'content',
+        'author_id',
+        'is_featured'
     ];
 
     /**
-     * @var array
+     * @var array  
      */
     protected $casts = [
         'status' => BaseStatusEnum::class,
     ];
+    public function parent(): BelongsTo {
+        return $this->belongsTo(ListFieldActivity::class, 'parent_id')->withDefault();
+    }
 }

@@ -50,7 +50,7 @@ class InvestorRelationsServiceProvider extends ServiceProvider
                 'permissions' => ['investor-relations.index'],
             ])
             ->registerItem([ 
-                'id'          => 'cms-plugins-category-investor-relations',
+                'id'          => 'cms-plugins-category-investor-relations', 
                 'priority'    => 5,
                 'parent_id'   => 'cms-plugins-investor-relations',
                 'name'        => 'Danh mục Quan hệ cổ đông',

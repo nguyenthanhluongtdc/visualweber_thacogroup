@@ -59,7 +59,7 @@ class ListFieldActivityServiceProvider extends ServiceProvider
             ->registerItem([ 
                 'id'          => 'cms-field-activities',
                 'priority'    => 5,  
-                'parent_id'   => null,
+                'parent_id'   => null, 
                 'name'        => 'Lĩnh vực hoạt động',
                 'icon'        => 'fas fa-chart-line',
                 'url'         => route('investor-relations.index'),

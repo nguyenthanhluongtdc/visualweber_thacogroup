@@ -2,7 +2,7 @@
 
 namespace Platform\PostInvestor\Forms;
 
-use Platform\Base\Forms\FormAbstract;
+use Platform\Base\Forms\FormAbstract; 
 use Platform\Base\Enums\BaseStatusEnum;
 use Platform\PostInvestor\Http\Requests\PostInvestorRequest;
 use Platform\PostInvestor\Models\PostInvestor;
@@ -10,13 +10,13 @@ use Platform\PostInvestor\Forms\Fields\CategoryMultiField;
 
 class PostInvestorForm extends FormAbstract
 {
-
+ 
     /**
      * {@inheritDoc}
      */
     public function buildForm()
     {
-        $selectedCategories = [];
+        $selectedCategories = []; 
         if ($this->getModel()) {
             $selectedCategories = $this->getModel()->categories()->pluck('investor_relation_id')->all();
         }

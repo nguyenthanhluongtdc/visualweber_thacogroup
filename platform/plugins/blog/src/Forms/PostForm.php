@@ -36,7 +36,7 @@ class PostForm extends FormAbstract
                 ->pluck('id')
                 ->all();
         }
-
+ 
         $tags = null;
 
         if ($this->getModel()) {

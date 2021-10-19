@@ -62,7 +62,7 @@ class Post extends BaseModel
      * @var array
      */
     protected $fillable = [
-        'name',
+        'name', 
         'author_name',
         'description',
         'content',

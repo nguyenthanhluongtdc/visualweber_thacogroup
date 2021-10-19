@@ -101,7 +101,7 @@ if (!function_exists('get_posts_by_tag')) {
      * @param string $slug
      * @param int $paginate
      * @return \Illuminate\Support\Collection
-     */
+     */ 
     function get_posts_by_tag($slug, $paginate = 12)
     {
         return app(PostInterface::class)->getByTag($slug, $paginate);

@@ -43,7 +43,7 @@ class PublicController extends BaseController {
             $params = !empty($params)?'/search?'.implode('&', $params):'';
 
             return redirect()->to(route('public.single', $category->slug . $params));
-        }
+        } 
 
         $data = $this->postInvestorRepository->getModel()
         ->whereHas('categories', function ($model) use ($categoryId, $keyword) {

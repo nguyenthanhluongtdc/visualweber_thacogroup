@@ -1,6 +1,5 @@
 @php
 use Platform\Page\Repositories\Interfaces\PageInterface;
-// $homepageId = BaseHelper::getHomepageId();
 $page = app(PageInterface::class)->findById(28); 
 @endphp
 <div class="field-of-activity">
@@ -100,7 +99,7 @@ $page = app(PageInterface::class)->findById(28);
                 </div>
 
                 <div class="swiper-pagination"></div>
-            </div> 
+            </div>  
 
         </div>
 
@@ -273,11 +272,14 @@ $page = app(PageInterface::class)->findById(28);
                 </div>
             </div>
         </div>
-        @endforeach
+        @endforeach 
         @endif
      
 
     </div>
+    @php
+    $posts = get_posts_by_category($category->id ?? 18, 5);
+    @endphp
     <div class="activity-news mt-60 mb-60">
         <div class="activity-news__top container-customize mt-40 mb-40">
             <div class="title ">
@@ -297,7 +299,7 @@ $page = app(PageInterface::class)->findById(28);
             <div class="swiper-wrapper">
                
                 @if (!empty($posts))
-                @foreach ($posts as $post)
+                @foreach ($posts as $post)  
                 <div class="swiper-slide">
                    
                         <div class="news-top">

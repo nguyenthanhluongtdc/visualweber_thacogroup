@@ -69,11 +69,11 @@
                             </div>
                             <div class="office-address font20">
                                 <i class="fas fa-map-marker-alt location"></i>
-                                <p class="address">Địa chỉ :  {{ has_sub_field($item_tab, 'address') }}</p>
+                                <p class="address">{!!__ ('Địa chỉ') !!} :  {{ has_sub_field($item_tab, 'address') }}</p>
                             </div>
                             <div class="office-phone font20">
                                 <i class="fas fa-phone-alt"></i>
-                                <p class="phone">SĐT:  {{ has_sub_field($item_tab, 'phone') }}</p>
+                                <p class="phone">{!!__ ('SĐT') !!}:  {{ has_sub_field($item_tab, 'phone') }}</p>
                             </div>
                             <div class="office-email font20">
                                 <i class="fas fa-envelope"></i>

@@ -25,14 +25,14 @@ class InvestorRelations extends BaseModel
     protected $fillable = [
         'name',
         'description',
-        'parent_id',
+        'parent_id',  
         'is_featured',
         'order',
         'is_default',
         'template',
         'status',
         'author_id',
-        'author_type',
+        'author_type', 
     ];
 
     /**

@@ -7,6 +7,6 @@
                 'currentId' => null,
                 'name' => $name
             ])
-        @endif
+        @endif 
     </div>
 </div>

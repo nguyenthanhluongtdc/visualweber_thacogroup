@@ -7,5 +7,11 @@ use Platform\ListFieldActivity\Repositories\Interfaces\ListFieldActivityInterfac
 
 class ListFieldActivityCacheDecorator extends CacheAbstractDecorator implements ListFieldActivityInterface
 {
-
+ /**
+    * {@inheritDoc}
+    */
+    public function getAllCategory()
+    {
+        return $this->getDataIfExistCache(__FUNCTION__, func_get_args());
+    }
 }

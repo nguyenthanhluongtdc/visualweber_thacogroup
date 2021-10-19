@@ -18,7 +18,7 @@
                                         <option value="">2018</option>
                                         <option value="">2017</option>
                                         <option value="">2016</option>
-                                    </select>
+                                    </select> 
                                     <select class="select-by-field font18" id="">
                                         <option value="">Ô tô - Cơ Khí</option>
                                         <option value="">Nông nghiệp</option>

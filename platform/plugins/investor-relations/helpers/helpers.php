@@ -7,4 +7,4 @@ if(!function_exists('get_all_investor_categories')) {
     function get_all_investor_categories() {
         return app(InvestorRelationsInterface::class)->getAllCategory();
     }
-}
+}  

@@ -10,7 +10,7 @@ Route::group(['namespace' => 'Platform\InvestorRelations\Http\Controllers', 'mid
                 'as'         => 'deletes',
                 'uses'       => 'InvestorRelationsController@deletes',
                 'permission' => 'investor-relations.destroy',
-            ]);
+            ]); 
         });
     });
 

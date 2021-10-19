@@ -13,5 +13,6 @@ class CategoryMultiField extends FormField
     protected function getTemplate()
     {
         return 'plugins/investor-relations::investor-relations-multi';
-    }
+    } 
 }
+ 
