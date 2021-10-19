@@ -139,7 +139,7 @@
                         class="album-item__download"
                         @click="zipDownload(item.id)"
                       > 
-                        <i class="fas fa-download"></i>
+                       <i class="fal fa-arrow-to-bottom"></i>
                       </div>
                     </div>
                   </div>
@@ -435,7 +435,7 @@
                 </div>
                 <div class="icon--download">
                   <a download :href="'storage/' + item.img" :title="__('Tải xuống')">
-                    <i class="fas fa-download text-white"></i>
+                    <i class="fal fa-arrow-to-bottom text-white"></i>
                   </a>
                 </div>
               </div>

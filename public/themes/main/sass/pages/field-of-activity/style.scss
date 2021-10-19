@@ -41,7 +41,7 @@
             left: 68%;
             // background-color: #8d8c8cb8;  
             padding: 40px;
-            color: #fff;
+            color: #fff; 
             @media screen and (max-width: 1680px) {
                 left: 65%;
                 height: 380px;
@@ -64,7 +64,7 @@
             }
             @media screen and (max-width: 1080px) {
                 display: none;
-            }
+            } 
             h2 {
                 // font-size: 25px;
                 font-family: $MyriadPro-Bold;

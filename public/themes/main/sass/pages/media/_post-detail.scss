@@ -50,7 +50,7 @@
                         @media screen and(max-width:1100px) {
                             font-size: 25px;
                         }
-                    }
+                    } 
                 }
                 .post-time-share {
                     display: flex;
@@ -58,10 +58,11 @@
                     align-items: center;
                     padding: 20px 0 10px 0;
                     border-bottom: .5px solid #707070;
+                    color: rgb(148, 148, 148);
                     .left {
                         .author {
                             margin-right: 5px;
-                            border-right: 1px solid black;
+                            border-right: 1px solid rgb(148, 148, 148);
                             padding-right: 5px;
                         }
                     }
@@ -70,26 +71,46 @@
                         justify-content: space-between;
                         min-width: 75px;
                         align-items: center;
-                        .share {
-                            margin-bottom: 0;
-                            font-weight: bold;
+                        a{
+                            margin: 0 5px;
+                            i{
+                                font-size: 13px;
+                                color: #949494;
+                                width: 25px;
+                                height: 25px;
+                                border: 2.5px solid #949494;
+                                border-radius: 50%;
+                                align-items: center;
+                                align-content: center;
+                                text-align: center;
+                                padding: 4px 0;
+                                &:hover{
+                                    color: $main_color;
+                                    border: 2.5px solid $main_color;
+                                }
+                            }
+                           
                         }
-                        .print-button {
-                            background: unset;
-                            border: unset;
-                            outline: unset;
-                            padding: 0;
-                            margin-bottom: -8px;
-                            font-size: 18px;
-                        }
-                        button {
-                            background: unset;
-                            border: unset;
-                            outline: unset;
-                            padding: 0;
-                            margin-bottom: -8px;
-                            font-size: 18px;
-                        }
+                        // .share {
+                        //     margin-bottom: 0;
+                        //     font-weight: bold;
+                        // }
+                        // .print-button {
+                        //     background: unset;
+                        //     border: unset;
+                        //     outline: unset;
+                        //     padding: 0;
+                        //     margin-bottom: -8px;
+                        //     font-size: 18px;
+                        // }
+                        // button {
+                        //     background: unset;
+                        //     border: unset;
+                        //     outline: unset;
+                        //     padding: 0;
+                        //     margin-bottom: -8px;
+                        //     font-size: 18px;
+                        // }
                     }
                 }
                 .post-content {
@@ -153,6 +174,12 @@
                     margin-top: 3%;
                     display: flex;
                     align-items: center;
+                    i{
+                        color: rgb(148, 148, 148);
+                        transform: rotateY(180deg);
+                        font-size: 25px;
+                        margin: 0 15px 0 0;
+                    }
                     .title {
                         font-family: $MyriadPro-Bold;
                         margin-right: 20px;

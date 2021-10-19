@@ -44,7 +44,7 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
                                             </div>
                                         @endforeach
                                     @endif
-                                </div>
+                                </div> 
 
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -182,6 +182,8 @@ $postSlider = get_featured_posts_by_category($category->id ?? 19, 1);
         </div>
     </div>
 </section>
+
+
 <section class="media-tab mt-40">
     <div class="container-customize">
         <div class="row">
