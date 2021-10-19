@@ -31,7 +31,7 @@ class PostActivityField extends BaseModel
         'image',
         'is_featured',
         'status',
-        'author_id',
+        'author_id', 
     ]; 
  
     /**

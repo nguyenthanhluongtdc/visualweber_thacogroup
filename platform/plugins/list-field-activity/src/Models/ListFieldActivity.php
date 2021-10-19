@@ -29,7 +29,7 @@ class ListFieldActivity extends BaseModel
         'author_name',
         'description',
         'content',
-        'author_id',
+        'author_id', 
         'is_featured'
     ];
 

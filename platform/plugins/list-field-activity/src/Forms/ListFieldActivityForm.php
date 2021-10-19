@@ -16,7 +16,7 @@ class ListFieldActivityForm extends FormAbstract
     public function buildForm()
     {
         $list = sort_item_with_children(get_all_list_field_categories());
-
+ 
         $categories = [];
         foreach ($list as $row) {
             if ($this->getModel() && ($this->model->id === $row->id || $this->model->id === $row->parent_id)) {

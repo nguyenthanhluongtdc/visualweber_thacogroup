@@ -37,7 +37,7 @@ class InvestorRelations extends BaseModel
 
     /**
      * @var array
-     */
+     */ 
     protected $casts = [
         'status' => BaseStatusEnum::class,
     ];

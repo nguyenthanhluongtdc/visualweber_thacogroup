@@ -24,11 +24,11 @@ class PostInvestor extends BaseModel
      */
     protected $fillable = [
         'name',
-        'image',
+        'image', 
         'status',
     ];
 
-    /** 
+    /**  
      * @var array
      */
     protected $casts = [
