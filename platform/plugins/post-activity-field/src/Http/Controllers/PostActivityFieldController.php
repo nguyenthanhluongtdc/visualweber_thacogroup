@@ -65,6 +65,12 @@ class PostActivityFieldController extends BaseController
 
         event(new CreatedContentEvent(POST_ACTIVITY_FIELD_MODULE_SCREEN_NAME, $request, $postActivityField));
 
+        $categories = $request->input('categories');
+        
+        if (!empty($categories) && is_array($categories)) {
+            $postActivityField->categories()->sync($categories);
+        }
+
         return $response
             ->setPreviousUrl(route('post-activity-field.index'))
             ->setNextUrl(route('post-activity-field.edit', $postActivityField->id))
@@ -103,6 +109,12 @@ class PostActivityFieldController extends BaseController
         $postActivityField = $this->postActivityFieldRepository->createOrUpdate($postActivityField);
 
         event(new UpdatedContentEvent(POST_ACTIVITY_FIELD_MODULE_SCREEN_NAME, $request, $postActivityField));
+
+        $categories = $request->input('categories');
+        
+        if (!empty($categories) && is_array($categories)) {
+            $postActivityField->categories()->sync($categories);
+        }
 
         return $response
             ->setPreviousUrl(route('post-activity-field.index'))

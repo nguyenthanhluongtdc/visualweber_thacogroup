@@ -41,6 +41,6 @@ class PostActivityField extends BaseModel
         'status' => BaseStatusEnum::class,
     ];
     public function categories() : BelongsToMany{
-        return $this->belongsToMany(ListFieldActivity::class, 'app_post_activity_fields_categories','list_field_activities_id','post_activity_fields_id');
+        return $this->belongsToMany(ListFieldActivity::class, 'app_post_activity_fields_categories','post_activity_fields_id','list_field_activities_id');
     }
 }
