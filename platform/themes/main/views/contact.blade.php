@@ -30,47 +30,64 @@
         
         </div>
         <div class="office-contact-wrapper mt-60 data-filter-01">
-            
+            @if (has_field($page, 'contact_info'))
+            @foreach (has_field($page, 'contact_info') as $item)
             <div class="office-tabs">
                 <ul class="nav nav-tabs active-tabs">
-                    <li class="font18 office-title active">
-                        <a href="#firsttab" data-toggle="tab">Văn phòng TP. Hồ Chí Minh</a>  
+                    @if (has_sub_field($item, 'info_block'))
+                    @foreach (has_sub_field($item, 'info_block') as $key => $item_tab)
+                    <li class="font18 office-title {{ $key == 0 ? 'active' : '' }}">
+                        <a 
+                        href="#contact-{{ $key }}" 
+                        data-toggle="tab"
+                        >
+                        {{ has_sub_field($item_tab, 'name_office') }}
+                    </a>  
                     </li>
-                    <li class="font18 office-title">
+                    @endforeach
+                    @endif
+                    {{-- <li class="font18 office-title">
                         <a href="#secondtab" data-toggle="tab">Văn phòng THACO CHU LAI</a>
                     </li>
                     <li class="font18 office-title">
                         <a href="#thirdtab" data-toggle="tab">Văn phòng Hà Nội</a>
-                    </li>
+                    </li> --}}
                 </ul>
 
                 {{-- <div class="map-location">
                     <iframe src="{{has_field($page,'link_map') ? get_field($page,'link_map'):''}}" width="1920" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div> --}}
                 <div class="tab-content  office-content">
-                        <div class="tab-pane active" id="firsttab"> 
+                    @if (has_sub_field($item, 'info_block'))
+                    @foreach (has_sub_field($item, 'info_block') as $key => $item_tab)
+                        <div 
+                        class="tab-pane {{ $key == 0 ? 'active show' : '' }}" 
+                        id="contact-{{ $key }}"
+                        > 
                             <div class="map-location">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5080290085093!2d106.72027741474892!3d10.772347792324274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fcdd2041771%3A0xa46e9842e044baf4!2sSOFIC%20Tower!5e0!3m2!1svi!2s!4v1634137150175!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <iframe src=" {{ has_sub_field($item_tab, 'link_map') }}" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                             <div class="office-address font20">
                                 <i class="fas fa-map-marker-alt location"></i>
-                                <p class="address">Địa chỉ : Tầng 18, Tòa nhà Sofic, Số 10 Mai Chí Thọ, P.Thủ Thiêm, Quận 2, TP.Hồ Chí Minh</p>
+                                <p class="address">Địa chỉ :  {{ has_sub_field($item_tab, 'address') }}</p>
                             </div>
                             <div class="office-phone font20">
                                 <i class="fas fa-phone-alt"></i>
-                                <p class="phone">SĐT: +84-(0)8.39977.161</p>
+                                <p class="phone">SĐT:  {{ has_sub_field($item_tab, 'phone') }}</p>
                             </div>
                             <div class="office-email font20">
                                 <i class="fas fa-envelope"></i>
-                                <p class="email">Email:vanhoatruyenthong@thaco.com.vn </p>
+                                <p class="email">Email:   {{ has_sub_field($item_tab, 'email') }}</p>
                             </div>
                             <div class="office-desc">
                                 <p class="desc font20">
-                                    Văn phòng tại thành phố Hồ Chí Minh cũng là văn phòng chính của tổng công ty ô tô Trường Hải (THACO). Tại đây có các phòng ban quản lý của các ngành nghề lĩnh vực hoạt động của tổng công ty.
+                                    {{ has_sub_field($item_tab, 'desc') }}
                                 </p>
                             </div>
                         </div>
-                        <div class="tab-pane" id="secondtab">
+                        @endforeach
+                        @endif
+                        {{-- <div class="tab-pane" id="secondtab">
                             <div class="map-location">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5080290085093!2d106.72027741474892!3d10.772347792324274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fcdd2041771%3A0xa46e9842e044baf4!2sSOFIC%20Tower!5e0!3m2!1svi!2s!4v1634137150175!5m2!1svi!2s"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
@@ -113,10 +130,11 @@
                                     Văn phòng đại diện tại thành phố Hà Nội là nơi đại diện ở khu vực miền Bắc của tổng công ty ô tô Trường Hải (THACO).
                                 </p>
                             </div>
-                        </div>
+                        </div> --}}
                 </div>
             </div>
-
+            @endforeach
+            @endif 
 
 
 

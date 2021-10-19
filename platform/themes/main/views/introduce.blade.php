@@ -6,7 +6,7 @@
 <div class="breadcrum-intro">
     @includeIf("theme.main::views.breadcrumb")
 </div>
-
+ 
 <section class="about-us ">
     <div class="container-customize">
         <div class="about-us__title" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50"
@@ -97,7 +97,7 @@
                     </div>
                 @endforeach
             @endif
-        </div>
+        </div> 
 
         <div class="achievement-wrapper mt-40 mb-60">
             <div class="achievement-tab-title">
@@ -108,7 +108,7 @@
                 </div>
                 <div class="achievement__tabs" data-aos="fade-right" data-aos-duration="700" data-aos-delay="50"
                     class="aos-init aos-animate">
-
+ 
                     <ul class=" nav nav-tabs mb-0" id="tab-achievement" role="tablist">
                         @if (has_field($page, 'achivement'))
                             @foreach (has_field($page, 'achivement') as $key => $item_tab)
@@ -122,7 +122,7 @@
                                     </a>
                                 </li>
                             @endforeach
-                        @endif
+                        @endif 
                     </ul>
                 </div>
             </div>
