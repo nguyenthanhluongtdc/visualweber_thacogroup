@@ -129,7 +129,8 @@
                     </ul>
                 </div>
                 <div class="post-tag">
-                    <h4 class="title">{!!__('Từ khóa:')!!}</h4>
+                    {{-- <h4 class="title">{!!__('Từ khóa:')!!}</h4> --}}
+                    <i class="fas fa-tag"></i>
                     @foreach ($post->tags as $tag)
                     <div class="tag-item active">
                         <a href="">{{$tag->name}}</a>
