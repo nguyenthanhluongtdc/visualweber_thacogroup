@@ -261,13 +261,15 @@
                                 overflow: hidden;
                             }
                             .desc {
-                                height: 80px;
-                                @media screen and(max-width: 1300px) {
-                                    height: 100px;
-                                }
-                                @media screen and(max-width:768px) {
-                                    height: 130px;
-                                }
+                                height: 66px;
+                                @include split_str(3);
+                                line-height: 22px;
+                                // @media screen and(max-width: 1300px) {
+                                //     height: 100px;
+                                // }
+                                // @media screen and(max-width:768px) {
+                                //     height: 130px;
+                                // }
                             }
                         }
                     }
