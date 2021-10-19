@@ -6,7 +6,6 @@
             top: 38%;
             left: 68%;
             opacity: 70%;
-            
             height: 420px;
             width: 420px;
             // background-color: #8d8c8cb8;  
@@ -35,14 +34,11 @@
             @media screen and (max-width: 1080px) {
                 display: none;
             }
-            
         }
-        .content{
+        .content {
             position: absolute;
             top: 38%;
             left: 68%;
-            
-          
             // background-color: #8d8c8cb8;  
             padding: 40px;
             color: #fff; 
@@ -108,7 +104,6 @@
                 }
             }
         }
-        
     }
     .commercial-field {
         display: flex;
