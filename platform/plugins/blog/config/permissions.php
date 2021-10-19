@@ -26,7 +26,7 @@ return [
         'parent_flag' => 'posts.index',
     ],
     [
-        'name'        => 'Current list',
+        'name'        => 'Is Author',
         'flag'        => 'posts.current',
         'parent_flag' => 'posts.index',
     ],

@@ -126,7 +126,15 @@ class PostController extends BaseController
      */
     public function edit($id, FormBuilder $formBuilder, Request $request)
     {
-        $post = $this->postRepository->findOrFail($id);
+        if(Auth::user()->hasPermission('posts.current')) {
+            $post = $this->postRepository->getFirstBy([
+                'id'          => $id,
+                'author_id'   => Auth::id(),
+                'author_type' => get_class(Auth::user()),
+            ]);        
+        }else {
+            $post = $this->postRepository->findOrFail($id);
+        }
 
         event(new BeforeEditContentEvent($request, $post));
 

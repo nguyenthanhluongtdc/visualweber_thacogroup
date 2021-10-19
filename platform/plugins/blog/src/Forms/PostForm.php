@@ -2,6 +2,8 @@
 
 namespace Platform\Blog\Forms;
 
+use Illuminate\Support\Facades\Auth;
+use Platform\ACL\Repositories\Interfaces\UserInterface;
 use Platform\Base\Enums\BaseStatusEnum;
 use Platform\Base\Forms\Fields\TagField;
 use Platform\Base\Forms\FormAbstract;
@@ -46,6 +48,14 @@ class PostForm extends FormAbstract
 
         if (!$this->formHelper->hasCustomField('categoryMulti')) {
             $this->formHelper->addCustomField('categoryMulti', CategoryMultiField::class);
+        }
+
+        $statusBase = BaseStatusEnum::labels(); 
+
+        if(!Auth::user()->hasPermission('posts.approve')) {
+            $statusBase = array_filter($statusBase, function($key) {
+                return $key == 'pending';
+            }, ARRAY_FILTER_USE_KEY);
         }
 
         $this
@@ -104,11 +114,23 @@ class PostForm extends FormAbstract
                     'with-short-code' => true,
                     
                 ],
-            ])
-            ->add('status', 'customSelect', [
+            ]);
+
+        // if(!Auth::user()->hasPermission('posts.current')) {
+        //     $this->add('author_id', 'customSelect', [
+        //         'label'      => trans('Người đăng'),
+        //         'label_attr' => ['class' => 'control-label required'],
+        //         'choices'    => app(UserInterface::class)->getModel()->all()->pluck('username', 'id'),
+        //         'attr' => [
+        //             'class' => 'form-control select-full-search',
+        //         ]
+        //     ]);
+        // }
+
+        $this->add('status', 'customSelect', [
                 'label'      => trans('core/base::tables.status'),
                 'label_attr' => ['class' => 'control-label required'],
-                'choices'    => BaseStatusEnum::labels(),
+                'choices'    => $statusBase,
             ])
             ->add('categories[]', 'categoryMulti', [
                 'label'      => trans('plugins/blog::posts.form.categories'),
