@@ -37602,7 +37602,8 @@ var render = function() {
                                         },
                                         [
                                           _c("i", {
-                                            staticClass: "fas fa-download"
+                                            staticClass:
+                                              "fal fa-arrow-to-bottom"
                                           })
                                         ]
                                       )
@@ -38216,7 +38217,8 @@ var render = function() {
                                 },
                                 [
                                   _c("i", {
-                                    staticClass: "fas fa-download text-white"
+                                    staticClass:
+                                      "fal fa-arrow-to-bottom text-white"
                                   })
                                 ]
                               )
