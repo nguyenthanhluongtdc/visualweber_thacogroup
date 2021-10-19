@@ -251,8 +251,8 @@ var newPostSlide_relate = new Swiper('.post-slide-relate', {
     },
     speed: 1000,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: 'post-slide-relate .swiper-button-next',
+        prevEl: 'post-slide-relate .swiper-button-prev'
     },
     pagination: {
         el: '.swiper-pagination',

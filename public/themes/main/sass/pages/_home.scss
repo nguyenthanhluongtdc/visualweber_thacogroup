@@ -1201,7 +1201,11 @@
 }
 
 .field-slider:hover .drop-shadow-button {
-    display: block;
+    display: block!important;
+}
+
+.post-slide-relate:hover .drop-shadow-button {
+    display: block!important;
 }
 
 //popup 

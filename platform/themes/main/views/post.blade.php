@@ -170,7 +170,11 @@
                             
                             @endforeach
                         </div>
-                        
+                        <div class="swiper-button-next drop-shadow-button"> <img
+                            src="{{ Theme::asset()->url('images/home/Icon-right.png') }}" alt="next"> </div>
+                    <div class="swiper-button-prev drop-shadow-button"> <img
+                            src="{{ Theme::asset()->url('images/home/icon-left.png') }}" alt="prev"> </div>
+
                     </div>
                    
                 </div>

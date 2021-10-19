@@ -50,7 +50,7 @@
                         @media screen and(max-width:1100px) {
                             font-size: 25px;
                         }
-                    } 
+                    }
                 }
                 .post-time-share {
                     display: flex;
@@ -71,9 +71,9 @@
                         justify-content: space-between;
                         min-width: 75px;
                         align-items: center;
-                        a{
+                        a {
                             margin: 0 5px;
-                            i{
+                            i {
                                 font-size: 13px;
                                 color: #949494;
                                 width: 25px;
@@ -84,12 +84,11 @@
                                 align-content: center;
                                 text-align: center;
                                 padding: 4px 0;
-                                &:hover{
+                                &:hover {
                                     color: $main_color;
                                     border: 2.5px solid $main_color;
                                 }
                             }
-                           
                         }
                         // .share {
                         //     margin-bottom: 0;
@@ -174,7 +173,7 @@
                     margin-top: 3%;
                     display: flex;
                     align-items: center;
-                    i{
+                    i {
                         color: rgb(148, 148, 148);
                         transform: rotateY(180deg);
                         font-size: 25px;
@@ -229,6 +228,13 @@
                     .swiper-wrapper {
                         width: 100%;
                         height: auto;
+                    }
+                    .swiper-button-next {
+                        right: 14px;
+                    }
+                    .swiper-button-prev:after,
+                    .swiper-button-next:after {
+                        display: none;
                     }
                     .post-slide-relate {
                         height: max-content;
