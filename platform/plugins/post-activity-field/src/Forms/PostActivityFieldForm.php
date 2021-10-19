@@ -15,7 +15,7 @@ class PostActivityFieldForm extends FormAbstract
      * {@inheritDoc}
      */
     public function buildForm() 
-    { 
+    {  
         $selectedCategories = []; 
         if ($this->getModel()) {
             $selectedCategories = $this->getModel()->categories()->pluck('list_field_activities_id')->all();
@@ -79,7 +79,7 @@ class PostActivityFieldForm extends FormAbstract
                 'label'      => trans('plugins/blog::posts.form.categories'),
                 'label_attr' => ['class' => 'control-label required'],
                 'choices'    => get_all_list_field_categories(),
-                'value'      => old('categories', $selectedCategories),
+                'value'      => old('categories', $selectedCategories), 
             ])
             ->add('image', 'mediaImage', [
                 'label'      => trans('core/base::forms.image'),

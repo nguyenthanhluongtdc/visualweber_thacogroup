@@ -12,10 +12,10 @@ class PostInvestorForm extends FormAbstract
 {
  
     /**
-     * {@inheritDoc}
+     * {@inheritDoc} 
      */
-    public function buildForm() 
-    {
+    public function buildForm()  
+    { 
         $selectedCategories = []; 
         if ($this->getModel()) {
             $selectedCategories = $this->getModel()->categories()->pluck('investor_relation_id')->all();
@@ -52,7 +52,7 @@ class PostInvestorForm extends FormAbstract
                 'choices'    => get_all_investor_categories(),
                 'value'      => old('categories', $selectedCategories),
             ])
-            ->add('image', 'mediaImage', [
+            ->add('image', 'mediaImage', [ 
                 'label'      => trans('core/base::forms.image'),
                 'label_attr' => ['class' => 'control-label'],
             ])

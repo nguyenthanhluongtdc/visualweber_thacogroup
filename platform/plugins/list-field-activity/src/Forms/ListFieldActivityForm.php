@@ -10,7 +10,7 @@ use Platform\ListFieldActivity\Models\ListFieldActivity;
 class ListFieldActivityForm extends FormAbstract
 {
 
-    /** 
+    /**  
      * {@inheritDoc} 
      */
     public function buildForm()
@@ -31,7 +31,7 @@ class ListFieldActivityForm extends FormAbstract
             'field-of-activity' => __('Field-of-activity'),
           
         ];
-        $this
+        $this 
             ->setupModel(new ListFieldActivity)
             ->setValidatorClass(ListFieldActivityRequest::class)
             ->withCustomFields()

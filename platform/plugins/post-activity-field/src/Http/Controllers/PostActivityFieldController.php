@@ -155,4 +155,56 @@ class PostActivityFieldController extends BaseController
 
         return $response->setMessage(trans('core/base::notices.delete_success_message'));
     }
+
+    public function getFieldActivities(Request $request){
+       
+        try {
+            $categoryId = $request->categoryId;
+
+            $allRequest = $request->toArray();
+
+            //remove all url params
+            foreach($allRequest as $key => $value) {
+                $request->request->remove($key);
+            }
+
+            //get category by id 
+            
+            $category = app(ListFieldActivityInterface::class)
+            ->getFirstBy(['id' => $categoryId], ['*'], ['slugable']);
+
+            if(!$category->slug) {
+                abort(404); 
+            }
+
+            $data = app(PostActivityFieldInterface::class)->getByCategory($category->id, theme_option('number_post_lvhd'));
+
+            $data->withPath($category->url);
+
+            Theme::breadcrumb()
+            ->add(__('Home'), route('public.index'));
+
+            if($category->parent->id) {
+                Theme::breadcrumb()->add($category->parent->name, $category->parent->url);
+            }
+
+            Theme::breadcrumb()->add($category->name, $category->url);
+
+
+            $view = 'templates/'.$category->template;
+
+            $html = Theme::partial($view, compact('data','category'));
+
+            return response()->json(
+                [
+                    'html' => $html,
+                    'url'  => $category->url,
+                ],
+                200
+            );
+
+        } catch (\Throwable $th) {
+         
+        }
+    }
 }

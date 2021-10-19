@@ -48,5 +48,15 @@ class PostActivityFieldServiceProvider extends ServiceProvider
                 'permissions' => ['post-activity-field.index'],
             ]);
         });
+        $this->app->booted(function () {
+            if (defined('CUSTOM_FIELD_MODULE_SCREEN_NAME')) {
+                \CustomField::registerModule(PostActivityField::class)
+                    ->expandRule('other', 'Model', 'model_name', function () {
+                        return [
+                            PostActivityField::class => __('Bài viết lĩnh vực hoạt động'),
+                        ];
+                    });
+            }
+        }); 
     }
 }

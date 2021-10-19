@@ -85,7 +85,7 @@ class PublicController extends BaseController {
             ->getFirstBy(['id' => $categoryId], ['*'], ['slugable']);
 
             if(!$category->slug) {
-                abort(404);
+                abort(404); 
             }
 
             $data = app(PostInvestorInterface::class)->getByCategory($category->id, theme_option('number_post_qhcd'));

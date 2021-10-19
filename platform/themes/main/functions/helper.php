@@ -339,7 +339,7 @@ if (!function_exists('get_slug_by_template')) {
         return app(PostInterface::class)->getByTemplate($template);
     }
 }
-
+ 
 if (!function_exists('get_shareholder_categories')) {
     /**
      * @return \Illuminate\Support\Collection

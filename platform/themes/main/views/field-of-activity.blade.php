@@ -277,9 +277,9 @@ $page = app(PageInterface::class)->findById(28);
      
 
     </div>
-    @php
+    {{-- @php
     $posts = get_posts_by_category($category->id ?? 18, 5);
-    @endphp
+    @endphp --}}
     <div class="activity-news mt-60 mb-60">
         <div class="activity-news__top container-customize mt-40 mb-40">
             <div class="title ">

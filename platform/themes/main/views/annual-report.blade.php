@@ -11,7 +11,7 @@
         <div class="container-customize">
             <div class="financial-report  mb-100"> 
                 <div class="financial-report_left">
-                    <div class="loading d-none">
+                    <div class="loading d-none"> 
                         <img src="{{Theme::asset()->url('images/media/loading.gif')}}" alt="Loading">
                     </div>
                     @if($category)

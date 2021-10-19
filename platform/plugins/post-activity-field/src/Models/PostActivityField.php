@@ -32,7 +32,7 @@ class PostActivityField extends BaseModel
         'is_featured',
         'status',
         'author_id',
-    ];
+    ]; 
  
     /**
      * @var array

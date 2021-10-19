@@ -28,12 +28,12 @@ class PostInvestor extends BaseModel
         'status',
     ];
 
-    /**
+    /** 
      * @var array
      */
     protected $casts = [
         'status' => BaseStatusEnum::class,
-    ]; 
+    ];  
 
     public function categories() : BelongsToMany{
         return $this->belongsToMany(InvestorRelations::class, 'app_post_investor_categories','post_investor_id','investor_relation_id');
