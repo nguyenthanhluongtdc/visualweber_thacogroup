@@ -11,9 +11,14 @@ use Platform\Base\Supports\Helper;
 use Illuminate\Support\Facades\Event;
 use Platform\Base\Traits\LoadAndPublishDataTrait;
 use Illuminate\Routing\Events\RouteMatched;
+use Language;
+use Note;
+use SeoHelper;
+use SlugHelper;
+
 
 class PostActivityFieldServiceProvider extends ServiceProvider
-{
+{ 
     use LoadAndPublishDataTrait;
 
     public function register()
@@ -35,9 +40,9 @@ class PostActivityFieldServiceProvider extends ServiceProvider
             ->loadRoutes(['web']); 
 
         Event::listen(RouteMatched::class, function () {
-            // if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
-            //    \Language::registerModule([PostActivityField::class]);
-            // }
+            if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
+               \Language::registerModule([PostActivityField::class]);
+            }
 
             dashboard_menu()->registerItem([
                 'id'          => 'cms-plugins-post-activity-field',
@@ -48,6 +53,11 @@ class PostActivityFieldServiceProvider extends ServiceProvider
                 'permissions' => ['post-activity-field.index'],
             ]);
         });
+        
+            SeoHelper::registerModule([PostActivityField::class]);
+            SlugHelper::registerModule(PostActivityField::class, 'PostActivityField');
+            SlugHelper::setPrefix(PostActivityField::class, 'bai-viet-linh-vuc-hoat-dong');
+
         $this->app->booted(function () {
             if (defined('CUSTOM_FIELD_MODULE_SCREEN_NAME')) {
                 \CustomField::registerModule(PostActivityField::class)

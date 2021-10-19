@@ -11,7 +11,7 @@ Route::group(['namespace' => 'Platform\ListFieldActivity\Http\Controllers', 'mid
                 'uses'       => 'ListFieldActivityController@deletes',
                 'permission' => 'list-field-activity.destroy',
             ]);
-        });
+        }); 
     });
 
 });

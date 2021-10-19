@@ -47,6 +47,7 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
                 'uses'  => 'MainController@getMedia'
             ]);
         });
+        
 
     });
 });
@@ -59,7 +60,8 @@ Route::group(['namespace' => 'Theme\Main\Http\Controllers', 'middleware' => ['we
             'as' => 'field-of-activity',
             'uses' => 'MainController@getFieldActivity',
         ]);
-        Route::get('/', 'MainController@getIndex')
+        
+        Route::get('/', 'MainController@getIndex') 
             ->name('public.index');
 
         Route::get('sitemap.xml', 'MainController@getSiteMap')

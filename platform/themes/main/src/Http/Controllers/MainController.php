@@ -190,7 +190,7 @@ class MainController extends PublicController
                 200
             );
     }
-
+ 
     public function getFieldActivity(Request $request, $slug)
     {
         $slug = SlugHelper::getSlug($slug, SlugHelper::getPrefix(ListFieldActivity::class, 'linh-vuc-hoat-dong'));

@@ -4,7 +4,7 @@ namespace Platform\PostActivityField\Forms\Fields;
 
 use Kris\LaravelFormBuilder\Fields\FormField;
 
-class CategoryMultiField extends FormField
+class CategoryMultiField extends FormField 
 {
  
     /** 

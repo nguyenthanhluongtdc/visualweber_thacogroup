@@ -16,7 +16,7 @@ class PostActivityFieldForm extends FormAbstract
      */
     public function buildForm() 
     {   
-        $selectedCategories = []; 
+        $selectedCategories = [];  
         if ($this->getModel()) {
             $selectedCategories = $this->getModel()->categories()->pluck('list_field_activities_id')->all();
         }

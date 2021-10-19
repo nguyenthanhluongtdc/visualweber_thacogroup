@@ -75,7 +75,7 @@ class ListFieldActivityServiceProvider extends ServiceProvider
             ]);
         }); 
         // $this->app->register(HookServiceProvider::class);
-         
+          
        
         \SlugHelper::registerModule(ListFieldActivity::class);
         \SlugHelper::setPrefix(ListFieldActivity::class, 'linh-vuc-hoat-dong');

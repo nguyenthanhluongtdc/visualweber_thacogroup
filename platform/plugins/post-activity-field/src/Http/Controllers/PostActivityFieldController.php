@@ -69,7 +69,7 @@ class PostActivityFieldController extends BaseController
         
         if (!empty($categories) && is_array($categories)) {
             $postActivityField->categories()->sync($categories);
-        }
+        } 
 
         return $response
             ->setPreviousUrl(route('post-activity-field.index'))

@@ -8,7 +8,7 @@
 
 <section class="media-newspapers mb-60">
     <div class="media-newspapers-wrapper">
-        <div class="container-customize">
+        <div class="container-customize"> 
             <div class="financial-report  mb-100"> 
                 <div class="financial-report_left">
                     <div class="loading d-none"> 

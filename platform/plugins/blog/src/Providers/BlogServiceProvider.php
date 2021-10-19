@@ -49,13 +49,13 @@ class BlogServiceProvider extends ServiceProvider
         Helper::autoload(__DIR__ . '/../../helpers');
     }
 
-    public function boot()
+    public function boot() 
     {
         SlugHelper::registerModule(Post::class, 'Blog Posts');
         SlugHelper::registerModule(Category::class, 'Blog Categories');
         SlugHelper::registerModule(Tag::class, 'Blog Tags');
 
-        SlugHelper::setPrefix(Tag::class, 'tag');
+        SlugHelper::setPrefix(Tag::class, 'tag'); 
 
         $this->setNamespace('plugins/blog')
             ->loadAndPublishConfigurations(['permissions'])

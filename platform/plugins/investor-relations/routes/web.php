@@ -15,4 +15,4 @@ Route::group(['namespace' => 'Platform\InvestorRelations\Http\Controllers', 'mid
     });
 
 }); 
- 
+  
