@@ -48,6 +48,14 @@ class PostForm extends FormAbstract
             $this->formHelper->addCustomField('categoryMulti', CategoryMultiField::class);
         }
 
+        $statusBase = BaseStatusEnum::labels(); 
+
+        if(!Auth::user()->hasPermission('posts.approve')) {
+            $statusBase = array_filter($statusBase, function($key) {
+                return $key == 'pending';
+            }, ARRAY_FILTER_USE_KEY);
+        }
+
         $this
             ->setupModel(new Post)
             ->setValidatorClass(PostRequest::class)
@@ -108,7 +116,7 @@ class PostForm extends FormAbstract
             ->add('status', 'customSelect', [
                 'label'      => trans('core/base::tables.status'),
                 'label_attr' => ['class' => 'control-label required'],
-                'choices'    => BaseStatusEnum::labels(),
+                'choices'    => $statusBase,
             ])
             ->add('categories[]', 'categoryMulti', [
                 'label'      => trans('plugins/blog::posts.form.categories'),

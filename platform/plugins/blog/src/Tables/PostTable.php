@@ -2,6 +2,7 @@
 
 namespace Platform\Blog\Tables;
 
+use App\Models\User;
 use BaseHelper;
 use Platform\Base\Enums\BaseStatusEnum;
 use Platform\Blog\Exports\PostExport;
@@ -135,6 +136,12 @@ class PostTable extends TableAbstract
                 'author_id',
                 'author_type',
             ]);
+
+        if(Auth::user()->hasPermission('posts.current')) {
+            $query
+                ->whereAuthorType(get_class(Auth::user()))
+                ->whereAuthorId(Auth::id());
+        }
 
         return $this->applyScopes($query);
     }
