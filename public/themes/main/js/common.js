@@ -1027,7 +1027,7 @@ $(element_fancy).on('click', function() {
         // selector: '.post-content     div',
         // hash: false,
         beforeShow: function() {
-            $('.post-content img').css('display', 'block');
+            // $('.post-content img').css('display', 'block');
             tarGet = element_fancy;
 
         },
