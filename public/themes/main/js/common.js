@@ -1034,13 +1034,13 @@ $(element_fancy).on('click', function() {
         afterClose: function() {
             $(tarGet).show();
         },
-        // maxWidth: 880,
-        // maxHeight: 600,
-        // fitToView: false,
+        maxWidth: '100vw',
+        maxHeight: '80vh',
+        fitToView: false,
         // width: '70%',
         // height: '70%',
-        // autoSize: false,
-        // closeClick: false,
+        autoSize: false,
+        closeClick: false,
         openEffect: 'none',
         closeEffect: 'none'
     });
