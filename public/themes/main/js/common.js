@@ -1027,7 +1027,9 @@ $(element_fancy).on('click', function() {
         // selector: '.post-content     div',
         // hash: false,
         beforeShow: function() {
+            $('.post-content img').css('display', 'block');
             tarGet = element_fancy;
+
         },
         afterClose: function() {
             $(tarGet).show();
@@ -1039,8 +1041,8 @@ $(element_fancy).on('click', function() {
         // height: '70%',
         // autoSize: false,
         // closeClick: false,
-        // openEffect: 'none',
-        // closeEffect: 'none'
+        openEffect: 'none',
+        closeEffect: 'none'
     });
 
 })

@@ -765,6 +765,20 @@ app()->booted(function () {
                             'class' => 'form-control select-full-search',
                         ],
                     ],
+                ])
+                ->setField([
+                    'id' => 'default_category_',
+                    'section_id' => 'opt-text-subsection-config',
+                    'type' => 'select', // select or customSelect
+                    'label' => __('Tin tức lĩnh vực ô tô cơ khí'),
+                    'attributes' => [
+                        'name' => 'default_category_car_mechanical',
+                        'data' => ["" => "Chọn loại"] + (is_plugin_active('blog') ? get_all_categories()->pluck('name', 'id')->toArray() ?? [] : []),
+                        'value' => null, // default value
+                        'options' => [
+                            'class' => 'form-control select-full-search',
+                        ],
+                    ],
                 ]);
 
 
