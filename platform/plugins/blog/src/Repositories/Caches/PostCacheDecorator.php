@@ -127,4 +127,12 @@ class PostCacheDecorator extends CacheAbstractDecorator implements PostInterface
     {
         return $this->getDataIfExistCache(__FUNCTION__, func_get_args());
     }
+    public function getFeaturedByFieldActivity($field_activity_id,int $limit = 5, array $with = [])
+    {
+        return $this->getDataIfExistCache(__FUNCTION__, func_get_args());
+    }
+    public function getPostFieldActivity($field_activity_id,int $limit = 10, array $with = []){
+        return $this->getDataIfExistCache(__FUNCTION__, func_get_args());
+    
+    }
 }

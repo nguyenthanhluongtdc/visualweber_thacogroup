@@ -716,6 +716,32 @@ app()->booted(function () {
                         ], // Optional
                     ],
                 ])
+                ->setField([
+                    'id' => 'number_post_banner_lvhd',
+                    'section_id' => 'opt-text-subsection-blog',
+                    'type' => 'number',
+                    'label' => __('Số bài viết hiển thị trên banner lĩnh vực hoạt động'),
+                    'attributes' => [
+                        'name' => 'number_post_banner_lvhd',
+                        'value' => 1,
+                        'options' => [
+                            'class' => 'form-control'
+                        ], // Optional
+                    ],
+                ])
+                ->setField([
+                    'id' => 'number_post_lvhd',
+                    'section_id' => 'opt-text-subsection-blog',
+                    'type' => 'number',
+                    'label' => __('Số bài viết hiển thị ở phần tin tức lĩnh vực hoạt động'),
+                    'attributes' => [
+                        'name' => 'number_post_lvhd',
+                        'value' => 1,
+                        'options' => [
+                            'class' => 'form-control'
+                        ], // Optional
+                    ],
+                ])
                 ->setSection([ // Set section with no field
                     'title' => __('Config default'),
                     'desc' => __('Config defaults'),
@@ -759,20 +785,6 @@ app()->booted(function () {
                     'label' => __('Loại thông cáo báo chí'),
                     'attributes' => [
                         'name' => 'default_category_newspaper',
-                        'data' => ["" => "Chọn loại"] + (is_plugin_active('blog') ? get_all_categories()->pluck('name', 'id')->toArray() ?? [] : []),
-                        'value' => null, // default value
-                        'options' => [
-                            'class' => 'form-control select-full-search',
-                        ],
-                    ],
-                ])
-                ->setField([
-                    'id' => 'default_category_',
-                    'section_id' => 'opt-text-subsection-config',
-                    'type' => 'select', // select or customSelect
-                    'label' => __('Tin tức lĩnh vực ô tô cơ khí'),
-                    'attributes' => [
-                        'name' => 'default_category_car_mechanical',
                         'data' => ["" => "Chọn loại"] + (is_plugin_active('blog') ? get_all_categories()->pluck('name', 'id')->toArray() ?? [] : []),
                         'value' => null, // default value
                         'options' => [

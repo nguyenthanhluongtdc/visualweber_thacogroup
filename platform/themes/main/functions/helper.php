@@ -10,6 +10,7 @@ use Illuminate\Support\Arr;
 use Platform\Kernel\Repositories\Interfaces\PostInterface as PostInterfaceCustom;
 use Platform\InvestorRelations\Repositories\Interfaces\InvestorRelationsInterface;
 use Platform\PostInvestor\Repositories\Interfaces\PostInvestorInterface;
+use Platform\ListFieldActivity\Repositories\Interfaces\ListFieldActivityInterface;
 
 
 if (!function_exists('get_featured_posts_by_category')) {
@@ -372,6 +373,47 @@ if (!function_exists('get_shareholder_by_category_id')) {
     function get_shareholder_by_category_id($categoryId, $paginate = 6,$limit = 0)
     {
         $data = app(PostInvestorInterface::class)->getByCategory($categoryId, $paginate,0);
+
+        return $data;
+    }
+}
+if(!function_exists('get_field_activity')) {
+    /**
+     * Get distribution system function
+     *
+     * @return void
+     */
+    function get_field_activity()
+    {
+        return app(ListFieldActivityInterface::class)
+            ->advancedGet([
+                "condition" => [
+                    "status" => BaseStatusEnum::PUBLISHED
+                ]
+            ]);
+    }
+}
+
+if (!function_exists('get_post_featured_by_fieldActivity')) {
+    /**
+     * @return \Illuminate\Support\Collection
+     * @throws Exception
+     */
+    function get_post_featured_by_fieldActivity($fieldActivity,$limit = 3)
+    {
+        $data = app(PostInterface::class)->getFeaturedByFieldActivity($fieldActivity,$limit);
+
+        return $data;
+    }
+}
+if (!function_exists('get_post_fieldActivity')) {
+    /**
+     * @return \Illuminate\Support\Collection
+     * @throws Exception
+     */
+    function get_post_fieldActivity($fieldActivity,$limit = 10)
+    {
+        $data = app(PostInterface::class)->getFeaturedByFieldActivity($fieldActivity,$limit);
 
         return $data;
     }

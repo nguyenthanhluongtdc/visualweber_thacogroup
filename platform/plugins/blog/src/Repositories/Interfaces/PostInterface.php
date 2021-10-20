@@ -111,4 +111,6 @@ interface PostInterface extends RepositoryInterface
      * @return array
      */
     public function getRelatedCategoryIds($model);
+    public function getFeaturedByFieldActivity($field_activity_id,int $limit = 5, array $with = []);
+    public function getPostFieldActivity($field_activity_id,int $limit = 10, array $with = []);
 }

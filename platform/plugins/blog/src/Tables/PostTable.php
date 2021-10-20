@@ -252,6 +252,14 @@ class PostTable extends TableAbstract
                     '0' => 'Không'
                 ],  
             ],
+            'show_post_field'     => [
+                'title'    => __('Tin nổi bật ở banner lĩnh vực'),
+                'type'     => 'select',
+                'choices'  => [
+                    '1' => 'Có',
+                    '0' => 'Không'
+                ],  
+            ],
             'category'         => [
                 'title'    => trans('plugins/blog::posts.category'),
                 'type'     => 'select-search',

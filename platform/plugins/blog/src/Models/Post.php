@@ -10,6 +10,7 @@ use Platform\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Platform\ListFieldActivity\Models\ListFieldActivity;
 
 class Post extends BaseModel
 {
@@ -75,6 +76,9 @@ class Post extends BaseModel
         'image_banner', 
         'show_slider_news', 
         'show_home_news',
+        'list_field_activities_id',
+        'field_activity',
+        'show_post_field',
     ];
 
     /**
@@ -133,5 +137,9 @@ class Post extends BaseModel
             $post->categories()->detach();
             $post->tags()->detach();
         });
+    }
+    public function FieldActivity(): BelongsTo
+    {
+        return $this->belongsTo(ListFieldActivity::class, 'list_field_activities_id', 'id');
     }
 }

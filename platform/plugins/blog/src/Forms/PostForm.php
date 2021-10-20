@@ -49,6 +49,10 @@ class PostForm extends FormAbstract
         if (!$this->formHelper->hasCustomField('categoryMulti')) {
             $this->formHelper->addCustomField('categoryMulti', CategoryMultiField::class);
         }
+        $field_activity = ['0' =>  __("Chọn lĩnh vực")] + get_field_activity()
+        ->pluck('name', 'id')->toArray() ?? [];;
+    
+
 
         $statusBase = BaseStatusEnum::labels(); 
 
@@ -105,6 +109,11 @@ class PostForm extends FormAbstract
                 'label_attr'    => ['class' => 'control-label'],
                 'default_value' => false,
             ])
+            ->add('show_post_field', 'onOff', [
+                'label'         => __('Tin nổi bật ở lĩnh vực hoạt động'),
+                'label_attr'    => ['class' => 'control-label'],
+                'default_value' => false,
+            ])
             ->add('content', 'editor', [ 
                 'label'      => trans('core/base::forms.content'), 
                 'label_attr' => ['class' => 'control-label'],
@@ -138,6 +147,15 @@ class PostForm extends FormAbstract
                 'choices'    => get_categories_with_children(),
                 'value'      => old('categories', $selectedCategories),
             ])
+            ->add('field_activity', 'customSelect', [
+                'label'      => __('Lĩnh vực hoạt động'),
+                'label_attr' => ['class' => 'control-label required'],
+                'choices' => $field_activity,
+                'attr'       => [
+                    'class' => 'form-control select-search-full',
+                ]
+            ])
+
             ->add('image', 'mediaImage', [
                 'label'      => trans('core/base::forms.image'),
                 'label_attr' => ['class' => 'control-label'], 

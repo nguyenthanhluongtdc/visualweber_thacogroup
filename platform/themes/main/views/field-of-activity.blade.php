@@ -1,27 +1,32 @@
 @php
 use Platform\Page\Repositories\Interfaces\PageInterface;
 $page = app(PageInterface::class)->findById(28); 
+$id_field = $data['id'];
+$posts_banner = get_post_featured_by_fieldActivity($id_field,theme_option('number_post_banner_lvhd')); 
+$post_slide = get_post_fieldActivity($id_field,theme_option('number_post_lvhd')); 
+
 @endphp
+
 <div class="field-of-activity">
     <div class="swiper-container main-slider" style="--swiper-navigation-color:#fff; --swiper-pagination-color:#fff;">
         <div class="swiper-wrapper">
-            @if ($posts = get_featured_posts(theme_option('number_post_banner'),[]))
-            @foreach ($posts as $post)
+            @if ($posts_banner)
+            @foreach ($posts_banner as $post_ba)
             <div class="swiper-slide item-slider-top">
                 {{-- <img src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" alt="{{$post->name}}" alt="slide"
                     class="img-slider  h-auto w-100"> --}}
 
-                @if(has_field($post, 'image_banner')) 
-                <a href="{{$post->url}}"> 
+                @if(has_field($post_ba, 'image_banner')) 
+                <a href="{{$post_ba->url}}"> 
                     <img class="h-auto w-100"
-                    src="{{get_image_url(has_field($post,'image_banner'))}}"
+                    src="{{get_image_url(has_field($post_ba,'image_banner'))}}"
                     alt="" >
                 </a>
                 
                 @else
-                <a href="{{$post->url}}">
+                <a href="{{$post_ba->url}}">
                     <video  autoplay muted class="video-slider h-auto w-100 __video">
-                        <source src="{{ RvMedia::getImageUrl(get_field($post,'video_banner')) }}"  class="">
+                        <source src="{{ RvMedia::getImageUrl(get_field($post_ba,'video_banner')) }}"  class="">
                     </video>
                 </a>
                 
@@ -34,19 +39,19 @@ $page = app(PageInterface::class)->findById(28);
                     </div>
                     <div class="content">
                         <h2 class="font24 font-weight-bold">
-                            {!!str::words($post->name,20)!!}  
+                            {!!str::words($post_ba->name,20)!!}  
                            
                         </h2>
                         <div class="date mt-2">  
                             <span> 
-                                {{$post->created_at->format('d/m/Y')}}
+                                {{$post_ba->created_at->format('d/m/Y')}}
                             </span>
                         </div>
                         <p class="desc font18 text-justify">
-                            {{str::words($post->description,80)}}  
+                            {{str::words($post_ba->description,80)}}  
                         </p>
                         
-                        <a href="{{$post->url}}" class="link">
+                        <a href="{{$post_ba->url}}" class="link">
                             {!!__('Xem thêm')!!} <span><i class="fas fa-arrow-right"></i></span>
                         </a>
                     </div>
@@ -298,24 +303,24 @@ $page = app(PageInterface::class)->findById(28);
         <div class="swiper-container slide-news">
             <div class="swiper-wrapper">
                
-                @if (!empty($posts))
-                @foreach ($posts as $post)  
+                @if (!empty($post_slide))
+                @foreach ($post_slide as $post_sl)  
                 <div class="swiper-slide">
                    
                         <div class="news-top">
-                            <a href="{{ $post->url }}"><img src="{{ get_object_image($post->image) }}"
-                                alt="{{ $post->name }}"></a>
+                            <a href="{{ $post_sl->url }}"><img src="{{ get_object_image($post_sl->image) }}"
+                                alt="{{ $post_sl->name }}"></a>
                         </div>
                         <div class="news-bottom">
-                            <a href="{{ $post->url }}" class="text-dark">
+                            <a href="{{ $post_sl->url }}" class="text-dark">
                             <div class="title text-uppercase font20">
-                                {{str::words($post->name,18)}}
+                                {{str::words($post_sl->name,18)}}
                             </div>
                             <div class="date mt-2">
-                                {{ date_format($post->created_at, 'd/m/Y') }}
+                                {{ date_format($post_sl->created_at, 'd/m/Y') }}
                             </div>
                             <div class="desc text-justify mt-2 font18">
-                                {{str::words($post->description,40)}}
+                                {{str::words($post_sl->description,40)}}
                             </div>
                         </a>
                         </div>

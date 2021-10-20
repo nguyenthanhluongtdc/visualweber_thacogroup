@@ -205,6 +205,17 @@ class MainController extends PublicController
             abort(404);
         }
         
+        // $category = app(CategoryInterface::class)->getFirstBy(
+        //     [
+        //         'id' => $categoryId,
+        //         'status' => BaseStatusEnum::PUBLISHED
+        //     ],
+            
+        //     ['*'],
+        //     ['slugable']
+
+        // );  
+        
         $meta = MetaBox::getMetaData($data['data'], 'seo_meta', true);
             SeoHelper::setTitle($meta['seo_title'] ?? $data['data']->name)
                 ->setDescription($meta['seo_description'] ?? (!blank($data['data']->description) ? $data['data']->description : theme_option('site_description')))
