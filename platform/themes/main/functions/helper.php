@@ -413,7 +413,7 @@ if (!function_exists('get_post_fieldActivity')) {
      */
     function get_post_fieldActivity($fieldActivity,$limit = 10)
     {
-        $data = app(PostInterface::class)->getFeaturedByFieldActivity($fieldActivity,$limit);
+        $data = app(PostInterface::class)->getPostFieldActivity($fieldActivity,$limit);
 
         return $data;
     }

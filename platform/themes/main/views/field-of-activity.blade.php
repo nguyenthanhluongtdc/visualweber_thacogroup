@@ -302,7 +302,6 @@ $post_slide = get_post_fieldActivity($id_field,theme_option('number_post_lvhd'))
 
         <div class="swiper-container slide-news">
             <div class="swiper-wrapper">
-               
                 @if (!empty($post_slide))
                 @foreach ($post_slide as $post_sl)  
                 <div class="swiper-slide">
