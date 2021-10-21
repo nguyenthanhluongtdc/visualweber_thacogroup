@@ -20,4 +20,14 @@ return [
         'flag'        => 'post-investor.destroy',
         'parent_flag' => 'post-investor.index',
     ],
+    [
+        'name'        => 'Is Author',
+        'flag'        => 'post-investor.current',
+        'parent_flag' => 'post-investor.index',
+    ],
+    [
+        'name'        => 'Approve',
+        'flag'        => 'post-investor.approve',
+        'parent_flag' => 'post-investor.index',
+    ],
 ];

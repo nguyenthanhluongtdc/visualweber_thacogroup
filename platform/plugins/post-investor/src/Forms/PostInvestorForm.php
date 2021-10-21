@@ -7,6 +7,7 @@ use Platform\Base\Enums\BaseStatusEnum;
 use Platform\PostInvestor\Http\Requests\PostInvestorRequest;
 use Platform\PostInvestor\Models\PostInvestor;
 use Platform\PostInvestor\Forms\Fields\CategoryMultiField;
+use Illuminate\Support\Facades\Auth;
 
 class PostInvestorForm extends FormAbstract
 {
@@ -23,6 +24,12 @@ class PostInvestorForm extends FormAbstract
 
         if (!$this->formHelper->hasCustomField('categoryMulti')) {
             $this->formHelper->addCustomField('categoryMulti', CategoryMultiField::class);
+        }
+        $statusBase = BaseStatusEnum::labels(); 
+        if(!Auth::user()->hasPermission('post-investor.approve')) {
+            $statusBase = array_filter($statusBase, function($key) {
+                return $key == 'pending';
+            }, ARRAY_FILTER_USE_KEY);
         }
 
         $this
@@ -44,7 +51,7 @@ class PostInvestorForm extends FormAbstract
                 'attr'       => [
                     'class' => 'form-control select-full',
                 ],
-                'choices'    => BaseStatusEnum::labels(),
+                'choices'    => $statusBase,
             ])
             ->add('categories[]', 'categoryMulti', [
                 'label'      => trans('plugins/blog::posts.form.categories'),

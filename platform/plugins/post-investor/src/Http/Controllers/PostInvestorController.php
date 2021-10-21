@@ -15,6 +15,7 @@ use Platform\Base\Events\UpdatedContentEvent;
 use Platform\Base\Http\Responses\BaseHttpResponse;
 use Platform\PostInvestor\Forms\PostInvestorForm;
 use Platform\Base\Forms\FormBuilder;
+use Illuminate\Support\Facades\Auth;
 
 class PostInvestorController extends BaseController
 {
@@ -84,7 +85,16 @@ class PostInvestorController extends BaseController
      */
     public function edit($id, FormBuilder $formBuilder, Request $request)
     {
-        $postInvestor = $this->postInvestorRepository->findOrFail($id);
+        if(Auth::user()->hasPermission('posts.current')) {
+            $postInvestor = $this->postInvestorRepository->getFirstBy([
+                'id'          => $id,
+                'author_id'   => Auth::id(),
+                'author_type' => get_class(Auth::user()),
+            ]);        
+        }else{
+            $postInvestor = $this->postInvestorRepository->findOrFail($id);
+        }
+       
 
         event(new BeforeEditContentEvent($request, $postInvestor));
 

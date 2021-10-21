@@ -4,6 +4,7 @@ namespace Platform\PostInvestor\Tables;
 
 use Illuminate\Support\Facades\Auth;
 use BaseHelper;
+use App\Models\User;
 use Platform\Base\Enums\BaseStatusEnum;
 use Platform\PostInvestor\Repositories\Interfaces\PostInvestorInterface;
 use Platform\Table\Abstracts\TableAbstract;
@@ -83,6 +84,12 @@ class PostInvestorTable extends TableAbstract
                'created_at',
                'status',
            ]);
+           
+        if(Auth::user()->hasPermission('posts.current')) {
+            $query
+                ->whereAuthorType(get_class(Auth::user()))
+                ->whereAuthorId(Auth::id());
+        }
 
         return $this->applyScopes($query);
     }
