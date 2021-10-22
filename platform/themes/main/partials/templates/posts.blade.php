@@ -22,9 +22,9 @@
                                         <h3 class=" title font18">{!! has_field($post,'post_category') !!}  </h3>
                                     @endif
                                     <a href="{{ $post->url }}">
-                                        <h4 class="name font18 "> {!!str::words( $post->name ,15)!!}</h4>
+                                        <h4 class="name font18 "> {!! $post->name!!}</h4>
                                         <span class="time"> {{ date_format($post->created_at, 'd/m/Y') }}</span>
-                                        <p class="description font18  text-justify">{{str::words($post->description,35)}}</p>
+                                        <p class="description font18  text-justify">{{$post->description}}</p>
                                         <a href="{{ $post->url }}" class="read-more text-uppercase">{!! __('Xem thêm') !!} <i class="fas fa-arrow-right"></i></a>
                                     </a>
                                    
@@ -50,10 +50,10 @@
                                                 alt="{!! $post->name !!}">
                                         </div>
  
-                                        <h4 class="post_name font18">{!!str::words( $post->name ,10 )!!}</h4>
+                                        <h4 class="post_name font18">{!! $post->name!!}</h4>
                                         <span
                                             class="time">{{ date_format($post->created_at, 'd/m/Y') }}</span>
-                                        <p class="post_description font18">{{str::words($post->description,25)}}
+                                        <p class="post_description font18">{{$post->description}}
                                         </p>
                                     </a>
                                 </div> 
@@ -142,11 +142,11 @@
                             </div>
                             <div class="content">
                                 <a href="{{ $post->url }}">
-                                    <h3 class="name font18">{!! str::words($post->name,18) !!}</h3>
+                                    <h3 class="name font18">{!!$post->name!!}</h3>
                                 </a>
 
                                 <p class="time">{{ date_format($post->created_at, 'd/m/Y') }}</p>
-                                <p class="desc font18">{{str::words($post->description,45)}}</p>
+                                <p class="desc font18">{{$post->description}}</p>
                             </div>
                         </div>
                     </div>

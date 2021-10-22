@@ -67,11 +67,8 @@
                                 color: unset;
                                 .name {
                                     margin: 15px 0;
-                                    // @include split_str(2);
-                                    // max-height: 44px;
-                                    overflow: hidden;
                                     line-height: 22px;
-                                    // text-align: justify;
+                                    @include split_str(3);
                                     p {
                                         margin-bottom: 0 !important;
                                     }
@@ -93,8 +90,10 @@
                             .description {
                                 margin-bottom: 20px;
                                 line-height: 22px;
-                                max-height: 200px;
-                                overflow: hidden;
+                                @include split_str(8);
+                                @include maxWidth(1770) {
+                                    @include split_str(6);
+                                }
                             }
                             .read-more {
                                 color: $main_color;
@@ -125,7 +124,6 @@
                         margin-right: -8px;
                         .post_content_bottom {
                             box-shadow: 0 5px 8px -5px #555;
-                            // margin-top: 8px;
                             margin-bottom: 8px;
                             overflow: hidden;
                             .post-wrapper {
@@ -135,7 +133,6 @@
                                         color: $main_color;
                                     }
                                 }
-                                // margin-right: 20px;
                                 .post-thumbnail {
                                     width: 100%;
                                     height: auto;
@@ -156,24 +153,20 @@
                                 display: block;
                                 background-color: $bg-post;
                                 .post_name {
-                                    margin-top: 10px;
+                                    margin: 10px 10px 0 10px;
                                     font-family: $MyriadPro-Bold;
-                                    margin-left: 20px;
-                                    margin-right: 20px;
                                     text-transform: uppercase;
                                     line-height: 22px;
-                                    height: 44px;
-                                    overflow: hidden;
+                                    @include split_str(2);
                                     p {
                                         margin-bottom: 0 !important;
                                     }
                                 }
                                 .post_description {
-                                    margin: 5px 20px;
-                                    min-height: 88px;
-                                    // overflow: hidden;
+                                    margin: 5px 10px;
                                     line-height: 22px;
                                     text-align: justify;
+                                    @include split_str(4);
                                 }
                                 .time {
                                     font-size: 15px;
@@ -241,7 +234,7 @@
                                 font-family: $MyriadPro-Bold;
                                 text-transform: uppercase;
                                 line-height: 22px;
-                                max-height: 44px;
+                                @include split_str(2);
                                 p {
                                     margin-bottom: 0 !important;
                                 }
@@ -255,10 +248,8 @@
                             .desc {
                                 margin-bottom: 0;
                                 text-align: justify;
-                                height: 66px;
                                 line-height: 22px;
-                                overflow: hidden;
-                                // @include split_str(3);
+                                @include split_str(3);
                             }
                         }
                     }
