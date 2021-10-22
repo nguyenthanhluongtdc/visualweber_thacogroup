@@ -46,6 +46,10 @@
     }
 }
 
+.p-bg {
+    padding-top: 3.1%!important;
+}
+
 .main-slider {
     .swiper-slide {
         .video-slider {
@@ -371,12 +375,13 @@
 .partner-wrapper {
     .title__company {
         // margin: 10px 0;
-        padding: 20px 0 10px 0;
+        // padding: 20px 0 10px 0;
+        margin: 0;
         font-family: $MyriadPro-Bold;
         text-align: center;
     }
     .partner-banner {
-        padding-top: 14.5vw;
+        padding-top: 13vw;
         max-height: 275px;
         min-height: 170px;
         background-size: cover;

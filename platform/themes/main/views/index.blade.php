@@ -65,7 +65,7 @@
     get_object_image(get_field($page , 'image_bg_company')) :''}})"
     >
         <h3 
-        class="title__company font40" 
+        class="title__company {{has_field($page , 'image_bg_company') ? 'p-bg':''}} font40" 
         data-aos="fade-right" data-aos-duration="700" data-aos-delay="50" 
         class="aos-init aos-animate"
         > 
