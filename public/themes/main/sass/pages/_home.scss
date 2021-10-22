@@ -99,8 +99,12 @@
                 position: relative;
                 padding-top: 15px;
                 margin: 0;
-                line-height: 22px;
+                line-height: 25px;
                 text-transform: uppercase;
+                @include split_str(4);
+                @include maxWidth(1680) {
+                    @include split_str(3);
+                }
                 p {
                     margin-bottom: 0 !important;
                 }
@@ -123,14 +127,11 @@
             .description {
                 color: $white;
                 margin-bottom: 15px;
-                max-height: 200px;
+                // max-height: 200px;
                 line-height: 22px;
-                overflow: hidden;
-                @media screen and (max-width: 1480px) {
-                    @include split_str(5);
-                }
-                p {
-                    // @include split_str(7);
+                @include split_str(8);
+                @include maxWidth(1680) {
+                    @include split_str(6);
                 }
             }
             a {

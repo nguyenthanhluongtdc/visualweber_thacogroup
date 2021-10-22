@@ -3,11 +3,6 @@
         @if ($posts = get_post_home_slider(theme_option('number_post_banner')))
         @foreach ($posts as $post)
         <div class="swiper-slide">
-            {{-- <img 
-            src="{{ RvMedia::getImageUrl($post->image_banner, 'featured', false, RvMedia::getDefaultImage()) }}" 
-            alt="{{$post->name}}" 
-            class="img-slider h-auto w-100"
-            > --}}
             @if(has_field($post, 'image_banner')) 
             <a href="{{$post->url}}">
                 <img class="h-auto w-100"
@@ -42,13 +37,8 @@
                         <div class="date"> 
                             <span class="text-light">{{$post->created_at->format('d/m/Y')}}</span>
                         </div>
-                        <div class="description text-justify">
-                        <p class=" font18"> 
-                        {{-- {{$post->description}} --}}
-                        
-                        {{$post->description}}                        
-                        </p>
-                        
+                        <div class="description font18 text-justify">
+                            {{$post->description}}                        
                         </div> 
                         <a href="{{$post->url}}" class="read-more" title="Xem thêm">{!!__('Xem thêm')!!} <span><i class="fas fa-arrow-right"></i></span></a>
                     </div>
