@@ -146,9 +146,6 @@ $post_slide = get_post_fieldActivity($id_field,theme_option('number_post_lvhd'))
 
                 <div class="main-content-left ">
                     <div class="content" >
-                        {{-- <img src="{{Theme::asset()->url('images/lvhd/thiso1.png') }}" alt="slide" class="symbol">
-                        <img src="{{Theme::asset()->url('images/lvhd/thiso.png') }}" alt="slide" class="symbol-thiso mb-2"> --}}
-
                         @if(has_sub_field($item, 'content_left_activity_title'))
                         <h2 class="text-uppercase title mb-3 font40" style="color: {{get_field($data, 'color_code')}}">
                             {!! has_sub_field($item,'content_left_activity_title') !!}  
@@ -160,14 +157,15 @@ $post_slide = get_post_fieldActivity($id_field,theme_option('number_post_lvhd'))
                             {!! has_sub_field($item,'content_left_activity_desc') !!}  
                         </p>
                         @endif
-                        <div class="control">
+                        <div class="control-slide">
                             <div class="swiper-button-prev"></div>
-                            <div class="mouse-control">
+                            <div class="swiper-pagination pagination-field"  style="background-color: {{get_field($data, 'color_code')}}" ></div>
+                            {{-- <div class="mouse-control">
                                 <span class="mouse"></span>
                                 <p class="text-pagi font18 text-uppercase">Trượt để khám phá</p>
-                            </div>
+                            </div> --}}
                             <div class="swiper-button-next"></div>
-
+                            
                         </div>
 
                     </div>
