@@ -25,7 +25,7 @@
                                         </a> 
 
                                         <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
-                                        <p class="description font18 text-justify">{{str::words($item_post->description,70)}}</p>
+                                        <p class="description font18 text-justify">{{$item_post->description}}</p>
                                         <a href="{{ $item_post->url }}" class="read-more text-uppercase"
                                             title="{!! __('Xem thêm') !!}">{!! __('Xem thêm') !!} <i class="fas fa-arrow-right"></i> </a>
                                     </div>
@@ -53,7 +53,7 @@
                                             
                                             <h4 class="post_name font20">{!! $post_bottom->name !!}</h4>
                                             <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
-                                            <p class="post_description font18">{{str::words($post_bottom->description,25)}}
+                                            <p class="post_description font18">{{$post_bottom->description}}
                                             </p>
                                         
                                         </a>
