@@ -297,6 +297,36 @@ let field_slider = new Swiper('.field-slider', {
             nextEl: '.field-slider .swiper-button-next',
             prevEl: '.field-slider .swiper-button-prev',
         },
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+                // centeredSlides: true,
+                spaceBetween: 25,
+                navigation: {
+                    nextEl: '.field-slider .swiper-button-next',
+                    prevEl: '.field-slider .swiper-button-prev',
+                },
+            },
+            480: {
+                slidesPerView: 2,
+                centeredSlides: false,
+                spaceBetween: 40,
+                navigation: {
+                    nextEl: '.field-slider .swiper-button-next',
+                    prevEl: '.field-slider .swiper-button-prev',
+                },
+            },
+            320: {
+                slidesPerView: 1,
+                centeredSlides: false,
+                spaceBetween: 40,
+                navigation: {
+                    nextEl: '.field-slider .swiper-button-next',
+                    prevEl: '.field-slider .swiper-button-prev',
+                },
+            },
+        },
+
     })
     // tuyen dung slider
 var recruitment_slider = new Swiper('.recruitment-slider', {
@@ -733,11 +763,6 @@ if ($('#button-activity').length > 0) {
     var btnTop = $('#button-activity');
     var element = $('.activity-news');
     $(window).scroll(function() {
-        // if ($(window).scrollTop() > 300) {
-        //     btnTop.addClass('show-button-activity')
-        // } else {
-        //     btnTop.removeClass('show-button-activity')
-        // }
         if (element.length > 0) {
             if ($(document).scrollTop() >= element.position().top - 250) {
                 btnTop.addClass('d-none')
