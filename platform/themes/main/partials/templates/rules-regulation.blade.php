@@ -42,7 +42,7 @@
                         @foreach(has_field($item, 'repeater_file_post_investor') as $sub)
                         <li>
                             <a href="{{ get_image_url(has_sub_field($sub, 'file')) }}" target="_blank">
-                                {{has_sub_field($sub, 'file')}}
+                                {{$item->name}}
                                
                             </a>
                             <span
