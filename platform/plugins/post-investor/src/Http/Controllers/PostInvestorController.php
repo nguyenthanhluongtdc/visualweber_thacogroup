@@ -62,8 +62,12 @@ class PostInvestorController extends BaseController
      */
     public function store(PostInvestorRequest $request, BaseHttpResponse $response)
     {
-        $postInvestor = $this->postInvestorRepository->createOrUpdate($request->input());
-
+        // $postInvestor = $this->postInvestorRepository->createOrUpdate($request->input());
+        $postInvestor = $this->postInvestorRepository->createOrUpdate(array_merge($request->input(), [
+            'author_id'   => Auth::id(),
+            'author_type' => User::class,
+        ]));
+        // dd($postInvestor);
         event(new CreatedContentEvent(POST_INVESTOR_MODULE_SCREEN_NAME, $request, $postInvestor));
 
         $categories = $request->input('categories');
@@ -85,12 +89,12 @@ class PostInvestorController extends BaseController
      */
     public function edit($id, FormBuilder $formBuilder, Request $request)
     {
-        if(Auth::user()->hasPermission('posts.current')) {
+        if(Auth::user()->hasPermission('post-investor.current')) {
             $postInvestor = $this->postInvestorRepository->getFirstBy([
                 'id'          => $id,
                 'author_id'   => Auth::id(),
                 'author_type' => get_class(Auth::user()),
-            ]);        
+            ]);      
         }else{
             $postInvestor = $this->postInvestorRepository->findOrFail($id);
         }

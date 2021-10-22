@@ -56,7 +56,7 @@ class PostForm extends FormAbstract
 
         $statusBase = BaseStatusEnum::labels(); 
 
-        if(!Auth::user()->hasPermission('posts.approve')) {
+        if((!Auth::user()->hasPermission('posts.current'))&&(!Auth::user()->hasPermission('posts.approve'))) {
             $statusBase = array_filter($statusBase, function($key) {
                 return $key == 'pending';
             }, ARRAY_FILTER_USE_KEY);

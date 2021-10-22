@@ -62,6 +62,9 @@ class PostInvestorTable extends TableAbstract
             ->editColumn('created_at', function ($item) {
                 return BaseHelper::formatDate($item->created_at);
             })
+            // ->editColumn('author_id', function ($item) {
+            //     return $item->author ? $item->author->name : null;
+            // })
             ->editColumn('status', function ($item) {
                 return $item->status->toHtml();
             })
@@ -78,19 +81,27 @@ class PostInvestorTable extends TableAbstract
     public function query()
     {
         $query = $this->repository->getModel()
+        // ->with([
+        //     'categories' => function ($query) {
+        //         $query->select(['categories.id', 'categories.name']);
+        //     },
+        //     'author',
+        // ])
             ->select([
                'id',
                'name',
                'created_at',
                'status',
+               'author_id',
+               'author_type',
            ]);
            
-        if(Auth::user()->hasPermission('posts.current')) {
-            $query
-                ->whereAuthorType(get_class(Auth::user()))
-                ->whereAuthorId(Auth::id());
-        }
-
+        // if(Auth::user()->hasPermission('post-investor.current')) {
+        //     $query
+        //         ->whereAuthorType(get_class(Auth::user()))
+        //         ->whereAuthorId(Auth::id());
+        // }
+        // print_r($query);
         return $this->applyScopes($query);
     }
 
@@ -111,6 +122,12 @@ class PostInvestorTable extends TableAbstract
             'created_at' => [
                 'title' => trans('core/base::tables.created_at'),
                 'width' => '100px',
+            ],
+            'author_id'  => [
+                'title'     => trans('plugins/blog::posts.author'),
+                'width'     => '150px',
+                'class'     => 'no-sort text-center',
+                'orderable' => false,
             ],
             'status' => [
                 'title' => trans('core/base::tables.status'),

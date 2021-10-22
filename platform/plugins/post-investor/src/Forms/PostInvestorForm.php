@@ -26,7 +26,7 @@ class PostInvestorForm extends FormAbstract
             $this->formHelper->addCustomField('categoryMulti', CategoryMultiField::class);
         }
         $statusBase = BaseStatusEnum::labels(); 
-        if(!Auth::user()->hasPermission('post-investor.approve')) {
+        if(!Auth::user()->hasPermission('post-investor.approve')||!Auth::user()->hasPermission('post-investor.current')) {
             $statusBase = array_filter($statusBase, function($key) {
                 return $key == 'pending';
             }, ARRAY_FILTER_USE_KEY);
