@@ -16,7 +16,7 @@
                 width: 100%;
                 margin-right: 0;
             }
-            .media__content_left { 
+            .media__content_left {
                 .news__content {
                     .new-post-slide {
                         padding-left: 8px;
@@ -45,10 +45,11 @@
                                 object-position: bottom;
                             }
                         }
-                        .news-post { 
+                        .news-post {
                             flex: 0 0 35%;
                             background-color: $bg-post;
                             padding: 40px 30px;
+                            position: relative;
                             @media screen and (max-width: 1400px) {
                                 padding: 30px 20px;
                             }
@@ -71,7 +72,7 @@
                                     overflow: hidden;
                                     line-height: 22px;
                                     // text-align: justify;
-                                    p{
+                                    p {
                                         margin-bottom: 0 !important;
                                     }
                                     @media screen and (max-width: 1440px) {
@@ -94,33 +95,21 @@
                                 line-height: 22px;
                                 max-height: 200px;
                                 overflow: hidden;
-                                // max-height: 110px;
-                                // overflow: hidden;
-                                // @include split_str(6);
-                                // @media screen and(max-width: 1680px) {
-                                //     max-height: 88px;
-                                // }
                             }
                             .read-more {
-                                // padding: 7px 22px;
-                                color:  $main_color;
+                                color: $main_color;
                                 font-weight: bolder;
-                                // border: 1px solid #fff;
                                 text-decoration: none;
                                 font-size: 16px;
-                                // background-color: $main_color;
-                                // position: absolute;
-                                // bottom: 60px;
-                                // right: 30px;
-                                float: right;
-                                
-                                &:hover{
-                                    i{
+                                position: absolute;
+                                bottom: 6%;
+                                right: 8%;
+                                &:hover {
+                                    i {
                                         transform: translateX(8px);
                                         transition: .5s ease-in;
                                     }
                                 }
-                                
                             }
                             // .read-more.message {
                             //     position: unset;
@@ -128,7 +117,6 @@
                         }
                     }
                     .post-slider {
-                        
                         .post-slide-bottom {
                             padding-left: 8px;
                             padding-right: 8px;
@@ -136,7 +124,7 @@
                         margin-left: -8px;
                         margin-right: -8px;
                         .post_content_bottom {
-                            box-shadow: 0 5px 8px -5px #555; 
+                            box-shadow: 0 5px 8px -5px #555;
                             // margin-top: 8px;
                             margin-bottom: 8px;
                             overflow: hidden;
@@ -156,7 +144,7 @@
                                         img {
                                             transform: scale(1.05);
                                         }
-                                    } 
+                                    }
                                     img {
                                         width: 100%;
                                         height: 160px;
@@ -176,7 +164,7 @@
                                     line-height: 22px;
                                     height: 44px;
                                     overflow: hidden;
-                                    p{
+                                    p {
                                         margin-bottom: 0 !important;
                                     }
                                 }
@@ -254,7 +242,7 @@
                                 text-transform: uppercase;
                                 line-height: 22px;
                                 max-height: 44px;
-                                p{
+                                p {
                                     margin-bottom: 0 !important;
                                 }
                                 @media screen and (max-width: 1080px) {
