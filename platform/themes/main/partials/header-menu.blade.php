@@ -7,7 +7,7 @@ $currentLanguage = Language::getCurrentLocale();
     @foreach ($menu_nodes as $key => $row)
           
     <li class="item-top">
-        <a href="{{$row->url}}" class="item-top__link" target="_self">
+        <a href="{{$row->url}}" class="item-top__link" target= {{$key==1 ? '_blank' :'_self' }}>
             {{$row->name}}
         </a>
     </li>
