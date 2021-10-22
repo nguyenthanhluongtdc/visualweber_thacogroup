@@ -553,7 +553,7 @@
                 }
                 .desc {
                     text-align: center;
-                    line-height: 1;
+                    line-height: 22px;
                     @media only screen and (max-width: 420px) {
                         font-size: 15px !important;
                     }
@@ -933,13 +933,6 @@
                         padding: 10px;
                     }
                 }
-                // .close{
-                //     i{
-                //         @media only screen and (max-width: 600px){
-                //             transform: translateY(-65vw);
-                //         }
-                //     }
-                // }
                 .info-admin {
                     margin-left: 20px;
                     // margin-top: 40px;
