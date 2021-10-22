@@ -508,6 +508,7 @@
     .content-tab {
         .content-title {
             max-width: 50%;
+            line-height: 22px;
             font-family: $MyriadPro-Bold;
             @media only screen and (max-width: 1080px) {
                 max-width: 100%;
