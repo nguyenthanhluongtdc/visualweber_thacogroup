@@ -36,15 +36,24 @@ class PostInvestorForm extends FormAbstract
             ->setupModel(new PostInvestor)
             ->setValidatorClass(PostInvestorRequest::class) 
             ->withCustomFields()
-            ->add('name', 'editor', [
+            // ->add('name', 'editor', [
+            //     'label'      => trans('core/base::forms.name'),
+            //     'label_attr' => ['class' => 'control-label required'],
+            //     'attr'       => [
+            //         'rows'         => 2,
+            //         'placeholder'  => trans('core/base::forms.name_placeholder'),
+            //         'data-counter' => 120,
+            //     ],
+            // ])
+            ->add('name', 'text', [
                 'label'      => trans('core/base::forms.name'),
                 'label_attr' => ['class' => 'control-label required'],
                 'attr'       => [
-                    'rows'         => 2,
+                    
                     'placeholder'  => trans('core/base::forms.name_placeholder'),
                     'data-counter' => 120,
-                ],
-            ])
+                ]
+            ]) 
             ->add('status', 'customSelect', [ 
                 'label'      => trans('core/base::tables.status'),
                 'label_attr' => ['class' => 'control-label required'],
