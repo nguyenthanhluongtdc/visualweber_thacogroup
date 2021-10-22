@@ -125,53 +125,53 @@ if ($('.main-slider').length > 0) {
 
 }
 
-let logo_company = new Swiper('.logo-company', {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    centeredSlides: true,
-    loop: true,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
+// let logo_company = new Swiper('.logo-company', {
+//     slidesPerView: 1,
+//     spaceBetween: 0,
+//     centeredSlides: true,
+//     loop: true,
+//     autoplay: {
+//         delay: 3000,
+//         disableOnInteraction: false,
+//     },
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.logo-company .swiper-button-next',
-        prevEl: '.logo-company .swiper-button-prev',
-    },
-    breakpoints: {
-        768: {
-            slidesPerView: 3,
-            centeredSlides: true,
-            spaceBetween: 0,
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.logo-company .swiper-button-next',
-                prevEl: '.logo-company .swiper-button-prev',
-            },
-        },
-    },
-})
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     navigation: {
+//         nextEl: '.logo-company .swiper-button-next',
+//         prevEl: '.logo-company .swiper-button-prev',
+//     },
+//     breakpoints: {
+//         768: {
+//             slidesPerView: 3,
+//             centeredSlides: true,
+//             spaceBetween: 0,
+//             loop: true,
+//             autoplay: {
+//                 delay: 2500,
+//                 disableOnInteraction: false,
+//             },
+//             navigation: {
+//                 nextEl: '.logo-company .swiper-button-next',
+//                 prevEl: '.logo-company .swiper-button-prev',
+//             },
+//         },
+//     },
+// })
 
 // slider post home
 
 let newPostSlide = new Swiper('.new-post-slide', {
     spaceBetween: 30,
-    effect: "fade",
-    speed: 1500,
-    loop: true,
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-    },
+    // effect: "fade",
+    // speed: 1500,
+    // loop: true,
+    // autoplay: {
+    //     delay: 6000,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: '.new-post-slide .swiper-pagination',
         clickable: true,
@@ -285,6 +285,10 @@ let field_slider = new Swiper('.field-slider', {
         loop: true,
         slidesPerView: 3,
         spaceBetween: 25,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: '.field-slider .swiper-pagination',
             clickable: true,
@@ -447,7 +451,7 @@ if ($('#header').length > 0) {
     })
 }
 //scroll 
-// Hide Header on on scroll down
+// Hide Header  on scroll down
 
 $(document).mousemove(function(d) {
     var st = $(this).scrollTop();
@@ -671,6 +675,11 @@ let commercialFieldSlider = new Swiper('.commercial-field-slider', {
         el: '.commercial-field-slider .swiper-pagination',
         clickable: true,
     },
+    pagination: {
+        el: ".news-content-mobile .pagination-news",
+        type: "fraction",
+        clickable: true,
+    },
 
 
 })
@@ -686,10 +695,10 @@ $(document).ready(function() {
         roundLengths: true,
         loop: true,
         loopAdditionalSlides: 30,
-        // autoplay: {
-        //     delay: 1500,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"
@@ -708,11 +717,9 @@ $(function() {
         paginationClickable: true,
         spaceBetween: 0,
         pagination: {
-            el: '.swiper-pagination',
-            type: 'fraction',
-            formatFractionCurrent: function(number) {
-                return +number;
-            }
+            el: ".swiper-content-detail .swiper-pagination",
+            type: "fraction",
+            clickable: true,
         },
         navigation: {
             nextEl: '.swiper-button-next',
