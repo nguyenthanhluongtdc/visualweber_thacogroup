@@ -265,13 +265,13 @@
 
                         <div class="modal-body mCustomScrollbar p-0" data-mcs-theme="dark">
                             <div class="row mr-md-0 modal-content-top">
-                                <div class="col-md-5 p-0 col-5 col-right pl-md-4">
+                                <div class="col-md-5 p-0 col-5 col-right">
                                     <img class="w-100"
                                         src="{{ get_image_url(has_sub_field($item_member, 'image')) }}"
                                         alt="{!! has_sub_field($item_member, 'name') !!}">
 
                                 </div>
-                                <div class="col-md-7 col-7">
+                                <div class="col-md-7 col-7 pb-4 pt-4">
                                     <button type="button" class="close" data-dismiss="modal"
                                         aria-label="Close">
                                         <i class="fal fa-times"></i>
