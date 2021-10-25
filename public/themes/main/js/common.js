@@ -251,8 +251,8 @@ var newPostSlide_relate = new Swiper('.post-slide-relate', {
     },
     speed: 1000,
     navigation: {
-        nextEl: 'post-slide-relate .swiper-button-next',
-        prevEl: 'post-slide-relate .swiper-button-prev'
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
     },
     pagination: {
         el: '.swiper-pagination',
@@ -1053,13 +1053,13 @@ $(selector).on('click', function() {
 // }
 
 var element_fancy = '.post-content img';
+$(element_fancy).each(function() {
+    $(this).attr("data-fancybox", "gallery");
+})
 $(element_fancy).on('click', function() {
-    var tarGet; // initialize var at top of script
+    var tarGet;
     $(element_fancy).fancybox({
-        // selector: '.post-content     div',
-        // hash: false,
         beforeShow: function() {
-            // $('.post-content img').css('display', 'block');
             tarGet = element_fancy;
 
         },
@@ -1069,8 +1069,6 @@ $(element_fancy).on('click', function() {
         maxWidth: '100vw',
         maxHeight: '80vh',
         fitToView: false,
-        // width: '70%',
-        // height: '70%',
         autoSize: false,
         closeClick: false,
         openEffect: 'none',
