@@ -1166,27 +1166,3 @@ $('.post-detail-wrapper .content-main .post-content img').each(function() {
     $(this).removeAttr('data-fancybox')
     $(this).wrap(`<a href="${src}" data-fancybox="gallery" data-caption="${title}">`)
 })
-
-
-$(element_fancy).on('click', function() {
-    var tarGet;
-
-    $(element_fancy).fancybox({
-        beforeShow: function() {
-
-            tarGet = element_fancy;
-
-        },
-        afterClose: function() {
-            $(tarGet).show();
-        },
-        maxWidth: '100vw',
-        maxHeight: '80vh',
-        fitToView: false,
-        autoSize: false,
-        closeClick: false,
-        openEffect: 'none',
-        closeEffect: 'none'
-    });
-
-})
