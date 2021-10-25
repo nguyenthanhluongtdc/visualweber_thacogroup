@@ -210,6 +210,53 @@ let newPostSlide = new Swiper('.new-post-slide', {
         },
     },
 })
+let newPostSlide_home_mb = new Swiper('.post-home-slide-mb', {
+    spaceBetween: 30,
+    // effect: "fade",
+    // speed: 1500,
+    // loop: true,
+    // autoplay: {
+    //     delay: 6000,
+    //     disableOnInteraction: false,
+    // },
+    pagination: {
+        el: '.post-home-slide-mb .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.post-home-slide-mb .swiper-button-next',
+        prevEl: '.post-home-slide-mb .swiper-button-prev',
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 1,
+            // centeredSlides: true,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.post-home-slide-mb .swiper-button-next',
+                prevEl: '.post-home-slide-mb .swiper-button-prev',
+            },
+        },
+        480: {
+            slidesPerView: 1,
+            centeredSlides: false,
+            // spaceBetween: 40,
+            navigation: {
+                nextEl: '.post-home-slide-mb .swiper-button-next',
+                prevEl: '.post-home-slide-mb .swiper-button-prev',
+            },
+        },
+        320: {
+            slidesPerView: 1,
+            centeredSlides: false,
+            // spaceBetween: 40,
+            navigation: {
+                nextEl: '.post-home-slide-mb .swiper-button-next',
+                prevEl: '.post-home-slide-mb .swiper-button-prev',
+            },
+        },
+    },
+})
 let news_post_mobile = new Swiper('.new-post-slide-mb ', {
     effect: "fade",
     speed: 1500,
@@ -1055,11 +1102,15 @@ $(selector).on('click', function() {
 var element_fancy = '.post-content img';
 $(element_fancy).each(function() {
     $(this).attr("data-fancybox", "gallery");
+    // var titleCaption = $(this).attr('title').val();
+    // $(this).attr("data-caption", "titleCaption ");
 })
 $(element_fancy).on('click', function() {
     var tarGet;
+
     $(element_fancy).fancybox({
         beforeShow: function() {
+
             tarGet = element_fancy;
 
         },

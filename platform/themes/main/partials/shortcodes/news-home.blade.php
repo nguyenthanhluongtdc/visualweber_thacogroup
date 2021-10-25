@@ -77,35 +77,44 @@
         <div class="news-home-mobile" style="display: none">
             <div class="post-wrapper">
                 @if ($post_home_mobile = get_post_home_news(theme_option('number_post_home_news'), []))
-                    @foreach ($post_home_mobile as $item_post)
-                        <div class="post-item mb-4">
-                            <a class="" href=" {{ $item_post->url }}" title="{{ $item_post->name }}">
-                                <div class="post-thumbmail">
-                                    <img class="img-mw-100"
-                                        src="{{ RvMedia::getImageUrl($item_post->image, 'featured', false, RvMedia::getDefaultImage()) }}"
-                                        alt="{{ $item_post->name }}">
-                                </div>
-                                <div class="post-content">
-                                    <div class="time">
-                                        <div class="day">
-                                            {{ date_format($item_post->created_at, 'd') }}
+                 
+                <div class="swiper-container post-home-slide-mb"
+                    style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
+                    <div class="swiper-wrapper">\
+                        @foreach ($post_home_mobile as $item_post)
+                        <div class="swiper-slide">
+                            <div class="post-item mb-4">
+                                <a class="" href=" {{ $item_post->url }}" title="{{ $item_post->name }}">
+                                    <div class="post-thumbmail">
+                                        <img class="img-mw-100"
+                                            src="{{ RvMedia::getImageUrl($item_post->image, 'featured', false, RvMedia::getDefaultImage()) }}"
+                                            alt="{{ $item_post->name }}">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="time">
+                                            <div class="day">
+                                                {{ date_format($item_post->created_at, 'd') }}
+                                            </div>
+                                            <div class="month">
+                                                {{ date_format($item_post->created_at, 'm') }}
+                                            </div>
+                                            <div class="year">
+                                                {{ date_format($item_post->created_at, 'Y') }}
+                                            </div>
                                         </div>
-                                        <div class="month">
-                                            {{ date_format($item_post->created_at, 'M') }}
-                                        </div>
-                                        <div class="year">
-                                            {{ date_format($item_post->created_at, 'Y') }}
+                                        <div class="name">
+                                            <h3 class="">
+                                                {{ $item_post->name }}
+                                            </h3>
                                         </div>
                                     </div>
-                                    <div class="name">
-                                        <h3 class="">
-                                            {{ $item_post->name }}
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
-                    @endforeach
+                        @endforeach
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
                 @endif
             </div>
         </div>
