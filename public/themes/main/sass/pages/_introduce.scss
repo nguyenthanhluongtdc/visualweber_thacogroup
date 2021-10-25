@@ -75,6 +75,7 @@
                 height: 10vw;
                 @media only screen and (max-width: 600px) {
                     height: 20vw;
+                    min-height: 90px;
                 }
                 // @media only screen and (max-width: 420px) {
                 //     height: 25vw;
@@ -197,6 +198,11 @@
                     line-height: 15px;
                     @media only screen and (max-width: 420px) {
                         margin-top: 10px;
+                        font-size: 14px;
+                        height: 30px;
+                    }
+                    p {
+                        margin: 0;
                     }
                 }
             }
@@ -213,7 +219,7 @@
             text-align: center;
             padding-right: 10px;
             @media only screen and (max-width: 600px) {
-                padding-right: 5px;
+                padding-right: 2.5px;
             }
             .admin-item {
                 width: 38.4%;
@@ -226,7 +232,15 @@
                 }
                 .name {
                     margin-top: 10px;
-                    margin-bottom: -10px;
+                    line-height: 15px;
+                    // margin-bottom: -10px;
+                    @media only screen and (max-width: 420px) {
+                        font-size: 14px;
+                        height: 30px;
+                    }
+                    p {
+                        margin: 0;
+                    }
                 }
                 img {
                     width: 100%;
@@ -237,7 +251,9 @@
             width: 50%;
             margin-top: 20px;
             text-align: center;
-            // padding-left: 10px;
+            @media only screen and (max-width: 600px) {
+                padding-left: 2.5px;
+            }
             .admin-item {
                 float: left;
                 width: 38.4%;
@@ -249,7 +265,15 @@
                 }
                 .name {
                     margin-top: 10px;
-                    margin-bottom: -10px;
+                    line-height: 15px;
+                    // margin-bottom: -10px;
+                    @media only screen and (max-width: 420px) {
+                        font-size: 14px;
+                        height: 30px;
+                    }
+                    p {
+                        margin: 0;
+                    }
                 }
                 img {
                     width: 100%;
@@ -297,19 +321,40 @@
             }
             @media only screen and (max-width: 420px) {
                 width: 40%;
+                margin-right: unset;
+                display: unset;
             }
             .admin-item {
                 text-align: center;
                 .name {
                     margin-top: 20px;
                     margin-bottom: 0;
-                    line-height: 15px
+                    line-height: 15px;
+                    @media only screen and (max-width: 420px) {
+                        font-size: 14px;
+                        height: 30px;
+                    }
+                    p {
+                        margin: 0;
+                    }
                 }
                 // max-width: 200px;
                 // margin-right: 20px;
                 img {
                     width: 100%;
                 }
+            }
+        }
+        .item-member:nth-child(4),
+        .item-member:nth-child(6) {
+            @include maxWidth(420) {
+                padding-right: 2.5px;
+            }
+        }
+        .item-member:nth-child(5),
+        .item-member:nth-child(7) {
+            @include maxWidth(420) {
+                padding-left: 2.5px;
             }
         }
         .item-member:nth-child(8) {
@@ -335,7 +380,14 @@
                 .name {
                     margin-top: 20px;
                     margin-bottom: 0px;
-                    line-height: 15px
+                    line-height: 15px;
+                    @media only screen and (max-width: 420px) {
+                        font-size: 14px;
+                        height: 30px;
+                    }
+                    p {
+                        margin: 0;
+                    }
                 }
                 img {
                     width: 100%;
@@ -581,16 +633,10 @@
                 margin: 5% 0 -100px 0;
                 .img-content {
                     text-align: center;
-                    img {
-                        height: 126px;
-                    }
-                }
-                .desc {
-                    text-align: center;
-                    max-width: 70%;
-                    margin: 0 auto;
-                    p {
+                    .desc {
                         text-align: center;
+                        max-width: 70%;
+                        margin: 0 auto;
                     }
                 }
             }
@@ -642,10 +688,6 @@
             padding-top: 53vw;
             min-height: 440px;
         }
-        @media only screen and (max-width: 480px) {
-            padding-top: 75vh;
-            min-height: 440px;
-        }
         .develop-content-wrapper {
             position: absolute;
             top: 0;
@@ -691,7 +733,7 @@
                                 max-height: calc(37vw - 100px);
                                 cursor: pointer;
                                 @media only screen and (max-width: 768px) {
-                                    max-height: 400px;
+                                    max-height: 300px;
                                 }
                                 .mCSB_scrollTools .mCSB_draggerContainer {
                                     opacity: 0;
@@ -885,7 +927,7 @@
                 }
                 .carousel-controls {
                     position: absolute;
-                    bottom: 10px;
+                    bottom: 5px;
                     margin-right: 30px;
                     button:focus {
                         outline: none;
