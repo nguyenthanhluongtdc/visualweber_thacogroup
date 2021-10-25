@@ -149,10 +149,10 @@
                                         <img src="{{ get_object_image( $relatedItem->image) }}" alt="">
                                     </div>
                                     <div class="post-content-bottom">
-                                        <h4 class="name font20 text-uppercase">{{str::words( $relatedItem->name ,12)}}</h4>
+                                        <h4 class="name font20 text-uppercase">{{ $relatedItem->name}}</h4>
                                             <span class="time text-dark">{{ date_format($relatedItem->created_at, 'd/m/Y') }}</span>
                                             <p class="desc font18">
-                                                {{str::words($relatedItem->description,20)}}
+                                                {{$relatedItem->description}}
                                             </p>
                                     </div>
                                 </a>

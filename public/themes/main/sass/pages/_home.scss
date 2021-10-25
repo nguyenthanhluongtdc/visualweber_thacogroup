@@ -374,11 +374,15 @@
 
 .partner-wrapper {
     .title__company {
-        // margin: 10px 0;
-        // padding: 20px 0 10px 0;
         margin: 0;
         font-family: $MyriadPro-Bold;
         text-align: center;
+        @include maxWidth(480) {
+            font-size: 20px;
+        }
+        @include maxWidth(380) {
+            font-size: 16px;
+        }
     }
     .partner-banner {
         padding-top: 13vw;

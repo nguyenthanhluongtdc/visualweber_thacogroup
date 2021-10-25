@@ -228,7 +228,7 @@
                                 font-family: $MyriadPro-Bold;
                                 text-transform: uppercase;
                                 line-height: 22px;
-                                overflow: hidden;
+                                @include split_str(2);
                             }
                             .desc {
                                 @include split_str(3);
