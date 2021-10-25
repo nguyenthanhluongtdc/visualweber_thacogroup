@@ -95,6 +95,19 @@
                     <div class="text-content">
                        
                             {!! $post->content !!}
+                            @if (defined('GALLERY_MODULE_SCREEN_NAME') && !empty($galleries = gallery_meta_data($post)))
+                            <div class="post__content-galleries"> 
+                            @forelse($galleries as $gallery)
+                                {{-- <a data-fancybox="gallery" data-caption=" {{@$gallery['description']}}" class="d-block post__content-gallery--link" href="{{get_object_image(@$gallery['img'])}}"> --}}
+                                    <img class="post__content-gallery" src="{{get_object_image(@$gallery['img'])}}" alt="">
+                                    {{-- <p class="caption">
+                                        {{@$gallery['description']}}
+                                    </p> --}}
+                                 {{-- </a> --}}
+                                @empty
+                                @endforelse
+                            </div>
+                            @endif
                     </div>
                 </div>
                 <textarea id="printing-css" style="display:none;"></textarea>

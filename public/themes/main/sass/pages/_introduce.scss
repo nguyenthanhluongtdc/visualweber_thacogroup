@@ -451,8 +451,15 @@
                 @media only screen and (max-width: 1080px) {
                     width: 40vw;
                 }
-                @media only screen and (max-width: 420px) {
-                    font-size: 16px;
+                @media only screen and (max-width: 600px) {
+                    font-size: 15px;
+                }
+                @media only screen and (max-width: 450px) {
+                    font-size: 14px;
+                    width: 43vw;
+                }
+                @media only screen and (max-width: 400px) {
+                    font-size: 11px;
                     width: 43vw;
                 }
                 &:hover {
@@ -523,6 +530,9 @@
             flex-wrap: wrap;
             margin-left: -2%;
             margin-right: -2%;
+            @include maxWidth(480) {
+                display: none;
+            }
             .bottom-content {
                 flex: 1 25%;
                 max-width: 25%;
@@ -561,6 +571,15 @@
                     strong {
                         font-family: $MyriadPro-Bold;
                     }
+                }
+            }
+        }
+        .bottom-mb {
+            display: none;
+            @include maxWidth(480) {
+                display: block;
+                .img-content {
+                    text-align: center;
                 }
             }
         }

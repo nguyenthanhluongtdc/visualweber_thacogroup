@@ -108,6 +108,11 @@
                                 height: 35vh!important;
                             }
                         }
+                        .post__content-galleries {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                            grid-gap: 5px;
+                        }
                     }
                     img {
                         object-fit: cover;

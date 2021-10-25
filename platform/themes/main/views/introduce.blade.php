@@ -173,6 +173,31 @@
                                         </div>
                                     @endforeach
                                 </div>
+                                <div class="bottom-mb">
+                                    <div class="swiper-container slide-achivement" id="js-swiper-news"
+                                    style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
+                                        <div class="swiper-wrapper">
+                                            @foreach (has_sub_field($item_tab_content, 'achivement_year') as $key2 => $item_achivement_year)
+                                            <div class="swiper-slide">
+                                                <div class="bottom-content" data-aos="fade-up" data-aos-duration="700"
+                                                    data-aos-delay="50" class="aos-init aos-animate">
+                                                    <div class="img-content">
+        
+                                                        <img src="{{ get_image_url(has_sub_field($item_achivement_year, 'image')) }}"
+                                                            alt="{{ has_sub_field($item_achivement_year, 'year') }}">
+                                                        <div class="year font24">
+                                                            {{ has_sub_field($item_achivement_year, 'year') }}
+                                                        </div>
+                                                    </div>
+                                                    <div class="desc font18 text-justify">
+                                                        {!! has_sub_field($item_achivement_year, 'achivement_name') !!}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     @endforeach
