@@ -5,10 +5,13 @@ let slide_achivement = new Swiper('.slide-achivement', {
     spaceBetween: 0,
     centeredSlides: true,
     loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
+    speed: 1500,
+    observer: true,
+    observeParents: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
 
     pagination: {
         el: '.swiper-pagination',
@@ -18,18 +21,7 @@ let slide_achivement = new Swiper('.slide-achivement', {
         nextEl: '.slide-achivement .swiper-button-next',
         prevEl: '.slide-achivement .swiper-button-prev',
     },
-    breakpoints: {
-        768: {
-            slidesPerView: 3,
-            centeredSlides: true,
-            spaceBetween: 0,
-            loop: true,
-            navigation: {
-                nextEl: '.slide-achivement .swiper-button-next',
-                prevEl: '.slide-achivement .swiper-button-prev',
-            },
-        },
-    },
+
 })
 $('.slider-for').slick({
     slidesToShow: 1,
