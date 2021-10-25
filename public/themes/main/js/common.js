@@ -1161,7 +1161,7 @@ $(selector).on('click', function() {
 // })
 
 $('.post-detail-wrapper .content-main .post-content img').each(function() {
-    const title = $(this).attr('alt')
+    const title = $(this).attr('title')
     const src = $(this).attr('src')
     $(this).removeAttr('data-fancybox')
     $(this).wrap(`<a href="${src}" data-fancybox="gallery" data-caption="${title}">`)
