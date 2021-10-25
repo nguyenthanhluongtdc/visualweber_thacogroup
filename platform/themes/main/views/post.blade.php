@@ -101,8 +101,9 @@
                 <iframe id="printing-frame" name="print_frame" src="about:blank" style="display:none;"></iframe>
                 </div>
                 <div class="file">
+                    @if(has_field($post, 'repeater_file_media'))
                     <ul class="list-file">
-                        @if(has_field($post, 'repeater_file_media'))
+                       
                         @foreach(has_field($post, 'repeater_file_media') as $sub)
                         <li>
                             <a href="{{ get_image_url(has_sub_field($sub, 'file')) }}" target="_blank">
@@ -115,18 +116,8 @@
                             </a>
                         </li>
                         @endforeach
-                        @endif
-                            {{-- <li>
-                                <a href="{{ get_image_url(has_sub_field($sub, 'file')) }}" target="_blank">
-                                    {{has_sub_field($sub, 'file')}}
-                                   
-                                </a> 
-                                <span
-                                    class="left font-cond color-gray ml-2">{{@get_file_size(has_sub_field($sub, 'file'))}}</span>
-                            </li> --}}
-                          
-                      
                     </ul>
+                    @endif
                 </div>
                 <div class="post-tag">
                     {{-- <h4 class="title">{!!__('Từ khóa:')!!}</h4> --}}
@@ -178,19 +169,6 @@
                     </div>
                    
                 </div>
-                {{-- <ul class="list-post-related">
-                    @foreach ($relatedPosts as $relatedItem)
-                    <li class="font18">
-                        <a href="{{ $relatedItem->url }}">
-                            {!! $relatedItem->name !!}
-                        </a>
-                        <span class="time">{{date_format($post->created_at,"d/m/Y")}}</span>
-                    </li>
-                    @endforeach
-                   data-aos="fade-right" data-aos-duration="700" data-aos-delay="50"
-                    class="aos-init aos-animate"
-                </ul> --}}
-
             </div>
             @endif
         </div>
