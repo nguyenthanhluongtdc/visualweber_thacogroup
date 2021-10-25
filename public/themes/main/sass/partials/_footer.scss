@@ -113,7 +113,7 @@
                 img {
                     width: 73%;
                     @include maxWidth(600) {
-                        width: 61%
+                        width: 50%
                     }
                 }
             }
