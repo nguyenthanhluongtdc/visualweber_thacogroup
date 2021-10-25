@@ -1,4 +1,36 @@
 // slide develop introduce page
+
+let slide_achivement = new Swiper('.slide-achivement', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.slide-achivement .swiper-button-next',
+        prevEl: '.slide-achivement .swiper-button-prev',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            spaceBetween: 0,
+            loop: true,
+            navigation: {
+                nextEl: '.slide-achivement .swiper-button-next',
+                prevEl: '.slide-achivement .swiper-button-prev',
+            },
+        },
+    },
+})
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -1099,12 +1131,43 @@ $(selector).on('click', function() {
 //     // this should open the fancybox
 // }
 
-var element_fancy = '.post-content img';
-$(element_fancy).each(function() {
-    $(this).attr("data-fancybox", "gallery");
-    // var titleCaption = $(this).attr('title').val();
-    // $(this).attr("data-caption", "titleCaption ");
+// var element_fancy = '.post-content img';
+// $(element_fancy).each(function() {
+//     $(this).attr("data-fancybox", "gallery");
+//     // var titleCaption = $(this).attr('title').val();
+//     // $(this).attr("data-caption", "titleCaption ");
+// })
+// $(element_fancy).on('click', function() {
+//     var tarGet;
+
+//     $(element_fancy).fancybox({
+//         beforeShow: function() {
+
+//             tarGet = element_fancy;
+
+//         },
+//         afterClose: function() {
+//             $(tarGet).show();
+//         },
+//         maxWidth: '100vw',
+//         maxHeight: '80vh',
+//         fitToView: false,
+//         autoSize: false,
+//         closeClick: false,
+//         openEffect: 'none',
+//         closeEffect: 'none'
+//     });
+
+// })
+
+$('.post-detail-wrapper .content-main .post-content img').each(function() {
+    const title = $(this).attr('alt')
+    const src = $(this).attr('src')
+    $(this).removeAttr('data-fancybox')
+    $(this).wrap(`<a href="${src}" data-fancybox="gallery" data-caption="${title}">`)
 })
+
+
 $(element_fancy).on('click', function() {
     var tarGet;
 
