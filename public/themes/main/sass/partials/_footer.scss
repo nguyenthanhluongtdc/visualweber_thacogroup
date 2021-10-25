@@ -99,7 +99,7 @@
             text-decoration: none;
             display: block;
         }
-    } 
+    }
 }
 
 @media screen and (max-width:992px) {
@@ -111,18 +111,25 @@
                 margin-bottom: 20px;
                 width: max-content;
                 img {
-                    width: 80%;
+                    width: 73%;
+                    @include maxWidth(600) {
+                        width: 61%
+                    }
                 }
             }
             .company_name {
                 text-align: unset;
                 margin-bottom: 30px;
+                h4 {
+                    @include maxWidth(420) {
+                        font-size: 15px;
+                    }
+                }
             }
             .office-wrapper {
                 display: unset;
                 .office {
                     position: relative;
-                   
                     .title {
                         padding-left: 20px;
                         padding-top: 10px;
@@ -132,7 +139,7 @@
                     }
                     .address {
                         max-width: unset;
-                        p{
+                        p {
                             color: #fff !important;
                         }
                     }
@@ -193,6 +200,9 @@
                 color: $white;
                 text-align: center;
                 padding: 10px;
+                @include maxWidth(480) {
+                    font-size: 13px;
+                }
             }
         }
     }
