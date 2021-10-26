@@ -2926,7 +2926,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
 //custom-scrollbar
 
  //pagination
@@ -37683,7 +37682,7 @@ var render = function() {
                                             [
                                               _c("i", {
                                                 staticClass:
-                                                  "fal fa-arrow-to-bottom"
+                                                  "fas fa-download text-white"
                                               })
                                             ]
                                           )
@@ -37752,7 +37751,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "dropdown dr-mb dl" }, [
                       _c("div", { staticClass: "dt" }, [
-                        _c("span", [_vm._v(_vm._s(_vm.__("Thư viện ảnh")))]),
+                        _c("span", [_vm._v(_vm._s(_vm.__("Thư viện video")))]),
                         _vm._v(" "),
                         _c("i", { staticClass: "fal fa-angle-down" })
                       ]),
@@ -37784,7 +37783,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                       Thư viện ảnh\n                      "
+                                    "\n                       Thư viện video\n                      "
                                   )
                                 ]
                               )
@@ -38331,30 +38330,16 @@ var render = function() {
               { staticClass: "name font28 text-center font-weight-bold" },
               [
                 _vm._v(
-                  "\n          " +
-                    _vm._s(
-                      _vm.postActive.name
-                        ? _vm.postActive.name
-                        : _vm.postActive.description
-                    ) +
-                    "\n        "
+                  "\n          " + _vm._s(_vm.postActive.name) + "\n        "
                 )
               ]
             )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "post-img" }, [
-            _vm.postActive.image
-              ? _c("img", {
-                  attrs: { src: "storage/" + _vm.postActive.image, alt: "" }
-                })
-              : _vm._e(),
-            _vm._v(" "),
-            _vm.postActive.img
-              ? _c("img", {
-                  attrs: { src: "storage/" + _vm.postActive.img, alt: "" }
-                })
-              : _vm._e()
+            _c("img", {
+              attrs: { src: "storage/" + _vm.postActive.image, alt: "" }
+            })
           ])
         ])
       ]),

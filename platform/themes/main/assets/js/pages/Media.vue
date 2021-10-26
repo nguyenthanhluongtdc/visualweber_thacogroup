@@ -172,7 +172,7 @@
                       </div>
                       <div class="icon--download">
                         <a download :href="'storage/' + item.image" :title="__('Tải xuống')">
-                           <i class="fal fa-arrow-to-bottom"></i>
+                          <i class="fas fa-download text-white"></i>
                         </a>
                       </div>
                     </div>
@@ -245,7 +245,7 @@
               </ul>
 
               <div class="dropdown dr-mb dl">
-                <div class="dt"><span>{{__('Thư viện ảnh')}}</span> <i class="fal fa-angle-down"></i></div>
+                <div class="dt"><span>{{__('Thư viện video')}}</span> <i class="fal fa-angle-down"></i></div>
                   <div class="dd">
                     <ul style="display: none;" class="nav nav-tabs" id="tab-media" role="tablist">
                       <li>
@@ -259,7 +259,7 @@
                           href="#media-video"
                           :title="__('Albums')"
                         >
-                         Thư viện ảnh
+                         Thư viện video
                         </a>
                       </li>
                       <li>
@@ -508,14 +508,13 @@
             </button>
           </p>
           <h2 class="name font28 text-center font-weight-bold">
-            {{ postActive.name?postActive.name:postActive.description }}
+            {{ postActive.name }}
           </h2>
           
         </div>
 
         <div class="post-img">
-          <img :src="'storage/' + postActive.image" alt="" v-if="postActive.image">
-           <img :src="'storage/' + postActive.img" alt="" v-if="postActive.img">
+          <img :src="'storage/' + postActive.image" alt="">
         </div>
        
       </div>
