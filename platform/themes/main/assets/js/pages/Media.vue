@@ -160,7 +160,7 @@
                       v-for="item in dataImage.data"
                       :key="item.id"
                     >
-                      <div class="image-item__img" @click="loadAlbumGallery(item.id)">
+                      <div class="image-item__img" @click="imageActive(item)">
                         <img class="" :src="'storage/' + item.image" alt="" />
                       </div>
                       <div
@@ -430,7 +430,7 @@
                 v-for="(item, i) in galleryImage.data"
                 :key="i"
               >
-                <div class="box-img" @click="showModalSliderImage">
+                <div class="box-img" @click="imageActive(item)">
                   <img :src="'storage/' + item.img" class="fit-cover" />
                 </div>
                 <div class="icon--download">
@@ -508,42 +508,15 @@
             </button>
           </p>
           <h2 class="name font28 text-center font-weight-bold">
-            {{ galleryImage.name }}
+            {{ postActive.name }}
           </h2>
           
         </div>
 
-        <div class="modal-body-custom">
-          <template>
-            <div class="swiper-galleryImage h-100">
-              <swiper ref="galleryImage" class="swiper" :options="swiperOptions">
-                <swiper-slide
-                  v-if="galleryImage"
-                  v-for="(item, i) in galleryImage.data"
-                  :key="i"
-                >
-                  <img
-                    :src="'storage/' + item.img"
-                    alt=""
-                    class="w-100 h-100 fit-cover"
-                  />
-                  <!-- <div class="icon--download">
-                                        <a download :href="'storage/'+item.img" title="Tải xuống">
-                                            <i class="fas fa-download text-white"></i>
-                                        </a>
-                                    </div> -->
-                </swiper-slide>
-
-                <div class="swiper-pagination" slot="pagination"></div>
-                <div class="swiper-button-prev" slot="button-prev"></div>
-                <div class="swiper-button-next" slot="button-next"></div>
-              </swiper>
-            </div>
-          </template>
+        <div class="post-img">
+          <img :src="'storage/' + postActive.image" alt="">
         </div>
-         <p class="name font18 text-center mt-3">
-            {{ galleryImage.description }}
-          </p>
+       
       </div>
     </modal>
     <!---end modal-detail--->
@@ -663,6 +636,8 @@
           },
         },
         indexItem: -1,
+
+        postActive: {},
 
         settingsScrollbar: {
           suppressScrollY: false,
@@ -888,6 +863,11 @@
             console.log(error);
           });
       },
+
+      imageActive: function(image) {
+        this.postActive = image;
+        this.showGallery('');
+      }
     
     },
 
