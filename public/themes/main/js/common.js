@@ -908,7 +908,13 @@ var Ajax = {
                     if ($('.render-html').length) {
                         $('.render-html').show()
                         $("#breadcrum").load(" #breadcrum1");
-                        $('.render-html').html(data.html)
+                        $('.render-html').html(data.html);
+                        if ($('.itemdown-show').length > 0) {
+                            $('.itemdown-show').click(function() {
+                                $(this).parents('.info-right').find('.downcontent').slideToggle();
+                                return false;
+                            });
+                        }
 
                         window.history.pushState({}, '', data.url)
                     }
@@ -948,7 +954,12 @@ var Ajax = {
                         $('.render-media').show()
                         $("#breadcrum").load(" #breadcrum1");
                         $('.render-media').html(data.html)
-
+                        if ($('.itemdown-show').length > 0) {
+                            $('.itemdown-show').click(function() {
+                                $(this).parents('.info-right').find('.downcontent').slideToggle();
+                                return false;
+                            });
+                        }
                         window.history.pushState({}, '', data.url)
                             // init slide after load ajax
                         let newPostSlide = new Swiper('.new-post-slide', {

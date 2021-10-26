@@ -68,10 +68,5 @@
 
 <script>
     window.urlDownload = "{{route('api-investor.download')}}";
-    if ($('.itemdown-show').length > 0) {
-    $('.itemdown-show').click(function() {
-        $(this).parents('.info-right').find('.downcontent').slideToggle();
-        return false;
-    });
 }
 </script>

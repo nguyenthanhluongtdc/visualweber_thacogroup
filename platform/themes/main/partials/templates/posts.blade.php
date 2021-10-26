@@ -157,11 +157,4 @@
         @includeIf("theme.main::views.pages.post.post")
     </div>
 </div>
-<script>
-    if ($('.itemdown-show').length > 0) {
-    $('.itemdown-show').click(function() {
-        $(this).parents('.info-right').find('.downcontent').slideToggle();
-        return false;
-    });
-}
-</script>
+
