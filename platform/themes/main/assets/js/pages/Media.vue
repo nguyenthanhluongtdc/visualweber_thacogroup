@@ -172,7 +172,7 @@
                       </div>
                       <div class="icon--download">
                         <a download :href="'storage/' + item.image" :title="__('Tải xuống')">
-                          <i class="fas fa-download text-white"></i>
+                           <i class="fal fa-arrow-to-bottom"></i>
                         </a>
                       </div>
                     </div>
