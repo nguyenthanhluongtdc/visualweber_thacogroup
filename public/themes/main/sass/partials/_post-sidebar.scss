@@ -173,7 +173,7 @@
             //     }
             // }
             .list-post-new {
-                padding: 0 10px !important;
+                // padding: 0 10px !important;
                 .wrap {
                     padding: 0;
                     h2 {
@@ -183,8 +183,8 @@
                         padding-bottom: 15px;
                         display: flex;
                         .post-thumbnail-wrap {
-                            flex: 1 50%;
-                            max-width: 50%;
+                            flex: 1 37%;
+                            max-width: 37%;
                             .post-thumbnail {
                                 img {
                                     height: unset;
@@ -196,7 +196,7 @@
                             // // font-size: 25px;
                             padding: 2%;
                             flex: 1;
-                            max-width: 50%;
+                            max-width: 63%;
                             height: auto;
                             font-size: 35px;
                             line-height: 1.2;
