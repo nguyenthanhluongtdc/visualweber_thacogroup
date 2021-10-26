@@ -508,13 +508,14 @@
             </button>
           </p>
           <h2 class="name font28 text-center font-weight-bold">
-            {{ postActive.name }}
+            {{ postActive.name?postActive.name:postActive.description }}
           </h2>
           
         </div>
 
         <div class="post-img">
-          <img :src="'storage/' + postActive.image" alt="">
+          <img :src="'storage/' + postActive.image" alt="" v-if="postActive.image">
+           <img :src="'storage/' + postActive.img" alt="" v-if="postActive.img">
         </div>
        
       </div>
