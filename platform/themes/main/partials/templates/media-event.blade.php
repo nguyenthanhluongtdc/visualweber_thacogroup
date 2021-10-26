@@ -136,5 +136,11 @@
         if($('.media__content_left.events').length>0){
             $('.media-tab').css('display','none');
         }
+        if ($('.itemdown-show').length > 0) {
+    $('.itemdown-show').click(function() {
+        $(this).parents('.info-right').find('.downcontent').slideToggle();
+        return false;
+    });
+}
      </script>
    
