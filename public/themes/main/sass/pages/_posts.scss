@@ -425,128 +425,54 @@
                 .news-content-mobile {
                     display: block!important;
                     .post-wrapper {
-                        .post-home-slide-mb {
+                        .post-news-mobile {
                             padding-bottom: 20px;
+                            padding-left: 8px;
+                            padding-right: 8px;
                         }
                         .post-item {
                             a {
-                                color: $white;
+                                color: unset;
                                 display: block;
-                                text-transform: uppercase;
-                                img {
-                                    height: 30vh;
-                                    object-fit: cover;
-                                    object-position: center;
-                                }
-                                .post-content {
-                                    background-color: $main_color;
-                                    display: flex;
-                                    .time {
-                                        flex: 1 15%;
-                                        max-width: 15%;
-                                        padding: 15px 0;
-                                        font-family: $MyriadPro-Bold;
-                                        text-align: center;
-                                        .day {
-                                            font-size: 20px;
-                                            line-height: 15px;
-                                        }
-                                        .month {
-                                            font-size: 30px;
-                                            line-height: 30px;
-                                        }
-                                        .year {
-                                            font-size: 15px;
-                                            line-height: 15px;
+                                box-shadow: 0 5px 8px -5px #555;
+                                margin-top: 8px;
+                                margin-bottom: 8px;
+                                overflow: hidden;
+                                .post-thumbmail {
+                                    width: 100%;
+                                    height: 0%;
+                                    padding-bottom: 60%;
+                                    overflow: hidden;
+                                    position: relative;
+                                    .post-img {
+                                        width: 100%;
+                                        height: 100%;
+                                        position: absolute;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
                                         }
                                     }
-                                    .name {
-                                        position: relative;
+                                }
+                                .post-content {
+                                    margin: 20px;
+                                    .post_name {
                                         font-family: $MyriadPro-Bold;
-                                        display: flex;
-                                        align-items: center;
-                                        h3 {
-                                            margin: 0;
-                                            font-size: 25px;
-                                            margin: 15px 30px;
-                                            @include split_str(2);
-                                        }
-                                        &::before {
-                                            content: "";
-                                            position: absolute;
-                                            width: 1px;
-                                            height: 90%;
-                                            background: #f1f1f1;
-                                        }
+                                        @include split_str(2);
+                                        text-transform: uppercase;
+                                        height: 38px;
+                                        line-height: 19px
+                                    }
+                                    .post_description {
+                                        @include split_str(3);
+                                        line-height: 22px;
+                                        height: 68px;
                                     }
                                 }
                             }
                         }
                     }
-                    // position: relative;
-                    // .swiper-container {
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     .swiper-wrapper {
-                    //         .news-content {
-                    //             height: 60vw;
-                    //             min-height: 470px;
-                    //             // min-height: 370px;
-                    //             .img-post {
-                    //                 height: 80%;
-                    //                 img {
-                    //                     width: 100%;
-                    //                     height: 100%;
-                    //                     object-fit: cover;
-                    //                     object-position: bottom;
-                    //                 }
-                    //             }
-                    //             .name {
-                    //                 height: 15%;
-                    //                 display: flex;
-                    //                 align-items: center;
-                    //                 h3 {
-                    //                     text-transform: uppercase;
-                    //                     padding: 0 20px;
-                    //                     margin: 0;
-                    //                     font-family: $MyriadPro-Bold;
-                    //                     @include split_str(2);
-                    //                     font-size: 20px;
-                    //                 }
-                    //                 background-color: #f1f1f1;
-                    //             }
-                    //         }
-                    //     }
-                    // }
-                    // .control-slide-news {
-                    //     position: absolute;
-                    //     left: 47%;
-                    //     bottom: -2px;
-                    //     .pagination-news {
-                    //         display: flex;
-                    //         bottom: -12px;
-                    //         font-family: $MyriadPro-Bold;
-                    //     }
-                    //     .swiper-pagination-current {
-                    //         color: $main_color;
-                    //     }
-                    //     .swiper-button-next {
-                    //         &::after {
-                    //             font-size: 20px;
-                    //             font-weight: bold;
-                    //             color: $main_color;
-                    //         }
-                    //         right: -65px;
-                    //     }
-                    //     .swiper-button-prev {
-                    //         &::after {
-                    //             font-size: 20px;
-                    //             font-weight: bold;
-                    //             color: $main_color;
-                    //         }
-                    //         left: -45px;
-                    //     }
-                    // }
                 }
                 .news-content-mobile.human {
                     margin-bottom: 5%;
@@ -588,24 +514,6 @@
 }
 
 @media screen and(max-width:768px) {
-    .media_content-wrapper .media-content .content-left {
-        .news-content-mobile {
-            .post-wrapper {
-                .post-item {
-                    a {
-                        .post-content {
-                            .name {
-                                h3 {
-                                    margin: 15px 20px;
-                                    font-size: 20px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
     .media_content-wrapper {
         .media-content {
             .content-left {
@@ -658,51 +566,9 @@
             }
         }
     }
-    .media_content-wrapper .media-content .content-left {
-        .news-content-mobile {
-            .post-wrapper {
-                .post-item {
-                    a {
-                        .post-content {
-                            .time {
-                                padding: 15px;
-                                .day {
-                                    font-size: 15px;
-                                    line-height: 12px;
-                                }
-                                .month {
-                                    font-size: 20px;
-                                    line-height: 20px;
-                                }
-                                .year {
-                                    font-size: 12px;
-                                    line-height: 12px;
-                                }
-                            }
-                            .name {
-                                h3 {
-                                    margin: 15px;
-                                    font-size: 16px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media screen and(max-width:480px) {
-    // .news-content-mobile {
-    //     .news-content {
-    //         .name {
-    //             h3 {
-    //                 font-size: 17px;
-    //             }
-    //         }
-    //     }
-    // }
     .media_content-wrapper {
         .media-content {
             .content-left {
@@ -741,26 +607,5 @@
 @media screen and(max-width:380px) {
     .media-tab .media-tab-wrapper .media-tab__title .media__tabs .nav-tabs .__tabs__item {
         margin-right: 20px;
-    }
-    .media_content-wrapper .media-content .content-left {
-        .news-content-mobile {
-            .post-wrapper {
-                .post-item {
-                    a {
-                        .post-content {
-                            .time {
-                                padding: 7px;
-                            }
-                            .name {
-                                h3 {
-                                    margin: 7px;
-                                    font-size: 12px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
