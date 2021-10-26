@@ -149,16 +149,16 @@
                             height: auto;
                             font-size: 35px;
                             line-height: 1.2;
-                            @include split_str(2);
+                            @include split_str(3);
                         }
                         @media only screen and (max-width: 768px) {
                             font-size: 25px;
                         }
                         @media only screen and (max-width: 600px) {
-                            font-size: 20px;
+                            font-size: 18px;
                         }
                         @media only screen and (max-width: 480px) {
-                            font-size: 18px;
+                            font-size: 15px;
                         }
                         @media only screen and (max-width: 350px) {
                             font-size: 14px;
@@ -176,7 +176,7 @@
                     width: max-content;
                     float: right;
                     @media only screen and (max-width: 1080px) {
-                        font-family: $MyriadPro-Regular;
+                        // font-family: $MyriadPro-Regular;
                         float: unset;
                     }
                     @media only screen and (max-width: 992px) {
