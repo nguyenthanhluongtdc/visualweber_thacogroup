@@ -63,32 +63,39 @@
             @endif --}}
 
             {{-- Pagination Elements --}}
-            @foreach ($elements as $element)
-                {{-- "Three Dots" Separator --}}
-                @if (is_string($element))
-                    <li class="disabled page-item mb-1" aria-disabled="true"><span class="font25 bg-white text-dark border-0 page-link">{{ $element }}</span></li>
-                @endif
-
-                {{-- Array Of Links --}}
-                @if (is_array($element))
-                    @foreach ($element as $page => $url)
-                        @if ($page == $paginator->currentPage())
-                            <li class="page-item active mb-1" aria-current="page">
-                                <span class="page-link">
-                                    {{$page}}
-                                </span>
-                            </li>
-                        @else
-                            {{-- <li><a href="{{ $url }}">{{ $page }}</a></li> --}}
-                            <li class="page-item mb-1" aria-current="page">
-                                <a class="page-link" href="{{ $url }}">
-                                    {{$page}}
-                                </a>
-                            </li>
-                        @endif
-                    @endforeach
-                @endif
-            @endforeach
+              <?php
+              $start = $paginator->currentPage() - 2; // show 3 pagination links before current
+              $end = $paginator->currentPage() +2 ; // show 3 pagination links after current
+              if($start < 1) {
+                  $start = 1; // reset start to 1
+                  $end += 1;
+              } 
+              if($end >= $paginator->lastPage() ) $end = $paginator->lastPage(); // reset end to last page
+          ?>
+      
+          @if($start > 1)
+              <li class="page-item">
+                  <a class="page-link" href="{{ $paginator->url(1) }}">{{1}}</a>
+              </li>
+              @if($paginator->currentPage() != 4)
+                  {{-- "Three Dots" Separator --}}
+                  <li class="disabled page-item mb-1" aria-disabled="true"><span class="font25 bg-white text-dark border-0 page-link">...</span></li>
+              @endif
+          @endif
+              @for ($i = $start; $i <= $end; $i++)
+                  <li class="page-item {{ ($paginator->currentPage() == $i) ? ' active' : '' }}">
+                      <a class="page-link" href="{{ $paginator->url($i) }}">{{$i}}</a>
+                  </li>
+              @endfor
+          @if($end < $paginator->lastPage())
+              @if($paginator->currentPage() + 3 != $paginator->lastPage())
+                  {{-- "Three Dots" Separator --}}
+                  <li class="disabled page-item mb-1" aria-disabled="true"><span class="font25 bg-white text-dark border-0 page-link">...</span></li>
+              @endif
+              <li class="page-item">
+                  <a class="page-link" href="{{ $paginator->url($paginator->lastPage()) }}">{{$paginator->lastPage()}}</a>
+              </li>
+          @endif
 
             {{-- Next Page Link --}}
             @if ($paginator->hasMorePages())
