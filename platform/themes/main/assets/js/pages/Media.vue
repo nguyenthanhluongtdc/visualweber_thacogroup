@@ -430,7 +430,7 @@
                 v-for="(item, i) in galleryImage.data"
                 :key="i"
               >
-                <div class="box-img" @click="imageActive(item)">
+                <div class="box-img" @click="loadAlbumGallery(item.id)">
                   <img :src="'storage/' + item.img" class="fit-cover" />
                 </div>
                 <div class="icon--download">
@@ -495,6 +495,34 @@
     </modal>
     <!---end modal-album--->
 
+   <modal name="postActive-modal">
+      <div class="modal-main">
+        <div class="modal-header-custom">
+          <p class="text-right mb-0">
+            <button
+              class="btn-close border-0 font30 font-weight-normal bg-white"
+              @click="$modal.hide('postActive-modal')"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </p>
+          <h2 class="name font28 text-center font-weight-bold">
+            {{ postActive.name }}
+          </h2>
+          
+        </div>
+
+        <div class="post-img">
+           <img
+              :src="'storage/' + postActive.image"
+              :alt="postActive.name"
+              class="w-100 h-100 fit-cover"
+            />
+        </div>
+
+      </div>
+    </modal>
+
     <!---modal-detail--->
     <modal name="sliderImage-modal">
       <div class="modal-main">
@@ -508,16 +536,42 @@
             </button>
           </p>
           <h2 class="name font28 text-center font-weight-bold">
-            {{ postActive.name?postActive.name:postActive.description }}
+            {{ galleryImage.name }}
           </h2>
           
         </div>
 
-        <div class="post-img">
-          <img :src="'storage/' + postActive.image" alt="" v-if="postActive.image">
-           <img :src="'storage/' + postActive.img" alt="" v-if="postActive.img">
+        <div class="modal-body-custom">
+          <template>
+            <div class="swiper-galleryImage h-100">
+              <swiper ref="galleryImage" class="swiper" :options="swiperOptions">
+                <swiper-slide
+                  v-if="galleryImage"
+                  v-for="(item, i) in galleryImage.data"
+                  :key="i"
+                >
+                  <img
+                    :src="'storage/' + item.img"
+                    alt=""
+                    class="w-100 h-100 fit-cover"
+                  />
+                  <!-- <div class="icon--download">
+                                        <a download :href="'storage/'+item.img" title="Tải xuống">
+                                            <i class="fas fa-download text-white"></i>
+                                        </a>
+                                    </div> -->
+                </swiper-slide>
+
+                <div class="swiper-pagination" slot="pagination"></div>
+                <div class="swiper-button-prev" slot="button-prev"></div>
+                <div class="swiper-button-next" slot="button-next"></div>
+              </swiper>
+            </div>
+          </template>
         </div>
-       
+         <p class="name font18 text-center mt-3">
+            {{ galleryImage.description }}
+          </p>
       </div>
     </modal>
     <!---end modal-detail--->
@@ -867,7 +921,7 @@
 
       imageActive: function(image) {
         this.postActive = image;
-        this.showGallery('');
+        this.$modal.show("postActive-modal");
       }
     
     },
