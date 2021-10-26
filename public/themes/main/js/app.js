@@ -2911,6 +2911,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 //custom-scrollbar
 
  //pagination
@@ -38315,16 +38316,30 @@ var render = function() {
               { staticClass: "name font28 text-center font-weight-bold" },
               [
                 _vm._v(
-                  "\n          " + _vm._s(_vm.postActive.name) + "\n        "
+                  "\n          " +
+                    _vm._s(
+                      _vm.postActive.name
+                        ? _vm.postActive.name
+                        : _vm.postActive.description
+                    ) +
+                    "\n        "
                 )
               ]
             )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "post-img" }, [
-            _c("img", {
-              attrs: { src: "storage/" + _vm.postActive.image, alt: "" }
-            })
+            _vm.postActive.image
+              ? _c("img", {
+                  attrs: { src: "storage/" + _vm.postActive.image, alt: "" }
+                })
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.postActive.img
+              ? _c("img", {
+                  attrs: { src: "storage/" + _vm.postActive.img, alt: "" }
+                })
+              : _vm._e()
           ])
         ])
       ]),
