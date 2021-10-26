@@ -2911,6 +2911,61 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //custom-scrollbar
 
  //pagination
@@ -3290,7 +3345,7 @@ swiper_js_swiper_esm__WEBPACK_IMPORTED_MODULE_5__.Swiper.use([swiper_js_swiper_e
     }(),
     imageActive: function imageActive(image) {
       this.postActive = image;
-      this.showGallery('');
+      this.$modal.show("postActive-modal");
     }
   },
   //computed
@@ -38158,7 +38213,7 @@ var render = function() {
                                 staticClass: "box-img",
                                 on: {
                                   click: function($event) {
-                                    return _vm.imageActive(item)
+                                    return _vm.loadAlbumGallery(item.id)
                                   }
                                 }
                               },
@@ -38295,6 +38350,48 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
+      _c("modal", { attrs: { name: "postActive-modal" } }, [
+        _c("div", { staticClass: "modal-main" }, [
+          _c("div", { staticClass: "modal-header-custom" }, [
+            _c("p", { staticClass: "text-right mb-0" }, [
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "btn-close border-0 font30 font-weight-normal bg-white",
+                  on: {
+                    click: function($event) {
+                      return _vm.$modal.hide("postActive-modal")
+                    }
+                  }
+                },
+                [_c("i", { staticClass: "fas fa-times" })]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "h2",
+              { staticClass: "name font28 text-center font-weight-bold" },
+              [
+                _vm._v(
+                  "\n          " + _vm._s(_vm.postActive.name) + "\n        "
+                )
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "post-img" }, [
+            _c("img", {
+              staticClass: "w-100 h-100 fit-cover",
+              attrs: {
+                src: "storage/" + _vm.postActive.image,
+                alt: _vm.postActive.name
+              }
+            })
+          ])
+        ])
+      ]),
+      _vm._v(" "),
       _c("modal", { attrs: { name: "sliderImage-modal" } }, [
         _c("div", { staticClass: "modal-main" }, [
           _c("div", { staticClass: "modal-header-custom" }, [
@@ -38315,16 +38412,74 @@ var render = function() {
               { staticClass: "name font28 text-center font-weight-bold" },
               [
                 _vm._v(
-                  "\n          " + _vm._s(_vm.postActive.name) + "\n        "
+                  "\n          " + _vm._s(_vm.galleryImage.name) + "\n        "
                 )
               ]
             )
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "post-img" }, [
-            _c("img", {
-              attrs: { src: "storage/" + _vm.postActive.image, alt: "" }
-            })
+          _c(
+            "div",
+            { staticClass: "modal-body-custom" },
+            [
+              [
+                _c(
+                  "div",
+                  { staticClass: "swiper-galleryImage h-100" },
+                  [
+                    _c(
+                      "swiper",
+                      {
+                        ref: "galleryImage",
+                        staticClass: "swiper",
+                        attrs: { options: _vm.swiperOptions }
+                      },
+                      [
+                        _vm._l(_vm.galleryImage.data, function(item, i) {
+                          return _vm.galleryImage
+                            ? _c("swiper-slide", { key: i }, [
+                                _c("img", {
+                                  staticClass: "w-100 h-100 fit-cover",
+                                  attrs: { src: "storage/" + item.img, alt: "" }
+                                })
+                              ])
+                            : _vm._e()
+                        }),
+                        _vm._v(" "),
+                        _c("div", {
+                          staticClass: "swiper-pagination",
+                          attrs: { slot: "pagination" },
+                          slot: "pagination"
+                        }),
+                        _vm._v(" "),
+                        _c("div", {
+                          staticClass: "swiper-button-prev",
+                          attrs: { slot: "button-prev" },
+                          slot: "button-prev"
+                        }),
+                        _vm._v(" "),
+                        _c("div", {
+                          staticClass: "swiper-button-next",
+                          attrs: { slot: "button-next" },
+                          slot: "button-next"
+                        })
+                      ],
+                      2
+                    )
+                  ],
+                  1
+                )
+              ]
+            ],
+            2
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "name font18 text-center mt-3" }, [
+            _vm._v(
+              "\n          " +
+                _vm._s(_vm.galleryImage.description) +
+                "\n        "
+            )
           ])
         ])
       ]),
