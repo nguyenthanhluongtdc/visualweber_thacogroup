@@ -588,9 +588,14 @@
             }
         }
     }
-    .media-tab .media-wrapper .tab-pane .media-slider .swiper-slide img {
-        height: unset;
-        object-fit: unset;
+    .media-tab .media-wrapper .tab-pane .media-slider {
+        .swiper-slide img {
+            height: 35vh;
+            object-fit: cover;
+        }
+        .swiper-slide .__video {
+            height: 35vh;
+        }
     }
     .media-tab {
         .media-wrapper {
