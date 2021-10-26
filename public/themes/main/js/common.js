@@ -281,13 +281,10 @@ let newPostSlide_home_mb = new Swiper('.post-home-slide-mb', {
         },
     },
 })
-let news_post_mobile = new Swiper('.new-post-slide-mb ', {
-    effect: "fade",
+let news_post_mobile = new Swiper('.post-news-mobile', {
     speed: 1500,
     pagination: {
-        el: ".news-content-mobile .pagination-news",
-        type: "fraction",
-        clickable: true,
+        el: ".news-content-mobile .swiper-pagination",
     },
     navigation: {
         nextEl: '.news-content-mobile .swiper-button-next',

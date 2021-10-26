@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="news-content-mobile human" style="display: none">
-            <div class="swiper-container new-post-slide-mb " id="js-swiper-news"
+            {{-- <div class="swiper-container new-post-slide-mb " id="js-swiper-news"
                 style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
                 <div class="swiper-wrapper">
                     @if (!empty($postSlider))
@@ -101,6 +101,38 @@
                 <div class="swiper-pagination pagination-news"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+            </div> --}}
+            <div class="post-wrapper">
+                <div class="swiper-container post-news-mobile"
+                    style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
+                    <div class="swiper-wrapper">
+                        @if (!empty($postSlider))
+                        @foreach ($postSlider as $item_post)
+                        <div class="swiper-slide">
+                            <div class="post-item mb-4">
+                                <a class="" href=" {{ $item_post->url }}" title="{{ $item_post->name }}">
+                                    <div class="post-thumbmail">
+                                        <div class="post-img">
+                                            <img class="img-mw-100"
+                                            src="{{ RvMedia::getImageUrl($item_post->image, 'featured', false, RvMedia::getDefaultImage()) }}"
+                                            alt="{{ $item_post->name }}">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="post-content">
+                                        <h4 class="post_name font20">{!! $item_post->name !!}</h4>
+                                        <span class="time">{{ date_format($item_post->created_at, 'd/m/Y') }}</span>
+                                        <p class="post_description font18">{{$item_post->description}}
+                                         </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                @endif
             </div>
 
 

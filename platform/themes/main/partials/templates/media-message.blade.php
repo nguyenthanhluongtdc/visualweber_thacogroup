@@ -27,7 +27,7 @@
     </div>
 
     <div class="news-content-mobile human" style="display: none">
-        <div class="swiper-container new-post-slide-mb " id="js-swiper-news"
+        {{-- <div class="swiper-container new-post-slide-mb " id="js-swiper-news"
             style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
             <div class="swiper-wrapper">
                 @if (!empty($postSlider))
@@ -48,7 +48,40 @@
                         </div>
                         @endif
             </div>
+        </div> --}}
+        <div class="post-wrapper">
+            <div class="swiper-container post-news-mobile"
+                style="--swiper-navigation-color:#fff; --swiper-pagination-color:#000;">
+                {{-- <div class="swiper-wrapper"> --}}
+                    @if (!empty($postSlider))
+                  
+                    {{-- <div class="swiper-slide"> --}}
+                        <div class="post-item mb-4">
+                            <a class="" href=" {{ $postSlider[0]->url }}" title="{{ $postSlider[0]->name }}">
+                                <div class="post-thumbmail">
+                                    <div class="post-img">
+                                        <img class="img-mw-100"
+                                        src="{{ RvMedia::getImageUrl($postSlider[0]->image, 'featured', false, RvMedia::getDefaultImage()) }}"
+                                        alt="{{ $postSlider[0]->name }}">
+                                    </div>
+                                    
+                                </div>
+                                <div class="post-content">
+                                    <h4 class="post_name font20">{!! $postSlider[0]->name !!}</h4>
+                                    <span class="time">{{ date_format($postSlider[0]->created_at, 'd/m/Y') }}</span>
+                                    <p class="post_description font18">{{$postSlider[0]->description}}
+                                     </p>
+                                </div>
+                            </a>
+                        </div>
+                    {{-- </div> --}}
+                   
+                {{-- </div> --}}
+                <div class="swiper-pagination"></div>
+            </div>
+            @endif
         </div>
+
        
 
     </div>
