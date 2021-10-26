@@ -68,5 +68,4 @@
 
 <script>
     window.urlDownload = "{{route('api-investor.download')}}";
-}
 </script>
