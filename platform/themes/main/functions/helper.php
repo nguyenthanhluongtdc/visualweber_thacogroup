@@ -7,6 +7,7 @@ use Platform\Blog\Repositories\Interfaces\PostInterface;
 use Platform\Blog\Repositories\Interfaces\TagInterface;
 use Platform\Blog\Supports\PostFormat;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use Platform\Kernel\Repositories\Interfaces\PostInterface as PostInterfaceCustom;
 use Platform\InvestorRelations\Repositories\Interfaces\InvestorRelationsInterface;
 use Platform\PostInvestor\Repositories\Interfaces\PostInvestorInterface;
@@ -418,3 +419,15 @@ if (!function_exists('get_post_fieldActivity')) {
         return $data;
     }
 }
+if (!function_exists('get_file_name')) {
+    /**
+     * @return \Illuminate\Support\Collection
+     * @throws Exception
+     */
+    function get_file_name($url)
+    {
+        $string = Str::of($url)->basename();
+        return $string;
+    }
+}
+

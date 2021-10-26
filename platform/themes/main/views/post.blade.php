@@ -123,7 +123,7 @@
                                
                                 <i class="fal fa-file-invoice"></i>
                                 <p class="text">
-                                    {{has_sub_field($sub, 'file')}}
+                                    {{Str::of(has_sub_field($sub, 'file'))->basename()}} 
                                 </p>
                                 <i class="fal fa-arrow-to-bottom"></i>
                             </a>

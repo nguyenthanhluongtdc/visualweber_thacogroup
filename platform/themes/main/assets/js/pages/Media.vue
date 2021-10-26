@@ -245,7 +245,7 @@
               </ul>
 
               <div class="dropdown dr-mb dl">
-                <div class="dt"><span>{{__('Thư viện ảnh')}}</span> <i class="fal fa-angle-down"></i></div>
+                <div class="dt"><span>{{__('Thư viện video')}}</span> <i class="fal fa-angle-down"></i></div>
                   <div class="dd">
                     <ul style="display: none;" class="nav nav-tabs" id="tab-media" role="tablist">
                       <li>
@@ -259,7 +259,7 @@
                           href="#media-video"
                           :title="__('Albums')"
                         >
-                         Thư viện ảnh
+                         Thư viện video
                         </a>
                       </li>
                       <li>
