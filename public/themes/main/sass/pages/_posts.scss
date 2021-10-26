@@ -429,14 +429,16 @@
                             padding-bottom: 20px;
                             padding-left: 8px;
                             padding-right: 8px;
+                            margin-left: -8px;
+                            margin-right: -8px;
                         }
                         .post-item {
                             a {
                                 color: unset;
                                 display: block;
                                 box-shadow: 0 5px 8px -5px #555;
-                                margin-top: 8px;
-                                margin-bottom: 8px;
+                                // margin-top: 8px;
+                                // margin-bottom: 8px;
                                 overflow: hidden;
                                 .post-thumbmail {
                                     width: 100%;
