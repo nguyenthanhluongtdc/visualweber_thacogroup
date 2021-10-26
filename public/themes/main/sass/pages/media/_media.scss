@@ -736,6 +736,14 @@
     .modal-main {
         padding: 4%;
         height: 100%;
+        .post-img {
+            width: 100%;
+            height: 100%;
+            img {
+                height: 90%;
+                width: 100%;
+            }
+        }
         .modal-header-custom {
             height: 3vw;
             @media (max-width: 600px) {
